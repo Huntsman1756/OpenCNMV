@@ -1,0 +1,31 @@
+{
+  "gate": "R6",
+  "name": "SOURCE_FILING_KEY_STABLE",
+  "status": "PASS",
+  "executed_at": "2026-09-14T22:15:14Z",
+  "code_commit": "n/a",
+  "inputs": [
+    "g0-r/R01-discovery/evidence/ListadoIFA-IBE.html",
+    "g0-r/R01-discovery/evidence/ListadoIFA-SAN.html",
+    "g0-r/R01-discovery/evidence/ListadoIFA-BBVA.html",
+    "g0-r/R01-discovery/evidence/listaifi-IBE.html",
+    "g0-r/R01-discovery/evidence/listaifi-SAN.html",
+    "g0-r/R01-discovery/evidence/listaifi-BBVA.html",
+    "g0-r/R01-discovery/evidence/detalleifialdia-IBE-H1-2026.html"
+  ],
+  "outputs": [
+    "g0-r/R06-source-filing-key/README.md"
+  ],
+  "sha256": {},
+  "findings": [
+    "nreg (IPP) and registro oficial (ESEF) are stable, unique, official registration keys.",
+    "Each period maps to one nreg (IPP) / one registro oficial (ESEF) within the corpus; keys are stable across observations.",
+    "A substitution/revision is NOT observed in the corpus (all SAN/BBVA/IBE rows are clean initial submissions; col 4 Ampliación información empty).",
+    "Source legend: col (1) 'Fecha de publicación' = date of initial submission OR date of the LAST substitution to the initial submission; col (4) covers 'modificación de ficheros sin reformulación, corrigiendo el etiquetado'.",
+    "This confirms the hierarchy: nreg/registro = logical filing (source_registration_no, stable across substitutions); ?e= token = per-version artefact locator; ?t={GUID} = ephemeral transport (never identity).",
+    "Model implication: filing = nreg/registro; filing_version = ?e= token + fecha de publicación."
+  ],
+  "limitations": [
+    "Substitution semantics are taken from the source legend plus the absence of an in-corpus substitution; no directly-observed substitution was available to falsify against. Re-test if a real substitution appears in the corpus."
+  ]
+}

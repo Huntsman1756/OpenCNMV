@@ -1,0 +1,33 @@
+{
+  "gate": "R5",
+  "name": "ISSUER_IDENTITY_EXACT",
+  "status": "PASS",
+  "executed_at": "2026-09-14T22:15:14Z",
+  "code_commit": "n/a",
+  "inputs": [
+    "https://www.cnmv.es/portal/consultas/datosentidad.aspx?nif=A39000013",
+    "https://www.cnmv.es/portal/consultas/datosentidad.aspx?nif=A48265169",
+    "https://www.cnmv.es/portal/consultas/datosentidad.aspx?nif=A-48010615",
+    "https://api.gleif.org/api/v1/lei-records?filter[lei]=5493006QMFDDMYWIAM13",
+    "https://api.gleif.org/api/v1/lei-records?filter[lei]=K8MS7FD7N5Z2WQ51AZ71",
+    "https://api.gleif.org/api/v1/lei-records?filter[lei]=5QK37QC7NWOJ8D7WVQ45"
+  ],
+  "outputs": [
+    "g0-r/R05-issuer-identity/README.md",
+    "g0-r/R05-issuer-identity/evidence/"
+  ],
+  "sha256": {},
+  "findings": [
+    "SAN: issuer=BANCO SANTANDER, S.A., NIF=A39000013, LEI=5493006QMFDDMYWIAM13 (GLEIF ACTIVE).",
+    "BBVA: issuer=BANCO BILBAO VIZCAYA ARGENTARIA, S.A., NIF=A48265169, LEI=K8MS7FD7N5Z2WQ51AZ71 (GLEIF ACTIVE, ES).",
+    "IBE: issuer=IBERDROLA, S.A., NIF=A-48010615, LEI=5QK37QC7NWOJ8D7WVQ45 (GLEIF ACTIVE).",
+    "CNMV NIF is the authoritative registry key; GLEIF LEI is the global entity identifier; mapping established by legal entity name + jurisdiction.",
+    "issuer != security: a security (share/ISIN) is distinct from the issuer; ISIN must not be primary issuer identity.",
+    "Subsidiaries/branches (BBVA Colombia/Uruguay, IBERDROLA France/Renouvelables) are excluded from issuer identity.",
+    "GLEIF filter[entity.legalName] requires a clean name (no trailing punctuation); filter[lei] returns exactly one record."
+  ],
+  "limitations": [
+    "NIF<->LEI mapping is by name+jurisdiction match (GLEIF records do not carry the CNMV NIF directly); cross-checked for SAN via the issuer's own ESEF filing.",
+    "The LEI registration-authority fields were not populated by the API response shape used here."
+  ]
+}

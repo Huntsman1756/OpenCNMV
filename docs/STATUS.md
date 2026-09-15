@@ -20,7 +20,11 @@ R1  PASS    # exact corpus enumeration -> artefact proven via listaifi/ListadoIF
 R2  PASS    # access mechanism characterised (use per-entity GET path; bypass general WebForms postback)
 R3  PASS    # discovery stable across two observations (+ ListadoIFA byte-identical, ?e= tokens stable)
 R4  PASS    # IPP raw XBRL + ESEF iXBRL byte-stable out-of-session for SAN/BBVA/IBE
-R5-R17  NOT_RUN
+R5  PASS    # issuer identity: NIF <-> legal entity <-> LEI, issuer != security (SAN/BBVA/IBE)
+R6  PASS    # source filing key: nreg/registro = logical filing; ?e= = version locator; ?t={GUID} never identity
+R7  PASS    # 21 raw corpus artefacts materialized with HTTP metadata + source_registration_no
+R8  PASS    # SHA-256 stable: 21/21 artefacts byte-stable on re-download
+R9-R17  NOT_RUN
 ```
 
 ## Checkpoint
@@ -45,10 +49,24 @@ G0-R verdict (after R17) is `GO`. The final verdict states are `GO` / `CONDITION
   redirects to the same stable `?e=` token and the same bytes. Canonical identity must use `nreg`
   (IPP) / `registro oficial` (ESEF) as `source_registration_no`; **never** `?t={GUID}`.
 
+## Session-2 findings (R5–R8)
+
+- **R5 PASS:** identity = issuer (legal entity) + identifiers (NIF, LEI); issuer != security.
+  SAN=NIF A39000013/LEI 5493006QMFDDMYWIAM13; BBVA=A48265169/K8MS7FD7N5Z2WQ51AZ71;
+  IBE=A-48010615/5QK37QC7NWOJ8D7WVQ45.
+- **R6 PASS:** `nreg` (IPP) / `registro oficial` (ESEF) identify the logical filing
+  (`source_registration_no`), stable across substitutions; `?e=` = per-version locator;
+  `?t={GUID}` = ephemeral transport (never identity). No in-corpus substitution present to
+  falsify against; semantics taken from the source legend.
+- **R7 PASS:** 21 raw corpus artefacts materialized (15 IPP `text/xml` + 6 ESEF `application/xhtml+xml`)
+  with HTTP metadata + `source_registration_no`. Observed: IPP H2 artefacts are much smaller than H1
+  (potential model/taxonomy heterogeneity for R9/R12).
+- **R8 PASS:** 21/21 artefacts byte-stable on re-download (SHA-256 match).
+
 ## Blocking findings
 
-- None for the R0–R4 checkpoint. Long-horizon token/URL drift is deferred to R8
-  (RAW_SHA256_STABLE).
+- None for the R0–R4 checkpoint. Long-horizon token/URL drift is monitored by re-running the R8
+  verification periodically.
 
 ## Corrected corpus (accepted)
 
@@ -77,11 +95,10 @@ IBE  IBERDROLA, S.A.                       nif=A-48010615  LEI=5QK37QC7NWOJ8D7WV
 
 ## Next action
 
-Proceed to **R5** (within G0-R), following `AGENTS.md` and `docs/gates/G0-R.md`:
-`R5 ISSUER_IDENTITY_EXACT → R6 SOURCE_FILING_KEY_STABLE → R7 RAW_ARTIFACT_RETRIEVAL → R8
-RAW_SHA256_STABLE → R9/R10 taxonomy → R11/R12 Arelle parse → R13 revisions → R14/R15 determinism →
-R16 oracle reconciliation → R17 H2 vs ESEF`. Do **not** build product, UI, API, or MCP. G1 is not
-touched until R17 is closed.
+Proceed to **R9** (within G0-R), following `AGENTS.md` and `docs/gates/G0-R.md`:
+`R9 TAXONOMY_DISCOVERY → R10 TAXONOMY_PINNING → R11/R12 Arelle parse → R13 revisions → R14/R15
+determinism → R16 oracle reconciliation → R17 H2 vs ESEF`. Do **not** build product, UI, API, or
+MCP. G1 is not touched until R17 is closed.
 
 ## Session hygiene
 

@@ -1,0 +1,33 @@
+{
+  "gate": "R7",
+  "name": "RAW_ARTIFACT_RETRIEVAL",
+  "status": "PASS",
+  "executed_at": "2026-09-14T22:15:14Z",
+  "code_commit": "n/a",
+  "inputs": [
+    "listaifi?nif={SAN,BBVA,IBE}",
+    "ListadoIFA?id=0&lang=es&nif={SAN,BBVA,IBE}",
+    "detalleifialdia?nreg=<nreg>",
+    "descargaxbrlipp.ashx?t={GUID}",
+    "webservices/verdocumento/ver?e=<token>"
+  ],
+  "outputs": [
+    "g0-r/R07-raw-retrieval/README.md",
+    "g0-r/R07-raw-retrieval/artifact_manifest.json",
+    "g0-r/R07-raw-retrieval/evidence/"
+  ],
+  "sha256": {
+    "manifest": "see artifact_manifest.json (21 artefacts)"
+  },
+  "findings": [
+    "21 raw artefacts materialized: 15 IPP (text/xml) + 6 ESEF (application/xhtml+xml), one per corpus slot.",
+    "IPP slots: H1-2024, H2-2024, H1-2025, H2-2025, H1-2026 for SAN/BBVA/IBE.",
+    "ESEF slots: FY2024, FY2025 for SAN/BBVA/IBE.",
+    "Metadata recorded: role, family, source_registration_no (nreg/registro), source_url, final_url, retrieved_at, http_status, media_type, byte_size, elapsed_ms, set_cookie, sha256.",
+    "No re-serialisation; bytes written as received.",
+    "Observed: IPP H2 artefacts are much smaller than H1 (e.g. SAN H2-2025=392KB vs H1-2026=31.8MB); potential model/taxonomy heterogeneity for R9/R12."
+  ],
+  "limitations": [
+    "The IPP H2 size asymmetry is noted but not yet explained; to be investigated in R9 (taxonomy discovery) / R12 (parse)."
+  ]
+}

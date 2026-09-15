@@ -2,6 +2,7 @@
 g0-r/_probe-logs/tmp-nif-*
 g0-r/_probe-logs/cj-*
 g0-r/_probe-logs/sample-guid.txt
+g0-r/_probe-logs/gleif-*.json
 g0-r/_probe-logs/*.cookies
 
 # OS / editor
