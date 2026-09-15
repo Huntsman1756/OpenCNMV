@@ -75,5 +75,7 @@ R10 for offline determinism.
 ## Evidence
 
 - `evidence/taxonomy_matrix.json`, `evidence/taxonomy_matrix.csv`
-- `evidence/esef-{SAN,BBVA}-FY2025-consolidada.bin` (schemaRef proof)
+- The SAN/BBVA consolidated iXBRL `schemaRef` values are recorded above (in the matrix/README);
+  the underlying 80 MB / 63 MB XHTML proof files were not retained in the repo (GitHub recommends
+  <50 MB) but are re-downloadable from the stable `?e=` token in `ListadoIFA`.
 - `g0-r/R07-raw-retrieval/artifact_manifest.json`, `taxonomy_discovery.ps1`

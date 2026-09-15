@@ -10,9 +10,7 @@
   "outputs": [
     "g0-r/R09-taxonomy-discovery/README.md",
     "g0-r/R09-taxonomy-discovery/evidence/taxonomy_matrix.json",
-    "g0-r/R09-taxonomy-discovery/evidence/taxonomy_matrix.csv",
-    "g0-r/R09-taxonomy-discovery/evidence/esef-SAN-FY2025-consolidada.bin",
-    "g0-r/R09-taxonomy-discovery/evidence/esef-BBVA-FY2025-consolidada.bin"
+    "g0-r/R09-taxonomy-discovery/evidence/taxonomy_matrix.csv"
   ],
   "sha256": {},
   "findings": [
