@@ -1,7 +1,8 @@
 {
   "gate": "R4",
   "name": "ARTIFACT_URL_STABILITY",
-  "status": "PASS",
+  "status": "FAIL",
+  "reopened_by": "R9 (new evidence: the six 'ESEF' artefacts tested are the Portada/cover, NOT iXBRL)",
   "executed_at": "2026-09-14T22:15:14Z",
   "code_commit": "n/a (no VCS in workspace)",
   "inputs": [
@@ -40,14 +41,13 @@
     "esef-BBVA-FY2025_run2.zip": "D819FC69655C8F2B2F51AE7C89A73E5B58B1712EAB8ADA7D239D4661367FE7EB"
   },
   "findings": [
-    "IPP raw XBRL (via nreg -> detail -> descargaxbrlipp.ashx?t={GUID} -> redirect -> ver?e=<token>) is byte-stable out-of-session for SAN, BBVA and IBE: two fresh downloads produced identical SHA-256 each.",
-    "ESEF iXBRL (via ListadoIFA -> ver?e=<token>) is byte-stable out-of-session for SAN, BBVA and IBE: two fresh downloads produced identical SHA-256 each.",
-    "The ?e= tokens are STABLE across visits: the 18 ESEF tokens were identical between two separate fetches (0 differences).",
-    "The IPP ?t={GUID} intermediate is EPHEMERAL (changes per visit) but always redirects to the SAME stable ?e= token and the SAME bytes: two different GUIDs for the same nreg returned identical SHA-256 (5EB26CAB...).",
-    "No cookies, no referer, no session required; final ?e= URLs are reusable and byte-deterministic."
+    "REOPENED: R9 proved the six 'ESEF' artefacts tested here were the Portada (cover) XHTML - no ix:/schemaRef - NOT the iXBRL report.",
+    "Therefore 'ESEF iXBRL byte-stable' is NOT proven; only the cover XHTML was shown byte-stable.",
+    "IPP raw XBRL (nreg -> descargaxbrlipp.ashx -> ver?e=) is byte-stable out-of-session for SAN, BBVA, IBE (verified).",
+    "The ESEF ?e= tokens are stable across visits (18/18 identical between two fetches).",
+    "Need to re-verify the real consolidated iXBRL and the ZIP/Xbri package out-of-session before R4 can pass."
   ],
   "limitations": [
-    "The ephemeral IPP ?t={GUID} must NOT be used as canonical identity; use the stable nreg (IPP) / registro oficial (ESEF) as source_registration_no and resolve the stable ?e= via discovery.",
-    "Long-horizon token/URL drift is the responsibility of R8 (RAW_SHA256_STABLE) and will be monitored there."
+    "FAIL: target ESEF artefact (the real inline-XBRL report) was not the object actually tested. Remediation: download the real IXBRL_CONSOLIDATED (and ZIP/Xbri) and re-run the out-of-session SHA-256 stability check."
   ]
 }

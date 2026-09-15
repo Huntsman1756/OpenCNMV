@@ -1,7 +1,8 @@
 {
   "gate": "R7",
   "name": "RAW_ARTIFACT_RETRIEVAL",
-  "status": "PASS",
+  "status": "FAIL",
+  "reopened_by": "R9 (new evidence: the six 'ESEF' artefacts are the Portada/cover, not iXBRL; ESEF corpus raw is incomplete)",
   "executed_at": "2026-09-14T22:15:14Z",
   "code_commit": "n/a",
   "inputs": [
@@ -20,14 +21,14 @@
     "manifest": "see artifact_manifest.json (21 artefacts)"
   },
   "findings": [
-    "21 raw artefacts materialized: 15 IPP (text/xml) + 6 ESEF (application/xhtml+xml), one per corpus slot.",
-    "IPP slots: H1-2024, H2-2024, H1-2025, H2-2025, H1-2026 for SAN/BBVA/IBE.",
-    "ESEF slots: FY2024, FY2025 for SAN/BBVA/IBE.",
-    "Metadata recorded: role, family, source_registration_no (nreg/registro), source_url, final_url, retrieved_at, http_status, media_type, byte_size, elapsed_ms, set_cookie, sha256.",
+    "21 raw artefacts materialized (15 IPP text/xml + 6 ESEF application/xhtml+xml).",
+    "REOPENED: the 6 ESEF artefacts are the Portada (cover) component - no ix:/schemaRef - NOT the iXBRL report.",
+    "The ESEF filings also publish IXBRL_CONSOLIDATED, IXBRL_INDIVIDUAL and ESEF_PACKAGE_ZIP_XBRL components (separate ?e= in the same ListadoIFA row), which were NOT retrieved in R7.",
+    "Metadata recorded: role, family, source_registration_no, source_url, final_url, retrieved_at, http_status, media_type, byte_size, elapsed_ms, set_cookie, sha256.",
     "No re-serialisation; bytes written as received.",
-    "Observed: IPP H2 artefacts are much smaller than H1 (e.g. SAN H2-2025=392KB vs H1-2026=31.8MB); potential model/taxonomy heterogeneity for R9/R12."
+    "Observed: IPP H2 artefacts are much smaller than H1 (e.g. SAN H2-2025=392KB vs H1-2026=31.8MB); same taxonomy, fewer facts."
   ],
   "limitations": [
-    "The IPP H2 size asymmetry is noted but not yet explained; to be investigated in R9 (taxonomy discovery) / R12 (parse)."
+    "FAIL: ESEF corpus raw is incomplete - the real iXBRL and ZIP/Xbri package were not retrieved. Remediation: enumerate all components per ESEF filing, download IXBRL_CONSOLIDATED + ESEF_PACKAGE_ZIP_XBRL, reclassify covers as ESEF_COVER."
   ]
 }

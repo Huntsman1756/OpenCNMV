@@ -1,7 +1,8 @@
 {
   "gate": "R8",
   "name": "RAW_SHA256_STABLE",
-  "status": "PASS",
+  "status": "FAIL",
+  "reopened_by": "R9 (new evidence: the '21/21' inventory is incomplete - missing the real ESEF iXBRL + ZIP/Xbri components)",
   "executed_at": "2026-09-14T22:15:14Z",
   "code_commit": "n/a",
   "inputs": [
@@ -16,11 +17,12 @@
     "sha256_verify.json": "see evidence/sha256_verify.json"
   },
   "findings": [
-    "21/21 artefacts byte-stable on re-download (0 mismatch, 0 errors).",
+    "REOPENED: 21/21 MATCH is true for the artefacts in the (incomplete) R7 inventory, but the inventory was missing the real ESEF iXBRL and ZIP/Xbri components.",
+    "Therefore 'every corpus artefact byte-stable' is NOT proven; only the 15 IPP + 6 ESEF cover artefacts were shown byte-stable.",
     "IPP ephemeral ?t={GUID} resolves deterministically to the same ?e= + bytes (same SHA as run 1).",
     "No source drift detected in this window."
   ],
   "limitations": [
-    "Stability verified within one session window; long-horizon drift monitored by re-running this verification periodically (a changed hash means the source changed -> flag, never overwrite)."
+    "FAIL: the corpus artefact inventory is incomplete. Remediation: extend R7 with the real IXBRL_CONSOLIDATED + ESEF_PACKAGE_ZIP_XBRL components, then re-run this verification on the complete inventory."
   ]
 }
