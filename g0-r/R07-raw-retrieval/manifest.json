@@ -28,7 +28,8 @@
     "No re-serialisation; bytes written as received.",
     "Observed: IPP H2 artefacts are much smaller than H1 (same taxonomy, fewer facts).",
     "Model: 21 filings != 21 artefacts; an ESEF filing = filing_version with multiple artefacts (COVER / IXBRL_CONSOLIDATED / IXBRL_INDIVIDUAL / ESEF_PACKAGE_ZIP_XBRL).",
-    "Post-remediation audit: esef_components.json registro corrected - the scraper had captured the AUDITA column (audit-report numbers); official registro verified per-row in preserved ListadoIFA evidence (SAN 20875/20509, BBVA 20854/20448, IBE 20934/20515). ESEF_COVER source_registration_no placeholders corrected to the official registro."
+    "Post-remediation audit: esef_components.json registro corrected - the scraper had captured the AUDITA column (audit-report numbers); official registro verified per-row in preserved ListadoIFA evidence (SAN 20875/20509, BBVA 20854/20448, IBE 20934/20515). ESEF_COVER source_registration_no placeholders corrected to the official registro.",
+    "Model decision verified: the reports/*.xhtml member of each ESEF_PACKAGE_ZIP_XBRL is byte-identical to the standalone consolidated XHTML served by the direct ?e= link (ixbrl_member_equality.json, 6/6 byte_equal). IXBRL_CONSOLIDATED is modelled as package member + direct CNMV view; persisted inventory stays 27."
   ],
   "limitations": [
     "The IXBRL_CONSOLIDATED standalone XHTML (up to ~118MB) is not stored as a separate repo file (size); its raw is preserved within the ZIP package, and its SHA/schemaRef are recorded."

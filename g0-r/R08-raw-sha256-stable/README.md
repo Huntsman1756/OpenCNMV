@@ -33,8 +33,10 @@ stored `?t=` is ephemeral and returns empty).
 | ESEF_PACKAGE_ZIP_XBRL (`application/zip`) | 6 | all MATCH |
 
 The 6 `IXBRL_CONSOLIDATED` standalone reports were separately verified byte-stable out-of-session
-(run1 == run2) in the R4 remediation (`esef_components.json`); their raw lives inside the ZIP
-packages.
+(run1 == run2) in the R4 remediation (`esef_components.json`), and proven **byte-identical** to
+the `reports/*.xhtml` member inside each persisted ZIP package (`ixbrl_member_equality.json`,
+6/6 `byte_equal`). They are therefore covered by the 27-artefact persisted inventory as package
+members, not counted as separate artefacts.
 
 Full per-artefact comparison in `evidence/sha256_verify.json` (`run1_sha256` vs `run2_sha256`,
 `match`).

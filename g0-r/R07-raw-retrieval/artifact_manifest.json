@@ -336,6 +336,9 @@
         "sha256":  "066FDAF835AD6E81F0FF77EACB571F5D2A09F9FB42788FBC12D7041D2E51E05A",
         "iXBRL_title":  "5QK37QC7NWOJ8D7WVQ45-2025-12-31-1-es",
         "iXBRL_schemaRef":  "http://www.iberdrola.com/20251231/5QK37QC7NWOJ8D7WVQ45-2025-12-31.xsd",
+        "reports_member_path":  "5QK37QC7NWOJ8D7WVQ45-2025-12-31-1-es/reports/5QK37QC7NWOJ8D7WVQ45-2025-12-31-1-es.xhtml",
+        "reports_member_sha256":  "DCC595B45C26CDA99D57CA4D3942770C0B1C54EFAF2C01E851FC40891F8A431F",
+        "ixbrl_direct_view_byte_equal":  true,
         "evidence_path":  "g0-r\\R07-raw-retrieval\\evidence\\esef-IBE-FY2025-package.zip"
     },
     {
@@ -354,6 +357,9 @@
         "sha256":  "89DFD3EF65527D1D4378464C2F70FA78B2FB7B4872264EACFA91D3FAAE1C42B4",
         "iXBRL_title":  "5QK37QC7NWOJ8D7WVQ45-20241231-es",
         "iXBRL_schemaRef":  "http://www.iberdrola.com/20241231/5QK37QC7NWOJ8D7WVQ45-2024-12-31.xsd",
+        "reports_member_path":  "5QK37QC7NWOJ8D7WVQ45-20241231-es/reports/5QK37QC7NWOJ8D7WVQ45-20241231-es.xhtml",
+        "reports_member_sha256":  "0652A95C8946FF0F7FAADEC8E3597DE165666E45E0817F982428594D316FCC27",
+        "ixbrl_direct_view_byte_equal":  true,
         "evidence_path":  "g0-r\\R07-raw-retrieval\\evidence\\esef-IBE-FY2024-package.zip"
     },
     {
@@ -372,6 +378,9 @@
         "sha256":  "07E95A16C7D1652D6C6298C39B19B6A1E90C5D4A8C01881B4CCAEBDEAA700567",
         "iXBRL_title":  "5493006QMFDDMYWIAM13-2025-12-31-1-es",
         "iXBRL_schemaRef":  "http://www.santander.com/20251231/5493006QMFDDMYWIAM13-2025-12-31.xsd",
+        "reports_member_path":  "5493006QMFDDMYWIAM13-2025-12-31-1-es/reports/5493006QMFDDMYWIAM13-2025-12-31-1-es.xhtml",
+        "reports_member_sha256":  "51DB1D600555468E11797B928D3CA8A99AB9ADB6DAEB7EB4612365352038857C",
+        "ixbrl_direct_view_byte_equal":  true,
         "evidence_path":  "g0-r\\R07-raw-retrieval\\evidence\\esef-SAN-FY2025-package.zip"
     },
     {
@@ -390,6 +399,9 @@
         "sha256":  "69F04DA4F6EBE4F3072401207FF83F6EDC9D335C83DF666525594A7062D7248A",
         "iXBRL_title":  "K8MS7FD7N5Z2WQ51AZ71-20241231-es",
         "iXBRL_schemaRef":  "http://www.bbva.es/20241231/K8MS7FD7N5Z2WQ51AZ71-2024-12-31.xsd",
+        "reports_member_path":  "K8MS7FD7N5Z2WQ51AZ71-20241231-0-es/reports/K8MS7FD7N5Z2WQ51AZ71-20241231-0-es.xhtml",
+        "reports_member_sha256":  "766CE943F26D0B1A4F063FE118DEF19026E91B399AB300AEAC6C73941CD567CD",
+        "ixbrl_direct_view_byte_equal":  true,
         "evidence_path":  "g0-r\\R07-raw-retrieval\\evidence\\esef-BBVA-FY2024-package.zip"
     },
     {
@@ -408,6 +420,9 @@
         "sha256":  "675A1D3A470FDC469BEDA39BF242FFCB496C6F1116DA4D1FC562FAA0734E3458",
         "iXBRL_title":  "K8MS7FD7N5Z2WQ51AZ71-2025-12-31-1-es",
         "iXBRL_schemaRef":  "http://www.bbva.es/20251231/K8MS7FD7N5Z2WQ51AZ71-2025-12-31.xsd",
+        "reports_member_path":  "K8MS7FD7N5Z2WQ51AZ71-2025-12-31-1-es/reports/K8MS7FD7N5Z2WQ51AZ71-2025-12-31-1-es.xhtml",
+        "reports_member_sha256":  "5F9147A7B1558EAC68F6B33B5F62CFC1EF452C5014F5D571EB80721C97FE8081",
+        "ixbrl_direct_view_byte_equal":  true,
         "evidence_path":  "g0-r\\R07-raw-retrieval\\evidence\\esef-BBVA-FY2025-package.zip"
     },
     {
@@ -426,6 +441,9 @@
         "sha256":  "725FFF01861CB0C186107280BF30B2C047A3A59AF703D799F678E02C435CB9F5",
         "iXBRL_title":  "5493006QMFDDMYWIAM13-20241231-es",
         "iXBRL_schemaRef":  "http://www.santanderbank.com/20241231/5493006QMFDDMYWIAM13-2024-12-31.xsd",
+        "reports_member_path":  "5493006QMFDDMYWIAM13-20241231-es/reports/5493006QMFDDMYWIAM13-20241231-es.xhtml",
+        "reports_member_sha256":  "A6E40D67AD2D953305C00DBAA5A0165CC9E1A56C17638B0BADE2C11A8C868491",
+        "ixbrl_direct_view_byte_equal":  true,
         "evidence_path":  "g0-r\\R07-raw-retrieval\\evidence\\esef-SAN-FY2024-package.zip"
     }
 ]

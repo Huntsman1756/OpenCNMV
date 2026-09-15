@@ -1,0 +1,68 @@
+﻿[
+    {
+        "issuer":  "SAN",
+        "year":  "FY2025",
+        "registro":  "20875",
+        "package":  "g0-r\\R07-raw-retrieval\\evidence\\esef-SAN-FY2025-package.zip",
+        "package_sha256":  "07E95A16C7D1652D6C6298C39B19B6A1E90C5D4A8C01881B4CCAEBDEAA700567",
+        "package_member_path":  "5493006QMFDDMYWIAM13-2025-12-31-1-es/reports/5493006QMFDDMYWIAM13-2025-12-31-1-es.xhtml",
+        "member_sha256":  "51DB1D600555468E11797B928D3CA8A99AB9ADB6DAEB7EB4612365352038857C",
+        "direct_ixbrl_sha256":  "51db1d600555468e11797b928d3ca8a99ab9adb6daeb7eb4612365352038857c",
+        "byte_equal":  true
+    },
+    {
+        "issuer":  "SAN",
+        "year":  "FY2024",
+        "registro":  "20509",
+        "package":  "g0-r\\R07-raw-retrieval\\evidence\\esef-SAN-FY2024-package.zip",
+        "package_sha256":  "725FFF01861CB0C186107280BF30B2C047A3A59AF703D799F678E02C435CB9F5",
+        "package_member_path":  "5493006QMFDDMYWIAM13-20241231-es/reports/5493006QMFDDMYWIAM13-20241231-es.xhtml",
+        "member_sha256":  "A6E40D67AD2D953305C00DBAA5A0165CC9E1A56C17638B0BADE2C11A8C868491",
+        "direct_ixbrl_sha256":  "a6e40d67ad2d953305c00dbaa5a0165cc9e1a56c17638b0bade2c11a8c868491",
+        "byte_equal":  true
+    },
+    {
+        "issuer":  "BBVA",
+        "year":  "FY2025",
+        "registro":  "20854",
+        "package":  "g0-r\\R07-raw-retrieval\\evidence\\esef-BBVA-FY2025-package.zip",
+        "package_sha256":  "675A1D3A470FDC469BEDA39BF242FFCB496C6F1116DA4D1FC562FAA0734E3458",
+        "package_member_path":  "K8MS7FD7N5Z2WQ51AZ71-2025-12-31-1-es/reports/K8MS7FD7N5Z2WQ51AZ71-2025-12-31-1-es.xhtml",
+        "member_sha256":  "5F9147A7B1558EAC68F6B33B5F62CFC1EF452C5014F5D571EB80721C97FE8081",
+        "direct_ixbrl_sha256":  "5f9147a7b1558eac68f6b33b5f62cfc1ef452c5014f5d571eb80721c97fe8081",
+        "byte_equal":  true
+    },
+    {
+        "issuer":  "BBVA",
+        "year":  "FY2024",
+        "registro":  "20448",
+        "package":  "g0-r\\R07-raw-retrieval\\evidence\\esef-BBVA-FY2024-package.zip",
+        "package_sha256":  "69F04DA4F6EBE4F3072401207FF83F6EDC9D335C83DF666525594A7062D7248A",
+        "package_member_path":  "K8MS7FD7N5Z2WQ51AZ71-20241231-0-es/reports/K8MS7FD7N5Z2WQ51AZ71-20241231-0-es.xhtml",
+        "member_sha256":  "766CE943F26D0B1A4F063FE118DEF19026E91B399AB300AEAC6C73941CD567CD",
+        "direct_ixbrl_sha256":  "766ce943f26d0b1a4f063fe118def19026e91b399ab300aeac6c73941cd567cd",
+        "byte_equal":  true
+    },
+    {
+        "issuer":  "IBE",
+        "year":  "FY2025",
+        "registro":  "20934",
+        "package":  "g0-r\\R07-raw-retrieval\\evidence\\esef-IBE-FY2025-package.zip",
+        "package_sha256":  "066FDAF835AD6E81F0FF77EACB571F5D2A09F9FB42788FBC12D7041D2E51E05A",
+        "package_member_path":  "5QK37QC7NWOJ8D7WVQ45-2025-12-31-1-es/reports/5QK37QC7NWOJ8D7WVQ45-2025-12-31-1-es.xhtml",
+        "member_sha256":  "DCC595B45C26CDA99D57CA4D3942770C0B1C54EFAF2C01E851FC40891F8A431F",
+        "direct_ixbrl_sha256":  "dcc595b45c26cda99d57ca4d3942770c0b1c54efaf2c01e851fc40891f8a431f",
+        "byte_equal":  true
+    },
+    {
+        "issuer":  "IBE",
+        "year":  "FY2024",
+        "registro":  "20515",
+        "package":  "g0-r\\R07-raw-retrieval\\evidence\\esef-IBE-FY2024-package.zip",
+        "package_sha256":  "89DFD3EF65527D1D4378464C2F70FA78B2FB7B4872264EACFA91D3FAAE1C42B4",
+        "package_member_path":  "5QK37QC7NWOJ8D7WVQ45-20241231-es/reports/5QK37QC7NWOJ8D7WVQ45-20241231-es.xhtml",
+        "member_sha256":  "0652A95C8946FF0F7FAADEC8E3597DE165666E45E0817F982428594D316FCC27",
+        "direct_ixbrl_sha256":  "0652a95c8946ff0f7faadec8e3597de165666e45e0817f982428594d316fcc27",
+        "byte_equal":  true
+    }
+]

@@ -94,6 +94,7 @@ G0-R verdict (after R17) is `GO`. The final verdict states are `GO` / `CONDITION
   - `ESEF_COVER.source_registration_no` placeholders (`registro-SAN-FY2025`) corrected to the official registro in `artifact_manifest.json` and `sha256_verify.json`.
   - `taxonomy_matrix.json` regenerated over the 27-artifact inventory (covers `XHTML_COVER_ONLY`; packages `ESEF_ZIP_PACKAGE` with `has_ix`/`schemaRef` observed inside each ZIP). FY2024 schemaRefs observed, not "analogous".
   - R4 evidence files renamed: `esef-IBE-consolidated_run*.zip` etc. contained the **cover**, now `esef-*-cover_run*.zip`.
+- **Artifact model decision (verified):** the `reports/*.xhtml` member inside each ESEF ZIP package is **byte-identical** to the standalone consolidated XHTML served by the direct `?e=` link (`ixbrl_member_equality.json`, 6/6). So `IXBRL_CONSOLIDATED` = *package member + direct CNMV view*, not a separately persisted artefact; persisted inventory stays **27** (`package_member_path`/`member_sha256`/`byte_equal` recorded).
 
 ## Blocking findings
 

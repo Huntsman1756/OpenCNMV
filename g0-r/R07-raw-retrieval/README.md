@@ -43,6 +43,14 @@ The 6 `IXBRL_CONSOLIDATED` standalone reports (28–118 MB) were fetched twice a
 byte-stable (`sha256_run1 == sha256_run2` in `esef_components.json`); their raw is preserved
 inside the ZIP packages.
 
+**Model decision (verified):** the `reports/*.xhtml` member of each `ESEF_PACKAGE_ZIP_XBRL` is
+**byte-identical** to the standalone consolidated XHTML served by the direct `?e=` link
+(`verify_ixbrl_member.ps1` → `ixbrl_member_equality.json`, 6/6 `byte_equal=true`). Therefore
+`IXBRL_CONSOLIDATED` is **not** a separately persisted artefact: it is modelled as
+*package member + direct CNMV view* of the same bytes. Persisted inventory stays **27**; the
+member path + member SHA-256 + equality flag are recorded both in `esef_components.json`
+(`IXBRL_CONSOLIDATED` rows) and in `artifact_manifest.json` (`ESEF_PACKAGE_ZIP_XBRL` rows).
+
 `artifact_manifest.json` per artefact records: `role`, `family`, `source_registration_no`
 (`nreg` / `registro`), `source_url`, `final_url` (after redirect), `retrieved_at`, `http_status`,
 `media_type`, `byte_size`, `elapsed_ms`, `set_cookie`, `sha256`, `evidence_path`.
@@ -69,6 +77,8 @@ inside the ZIP packages.
 
 - `artifact_manifest.json` (metadata for all 27 artefacts)
 - `esef_components.json`, `esef_packages.json` (per-filing component enumeration + schemaRefs)
+- `ixbrl_member_equality.json` (package member vs direct `?e=` download, byte-equality proof)
 - `evidence/ipp-{SAN,BBVA,IBE}-*.zip`, `evidence/esef-{SAN,BBVA,IBE}-FY*.zip`,
   `evidence/esef-{SAN,BBVA,IBE}-FY*-package.zip`
-- `download_corpus.ps1`, `remediate_esef.ps1`, `extract_schemaref.ps1`, `build_inventory.ps1`
+- `download_corpus.ps1`, `remediate_esef.ps1`, `extract_schemaref.ps1`, `build_inventory.ps1`,
+  `verify_ixbrl_member.ps1`
