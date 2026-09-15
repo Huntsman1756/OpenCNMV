@@ -10,7 +10,7 @@ Update at the end of every session.
 
 ## Current phase
 
-**G0-R** (CNMV Source & Reproducibility Probe) — R0–R4 closed; checkpoint `GO`.
+**G0-R** (CNMV Source & Reproducibility Probe) — R0–R4 closed; R0–R4 checkpoint `CONTINUE`.
 
 ## Gate statuses
 
