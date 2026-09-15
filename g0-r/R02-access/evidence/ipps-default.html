@@ -1,0 +1,262 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta http-equiv="cache-control" content="max-age=0" /><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="expires" content="0" /><meta http-equiv="expires" content="Tue, 01 Jan 1990 12:00:00 GMT" /><title>
+	Visualización y descarga de informes XBRL
+</title><link href="css/bootstrap.css" rel="stylesheet" /><link href="css/custom.css" rel="stylesheet" /><link href="css/Anteriors.css" rel="stylesheet" />
+    <script src="/IPPS/js/jquery.min.js"></script>
+    <script src="/IPPS/js/bootstrap.min.js"></script>
+    <script src="/IPPS/js/Chart.js"></script>
+    <script src="/IPPS/js/chartutils.js"></script>
+    <style type="text/css">
+    </style>
+</head>
+<body>
+    <form name="form1" method="post" action="./default.aspx" id="form1">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE5MTQ0MzYzMDEPFgQeD01vZG9WaXN0YVBhZ2luYQspYUNOTVYuWEJSTElQUC5Nb2RvVmlzdGFQYWdpbmEsIENOTVYuWEJSTElQUCwgVmVyc2lvbj0xLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwBHgxXZWJFbnRpZGFkZXMyrQIAAQAAAP////8BAAAAAAAAAAwCAAAAQ0NOTVYuWEJSTElQUCwgVmVyc2lvbj0xLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwFAQAAAChDTk1WLlhCUkxJUFAuRW50aXRpZXMuV2ViRW50aWRhZGVzRUVMaXN0AwAAAA1MaXN0YDErX2l0ZW1zDExpc3RgMStfc2l6ZQ9MaXN0YDErX3ZlcnNpb24EAAAkQ05NVi5YQlJMSVBQLkVudGl0aWVzLldlYkVudGlkYWRFRVtdAgAAAAgIAgAAAAkDAAAAAAAAAAAAAAAHAwAAAAABAAAAAAAAAAQiQ05NVi5YQlJMSVBQLkVudGl0aWVzLldlYkVudGlkYWRFRQIAAAALFgICAw9kFgQCBw9kFgJmD2QWBgIBDw8WBh4IQ3NzQ2xhc3MFKWJ0biBidG4tT3BjaW9uIGNlbnRlci1ibG9jayBBY3Rpdm8gQWN0aXZvHgdFbmFibGVkaB4EXyFTQgICZBYCAgEPDxYCHghJbWFnZVVybAUWfi9pbWFnZXMvT3BjaW9uMU9uLmdpZmRkAgMPDxYEHwIFG2J0biBidG4tT3BjaW9uIGNlbnRlci1ibG9jax8EAgJkFgICAQ8PFgIfBQUXfi9pbWFnZXMvT3BjaW9uMk9mZi5naWZkZAIHD2QWBGYPZBYCZg9kFgwCAw8QZGQWAWZkAgUPZBYCAgMPEGRkFgBkAgcPZBYCAgMPEGRkFgBkAgkPZBYCAgMPEGRkFgBkAgsPZBYCAgMPEGRkFgBkAg0PZBYCAgMPEGRkFgBkAgEPZBYCAgEPZBYGAggPZBYCAgMPEGRkFgBkAgoPZBYCAgMPEGRkFgBkAgwPZBYEAgMPEGRkFgFmZAIHDxBkZBYAZAIJD2QWAmYPZBYEAgEPZBYEAgEPDxYCHwUFFn4vaW1hZ2VzL09wY2lvbjFPbi5naWZkZAIDDxYCHgRUZXh0BR5WaXN1YWxpemFjacOzbiBkZSBpbmZvcm1lcyBJUFBkAgMPZBYGZg9kFgICAw8WAh8GBaYEIGEgbGEgaGVycmFtaWVudGEgZGUgY29uc3VsdGEgeSBkZXNjYXJnYSBkZSBpbmZvcm1lcyBYQlJMIGNvbiBsb3MgZXN0YWRvcyBmaW5hbmNpZXJvcyBlbnZpYWRvcyBhIGxhIENOTVYgZW4gZWwgbWFyY28gZXN0YWJsZWNpZG8gcG9yIGxhcyBDaXJjdWxhcmVzIDxhIGhyZWY9Jy9JUFAvdGF4b25vbWlhLzIwMTYtMDYtMDEvaXBwXzIwMTYtMDYtMDEuemlwJyB0aXRsZT0nSXIgYSBDaXJjdWxhciA1LzIwMTUnPjUvMjAxNTwvYT4sIDxhIGhyZWY9Jy9JUFAvdGF4b25vbWlhLzIwMDgtMDEtMDEvaXBwXzIwMDgtMDEtMDEuemlwJyB0aXRsZT0nSXIgYSBDaXJjdWxhciAxLzIwMDgnPjEvMjAwODwvYT4geSA8YSBocmVmPScvSVBQL3RheG9ub21pYS8yMDA1LTA2LTMwL2lwcF8yMDA1LTA2LTMwX3YxLjIyLnppcCcgdGl0bGU9J0lyIGEgQ2lyY3VsYXIgMS8yMDA1Jz4xLzIwMDU8L2E+IHBhcmEgZWwgcmVwb3J0ZSBkZSBsYSBJbmZvcm1hY2nDs24gUMO6YmxpY2EgUGVyacOzZGljYSBkZSBsYXMgZW50aWRhZGVzIGNvbiB2YWxvcmVzIGFkbWl0aWRvcyBhIGNvdGl6YWNpw7NuLmQCAQ9kFgICDQ9kFgQCAQ9kFgYCAQ9kFgICAw8QZGQWAGQCAw9kFgICAw8QZGQWAGQCBQ9kFgICAw8QZGQWAGQCAg9kFgYCAQ9kFgZmDxBkZBYAZAIBDxBkZBYAZAIDDxBkZBYBZmQCAw9kFgoCAw8QZGQWAGQCBQ8QZGQWAGQCBw8QZGQWAGQCDQ8QZGQWAQIBZAIRDxBkZBYBZmQCBQ9kFgoCAw8QZGQWAGQCBQ8QZGQWAGQCBw8QZGQWAGQCDQ8QZGQWAQIBZAIRDxBkZBYBZmQCAg9kFgQCAQ9kFggCCQ8QZGQWAGQCEw8QZGQWAGQCFw8QZGQWAGQCGw8QZGQWAGQCAw9kFgICAQ88KwARAgEQFgAWABYADBQrAABkGAMFC212Q29udGVuaWRvDw9kZmQFH3dEZXNjYXJnYXNfTGlzdGFkbyRncmlkSW5mb3JtZXMPZ2QFDG12TW9kb1BhZ2luYQ8PZGZkxkYb3R+2a1IXHfPdxQ8kS5bZ/L/xVrNyMWF4ZfxOuVY=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/IPPS/WebResource.axd?d=Vr1BNxpf-HDy57kGw8aW6kYWwLj3saPW4jE8H2YN2PU-G4CisAqqF4ia78n_C1FgCGl1FXBIVx3l1zZyTPHu3lJncKScgwpiJNv0gBuGIv81&amp;t=638967616026025063" type="text/javascript"></script>
+
+
+<script src="/IPPS/ScriptResource.axd?d=9I0gJ6NKimrQMOJ3smTFoEA4acE0Kud1ORuMpSj_a9Od3fDQURtU53tDb8kCKXSZbWNem7gvE74mU4FCmYoZxBA-VgovloByw5T5NJj7r3-upC4OY6Ce_mthE-OMMeSHI66SLPhWEnuQhqTKCNQAbaVNUkl7F5eA0HfXtAQu7kff75V9tR1zZSEdMGxg_apb0&amp;t=ffffffffacea8b1a" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/IPPS/ScriptResource.axd?d=1rQkZcBwo81DPWxG_KNz25LnmcrDL3JSgt1ai8rNkMKVSlDfennsZdbaJVv5Zgy0nkYSrUBrUa5HGIQALa19ec5jhQAQpY-0Pz5g_toDVLiizSXGnOYB-6IeKlht2HKQoGieDhgziAXdzGPAWQud0OkWtxxQ8VNTvRbw4yqp3HQXp0ohak5P_h7GeC0f-7wt0&amp;t=ffffffffacea8b1a" type="text/javascript"></script>
+<script src="/IPPS/ScriptResource.axd?d=gwCqq12n-mV4PZkTJthu47u7Ko9ithl7fXljsLk-FzuoE4H4Ci8jFiLQ2ejoelcVUXWBiZx7CWp2rciSYdQ8mU3L0Pvfudcq20a_B2uOywN1Gt3z9f2WOueBmghdCRl7VTa6F26mGHY3Y6l1LUt35Zef8VkelR3oDGSuop2LaOk1&amp;t=ffffffff9b7d03cf" type="text/javascript"></script>
+<script src="/IPPS/ScriptResource.axd?d=En-3tbBDJ9UydKWBxKfSb7Bp2nL1fQj6-KcndnibSp_2GOnxlofjlv6c6tWTlVhye2mLK3WXEkOkTfIYc5y2ce1Uk4_pEgzFF3mgbBT5i5rDobhjiZ3t-wvMLG7pgU_n3oYvR4sMBDfcM-86DgsChfwGl8ZMDvB7T_XExfHBvnc1&amp;t=ffffffff9b7d03cf" type="text/javascript"></script>
+<script src="/IPPS/ScriptResource.axd?d=e2q-iWT43K9-NnVwIznZGSqXyOA6PWxY4EExw3KIO52M1DSow-LkmbiNbxKUPk_Qmw6ztiKwDjFpyh8Viioy9SQfOPeF2rIIL_V3cadhbojRl1vGtvddZkcJD4NoP1UjmNwpPyVdZMfkM6fGxg9RA83OxKSriyiWUe777l_d5NNG1Q1ENxKHflnntcs8Cuql0&amp;t=ffffffff9b7d03cf" type="text/javascript"></script>
+<script src="/IPPS/ScriptResource.axd?d=Zz8zaUfTdPaQJ-RsjkI5aGbDI4b0FXGjmVd78-WITaW4uHNanXm-58ejt1UVkcmhV1BUczYVxfAqkP3yx93pZMzOCxDxkbJsg7KQrqM5-M3HloYwGE9-okLV3bHFHE0Fsf6kqesA9pGxF2NaX1ltg1fE_f0-RDxDsXDSJKx7spo1&amp;t=ffffffff9b7d03cf" type="text/javascript"></script>
+<script src="/IPPS/ScriptResource.axd?d=1RxOH8njOPUUlW8SvGbnLmfhDWBcnc7U7iCfmVxflPicOBDt2EATtfx3tkn4XSzoXuMDTS0yA6lanfzfH-VUNTxINutg_kA9UdF_8XrljYVo5-EmWy5O6hIXdSE5gs8VbTf2_Ik_NFsflQ0SK1_TGuHHFSdLxOCr70w-T-2XxKYPcdwm8UVEX8dQBVKi_PXG0&amp;t=ffffffff9b7d03cf" type="text/javascript"></script>
+<script src="/IPPS/ScriptResource.axd?d=mulz_ynIXtFUu4fbHFDNX75gwgRoykZ3y_Y5PUrjCF7baI8j0Il28gRbKJ8t8yATXtzswxqia_-RNFhUb3xXNiop-S6yF-MuRgotpjXkg6S0NlYjR2hOeRZo0gPnfDQ4DnhDB4-fAbij1Nfp9KieE3i2D4AV7I5GmUze0PYpj539C0SGLTlYXTQOnGtko4xEr3Z2ePROj7_d1JtAyADYCQ2&amp;t=ffffffff9b7d03cf" type="text/javascript"></script>
+<script src="/IPPS/ScriptResource.axd?d=KyiSgDc_scqgbYAadiZt1DTHToxDInE_IUVJmolZyeH8fTRttP3oJvv1YYFXfrg1_rhV1YVmICFDWhLzk1SWWgURtIQynVLZxtY-E2f5VmySnOvo_h2NMKkEdKT6u2xAi6P-pRZAr-DnRUw8YrpS7q7Rw_j9F_amqT2FfofTXYQxS-UF8WrocgpO97hYHoT90&amp;t=ffffffff9b7d03cf" type="text/javascript"></script>
+<script src="/IPPS/ScriptResource.axd?d=Wy5g026LEIFaUTO3Ej1vqIqpQO-SP2R2lk6gcBPovQtd_Yq1D06CiiVMRv1dTuZPUIZnaJVa81HcfmShUhQd4mb1t8Ms5XQzhLgVW3haiPDKaaaEN_jGCAHPQ9rn_WcDVTa1oKd3dqjuIJ9r6rgEfr46e2Owi1AvxGbnDP9jCAk8NIANTHNlUDSrrUy47a2B0&amp;t=ffffffff9b7d03cf" type="text/javascript"></script>
+<script src="/IPPS/ScriptResource.axd?d=112ZDShInhRIu--qoA_ZmjpVNrJ7E0hiWxPNH2HVrd6YPmYYxQMAEAgEvLeIW8CftmshB-e6-2VuzeTXo3DeiAYlh0oTUetJDGcmpElxvp8eg6ciOvgidFhCqNOPxL7brTHK-CFNrA7FfLrVz6OBkTcB4eX3UDTqNkt9la2Y5RBNfrW6niiVLx8swi0CHtvu0&amp;t=ffffffff9b7d03cf" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A194E783" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAcyng3HP2HeBUCaAKknLFzShY9irbK66YMPDAOp8jJHhD4BHJ6Fq8gOCws3ZuM/G0SywtFvL7EJkP9q6969mNdIkyojHdXLFyrbU5I7tvFQSrrAiHRpUmMad4244xvHoA50YEyduRVooG3ha/OFYKMXfDJ8Vn3Clr5HQ6QqdbHgVz7aB35q1VypaonmaQ6w31A=" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('sm1', 'form1', ['tnavegacionPrincipal','','tup2',''], [], [], 90, '');
+//]]>
+</script>
+
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar-header fondoCabecera">
+                    <a id="lnkLogo" title="Ir a Inicio" class="logo" href="Default.aspx"><img id="imglogo" class="img-responsive" src="images/logo-cnmv.svg" alt="Logo CNMV" style="border-width:0px;" /></a>
+                    <h1>
+                        Visualización y descarga de informes IPP
+                    </h1>
+                </div>
+            </nav>
+            <div class="row" id="contenido">
+                
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2 ajustado">
+                    <div id="navegacionPrincipal">
+	
+                            <div class="row">
+                                <div class="form-group col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                                    <a id="lkVisualizacion" disabled="disabled" class="btn btn-Opcion center-block Activo Activo">Visualización<img id="imgVisualizacion" src="images/Opcion1On.gif" style="border-width:0px;" /></a>
+                                </div>
+                                <div class=" form-group col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                                    <a id="lkDescarga" class="btn btn-Opcion center-block" href="javascript:__doPostBack(&#39;lkDescarga&#39;,&#39;&#39;)">Descarga<img id="imgDescarga" src="images/Opcion2Off.gif" style="border-width:0px;" /></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div id="ayuda" class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <a id="lnkAyuda" title="Abrir documento de ayuda" class="vinculo" href="AyudaIPP.pdf" target="_blank"><img title="Abrir documento de ayuda" src="images/ayuda.gif" alt="Ayuda" style="border-width:0px;" /></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                
+                                        
+<div class="form-group col-sm-6 col-md-12 col-lg-12">
+    <label for="wArbol_drpModoBusqueda" id="wArbol_lblModoBusqueda" class="control-label">Buscar por: </label>
+    <select name="wArbol$drpModoBusqueda" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;wArbol$drpModoBusqueda\&#39;,\&#39;\&#39;)&#39;, 0)" id="wArbol_drpModoBusqueda" class="form-control input-sm">
+		<option selected="selected" value="">Seleccione...</option>
+		<option value="2">Ibex 35</option>
+		<option value="1">Sector</option>
+		<option value="3">Entidades emisoras</option>
+
+	</select>
+</div>
+
+
+
+
+
+
+<div id="wArbol_upr1" style="display:none;">
+		
+        <div class="col-sm-12 col-md-12 col-lg-12" id="loadPopUp">
+            <img src="images/ajax-loader-circle-red.gif" style="border-width:0px;" />
+            <span class="blanco">
+                Cargando...</span>
+        </div>
+    
+	</div>
+
+                                        <div class="form-group col-sm-6 col-md-12 col-lg-12">
+                                            <span class="label label-success" style='display: none;'>
+                                                
+                                            </span>
+                                        </div>
+                                    
+                            </div>
+                        
+</div>
+                </div>
+                
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-10">
+                    <div id="up2">
+	
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <h2 id="cabeceraVista">
+                                        <img id="imgH2" src="images/Opcion1On.gif" style="border-width:0px;" />
+                                        Visualización de informes IPP
+                                    </h2>
+                                </div>
+                            </div>
+                            
+                                    <div class="row">
+                                        <div id="bienvenida" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div>
+                                                <p>
+                                                    <span class="resaltado">
+                                                        Bienvenido</span>
+                                                     a la herramienta de consulta y descarga de informes XBRL con los estados financieros enviados a la CNMV en el marco establecido por las Circulares <a href='/IPP/taxonomia/2016-06-01/ipp_2016-06-01.zip' title='Ir a Circular 5/2015'>5/2015</a>, <a href='/IPP/taxonomia/2008-01-01/ipp_2008-01-01.zip' title='Ir a Circular 1/2008'>1/2008</a> y <a href='/IPP/taxonomia/2005-06-30/ipp_2005-06-30_v1.22.zip' title='Ir a Circular 1/2005'>1/2005</a> para el reporte de la Información Pública Periódica de las entidades con valores admitidos a cotización.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            <div id="pnlPopup" class="mimodal" style="display: none">
+		
+                                <div>
+                                    <div class="modal-dialog modal-dialog-center">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <p>
+                                                    
+                                                </p>
+                                                <p style="text-align: center">
+                                                    <input type="button" id="btnAceptarPopUp" value="Aceptar" class="submit" onclick="hidePopUp()" />
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+	</div>
+                            
+                            <input type="submit" name="btn" value="" id="btn" style="display: none" />
+                        
+</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container pie">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="copyright">
+                            Comisión Nacional de Mercado de Valores
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="design">
+                            Informes IPP trabaja con Extensible Business Reporting Language (XBRL)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(Sys.UI._UpdateProgress, {"associatedUpdatePanelId":"navegacionPrincipal","displayAfter":500,"dynamicLayout":true}, null, null, $get("wArbol_upr1"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ModalPopupBehavior, {"BackgroundCssClass":"backGroundPopUp","PopupControlID":"pnlPopup","dynamicServicePath":"/ipps/default.aspx","id":"programmaticModalPopupBehavior"}, null, null, $get("btn"));
+});
+//]]>
+</script>
+</form>
+    <script type="text/javascript">
+        function hidePopUp() {
+            var modalPopupBehavior = $find('programmaticModalPopupBehavior');
+            modalPopupBehavior.hide();
+        }
+
+        // Define a plugin to provide data labels
+        Chart.plugins.register({
+            afterDatasetsDraw: function (chart, easing) {
+                // To only draw at the end of animation, check for easing === 1
+                var ctx = chart.ctx;
+
+                chart.data.datasets.forEach(function (dataset, i) {
+                    var meta = chart.getDatasetMeta(i);
+                    if (!meta.hidden) {
+                        meta.data.forEach(function (element, index) {
+                            // Draw the text in black, with the specified font
+                            ctx.fillStyle = 'rgb(0, 0, 0)';
+
+                            var fontSize = 12;
+                            var fontStyle = 'normal';
+                            var fontFamily = 'Segoe UI';
+                            ctx.font = Chart.helpers.fontString(fontSize, fontStyle, fontFamily);
+
+                            // Just naively convert to string for now
+                            var dataString = dataset.data[index].toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+                            if (chart.config.type == 'pie') {
+                                dataString = dataset.label.toString() + ": " + dataString;
+                            }
+
+                            // Make sure alignment settings are correct
+                            ctx.textAlign = 'center';
+                            ctx.textBaseline = 'middle';
+
+                            var padding = 5;
+                            var position = element.tooltipPosition();
+                            ctx.fillText(dataString, position.x, position.y - (fontSize / 2) - padding);
+                        });
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,34 @@
+{
+  "gate": "R3",
+  "name": "DISCOVERY_STABILITY",
+  "status": "PASS",
+  "executed_at": "2026-09-14T22:15:14Z",
+  "code_commit": "n/a (no VCS in workspace)",
+  "inputs": [
+    "https://www.cnmv.es/portal/home.aspx",
+    "https://www.cnmv.es/portal/xbrl/xbrl.aspx"
+  ],
+  "outputs": [
+    "g0-r/R03-stability/README.md",
+    "g0-r/R03-stability/evidence/homepage_obs1.html",
+    "g0-r/R03-stability/evidence/homepage_obs2.html",
+    "g0-r/R03-stability/evidence/xbrl_obs1.html",
+    "g0-r/R03-stability/evidence/xbrl_obs2.html"
+  ],
+  "sha256": {
+    "homepage_obs1.html": "1999AAA84EB54D22E8752BCEBC878EF4BFB9A4ACBA2EE898E632921176061EA3",
+    "homepage_obs2.html": "1999AAA84EB54D22E8752BCEBC878EF4BFB9A4ACBA2EE898E632921176061EA3",
+    "xbrl_obs1.html": "6E7691D11A5A34BCB002B5D570D916EDBF82258CA12CCD57E73B9CCD9E5E5010",
+    "xbrl_obs2.html": "6E7691D11A5A34BCB002B5D570D916EDBF82258CA12CCD57E73B9CCD9E5E5010"
+  },
+  "findings": [
+    "XBRL page byte-identical across two observations (SHA 6E7691D1...).",
+    "Homepage byte-identical across two observations (SHA 1999AAA8...).",
+    "Discovery URIs (busqueda?id=X, em_inffinanual, datosentidad, webservices/verdocumento, Consulta-IP/OIR) identical: XBRL 27/27, homepage 65/65, zero diffs.",
+    "webservices/verdocumento/ver?t=%7b<guid>%7d pattern stable (29 occurrences in both observations); individual GUIDs are dynamic.",
+    "No ordering changes, no session dependence, identical output for identical parameters."
+  ],
+  "limitations": [
+    "Observations within a ~20 min window; longer-horizon stability (menu/taxonomy changes) not covered."
+  ]
+}

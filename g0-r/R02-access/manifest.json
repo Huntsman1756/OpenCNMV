@@ -1,0 +1,40 @@
+{
+  "gate": "R2",
+  "name": "SOURCE_ACCESS_MECHANISM",
+  "status": "PASS",
+  "executed_at": "2026-09-14T22:15:14Z",
+  "code_commit": "n/a (no VCS in workspace)",
+  "inputs": [
+    "https://www.cnmv.es/portal/consultas/busqueda.aspx?id=25",
+    "https://www.cnmv.es/portal/consultas/busqueda.aspx?id=6",
+    "https://www.cnmv.es/ipps/default.aspx",
+    "https://www.cnmv.es/IPP/taxonomia/2019-01-01/ipp_2019-01-01.zip",
+    "https://www.cnmv.es/webservices/verdocumento/ver?t=%7b<guid>%7d",
+    "https://www.cnmv.es/portal/consultas/datosentidad.aspx?nif=A48265169"
+  ],
+  "outputs": [
+    "g0-r/R02-access/README.md",
+    "g0-r/R02-access/evidence/"
+  ],
+  "sha256": {
+    "busqueda-id25.html": "24BA29C5EB2A3B054F092EC4CF68C45325ABBA78DA93729915E37D437A0C0F8C",
+    "busqueda-id25-santander.html": "7AC458E0F739878E265543EE1990E21A5447D61434E0240CA70BFF6640A72D8F",
+    "busqueda-id25-bbva.html": "7AC458E0F739878E265543EE1990E21A5447D61434E0240CA70BFF6640A72D8F",
+    "busqueda-id6-bbva.html": "2360ABFF3ED7F1E56A0C10225763C4773A83DDE147C076AE8F8108D15870538F",
+    "ipps-default.html": "C3E8B605A5C1AF8C810FC4B6F3DD91DC945D1FDBBD9449E8A42F108F286942A7",
+    "xbrl-index.html": "6E7691D11A5A34BCB002B5D570D916EDBF82258CA12CCD57E73B9CCD9E5E5010",
+    "datosentidad-bbva.html": "75C207076B5E016AFB9BCC7C07BA58D9805D0A5448F8C2383026C8CC345741B1"
+  },
+  "findings": [
+    "Registry search (IFA id=25, interim id=6) is ASP.NET WebForms FORM_POST requiring __VIEWSTATE / __VIEWSTATEGENERATOR / __EVENTVALIDATION.",
+    "Only cookie set is IdiomaCNMV_ (serialized .NET language object); no ASP.NET_SessionId observed on the registry GET.",
+    "URL rewriting 302-redirects *.aspx to extensionless; a POST to the .aspx URL is followed as GET, dropping the body.",
+    "IPP XBRL tool (/ipps) is a separate ASP.NET AJAX app using jQuery $.ajax and ScriptResource.axd.",
+    "Taxonomy ZIP and raw artefact webservice are stateless DIRECT_URL (no cookies, no redirect, no session).",
+    "No anti-automation (captcha/rate-limit/403) observed; ~25 requests returned 200.",
+    "CRITICAL: bare WebForms postback to id=25/id=6 re-renders the search page with 0 result rows (verified with HttpClient and curl); response byte-identical across different denominations."
+  ],
+  "limitations": [
+    "The registry postback semantics were not fully reverse-engineered; exact per-filing retrieval not yet demonstrated. Hypotheses to test: session/__EVENTTARGET nuance, JS/AJAX wrapper, separate results endpoint, additional required fields."
+  ]
+}

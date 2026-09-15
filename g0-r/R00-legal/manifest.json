@@ -1,0 +1,38 @@
+{
+  "gate": "R0",
+  "name": "LEGAL_REUSE_REVIEW",
+  "status": "PASS",
+  "executed_at": "2026-09-14T22:15:14Z",
+  "code_commit": "n/a (no VCS in workspace)",
+  "inputs": [
+    "https://www.cnmv.es/portal/Utilidades/NotaLegal",
+    "https://www.cnmv.es/portal/Utilidades/Politica-Cookies",
+    "https://www.cnmv.es/robots.txt"
+  ],
+  "outputs": [
+    "g0-r/R00-legal/README.md",
+    "g0-r/R00-legal/evidence/nota-legal.html",
+    "g0-r/R00-legal/evidence/nota-legal.txt",
+    "g0-r/R00-legal/evidence/politica-cookies.html",
+    "g0-r/R00-legal/evidence/politica-cookies.txt",
+    "g0-r/R00-legal/evidence/robots.txt"
+  ],
+  "sha256": {
+    "nota-legal.html": "96C127DDCCB52E3582824612EC2B34F985F0E9C736D4CF16D3E11E712526FE1D",
+    "politica-cookies.html": "CEE34A0F601C87EBF2259C7729A1C7EA66D55554A2E3E13A7FFCD7AD7A126A84",
+    "robots.txt": "BEE2023C4A5B6017C2B5AF976793DB13370BCB684B68DC971BFCD7A005E1E39F"
+  },
+  "findings": [
+    "CNMV is the owner (CIF Q-2891005-G); information is informational-only with a broad disclaimer of liability.",
+    "CNMV is NOT responsible for the veracity of third-party filings delivered to comply with a legal obligation; registration only certifies completeness per the applicable rules.",
+    "Reuse: free private use allowed (incl. local/temporary copies).",
+    "Non-private use authorised only if: (1) reproduction is faithful/unmodified; (2) for paid distribution the buyer must be informed the data is free at source; (3) use for disseminated calculations is allowed; (4) no framing (links must open in an independent window).",
+    "robots.txt only disallows *.shtml; registry/artifact paths are not blocked for crawlers.",
+    "Portal uses third-party Google analytics/advertising cookies, but none are required for registry/artifact retrieval."
+  ],
+  "limitations": [
+    "Issuer-authored filings may carry third-party copyright not covered by CNMV's own reuse terms.",
+    "Ley 37/2007 (public-sector reuse) not reviewed in depth in this session.",
+    "Terms of sede.cnmv.gob.es and the /IPPS/ application not separately captured."
+  ]
+}

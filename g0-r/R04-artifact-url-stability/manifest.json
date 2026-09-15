@@ -1,0 +1,32 @@
+{
+  "gate": "R4",
+  "name": "ARTIFACT_URL_STABILITY",
+  "status": "FAIL",
+  "executed_at": "2026-09-14T22:15:14Z",
+  "code_commit": "n/a (no VCS in workspace)",
+  "inputs": [
+    "https://www.cnmv.es/webservices/verdocumento/ver?t=%7bb20b74da-e03d-4cd7-a8a3-0787d078dc0e%7d",
+    "https://www.cnmv.es/IPP/taxonomia/2019-01-01/ipp_2019-01-01.zip"
+  ],
+  "outputs": [
+    "g0-r/R04-artifact-url-stability/README.md",
+    "g0-r/R04-artifact-url-stability/evidence/guid_doc_run1.pdf",
+    "g0-r/R04-artifact-url-stability/evidence/guid_doc_run2.pdf",
+    "g0-r/R04-artifact-url-stability/evidence/ipp_2019-01-01_run1.zip",
+    "g0-r/R04-artifact-url-stability/evidence/ipp_2019-01-01_run2.zip"
+  ],
+  "sha256": {
+    "guid_doc_run1.pdf": "E78E3F2F44FB1AB79DC4F336FC9E9E5958183779CF378A8D1B7D64EF028E14F9",
+    "guid_doc_run2.pdf": "E78E3F2F44FB1AB79DC4F336FC9E9E5958183779CF378A8D1B7D64EF028E14F9",
+    "ipp_2019-01-01_run1.zip": "87C445220D9D046069793F84830C73B473F2B8CA9ADD4DA9F381532EA00D611E",
+    "ipp_2019-01-01_run2.zip": "87C445220D9D046069793F84830C73B473F2B8CA9ADD4DA9F381532EA00D611E"
+  },
+  "findings": [
+    "The verdocumento/ver?t={GUID} webservice and the static taxonomy ZIP (ipp_2019-01-01.zip) are stateless and SHA-256-stable across two fresh out-of-session downloads (E78E3F2F... / 87C44522...).",
+    "The GUID is a stable source identifier (candidate for source_filing_key / source_registration_no).",
+    "However these do not cover the two real corpus families: ESEF (ListadoIFA -> registro oficial -> consolidated iXBRL) and IPP (listaifi -> nreg -> detalleifialdia -> descargaxbrlipp.ashx). The ESEF consolidated iXBRL path reportedly serves via webservices/verdocumento/ver?e=<opaque-token>, a variant NOT tested here."
+  ],
+  "limitations": [
+    "FAIL because ARTIFACT_URL_STABILITY was only proven for one generic GUID artefact (a press/regulatory PDF, not a corpus filing) and one taxonomy ZIP. It was NOT proven for the two target corpus families (ESEF iXBRL and IPP XBRL). The ?e=<token> variant and the ?t={GUID} variant must each be tested out-of-session and across observations before declaring R4 stable. If ?e= changes per visit while still yielding the same bytes, R4 remains FAIL and the canonical identity must not rely on the URL."
+  ]
+}

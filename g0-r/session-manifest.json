@@ -1,0 +1,33 @@
+{
+  "session": "G0-R session 1 (R0-R4)",
+  "executed_at": "2026-09-14T22:15:14Z",
+  "code_commit": "n/a (no VCS in workspace)",
+  "corpus_scope": "SAN / BBVA / IBE; IFA-ESEF FY2024-FY2025; IPP Q1/H1/Q3/H2 2024-2026",
+  "gates": {
+    "R0": { "name": "LEGAL_REUSE_REVIEW", "status": "PASS" },
+    "R1": { "name": "SOURCE_DISCOVERY_EXACT", "status": "FAIL", "note": "surfaces identified but exact corpus enumeration -> artefact not proven" },
+    "R2": { "name": "SOURCE_ACCESS_MECHANISM", "status": "PASS", "note": "critical finding: registry search postback returns 0 rows under bare postback" },
+    "R3": { "name": "DISCOVERY_STABILITY", "status": "PASS" },
+    "R4": { "name": "ARTIFACT_URL_STABILITY", "status": "FAIL", "note": "proven for one generic GUID artefact + one taxonomy; not for ESEF iXBRL or IPP XBRL families" }
+  },
+  "checkpoint": "HOLD",
+  "checkpoint_reason": "Reuse viable (R0), discovery stable (R3), and artefact retrieval for known artefacts deterministic (R4 partial) all pass; blocked on proving exact corpus enumeration (R1) and target-family artefact URL stability (R4).",
+  "blocking_to_go": [
+    "Prove per-entity GET enumeration path (listaifi?nif= -> nreg -> descargaxbrlipp.ashx?t={GUID}; ListadoIFA?nif= -> registro oficial -> iXBRL) for SAN/BBVA/IBE.",
+    "Retrieve one real ESEF iXBRL and one IPP filing end-to-end, download twice out-of-session, compare SHA-256.",
+    "Characterise the ESEF ?e=<token> variant; if it changes per visit while yielding the same bytes, R4 remains FAIL and canonical identity must not rely on the URL."
+  ],
+  "known_source_risks": [
+    "Registry-search postback not yielding rows (likely bypassable via per-entity GET path, still unproven).",
+    "ESEF ?e=<token> stability untested.",
+    "Issuer-authored filings may carry third-party copyright not covered by CNMV reuse terms.",
+    "Entity sitemap is only a partial sample."
+  ],
+  "legal_constraints": [
+    "Free private use and faithful reproduction permitted (condition 1).",
+    "Use for disseminated calculations permitted (condition 3).",
+    "Paid distribution must inform buyers the data is free at source (condition 2).",
+    "No framing; links must open in an independent window (condition 4)."
+  ],
+  "reproducibility_result": "Artefact-level deterministic (SHA-256 stable, out-of-session) for one GUID artefact + one taxonomy. Full corpus recovery pending enumeration (R1) and target-family URL stability (R4)."
+}

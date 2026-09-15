@@ -1,0 +1,37 @@
+{
+  "gate": "R1",
+  "name": "SOURCE_DISCOVERY_EXACT",
+  "status": "FAIL",
+  "executed_at": "2026-09-14T22:15:14Z",
+  "code_commit": "n/a (no VCS in workspace)",
+  "inputs": [
+    "https://www.cnmv.es/portal/consultas/em_inffinanual.aspx?id=EE",
+    "https://www.cnmv.es/portal/consultas/busqueda.aspx?id=25",
+    "https://www.cnmv.es/portal/consultas/busqueda.aspx?id=6",
+    "https://www.cnmv.es/portal/xbrl/xbrl",
+    "https://www.cnmv.es/ipps/default.aspx",
+    "https://www.cnmv.es/portal/consultas/datosentidad.aspx?nif=A39000013",
+    "https://www.cnmv.es/portal/consultas/datosentidad.aspx?nif=A48265169",
+    "https://www.cnmv.es/portal/Search/Sitemap/sitemap_entidades.xml"
+  ],
+  "outputs": [
+    "g0-r/R01-discovery/README.md",
+    "g0-r/R01-discovery/evidence/"
+  ],
+  "sha256": {
+    "xbrl-index.html": "6E7691D11A5A34BCB002B5D570D916EDBF82258CA12CCD57E73B9CCD9E5E5010",
+    "ipps-default.html": "C3E8B605A5C1AF8C810FC4B6F3DD91DC945D1FDBBD9449E8A42F108F286942A7",
+    "datosentidad-bbva.html": "75C207076B5E016AFB9BCC7C07BA58D9805D0A5448F8C2383026C8CC345741B1",
+    "busqueda-id25.html": "24BA29C5EB2A3B054F092EC4CF68C45325ABBA78DA93729915E37D437A0C0F8C",
+    "ifa-em_inffinanual.html": "256014209A9DAD598E8B52B1A86D77543BFA8B02029D93A76A9BC247E260C43F",
+    "sitemap_entidades.xml": "00B5A8AA1C77D88C7836C316F7C208A68C37D453C4EE803833246CBB1AF00ACB"
+  },
+  "findings": [
+    "Surfaces identified: IFA/ESEF entrypoint em_inffinanual.aspx?id=EE -> busqueda.aspx?id=25; IPP/interim entrypoint busqueda.aspx?id=6; IPP XBRL tool /ipps/default.aspx; CNMV taxonomies under /IPP/taxonomia/<version>/; raw artefact webservice webservices/verdocumento/ver?t=%7b<guid>%7d.",
+    "Entity identity: SAN=A39000013 (BANCO SANTANDER, S.A.), BBVA=A48265169 (BANCO BILBAO VIZCAYA ARGENTARIA, S.A.). IBE identity fixed post-session to NIF A-48010615 / LEI 5QK37QC7NWOJ8D7WVQ45 (see docs/decisions).",
+    "A cleaner per-entity GET enumeration path was identified post-session: listaifi?nif= (IPP, via nreg -> detalleifialdia -> descargaxbrlipp.ashx?t={GUID}) and ListadoIFA?nif= (ESEF, via registro oficial -> individual/consolidado iXBRL). See docs/decisions/0002-*.md."
+  ],
+  "limitations": [
+    "FAIL because exact per-filing retrieval of the corpus (SAN/BBVA/IBE, FY2024-FY2025 ESEF, IPP H1/H2 2024-2026) was NOT demonstrated in this session. The general registry postback busqueda.aspx?id=25 / id=6 returned 0 rows for a denomination search (verified with HttpClient and curl), and the per-entity enumeration path (listaifi / ListadoIFA) was discovered after the session and is still unproven. Exact corpus enumeration is the R1 blocking criterion and remains open."
+  ]
+}
