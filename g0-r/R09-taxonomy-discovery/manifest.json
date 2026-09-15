@@ -5,7 +5,7 @@
   "executed_at": "2026-09-14T22:15:14Z",
   "code_commit": "n/a",
   "inputs": [
-    "g0-r/R07-raw-retrieval/artifact_manifest.json (21 artefacts)"
+    "g0-r/R07-raw-retrieval/artifact_manifest.json (27 artefacts)"
   ],
   "outputs": [
     "g0-r/R09-taxonomy-discovery/README.md",

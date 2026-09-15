@@ -89,6 +89,11 @@ G0-R verdict (after R17) is `GO`. The final verdict states are `GO` / `CONDITION
 - **Key finding:** the IPP `?t={GUID}` is ephemeral — re-downloading a stored `?t=` URL returns EMPTY. IPP must be re-resolved via `nreg` → detail → fresh GUID (discovery). Confirms R6 (`nreg` is the stable locator, not the URL).
 - **SAN extension taxonomy domain changed** between years (santanderbank.com FY2024 → santander.com FY2025).
 - R8 now verifies 27/27 MATCH on the complete inventory.
+- **Post-remediation audit fixes (evidence consistency):**
+  - `esef_components.json` `registro` corrected — the scraper's page-global `>(\d{5})<` had captured the **AUDITA column** (audit-report numbers: 18359/17877…), not the registro oficial. Verified per-row against preserved `ListadoIFA` evidence: SAN 20875/20509, BBVA 20854/20448, IBE 20934/20515. `remediate_esef.ps1` now parses registro+tokens from the same `<tr>`.
+  - `ESEF_COVER.source_registration_no` placeholders (`registro-SAN-FY2025`) corrected to the official registro in `artifact_manifest.json` and `sha256_verify.json`.
+  - `taxonomy_matrix.json` regenerated over the 27-artifact inventory (covers `XHTML_COVER_ONLY`; packages `ESEF_ZIP_PACKAGE` with `has_ix`/`schemaRef` observed inside each ZIP). FY2024 schemaRefs observed, not "analogous".
+  - R4 evidence files renamed: `esef-IBE-consolidated_run*.zip` etc. contained the **cover**, now `esef-*-cover_run*.zip`.
 
 ## Blocking findings
 

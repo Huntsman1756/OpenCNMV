@@ -6,7 +6,7 @@
   "code_commit": "n/a",
   "inputs": [
     "g0-r/R07-raw-retrieval/artifact_manifest.json",
-    "21 source URLs (IPP descargaxbrlipp.ashx?t={GUID}; ESEF webservices/verdocumento/ver?e=<token>)"
+    "27 artefacts (IPP re-resolved via nreg -> fresh ?t={GUID}; ESEF via stable ver?e=<token>)"
   ],
   "outputs": [
     "g0-r/R08-raw-sha256-stable/README.md",

@@ -33,13 +33,35 @@ foreach($a in $m){
         $rec.dependencies = "Arelle + CNMV IPP taxonomy package ($($rec.taxonomy_version))"
     } elseif($a.family -eq "ESEF"){
         $rec.is_zip = $isZip
-        $hasIx = $head.Contains("ix:"); $hasSr = $head.Contains("schemaRef")
-        $rec.content_kind = if($hasIx -or $hasSr){ "INLINE_XBRL_XHTML" } else { "XHTML_COVER_ONLY" }
-        $rec.schemaRef = [regex]::Match($head,'schemaRef[^>]*xlink:href="([^"]+)"').Groups[1].Value
-        $rec.has_ix = $hasIx; $rec.has_schemaRef = $hasSr
-        $rec.model = "ESEF (ESMA + issuer extension taxonomy)"
-        $rec.dependencies = "Arelle + ESMA ESEF base taxonomy + issuer extension taxonomy (see ZIP/Xbri package)"
-        $rec.note = "The downloaded ?e= artefact is the cover page (no inline XBRL). The iXBRL report (with schemaRef) and the ZIP/Xbri package are separate components in the same ListadoIFA row."
+        if($a.role -eq "ESEF_PACKAGE_ZIP_XBRL" -and $isZip){
+            Add-Type -AssemblyName System.IO.Compression.FileSystem
+            $z = [System.IO.Compression.ZipFile]::OpenRead($path)
+            $xhtml = $z.Entries | Where-Object { $_.FullName -match '/reports/.*\.xhtml$' } | Select-Object -First 1
+            $inner = ""
+            if($xhtml){
+                $reader = New-Object System.IO.StreamReader($xhtml.Open())
+                $inner = $reader.ReadToEnd(); $reader.Close()
+            }
+            $z.Dispose()
+            $hasIx = $inner.Contains("ix:"); $hasSr = $inner.Contains("schemaRef")
+            $rec.content_kind = "ESEF_ZIP_PACKAGE"
+            $rec.report_inside = if($xhtml){ $xhtml.FullName } else { "" }
+            $rec.schemaRef = [regex]::Match($inner,'schemaRef[^>]*xlink:href="([^"]+)"').Groups[1].Value
+            $rec.has_ix = $hasIx; $rec.has_schemaRef = $hasSr
+            $rec.model = "ESEF (ESMA + issuer extension taxonomy)"
+            $rec.dependencies = "Self-contained: iXBRL report + issuer extension taxonomy + META-INF inside the package"
+            $rec.note = "schemaRef observed in the embedded report ($($rec.report_inside))."
+        } else {
+            $hasIx = $head.Contains("ix:"); $hasSr = $head.Contains("schemaRef")
+            $rec.content_kind = if($hasIx -or $hasSr){ "INLINE_XBRL_XHTML" } else { "XHTML_COVER_ONLY" }
+            $rec.schemaRef = [regex]::Match($head,'schemaRef[^>]*xlink:href="([^"]+)"').Groups[1].Value
+            $rec.has_ix = $hasIx; $rec.has_schemaRef = $hasSr
+            $rec.model = "ESEF (ESMA + issuer extension taxonomy)"
+            $rec.dependencies = "Arelle + ESMA ESEF base taxonomy + issuer extension taxonomy (see ZIP/Xbri package)"
+            if(-not $hasIx -and -not $hasSr){
+                $rec.note = "The downloaded ?e= artefact is the cover page (no inline XBRL), served by the row's first component link. The iXBRL report (with schemaRef) and the ZIP/Xbri package are separate components in the same ListadoIFA row."
+            }
+        }
     }
     [void]$rows.Add($rec)
 }

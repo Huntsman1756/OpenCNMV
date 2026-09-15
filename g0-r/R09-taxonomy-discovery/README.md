@@ -45,20 +45,26 @@ dependencies. Output: `evidence/taxonomy_matrix.json` + `.csv`.
   distinction for R12.
 - Entity identifier scheme confirms issuer NIF: `http://www.cnmv.es/xbrl/ipp/<NIF>`.
 
-### ESEF (6 artefacts) — the downloaded `?e=` artefact is the **cover page**
+### ESEF (12 artefacts: 6 covers + 6 packages) — the row's first `?e=` artefact is the **cover page**
 
-- The R7 ESEF artefacts (`application/xhtml+xml`, `.zip`-named) are the **"Portada" (cover)**
-  component: **no `ix:` markers, no `schemaRef`** — pure XHTML.
-- The actual **inline-XBRL report** is a **separate component** in the same `ListadoIFA` row
-  ("Individual" / "Consolidada"), and the **ZIP/Xbri package** (real `application/zip`) carries the
-  extension taxonomy.
-- **Consolidated iXBRL `schemaRef` (issuer extension taxonomy), FY2025:**
-  - SAN: `http://www.santander.com/20251231/5493006QMFDDMYWIAM13-2025-12-31.xsd`
-  - BBVA: `http://www.bbva.es/20251231/K8MS7FD7N5Z2WQ51AZ71-2025-12-31.xsd`
-  - IBE: `http://www.iberdrola.com/20251231/5QK37QC7NWOJ8D7WVQ45-2025-12-31.xsd`
+- The `ESEF_COVER` artefacts (`application/xhtml+xml`, `.zip`-named) are the **"Portada" (cover)**
+  component, served by the row's first component link: **no `ix:` markers, no `schemaRef`** —
+  pure XHTML.
+- The actual **inline-XBRL report** ("Consolidada") is a **separate component** in the same
+  `ListadoIFA` row, and the **ZIP/Xbri package** (`ESEF_PACKAGE_ZIP_XBRL`, real `application/zip`)
+  carries the iXBRL + issuer extension taxonomy + META-INF. `has_ix`/`schemaRef` are observed
+  **inside** each preserved package.
+- **iXBRL `schemaRef` (issuer extension taxonomy) — OBSERVED for all 6 filings:**
+  - SAN FY2025: `http://www.santander.com/20251231/5493006QMFDDMYWIAM13-2025-12-31.xsd`
+  - SAN FY2024: `http://www.santanderbank.com/20241231/5493006QMFDDMYWIAM13-2024-12-31.xsd`
+  - BBVA FY2025: `http://www.bbva.es/20251231/K8MS7FD7N5Z2WQ51AZ71-2025-12-31.xsd`
+  - BBVA FY2024: `http://www.bbva.es/20241231/K8MS7FD7N5Z2WQ51AZ71-2024-12-31.xsd`
+  - IBE FY2025: `http://www.iberdrola.com/20251231/5QK37QC7NWOJ8D7WVQ45-2025-12-31.xsd`
+  - IBE FY2024: `http://www.iberdrola.com/20241231/5QK37QC7NWOJ8D7WVQ45-2024-12-31.xsd`
 - Each uses the ESMA ESEF base taxonomy + the issuer's **extension taxonomy** (domain = issuer,
-  date `20251231`, LEI-named). So the ESEF iXBRL report requires the issuer extension taxonomy
-  **and** the ESMA base taxonomy package for offline reconstruction.
+  date = fiscal-year end, LEI-named). **SAN's extension domain changed between years**
+  (`santanderbank.com` FY2024 → `santander.com` FY2025). The ESEF iXBRL report requires the issuer
+  extension taxonomy **and** the ESMA base taxonomy package for offline reconstruction.
 
 ## Findings
 
@@ -68,19 +74,23 @@ dependencies. Output: `evidence/taxonomy_matrix.json` + `.csv`.
 4. ESEF: cover page has no taxonomy; the iXBRL + ZIP/Xbri package (with the issuer extension
    taxonomy) are separate components. The XHTML cover alone is **insufficient** for offline
    reconstruction — the **ZIP/Xbri package (extension taxonomy) is a required dependency** → feeds
-   **R10** (raw/pinned with SHA-256). This is not a retroactive R7 failure; R7 correctly preserved
-   the raw bytes.
+   **R10** (raw/pinned with SHA-256). This finding reopened R4/R7/R8: R7 preserved the raw bytes
+   correctly but the artefact was misclassified (`ESEF_IXBRL` → `ESEF_COVER`) and the inventory
+   was incomplete (missing the iXBRL report and the package).
 
 ## Limitation
 
-The ESEF rows are characterised for FY2025; FY2024 uses the analogous `20241231` extension
-taxonomy. The extension taxonomy URLs are external (issuer domains) and must be fetched/pinned in
-R10 for offline determinism.
+The extension taxonomy URLs are external (issuer domains) and must be fetched/pinned in R10 for
+offline determinism.
 
 ## Evidence
 
-- `evidence/taxonomy_matrix.json`, `evidence/taxonomy_matrix.csv`
-- The SAN/BBVA consolidated iXBRL `schemaRef` values are recorded above (in the matrix/README);
-  the underlying 80 MB / 63 MB XHTML proof files were not retained in the repo (GitHub recommends
-  <50 MB) but are re-downloadable from the stable `?e=` token in `ListadoIFA`.
-- `g0-r/R07-raw-retrieval/artifact_manifest.json`, `taxonomy_discovery.ps1`
+- `evidence/taxonomy_matrix.json`, `evidence/taxonomy_matrix.csv` — 27 rows (15 IPP + 6
+  ESEF_COVER + 6 ESEF_PACKAGE_ZIP_XBRL); package rows carry `has_ix`/`schemaRef` observed from
+  the embedded report inside each preserved ZIP.
+- The consolidated iXBRL `schemaRef` values above are extracted from the preserved
+  `ESEF_PACKAGE_ZIP_XBRL` packages (offline-reproducible). The standalone consolidated XHTML
+  (28–118 MB) is not retained as a repo file but is re-downloadable from the stable `?e=` token
+  and preserved inside each package.
+- `g0-r/R07-raw-retrieval/artifact_manifest.json`, `esef_components.json`, `esef_packages.json`,
+  `taxonomy_discovery.ps1`

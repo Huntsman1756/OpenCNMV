@@ -29,27 +29,32 @@ foreach($iss in $issuers){
     Write-Output ("==== " + $t + " ====")
     $l = Get-Http "$Base/Portal/Consultas/IFA/ListadoIFA?id=0&lang=es&nif=$nif"
     $text = [System.Text.Encoding]::UTF8.GetString($l.bytes)
-    # extract all ?e= tokens in order (per row: Individual, Consolidada, ZIP/Xbri)
-    $toks = @([regex]::Matches($text,'ver\?e=([A-Za-z0-9%+/\-]+)') | ForEach-Object { $_.Groups[1].Value })
-    $regs = @([regex]::Matches($text,'(?i)>(\d{5})<') | ForEach-Object { $_.Groups[1].Value } | Select-Object -Unique)
-    Write-Output ("  tokens=" + $toks.Count + "  regs=" + ($regs -join ','))
-    # target: FY2025 = tokens[0..2], FY2024 = tokens[3..5]
-    $targets = @(
-        @{ year="FY2025"; base=0 },
-        @{ year="FY2024"; base=3 }
-    )
-    foreach($tg in $targets){
-        $b = $tg.base
-        $ind = $toks[$b]; $con = $toks[$b+1]; $zip = $toks[$b+2]
-        $reg = $regs[$b/3]  # registro official for this row
-        Write-Output ("  " + $tg.year + "  registro=" + $reg)
+    # Per-row parse: registro oficial cell + ?e= tokens must come from the SAME <tr>.
+    # (A page-global '>(\d{5})<' matches the AUDITA column links /AUDITA/<year>/<reg>.pdf,
+    #  not the registro oficial cell, which contains whitespace.)
+    $rowData = @{}
+    foreach($row in [regex]::Matches($text,'(?is)<tr[^>]*>(.*?)</tr>')){
+        $r = $row.Groups[1].Value
+        $dateM = [regex]::Match($r,'(?i)31/12/(\d{4})')
+        $rowToks = @([regex]::Matches($r,'ver\?e=([A-Za-z0-9%+/\-]+)') | ForEach-Object { $_.Groups[1].Value })
+        $regM = [regex]::Match($r,'<td[^>]*>\s*(\d{4,6})\s*</td>')
+        if($dateM.Success -and $rowToks.Count -ge 3 -and $regM.Success){
+            $rowData["FY" + $dateM.Groups[1].Value] = @{ reg=$regM.Groups[1].Value; toks=$rowToks }
+        }
+    }
+    Write-Output ("  rows mapped: " + $rowData.Keys.Count)
+    foreach($tg in @("FY2025","FY2024")){
+        if(-not $rowData.ContainsKey($tg)){ Write-Output ("  MISS row for " + $tg); continue }
+        $ind = $rowData[$tg].toks[0]; $con = $rowData[$tg].toks[1]; $zip = $rowData[$tg].toks[2]
+        $reg = $rowData[$tg].reg  # registro oficial from the same row
+        Write-Output ("  " + $tg + "  registro=" + $reg)
         # --- ZIP/Xbri package (raw, preserve) ---
         $zipUrl = "$Base/webservices/verdocumento/ver?e=$zip"
         $zm = Get-Http $zipUrl
-        $dest = Join-Path $OutDir ("esef-{0}-{1}-package.zip" -f $t, $tg.year)
+        $dest = Join-Path $OutDir ("esef-{0}-{1}-package.zip" -f $t, $tg)
         [System.IO.File]::WriteAllBytes($dest, $zm.bytes)
         $zsha = (Get-FileHash -LiteralPath $dest -Algorithm SHA256).Hash
-        [void]$components.Add([ordered]@{ role="ESEF_PACKAGE_ZIP_XBRL"; family="ESEF"; issuer=$t; year=$tg.year; registro=$reg; source_url=$zipUrl; media_type=$zm.media; byte_size=$zm.bytes.Length; sha256=$zsha; evidence_path=$dest })
+        [void]$components.Add([ordered]@{ role="ESEF_PACKAGE_ZIP_XBRL"; family="ESEF"; issuer=$t; year=$tg; registro=$reg; source_url=$zipUrl; media_type=$zm.media; byte_size=$zm.bytes.Length; sha256=$zsha; evidence_path=$dest })
         Write-Output ("    ZIP pkg bytes=" + $zm.bytes.Length + " sha=" + $zsha.Substring(0,12))
         # --- Consolidated iXBRL (real report) twice for R4 + schemaRef ---
         $conUrl = "$Base/webservices/verdocumento/ver?e=$con"
@@ -61,7 +66,7 @@ foreach($iss in $issuers){
         $sha2h = [System.BitConverter]::ToString($sha2).Replace("-","").ToLower()
         $head = [System.Text.Encoding]::UTF8.GetString($cm1.bytes,0,[Math]::Min(200000,$cm1.bytes.Length))
         $sr = [regex]::Match($head,'schemaRef[^>]*xlink:href="([^"]+)"').Groups[1].Value
-        [void]$components.Add([ordered]@{ role="IXBRL_CONSOLIDATED"; family="ESEF"; issuer=$t; year=$tg.year; registro=$reg; source_url=$conUrl; media_type=$cm1.media; byte_size=$cm1.bytes.Length; sha256_run1=$sha1h; sha256_run2=$sha2h; stable=($sha1h -eq $sha2h); schemaRef=$sr; evidence_path=$null })
+        [void]$components.Add([ordered]@{ role="IXBRL_CONSOLIDATED"; family="ESEF"; issuer=$t; year=$tg; registro=$reg; source_url=$conUrl; media_type=$cm1.media; byte_size=$cm1.bytes.Length; sha256_run1=$sha1h; sha256_run2=$sha2h; stable=($sha1h -eq $sha2h); schemaRef=$sr; evidence_path=$null })
         Write-Output ("    IXBRL con bytes=" + $cm1.bytes.Length + " sha_run1=" + $sha1h.Substring(0,12) + " stable=" + ($sha1h -eq $sha2h) + " schemaRef=" + $sr)
     }
 }

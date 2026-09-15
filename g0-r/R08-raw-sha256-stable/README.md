@@ -17,17 +17,24 @@ the source changed). Never silently overwrite prior bytes.
 
 ## Method
 
-`r8_verify.ps1` re-downloads each artefact in `artifact_manifest.json` (same `source_url`) in a
-fresh session and compares the SHA-256 with the run-1 hash recorded in the manifest.
+`r8_verify.ps1` re-downloads each artefact in `artifact_manifest.json` in a fresh session and
+compares the SHA-256 with the run-1 hash recorded in the manifest. ESEF artefacts use the stored
+stable `?e=` URL; IPP artefacts are re-resolved via `nreg` → detail → fresh `?t={GUID}` (the
+stored `?t=` is ephemeral and returns empty).
 
 ## Result
 
-**21 / 21 MATCH**, 0 mismatch, 0 errors.
+**27 / 27 MATCH**, 0 mismatch, 0 errors — on the complete corpus inventory.
 
-| Family | Count | Result |
+| Role | Count | Result |
 |---|---|---|
-| IPP (text/xml) | 15 | all MATCH |
-| ESEF (application/xhtml+xml) | 6 | all MATCH |
+| IPP_XBRL (`text/xml`) | 15 | all MATCH |
+| ESEF_COVER (`application/xhtml+xml`) | 6 | all MATCH |
+| ESEF_PACKAGE_ZIP_XBRL (`application/zip`) | 6 | all MATCH |
+
+The 6 `IXBRL_CONSOLIDATED` standalone reports were separately verified byte-stable out-of-session
+(run1 == run2) in the R4 remediation (`esef_components.json`); their raw lives inside the ZIP
+packages.
 
 Full per-artefact comparison in `evidence/sha256_verify.json` (`run1_sha256` vs `run2_sha256`,
 `match`).
@@ -35,8 +42,9 @@ Full per-artefact comparison in `evidence/sha256_verify.json` (`run1_sha256` vs 
 ## Findings
 
 - Every corpus artefact is **byte-stable** on re-download out-of-session.
-- Re-download of the IPP `descargaxbrlipp.ashx?t={GUID}` (ephemeral GUID) still yields the same
-  bytes as run 1 — confirming the `?t=` resolves deterministically to the same `?e=` + bytes.
+- The IPP `?t={GUID}` is **ephemeral**: re-downloading a stored `?t=` URL returned **EMPTY**.
+  IPP artefacts are re-resolved via `nreg` → detail → fresh GUID (discovery); the fresh GUID
+  yields the same bytes. This confirms R6: `nreg` is the stable IPP locator, not the URL.
 - No source drift detected in this window.
 
 ## Limitation

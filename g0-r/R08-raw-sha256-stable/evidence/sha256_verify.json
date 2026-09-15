@@ -52,7 +52,7 @@
     {
         "role":  "ESEF_COVER",
         "family":  "ESEF",
-        "source_registration_no":  "registro-SAN-FY2025",
+        "source_registration_no":  "20875",
         "source_url":  "https://www.cnmv.es/webservices/verdocumento/ver?e=CY8jX7ZdXl0lvualznPU%2b0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
         "run1_sha256":  "5CF07C654B3CBD417FA31A63A7439AA52EDE392B16978AB6B7E278110B029C46",
         "run2_sha256":  "5cf07c654b3cbd417fa31a63a7439aa52ede392b16978ab6b7e278110b029c46",
@@ -62,7 +62,7 @@
     {
         "role":  "ESEF_COVER",
         "family":  "ESEF",
-        "source_registration_no":  "registro-SAN-FY2024",
+        "source_registration_no":  "20509",
         "source_url":  "https://www.cnmv.es/webservices/verdocumento/ver?e=RH1Ws6BP9aowyEPSjG62z0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
         "run1_sha256":  "2A7D34AB864DB2726B5FB8CB5765D1923022695A7CC6D3DE56B0D66AD3E5B3D9",
         "run2_sha256":  "2a7d34ab864db2726b5fb8cb5765d1923022695a7cc6d3de56b0d66ad3e5b3d9",
@@ -122,7 +122,7 @@
     {
         "role":  "ESEF_COVER",
         "family":  "ESEF",
-        "source_registration_no":  "registro-BBVA-FY2025",
+        "source_registration_no":  "20854",
         "source_url":  "https://www.cnmv.es/webservices/verdocumento/ver?e=Dv50%2bpxUKEkKpGw7VEb9mEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
         "run1_sha256":  "D819FC69655C8F2B2F51AE7C89A73E5B58B1712EAB8ADA7D239D4661367FE7EB",
         "run2_sha256":  "d819fc69655c8f2b2f51ae7c89a73e5b58b1712eab8ada7d239d4661367fe7eb",
@@ -132,7 +132,7 @@
     {
         "role":  "ESEF_COVER",
         "family":  "ESEF",
-        "source_registration_no":  "registro-BBVA-FY2024",
+        "source_registration_no":  "20448",
         "source_url":  "https://www.cnmv.es/webservices/verdocumento/ver?e=j%2fZysp8VxgIh1g1cNKSGdUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
         "run1_sha256":  "54F2E8D5857D0523358408065975F040D53B05EDAE39FE1D338FC1EA4CB5074C",
         "run2_sha256":  "54f2e8d5857d0523358408065975f040d53b05edae39fe1d338fc1ea4cb5074c",
@@ -192,7 +192,7 @@
     {
         "role":  "ESEF_COVER",
         "family":  "ESEF",
-        "source_registration_no":  "registro-IBE-FY2025",
+        "source_registration_no":  "20934",
         "source_url":  "https://www.cnmv.es/webservices/verdocumento/ver?e=6MBEaFu8FI2yJlbD9ti8GUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
         "run1_sha256":  "1FF573FB7258AFD84BACFB4AA17BECA4261732E7F91BB8F638F5168CC8761B37",
         "run2_sha256":  "1ff573fb7258afd84bacfb4aa17beca4261732e7f91bb8f638f5168cc8761b37",
@@ -202,7 +202,7 @@
     {
         "role":  "ESEF_COVER",
         "family":  "ESEF",
-        "source_registration_no":  "registro-IBE-FY2024",
+        "source_registration_no":  "20515",
         "source_url":  "https://www.cnmv.es/webservices/verdocumento/ver?e=8iAjLypUlXcyOg1JmTML4kvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
         "run1_sha256":  "4CA0F7201E6C399FAD6350CB46F182AA579229D35F03D7CBC8F07DD165750416",
         "run2_sha256":  "4ca0f7201e6c399fad6350cb46f182aa579229d35f03d7cbc8f07dd165750416",

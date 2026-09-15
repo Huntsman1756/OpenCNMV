@@ -77,7 +77,7 @@
     {
         "role":  "ESEF_COVER",
         "family":  "ESEF",
-        "source_registration_no":  "registro-SAN-FY2025",
+        "source_registration_no":  "20875",
         "source_url":  "https://www.cnmv.es/webservices/verdocumento/ver?e=CY8jX7ZdXl0lvualznPU%2b0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
         "final_url":  "https://www.cnmv.es/webservices/verdocumento/ver?e=CY8jX7ZdXl0lvualznPU%2b0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
         "retrieved_at":  "2026-09-15T05:01:13Z",
@@ -88,12 +88,12 @@
         "set_cookie":  "",
         "sha256":  "5CF07C654B3CBD417FA31A63A7439AA52EDE392B16978AB6B7E278110B029C46",
         "evidence_path":  "g0-r\\R07-raw-retrieval\\evidence\\esef-SAN-FY2025.zip",
-        "note":  "reclassified from ESEF_IXBRL (was the Portada/cover, not iXBRL)"
+        "note":  "reclassified from ESEF_IXBRL (was the Portada/cover, not iXBRL); served by the first component link of the ListadoIFA row (column 'Individual'); source_registration_no corrected from placeholder to the registro oficial"
     },
     {
         "role":  "ESEF_COVER",
         "family":  "ESEF",
-        "source_registration_no":  "registro-SAN-FY2024",
+        "source_registration_no":  "20509",
         "source_url":  "https://www.cnmv.es/webservices/verdocumento/ver?e=RH1Ws6BP9aowyEPSjG62z0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
         "final_url":  "https://www.cnmv.es/webservices/verdocumento/ver?e=RH1Ws6BP9aowyEPSjG62z0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
         "retrieved_at":  "2026-09-15T05:01:22Z",
@@ -104,7 +104,7 @@
         "set_cookie":  "",
         "sha256":  "2A7D34AB864DB2726B5FB8CB5765D1923022695A7CC6D3DE56B0D66AD3E5B3D9",
         "evidence_path":  "g0-r\\R07-raw-retrieval\\evidence\\esef-SAN-FY2024.zip",
-        "note":  "reclassified from ESEF_IXBRL (was the Portada/cover, not iXBRL)"
+        "note":  "reclassified from ESEF_IXBRL (was the Portada/cover, not iXBRL); served by the first component link of the ListadoIFA row (column 'Individual'); source_registration_no corrected from placeholder to the registro oficial"
     },
     {
         "role":  "IPP_XBRL",
@@ -184,7 +184,7 @@
     {
         "role":  "ESEF_COVER",
         "family":  "ESEF",
-        "source_registration_no":  "registro-BBVA-FY2025",
+        "source_registration_no":  "20854",
         "source_url":  "https://www.cnmv.es/webservices/verdocumento/ver?e=Dv50%2bpxUKEkKpGw7VEb9mEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
         "final_url":  "https://www.cnmv.es/webservices/verdocumento/ver?e=Dv50%2bpxUKEkKpGw7VEb9mEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
         "retrieved_at":  "2026-09-15T05:01:38Z",
@@ -195,12 +195,12 @@
         "set_cookie":  "",
         "sha256":  "D819FC69655C8F2B2F51AE7C89A73E5B58B1712EAB8ADA7D239D4661367FE7EB",
         "evidence_path":  "g0-r\\R07-raw-retrieval\\evidence\\esef-BBVA-FY2025.zip",
-        "note":  "reclassified from ESEF_IXBRL (was the Portada/cover, not iXBRL)"
+        "note":  "reclassified from ESEF_IXBRL (was the Portada/cover, not iXBRL); served by the first component link of the ListadoIFA row (column 'Individual'); source_registration_no corrected from placeholder to the registro oficial"
     },
     {
         "role":  "ESEF_COVER",
         "family":  "ESEF",
-        "source_registration_no":  "registro-BBVA-FY2024",
+        "source_registration_no":  "20448",
         "source_url":  "https://www.cnmv.es/webservices/verdocumento/ver?e=j%2fZysp8VxgIh1g1cNKSGdUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
         "final_url":  "https://www.cnmv.es/webservices/verdocumento/ver?e=j%2fZysp8VxgIh1g1cNKSGdUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
         "retrieved_at":  "2026-09-15T05:01:44Z",
@@ -211,7 +211,7 @@
         "set_cookie":  "",
         "sha256":  "54F2E8D5857D0523358408065975F040D53B05EDAE39FE1D338FC1EA4CB5074C",
         "evidence_path":  "g0-r\\R07-raw-retrieval\\evidence\\esef-BBVA-FY2024.zip",
-        "note":  "reclassified from ESEF_IXBRL (was the Portada/cover, not iXBRL)"
+        "note":  "reclassified from ESEF_IXBRL (was the Portada/cover, not iXBRL); served by the first component link of the ListadoIFA row (column 'Individual'); source_registration_no corrected from placeholder to the registro oficial"
     },
     {
         "role":  "IPP_XBRL",
@@ -291,7 +291,7 @@
     {
         "role":  "ESEF_COVER",
         "family":  "ESEF",
-        "source_registration_no":  "registro-IBE-FY2025",
+        "source_registration_no":  "20934",
         "source_url":  "https://www.cnmv.es/webservices/verdocumento/ver?e=6MBEaFu8FI2yJlbD9ti8GUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
         "final_url":  "https://www.cnmv.es/webservices/verdocumento/ver?e=6MBEaFu8FI2yJlbD9ti8GUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
         "retrieved_at":  "2026-09-15T05:01:53Z",
@@ -302,12 +302,12 @@
         "set_cookie":  "",
         "sha256":  "1FF573FB7258AFD84BACFB4AA17BECA4261732E7F91BB8F638F5168CC8761B37",
         "evidence_path":  "g0-r\\R07-raw-retrieval\\evidence\\esef-IBE-FY2025.zip",
-        "note":  "reclassified from ESEF_IXBRL (was the Portada/cover, not iXBRL)"
+        "note":  "reclassified from ESEF_IXBRL (was the Portada/cover, not iXBRL); served by the first component link of the ListadoIFA row (column 'Individual'); source_registration_no corrected from placeholder to the registro oficial"
     },
     {
         "role":  "ESEF_COVER",
         "family":  "ESEF",
-        "source_registration_no":  "registro-IBE-FY2024",
+        "source_registration_no":  "20515",
         "source_url":  "https://www.cnmv.es/webservices/verdocumento/ver?e=8iAjLypUlXcyOg1JmTML4kvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
         "final_url":  "https://www.cnmv.es/webservices/verdocumento/ver?e=8iAjLypUlXcyOg1JmTML4kvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
         "retrieved_at":  "2026-09-15T05:01:56Z",
@@ -318,7 +318,7 @@
         "set_cookie":  "",
         "sha256":  "4CA0F7201E6C399FAD6350CB46F182AA579229D35F03D7CBC8F07DD165750416",
         "evidence_path":  "g0-r\\R07-raw-retrieval\\evidence\\esef-IBE-FY2024.zip",
-        "note":  "reclassified from ESEF_IXBRL (was the Portada/cover, not iXBRL)"
+        "note":  "reclassified from ESEF_IXBRL (was the Portada/cover, not iXBRL); served by the first component link of the ListadoIFA row (column 'Individual'); source_registration_no corrected from placeholder to the registro oficial"
     },
     {
         "role":  "ESEF_PACKAGE_ZIP_XBRL",
