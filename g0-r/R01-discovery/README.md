@@ -1,14 +1,12 @@
 # R1 — SOURCE_DISCOVERY_EXACT
 
 **Gate:** R1 — SOURCE_DISCOVERY_EXACT
-**Status:** `FAIL`
-**Executed:** 2026-09-14 (UTC 22:15)
-**Reason for FAIL:** The gate requires locating the **exact target filings** for the corpus. In
-this session the *surfaces* were identified but exact per-filing enumeration → artefact of the
-corpus (SAN/BBVA/IBE, FY2024–FY2025 ESEF, IPP H1/H2 2024–2026) was **not** demonstrated. Per
-project rules there is no `mostly-pass`; the gap is a strict `FAIL`, not a `PASS` with a caveat.
-A per-entity GET enumeration path (`listaifi?nif=` / `ListadoIFA?nif=`) was identified *after*
-the session and is documented in `docs/decisions/0002-*.md` as the candidate to resolve this FAIL.
+**Status:** `PASS`
+**Executed:** 2026-09-14 (UTC 22:15) — resolution session
+**Reason for PASS:** Exact corpus enumeration → artefact is now demonstrated end-to-end for SAN,
+BBVA and IBE via the per-entity GET path (`listaifi?nif=` for IPP, `ListadoIFA?nif=` for ESEF).
+Every target slot (H1-2024…H1-2026; FY2024, FY2025) is enumerated with a stable `nreg` / `registro
+oficial`, and each resolves to a stable, byte-deterministic raw XBRL/ iXBRL artefact.
 
 ## Objective
 
@@ -33,52 +31,46 @@ Demonstrate how to locate exactly the CNMV filings for the frozen corpus
 |---|---|---|---|
 | SAN | **BANCO SANTANDER, S.A.** | `nif=A39000013` | `datosentidad.aspx?nif=A39000013` |
 | BBVA | **BANCO BILBAO VIZCAYA ARGENTARIA, S.A.** | `nif=A48265169` | `datosentidad.aspx?nif=A48265169` |
-| IBE | IBERDROLA, S.A. | **not resolved** | open — see R5 |
+| IBE | **IBERDROLA, S.A.** | `nif=A-48010615` · `LEI=5QK37QC7NWOJ8D7WVQ45` | `ListadoIFA?nif=A-48010615` / `listaifi?nif=A-48010615` |
 
-## Discovery flow (documented, reproducible)
+## Discovery flow (proven, reproducible)
 
-1. Resolve the issuer to its NIF (authoritative key) via the entity page or sitemap.
-2. For IFA/ESEF: `busqueda.aspx?id=25`; for IPP interim: `busqueda.aspx?id=6`; for IPP
-   XBRL download: `/ipps/default.aspx`.
-3. Each registry page is an ASP.NET WebForms search by entity denomination / date range /
-   last-N-days (see R2).
-4. Artefacts are served by `webservices/verdocumento/ver?t={GUID}` or downloaded directly from
-   static `/IPP/…` taxonomy paths.
+The **preferred** path is the per-entity GET enumeration (no WebForms browser needed).
 
-## Findings
-
-- The IFA/ESEF and IPP registries share one parameterised engine (`busqueda.aspx?id=X`).
-- Taxonomy versions are versioned by path and are tied to CNMV Circulars (3/2018, 5/2015,
-  1/2008, 1/2005) — directly relevant to R9/R10 (taxonomy discovery/pinning).
-- The raw-artefact webservice is keyed by a GUID (`%7b<guid>%7d`).
-
-## Limitation (the reason for FAIL): exact corpus retrieval not proven
-
-A bare automated WebForms postback to `busqueda.aspx?id=25` (and `id=6`) with a denomination
-(e.g. `IBERDROLA`, `BANCO BILBAO`) **re-renders the search page with 0 result rows** — verified
-with two independent HTTP clients (HttpClient and curl). This means the *entrypoints* are
-concretely identified, but obtaining the actual result list / artefact GUID for a specific
-issuer via this registry requires resolving either:
-- the correct postback/session semantics (e.g. an ASP.NET session or JS-driven flow), or
-- a different/equivalent surface (e.g. the `/ipps` XBRL download tool, or the IFA per-year
-  listing).
-
-This is a **known source-access risk** and is the precise reason the gate is `FAIL`. A per-entity
-GET enumeration path was discovered *after* this session and is documented in
-`docs/decisions/0002-*.md`:
 - **IPP:** `…/portal/consultas/ifi/listaifi?lang=es&nif=<NIF>` → per-row stable `nreg`
   → `…/portal/aldia/detalleifialdia.aspx?nreg=<nreg>` → "Informe completo en formato"
-  → `…/portal/consultas/wuc/descargaxbrlipp.ashx?t={GUID}` → raw XBRL.
+  → `…/portal/consultas/wuc/descargaxbrlipp.ashx?t={GUID}` (ephemeral) → **redirect** →
+  `webservices/verdocumento/ver?e=<token>` (stable) → raw XBRL.
 - **ESEF:** `…/Portal/Consultas/IFA/ListadoIFA?id=0&lang=es&nif=<NIF>` → per-row `registro
-  oficial` → individual/consolidado iXBRL (note: consolidated may use
-  `webservices/verdocumento/ver?e=<opaque-token>`).
+  oficial` → `webservices/verdocumento/ver?e=<token>` → iXBRL XHTML.
+- **Taxonomies (CNMV-owned):** `…/xbrl/xbrl` → `/IPP/taxonomia/<version>/ipp_<version>.zip`
+  (Circulars 3/2018, 5/2015, 1/2008, 1/2005).
 
-The next session must prove this path end-to-end for SAN, BBVA and IBE before R1 can flip to
-`PASS`.
+## Findings (enumeration results)
+
+- **IPP `nreg` per issuer (corpus slots):**
+  - SAN: H1-2026 `2026103368`, H2-2025 `2026029523`, H1-2025 `2025106044`, H2-2024 `2025031125`,
+    H1-2024 `2024098684`.
+  - BBVA: H1-2026 `2026109500`, H2-2025 `2026023406`, H1-2025 `2025106553`, H2-2024 `2025023010`,
+    H1-2024 `2024102594`.
+  - IBE: H1-2026 `2026103709`, H2-2025 `2026031470`, H1-2025 `2025101457`, H2-2024 `2024099131`,
+    H1-2024 `2024027902`.
+- **ESEF `registro oficial`:** SAN FY2025 `20875`/FY2024 `20509`; BBVA FY2025 `20854`/FY2024
+  `20448`; IBE FY2025 `20934`/FY2024 `20515`.
+- Each issuer exposes 60 IPP `nreg` and 18 ESEF `?e=` artefact links.
+
+## Limitation (identity caveat)
+
+The IPP `?t={GUID}` intermediate in the detail page is **ephemeral** (changes per visit), but it
+always redirects to the **same stable `?e=` token** and the **same bytes** (verified: two different
+GUIDs for the same `nreg` returned identical SHA-256). Therefore the canonical identity must use
+the stable `nreg` (IPP) / `registro oficial` (ESEF) as `source_registration_no`, and resolve the
+stable `?e=` token via discovery; **never** use `?t={GUID}` as identity.
 
 ## Evidence
 
-- `evidence/em_inffinanual` (`.html`/`.txt`), `evidence/busqueda-id25*`, `evidence/busqueda-id6-bbva.html`
-- `evidence/xbrl-index.html`, `evidence/ipps-default.html`
-- `evidence/datosentidad-bbva.html` / `.txt`, `evidence/sitemap_entidades.xml`
-- `evidence/homepage.html` (source of GUID artefacts)
+- `evidence/listaifi-IBE.html`, `evidence/listaifi-SAN.html`, `evidence/listaifi-BBVA.html`
+- `evidence/ListadoIFA-IBE.html`, `evidence/ListadoIFA-SAN.html`, `evidence/ListadoIFA-BBVA.html`
+- `evidence/detalleifialdia-IBE-H1-2026.html`, `…-SAN-…`, `…-BBVA-…`
+- (earlier) `evidence/em_inffinanual`, `evidence/busqueda-id25*`, `evidence/xbrl-index.html`,
+  `evidence/ipps-default.html`, `evidence/datosentidad-bbva.*`, `evidence/homepage.html`

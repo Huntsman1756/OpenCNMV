@@ -13,10 +13,10 @@
 | Gate | Status |
 |---|---|
 | R0 — LEGAL_REUSE_REVIEW | **PASS** |
-| R1 — SOURCE_DISCOVERY_EXACT | **FAIL** (exact corpus enumeration not yet proven) |
+| R1 — SOURCE_DISCOVERY_EXACT | **PASS** (exact corpus enumeration → artefact proven via `listaifi`/`ListadoIFA`) |
 | R2 — SOURCE_ACCESS_MECHANISM | **PASS** (with a critical finding) |
 | R3 — DISCOVERY_STABILITY | **PASS** |
-| R4 — ARTIFACT_URL_STABILITY | **FAIL** (target artefact families not both proven) |
+| R4 — ARTIFACT_URL_STABILITY | **PASS** (both corpus families proven byte-stable out-of-session) |
 
 ---
 
@@ -56,70 +56,49 @@
 
 ## Checkpoint decision
 
-### `HOLD`
+### `GO`
 
-**Rationale.** Three of the four checkpoint foundations are clearly met:
+**Rationale (R0–R4 resolution session).** All four checkpoint foundations are met:
 
 1. **Reuse legally viable** — R0 PASS (private use + faithful reproduction + calculation use +
    no-framing conditions). No written agreement required for a source probe.
-2. **Discovery reproducible** — R3 PASS (entrypoints and identifiers stable across two
-   observations).
-3. **Artefacts recoverable reliably** — R4 PASS (artefact webservice and static taxonomy are
-   deterministic, stateless, and SHA-256-stable).
+2. **Discovery reproducible** — R3 PASS, reinforced this session: `ListadoIFA` is byte-identical
+   across observations and the 18 ESEF `?e=` tokens are identical between visits.
+3. **Access mechanism stable** — R2 PASS; the per-entity GET path (`listaifi`/`ListadoIFA`) is
+   deterministic and requires no WebForms postback, no session, no cookies.
+4. **Artefacts recoverable reliably** — R4 PASS: IPP raw XBRL and ESEF iXBRL are byte-stable
+   out-of-session for SAN, BBVA and IBE (identical SHA-256 across repeated downloads).
 
-The blocking item is the **discovery→artefact bridge for the actual corpus filings**:
+**Key finding of the resolution session:** the IPP `?t={GUID}` intermediate is **ephemeral**
+(changes per visit) but always redirects to the same stable `?e=` token and the same bytes.
+Therefore the canonical identity must use the stable `nreg` (IPP) / `registro oficial` (ESEF) as
+`source_registration_no`, never `?t={GUID}`. This is a model-level rule to carry into R5+.
 
-> A bare automated WebForms postback to `busqueda.aspx?id=25` / `id=6` (with correct
-> `__VIEWSTATE`/`__EVENTVALIDATION` and a denomination like `IBERDROLA` / `BANCO BILBAO`)
-> **re-renders the search page with 0 result rows** — verified with two independent HTTP clients
-> (HttpClient and curl). The response is byte-identical across different denominations, meaning
-> the search handler does not execute under a bare postback.
-
-Consequences:
-- I can retrieve a **known** artefact (given a GUID) and download a **known** taxonomy, but I
-  cannot yet **enumerate** the IFA/ESEF and IPP filings for SAN/BBVA/IBE to obtain their GUIDs.
-- Therefore the specific corpus filings (SAN/BBVA/IBE, FY2024–FY2025 ESEF, IPP quarters/H1/H2)
-  have **not yet been retrieved end-to-end** in this session.
-
-**What must be demonstrated to flip to `GO`:**
-1. Prove the per-entity GET enumeration path end-to-end for SAN, BBVA and IBE:
-   - **IPP:** `…/portal/consultas/ifi/listaifi?lang=es&nif=<NIF>` → stable `nreg`
-     → `…/portal/aldia/detalleifialdia.aspx?nreg=<nreg>` → "Informe completo en formato"
-     → `…/portal/consultas/wuc/descargaxbrlipp.ashx?t={GUID}` → raw XBRL.
-   - **ESEF:** `…/Portal/Consultas/IFA/ListadoIFA?id=0&lang=es&nif=<NIF>` → per-row
-     `registro oficial` → individual/consolidado iXBRL (note: consolidated may use
-     `webservices/verdocumento/ver?e=<opaque-token>`).
-2. Retrieve one real **ESEF iXBRL** and one **IPP** filing end-to-end for the corpus, hash them
-   out-of-session, and confirm byte-stability (R4/R8 groundwork). If the `?e=` token changes per
-   visit while returning the same bytes, R4 stays `FAIL` and the canonical identity must not rely
-   on the URL.
-3. Accept the corrected corpus (Q1/Q3 post-2021-05-03 are `NOT_REQUIRED_AS_IPP`; see
-   `docs/gates/G0-R.md`).
-
-These are targeted and likely resolvable; they are not structural showstoppers (the source is
-clearly usable at the artefact level), which is why the verdict is `HOLD`, not `STOP`.
+A `GO` authorises **G1 design**, not a full platform. R5 → R17 still remain to be executed within
+G0-R.
 
 ---
 
 ## Known source risks
 
-- **Registry-search postback not yielding rows** (R2 critical finding) — can likely be bypassed by
-  the per-entity GET path (`listaifi?nif=` / `ListadoIFA?nif=`), but that path is still unproven.
-- **ESEF `?e=<token>` stability** — the consolidated iXBRL may use an opaque token rather than the
-  `?t={GUID}`; must be tested before R4 can pass.
+- **Registry-search postback not yielding rows** (R2 critical finding) — **resolved** by using the
+  per-entity GET path (`listaifi?nif=` / `ListadoIFA?nif=`); the general WebForms search is
+  bypassed and should not be invested in.
+- **IPP `?t={GUID}` is ephemeral** — changes per visit; always redirects to a stable `?e=` token
+  and the same bytes. Canonical identity must use `nreg` / `registro oficial`, never `?t={GUID}`.
+- **Long-horizon token/URL drift** — to be monitored in R8 (RAW_SHA256_STABLE).
 - **Issuer-authored filings may carry third-party copyright** not covered by CNMV's reuse terms
   (R0 limitation).
 - **Entity sitemap is only a partial sample**, not a comprehensive issuer index.
 
 ## Known model risks
 
-- None blocking for R0–R4, but note: the artefact webservice key is a GUID (opaque), which may
-  not expose issuer/period/version directly — the mapping must be derived from the discovery
-  results once enumeration is solved.
 - `submission_kind` / `submission_scope` cannot be inferred from the discovery page alone; they
   must come from the artefact + applicable rules (deferred to the R13+ model work).
 - `expected_under_rule` must depend on `rule + effective_from + effective_to + superior_law +
   filing_period`, not just on Circular 3/2018 (Q1/Q3 post-2021-05-03 are not required).
+- The artefact identity mapping is: `source_registration_no` = `nreg` (IPP) / `registro oficial`
+  (ESEF); the per-artefact identifier is the stable `?e=` token.
 
 ## Evidence index
 
@@ -140,11 +119,8 @@ Probe scripts (reusable): `g0-r/_probe-logs/probe.ps1`, `cnmv-postback.ps1`,
 
 ## Recommendation
 
-**Hold and resolve R1/R4 only, via the per-entity GET path — do not invest in the WebForms POST.**
-Next session should: (a) freeze IBE identity (`NIF A-48010615`, `LEI 5QK37QC7NWOJ8D7WVQ45`);
-(b) probe `listaifi?nif=` and `ListadoIFA?nif=` for SAN, BBVA, IBE; (c) run the IPP chain
-`NIF → nreg → XBRL GUID` and the ESEF chain `NIF → registro oficial → consolidated iXBRL`
-end-to-end, downloading each twice out-of-session and comparing SHA-256; (d) inspect the `?e=`
-token behaviour; (e) repeat discovery and compare `nreg` / GUID / `e`-token / final bytes; (f)
-re-evaluate R1 and R4. Do **not** build product, UI, API, or MCP until enumeration + exact
-per-filing retrieval is demonstrated. Also update `docs/STATUS.md` at the end of each session.
+**Checkpoint is `GO` — proceed to R5 (within G0-R).** The R0–R4 probe is closed. Next work should
+begin the R5→R17 gates (issuer identity exact, source filing key, raw artefact retrieval,
+SHA-256 stability, taxonomy discovery/pinning, Arelle parsing, revision detection, determinism).
+Continue to follow `AGENTS.md` and `docs/gates/G0-R.md`; do **not** build product, UI, API, or MCP.
+Update `docs/STATUS.md` at the end of each session.

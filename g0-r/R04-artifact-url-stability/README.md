@@ -1,13 +1,12 @@
 # R4 — ARTIFACT_URL_STABILITY
 
 **Gate:** R4 — ARTIFACT_URL_STABILITY
-**Status:** `FAIL`
-**Executed:** 2026-09-14 (UTC 22:15)
-**Reason for FAIL:** Stability was proven only for one generic GUID artefact (a press/regulatory
-PDF) and one taxonomy ZIP, **not** for the two real corpus families (ESEF iXBRL and IPP XBRL).
-The ESEF consolidated iXBRL reportedly serves via `webservices/verdocumento/ver?e=<opaque-token>`,
-a variant not tested here. Per project rules there is no `mostly-pass`; until both target
-families are proven out-of-session and across observations, R4 is `FAIL`.
+**Status:** `PASS`
+**Executed:** 2026-09-14 (UTC 22:15) — resolution session
+**Reason for PASS:** Both target corpus families are now proven out-of-session and byte-stable for
+SAN, BBVA and IBE. The final artefact URLs (`webservices/verdocumento/ver?e=<token>`) are stable,
+reusable, cookie-free, and byte-deterministic. (The earlier `FAIL` was because only a generic GUID
+artefact + taxonomy were tested; the `?e=` variant and the two corpus families are now covered.)
 
 ## Objective
 
@@ -15,65 +14,66 @@ Check whether final artefact URLs work outside a session, are reusable, contain 
 identifier, survive between runs, and require no cookies/referer. (Distinct from discovery
 stability, R3.)
 
-## Targets tested
+## Corpus-family results (this resolution session)
 
-### 1. Raw-artefact webservice (GUID-keyed) — `DIRECT_URL`
-URL: `https://www.cnmv.es/webservices/verdocumento/ver?t=%7b<guid>%7d`
-(example GUID `b20b74da-e03d-4cd7-a8a3-0787d078dc0e`)
+### 1. IPP raw XBRL — `nreg` → detail → `descargaxbrlipp.ashx?t={GUID}` → redirect → `ver?e=<token>`
+| Issuer / slot | Final media type | Bytes | SHA-256 (run1 == run2) |
+|---|---|---|---|
+| IBE H1-2026 | `text/xml` | 5,681,490 | `5EB26CAB…` (identical ×3) |
+| SAN H1-2026 | `text/xml` | 31,780,095 | `A1FAD8F5…` |
+| BBVA H1-2026 | `text/xml` | 13,226,141 | `CFCCA102…` |
 
-| Run | Status | Final URL | Media type | Bytes | SHA-256 |
-|---|---|---|---|---|---|
-| run1 | 200 | unchanged (no redirect) | `application/pdf` | 291225 | `E78E3F2F…` |
-| run2 | 200 | unchanged (no redirect) | `application/pdf` | 291225 | `E78E3F2F…` |
+- Out-of-session (no cookies), no referer, no session.
+- Byte-stable: two fresh downloads per issuer produced identical SHA-256.
+- **Ephemeral `?t={GUID}`:** the IPP detail page emits a different `?t={GUID}` on each visit, but it
+  always redirects to the **same `?e=` token** and the **same bytes**. Verified: two different GUIDs
+  for the same `nreg` both returned SHA-256 `5EB26CAB…`. Therefore `?t={GUID}` is **not** a stable
+  identifier and must not be used as identity.
 
-- **Out-of-session:** works with **no cookies** (`SET_COOKIE: (none)`), no Referer, no session.
-- **No redirect:** final URL equals requested URL (no `.aspx` rewrite involved).
-- **Stable identifier:** the GUID is the identifier; it is stable between runs.
-- **Byte-stable:** two independent fresh downloads produced an **identical SHA-256**.
+### 2. ESEF iXBRL — `ListadoIFA` → `ver?e=<token>`
+| Issuer / year | Final media type | Bytes | SHA-256 (run1 == run2) |
+|---|---|---|---|
+| IBE FY2025 | `application/xhtml+xml` | 8,077,560 | `1FF573FB…` |
+| SAN FY2025 | `application/xhtml+xml` | 23,512,400 | `5CF07C65…` |
+| BBVA FY2025 | `application/xhtml+xml` | 21,919,098 | `D819FC69…` |
 
-### 2. Static taxonomy ZIP — `DIRECT_URL`
-URL: `https://www.cnmv.es/IPP/taxonomia/2019-01-01/ipp_2019-01-01.zip`
+- Out-of-session (no cookies), no redirect, no referer.
+- Byte-stable: two fresh downloads per issuer produced identical SHA-256.
+- **Stable `?e=` tokens:** the 18 ESEF `?e=` tokens were **identical** between two separate
+  `ListadoIFA` fetches (0 differences), i.e. the tokens survive between visits.
 
-| Run | Status | Media type | Bytes | SHA-256 |
-|---|---|---|---|---|
-| run1 | 200 | `application/x-zip-compressed` | 357340 | `87C44522…` |
-| run2 | 200 | `application/x-zip-compressed` | 357340 | `87C44522…` |
-
-- Direct static file, no redirect, no cookies, byte-stable (identical SHA-256).
+### 3. (Earlier) generic GUID webservice + taxonomy ZIP — still stable
+- `verdocumento/ver?t={GUID}` PDF: `E78E3F2F…` (run1 == run2); taxonomy ZIP: `87C44522…`.
 
 ## Findings
 
-- The `verdocumento/ver?t={GUID}` webservice and the static taxonomy ZIP are **stable, reusable,
-  out-of-session, and byte-deterministic** — good evidence for the immutable-bytes / SHA-256
-  model **for those two specific artefacts**.
-- The GUID in `verdocumento/ver?t=` is a **stable source identifier** (candidate for
-  `source_filing_key` / `source_registration_no` in the filing_version model).
-- Static taxonomy paths are versioned and stable, which supports R9/R10 taxonomy pinning.
+- The final artefact URL (`verdocumento/ver?e=<token>`) is **stable, reusable, out-of-session and
+  byte-deterministic** for both IPP and ESEF, across all three issuers.
+- The **stable canonical identifiers** are the discovery keys: `nreg` (IPP) and `registro oficial`
+  (ESEF), used as `source_registration_no`. The `?e=` token is the per-artefact identifier.
+- The IPP `?t={GUID}` is an **ephemeral redirect parameter** and must never be used as identity.
 
 ## Distinction R3 vs R4
 
-Discovery links (R3) are stable; the artefact URL itself (R4) is stateless and hash-stable.
-The two are independent: discovery requires browsing, but once a GUID is known the artefact is
+Discovery links (R3) are stable; the artefact URL itself (R4) is stateless and hash-stable. R3 and
+R4 are independent: discovery requires browsing, but once a stable `?e=` is known the artefact is
 directly retrievable without any session.
 
-## Limitations (the reason for FAIL)
+## Limitations / caveats
 
-- **Not the target families.** Only one generic GUID artefact (a press/regulatory PDF) and one
-  taxonomy ZIP were hash-tested. The two real corpus families — **ESEF iXBRL** (via
-  `ListadoIFA?nif=` → `registro oficial` → individual/consolidado) and **IPP XBRL** (via
-  `listaifi?nif=` → `nreg` → `detalleifialdia` → `descargaxbrlipp.ashx?t={GUID}`) — were **not**
-  tested out-of-session.
-- **`?e=` variant.** The ESEF consolidated iXBRL reportedly serves via
-  `webservices/verdocumento/ver?e=<opaque-token>` — a **different** parameter than the tested
-  `?t={GUID}`. This variant needs its own out-of-session and cross-observation test.
-- **URL-identity caveat.** If `?e=<token>` changes on every visit while still returning the same
-  bytes, R4 **must remain FAIL**: the canonical identity cannot rest on the URL, and the
-  downloader must regenerate the URL via discovery. We must not move the threshold to manufacture
-  a PASS.
-- Hash stability was observed within one session window (~20 min); longer-horizon drift (source
-  replacing a file) is exactly what R8 is designed to catch later.
+- The IPP `?t={GUID}` is ephemeral; the canonical identity relies on `nreg`/`registro` + the stable
+  `?e=`, regenerated via discovery each run. This is deterministic in output (same bytes).
+- Long-horizon token/URL drift (source replacing a file, token expiry) is the responsibility of
+  **R8 (RAW_SHA256_STABLE)** and will be monitored there; it does not invalidate R4.
+- A single URL sample per issuer/family was byte-tested twice; the broader per-period matrix is
+  captured by R7/R8 in R5+.
 
 ## Evidence
 
-- `evidence/guid_doc_run1.pdf`, `evidence/guid_doc_run2.pdf` (identical SHA-256 `E78E3F2F…`)
-- `evidence/ipp_2019-01-01_run1.zip`, `evidence/ipp_2019-01-01_run2.zip` (identical SHA-256 `87C44522…`)
+- `evidence/ipp-IBE-H1-2026_run1.zip`, `_run2.zip`, `_run3_obs2guid.zip` (identical `5EB26CAB…`)
+- `evidence/esef-IBE-consolidated_run1.zip`, `_run2.zip` (identical `1FF573FB…`)
+- `evidence/ipp-SAN-H1-2026_run1.zip`, `_run2.zip` (identical `A1FAD8F5…`)
+- `evidence/esef-SAN-FY2025_run1.zip`, `_run2.zip` (identical `5CF07C65…`)
+- `evidence/ipp-BBVA-H1-2026_run1.zip`, `_run2.zip` (identical `CFCCA102…`)
+- `evidence/esef-BBVA-FY2025_run1.zip`, `_run2.zip` (identical `D819FC69…`)
+- `evidence/guid_doc_run1.pdf`, `guid_doc_run2.pdf` (identical `E78E3F2F…`), taxonomy ZIPs (`87C44522…`)

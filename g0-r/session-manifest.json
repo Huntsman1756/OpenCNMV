@@ -5,21 +5,17 @@
   "corpus_scope": "SAN / BBVA / IBE; IFA-ESEF FY2024-FY2025; IPP Q1/H1/Q3/H2 2024-2026",
   "gates": {
     "R0": { "name": "LEGAL_REUSE_REVIEW", "status": "PASS" },
-    "R1": { "name": "SOURCE_DISCOVERY_EXACT", "status": "FAIL", "note": "surfaces identified but exact corpus enumeration -> artefact not proven" },
-    "R2": { "name": "SOURCE_ACCESS_MECHANISM", "status": "PASS", "note": "critical finding: registry search postback returns 0 rows under bare postback" },
+    "R1": { "name": "SOURCE_DISCOVERY_EXACT", "status": "PASS", "note": "exact corpus enumeration -> artefact proven via listaifi/ListadoIFA for SAN/BBVA/IBE" },
+    "R2": { "name": "SOURCE_ACCESS_MECHANISM", "status": "PASS", "note": "critical finding resolved: use per-entity GET path, bypass general WebForms postback" },
     "R3": { "name": "DISCOVERY_STABILITY", "status": "PASS" },
-    "R4": { "name": "ARTIFACT_URL_STABILITY", "status": "FAIL", "note": "proven for one generic GUID artefact + one taxonomy; not for ESEF iXBRL or IPP XBRL families" }
+    "R4": { "name": "ARTIFACT_URL_STABILITY", "status": "PASS", "note": "IPP raw XBRL + ESEF iXBRL byte-stable out-of-session for all three issuers" }
   },
-  "checkpoint": "HOLD",
-  "checkpoint_reason": "Reuse viable (R0), discovery stable (R3), and artefact retrieval for known artefacts deterministic (R4 partial) all pass; blocked on proving exact corpus enumeration (R1) and target-family artefact URL stability (R4).",
-  "blocking_to_go": [
-    "Prove per-entity GET enumeration path (listaifi?nif= -> nreg -> descargaxbrlipp.ashx?t={GUID}; ListadoIFA?nif= -> registro oficial -> iXBRL) for SAN/BBVA/IBE.",
-    "Retrieve one real ESEF iXBRL and one IPP filing end-to-end, download twice out-of-session, compare SHA-256.",
-    "Characterise the ESEF ?e=<token> variant; if it changes per visit while yielding the same bytes, R4 remains FAIL and canonical identity must not rely on the URL."
-  ],
+  "checkpoint": "GO",
+  "checkpoint_reason": "All four foundations met: reuse viable (R0), discovery reproducible (R3 + enumeration stable), access mechanism stable (R2, per-entity GET), artefacts recoverable reliably (R4 byte-stable out-of-session). GO authorises G1 design, not a full platform.",
+  "blocking_to_go": [],
   "known_source_risks": [
-    "Registry-search postback not yielding rows (likely bypassable via per-entity GET path, still unproven).",
-    "ESEF ?e=<token> stability untested.",
+    "IPP ?t={GUID} is ephemeral; canonical identity must use nreg / registro oficial, never ?t={GUID}.",
+    "Long-horizon token/URL drift to be monitored in R8.",
     "Issuer-authored filings may carry third-party copyright not covered by CNMV reuse terms.",
     "Entity sitemap is only a partial sample."
   ],
@@ -29,5 +25,5 @@
     "Paid distribution must inform buyers the data is free at source (condition 2).",
     "No framing; links must open in an independent window (condition 4)."
   ],
-  "reproducibility_result": "Artefact-level deterministic (SHA-256 stable, out-of-session) for one GUID artefact + one taxonomy. Full corpus recovery pending enumeration (R1) and target-family URL stability (R4)."
+  "reproducibility_result": "IPP raw XBRL and ESEF iXBRL are byte-deterministic out-of-session for SAN, BBVA and IBE (identical SHA-256 across repeated downloads)."
 }

@@ -1,7 +1,7 @@
 {
   "gate": "R4",
   "name": "ARTIFACT_URL_STABILITY",
-  "status": "FAIL",
+  "status": "PASS",
   "executed_at": "2026-09-14T22:15:14Z",
   "code_commit": "n/a (no VCS in workspace)",
   "inputs": [
@@ -10,23 +10,44 @@
   ],
   "outputs": [
     "g0-r/R04-artifact-url-stability/README.md",
-    "g0-r/R04-artifact-url-stability/evidence/guid_doc_run1.pdf",
-    "g0-r/R04-artifact-url-stability/evidence/guid_doc_run2.pdf",
-    "g0-r/R04-artifact-url-stability/evidence/ipp_2019-01-01_run1.zip",
-    "g0-r/R04-artifact-url-stability/evidence/ipp_2019-01-01_run2.zip"
+    "g0-r/R04-artifact-url-stability/evidence/ipp-IBE-H1-2026_run1.zip",
+    "g0-r/R04-artifact-url-stability/evidence/ipp-IBE-H1-2026_run2.zip",
+    "g0-r/R04-artifact-url-stability/evidence/ipp-IBE-H1-2026_run3_obs2guid.zip",
+    "g0-r/R04-artifact-url-stability/evidence/esef-IBE-consolidated_run1.zip",
+    "g0-r/R04-artifact-url-stability/evidence/esef-IBE-consolidated_run2.zip",
+    "g0-r/R04-artifact-url-stability/evidence/ipp-SAN-H1-2026_run1.zip",
+    "g0-r/R04-artifact-url-stability/evidence/ipp-SAN-H1-2026_run2.zip",
+    "g0-r/R04-artifact-url-stability/evidence/esef-SAN-FY2025_run1.zip",
+    "g0-r/R04-artifact-url-stability/evidence/esef-SAN-FY2025_run2.zip",
+    "g0-r/R04-artifact-url-stability/evidence/ipp-BBVA-H1-2026_run1.zip",
+    "g0-r/R04-artifact-url-stability/evidence/ipp-BBVA-H1-2026_run2.zip",
+    "g0-r/R04-artifact-url-stability/evidence/esef-BBVA-FY2025_run1.zip",
+    "g0-r/R04-artifact-url-stability/evidence/esef-BBVA-FY2025_run2.zip"
   ],
   "sha256": {
-    "guid_doc_run1.pdf": "E78E3F2F44FB1AB79DC4F336FC9E9E5958183779CF378A8D1B7D64EF028E14F9",
-    "guid_doc_run2.pdf": "E78E3F2F44FB1AB79DC4F336FC9E9E5958183779CF378A8D1B7D64EF028E14F9",
-    "ipp_2019-01-01_run1.zip": "87C445220D9D046069793F84830C73B473F2B8CA9ADD4DA9F381532EA00D611E",
-    "ipp_2019-01-01_run2.zip": "87C445220D9D046069793F84830C73B473F2B8CA9ADD4DA9F381532EA00D611E"
+    "ipp-IBE-H1-2026_run1.zip": "5EB26CAB15C58FC6D06A87609E63C5720672118FC7C0A8981E5CFF0F5CC54C2E",
+    "ipp-IBE-H1-2026_run2.zip": "5EB26CAB15C58FC6D06A87609E63C5720672118FC7C0A8981E5CFF0F5CC54C2E",
+    "ipp-IBE-H1-2026_run3_obs2guid.zip": "5EB26CAB15C58FC6D06A87609E63C5720672118FC7C0A8981E5CFF0F5CC54C2E",
+    "esef-IBE-consolidated_run1.zip": "1FF573FB7258AFD84BACFB4AA17BECA4261732E7F91BB8F638F5168CC8761B37",
+    "esef-IBE-consolidated_run2.zip": "1FF573FB7258AFD84BACFB4AA17BECA4261732E7F91BB8F638F5168CC8761B37",
+    "ipp-SAN-H1-2026_run1.zip": "A1FAD8F54BD698B90BE2EDC797190467AA94A16A13426CAE92D96D9F21085434",
+    "ipp-SAN-H1-2026_run2.zip": "A1FAD8F54BD698B90BE2EDC797190467AA94A16A13426CAE92D96D9F21085434",
+    "esef-SAN-FY2025_run1.zip": "5CF07C654B3CBD417FA31A63A7439AA52EDE392B16978AB6B7E278110B029C46",
+    "esef-SAN-FY2025_run2.zip": "5CF07C654B3CBD417FA31A63A7439AA52EDE392B16978AB6B7E278110B029C46",
+    "ipp-BBVA-H1-2026_run1.zip": "CFCCA1026C85D8C787A9773E9C061F0DE9C5BD4084C49247E5F39F73DFFB0A56",
+    "ipp-BBVA-H1-2026_run2.zip": "CFCCA1026C85D8C787A9773E9C061F0DE9C5BD4084C49247E5F39F73DFFB0A56",
+    "esef-BBVA-FY2025_run1.zip": "D819FC69655C8F2B2F51AE7C89A73E5B58B1712EAB8ADA7D239D4661367FE7EB",
+    "esef-BBVA-FY2025_run2.zip": "D819FC69655C8F2B2F51AE7C89A73E5B58B1712EAB8ADA7D239D4661367FE7EB"
   },
   "findings": [
-    "The verdocumento/ver?t={GUID} webservice and the static taxonomy ZIP (ipp_2019-01-01.zip) are stateless and SHA-256-stable across two fresh out-of-session downloads (E78E3F2F... / 87C44522...).",
-    "The GUID is a stable source identifier (candidate for source_filing_key / source_registration_no).",
-    "However these do not cover the two real corpus families: ESEF (ListadoIFA -> registro oficial -> consolidated iXBRL) and IPP (listaifi -> nreg -> detalleifialdia -> descargaxbrlipp.ashx). The ESEF consolidated iXBRL path reportedly serves via webservices/verdocumento/ver?e=<opaque-token>, a variant NOT tested here."
+    "IPP raw XBRL (via nreg -> detail -> descargaxbrlipp.ashx?t={GUID} -> redirect -> ver?e=<token>) is byte-stable out-of-session for SAN, BBVA and IBE: two fresh downloads produced identical SHA-256 each.",
+    "ESEF iXBRL (via ListadoIFA -> ver?e=<token>) is byte-stable out-of-session for SAN, BBVA and IBE: two fresh downloads produced identical SHA-256 each.",
+    "The ?e= tokens are STABLE across visits: the 18 ESEF tokens were identical between two separate fetches (0 differences).",
+    "The IPP ?t={GUID} intermediate is EPHEMERAL (changes per visit) but always redirects to the SAME stable ?e= token and the SAME bytes: two different GUIDs for the same nreg returned identical SHA-256 (5EB26CAB...).",
+    "No cookies, no referer, no session required; final ?e= URLs are reusable and byte-deterministic."
   ],
   "limitations": [
-    "FAIL because ARTIFACT_URL_STABILITY was only proven for one generic GUID artefact (a press/regulatory PDF, not a corpus filing) and one taxonomy ZIP. It was NOT proven for the two target corpus families (ESEF iXBRL and IPP XBRL). The ?e=<token> variant and the ?t={GUID} variant must each be tested out-of-session and across observations before declaring R4 stable. If ?e= changes per visit while still yielding the same bytes, R4 remains FAIL and the canonical identity must not rely on the URL."
+    "The ephemeral IPP ?t={GUID} must NOT be used as canonical identity; use the stable nreg (IPP) / registro oficial (ESEF) as source_registration_no and resolve the stable ?e= via discovery.",
+    "Long-horizon token/URL drift is the responsibility of R8 (RAW_SHA256_STABLE) and will be monitored there."
   ]
 }

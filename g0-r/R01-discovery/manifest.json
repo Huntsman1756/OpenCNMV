@@ -1,7 +1,7 @@
 {
   "gate": "R1",
   "name": "SOURCE_DISCOVERY_EXACT",
-  "status": "FAIL",
+  "status": "PASS",
   "executed_at": "2026-09-14T22:15:14Z",
   "code_commit": "n/a (no VCS in workspace)",
   "inputs": [
@@ -16,22 +16,36 @@
   ],
   "outputs": [
     "g0-r/R01-discovery/README.md",
-    "g0-r/R01-discovery/evidence/"
+    "g0-r/R01-discovery/evidence/listaifi-IBE.html",
+    "g0-r/R01-discovery/evidence/listaifi-SAN.html",
+    "g0-r/R01-discovery/evidence/listaifi-BBVA.html",
+    "g0-r/R01-discovery/evidence/ListadoIFA-IBE.html",
+    "g0-r/R01-discovery/evidence/ListadoIFA-SAN.html",
+    "g0-r/R01-discovery/evidence/ListadoIFA-BBVA.html",
+    "g0-r/R01-discovery/evidence/detalleifialdia-IBE-H1-2026.html",
+    "g0-r/R01-discovery/evidence/detalleifialdia-SAN-H1-2026.html",
+    "g0-r/R01-discovery/evidence/detalleifialdia-BBVA-H1-2026.html"
   ],
   "sha256": {
-    "xbrl-index.html": "6E7691D11A5A34BCB002B5D570D916EDBF82258CA12CCD57E73B9CCD9E5E5010",
-    "ipps-default.html": "C3E8B605A5C1AF8C810FC4B6F3DD91DC945D1FDBBD9449E8A42F108F286942A7",
-    "datosentidad-bbva.html": "75C207076B5E016AFB9BCC7C07BA58D9805D0A5448F8C2383026C8CC345741B1",
-    "busqueda-id25.html": "24BA29C5EB2A3B054F092EC4CF68C45325ABBA78DA93729915E37D437A0C0F8C",
-    "ifa-em_inffinanual.html": "256014209A9DAD598E8B52B1A86D77543BFA8B02029D93A76A9BC247E260C43F",
-    "sitemap_entidades.xml": "00B5A8AA1C77D88C7836C316F7C208A68C37D453C4EE803833246CBB1AF00ACB"
+    "listaifi-IBE.html": "2EEB6535062D2957937FFF98141B3251E0A6274121278ABCD02E1AFA7B593C84",
+    "listaifi-SAN.html": "C697E6B362242140D3450BFECFC0DF28CD814CB6877A9842ECE7815835EF6220",
+    "listaifi-BBVA.html": "BFA74243C60A74628FC4C9152102B14D7A492458B75A721ADDDAD95A8B7043A2",
+    "ListadoIFA-IBE.html": "1D06E2FC12CA615D72277FA103E07C24382AA29FBC0AE3A5F6B69FF35911788A",
+    "ListadoIFA-SAN.html": "F4BFF1D7CCBE13F32464866710B9DFF50F070A0398E89215174ED19B8CB66844",
+    "ListadoIFA-BBVA.html": "62A646D581EF2A4CC58F4407E98806B42B866BE28D5CB17A3A23705A536E8DA5",
+    "detalleifialdia-IBE-H1-2026.html": "5739E031A31F8ED039460958FCF41C9AABCF313332439D44E384BAD00FC9648E",
+    "detalleifialdia-SAN-H1-2026.html": "D91103C2DF49B6783FBA213FEA874738B59C951A8E27D4F0462B1DB314EDF19C",
+    "detalleifialdia-BBVA-H1-2026.html": "2610293989F84CFEAE85CBBCEF6957BC6A1E5D824A42B54EA40A9736581BBD03"
   },
   "findings": [
-    "Surfaces identified: IFA/ESEF entrypoint em_inffinanual.aspx?id=EE -> busqueda.aspx?id=25; IPP/interim entrypoint busqueda.aspx?id=6; IPP XBRL tool /ipps/default.aspx; CNMV taxonomies under /IPP/taxonomia/<version>/; raw artefact webservice webservices/verdocumento/ver?t=%7b<guid>%7d.",
-    "Entity identity: SAN=A39000013 (BANCO SANTANDER, S.A.), BBVA=A48265169 (BANCO BILBAO VIZCAYA ARGENTARIA, S.A.). IBE identity fixed post-session to NIF A-48010615 / LEI 5QK37QC7NWOJ8D7WVQ45 (see docs/decisions).",
-    "A cleaner per-entity GET enumeration path was identified post-session: listaifi?nif= (IPP, via nreg -> detalleifialdia -> descargaxbrlipp.ashx?t={GUID}) and ListadoIFA?nif= (ESEF, via registro oficial -> individual/consolidado iXBRL). See docs/decisions/0002-*.md."
+    "Per-entity GET enumeration works for all three issuers via listaifi?nif= (IPP) and ListadoIFA?nif= (ESEF).",
+    "IPP enumeration (listaifi) returns a stable nreg per period: SAN/BBVA/IBE each expose 60 unique nreg, including the corpus slots H1-2024..H1-2026.",
+    "ESEF enumeration (ListadoIFA) returns a stable registro oficial per year: SAN FY2025=20875/FY2024=20509, BBVA FY2025=20854/FY2024=20448, IBE FY2025=20934/FY2024=20515.",
+    "Artefact chain: IPP = nreg -> detalleifialdia.aspx?nreg=<nreg> -> descargaxbrlipp.ashx?t={GUID} (ephemeral) -> redirect -> webservices/verdocumento/ver?e=<token> (stable) -> raw XML. ESEF = registro oficial -> webservices/verdocumento/ver?e=<token> -> iXBRL XHTML.",
+    "IBE identity: NIF A-48010615, LEI 5QK37QC7NWOJ8D7WVQ45. SAN=A39000013, BBVA=A48265169.",
+    "Exact corpus slots (H1-2024, H2-2024, H1-2025, H2-2025, H1-2026; FY2024, FY2025) are all enumerated for SAN, BBVA and IBE."
   ],
   "limitations": [
-    "FAIL because exact per-filing retrieval of the corpus (SAN/BBVA/IBE, FY2024-FY2025 ESEF, IPP H1/H2 2024-2026) was NOT demonstrated in this session. The general registry postback busqueda.aspx?id=25 / id=6 returned 0 rows for a denomination search (verified with HttpClient and curl), and the per-entity enumeration path (listaifi / ListadoIFA) was discovered after the session and is still unproven. Exact corpus enumeration is the R1 blocking criterion and remains open."
+    "The IPP ?t={GUID} intermediate is ephemeral (changes per visit) and must NOT be used as canonical identity; use the stable nreg (IPP) / registro oficial (ESEF) as source_registration_no and resolve the stable ?e= token via discovery."
   ]
 }
