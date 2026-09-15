@@ -25,7 +25,8 @@ R6  PASS    # source filing key: nreg/registro = logical filing (best observed);
 R7  PASS    # RAW_ARTIFACT_RETRIEVAL (remediated): 27 raw artefacts (15 IPP + 6 ESEF_COVER + 6 ESEF_PACKAGE_ZIP_XBRL); components enumerated
 R8  PASS    # RAW_SHA256_STABLE (remediated): 27/27 MATCH on complete inventory; IPP re-resolved via nreg
 R9  PASS    # TAXONOMY_DISCOVERY (remediated): IPP 2019-01-01 (ipp_en vs ipp_ge); ESEF FY2024+FY2025 schemaRefs observed; SAN domain changed
-R10-R17  NOT_RUN
+R10 PASS    # TAXONOMY_PINNING: CNMV IPP 2019-01-01 + ESMA ESEF 2022-03-24 (FY2024) / 2024-03-27 (FY2025) + 8 xbrl.org files + 6 issuer extensions pinned; Arelle 2.44.0
+R11-R17  NOT_RUN
 ```
 
 ## Checkpoint
@@ -128,10 +129,10 @@ IBE  IBERDROLA, S.A.                       nif=A-48010615  LEI=5QK37QC7NWOJ8D7WV
 
 ## Next action
 
-Proceed to **R10** (within G0-R), following `AGENTS.md` and `docs/gates/G0-R.md`:
-`R10 TAXONOMY_PINNING → R11/R12 Arelle parse → R13 revisions → R14/R15 determinism → R16 oracle
-reconciliation → R17 H2 vs ESEF`. Do **not** build product, UI, API, or MCP. G1 is not touched until
-R17 is closed.
+Proceed to **R11** (within G0-R), following `AGENTS.md` and `docs/gates/G0-R.md`:
+`R11 ESEF Arelle parse → R12 IPP Arelle parse (credit vs general model, H1/H2) → R13 revisions →
+R14/R15 determinism → R16 oracle reconciliation → R17 H2 vs ESEF`. Do **not** build product, UI,
+API, or MCP. G1 is not touched until R17 is closed.
 
 ## Session hygiene
 

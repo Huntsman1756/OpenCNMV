@@ -1,0 +1,36 @@
+{
+  "gate": "R10",
+  "name": "TAXONOMY_PINNING",
+  "status": "PASS",
+  "executed_at": "2026-09-15T00:00:00Z",
+  "code_commit": "n/a",
+  "inputs": [
+    "g0-r/R07-raw-retrieval/esef_components.json (observed schemaRef/imports)",
+    "g0-r/R04-artifact-url-stability/evidence/ipp_2019-01-01_run1.zip (preserved CNMV package)",
+    "https://www.esma.europa.eu/sites/default/files/2023-12/esef_taxonomy_2022_v1.1.zip",
+    "https://www.esma.europa.eu/sites/default/files/2025-01/esef_taxonomy_2024.zip",
+    "xbrl.org base schema files (8)"
+  ],
+  "outputs": [
+    "g0-r/R10-taxonomy-pinning/README.md",
+    "g0-r/R10-taxonomy-pinning/taxonomy_manifest.json",
+    "g0-r/R10-taxonomy-pinning/evidence/",
+    "g0-r/R10-taxonomy-pinning/pin_taxonomies.ps1"
+  ],
+  "sha256": {
+    "cnmv-ipp-2019-01-01": "87C445220D9D046069793F84830C73B473F2B8CA9ADD4DA9F381532EA00D611E",
+    "esma-esef-2022": "C3EDF1F79AC296241655736DA57CE4AF2E20AE181A2C486C90C71FFC199060E2",
+    "esma-esef-2024": "17AA09DF058632A44D1B56289938120A7DA993A08E6F07C0AF1516B1D8F4E96D",
+    "note": "full per-artefact hashes in taxonomy_manifest.json"
+  },
+  "findings": [
+    "All taxonomy dependencies for the frozen corpus pinned with SHA-256: CNMV IPP 2019-01-01 (ipp_en+ipp_ge), ESMA ESEF 2022-03-24 (FY2024) and 2024-03-27 (FY2025), 8 xbrl.org base files, 6 issuer extension taxonomies (members of the preserved ESEF packages).",
+    "ESMA packages verified to contain the expected dated esef_cor.xsd entry point (content check).",
+    "Issuer extension taxonomy domain change confirmed: SAN santanderbank.com (FY2024) -> santander.com (FY2025).",
+    "Arelle pinned: arelle-release==2.44.0 (64bit), headless CLI; taxonomy resolution via pinned packages for offline determinism (R14/R15)."
+  ],
+  "limitations": [
+    "Issuer extension source_url values are identifiers resolved via the package catalog, not live fetches.",
+    "ESMA may republish taxonomy packages; a changed SHA-256 means the source changed (flag, never overwrite)."
+  ]
+}
