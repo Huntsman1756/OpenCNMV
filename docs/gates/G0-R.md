@@ -96,7 +96,7 @@ Issuer identity:
 
 Do not run the 18 gates in parallel.
 
-First phase: **R0 → R4**, then checkpoint `GO / HOLD / STOP`. Only then **R5 → R17**.
+First phase: **R0 → R4**, then checkpoint `CONTINUE / HOLD / STOP`. Only then **R5 → R17**.
 
 ## The gates
 
@@ -172,11 +172,11 @@ Demonstrate IPP parsing with Arelle. Deliberately cover:
 - general model;
 - H1;
 - H2;
-- relevant historical taxonomy heterogeneity **within the frozen corpus** (e.g. pre-Circular 3/2018
-  versions), using artefacts that are in scope.
+- taxonomy/model heterogeneity **actually observed** within the frozen corpus.
 
 Record taxonomy incompatibilities, do not hide them. (Q1/Q3 post-2021-05-03 are `NOT_REQUIRED_AS_IPP`
-and are **not** a corpus requirement for R12.)
+and are **not** a corpus requirement for R12. Parsing pre-Circular 3/2018 taxonomies, if desired,
+is an explicit additional **fixture**, not a mandatory R12 criterion.)
 
 ### R13 — SOURCE_REVISION_DETECTION
 Test `13A REVISION_EXISTS`, `13B REVISION_TARGET_EXACT`, `13C REVISION_SEMANTICS_EXTRACTED`.

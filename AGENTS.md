@@ -83,7 +83,7 @@ Circular's text still describes. OpenCNMV must model this correctly.
   finales, building a security master, creating an own financial taxonomy, global IFRS
   normalisation, LLMs, AI summarisation, fuzzy matching (unless a demonstrated need),
   microservices, or cloud infrastructure.
-- Execution order: **R0 → R4 first**; checkpoint `GO / HOLD / STOP`; only then R5 → R17.
+- Execution order: **R0 → R4 first**; checkpoint `CONTINUE / HOLD / STOP`; only then R5 → R17.
 - Do not run the 18 gates in parallel.
 
 ## 8. Checkpoint logic
