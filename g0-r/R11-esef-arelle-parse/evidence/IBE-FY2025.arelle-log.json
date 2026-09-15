@@ -1,0 +1,32 @@
+[
+ {
+  "level": "ERROR",
+  "code": "rpe:documentTypeFileExtensionMismatch",
+  "message": "Report package document type 'https://xbrl.org/report-package/2023/xbri' does not match the file extension: .zip"
+ },
+ {
+  "level": "ERROR",
+  "code": "ESEF.2.2.7.improperApplicationOfEscapeAttribute",
+  "message": "Facts with datatype 'dtr-types:textBlockItemType' MUST use the 'escape' attribute set to 'true'. Facts with any other datatype MUST use the 'escape' attribute set to 'false' - fact ifrs-full:ExplanationOfAssumptionAboutFutureWithSignificantRiskOfResultingInMaterialAdjustments"
+ },
+ {
+  "level": "WARNING",
+  "code": "ESEF.RTS.Annex.II.Par.2.missingMandatoryMarkups",
+  "message": "Mandatory elements to be marked up are missing: ExplanationOfChangeInNameOfReportingEntityOrOtherMeansOfIdentificationFromEndOfPrecedingReportingPeriod."
+ },
+ {
+  "level": "WARNING",
+  "code": "message:positive",
+  "message": "Reported value is below 0"
+ },
+ {
+  "level": "WARNING",
+  "code": "message:positive",
+  "message": "Reported value is below 0"
+ },
+ {
+  "level": "WARNING",
+  "code": "ESEF.2.7.1.targetXBRLDocumentWithFormulaWarnings",
+  "message": "Target XBRL document SHOULD be valid against the assertions specified in ESEF taxonomy, 2 with warnings."
+ }
+]

@@ -1,0 +1,12 @@
+[
+ {
+  "level": "ERROR",
+  "code": "ESEF.2.6.1.reportIncorrectlyPlacedInPackage",
+  "message": "Inline XBRL document MUST be included within an ESEF report package as defined in http://www.xbrl.org/WGN/report-packages/WGN-2018-08-14/report-packages-WGN-2018-08-14.html: K8MS7FD7N5Z2WQ51AZ71-20241231-0-es.xhtml (Document file not in correct place in package)"
+ },
+ {
+  "level": "WARNING",
+  "code": "ESEF.RTS.Annex.II.Par.2.missingMandatoryMarkups",
+  "message": "Mandatory elements to be marked up are missing: ExplanationOfChangeInNameOfReportingEntityOrOtherMeansOfIdentificationFromEndOfPrecedingReportingPeriod."
+ }
+]

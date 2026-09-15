@@ -1,0 +1,67 @@
+{
+  "filing": "BBVA-FY2024",
+  "package": "esef-BBVA-FY2024-package.zip",
+  "package_sha256": "69F04DA4F6EBE4F3072401207FF83F6EDC9D335C83DF666525594A7062D7248A",
+  "arelle_version": "2.44.0",
+  "runtime": {
+    "internetConnectivity": "offline",
+    "disclosureSystemName": "esef-2022",
+    "plugins": "validate/ESEF|saveLoadableOIM",
+    "validate": true,
+    "taxonomy_packages": [
+      "esef_taxonomy_2022_v1.1.zip",
+      "ifrs-full_ifrs-2022-03-24-opencnmv-pkg.zip",
+      "xbrl-lei-2020-07-02-opencnmv-pkg.zip"
+    ]
+  },
+  "run_ok": true,
+  "elapsed_s": 64.5,
+  "counts": {
+    "facts": 1847,
+    "contexts": 183,
+    "units": 2,
+    "concepts": 5597,
+    "dts_documents": 84,
+    "fact_footnote_relationships": 0,
+    "nil_facts": 0,
+    "contexts_explicit_dims": 267,
+    "contexts_typed_dims": 0,
+    "fact_languages": [
+      "es"
+    ]
+  },
+  "concept_namespaces": {
+    "www.xbrl.org": 77,
+    "xbrl.org": 139,
+    "xbrl.ifrs.org": 5247,
+    "www.esma.europa.eu": 10,
+    "www.bbva.es": 124
+  },
+  "log_code_counts": {
+    "ERROR:ESEF.2.6.1.reportIncorrectlyPlacedInPackage": 1,
+    "WARNING:ESEF.RTS.Annex.II.Par.2.missingMandatoryMarkups": 1
+  },
+  "offline_evidence": {
+    "io_errors": 0,
+    "download_attempts_in_log": 0
+  },
+  "outputs": {
+    "facts_jsonl": "BBVA-FY2024.facts.jsonl",
+    "facts_jsonl_sha256": "582BA8DCD487D99A03776C0C6C2501DB67F7A6ABBAADE1B3AE6EECE5CB047192",
+    "arelle_log": "BBVA-FY2024.arelle-log.json",
+    "oim_json_sha256": "585313509150985545DD8F5F55CBE07CBBEBB225BE1F370EF4DE9D2F39913290",
+    "oim_json_gz": "BBVA-FY2024.oim.json.gz",
+    "oim_json_gz_sha256": "3DDBB91C3835DE0E9F250A72BA18462C7E92C68F72EEFD9D04D5022EF4551257"
+  },
+  "control_A": {
+    "fact_count_api": 1847,
+    "fact_count_oim": 1847,
+    "fact_multiset_equal": true,
+    "concept_coverage_equal": true,
+    "distinct_context_signatures_api": 183,
+    "decimals_distribution_equal": true,
+    "nil_count_api": 0,
+    "nil_count_oim": 0,
+    "multiset_diff_sample": []
+  }
+}

@@ -1,0 +1,47 @@
+[
+ {
+  "level": "ERROR",
+  "code": "ESEF.2.6.1.reportIncorrectlyPlacedInPackage",
+  "message": "Inline XBRL document MUST be included within an ESEF report package as defined in http://www.xbrl.org/WGN/report-packages/WGN-2018-08-14/report-packages-WGN-2018-08-14.html: 5493006QMFDDMYWIAM13-20241231-es.xhtml (Document file not in correct place in package)"
+ },
+ {
+  "level": "WARNING",
+  "code": "ESEF.RTS.Annex.II.Par.2.missingMandatoryMarkups",
+  "message": "Mandatory elements to be marked up are missing: ExplanationOfChangeInNameOfReportingEntityOrOtherMeansOfIdentificationFromEndOfPrecedingReportingPeriod."
+ },
+ {
+  "level": "WARNING",
+  "code": "message:positive",
+  "message": "Reported value is below 0"
+ },
+ {
+  "level": "WARNING",
+  "code": "message:positive",
+  "message": "Reported value is below 0"
+ },
+ {
+  "level": "WARNING",
+  "code": "message:positive",
+  "message": "Reported value is below 0"
+ },
+ {
+  "level": "WARNING",
+  "code": "message:positive",
+  "message": "Reported value is below 0"
+ },
+ {
+  "level": "WARNING",
+  "code": "message:positive",
+  "message": "Reported value is below 0"
+ },
+ {
+  "level": "WARNING",
+  "code": "message:positive",
+  "message": "Reported value is below 0"
+ },
+ {
+  "level": "WARNING",
+  "code": "ESEF.2.7.1.targetXBRLDocumentWithFormulaWarnings",
+  "message": "Target XBRL document SHOULD be valid against the assertions specified in ESEF taxonomy, 6 with warnings."
+ }
+]

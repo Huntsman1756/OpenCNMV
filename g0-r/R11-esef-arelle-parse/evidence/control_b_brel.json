@@ -1,0 +1,66 @@
+{
+  "filing": "SAN-FY2025",
+  "engine": "brel-xbrl 0.8.2a1",
+  "brel": {
+    "fact_count": 1640,
+    "distinct_context_signatures": 7,
+    "concept_count_reported": 363,
+    "facts_with_dimensions": 0
+  },
+  "arelle": {
+    "fact_count": 1952,
+    "distinct_context_signatures": 329,
+    "concept_count_reported": 403,
+    "facts_with_dimensions": 1095
+  },
+  "concept_coverage": {
+    "concepts_common": 363,
+    "concepts_only_arelle": 93,
+    "concepts_only_brel": 0,
+    "only_arelle_sample": [
+      "http://www.santander.com/20251231#ActivosNoCorrientesMantenidosParaLaVentaQueNoSeReclasificaranAResultadosAntesDeImpuestos",
+      "http://www.santander.com/20251231#AmortizacionDeInstrumentosDePatrimonioPropio",
+      "http://www.santander.com/20251231#AumentoDisminucionNetaDeLosActivosDeExplotacionActivosFinancierosNoDestinadosANegociacionValoradosObligatoriamenteAValorRazonableConCambiosEnResultados",
+      "http://www.santander.com/20251231#CambiosDelValorRazonableDeLosInstrumentosDePatrimonioValoradosAValorRazonableConCambiosEnOtroResultadoGlobalElementoCubierto",
+      "http://www.santander.com/20251231#CambiosDelValorRazonableDeLosInstrumentosDePatrimonioValoradosAValorRazonableConCambiosEnOtroResultadoGlobalInstrumentoDeCobertura",
+      "http://www.santander.com/20251231#ContratosDeSegurosVinculadosAPensiones",
+      "http://www.santander.com/20251231#DeterioroDelValorOReversionDelDeterioroDelValorDeActivosNoFinancieros",
+      "http://www.santander.com/20251231#EjercicioOVencimientoDeOtrosInstrumentosDePatrimonioEmitidos",
+      "http://www.santander.com/20251231#GananciasOPerdidasAlDarDeBajaEnCuentasActivosYPasivosFinancierosNoValoradosAValorRazonableConCambiosEnResultadosNetas",
+      "http://www.santander.com/20251231#GananciasOPerdidasDeValorContabilizadasEnElPatrimonioNetoInstrumentosDeCoberturaElementosNoDesignados",
+      "http://www.santander.com/20251231#GananciasOPerdidasNetasDeContabilidadDeCobertura",
+      "http://www.santander.com/20251231#GananciasOPerdidasProcedentesDeActivosNoCorrientesYGruposEnajenablesDeElementosClasificadosComoMantenidosParaLaVentaNoAdmisiblesComoActividadesInterrumpidas",
+      "http://www.santander.com/20251231#GananciasOPerdidasSobreActivosYPasivosFinancierosAValorRazonableConCambiosEnResultados",
+      "http://www.santander.com/20251231#GananciasPerdidasDeValorContabilizadasEnElPatrimonioNetoActivosNoCorrientesYGruposEnajenablesDeElementosMantenidosParaLaVentaAntesDeImpuestos",
+      "http://www.santander.com/20251231#GananciasPerdidasPorEnajenacionesDeActivosNoFinancierosNeto",
+      "http://www.santander.com/20251231#GastosDeContratosDeSeguroYReaseguroReconocidosEnPerdidasYGanancias",
+      "http://www.santander.com/20251231#IncrementoDecrementoPorOtrasVariacionesDelPatrimonioNeto",
+      "http://www.santander.com/20251231#IngresosDeContratosDeSeguroYReaseguroReconocidosEnPerdidasYGanancias",
+      "http://www.santander.com/20251231#InstrumentosDeCoberturaElementosNoDesignadosOtroResultadoGlobalAntesDeImpuestos",
+      "http://www.santander.com/20251231#OtroResultadoGlobalAntesDeImpuestosActivosNoCorrientesYGruposEnajenablesDeElementosMantenidosParaLaVenta"
+    ],
+    "only_brel_sample": [],
+    "per_concept_count_diffs_sample": [
+      "http://www.santander.com/20251231#ActivosNoCorrientesMantenidosParaLaVentaQueNoSeReclasificaranAResultadosAntesDeImpuestos: arelle=3 brel=2",
+      "http://www.santander.com/20251231#AmortizacionDeInstrumentosDePatrimonioPropio: arelle=3 brel=2",
+      "http://www.santander.com/20251231#AumentoDisminucionNetaDeLosActivosDeExplotacionActivosFinancierosNoDestinadosANegociacionValoradosObligatoriamenteAValorRazonableConCambiosEnResultados: arelle=3 brel=1",
+      "http://www.santander.com/20251231#EjercicioOVencimientoDeOtrosInstrumentosDePatrimonioEmitidos: arelle=42 brel=40",
+      "http://www.santander.com/20251231#GananciasOPerdidasDeValorContabilizadasEnElPatrimonioNetoInstrumentosDeCoberturaElementosNoDesignados: arelle=3 brel=2",
+      "http://www.santander.com/20251231#GananciasPerdidasDeValorContabilizadasEnElPatrimonioNetoActivosNoCorrientesYGruposEnajenablesDeElementosMantenidosParaLaVentaAntesDeImpuestos: arelle=3 brel=2",
+      "http://www.santander.com/20251231#GananciasPerdidasPorEnajenacionesDeActivosNoFinancierosNeto: arelle=3 brel=1",
+      "http://www.santander.com/20251231#IncrementoDecrementoPorOtrasVariacionesDelPatrimonioNeto: arelle=42 brel=20",
+      "http://www.santander.com/20251231#InstrumentosDeCoberturaElementosNoDesignadosOtroResultadoGlobalAntesDeImpuestos: arelle=3 brel=2",
+      "http://www.santander.com/20251231#OtroResultadoGlobalAntesDeImpuestosActivosNoCorrientesYGruposEnajenablesDeElementosMantenidosParaLaVenta: arelle=3 brel=2",
+      "http://www.santander.com/20251231#OtrosIngresosDeExplotacion: arelle=3 brel=2",
+      "http://www.santander.com/20251231#OtrosInstrumentosDePatrimonioEmitidos: arelle=3 brel=2",
+      "http://www.santander.com/20251231#TransferenciasEntreComponentesDelPatrimonioNeto: arelle=42 brel=30",
+      "http://www.santander.com/20251231#TransferidoAResultadosInstrumentosDeCoberturaElementosNoDesignados: arelle=3 brel=2",
+      "http://www.santander.com/20251231#TransferidosAResultadosActivosNoCorrientesYGruposEnajenablesDeElementosMantenidosParaLaVentaAntesDeImpuestos: arelle=3 brel=2",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#AdjustmentsForDecreaseIncreaseInFinancialAssetsMeasuredAtFairValueThroughProfitOrLoss: arelle=3 brel=1",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#AdjustmentsForDecreaseIncreaseInOtherAssets: arelle=3 brel=1",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#AdjustmentsForIncreaseDecreaseInFinancialLiabilitiesMeasuredAtFairValueThroughProfitOrLoss: arelle=3 brel=2",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#AdjustmentsForIncreaseDecreaseInOtherLiabilities: arelle=3 brel=1",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CancellationOfTreasuryShares: arelle=42 brel=33"
+    ]
+  }
+}

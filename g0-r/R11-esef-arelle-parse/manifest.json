@@ -1,0 +1,48 @@
+{
+  "gate": "R11",
+  "name": "ESEF_ARELLE_PARSE",
+  "status": "PASS",
+  "executed_at": "2026-09-15T00:00:00Z",
+  "code_commit": "n/a",
+  "inputs": [
+    "g0-r/R07-raw-retrieval ESEF_PACKAGE_ZIP_XBRL artefacts (6): esef-{SAN,BBVA,IBE}-{FY2024,FY2025}-package.zip",
+    "g0-r/R10-taxonomy-pinning: esef_taxonomy_2022_v1.1.zip, esef_taxonomy_2024.zip, ifrs-full_ifrs-{2022-03-24,2024-03-27}-opencnmv-pkg.zip, xbrl-lei-2020-07-02-opencnmv-pkg.zip",
+    "arelle-release == 2.44.0 (Python API, arelle.api.Session)",
+    "brel-xbrl == 0.8.2a1 (isolated .venv-brel, Control B oracle only)"
+  ],
+  "outputs": [
+    "g0-r/R11-esef-arelle-parse/README.md",
+    "g0-r/R11-esef-arelle-parse/r11_parse.py",
+    "g0-r/R11-esef-arelle-parse/r11_control_b.py",
+    "g0-r/R11-esef-arelle-parse/evidence/{FID}.facts.jsonl (6 deterministic API fact inventories)",
+    "g0-r/R11-esef-arelle-parse/evidence/{FID}.model_summary.json (6)",
+    "g0-r/R11-esef-arelle-parse/evidence/{FID}.oim.json.gz (6 Arelle saveLoadableOIM xBRL-JSON exports)",
+    "g0-r/R11-esef-arelle-parse/evidence/{FID}.arelle-log.json (6)",
+    "g0-r/R11-esef-arelle-parse/evidence/r11_results.json",
+    "g0-r/R11-esef-arelle-parse/evidence/control_b_brel.json"
+  ],
+  "sha256": {
+    "esef-SAN-FY2024-package.zip": "725FFF01861CB0C186107280BF30B2C047A3A59AF703D799F678E02C435CB9F5",
+    "esef-BBVA-FY2024-package.zip": "69F04DA4F6EBE4F3072401207FF83F6EDC9D335C83DF666525594A7062D7248A",
+    "esef-IBE-FY2024-package.zip": "89DFD3EF65527D1D4378464C2F70FA78B2FB7B4872264EACFA91D3FAAE1C42B4",
+    "esef-SAN-FY2025-package.zip": "07E95A16C7D1652D6C6298C39B19B6A1E90C5D4A8C01881B4CCAEBDEAA700567",
+    "esef-BBVA-FY2025-package.zip": "675A1D3A470FDC469BEDA39BF242FFCB496C6F1116DA4D1FC562FAA0734E3458",
+    "esef-IBE-FY2025-package.zip": "066FDAF835AD6E81F0FF77EACB571F5D2A09F9FB42788FBC12D7041D2E51E05A",
+    "note": "per-output evidence hashes (facts.jsonl, oim.json.gz, arelle-log.json) in each {FID}.model_summary.json"
+  },
+  "findings": [
+    "All 6 ESEF report packages load fully offline under Arelle 2.44.0 with R10-pinned taxonomy packages: DTS resolves completely (84 docs FY2024 / 88 FY2025), ioerr=0, zero download attempts.",
+    "Fact preservation verified: QName, value/xValue, context (entity, period start/end/instant/forever), unit, decimals, nil, explicit+typed dimension paths, language. Fact counts 833-1952 per filing.",
+    "Control A (Arelle Python API vs Arelle saveLoadableOIM xBRL-JSON): normalized fact multisets equal, concept coverage equal, decimals/nil distributions equal for all 6 filings.",
+    "Control B (Arelle vs Brel on SAN-FY2025): Brel's 363 reported concepts are fully contained in Arelle's 403 (concepts_only_brel=0). Brel drops facts without iXBRL format attributes and surfaces no dimensions -> partial oracle only, not authoritative, no fact-level parity.",
+    "All corpus contexts use explicit dimensions only (typed-dimension path implemented, not triggered).",
+    "ESEF validation runs under validate/ESEF + disclosureSystem esef-2022/esef-2024; findings (missingMandatoryMarkups, formula warnings, etc.) are filing-level, preserved per filing.",
+    "R11 run amended R10: esef_cor.xsd transitively imports IFRS full_ifrs and the xbrl.org LEI module; both pinned (canonical per-file downloads + locally-assembled packages) after the official IFRS ZIP proved login-gated."
+  ],
+  "limitations": [
+    "Control B covers one representative filing (SAN-FY2025) by design; Brel is an oracle, not authoritative.",
+    "Fact footnote relationships counted (0 observed) but not extracted into the inventory.",
+    "OIM comparison uses xBRL-JSON; OIM-CSV equivalence is transitive via the same Arelle model.",
+    "IFRS/LEI taxonomy pins are canonical per-file downloads in locally-assembled packages (official IFRS ZIP requires login); documented in R10."
+  ]
+}

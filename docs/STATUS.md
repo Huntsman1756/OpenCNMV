@@ -25,8 +25,9 @@ R6  PASS    # source filing key: nreg/registro = logical filing (best observed);
 R7  PASS    # RAW_ARTIFACT_RETRIEVAL (remediated): 27 raw artefacts (15 IPP + 6 ESEF_COVER + 6 ESEF_PACKAGE_ZIP_XBRL); components enumerated
 R8  PASS    # RAW_SHA256_STABLE (remediated): 27/27 MATCH on complete inventory; IPP re-resolved via nreg
 R9  PASS    # TAXONOMY_DISCOVERY (remediated): IPP 2019-01-01 (ipp_en vs ipp_ge); ESEF FY2024+FY2025 schemaRefs observed; SAN domain changed
-R10 PASS    # TAXONOMY_PINNING: CNMV IPP 2019-01-01 + ESMA ESEF 2022-03-24 (FY2024) / 2024-03-27 (FY2025) + 8 xbrl.org files + 6 issuer extensions pinned; Arelle 2.44.0
-R11-R17  NOT_RUN
+R10 PASS    # TAXONOMY_PINNING (amended by R11): + IFRS full_ifrs 2022/2024 + LEI module pinned as locally-assembled packages; manifest 20 rows; Arelle 2.44.0
+R11 PASS    # ESEF_ARELLE_PARSE: 6/6 load offline (ioerr=0, DTS complete); Control A API-vs-OIM equal; Control B Arelle-vs-Brel concept containment (Brel partial oracle)
+R12-R17  NOT_RUN
 ```
 
 ## Checkpoint
@@ -97,6 +98,30 @@ G0-R verdict (after R17) is `GO`. The final verdict states are `GO` / `CONDITION
   - R4 evidence files renamed: `esef-IBE-consolidated_run*.zip` etc. contained the **cover**, now `esef-*-cover_run*.zip`.
 - **Artifact model decision (verified):** the `reports/*.xhtml` member inside each ESEF ZIP package is **byte-identical** to the standalone consolidated XHTML served by the direct `?e=` link (`ixbrl_member_equality.json`, 6/6). So `IXBRL_CONSOLIDATED` = *package member + direct CNMV view*, not a separately persisted artefact; persisted inventory stays **27** (`package_member_path`/`member_sha256`/`byte_equal` recorded).
 
+## Session-4 findings (R10/R11)
+
+- **R10 PASS:** all taxonomy dependencies pinned (20 rows): CNMV IPP 2019-01-01, ESMA ESEF
+  2022-03-24 (FY2024) / 2024-03-27 (FY2025), 8 xbrl.org base files, 6 issuer extensions
+  (package members), Arelle `arelle-release==2.44.0`.
+- **R10 amended by R11:** `esef_cor.xsd` transitively imports the IFRS `full_ifrs` taxonomy
+  (2022-03-24 / 2024-03-27) and the xbrl.org LEI module (2020-07-02). Without them the offline
+  DTS was incomplete (`missingReferences`). The official IFRS ZIP requires IFRS Foundation
+  login, so canonical per-file downloads were pinned (43+44 IFRS, 7 LEI) and assembled into
+  local taxonomy packages (`META-INF/catalog.xml` rewriteURI — the same mechanism ESMA uses).
+- **R11 PASS:** conformance/integration test over Arelle (no custom parser). All 6 ESEF packages
+  load offline with `internetConnectivity="offline"` + `validate/ESEF` +
+  `saveLoadableOIM`: ioerr=0, DTS complete, facts 833–1952/filing, contexts 59–329,
+  explicit dimensions preserved (corpus has no typed dims), `xml:lang` preserved.
+  - **Control A** (Arelle Python API vs Arelle OIM xBRL-JSON): normalized fact multisets,
+    concept coverage, decimals/nil distributions — equal on 6/6.
+  - **Control B** (Arelle vs Brel 0.8.2a1 on SAN-FY2025): Brel's 363 concepts fully contained
+    in Arelle's 403 (`concepts_only_brel=0`). Brel drops facts without iXBRL `format` and
+    surfaces no dimensions → **partial oracle only, never authoritative**.
+  - Both ESMA packages cannot load simultaneously (`tpe:packageRewriteOverlap`); sessions run
+    per filing — recorded as an operational constraint for R14/R15.
+  - Brel installed in isolated `.venv-brel` inside the gate dir (its pins conflict with the
+    main env); the global env was restored after an accidental global install.
+
 ## Blocking findings
 
 - None for the R0–R4 checkpoint. Long-horizon token/URL drift is monitored by re-running the R8
@@ -129,10 +154,11 @@ IBE  IBERDROLA, S.A.                       nif=A-48010615  LEI=5QK37QC7NWOJ8D7WV
 
 ## Next action
 
-Proceed to **R11** (within G0-R), following `AGENTS.md` and `docs/gates/G0-R.md`:
-`R11 ESEF Arelle parse → R12 IPP Arelle parse (credit vs general model, H1/H2) → R13 revisions →
-R14/R15 determinism → R16 oracle reconciliation → R17 H2 vs ESEF`. Do **not** build product, UI,
-API, or MCP. G1 is not touched until R17 is closed.
+Proceed to **R12 — IPP_ARELLE_PARSE** (within G0-R): reuse the R11 Arelle harness pattern on the
+15 IPP artefacts — deliberately cover the credit-entity model (`ipp_en`: SAN/BBVA), the general
+model (`ipp_ge`: IBE), H1 and H2, and the taxonomy/model heterogeneity actually observed in the
+corpus. Then `R13 revisions → R14/R15 determinism → R16 oracle reconciliation → R17 H2 vs ESEF`.
+Do **not** build product, UI, API, or MCP. G1 is not touched until R17 is closed.
 
 ## Session hygiene
 

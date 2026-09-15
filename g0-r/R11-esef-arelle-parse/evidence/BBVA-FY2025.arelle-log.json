@@ -1,0 +1,12 @@
+[
+ {
+  "level": "ERROR",
+  "code": "rpe:documentTypeFileExtensionMismatch",
+  "message": "Report package document type 'https://xbrl.org/report-package/2023/xbri' does not match the file extension: .zip"
+ },
+ {
+  "level": "WARNING",
+  "code": "ESEF.RTS.Annex.II.Par.2.missingMandatoryMarkups",
+  "message": "Mandatory elements to be marked up are missing: ExplanationOfChangeInNameOfReportingEntityOrOtherMeansOfIdentificationFromEndOfPrecedingReportingPeriod."
+ }
+]

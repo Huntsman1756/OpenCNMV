@@ -9,7 +9,8 @@
     "g0-r/R04-artifact-url-stability/evidence/ipp_2019-01-01_run1.zip (preserved CNMV package)",
     "https://www.esma.europa.eu/sites/default/files/2023-12/esef_taxonomy_2022_v1.1.zip",
     "https://www.esma.europa.eu/sites/default/files/2025-01/esef_taxonomy_2024.zip",
-    "xbrl.org base schema files (8)"
+    "xbrl.org base schema files (8)",
+    "xbrl.ifrs.org canonical full_ifrs files (43 + 44) and xbrl.org LEI files (7) - transitive deps observed by R11 offline load"
   ],
   "outputs": [
     "g0-r/R10-taxonomy-pinning/README.md",
@@ -27,10 +28,12 @@
     "All taxonomy dependencies for the frozen corpus pinned with SHA-256: CNMV IPP 2019-01-01 (ipp_en+ipp_ge), ESMA ESEF 2022-03-24 (FY2024) and 2024-03-27 (FY2025), 8 xbrl.org base files, 6 issuer extension taxonomies (members of the preserved ESEF packages).",
     "ESMA packages verified to contain the expected dated esef_cor.xsd entry point (content check).",
     "Issuer extension taxonomy domain change confirmed: SAN santanderbank.com (FY2024) -> santander.com (FY2025).",
-    "Arelle pinned: arelle-release==2.44.0 (64bit), headless CLI; taxonomy resolution via pinned packages for offline determinism (R14/R15)."
+    "Arelle pinned: arelle-release==2.44.0 (64bit), headless CLI; taxonomy resolution via pinned packages for offline determinism (R14/R15).",
+    "R11 addendum: transitive dependencies discovered by the first offline Arelle load - esef_cor imports the IFRS full_ifrs taxonomy (2022-03-24 / 2024-03-27) and the xbrl.org LEI module (2020-07-02). Pinned as canonical per-file downloads (IFRS ZIP requires login) + locally-assembled taxonomy packages; taxonomy_manifest.json now 20 rows."
   ],
   "limitations": [
     "Issuer extension source_url values are identifiers resolved via the package catalog, not live fetches.",
-    "ESMA may republish taxonomy packages; a changed SHA-256 means the source changed (flag, never overwrite)."
+    "ESMA may republish taxonomy packages; a changed SHA-256 means the source changed (flag, never overwrite).",
+    "IFRS/LEI pins are canonical per-file downloads assembled into local taxonomy packages (the official IFRS ZIP requires IFRS Foundation login); per-file hashes are in evidence/ifrs_pinning.json."
   ]
 }

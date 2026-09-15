@@ -1,0 +1,597 @@
+{
+  "generated": "2026-09-15T20:29:18Z",
+  "note": "IFRS taxonomy pinned as individual canonical files from xbrl.ifrs.org (official ZIP requires IFRS Foundation login); LEI module pinned from xbrl.org. Local taxonomy packages assembled for offline Arelle resolution.",
+  "packages": [
+    {
+      "package": "ifrs-full_ifrs-2022-03-24",
+      "taxonomy_version": "2022-03-24",
+      "files": 43,
+      "members": [
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/full_ifrs-cor_2022-03-24.xsd",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/full_ifrs-cor_2022-03-24.xsd",
+          "sha256": "31EC49F355C7A4746DECF1FA0E927F978F04E9F36FCAE52948B2BAF533A41587",
+          "bytes": 1575840
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/labels/doc_full_ifrs-en_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/labels/doc_full_ifrs-en_2022-03-24.xml",
+          "sha256": "4DD790AB00A1772EE21534FECA46836E8CF8D6765E4C529BE6D7457A22FA89B2",
+          "bytes": 3539749
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/labels/in_full_ifrs-en_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/labels/in_full_ifrs-en_2022-03-24.xml",
+          "sha256": "5E8500D21189927EF5137D86C032422BA3A7B2B935ABF415467251112CB7F480",
+          "bytes": 243774
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/labels/lab_full_ifrs-en_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/labels/lab_full_ifrs-en_2022-03-24.xml",
+          "sha256": "80F6E59BBEA2BE8DE5AE1AB2A3ECAD7013C34A62F1791513B1A41530A8E38145",
+          "bytes": 3560669
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ias_1/ref_ias_1_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ias_1/ref_ias_1_2022-03-24.xml",
+          "sha256": "6AB8568BF280223D91AB11CF5BD13D05CE9A343A58A3B40976687590F6717001",
+          "bytes": 554709
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ias_10/ref_ias_10_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ias_10/ref_ias_10_2022-03-24.xml",
+          "sha256": "6BEB98A946CEE1C8B114ADDBD696D7FE555CC662CDDD9B1401A2A101C98170A2",
+          "bytes": 18172
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ias_12/ref_ias_12_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ias_12/ref_ias_12_2022-03-24.xml",
+          "sha256": "F04B1D667ABFFF8ECB548067A06921328F1C02C725B529493A3037861B700A21",
+          "bytes": 52088
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ias_16/ref_ias_16_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ias_16/ref_ias_16_2022-03-24.xml",
+          "sha256": "21965CBBDDE78032646E0C445214B11FCBAF9AE040322B1003146DF1F942C6AE",
+          "bytes": 60447
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ias_19/ref_ias_19_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ias_19/ref_ias_19_2022-03-24.xml",
+          "sha256": "55D4E10D65FBE4EE46506DE83BB7C2449550B9CB342A3D343E6818DE91AC2100",
+          "bytes": 115359
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ias_2/ref_ias_2_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ias_2/ref_ias_2_2022-03-24.xml",
+          "sha256": "FAD4378DE24B311F3602ED2FD16777003C4F3653F3B587D3CD987E1646D25442",
+          "bytes": 16632
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ias_20/ref_ias_20_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ias_20/ref_ias_20_2022-03-24.xml",
+          "sha256": "6D21AE9614AB85DD70F12037DB8C3D341E20B86C71CFE1B8A1438C23B3C41853",
+          "bytes": 7426
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ias_21/ref_ias_21_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ias_21/ref_ias_21_2022-03-24.xml",
+          "sha256": "E866153A9916B4791F076296BDEF044F15AD187CB6F1EC29525B5BD852992E65",
+          "bytes": 13004
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ias_23/ref_ias_23_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ias_23/ref_ias_23_2022-03-24.xml",
+          "sha256": "5F9AD3C3349DBBFA3916EE68AF7355AA12276CF76AC2FB7AEC5835D57A7429E1",
+          "bytes": 3981
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ias_24/ref_ias_24_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ias_24/ref_ias_24_2022-03-24.xml",
+          "sha256": "6659D76DAEF43969C398E4B3406569FAAB7237476F9C8D3EC2CDC17A4E628766",
+          "bytes": 43805
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ias_26/ref_ias_26_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ias_26/ref_ias_26_2022-03-24.xml",
+          "sha256": "DFDF1F81E0BEDC96B82B11B759B2C5656FD5CA206858E0EEFCD70788CE77F223",
+          "bytes": 26287
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ias_27/ref_ias_27_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ias_27/ref_ias_27_2022-03-24.xml",
+          "sha256": "61EA690418A0547055C0CCDB3BD62444668883E6CEAD71C9A48EB304459FD697",
+          "bytes": 32768
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ias_29/ref_ias_29_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ias_29/ref_ias_29_2022-03-24.xml",
+          "sha256": "6290F00E3190385B5FDDBFC9FA6D3FD671B5800BB6E04C059ACA7A7A5C5544EE",
+          "bytes": 6360
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ias_33/ref_ias_33_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ias_33/ref_ias_33_2022-03-24.xml",
+          "sha256": "5629C3A7FF8384F615B190D4C54AFFD71BDBBFC09CDDE1869DA87288B787B3EE",
+          "bytes": 27283
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ias_34/ref_ias_34_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ias_34/ref_ias_34_2022-03-24.xml",
+          "sha256": "39DA9268A412E3D0973DF1A8D04954E10D9DC3807B5745FEB362871775D496EC",
+          "bytes": 13660
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ias_36/ref_ias_36_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ias_36/ref_ias_36_2022-03-24.xml",
+          "sha256": "0BEA01ED2EEE2988B87162BD4CBB683F147FFEC23068DBB303B741C0341D7899",
+          "bytes": 58331
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ias_37/ref_ias_37_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ias_37/ref_ias_37_2022-03-24.xml",
+          "sha256": "684B5BF5DF66255EF1A5018513B3642968B059BC959502483AAE6195BB6F1B38",
+          "bytes": 45607
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ias_38/ref_ias_38_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ias_38/ref_ias_38_2022-03-24.xml",
+          "sha256": "27079B1C0E75820E5CCED927851A3CF6A00C4985EEA2BD3A63138284F43B4FA0",
+          "bytes": 65218
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ias_40/ref_ias_40_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ias_40/ref_ias_40_2022-03-24.xml",
+          "sha256": "07D2F2193DE6490335D86B67EA31DD0DFD0894E09504B7F6C70D220BA3FB9CC7",
+          "bytes": 48161
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ias_41/ref_ias_41_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ias_41/ref_ias_41_2022-03-24.xml",
+          "sha256": "5E9F58595055BC3625EF0A7A27A9156B42B645108D30D454014082093A6C5EC8",
+          "bytes": 51282
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ias_7/ref_ias_7_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ias_7/ref_ias_7_2022-03-24.xml",
+          "sha256": "7008B3EEC4DDC81E2DC633FEE1AA5E322C6A1B4089C3026DE0F3D93E2C526DDB",
+          "bytes": 119790
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ias_8/ref_ias_8_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ias_8/ref_ias_8_2022-03-24.xml",
+          "sha256": "1D24E7B47E8123A47A3FE54B313C51B40632D7029E97DE63EBAFA1F50C84EABC",
+          "bytes": 35224
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ifric_2/ref_ifric_2_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ifric_2/ref_ifric_2_2022-03-24.xml",
+          "sha256": "D6683BAC9FF95B1753DC50D19CC90547C5F2295646E8451A93CE9F152A19A282",
+          "bytes": 3556
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ifric_5/ref_ifric_5_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ifric_5/ref_ifric_5_2022-03-24.xml",
+          "sha256": "42C7AB0410CCCB27B9A0535EA416DE05217981229C4FD79FB294A5536540CE41",
+          "bytes": 3382
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ifrs_1/ref_ifrs_1_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ifrs_1/ref_ifrs_1_2022-03-24.xml",
+          "sha256": "A15D25D4497A550710122514800EBE407399E3E35821C270F261FFB9D80FFE27",
+          "bytes": 35986
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ifrs_12/ref_ifrs_12_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ifrs_12/ref_ifrs_12_2022-03-24.xml",
+          "sha256": "DB6693D20026EB6F74BCC08E3915A1FFCA134D61AA5D1E177A542AA4CA7AD0A7",
+          "bytes": 131577
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ifrs_13/ref_ifrs_13_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ifrs_13/ref_ifrs_13_2022-03-24.xml",
+          "sha256": "D8E5972F2EABFF4DB0E67A97A343B1389D4BAE5C1A02B34DADC82319E8CFA0B4",
+          "bytes": 149483
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ifrs_14/ref_ifrs_14_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ifrs_14/ref_ifrs_14_2022-03-24.xml",
+          "sha256": "5E75E1D092D5C052AD598D5A439EA1612EF24AC2640A4823DDC3E45FC0DA3954",
+          "bytes": 62400
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ifrs_15/ref_ifrs_15_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ifrs_15/ref_ifrs_15_2022-03-24.xml",
+          "sha256": "BB8F8E916DFD335B12268BEE1BFA6E04D4EEE6AFCF22ED928CA593BAB766B2AA",
+          "bytes": 66567
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ifrs_16/ref_ifrs_16_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ifrs_16/ref_ifrs_16_2022-03-24.xml",
+          "sha256": "94C6336E44F4632419190A743A319E62B9694406624BE14B683607B421D13E06",
+          "bytes": 57790
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ifrs_17/ref_ifrs_17_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ifrs_17/ref_ifrs_17_2022-03-24.xml",
+          "sha256": "A928ADEF7B71BB8A6E7E757057451904B0135EDDFF5BD411747F9AEC26F84EBE",
+          "bytes": 197043
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ifrs_2/ref_ifrs_2_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ifrs_2/ref_ifrs_2_2022-03-24.xml",
+          "sha256": "43460A29B5A62C423D1C18AFCC5D3F46A049BD598ABB472D7DD2A79BADC6BBBC",
+          "bytes": 51692
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ifrs_3/ref_ifrs_3_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ifrs_3/ref_ifrs_3_2022-03-24.xml",
+          "sha256": "A762487AC01954DA6EE2BD4B19AAA9CB220D426B48EF1FE97C4CDDC07E712D06",
+          "bytes": 91160
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ifrs_4/ref_ifrs_4_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ifrs_4/ref_ifrs_4_2022-03-24.xml",
+          "sha256": "D6EFF472BF5F06695B03D4A850536E8E05BF03B1312490DC17203A17521DEFCD",
+          "bytes": 136597
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ifrs_5/ref_ifrs_5_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ifrs_5/ref_ifrs_5_2022-03-24.xml",
+          "sha256": "90761ED78AFC74CC2B9504448EE9854E326B217BC01A82C49F26C3794AF8CF4D",
+          "bytes": 30901
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ifrs_6/ref_ifrs_6_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ifrs_6/ref_ifrs_6_2022-03-24.xml",
+          "sha256": "421D5C2EC5B9F9D3D31879920DCC93412DBFAA38FDD19331A8B0EB5751A7139D",
+          "bytes": 7482
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ifrs_7/ref_ifrs_7_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ifrs_7/ref_ifrs_7_2022-03-24.xml",
+          "sha256": "BF89979B79F2E3C85A7D9B19E1A7B28419EEE8D5D315DBE0870ABE2442335163",
+          "bytes": 489064
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/ifrs_8/ref_ifrs_8_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/ifrs_8/ref_ifrs_8_2022-03-24.xml",
+          "sha256": "D95686D4113F6967B826EAB4FB13420E17FDE5A6546E7F8F31FC532527DEF915",
+          "bytes": 42994
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/linkbases/sic_29/ref_sic_29_2022-03-24.xml",
+          "file": "ifrs-taxonomy-2022-03-24/taxonomy/2022-03-24/full_ifrs/linkbases/sic_29/ref_sic_29_2022-03-24.xml",
+          "sha256": "6D18AEA3FBE78170E87052B8AB20B109B066ED0F986E4680411342A30EB8514E",
+          "bytes": 14907
+        }
+      ],
+      "package_file": "ifrs-full_ifrs-2022-03-24-opencnmv-pkg.zip",
+      "package_sha256": "37D5D9F11E50CA029E3A9DA2801530196FC1C1A443A5B81785B5B59AB598CFF6"
+    },
+    {
+      "package": "ifrs-full_ifrs-2024-03-27",
+      "taxonomy_version": "2024-03-27",
+      "files": 44,
+      "members": [
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/full_ifrs-cor_2024-03-27.xsd",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/full_ifrs-cor_2024-03-27.xsd",
+          "sha256": "50F853021FD4268E4944EF01BC21AAD84CB5F8E69D85FCB2B0CEEC3951FE384C",
+          "bytes": 1599645
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/labels/doc_full_ifrs-en_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/labels/doc_full_ifrs-en_2024-03-27.xml",
+          "sha256": "A825DED2C3DACCD523E54D0272C6F42DA13DA449668127DBF235B82BD5BA3D6B",
+          "bytes": 3594037
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/labels/in_full_ifrs-en_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/labels/in_full_ifrs-en_2024-03-27.xml",
+          "sha256": "4B129490B179274BBB24AAF7EEC304E95CB350AB86279637D991CA9C518F9F08",
+          "bytes": 384890
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/labels/lab_full_ifrs-en_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/labels/lab_full_ifrs-en_2024-03-27.xml",
+          "sha256": "C43BB860E64D7A9FBB9995C34C7926BE80B213DEDCEF17C11620C006DBE05AE1",
+          "bytes": 3612670
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ias_1/ref_ias_1_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ias_1/ref_ias_1_2024-03-27.xml",
+          "sha256": "D328AD64C2CE694BB368BF51BDC904E1A527B76BECDE6A6401EDABC963F39CDF",
+          "bytes": 544447
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ias_10/ref_ias_10_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ias_10/ref_ias_10_2024-03-27.xml",
+          "sha256": "77ABDDA9A9B410A9539BFE87DD6B9F5588998A20642CC7BD320AC7C9583D46C6",
+          "bytes": 18531
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ias_12/ref_ias_12_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ias_12/ref_ias_12_2024-03-27.xml",
+          "sha256": "C92EDF84C778C29C1DA96D1E5F9E1D8D4958D0EE2C354E13C2BF646B456C9669",
+          "bytes": 55083
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ias_16/ref_ias_16_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ias_16/ref_ias_16_2024-03-27.xml",
+          "sha256": "75B6BFEC81AE8EB75DAF4387858FB166809F57541EF2265E73C55A2DC38FA828",
+          "bytes": 76907
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ias_19/ref_ias_19_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ias_19/ref_ias_19_2024-03-27.xml",
+          "sha256": "27B640444599A6941DB52C57E42BC5725AEB53873B0082615E16387E0982583A",
+          "bytes": 115641
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ias_2/ref_ias_2_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ias_2/ref_ias_2_2024-03-27.xml",
+          "sha256": "FCB98FCF27C3601182F64E50E2D7F150BAC378D2A7E44B9B41022151925D5B99",
+          "bytes": 18110
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ias_20/ref_ias_20_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ias_20/ref_ias_20_2024-03-27.xml",
+          "sha256": "97899A90656C95A4832DC5B9BA9D3B55FF2754CCED46592618B296AAB28304C4",
+          "bytes": 7431
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ias_21/ref_ias_21_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ias_21/ref_ias_21_2024-03-27.xml",
+          "sha256": "D162DDAD78D8B034086076D9F423BD66D985BA0E43DBFE324450534864971976",
+          "bytes": 24078
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ias_23/ref_ias_23_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ias_23/ref_ias_23_2024-03-27.xml",
+          "sha256": "CB8AE7FB96D0EAF37803682130F74BA03F3A0190C001BF1626BE1D79133F33EB",
+          "bytes": 3986
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ias_24/ref_ias_24_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ias_24/ref_ias_24_2024-03-27.xml",
+          "sha256": "ACD8C73469E9FECBE8DDF458696D0470931067C97E6B719817FD106936005B8A",
+          "bytes": 45574
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ias_26/ref_ias_26_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ias_26/ref_ias_26_2024-03-27.xml",
+          "sha256": "76EE782C1133B38EA5B34793A594458E59FF5C4901B8B31686A84CBA70A3FD10",
+          "bytes": 26306
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ias_27/ref_ias_27_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ias_27/ref_ias_27_2024-03-27.xml",
+          "sha256": "EE7E6219DB9B1BA58CDBF53C29F76BAFE717BEACCAD3D300E61791FFA13B0E3D",
+          "bytes": 38095
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ias_29/ref_ias_29_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ias_29/ref_ias_29_2024-03-27.xml",
+          "sha256": "C4E713B18348508F3EA2C1933C2759AE17E8B7FBF541AD4BA16BA3BFE2702171",
+          "bytes": 6760
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ias_33/ref_ias_33_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ias_33/ref_ias_33_2024-03-27.xml",
+          "sha256": "4BE3E8A2278C84B719A0AA879619115EE803369965F23CF3132A5BAAE88F431B",
+          "bytes": 33660
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ias_34/ref_ias_34_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ias_34/ref_ias_34_2024-03-27.xml",
+          "sha256": "78BC5162FE37547DB69EFD6577BDC174C6B0CC3C53080BA1201551AA7CAC2816",
+          "bytes": 14334
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ias_36/ref_ias_36_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ias_36/ref_ias_36_2024-03-27.xml",
+          "sha256": "558FB2C72BDED04BE73FCA78DBD6E2880B110447C9CB77CB79CE68AEA7664127",
+          "bytes": 64107
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ias_37/ref_ias_37_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ias_37/ref_ias_37_2024-03-27.xml",
+          "sha256": "DE85899D4F1C60A02E32818B01F322B605398A28B7044EC12EFA0003CA09D979",
+          "bytes": 45953
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ias_38/ref_ias_38_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ias_38/ref_ias_38_2024-03-27.xml",
+          "sha256": "49CA47E1B3AD63AE01F622DB44F37847BCAC9783BDDBC5AEC9EB151FFAA92069",
+          "bytes": 68390
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ias_40/ref_ias_40_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ias_40/ref_ias_40_2024-03-27.xml",
+          "sha256": "7B46093A253D5739B5208F4F09DC07580D328FEB93FC01C349A8535D9BD008B6",
+          "bytes": 51694
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ias_41/ref_ias_41_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ias_41/ref_ias_41_2024-03-27.xml",
+          "sha256": "B04E2CCCDC710C599233C82E2F40BF8F8ADF62C0B80DCE0E5680EAB5D65A5BEC",
+          "bytes": 51296
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ias_7/ref_ias_7_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ias_7/ref_ias_7_2024-03-27.xml",
+          "sha256": "E7173B74D6B6CB2D73B156C2244BD48143667747B2D11E3E0C2D262E82F0DFE0",
+          "bytes": 142590
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ias_8/ref_ias_8_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ias_8/ref_ias_8_2024-03-27.xml",
+          "sha256": "878DB59BD5475EEC72037E38EAA50C5703D487C759BEB61C436DAF383C4EE421",
+          "bytes": 36555
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ifric_2/ref_ifric_2_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ifric_2/ref_ifric_2_2024-03-27.xml",
+          "sha256": "3E7D97FF22259ECA33A66EB91D95764C9EA4039B6AD721D3FD22FB4ECF25F390",
+          "bytes": 3559
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ifric_5/ref_ifric_5_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ifric_5/ref_ifric_5_2024-03-27.xml",
+          "sha256": "17B6AF8849F703A9BE86B44D18C1474BFD828B94CAAA8BDC28F46092D69BD354",
+          "bytes": 3386
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ifrs_1/ref_ifrs_1_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ifrs_1/ref_ifrs_1_2024-03-27.xml",
+          "sha256": "96461F806E65F508DDF13FF461844E0A9A5F7A49423E86EAC40D4CFC53FD4290",
+          "bytes": 34644
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ifrs_12/ref_ifrs_12_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ifrs_12/ref_ifrs_12_2024-03-27.xml",
+          "sha256": "CC66287E503A359B035D7360FAEE2DAC90FC2F6E5469255A3978A60839999123",
+          "bytes": 133714
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ifrs_13/ref_ifrs_13_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ifrs_13/ref_ifrs_13_2024-03-27.xml",
+          "sha256": "83610D2CA9669FAD2478BE8568A4DD5A6A05C8F6ECECCD7F4BB8FAA07DC05573",
+          "bytes": 151901
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ifrs_14/ref_ifrs_14_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ifrs_14/ref_ifrs_14_2024-03-27.xml",
+          "sha256": "E9A8EAB2A25DE8C764AE3B5F796962B718FD3BF0477878987CDD8D865872972C",
+          "bytes": 62378
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ifrs_15/ref_ifrs_15_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ifrs_15/ref_ifrs_15_2024-03-27.xml",
+          "sha256": "AEB8BCBB63D6614B3D1179963D83DB23CE53288849613FA9AB59078D4562418E",
+          "bytes": 67994
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ifrs_16/ref_ifrs_16_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ifrs_16/ref_ifrs_16_2024-03-27.xml",
+          "sha256": "BB089F189E322C7E62DF3B399A43C21D8A9F36C99504CB969AF8822011D8CFAA",
+          "bytes": 58550
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ifrs_17/ref_ifrs_17_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ifrs_17/ref_ifrs_17_2024-03-27.xml",
+          "sha256": "155A76DA63D872431F560E59105FD6ECCA98370F6D3EB436FC2264FE74FE771F",
+          "bytes": 192632
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ifrs_2/ref_ifrs_2_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ifrs_2/ref_ifrs_2_2024-03-27.xml",
+          "sha256": "42E4EBC6269FF28CF76E19D853CED265A281C6F8E7F61CAE21F72E7A5054FF5D",
+          "bytes": 53212
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ifrs_3/ref_ifrs_3_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ifrs_3/ref_ifrs_3_2024-03-27.xml",
+          "sha256": "F770BBCAF78E3B7F08AC204E0AD6B855175191164719E10DDC314718D6A6EEB9",
+          "bytes": 92222
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ifrs_5/ref_ifrs_5_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ifrs_5/ref_ifrs_5_2024-03-27.xml",
+          "sha256": "733B37F221A3D1033A5569EEAD318816CD79F5CB9A5557A8808F6647D6F6123F",
+          "bytes": 30882
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ifrs_6/ref_ifrs_6_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ifrs_6/ref_ifrs_6_2024-03-27.xml",
+          "sha256": "A2E9835E5F91FDD98EA2708DCA3FA3E143EE6A33749C6C63E272A73EE9B316AD",
+          "bytes": 7486
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ifrs_7/ref_ifrs_7_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ifrs_7/ref_ifrs_7_2024-03-27.xml",
+          "sha256": "C740C5E429C2F4C70F6A51F3A49B2625B003C77C19B525FFBCF92938F0F8959C",
+          "bytes": 470337
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/ifrs_8/ref_ifrs_8_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/ifrs_8/ref_ifrs_8_2024-03-27.xml",
+          "sha256": "63D4357927E4CB04B4685D1800451E8865F153FB13A0CDACD1FA677D54F14A6B",
+          "bytes": 43939
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/linkbases/sic_29/ref_sic_29_2024-03-27.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/linkbases/sic_29/ref_sic_29_2024-03-27.xml",
+          "sha256": "62AA385F4C9AE856E5E355D41B8FA92F052A3CC12FBB566F20387E3205538424",
+          "bytes": 14914
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/dimensions/dim_full_ifrs_2024-03-27_role-995000.xml",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/dimensions/dim_full_ifrs_2024-03-27_role-995000.xml",
+          "sha256": "25501D8BB40E85C7F06D6EB6B3AEC30164C88DD861209E88F97783572B2B4DB8",
+          "bytes": 12820
+        },
+        {
+          "url": "https://xbrl.ifrs.org/taxonomy/2024-03-27/full_ifrs/dimensions/rol_full_ifrs-dim_2024-03-27.xsd",
+          "file": "ifrs-taxonomy-2024-03-27/taxonomy/2024-03-27/full_ifrs/dimensions/rol_full_ifrs-dim_2024-03-27.xsd",
+          "sha256": "A45C5679C0673AB5B492F76FC8F68E4C078935B0A5AAF4340BE79180EDD62A10",
+          "bytes": 5514
+        }
+      ],
+      "package_file": "ifrs-full_ifrs-2024-03-27-opencnmv-pkg.zip",
+      "package_sha256": "DCCA65D6E54EA4A7B6F764D5760302948462F6F4EA01F4E223CB74B5E8D58084"
+    },
+    {
+      "package": "xbrl-lei-2020-07-02",
+      "taxonomy_version": "2020-07-02",
+      "files": 7,
+      "members": [
+        {
+          "url": "https://www.xbrl.org/taxonomy/int/lei/2020-07-02/lei-required.xsd",
+          "file": "xbrl-lei-2020-07-02/taxonomy/int/lei/2020-07-02/lei-required.xsd",
+          "sha256": "4E8ECD82DB78E87241C8F2D2A570063A9A0C164F4B2A55E2DFA200DD8B9DC22B",
+          "bytes": 893
+        },
+        {
+          "url": "https://www.xbrl.org/taxonomy/int/lei/2020-07-02/lei-required-formula.xml",
+          "file": "xbrl-lei-2020-07-02/taxonomy/int/lei/2020-07-02/lei-required-formula.xml",
+          "sha256": "EB432B998FEBC12A8685FBEFD298785F6DE99A0455BB73E8B8AF9B72DD063114",
+          "bytes": 3314
+        },
+        {
+          "url": "https://www.xbrl.org/taxonomy/int/lei/2020-07-02/lei.xsd",
+          "file": "xbrl-lei-2020-07-02/taxonomy/int/lei/2020-07-02/lei.xsd",
+          "sha256": "466EFC70226ED92F5794F3513490514F395A513A47D3A92ACA01E780D0833C23",
+          "bytes": 1729
+        },
+        {
+          "url": "https://www.xbrl.org/taxonomy/int/lei/2020-07-02/lei-formula.xml",
+          "file": "xbrl-lei-2020-07-02/taxonomy/int/lei/2020-07-02/lei-formula.xml",
+          "sha256": "95E34BB99794C71C53DB933E888C1D348664475AB27AB2B1128EDE4C3A67DB2A",
+          "bytes": 10846
+        },
+        {
+          "url": "https://www.xbrl.org/taxonomy/int/lei/2020-07-02/lei-label.xml",
+          "file": "xbrl-lei-2020-07-02/taxonomy/int/lei/2020-07-02/lei-label.xml",
+          "sha256": "C3E1690634977B2E070C238436A968C5EEAEF3EE9CFD8C9964A07BFAC84653C1",
+          "bytes": 1427
+        },
+        {
+          "url": "https://www.xbrl.org/taxonomy/int/lei/2020-07-02/lei-formula-functions.xsd",
+          "file": "xbrl-lei-2020-07-02/taxonomy/int/lei/2020-07-02/lei-formula-functions.xsd",
+          "sha256": "AE1A79C0AE453DC09EF7F686BCCE15D83B1F718DEE23E6A25541755EFD1BE0F3",
+          "bytes": 1191
+        },
+        {
+          "url": "https://www.xbrl.org/taxonomy/int/lei/2020-07-02/lei-formula-functions.xml",
+          "file": "xbrl-lei-2020-07-02/taxonomy/int/lei/2020-07-02/lei-formula-functions.xml",
+          "sha256": "4AAA2013DC0C8C8F68C6DFD1B44C200B340D5F62B05FEDEA59EBBFD137315611",
+          "bytes": 6234
+        }
+      ],
+      "package_file": "xbrl-lei-2020-07-02-opencnmv-pkg.zip",
+      "package_sha256": "C12474D974EA0271B6AD2E390B421927FA215F307CE5987D48E0F3E7922A052D"
+    }
+  ]
+}

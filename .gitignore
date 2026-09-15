@@ -9,3 +9,6 @@ g0-r/_probe-logs/*.cookies
 # OS / editor
 Thumbs.db
 .DS_Store
+
+# R11 brel oracle venv (not part of evidence)
+g0-r/R11-esef-arelle-parse/.venv-brel/

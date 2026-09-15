@@ -1,0 +1,413 @@
+[
+  {
+    "filing": "SAN-FY2024",
+    "package": "esef-SAN-FY2024-package.zip",
+    "package_sha256": "725FFF01861CB0C186107280BF30B2C047A3A59AF703D799F678E02C435CB9F5",
+    "arelle_version": "2.44.0",
+    "runtime": {
+      "internetConnectivity": "offline",
+      "disclosureSystemName": "esef-2022",
+      "plugins": "validate/ESEF|saveLoadableOIM",
+      "validate": true,
+      "taxonomy_packages": [
+        "esef_taxonomy_2022_v1.1.zip",
+        "ifrs-full_ifrs-2022-03-24-opencnmv-pkg.zip",
+        "xbrl-lei-2020-07-02-opencnmv-pkg.zip"
+      ]
+    },
+    "run_ok": true,
+    "elapsed_s": 78.3,
+    "counts": {
+      "facts": 1951,
+      "contexts": 329,
+      "units": 2,
+      "concepts": 5575,
+      "dts_documents": 84,
+      "fact_footnote_relationships": 0,
+      "nil_facts": 0,
+      "contexts_explicit_dims": 439,
+      "contexts_typed_dims": 0,
+      "fact_languages": [
+        "es"
+      ]
+    },
+    "concept_namespaces": {
+      "www.xbrl.org": 77,
+      "xbrl.org": 139,
+      "xbrl.ifrs.org": 5247,
+      "www.esma.europa.eu": 10,
+      "www.santanderbank.com": 102
+    },
+    "log_code_counts": {
+      "ERROR:ESEF.2.6.1.reportIncorrectlyPlacedInPackage": 1,
+      "WARNING:ESEF.RTS.Annex.II.Par.2.missingMandatoryMarkups": 1,
+      "WARNING:message": 6,
+      "WARNING:ESEF.2.7.1.targetXBRLDocumentWithFormulaWarnings": 1
+    },
+    "offline_evidence": {
+      "io_errors": 0,
+      "download_attempts_in_log": 0
+    },
+    "outputs": {
+      "facts_jsonl": "SAN-FY2024.facts.jsonl",
+      "facts_jsonl_sha256": "581CB8E155D252458BED8B115B45703445D48F598B87AE8377635C5D0F3C87AA",
+      "arelle_log": "SAN-FY2024.arelle-log.json",
+      "oim_json_sha256": "6945BC565FED1C9F2487D647DFAF534DBE0B18133C5D4ABBA7D97FE7CAA933F2",
+      "oim_json_gz": "SAN-FY2024.oim.json.gz",
+      "oim_json_gz_sha256": "31F89CAE8CD09C7088CF9C8C0BBA4A19EABA770D96CD12C493A3C98DAC5D344E"
+    },
+    "control_A": {
+      "fact_count_api": 1951,
+      "fact_count_oim": 1951,
+      "fact_multiset_equal": true,
+      "concept_coverage_equal": true,
+      "distinct_context_signatures_api": 329,
+      "decimals_distribution_equal": true,
+      "nil_count_api": 0,
+      "nil_count_oim": 0,
+      "multiset_diff_sample": []
+    }
+  },
+  {
+    "filing": "BBVA-FY2024",
+    "package": "esef-BBVA-FY2024-package.zip",
+    "package_sha256": "69F04DA4F6EBE4F3072401207FF83F6EDC9D335C83DF666525594A7062D7248A",
+    "arelle_version": "2.44.0",
+    "runtime": {
+      "internetConnectivity": "offline",
+      "disclosureSystemName": "esef-2022",
+      "plugins": "validate/ESEF|saveLoadableOIM",
+      "validate": true,
+      "taxonomy_packages": [
+        "esef_taxonomy_2022_v1.1.zip",
+        "ifrs-full_ifrs-2022-03-24-opencnmv-pkg.zip",
+        "xbrl-lei-2020-07-02-opencnmv-pkg.zip"
+      ]
+    },
+    "run_ok": true,
+    "elapsed_s": 64.5,
+    "counts": {
+      "facts": 1847,
+      "contexts": 183,
+      "units": 2,
+      "concepts": 5597,
+      "dts_documents": 84,
+      "fact_footnote_relationships": 0,
+      "nil_facts": 0,
+      "contexts_explicit_dims": 267,
+      "contexts_typed_dims": 0,
+      "fact_languages": [
+        "es"
+      ]
+    },
+    "concept_namespaces": {
+      "www.xbrl.org": 77,
+      "xbrl.org": 139,
+      "xbrl.ifrs.org": 5247,
+      "www.esma.europa.eu": 10,
+      "www.bbva.es": 124
+    },
+    "log_code_counts": {
+      "ERROR:ESEF.2.6.1.reportIncorrectlyPlacedInPackage": 1,
+      "WARNING:ESEF.RTS.Annex.II.Par.2.missingMandatoryMarkups": 1
+    },
+    "offline_evidence": {
+      "io_errors": 0,
+      "download_attempts_in_log": 0
+    },
+    "outputs": {
+      "facts_jsonl": "BBVA-FY2024.facts.jsonl",
+      "facts_jsonl_sha256": "582BA8DCD487D99A03776C0C6C2501DB67F7A6ABBAADE1B3AE6EECE5CB047192",
+      "arelle_log": "BBVA-FY2024.arelle-log.json",
+      "oim_json_sha256": "585313509150985545DD8F5F55CBE07CBBEBB225BE1F370EF4DE9D2F39913290",
+      "oim_json_gz": "BBVA-FY2024.oim.json.gz",
+      "oim_json_gz_sha256": "3DDBB91C3835DE0E9F250A72BA18462C7E92C68F72EEFD9D04D5022EF4551257"
+    },
+    "control_A": {
+      "fact_count_api": 1847,
+      "fact_count_oim": 1847,
+      "fact_multiset_equal": true,
+      "concept_coverage_equal": true,
+      "distinct_context_signatures_api": 183,
+      "decimals_distribution_equal": true,
+      "nil_count_api": 0,
+      "nil_count_oim": 0,
+      "multiset_diff_sample": []
+    }
+  },
+  {
+    "filing": "IBE-FY2024",
+    "package": "esef-IBE-FY2024-package.zip",
+    "package_sha256": "89DFD3EF65527D1D4378464C2F70FA78B2FB7B4872264EACFA91D3FAAE1C42B4",
+    "arelle_version": "2.44.0",
+    "runtime": {
+      "internetConnectivity": "offline",
+      "disclosureSystemName": "esef-2022",
+      "plugins": "validate/ESEF|saveLoadableOIM",
+      "validate": true,
+      "taxonomy_packages": [
+        "esef_taxonomy_2022_v1.1.zip",
+        "ifrs-full_ifrs-2022-03-24-opencnmv-pkg.zip",
+        "xbrl-lei-2020-07-02-opencnmv-pkg.zip"
+      ]
+    },
+    "run_ok": true,
+    "elapsed_s": 31.5,
+    "counts": {
+      "facts": 833,
+      "contexts": 59,
+      "units": 2,
+      "concepts": 5529,
+      "dts_documents": 84,
+      "fact_footnote_relationships": 0,
+      "nil_facts": 0,
+      "contexts_explicit_dims": 54,
+      "contexts_typed_dims": 0,
+      "fact_languages": [
+        "es"
+      ]
+    },
+    "concept_namespaces": {
+      "www.xbrl.org": 77,
+      "xbrl.org": 139,
+      "xbrl.ifrs.org": 5247,
+      "www.esma.europa.eu": 10,
+      "www.iberdrola.com": 56
+    },
+    "log_code_counts": {
+      "ERROR:ESEF.2.6.1.reportIncorrectlyPlacedInPackage": 1,
+      "WARNING:ESEF.RTS.Annex.II.Par.2.missingMandatoryMarkups": 1,
+      "WARNING:message": 2,
+      "WARNING:ESEF.2.7.1.targetXBRLDocumentWithFormulaWarnings": 1
+    },
+    "offline_evidence": {
+      "io_errors": 0,
+      "download_attempts_in_log": 0
+    },
+    "outputs": {
+      "facts_jsonl": "IBE-FY2024.facts.jsonl",
+      "facts_jsonl_sha256": "E82E508129E59EE208FA38A5F745BEB612BD2ED8DC49EBFBEC92DA859A0F62CD",
+      "arelle_log": "IBE-FY2024.arelle-log.json",
+      "oim_json_sha256": "8A14D95223DAB681CED387A004D75DE30CBD4F89ED75A0A1FBB586A79DCFD130",
+      "oim_json_gz": "IBE-FY2024.oim.json.gz",
+      "oim_json_gz_sha256": "4422A9E141FBD3A3C410D9037AF5BF3163605F153D10A491B48A680A2E08B32D"
+    },
+    "control_A": {
+      "fact_count_api": 833,
+      "fact_count_oim": 833,
+      "fact_multiset_equal": true,
+      "concept_coverage_equal": true,
+      "distinct_context_signatures_api": 59,
+      "decimals_distribution_equal": true,
+      "nil_count_api": 0,
+      "nil_count_oim": 0,
+      "multiset_diff_sample": []
+    }
+  },
+  {
+    "filing": "SAN-FY2025",
+    "package": "esef-SAN-FY2025-package.zip",
+    "package_sha256": "07E95A16C7D1652D6C6298C39B19B6A1E90C5D4A8C01881B4CCAEBDEAA700567",
+    "arelle_version": "2.44.0",
+    "runtime": {
+      "internetConnectivity": "offline",
+      "disclosureSystemName": "esef-2024",
+      "plugins": "validate/ESEF|saveLoadableOIM",
+      "validate": true,
+      "taxonomy_packages": [
+        "esef_taxonomy_2024.zip",
+        "ifrs-full_ifrs-2024-03-27-opencnmv-pkg.zip",
+        "xbrl-lei-2020-07-02-opencnmv-pkg.zip"
+      ]
+    },
+    "run_ok": true,
+    "elapsed_s": 71.5,
+    "counts": {
+      "facts": 1952,
+      "contexts": 329,
+      "units": 2,
+      "concepts": 5651,
+      "dts_documents": 88,
+      "fact_footnote_relationships": 0,
+      "nil_facts": 0,
+      "contexts_explicit_dims": 439,
+      "contexts_typed_dims": 0,
+      "fact_languages": [
+        "es"
+      ]
+    },
+    "concept_namespaces": {
+      "www.xbrl.org": 77,
+      "xbrl.org": 139,
+      "www.esma.europa.eu": 10,
+      "xbrl.ifrs.org": 5328,
+      "www.santander.com": 97
+    },
+    "log_code_counts": {
+      "ERROR:rpe": 1,
+      "WARNING:ESEF.RTS.Annex.II.Par.2.missingMandatoryMarkups": 1,
+      "WARNING:message": 6,
+      "WARNING:ESEF.2.7.1.targetXBRLDocumentWithFormulaWarnings": 1
+    },
+    "offline_evidence": {
+      "io_errors": 0,
+      "download_attempts_in_log": 0
+    },
+    "outputs": {
+      "facts_jsonl": "SAN-FY2025.facts.jsonl",
+      "facts_jsonl_sha256": "1775A62B5232A4C5C8D3E6402FBB01480B30E60D87AFEF114EB512E05DCE46EB",
+      "arelle_log": "SAN-FY2025.arelle-log.json",
+      "oim_json_sha256": "8D67E6766CB273AACFCDF05938DB02F15B82713FBA98D275F08DB57AD9D97351",
+      "oim_json_gz": "SAN-FY2025.oim.json.gz",
+      "oim_json_gz_sha256": "B26467AE700ADBB02478279F2DE1B5F62687E8734900F6AE1951E8B637DC65CF"
+    },
+    "control_A": {
+      "fact_count_api": 1952,
+      "fact_count_oim": 1952,
+      "fact_multiset_equal": true,
+      "concept_coverage_equal": true,
+      "distinct_context_signatures_api": 329,
+      "decimals_distribution_equal": true,
+      "nil_count_api": 0,
+      "nil_count_oim": 0,
+      "multiset_diff_sample": []
+    }
+  },
+  {
+    "filing": "BBVA-FY2025",
+    "package": "esef-BBVA-FY2025-package.zip",
+    "package_sha256": "675A1D3A470FDC469BEDA39BF242FFCB496C6F1116DA4D1FC562FAA0734E3458",
+    "arelle_version": "2.44.0",
+    "runtime": {
+      "internetConnectivity": "offline",
+      "disclosureSystemName": "esef-2024",
+      "plugins": "validate/ESEF|saveLoadableOIM",
+      "validate": true,
+      "taxonomy_packages": [
+        "esef_taxonomy_2024.zip",
+        "ifrs-full_ifrs-2024-03-27-opencnmv-pkg.zip",
+        "xbrl-lei-2020-07-02-opencnmv-pkg.zip"
+      ]
+    },
+    "run_ok": true,
+    "elapsed_s": 56.6,
+    "counts": {
+      "facts": 1830,
+      "contexts": 155,
+      "units": 2,
+      "concepts": 5667,
+      "dts_documents": 88,
+      "fact_footnote_relationships": 0,
+      "nil_facts": 0,
+      "contexts_explicit_dims": 213,
+      "contexts_typed_dims": 0,
+      "fact_languages": [
+        "es"
+      ]
+    },
+    "concept_namespaces": {
+      "www.xbrl.org": 77,
+      "xbrl.org": 139,
+      "www.esma.europa.eu": 10,
+      "xbrl.ifrs.org": 5328,
+      "www.bbva.es": 113
+    },
+    "log_code_counts": {
+      "ERROR:rpe": 1,
+      "WARNING:ESEF.RTS.Annex.II.Par.2.missingMandatoryMarkups": 1
+    },
+    "offline_evidence": {
+      "io_errors": 0,
+      "download_attempts_in_log": 0
+    },
+    "outputs": {
+      "facts_jsonl": "BBVA-FY2025.facts.jsonl",
+      "facts_jsonl_sha256": "A353903A1CF7C2A009C19940D73F6D1BA0256FC5D8A944913FE36DA10FA96762",
+      "arelle_log": "BBVA-FY2025.arelle-log.json",
+      "oim_json_sha256": "A7EA21E253DEB7943634DF60AE63ED29133E82F383C08EDFE51FE81A98C8AD3F",
+      "oim_json_gz": "BBVA-FY2025.oim.json.gz",
+      "oim_json_gz_sha256": "6B38B8C4BD0B519A16C4E0D9D3E1655BDDE696AB84E56255FEE0242F01A4A275"
+    },
+    "control_A": {
+      "fact_count_api": 1830,
+      "fact_count_oim": 1830,
+      "fact_multiset_equal": true,
+      "concept_coverage_equal": true,
+      "distinct_context_signatures_api": 155,
+      "decimals_distribution_equal": true,
+      "nil_count_api": 0,
+      "nil_count_oim": 0,
+      "multiset_diff_sample": []
+    }
+  },
+  {
+    "filing": "IBE-FY2025",
+    "package": "esef-IBE-FY2025-package.zip",
+    "package_sha256": "066FDAF835AD6E81F0FF77EACB571F5D2A09F9FB42788FBC12D7041D2E51E05A",
+    "arelle_version": "2.44.0",
+    "runtime": {
+      "internetConnectivity": "offline",
+      "disclosureSystemName": "esef-2024",
+      "plugins": "validate/ESEF|saveLoadableOIM",
+      "validate": true,
+      "taxonomy_packages": [
+        "esef_taxonomy_2024.zip",
+        "ifrs-full_ifrs-2024-03-27-opencnmv-pkg.zip",
+        "xbrl-lei-2020-07-02-opencnmv-pkg.zip"
+      ]
+    },
+    "run_ok": true,
+    "elapsed_s": 26.1,
+    "counts": {
+      "facts": 869,
+      "contexts": 59,
+      "units": 2,
+      "concepts": 5615,
+      "dts_documents": 88,
+      "fact_footnote_relationships": 0,
+      "nil_facts": 0,
+      "contexts_explicit_dims": 54,
+      "contexts_typed_dims": 0,
+      "fact_languages": [
+        "es"
+      ]
+    },
+    "concept_namespaces": {
+      "www.xbrl.org": 77,
+      "xbrl.org": 139,
+      "www.esma.europa.eu": 10,
+      "xbrl.ifrs.org": 5328,
+      "www.iberdrola.com": 61
+    },
+    "log_code_counts": {
+      "ERROR:rpe": 1,
+      "ERROR:ESEF.2.2.7.improperApplicationOfEscapeAttribute": 1,
+      "WARNING:ESEF.RTS.Annex.II.Par.2.missingMandatoryMarkups": 1,
+      "WARNING:message": 2,
+      "WARNING:ESEF.2.7.1.targetXBRLDocumentWithFormulaWarnings": 1
+    },
+    "offline_evidence": {
+      "io_errors": 0,
+      "download_attempts_in_log": 0
+    },
+    "outputs": {
+      "facts_jsonl": "IBE-FY2025.facts.jsonl",
+      "facts_jsonl_sha256": "886E6AD875D92C259011DBDCBF3E90A63933CF1E7A83941E5791718137093AF7",
+      "arelle_log": "IBE-FY2025.arelle-log.json",
+      "oim_json_sha256": "23BA23ADA48ED1B9A16B53C9E84DECED8B55B2AF98A848F4AE9603ACEFF0F4F8",
+      "oim_json_gz": "IBE-FY2025.oim.json.gz",
+      "oim_json_gz_sha256": "F8ABA932D32D5A53D514DFDBB213FE230A999230D6330D659BC6C5F93FEA283F"
+    },
+    "control_A": {
+      "fact_count_api": 869,
+      "fact_count_oim": 869,
+      "fact_multiset_equal": true,
+      "concept_coverage_equal": true,
+      "distinct_context_signatures_api": 59,
+      "decimals_distribution_equal": true,
+      "nil_count_api": 0,
+      "nil_count_oim": 0,
+      "multiset_diff_sample": []
+    }
+  }
+]

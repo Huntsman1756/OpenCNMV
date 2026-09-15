@@ -1,0 +1,69 @@
+{
+  "filing": "SAN-FY2025",
+  "package": "esef-SAN-FY2025-package.zip",
+  "package_sha256": "07E95A16C7D1652D6C6298C39B19B6A1E90C5D4A8C01881B4CCAEBDEAA700567",
+  "arelle_version": "2.44.0",
+  "runtime": {
+    "internetConnectivity": "offline",
+    "disclosureSystemName": "esef-2024",
+    "plugins": "validate/ESEF|saveLoadableOIM",
+    "validate": true,
+    "taxonomy_packages": [
+      "esef_taxonomy_2024.zip",
+      "ifrs-full_ifrs-2024-03-27-opencnmv-pkg.zip",
+      "xbrl-lei-2020-07-02-opencnmv-pkg.zip"
+    ]
+  },
+  "run_ok": true,
+  "elapsed_s": 71.5,
+  "counts": {
+    "facts": 1952,
+    "contexts": 329,
+    "units": 2,
+    "concepts": 5651,
+    "dts_documents": 88,
+    "fact_footnote_relationships": 0,
+    "nil_facts": 0,
+    "contexts_explicit_dims": 439,
+    "contexts_typed_dims": 0,
+    "fact_languages": [
+      "es"
+    ]
+  },
+  "concept_namespaces": {
+    "www.xbrl.org": 77,
+    "xbrl.org": 139,
+    "www.esma.europa.eu": 10,
+    "xbrl.ifrs.org": 5328,
+    "www.santander.com": 97
+  },
+  "log_code_counts": {
+    "ERROR:rpe": 1,
+    "WARNING:ESEF.RTS.Annex.II.Par.2.missingMandatoryMarkups": 1,
+    "WARNING:message": 6,
+    "WARNING:ESEF.2.7.1.targetXBRLDocumentWithFormulaWarnings": 1
+  },
+  "offline_evidence": {
+    "io_errors": 0,
+    "download_attempts_in_log": 0
+  },
+  "outputs": {
+    "facts_jsonl": "SAN-FY2025.facts.jsonl",
+    "facts_jsonl_sha256": "1775A62B5232A4C5C8D3E6402FBB01480B30E60D87AFEF114EB512E05DCE46EB",
+    "arelle_log": "SAN-FY2025.arelle-log.json",
+    "oim_json_sha256": "8D67E6766CB273AACFCDF05938DB02F15B82713FBA98D275F08DB57AD9D97351",
+    "oim_json_gz": "SAN-FY2025.oim.json.gz",
+    "oim_json_gz_sha256": "B26467AE700ADBB02478279F2DE1B5F62687E8734900F6AE1951E8B637DC65CF"
+  },
+  "control_A": {
+    "fact_count_api": 1952,
+    "fact_count_oim": 1952,
+    "fact_multiset_equal": true,
+    "concept_coverage_equal": true,
+    "distinct_context_signatures_api": 329,
+    "decimals_distribution_equal": true,
+    "nil_count_api": 0,
+    "nil_count_oim": 0,
+    "multiset_diff_sample": []
+  }
+}
