@@ -24,7 +24,8 @@ R5  PASS    # issuer identity: NIF <-> legal entity <-> LEI, issuer != security 
 R6  PASS    # source filing key: nreg/registro = logical filing; ?e= = version locator; ?t={GUID} never identity
 R7  PASS    # 21 raw corpus artefacts materialized with HTTP metadata + source_registration_no
 R8  PASS    # SHA-256 stable: 21/21 artefacts byte-stable on re-download
-R9-R17  NOT_RUN
+R9  PASS    # taxonomy discovery: IPP 2019-01-01 (ipp_en SAN/BBVA vs ipp_ge IBE); ESEF = issuer extension taxonomy + ZIP/Xbri dependency
+R10-R17  NOT_RUN
 ```
 
 ## Checkpoint
@@ -62,6 +63,16 @@ G0-R verdict (after R17) is `GO`. The final verdict states are `GO` / `CONDITION
   with HTTP metadata + `source_registration_no`. Observed: IPP H2 artefacts are much smaller than H1
   (potential model/taxonomy heterogeneity for R9/R12).
 - **R8 PASS:** 21/21 artefacts byte-stable on re-download (SHA-256 match).
+- **R9 PASS:** taxonomy discovery. IPP = 2019-01-01 (Circular 3/2018), model `ipp_en` (SAN/BBVA,
+  credit) vs `ipp_ge` (IBE, general); H1/H2 same taxonomy (size = facts). ESEF iXBRL references an
+  issuer extension taxonomy (santander.com / bbva.es / iberdrola.com, `20251231`) + ESMA base;
+  the R7 ESEF artefacts are cover-only (no ix:/schemaRef); the ZIP/Xbri package (extension
+  taxonomy) is a required dependency -> feeds R10.
+- **R6 caveat:** `nreg`/`registro` = best observed `source_registration_no` (unique + stable across
+  observations); **stability across a real substitution = NOT_YET_PROVEN, deferred to R13.**
+- **R17 finding (recorded, not executed):** SAN H2-2025 IPP contains `Dcur_PeriodoCorrienteActualMiembro`
+  (2025-07-01→2025-12-31) and `Dcur_AcumuladoActualMiembro` (2025-01-01→2025-12-31) — same period_end,
+  different temporal semantics (see `docs/findings/0002-*.md`).
 
 ## Blocking findings
 
@@ -95,10 +106,10 @@ IBE  IBERDROLA, S.A.                       nif=A-48010615  LEI=5QK37QC7NWOJ8D7WV
 
 ## Next action
 
-Proceed to **R9** (within G0-R), following `AGENTS.md` and `docs/gates/G0-R.md`:
-`R9 TAXONOMY_DISCOVERY → R10 TAXONOMY_PINNING → R11/R12 Arelle parse → R13 revisions → R14/R15
-determinism → R16 oracle reconciliation → R17 H2 vs ESEF`. Do **not** build product, UI, API, or
-MCP. G1 is not touched until R17 is closed.
+Proceed to **R10** (within G0-R), following `AGENTS.md` and `docs/gates/G0-R.md`:
+`R10 TAXONOMY_PINNING → R11/R12 Arelle parse → R13 revisions → R14/R15 determinism → R16 oracle
+reconciliation → R17 H2 vs ESEF`. Do **not** build product, UI, API, or MCP. G1 is not touched until
+R17 is closed.
 
 ## Session hygiene
 

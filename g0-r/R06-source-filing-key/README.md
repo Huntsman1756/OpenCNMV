@@ -49,17 +49,21 @@ ephemeral transport locator   = descargaxbrlipp.ashx?t={GUID}            (never 
    date and the underlying `?e=`/file change). A substitution is a **version** of the same logical
    filing, not a new filing.
 
-## Conclusion (hierarchy NOT falsified; confirmed)
+## Conclusion (hierarchy NOT falsified; confirmed as best observed)
 
 - `nreg` (IPP) and `registro oficial` (ESEF) are stable, unique, official registration keys.
-- They identify the **logical filing** (the period/IFA), not the issuer and not a single byte set.
-- A substitution/revision is a **filing_version** within the same `registro`/`nreg`; it changes the
-  `?e=` token (and the `fecha de publicación`), not the registration key.
+- They are the **best observed `source_registration_no`**: unique + stable across repeated
+  observations within the frozen corpus. They identify the **logical filing** (the period/IFA),
+  not the issuer and not a single byte set.
+- **Stability across a real substitution = NOT_YET_PROVEN.** No substitution was observed in the
+  corpus; the semantics that a substitution becomes a new version within the same `registro`/`nreg`
+  (changing `?e=` and `fecha de publicación`) is inferred from the source legend, not observed.
+  This is **deferred to R13** and must not be inherited as fact by R13.
 - `?e=<token>` is a **per-version artefact locator** (not a logical identity).
 - `?t={GUID}` is an **ephemeral transport locator** (never identity).
 - **Model implication:** `source_registration_no` = `nreg`/`registro oficial` (→ `filing`); the
   `?e=` token + `fecha` (→ `filing_version`). This matches the required filing / filing_version
-  split.
+  split, with substitution-persistence to be verified in R13.
 
 ## Limitation
 

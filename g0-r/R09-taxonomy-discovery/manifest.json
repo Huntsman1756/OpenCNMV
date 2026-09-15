@@ -1,0 +1,31 @@
+{
+  "gate": "R9",
+  "name": "TAXONOMY_DISCOVERY",
+  "status": "PASS",
+  "executed_at": "2026-09-14T22:15:14Z",
+  "code_commit": "n/a",
+  "inputs": [
+    "g0-r/R07-raw-retrieval/artifact_manifest.json (21 artefacts)"
+  ],
+  "outputs": [
+    "g0-r/R09-taxonomy-discovery/README.md",
+    "g0-r/R09-taxonomy-discovery/evidence/taxonomy_matrix.json",
+    "g0-r/R09-taxonomy-discovery/evidence/taxonomy_matrix.csv",
+    "g0-r/R09-taxonomy-discovery/evidence/esef-SAN-FY2025-consolidada.bin",
+    "g0-r/R09-taxonomy-discovery/evidence/esef-BBVA-FY2025-consolidada.bin"
+  ],
+  "sha256": {},
+  "findings": [
+    "IPP taxonomy version uniform: 2019-01-01 (Circular 3/2018) across the corpus.",
+    "IPP model families: SAN/BBVA = ipp_en (entidades/credit model), IBE = ipp_ge (general model). Structural difference discoverable from namespace/schemaRef, not issuer name.",
+    "H1 vs H2 falsified: same taxonomy for both; H2 small size is fewer facts, not a different taxonomy (SAN H2-2025 uses ipp_en/2019-01-01).",
+    "ESEF: the downloaded ?e= artefact is the cover page (no ix:/schemaRef). The inline-XBRL report and the ZIP/Xbri package are separate components.",
+    "ESEF consolidated iXBRL schemaRef -> issuer extension taxonomy: SAN=http://www.santander.com/20251231/5493006QMFDDMYWIAM13-2025-12-31.xsd, BBVA=http://www.bbva.es/20251231/K8MS7FD7N5Z2WQ51AZ71-2025-12-31.xsd, IBE=http://www.iberdrola.com/20251231/5QK37QC7NWOJ8D7WVQ45-2025-12-31.xsd.",
+    "ESEF iXBRL requires the issuer extension taxonomy + the ESMA ESEF base taxonomy package; the cover XHTML alone is insufficient for offline reconstruction -> ZIP/Xbri package (extension taxonomy) is a required dependency for R10.",
+    "Content sniffing used, never the file extension; raw files are .zip-named but IPP=XML, ESEF=XHTML."
+  ],
+  "limitations": [
+    "ESEF characterised for FY2025; FY2024 uses analogous 20241231 extension taxonomy.",
+    "Extension taxonomy URLs are on issuer domains (external); must be fetched/pinned in R10 for offline determinism."
+  ]
+}
