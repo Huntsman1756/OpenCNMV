@@ -1,8 +1,7 @@
 {
   "gate": "R7",
   "name": "RAW_ARTIFACT_RETRIEVAL",
-  "status": "FAIL",
-  "reopened_by": "R9 (new evidence: the six 'ESEF' artefacts are the Portada/cover, not iXBRL; ESEF corpus raw is incomplete)",
+  "status": "PASS",
   "executed_at": "2026-09-14T22:15:14Z",
   "code_commit": "n/a",
   "inputs": [
@@ -21,14 +20,16 @@
     "manifest": "see artifact_manifest.json (21 artefacts)"
   },
   "findings": [
-    "21 raw artefacts materialized (15 IPP text/xml + 6 ESEF application/xhtml+xml).",
-    "REOPENED: the 6 ESEF artefacts are the Portada (cover) component - no ix:/schemaRef - NOT the iXBRL report.",
-    "The ESEF filings also publish IXBRL_CONSOLIDATED, IXBRL_INDIVIDUAL and ESEF_PACKAGE_ZIP_XBRL components (separate ?e= in the same ListadoIFA row), which were NOT retrieved in R7.",
+    "27 raw artefacts materialized for the corpus: 15 IPP_XBRL + 6 ESEF_COVER + 6 ESEF_PACKAGE_ZIP_XBRL.",
+    "REMEDIATED: the 6 ESEF artefacts from R7 (now reclassified ESEF_COVER) were the Portada; the real ESEF iXBRL and ZIP/Xbri package were added as separate components.",
+    "The 6 ESEF_PACKAGE_ZIP_XBRL packages are the self-contained ESEF raw (iXBRL report + issuer extension taxonomy schema/linkbases + META-INF), ~10-34MB each, preserved with SHA-256.",
+    "The 6 IXBRL_CONSOLIDATED (real inline-XBRL report) were byte-stable out-of-session (recorded in esef_components.json); raw preserved inside the ZIP packages.",
     "Metadata recorded: role, family, source_registration_no, source_url, final_url, retrieved_at, http_status, media_type, byte_size, elapsed_ms, set_cookie, sha256.",
     "No re-serialisation; bytes written as received.",
-    "Observed: IPP H2 artefacts are much smaller than H1 (e.g. SAN H2-2025=392KB vs H1-2026=31.8MB); same taxonomy, fewer facts."
+    "Observed: IPP H2 artefacts are much smaller than H1 (same taxonomy, fewer facts).",
+    "Model: 21 filings != 21 artefacts; an ESEF filing = filing_version with multiple artefacts (COVER / IXBRL_CONSOLIDATED / IXBRL_INDIVIDUAL / ESEF_PACKAGE_ZIP_XBRL)."
   ],
   "limitations": [
-    "FAIL: ESEF corpus raw is incomplete - the real iXBRL and ZIP/Xbri package were not retrieved. Remediation: enumerate all components per ESEF filing, download IXBRL_CONSOLIDATED + ESEF_PACKAGE_ZIP_XBRL, reclassify covers as ESEF_COVER."
+    "The IXBRL_CONSOLIDATED standalone XHTML (up to ~118MB) is not stored as a separate repo file (size); its raw is preserved within the ZIP package, and its SHA/schemaRef are recorded."
   ]
 }

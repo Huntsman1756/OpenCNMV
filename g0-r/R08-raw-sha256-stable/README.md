@@ -1,8 +1,14 @@
 # R8 — RAW_SHA256_STABLE
 
 **Gate:** R8 — RAW_SHA256_STABLE
-**Status:** `PASS`
+**Status:** `PASS` (remediated)
 **Executed:** 2026-09-14 (UTC) — after checkpoint `CONTINUE`
+
+> Remediation note: verification now runs on the **complete** corpus inventory. **27/27 MATCH**
+> (15 IPP + 6 ESEF_COVER + 6 ESEF_PACKAGE_ZIP_XBRL); the 6 IXBRL_CONSOLIDATED were separately
+> verified byte-stable (run1==run2) in the R4 remediation. **Important:** the IPP `?t={GUID}` is
+> ephemeral — re-downloading a stored `?t=` URL returns EMPTY; IPP is re-resolved via `nreg` →
+> detail → fresh GUID (discovery). This confirms R6 (`nreg` is the stable IPP locator, not the URL).
 
 ## Objective
 

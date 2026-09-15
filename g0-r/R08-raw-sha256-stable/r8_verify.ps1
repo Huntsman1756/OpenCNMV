@@ -1,4 +1,4 @@
-param([string]$Manifest = "g0-r\R07-raw-retrieval\artifact_manifest.json", [string]$OutDir = "g0-r\R08-raw-sha256-stable\evidence")
+param([string]$Manifest = "g0-r\R07-raw-retrieval\artifact_manifest.json", [string]$Base = "https://www.cnmv.es", [string]$OutDir = "g0-r\R08-raw-sha256-stable\evidence")
 $ErrorActionPreference = "Stop"
 try { Add-Type -AssemblyName System.Net.Http -ErrorAction SilentlyContinue } catch {}
 try { Add-Type -AssemblyName System.Net.Primitives -ErrorAction SilentlyContinue } catch {}
@@ -12,37 +12,46 @@ function Get-Bytes($url){
     $resp = $client.GetAsync($url).GetAwaiter().GetResult()
     $bytes = $resp.Content.ReadAsByteArrayAsync().GetAwaiter().GetResult()
     $status = [int]$resp.StatusCode
-    $final = if ($resp.RequestMessage.RequestUri) { $resp.RequestMessage.RequestUri.AbsoluteUri } else { $url }
     $client.Dispose()
-    return @{ status=$status; bytes=$bytes; final=$final }
+    return @{ status=$status; bytes=$bytes }
 }
+function ShaOf($b){ return [System.BitConverter]::ToString((New-Object System.Security.Cryptography.SHA256Managed).ComputeHash($b)).Replace("-","").ToLower() }
 
 $m = Get-Content $Manifest -Raw | ConvertFrom-Json
 $results = New-Object System.Collections.ArrayList
-$matchCount = 0; $mismatchCount = 0; $errorCount = 0
+$match=0; $mismatch=0; $errCount=0
 
 foreach($a in $m){
     $url = $a.source_url
     try {
-        $r = Get-Bytes $url
-        $h = (New-Object System.Security.Cryptography.SHA256Managed).ComputeHash($r.bytes)
-        $sha = [System.BitConverter]::ToString($h).Replace("-","").ToLower()
-        $same = ($sha -eq $a.sha256)
-        if($same){ $matchCount++ } else { $mismatchCount++ }
-        $rec = [ordered]@{
-            role=$a.role; family=$a.family; source_registration_no=$a.source_registration_no
-            source_url=$url; final_url=$r.final; http_status=$r.status
-            run1_sha256=$a.sha256; run2_sha256=$sha; byte_size=$r.bytes.Length
-            match=$same
+        $bytes = $null
+        if($a.family -eq "IPP"){
+            # IPP ?t={GUID} is ephemeral; re-resolve via nreg -> detail -> fresh GUID
+            $nreg = $a.source_registration_no
+            $det = Get-Bytes "$Base/portal/aldia/detalleifialdia.aspx?nreg=$nreg"
+            $detText = [System.Text.Encoding]::UTF8.GetString($det.bytes)
+            $g = [regex]::Match($detText,'descargaxbrlipp\.ashx\?t=\{[0-9a-f-]{36}\}').Value
+            $guid = [regex]::Match($g,'\{([0-9a-f-]{36})\}').Groups[1].Value
+            if(-not $guid){ throw "no GUID for nreg=$nreg" }
+            $dl = Get-Bytes "$Base/portal/consultas/wuc/descargaxbrlipp.ashx?t=%7b$guid%7d"
+            $bytes = $dl.bytes
+            $url = "$Base/portal/consultas/wuc/descargaxbrlipp.ashx?t=%7b$guid%7d"
+        } else {
+            $dl = Get-Bytes $url
+            $bytes = $dl.bytes
         }
-        [void]$results.Add($rec)
-        Write-Output ("  " + $a.role + "  " + ($(if($same){"MATCH"}else{"MISMATCH"})) + "  sha=" + $sha.Substring(0,12))
+        $sha = ShaOf $bytes
+        $same = ($sha -eq $a.sha256)
+        if($same){ $match++ } else { $mismatch++ }
+        [void]$results.Add([ordered]@{ role=$a.role; family=$a.family; source_registration_no=$a.source_registration_no; source_url=$url; run1_sha256=$a.sha256; run2_sha256=$sha; byte_size=$bytes.Length; match=$same })
+        Write-Output ("  " + $a.role + " " + $(if($same){"MATCH"}else{"MISMATCH"}) + " sha=" + $sha.Substring(0,12))
     } catch {
-        $errorCount++
-        [void]$results.Add([ordered]@{ role=$a.role; family=$a.family; source_registration_no=$a.source_registration_no; source_url=$url; error=$_.Exception.Message; match=$false })
-        Write-Output ("  " + $a.role + "  ERROR " + $_.Exception.Message)
+        $errCount++
+        [void]$results.Add([ordered]@{ role=$a.role; family=$a.family; source_registration_no=$a.source_registration_no; error=$_.Exception.Message; match=$false })
+        Write-Output ("  " + $a.role + " ERROR " + $_.Exception.Message)
     }
 }
-
 $results | ConvertTo-Json -Depth 6 | Set-Content -LiteralPath (Join-Path $OutDir "sha256_verify.json") -Encoding UTF8
-Write-Output ("RESULT: match=$matchCount mismatch=$mismatchCount error=$errorCount  total=" + $results.Count)
+Write-Output ("RESULT: match=$match mismatch=$mismatch error=$errCount total=" + $results.Count)
+
+

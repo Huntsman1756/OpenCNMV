@@ -1,8 +1,13 @@
 # R9 — TAXONOMY_DISCOVERY
 
 **Gate:** R9 — TAXONOMY_DISCOVERY
-**Status:** `PASS`
+**Status:** `PASS` (remediated)
 **Executed:** 2026-09-14 (UTC) — after checkpoint `CONTINUE`
+
+> Remediation note: FY2024 ESEF schemaRefs are now **observed** (not "analogous"). All 6 ESEF
+> iXBRL schemaRefs (FY2024 + FY2025) were extracted from the preserved ZIP/Xbri packages.
+> **Notable:** SAN's extension taxonomy domain changed between years
+> (`santanderbank.com` FY2024 → `santander.com` FY2025).
 
 ## Objective
 

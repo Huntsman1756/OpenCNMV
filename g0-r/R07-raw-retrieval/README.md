@@ -1,8 +1,14 @@
 # R7 — RAW_ARTIFACT_RETRIEVAL
 
 **Gate:** R7 — RAW_ARTIFACT_RETRIEVAL
-**Status:** `PASS`
+**Status:** `PASS` (remediated)
 **Executed:** 2026-09-14 (UTC) — after checkpoint `CONTINUE`
+
+> Remediation note: R9 showed the original 6 ESEF artefacts were the **Portada/cover** (no
+> `ix:`/`schemaRef`). The corpus raw is now complete: 15 IPP + 6 **ESEF_COVER** + 6
+> **ESEF_PACKAGE_ZIP_XBRL** (self-contained: iXBRL + issuer extension taxonomy + META-INF). The
+> real iXBRL is preserved inside the ZIP packages; its standalone XHTML is too large to store as a
+> repo file but its SHA/schemaRef are recorded in `esef_components.json`.
 
 ## Objective
 

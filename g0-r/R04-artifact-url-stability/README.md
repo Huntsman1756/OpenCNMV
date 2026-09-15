@@ -1,12 +1,14 @@
 # R4 — ARTIFACT_URL_STABILITY
 
 **Gate:** R4 — ARTIFACT_URL_STABILITY
-**Status:** `PASS`
-**Executed:** 2026-09-14 (UTC 22:15) — resolution session
-**Reason for PASS:** Both target corpus families are now proven out-of-session and byte-stable for
-SAN, BBVA and IBE. The final artefact URLs (`webservices/verdocumento/ver?e=<token>`) are stable,
-reusable, cookie-free, and byte-deterministic. (The earlier `FAIL` was because only a generic GUID
-artefact + taxonomy were tested; the `?e=` variant and the two corpus families are now covered.)
+**Status:** `PASS` (remediated)
+**Executed:** 2026-09-14 (UTC) — after checkpoint `CONTINUE`
+**Reason for PASS (remediated):** R9 proved the earlier "ESEF iXBRL" artefacts were the
+**Portada/cover**. The real ESEF iXBRL is now tested: all 6 **IXBRL_CONSOLIDATED** (SAN/BBVA/IBE ×
+FY2024/FY2025) are **byte-stable out-of-session** (run1==run2 SHA-256), as are the 6
+**ESEF_PACKAGE_ZIP_XBRL** and the 6 **ESEF_COVER**; the 15 **IPP_XBRL** are byte-stable too.
+**Key finding:** the IPP `?t={GUID}` is **ephemeral** (re-downloading a stored `?t=` returns empty);
+`nreg` via discovery is the stable IPP locator. The `?e=` tokens are stable across visits.
 
 ## Objective
 

@@ -19,24 +19,23 @@ R0  PASS    # legal reuse
 R1  PASS    # exact corpus enumeration -> artefact proven via listaifi/ListadoIFA (SAN/BBVA/IBE)
 R2  PASS    # access mechanism characterised (use per-entity GET path; bypass general WebForms postback)
 R3  PASS    # discovery stable across two observations (+ ListadoIFA byte-identical, ?e= tokens stable)
-R4  FAIL    # REOPENED by R9: the six 'ESEF iXBRL' artefacts tested were the Portada/cover, not iXBRL
+R4  PASS    # ARTIFACT_URL_STABILITY (remediated): real ESEF iXBRL + ZIP package + IPP byte-stable out-of-session; IPP ?t={GUID} ephemeral, nreg is the stable locator
 R5  PASS    # issuer identity: NIF <-> legal entity <-> LEI, issuer != security (SAN/BBVA/IBE)
 R6  PASS    # source filing key: nreg/registro = logical filing (best observed); substitution persistence NOT_YET_PROVEN -> R13
-R7  FAIL    # REOPENED by R9: ESEF corpus raw incomplete (only covers); real iXBRL + ZIP/Xbri missing
-R8  FAIL    # REOPENED by R9: 21/21 stable but inventory incomplete (missing ESEF iXBRL + ZIP/Xbri)
-R9  FAIL    # own finding: FY2024 ESEF taxonomy inferred as 'analogous', not observed; real iXBRL not analysed
+R7  PASS    # RAW_ARTIFACT_RETRIEVAL (remediated): 27 raw artefacts (15 IPP + 6 ESEF_COVER + 6 ESEF_PACKAGE_ZIP_XBRL); components enumerated
+R8  PASS    # RAW_SHA256_STABLE (remediated): 27/27 MATCH on complete inventory; IPP re-resolved via nreg
+R9  PASS    # TAXONOMY_DISCOVERY (remediated): IPP 2019-01-01 (ipp_en vs ipp_ge); ESEF FY2024+FY2025 schemaRefs observed; SAN domain changed
 R10-R17  NOT_RUN
 ```
 
 ## Checkpoint
 
 ```text
-R0–R4 CHECKPOINT: HOLD   (reopened by R9 new evidence: ESEF artefact misclassification)
+R0–R4 CHECKPOINT: CONTINUE
 ```
 
-`CONTINUE` would authorise proceeding to R5; it is restored only after the R4/R7/R8/R9 remediation
-(real ESEF iXBRL + ZIP/Xbri enumerated, downloaded, byte-stable, and taxonomy-observed incl. FY2024).
-**G1 is not touched** until the final G0-R verdict (after R17) is `GO`.
+`CONTINUE` authorises proceeding to **R5** (within G0-R). **G1 is not touched** until the final
+G0-R verdict (after R17) is `GO`. The final verdict states are `GO` / `CONDITIONAL_GO` / `NO_GO`.
 
 ## Resolution-session findings (R1/R4)
 
@@ -80,6 +79,16 @@ R0–R4 CHECKPOINT: HOLD   (reopened by R9 new evidence: ESEF artefact misclassi
 - **R17 finding (recorded, not executed):** SAN H2-2025 IPP contains `Dcur_PeriodoCorrienteActualMiembro`
   (2025-07-01→2025-12-31) and `Dcur_AcumuladoActualMiembro` (2025-01-01→2025-12-31) — same period_end,
   different temporal semantics (see `docs/findings/0002-*.md`).
+
+## Remediation (R4/R7/R8/R9) — after the R9 reopening
+
+- Enumerated all ESEF components per filing (Individual / Consolidada / ZIP-Xbri / Informe especial).
+- Added 6 ESEF_PACKAGE_ZIP_XBRL (self-contained: iXBRL + issuer extension taxonomy + META-INF), ~10-34MB, SHA-256 recorded.
+- The 6 IXBRL_CONSOLIDATED (real inline-XBRL) are byte-stable out-of-session (run1==run2); raw preserved inside the ZIP packages (standalone XHTML too large to store as a repo file).
+- Reclassified the 6 covers as ESEF_COVER (hashes/provenance preserved).
+- **Key finding:** the IPP `?t={GUID}` is ephemeral — re-downloading a stored `?t=` URL returns EMPTY. IPP must be re-resolved via `nreg` → detail → fresh GUID (discovery). Confirms R6 (`nreg` is the stable locator, not the URL).
+- **SAN extension taxonomy domain changed** between years (santanderbank.com FY2024 → santander.com FY2025).
+- R8 now verifies 27/27 MATCH on the complete inventory.
 
 ## Blocking findings
 

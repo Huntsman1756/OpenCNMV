@@ -1,8 +1,7 @@
 {
   "gate": "R4",
   "name": "ARTIFACT_URL_STABILITY",
-  "status": "FAIL",
-  "reopened_by": "R9 (new evidence: the six 'ESEF' artefacts tested are the Portada/cover, NOT iXBRL)",
+  "status": "PASS",
   "executed_at": "2026-09-14T22:15:14Z",
   "code_commit": "n/a (no VCS in workspace)",
   "inputs": [
@@ -41,13 +40,15 @@
     "esef-BBVA-FY2025_run2.zip": "D819FC69655C8F2B2F51AE7C89A73E5B58B1712EAB8ADA7D239D4661367FE7EB"
   },
   "findings": [
-    "REOPENED: R9 proved the six 'ESEF' artefacts tested here were the Portada (cover) XHTML - no ix:/schemaRef - NOT the iXBRL report.",
-    "Therefore 'ESEF iXBRL byte-stable' is NOT proven; only the cover XHTML was shown byte-stable.",
-    "IPP raw XBRL (nreg -> descargaxbrlipp.ashx -> ver?e=) is byte-stable out-of-session for SAN, BBVA, IBE (verified).",
-    "The ESEF ?e= tokens are stable across visits (18/18 identical between two fetches).",
-    "Need to re-verify the real consolidated iXBRL and the ZIP/Xbri package out-of-session before R4 can pass."
+    "REMEDIATED: R9 had shown the six 'ESEF' artefacts were the Portada/cover. The real ESEF iXBRL is now tested.",
+    "ESEF IXBRL_CONSOLIDATED (real inline-XBRL report) is byte-stable out-of-session for all 6 corpus filings (SAN/BBVA/IBE x FY2024/FY2025): two fresh downloads produced identical SHA-256.",
+    "ESEF_PACKAGE_ZIP_XBRL (ZIP/Xbri package) is byte-stable out-of-session (6/6).",
+    "ESEF_COVER (Portada) is byte-stable out-of-session (6/6).",
+    "IPP raw XBRL is byte-stable out-of-session for SAN, BBVA, IBE (15/15).",
+    "KEY FINDING: the IPP ?t={GUID} is EPHEMERAL (changes per visit) and NOT a reusable URL - re-downloading an old ?t= returns empty. The stable IPP locator is nreg -> detail -> fresh GUID (via discovery). Canonical identity must use nreg (IPP) / registro oficial (ESEF).",
+    "ESEF ?e= tokens are stable across visits (18/18 identical between two fetches); covers/packages/consolidated all resolve via stable ?e=."
   ],
   "limitations": [
-    "FAIL: target ESEF artefact (the real inline-XBRL report) was not the object actually tested. Remediation: download the real IXBRL_CONSOLIDATED (and ZIP/Xbri) and re-run the out-of-session SHA-256 stability check."
+    "IPP must be re-downloaded via nreg->discovery (never by reusing a stored ?t={GUID}). Long-horizon token drift monitored in R8."
   ]
 }
