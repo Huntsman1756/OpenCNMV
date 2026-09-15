@@ -54,9 +54,9 @@
 
 ---
 
-## Checkpoint decision
+## Checkpoint decision (R0–R4)
 
-### `GO`
+### `CONTINUE`
 
 **Rationale (R0–R4 resolution session).** All four checkpoint foundations are met:
 
@@ -74,8 +74,8 @@
 Therefore the canonical identity must use the stable `nreg` (IPP) / `registro oficial` (ESEF) as
 `source_registration_no`, never `?t={GUID}`. This is a model-level rule to carry into R5+.
 
-A `GO` authorises **G1 design**, not a full platform. R5 → R17 still remain to be executed within
-G0-R.
+`CONTINUE` authorises proceeding to **R5 → R17** within G0-R. **G1 is not touched** until the final
+G0-R verdict (after R17) is `GO`.
 
 ---
 
@@ -119,8 +119,9 @@ Probe scripts (reusable): `g0-r/_probe-logs/probe.ps1`, `cnmv-postback.ps1`,
 
 ## Recommendation
 
-**Checkpoint is `GO` — proceed to R5 (within G0-R).** The R0–R4 probe is closed. Next work should
-begin the R5→R17 gates (issuer identity exact, source filing key, raw artefact retrieval,
-SHA-256 stability, taxonomy discovery/pinning, Arelle parsing, revision detection, determinism).
-Continue to follow `AGENTS.md` and `docs/gates/G0-R.md`; do **not** build product, UI, API, or MCP.
-Update `docs/STATUS.md` at the end of each session.
+**R0–R4 checkpoint is `CONTINUE` — proceed to R5 (within G0-R).** The R0–R4 probe is closed. Next
+work should begin the R5→R17 gates (issuer identity exact, source filing key, raw artefact
+retrieval, SHA-256 stability, taxonomy discovery/pinning, Arelle parsing, revision detection,
+determinism). Continue to follow `AGENTS.md` and `docs/gates/G0-R.md`; do **not** build product, UI,
+API, or MCP. G1 is not touched until R17 is closed. Update `docs/STATUS.md` at the end of each
+session.

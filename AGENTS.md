@@ -88,9 +88,13 @@ Circular's text still describes. OpenCNMV must model this correctly.
 
 ## 8. Checkpoint logic
 
-`GO` only if: reuse is legally viable; discovery is reproducible; access mechanism is sufficiently
-stable; artefacts are recoverable reliably. If any of these fails structurally, do not continue
-automatically. A `GO` authorises G1 design, not a full platform.
+- **R0–R4 checkpoint** states: `CONTINUE` / `HOLD` / `STOP`.
+  `CONTINUE` = the four foundations hold (reuse legally viable, discovery reproducible, access
+  mechanism sufficiently stable, artefacts recoverable reliably) and you may proceed to R5.
+  If any fails structurally, do not continue automatically.
+- A `CONTINUE` authorises continuing the G0-R gates (R5 → R17), **not** G1 design.
+- The **final G0-R verdict** (after R17) is `GO` / `CONDITIONAL_GO` / `NO_GO`. Only a final `GO`
+  authorises G1 design, not a full platform.
 
 ## 9. Evidence discipline
 

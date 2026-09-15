@@ -26,10 +26,11 @@ R5-R17  NOT_RUN
 ## Checkpoint
 
 ```text
-CHECKPOINT: GO
+R0–R4 CHECKPOINT: CONTINUE
 ```
 
-`GO` authorises **G1 design**, not a full platform. R5 → R17 still remain within G0-R.
+`CONTINUE` authorises proceeding to **R5** (within G0-R). **G1 is not touched** until the final
+G0-R verdict (after R17) is `GO`. The final verdict states are `GO` / `CONDITIONAL_GO` / `NO_GO`.
 
 ## Resolution-session findings (R1/R4)
 
@@ -79,7 +80,8 @@ IBE  IBERDROLA, S.A.                       nif=A-48010615  LEI=5QK37QC7NWOJ8D7WV
 Proceed to **R5** (within G0-R), following `AGENTS.md` and `docs/gates/G0-R.md`:
 `R5 ISSUER_IDENTITY_EXACT → R6 SOURCE_FILING_KEY_STABLE → R7 RAW_ARTIFACT_RETRIEVAL → R8
 RAW_SHA256_STABLE → R9/R10 taxonomy → R11/R12 Arelle parse → R13 revisions → R14/R15 determinism →
-R16 oracle reconciliation → R17 H2 vs ESEF`. Do **not** build product, UI, API, or MCP.
+R16 oracle reconciliation → R17 H2 vs ESEF`. Do **not** build product, UI, API, or MCP. G1 is not
+touched until R17 is closed.
 
 ## Session hygiene
 

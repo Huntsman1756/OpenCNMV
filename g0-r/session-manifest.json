@@ -10,8 +10,8 @@
     "R3": { "name": "DISCOVERY_STABILITY", "status": "PASS" },
     "R4": { "name": "ARTIFACT_URL_STABILITY", "status": "PASS", "note": "IPP raw XBRL + ESEF iXBRL byte-stable out-of-session for all three issuers" }
   },
-  "checkpoint": "GO",
-  "checkpoint_reason": "All four foundations met: reuse viable (R0), discovery reproducible (R3 + enumeration stable), access mechanism stable (R2, per-entity GET), artefacts recoverable reliably (R4 byte-stable out-of-session). GO authorises G1 design, not a full platform.",
+  "checkpoint": "CONTINUE",
+  "checkpoint_reason": "R0-R4 checkpoint: all four foundations met (reuse viable, discovery reproducible, access mechanism stable, artefacts recoverable reliably). CONTINUE authorises R5-R17 within G0-R; G1 is not touched until the final G0-R verdict after R17 is GO.",
   "blocking_to_go": [],
   "known_source_risks": [
     "IPP ?t={GUID} is ephemeral; canonical identity must use nreg / registro oficial, never ?t={GUID}.",

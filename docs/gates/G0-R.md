@@ -135,6 +135,16 @@ Demonstrate unambiguous identity for SAN, BBVA, IBE. Separate `issuer`, `issuer_
 Find the best available source key. Prefer official published identifiers over hashes/synthetic
 keys. Record any case where the identifier changes after substitution.
 
+Observed source identity hierarchy (feeds R6):
+```text
+IPP  canonical source identity = nreg
+ESEF canonical source identity = registro oficial
+artifact locator              = webservices/verdocumento/ver?e=<token>   (stable)
+ephemeral transport locator   = descargaxbrlipp.ashx?t={GUID}            (never identity)
+```
+Use `nreg` / `registro oficial` as `source_registration_no`; use the stable `?e=` token as the
+per-artefact locator; never use the ephemeral `?t={GUID}` as identity.
+
 ### R7 — RAW_ARTIFACT_RETRIEVAL
 Download original artefacts. Never re-serialise before preserving the raw. Record `source_url`,
 `retrieved_at`, HTTP metadata, `media_type`, `byte_size`.
@@ -157,9 +167,16 @@ Demonstrate ESEF parsing with Arelle. No alternative parser unless documented Ar
 Verify preservation of concepts, contexts, units, dimensions, decimals, facts.
 
 ### R12 — IPP_ARELLE_PARSE
-Demonstrate IPP parsing with Arelle. Deliberately cover: credit-entity model, general model, H1,
-at least one Q1/Q3, and H2 when appropriate XBRL exists. Record taxonomy incompatibilities, do not
-hide them.
+Demonstrate IPP parsing with Arelle. Deliberately cover:
+- credit-entity model;
+- general model;
+- H1;
+- H2;
+- relevant historical taxonomy heterogeneity **within the frozen corpus** (e.g. pre-Circular 3/2018
+  versions), using artefacts that are in scope.
+
+Record taxonomy incompatibilities, do not hide them. (Q1/Q3 post-2021-05-03 are `NOT_REQUIRED_AS_IPP`
+and are **not** a corpus requirement for R12.)
 
 ### R13 — SOURCE_REVISION_DETECTION
 Test `13A REVISION_EXISTS`, `13B REVISION_TARGET_EXACT`, `13C REVISION_SEMANTICS_EXTRACTED`.
@@ -203,7 +220,7 @@ manifest.json
 
 ## Definition of Done of G0-R
 
-Closed only when there are explicit results for R0–R17. The final verdict must be:
+Closed only when there are explicit results for **R0–R17**. The final verdict must be:
 
 ```text
 GO | CONDITIONAL_GO | NO_GO
@@ -212,11 +229,17 @@ GO | CONDITIONAL_GO | NO_GO
 accompanied by: `passed_gates`, `failed_gates`, `not_applicable_gates`, `known_source_risks`,
 `known_model_risks`, `legal_constraints`, `reproducibility_result`, `recommended_next_step`.
 
-A `GO` would authorise G1 design. It does **not** automatically authorise building a full
-platform.
+A final `GO` would authorise **G1 design**. It does **not** automatically authorise building a full
+platform. G1 is **not** touched until R17 is closed.
 
-## Checkpoint logic
+## Checkpoint logic (after R0–R4)
 
-After R0–R4 produce `GO / HOLD / STOP`. `GO` only if reuse is legally viable, discovery is
-reproducible, access mechanism is sufficiently stable, artefacts are recoverable reliably. If any
-fails structurally, do not continue automatically. A `GO` authorises G1 design, not a platform.
+After R0–R4 produce a checkpoint with states **`CONTINUE` / `HOLD` / `STOP`**:
+
+- `CONTINUE` = the four foundations hold (reuse legally viable; discovery reproducible; access
+  mechanism sufficiently stable; artefacts recoverable reliably) and you may proceed to **R5**.
+- `HOLD` = one or more foundations need targeted resolution before continuing.
+- `STOP` = a structural failure; do not continue automatically.
+
+A `CONTINUE` does **not** authorise designing G1. G1 is only touched once the final G0-R verdict
+(after R17) is `GO`. A `CONTINUE` authorises continuing the G0-R gates (R5 → R17).

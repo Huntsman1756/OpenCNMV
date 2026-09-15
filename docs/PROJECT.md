@@ -76,6 +76,20 @@ byte_size
 
 Raw bytes are immutable.
 
+### Source identity hierarchy (observed, feeds R6)
+
+```text
+IPP  canonical source identity = nreg
+ESEF canonical source identity = registro oficial
+artifact locator              = webservices/verdocumento/ver?e=<token>   (stable)
+ephemeral transport locator   = descargaxbrlipp.ashx?t={GUID}            (never identity)
+```
+
+- `source_registration_no` = `nreg` (IPP) / `registro oficial` (ESEF).
+- The per-artefact locator is the stable `?e=` token.
+- The IPP `?t={GUID}` is **ephemeral** (changes per visit) and must never be used as identity;
+  it is only a discovery/redirect parameter.
+
 ### `fact`
 Preserve the native XBRL fact (do **not** create a normalised SEC-style companyfacts yet).
 
