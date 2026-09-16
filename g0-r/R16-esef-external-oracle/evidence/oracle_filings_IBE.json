@@ -1,0 +1,183 @@
+{
+ "data": [
+  {
+   "type": "filing",
+   "attributes": {
+    "period_end": "2022-12-31",
+    "country": "ES",
+    "viewer_url": "/5QK37QC7NWOJ8D7WVQ45/2022-12-31/ESEF/ES/0/5QK37QC7NWOJ8D7WVQ45-20221231-es/reports/ixbrlviewer.html",
+    "package_url": "/5QK37QC7NWOJ8D7WVQ45/2022-12-31/ESEF/ES/0/5QK37QC7NWOJ8D7WVQ45-20221231-es.zip",
+    "json_url": "/5QK37QC7NWOJ8D7WVQ45/2022-12-31/ESEF/ES/0/5QK37QC7NWOJ8D7WVQ45-20221231-es.json",
+    "inconsistency_count": 0,
+    "processed": "2023-05-16 19:34:55.530239",
+    "error_count": 0,
+    "warning_count": 3,
+    "report_url": "/5QK37QC7NWOJ8D7WVQ45/2022-12-31/ESEF/ES/0/5QK37QC7NWOJ8D7WVQ45-20221231-es/reports/5QK37QC7NWOJ8D7WVQ45-20221231-es.xhtml",
+    "sha256": "d4238ea7d809b19bc2213e696dd80fa1359bce66c23e84b6e89443bf4377cefd",
+    "date_added": "2023-05-09 13:07:54.391366",
+    "fxo_id": "5QK37QC7NWOJ8D7WVQ45-2022-12-31-ESEF-ES-0"
+   },
+   "id": "6146",
+   "relationships": {
+    "validation_messages": {
+     "links": {
+      "related": "/api/filings/6146/validation_messages"
+     }
+    },
+    "entity": {
+     "links": {
+      "related": "/api/entities/5QK37QC7NWOJ8D7WVQ45"
+     }
+    }
+   },
+   "links": {
+    "self": "/api/filings/6146"
+   }
+  },
+  {
+   "type": "filing",
+   "attributes": {
+    "period_end": "2021-12-31",
+    "country": "ES",
+    "viewer_url": "/5QK37QC7NWOJ8D7WVQ45/2021-12-31/ESEF/ES/0/5QK37QC7NWOJ8D7WVQ45-20211231-es/reports/ixbrlviewer.html",
+    "package_url": "/5QK37QC7NWOJ8D7WVQ45/2021-12-31/ESEF/ES/0/5QK37QC7NWOJ8D7WVQ45-20211231-es.zip",
+    "json_url": "/5QK37QC7NWOJ8D7WVQ45/2021-12-31/ESEF/ES/0/5QK37QC7NWOJ8D7WVQ45-20211231-es.json",
+    "inconsistency_count": 0,
+    "processed": "2023-01-18 11:02:17.499357",
+    "error_count": 0,
+    "warning_count": 3,
+    "report_url": "/5QK37QC7NWOJ8D7WVQ45/2021-12-31/ESEF/ES/0/5QK37QC7NWOJ8D7WVQ45-20211231-es/reports/5QK37QC7NWOJ8D7WVQ45-20211231-es.xhtml",
+    "sha256": "6dc131630ad3e41f56be97240fa81170c2d266c608b705a0fb79f69d68d0751b",
+    "date_added": "2022-03-18 00:00:00",
+    "fxo_id": "5QK37QC7NWOJ8D7WVQ45-2021-12-31-ESEF-ES-0"
+   },
+   "id": "647",
+   "relationships": {
+    "validation_messages": {
+     "links": {
+      "related": "/api/filings/647/validation_messages"
+     }
+    },
+    "entity": {
+     "links": {
+      "related": "/api/entities/5QK37QC7NWOJ8D7WVQ45"
+     }
+    }
+   },
+   "links": {
+    "self": "/api/filings/647"
+   }
+  },
+  {
+   "type": "filing",
+   "attributes": {
+    "period_end": "2020-12-31",
+    "country": "ES",
+    "viewer_url": "/5QK37QC7NWOJ8D7WVQ45/2020-12-31/ESEF/ES/0/5QK37QC7NWOJ8D7WVQ45-2020-12-31/reports/ixbrlviewer.html",
+    "package_url": "/5QK37QC7NWOJ8D7WVQ45/2020-12-31/ESEF/ES/0/5QK37QC7NWOJ8D7WVQ45-2020-12-31.zip",
+    "json_url": "/5QK37QC7NWOJ8D7WVQ45/2020-12-31/ESEF/ES/0/5QK37QC7NWOJ8D7WVQ45-2020-12-31.json",
+    "inconsistency_count": 0,
+    "processed": "2023-01-18 11:02:17.508309",
+    "error_count": 0,
+    "warning_count": 11,
+    "report_url": "/5QK37QC7NWOJ8D7WVQ45/2020-12-31/ESEF/ES/0/5QK37QC7NWOJ8D7WVQ45-2020-12-31/reports/5QK37QC7NWOJ8D7WVQ45-2020-12-31.xhtml",
+    "sha256": "cb573c1bbb2e465401318a5fb0b679d5a3afb77f4ccc3ebb1ee49071b3d13a29",
+    "date_added": "2021-05-19 00:00:00",
+    "fxo_id": "5QK37QC7NWOJ8D7WVQ45-2020-12-31-ESEF-ES-0"
+   },
+   "id": "648",
+   "relationships": {
+    "validation_messages": {
+     "links": {
+      "related": "/api/filings/648/validation_messages"
+     }
+    },
+    "entity": {
+     "links": {
+      "related": "/api/entities/5QK37QC7NWOJ8D7WVQ45"
+     }
+    }
+   },
+   "links": {
+    "self": "/api/filings/648"
+   }
+  },
+  {
+   "type": "filing",
+   "attributes": {
+    "period_end": "2023-12-31",
+    "country": "ES",
+    "viewer_url": "/5QK37QC7NWOJ8D7WVQ45/2023-12-31/ESEF/ES/0/5QK37QC7NWOJ8D7WVQ45-20231231-es/reports/ixbrlviewer.html",
+    "package_url": "/5QK37QC7NWOJ8D7WVQ45/2023-12-31/ESEF/ES/0/5QK37QC7NWOJ8D7WVQ45-20231231-es.zip",
+    "json_url": "/5QK37QC7NWOJ8D7WVQ45/2023-12-31/ESEF/ES/0/5QK37QC7NWOJ8D7WVQ45-20231231-es.json",
+    "inconsistency_count": 0,
+    "processed": "2024-04-24 14:20:17.092383",
+    "error_count": 0,
+    "warning_count": 2,
+    "report_url": "/5QK37QC7NWOJ8D7WVQ45/2023-12-31/ESEF/ES/0/5QK37QC7NWOJ8D7WVQ45-20231231-es/reports/5QK37QC7NWOJ8D7WVQ45-20231231-es.xhtml",
+    "sha256": "b91cb80f1d29689e7a0c72efc43a8c6b9d7f93b3b2e569e5717b69b55fa290ce",
+    "date_added": "2024-04-23 18:06:37.915336",
+    "fxo_id": "5QK37QC7NWOJ8D7WVQ45-2023-12-31-ESEF-ES-0"
+   },
+   "id": "13851",
+   "relationships": {
+    "validation_messages": {
+     "links": {
+      "related": "/api/filings/13851/validation_messages"
+     }
+    },
+    "entity": {
+     "links": {
+      "related": "/api/entities/5QK37QC7NWOJ8D7WVQ45"
+     }
+    }
+   },
+   "links": {
+    "self": "/api/filings/13851"
+   }
+  },
+  {
+   "type": "filing",
+   "attributes": {
+    "period_end": "2024-12-31",
+    "country": "ES",
+    "viewer_url": "/5QK37QC7NWOJ8D7WVQ45/2024-12-31/ESEF/ES/0/5QK37QC7NWOJ8D7WVQ45-20241231-es/reports/ixbrlviewer.html",
+    "package_url": "/5QK37QC7NWOJ8D7WVQ45/2024-12-31/ESEF/ES/0/5QK37QC7NWOJ8D7WVQ45-20241231-es.zip",
+    "json_url": "/5QK37QC7NWOJ8D7WVQ45/2024-12-31/ESEF/ES/0/5QK37QC7NWOJ8D7WVQ45-20241231-es.json",
+    "inconsistency_count": 0,
+    "processed": "2025-05-10 00:51:21.370137",
+    "error_count": 0,
+    "warning_count": 2,
+    "report_url": "/5QK37QC7NWOJ8D7WVQ45/2024-12-31/ESEF/ES/0/5QK37QC7NWOJ8D7WVQ45-20241231-es/reports/5QK37QC7NWOJ8D7WVQ45-20241231-es.xhtml",
+    "sha256": "89dfd3ef65527d1d4378464c2f70fa78b2fb7b4872264eacfa91d3faae1c42b4",
+    "date_added": "2025-05-08 11:09:48.032373",
+    "fxo_id": "5QK37QC7NWOJ8D7WVQ45-2024-12-31-ESEF-ES-0"
+   },
+   "id": "18556",
+   "relationships": {
+    "validation_messages": {
+     "links": {
+      "related": "/api/filings/18556/validation_messages"
+     }
+    },
+    "entity": {
+     "links": {
+      "related": "/api/entities/5QK37QC7NWOJ8D7WVQ45"
+     }
+    }
+   },
+   "links": {
+    "self": "/api/filings/18556"
+   }
+  }
+ ],
+ "links": {
+  "self": "https://filings.xbrl.org/api/filings?page%5Bsize%5D=200"
+ },
+ "meta": {
+  "count": 5
+ },
+ "jsonapi": {
+  "version": "1.0"
+ }
+}

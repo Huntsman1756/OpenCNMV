@@ -1,0 +1,319 @@
+{
+ "data": [
+  {
+   "type": "filing",
+   "attributes": {
+    "period_end": "2022-12-31",
+    "country": "ES",
+    "viewer_url": "/5493006QMFDDMYWIAM13/2022-12-31/ESEF/ES/0/5493006QMFDDMYWIAM13-20221231-en/reports/ixbrlviewer.html",
+    "package_url": "/5493006QMFDDMYWIAM13/2022-12-31/ESEF/ES/0/5493006QMFDDMYWIAM13-20221231-en.zip",
+    "json_url": "/5493006QMFDDMYWIAM13/2022-12-31/ESEF/ES/0/5493006QMFDDMYWIAM13-20221231-en.json",
+    "inconsistency_count": 0,
+    "processed": "2023-05-30 16:01:04.706821",
+    "error_count": 0,
+    "warning_count": 6,
+    "report_url": "/5493006QMFDDMYWIAM13/2022-12-31/ESEF/ES/0/5493006QMFDDMYWIAM13-20221231-en/reports/5493006QMFDDMYWIAM13-20221231-en.xhtml",
+    "sha256": "e4b1aa3e3f673c0675829d19400d940b1c43fe19327406e44cb2dc03d61a653d",
+    "date_added": "2023-05-30 11:13:04.535062",
+    "fxo_id": "5493006QMFDDMYWIAM13-2022-12-31-ESEF-ES-0"
+   },
+   "id": "6818",
+   "relationships": {
+    "validation_messages": {
+     "links": {
+      "related": "/api/filings/6818/validation_messages"
+     }
+    },
+    "entity": {
+     "links": {
+      "related": "/api/entities/5493006QMFDDMYWIAM13"
+     }
+    }
+   },
+   "links": {
+    "self": "/api/filings/6818"
+   }
+  },
+  {
+   "type": "filing",
+   "attributes": {
+    "period_end": "2022-12-31",
+    "country": "GB",
+    "viewer_url": "/5493006QMFDDMYWIAM13/2022-12-31/ESEF/GB/0/5493006QMFDDMYWIAM13-2022-12-31/reports/ixbrlviewer.html",
+    "package_url": "/5493006QMFDDMYWIAM13/2022-12-31/ESEF/GB/0/5493006QMFDDMYWIAM13-2022-12-31.zip",
+    "json_url": "/5493006QMFDDMYWIAM13/2022-12-31/ESEF/GB/0/5493006QMFDDMYWIAM13-2022-12-31-T01.json",
+    "inconsistency_count": 0,
+    "processed": "2023-03-14 10:50:12.532570",
+    "error_count": 0,
+    "warning_count": 6,
+    "report_url": "/5493006QMFDDMYWIAM13/2022-12-31/ESEF/GB/0/5493006QMFDDMYWIAM13-2022-12-31/reports/5493006QMFDDMYWIAM13-2022-12-31-T01.html",
+    "sha256": "bd4895b4a12e2e82531dcef52f56d120f224e5d727d82dd7564886763dbf4a82",
+    "date_added": "2023-03-14 10:38:14.787167",
+    "fxo_id": "5493006QMFDDMYWIAM13-2022-12-31-ESEF-GB-0"
+   },
+   "id": "4488",
+   "relationships": {
+    "validation_messages": {
+     "links": {
+      "related": "/api/filings/4488/validation_messages"
+     }
+    },
+    "entity": {
+     "links": {
+      "related": "/api/entities/5493006QMFDDMYWIAM13"
+     }
+    }
+   },
+   "links": {
+    "self": "/api/filings/4488"
+   }
+  },
+  {
+   "type": "filing",
+   "attributes": {
+    "period_end": "2021-12-31",
+    "country": "GB",
+    "viewer_url": "/5493006QMFDDMYWIAM13/2021-12-31/ESEF/GB/0/5493006QMFDDMYWIAM13-2021-12-31/reports/ixbrlviewer.html",
+    "package_url": "/5493006QMFDDMYWIAM13/2021-12-31/ESEF/GB/0/5493006QMFDDMYWIAM13-2021-12-31.zip",
+    "json_url": "/5493006QMFDDMYWIAM13/2021-12-31/ESEF/GB/0/5493006QMFDDMYWIAM13-2021-12-31-T01.json",
+    "inconsistency_count": 0,
+    "processed": "2023-01-18 11:02:29.930482",
+    "error_count": 0,
+    "warning_count": 5,
+    "report_url": "/5493006QMFDDMYWIAM13/2021-12-31/ESEF/GB/0/5493006QMFDDMYWIAM13-2021-12-31/reports/5493006QMFDDMYWIAM13-2021-12-31-T01.html",
+    "sha256": "c7bc34f1de4028d84821adb4b0090d8ae5314c905ae8376c00b934d6a79d3e26",
+    "date_added": "2022-04-05 00:00:00",
+    "fxo_id": "5493006QMFDDMYWIAM13-2021-12-31-ESEF-GB-0"
+   },
+   "id": "1415",
+   "relationships": {
+    "validation_messages": {
+     "links": {
+      "related": "/api/filings/1415/validation_messages"
+     }
+    },
+    "entity": {
+     "links": {
+      "related": "/api/entities/5493006QMFDDMYWIAM13"
+     }
+    }
+   },
+   "links": {
+    "self": "/api/filings/1415"
+   }
+  },
+  {
+   "type": "filing",
+   "attributes": {
+    "period_end": "2023-12-31",
+    "country": "GB",
+    "viewer_url": "/5493006QMFDDMYWIAM13/2023-12-31/ESEF/GB/0/5493006QMFDDMYWIAM13-2023-12-31/reports/ixbrlviewer.html",
+    "package_url": "/5493006QMFDDMYWIAM13/2023-12-31/ESEF/GB/0/5493006QMFDDMYWIAM13-2023-12-31.zip",
+    "json_url": "/5493006QMFDDMYWIAM13/2023-12-31/ESEF/GB/0/5493006QMFDDMYWIAM13-2023-12-31-T01.json",
+    "inconsistency_count": 0,
+    "processed": "2024-03-21 18:28:22.497509",
+    "error_count": 0,
+    "warning_count": 5,
+    "report_url": "/5493006QMFDDMYWIAM13/2023-12-31/ESEF/GB/0/5493006QMFDDMYWIAM13-2023-12-31/reports/5493006QMFDDMYWIAM13-2023-12-31-T01.html",
+    "sha256": "7cd656cde0c6d856d0f5a622403b6088ea65d6d0e922d2baf8816c9e28dd44dc",
+    "date_added": "2024-03-21 10:33:01.962782",
+    "fxo_id": "5493006QMFDDMYWIAM13-2023-12-31-ESEF-GB-0"
+   },
+   "id": "12730",
+   "relationships": {
+    "validation_messages": {
+     "links": {
+      "related": "/api/filings/12730/validation_messages"
+     }
+    },
+    "entity": {
+     "links": {
+      "related": "/api/entities/5493006QMFDDMYWIAM13"
+     }
+    }
+   },
+   "links": {
+    "self": "/api/filings/12730"
+   }
+  },
+  {
+   "type": "filing",
+   "attributes": {
+    "period_end": "2021-12-31",
+    "country": "ES",
+    "viewer_url": "/5493006QMFDDMYWIAM13/2021-12-31/ESEF/ES/0/5493006QMFDDMYWIAM13-20211231-en/reports/ixbrlviewer.html",
+    "package_url": "/5493006QMFDDMYWIAM13/2021-12-31/ESEF/ES/0/5493006QMFDDMYWIAM13-20211231-en.zip",
+    "json_url": "/5493006QMFDDMYWIAM13/2021-12-31/ESEF/ES/0/5493006QMFDDMYWIAM13-20211231-en.json",
+    "inconsistency_count": 0,
+    "processed": "2023-01-18 11:02:29.946444",
+    "error_count": 0,
+    "warning_count": 5,
+    "report_url": "/5493006QMFDDMYWIAM13/2021-12-31/ESEF/ES/0/5493006QMFDDMYWIAM13-20211231-en/reports/5493006QMFDDMYWIAM13-20211231-en.xhtml",
+    "sha256": "7c55981f47062ab1ceebdba544cd533b776e106ecae2b015746c4d4c2a61db1c",
+    "date_added": "2022-03-18 00:00:00",
+    "fxo_id": "5493006QMFDDMYWIAM13-2021-12-31-ESEF-ES-0"
+   },
+   "id": "1416",
+   "relationships": {
+    "validation_messages": {
+     "links": {
+      "related": "/api/filings/1416/validation_messages"
+     }
+    },
+    "entity": {
+     "links": {
+      "related": "/api/entities/5493006QMFDDMYWIAM13"
+     }
+    }
+   },
+   "links": {
+    "self": "/api/filings/1416"
+   }
+  },
+  {
+   "type": "filing",
+   "attributes": {
+    "period_end": "2023-12-31",
+    "country": "ES",
+    "viewer_url": "/5493006QMFDDMYWIAM13/2023-12-31/ESEF/ES/0/5493006QMFDDMYWIAM13-20231231-en/reports/ixbrlviewer.html",
+    "package_url": "/5493006QMFDDMYWIAM13/2023-12-31/ESEF/ES/0/5493006QMFDDMYWIAM13-20231231-en.zip",
+    "json_url": "/5493006QMFDDMYWIAM13/2023-12-31/ESEF/ES/0/5493006QMFDDMYWIAM13-20231231-en.json",
+    "inconsistency_count": 0,
+    "processed": "2024-04-24 14:10:36.572451",
+    "error_count": 0,
+    "warning_count": 5,
+    "report_url": "/5493006QMFDDMYWIAM13/2023-12-31/ESEF/ES/0/5493006QMFDDMYWIAM13-20231231-en/reports/5493006QMFDDMYWIAM13-20231231-en.xhtml",
+    "sha256": "1128675e0e6e979ef49db4051fe771515dd8ec42236372549f8dbd7a6210dd1c",
+    "date_added": "2024-04-23 18:05:52.847109",
+    "fxo_id": "5493006QMFDDMYWIAM13-2023-12-31-ESEF-ES-0"
+   },
+   "id": "13843",
+   "relationships": {
+    "validation_messages": {
+     "links": {
+      "related": "/api/filings/13843/validation_messages"
+     }
+    },
+    "entity": {
+     "links": {
+      "related": "/api/entities/5493006QMFDDMYWIAM13"
+     }
+    }
+   },
+   "links": {
+    "self": "/api/filings/13843"
+   }
+  },
+  {
+   "type": "filing",
+   "attributes": {
+    "period_end": "2024-12-31",
+    "country": "GB",
+    "viewer_url": "/5493006QMFDDMYWIAM13/2024-12-31/ESEF/GB/0/5493006QMFDDMYWIAM13-2024-12-31/reports/ixbrlviewer.html",
+    "package_url": "/5493006QMFDDMYWIAM13/2024-12-31/ESEF/GB/0/5493006QMFDDMYWIAM13-2024-12-31.zip",
+    "json_url": "/5493006QMFDDMYWIAM13/2024-12-31/ESEF/GB/0/5493006QMFDDMYWIAM13-2024-12-31-T01.json",
+    "inconsistency_count": 0,
+    "processed": "2025-03-04 11:18:28.230553",
+    "error_count": 0,
+    "warning_count": 6,
+    "report_url": "/5493006QMFDDMYWIAM13/2024-12-31/ESEF/GB/0/5493006QMFDDMYWIAM13-2024-12-31/reports/5493006QMFDDMYWIAM13-2024-12-31-T01.html",
+    "sha256": "564b4c507fc96bd22e9a5799c366bf1187501f55bfea0178e5a5c2334c9f1ed2",
+    "date_added": "2025-03-04 11:00:19.251851",
+    "fxo_id": "5493006QMFDDMYWIAM13-2024-12-31-ESEF-GB-0"
+   },
+   "id": "17032",
+   "relationships": {
+    "validation_messages": {
+     "links": {
+      "related": "/api/filings/17032/validation_messages"
+     }
+    },
+    "entity": {
+     "links": {
+      "related": "/api/entities/5493006QMFDDMYWIAM13"
+     }
+    }
+   },
+   "links": {
+    "self": "/api/filings/17032"
+   }
+  },
+  {
+   "type": "filing",
+   "attributes": {
+    "period_end": "2024-12-31",
+    "country": "ES",
+    "viewer_url": "/5493006QMFDDMYWIAM13/2024-12-31/ESEF/ES/0/5493006QMFDDMYWIAM13-20241231-en/reports/ixbrlviewer.html",
+    "package_url": "/5493006QMFDDMYWIAM13/2024-12-31/ESEF/ES/0/5493006QMFDDMYWIAM13-20241231-en.zip",
+    "json_url": "/5493006QMFDDMYWIAM13/2024-12-31/ESEF/ES/0/5493006QMFDDMYWIAM13-20241231-en.json",
+    "inconsistency_count": 0,
+    "processed": "2025-05-10 02:49:11.163140",
+    "error_count": 0,
+    "warning_count": 6,
+    "report_url": "/5493006QMFDDMYWIAM13/2024-12-31/ESEF/ES/0/5493006QMFDDMYWIAM13-20241231-en/reports/5493006QMFDDMYWIAM13-20241231-en.xhtml",
+    "sha256": "47923b30c3763fe448ff8080bb3e38c50ae48d48171986a90947c8be347ccb37",
+    "date_added": "2025-05-08 11:21:39.607916",
+    "fxo_id": "5493006QMFDDMYWIAM13-2024-12-31-ESEF-ES-0"
+   },
+   "id": "18815",
+   "relationships": {
+    "validation_messages": {
+     "links": {
+      "related": "/api/filings/18815/validation_messages"
+     }
+    },
+    "entity": {
+     "links": {
+      "related": "/api/entities/5493006QMFDDMYWIAM13"
+     }
+    }
+   },
+   "links": {
+    "self": "/api/filings/18815"
+   }
+  },
+  {
+   "type": "filing",
+   "attributes": {
+    "period_end": "2025-12-31",
+    "country": "GB",
+    "viewer_url": "/5493006QMFDDMYWIAM13/2025-12-31/ESEF/GB/0/5493006QMFDDMYWIAM13-2025-12-31/reports/ixbrlviewer.html",
+    "package_url": "/5493006QMFDDMYWIAM13/2025-12-31/ESEF/GB/0/5493006QMFDDMYWIAM13-2025-12-31.xbri",
+    "json_url": "/5493006QMFDDMYWIAM13/2025-12-31/ESEF/GB/0/5493006QMFDDMYWIAM13-2025-12-31-T01.json",
+    "inconsistency_count": 0,
+    "processed": "2026-03-10 14:33:11.204179",
+    "error_count": 0,
+    "warning_count": 6,
+    "report_url": "/5493006QMFDDMYWIAM13/2025-12-31/ESEF/GB/0/5493006QMFDDMYWIAM13-2025-12-31/reports/5493006QMFDDMYWIAM13-2025-12-31-T01.html",
+    "sha256": "ac7d667f1dedcc10182864a98534abf79dec091192a5a8fb5a3f086d7385d83d",
+    "date_added": "2026-03-04 13:53:40.410380",
+    "fxo_id": "5493006QMFDDMYWIAM13-2025-12-31-ESEF-GB-0"
+   },
+   "id": "23679",
+   "relationships": {
+    "validation_messages": {
+     "links": {
+      "related": "/api/filings/23679/validation_messages"
+     }
+    },
+    "entity": {
+     "links": {
+      "related": "/api/entities/5493006QMFDDMYWIAM13"
+     }
+    }
+   },
+   "links": {
+    "self": "/api/filings/23679"
+   }
+  }
+ ],
+ "links": {
+  "self": "https://filings.xbrl.org/api/filings?page%5Bsize%5D=200"
+ },
+ "meta": {
+  "count": 9
+ },
+ "jsonapi": {
+  "version": "1.0"
+ }
+}

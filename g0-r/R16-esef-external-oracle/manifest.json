@@ -1,0 +1,56 @@
+{
+  "gate": "R16",
+  "status": "PASS",
+  "executed_at": "2026-09-16T00:00:00Z",
+  "code_commit": "n/a",
+  "inputs": [
+    "filings.xbrl.org JSON:API: /api/entities/{LEI}/filings full history for the 3 corpus LEIs",
+    "oracle package_url zips + json_url OIM for ES-2024 candidates + SAN GB diagnostics (sha256 recorded)",
+    "R15 offlineA artifact_manifest.json (frozen corpus projection: issuer/slot/registro/sha256/file)",
+    "R07 raw ESEF packages (CNMV bytes, sha256-pinned)",
+    "R11 committed OIM exports (*.oim.json.gz) for the fact-multiset cross-check",
+    "R13 preserved ListadoIFA pages (one-ZIP-per-registro check)"
+  ],
+  "outputs": [
+    "evidence/oracle_downloads/5493006QMFDDMYWIAM13-2024-12-31-ESEF-ES-0.json",
+    "evidence/oracle_downloads/5493006QMFDDMYWIAM13-2024-12-31-ESEF-ES-0.zip",
+    "evidence/oracle_downloads/5493006QMFDDMYWIAM13-2024-12-31-ESEF-GB-0.zip",
+    "evidence/oracle_downloads/5493006QMFDDMYWIAM13-2025-12-31-ESEF-GB-0.zip",
+    "evidence/oracle_downloads/5QK37QC7NWOJ8D7WVQ45-2024-12-31-ESEF-ES-0.json",
+    "evidence/oracle_downloads/5QK37QC7NWOJ8D7WVQ45-2024-12-31-ESEF-ES-0.zip",
+    "evidence/oracle_downloads/K8MS7FD7N5Z2WQ51AZ71-2024-12-31-ESEF-ES-0.json",
+    "evidence/oracle_downloads/K8MS7FD7N5Z2WQ51AZ71-2024-12-31-ESEF-ES-0.zip",
+    "evidence/oracle_filings_BBVA.json",
+    "evidence/oracle_filings_IBE.json",
+    "evidence/oracle_filings_SAN.json",
+    "evidence/reconciliation.json"
+  ],
+  "sha256": {
+    "evidence/oracle_downloads/5493006QMFDDMYWIAM13-2024-12-31-ESEF-ES-0.json": "75c191b18b1bce8de3deb7cff60fc9ee52c41f4b22670d8afdea522d7fd86c4d",
+    "evidence/oracle_downloads/5493006QMFDDMYWIAM13-2024-12-31-ESEF-ES-0.zip": "47923b30c3763fe448ff8080bb3e38c50ae48d48171986a90947c8be347ccb37",
+    "evidence/oracle_downloads/5493006QMFDDMYWIAM13-2024-12-31-ESEF-GB-0.zip": "564b4c507fc96bd22e9a5799c366bf1187501f55bfea0178e5a5c2334c9f1ed2",
+    "evidence/oracle_downloads/5493006QMFDDMYWIAM13-2025-12-31-ESEF-GB-0.zip": "ac7d667f1dedcc10182864a98534abf79dec091192a5a8fb5a3f086d7385d83d",
+    "evidence/oracle_downloads/5QK37QC7NWOJ8D7WVQ45-2024-12-31-ESEF-ES-0.json": "1501dc81c0b991a831d4eed377aca34e93ebb7ef0e6a166cf8968a6e143e48c8",
+    "evidence/oracle_downloads/5QK37QC7NWOJ8D7WVQ45-2024-12-31-ESEF-ES-0.zip": "89dfd3ef65527d1d4378464c2f70fa78b2fb7b4872264eacfa91d3faae1c42b4",
+    "evidence/oracle_downloads/K8MS7FD7N5Z2WQ51AZ71-2024-12-31-ESEF-ES-0.json": "c882516ac98426837b538ff5305768cbc29a11624bedbc9940cd0e56c780aa40",
+    "evidence/oracle_downloads/K8MS7FD7N5Z2WQ51AZ71-2024-12-31-ESEF-ES-0.zip": "75be80e13b1fb8f56a8cad06353a7145f0fad524f654864d70f1aa35a2cce94e",
+    "evidence/oracle_filings_BBVA.json": "71f2aaf7fbda23f897caa13ffeb104e68ba53e4cda4295c19e65680d151bf137",
+    "evidence/oracle_filings_IBE.json": "cb33b8f8c8ccec5cfb45d70e4fd6354024e71068c6c699762610d23e4ccbd5ad",
+    "evidence/oracle_filings_SAN.json": "3480c9b04c9c66e1c1a3e3a4fbab1389d6168f39de1946e827d54489faa0ad43",
+    "evidence/reconciliation.json": "212fab7a57a462eecb13257eef0acd1f27847cb15f4bc9c6c6421c82d0693285"
+  },
+  "findings": [
+    "IBE-FY2024 EXACT_PACKAGE_MATCH: oracle package sha256 == CNMV raw sha256; members, iXBRL and 833-fact OIM multiset all equal",
+    "SAN/BBVA FY2024 OPEN_CNMV_POSSIBLE_OMISSION x2: oracle ES filing is a parallel -en language-variant OAM submission; ListadoIFA exposes only the -es ZIP per registro; shared ifrs-full undimensioned numeric core 68%/59% proves same underlying report",
+    "BBVA-FY2024 content divergence between language submissions: ifrs-full:Equity @2023-01-01 [FinancialEffectOfChangesInAccountingPolicyMember] = -98M (en) vs +98M (es); SAN same-key diff is lexical-only (0.10 vs 0.1)",
+    "FY2025 x3 ORACLE_OMISSION: no ES/ESEF filing indexed for any issuer (ingestion lag; ES-2024 arrived ~May-2025, SAN GB-2025 arrived 2026-03-04); oracle docs state index incompleteness",
+    "Cross-authority: SAN GB packages share 0 members with CNMV packages — distinct FCA submissions; oracle sha256 field verified == served package sha256 on all downloads",
+    "0 unexplained divergences -> PASS"
+  ],
+  "limitations": [
+    "-en packages' CNMV provenance inferred (ES source + IBE byte-identical precedent + naming); oracle exposes no per-filing source URL",
+    "OIM cross-check is Arelle-vs-Arelle (DATA_PROJECTION_CROSSCHECK), not an independent parser",
+    "Coverage caveat opened for final G0-R verdict: corpus captures the ListadoIFA-exposed -es artifact; parallel -en OAM submissions are not covered by that discovery surface",
+    "Oracle index state is point-in-time (executed 2026-09-16)"
+  ]
+}

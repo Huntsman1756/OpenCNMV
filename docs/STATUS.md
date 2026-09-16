@@ -31,7 +31,8 @@ R12 PASS    # IPP_ARELLE_PARSE: 15/15 load offline (ioerr=0, DTS from pinned pkg
 R13 PASS    # SOURCE_REVISION_DETECTION: 13A REVISION_EXISTS + 13B REVISION_TARGET_EXACT (nregaud=registro, source-bound) + 13C semantics (IBE H1-2009 correction table); ESEF registro survives substitution (IBE FY2022 reg.19646) — R6 caveat closed for ESEF; IPP nreg persistence NOT_YET_PROVEN; R6 'empty column' claim corrected (Sí on 6/6 corpus rows = CERTIFICATE events, not revisions)
 R14 PASS    # ONLINE_CAPTURE_DETERMINISTIC: 2 isolated runs (fresh Arelle caches, PYTHONHASHSEED 1 vs 777); source_state equal; discovery/manifest/taxonomy/events/facts logical hashes all equal; negative control differs; 21/21 facts byte-identical to R11/R12 evidence
 R15 PASS    # OFFLINE_REBUILD_DETERMINISTIC (critical): zero discovery, 60 inputs sha256-verified pre-run, socket deny-all sentinel (preflight REACHABLE->DENIED), empty caches/profile, 0 connect attempts; A==B on all levels; A==R14 projections; facts==R11/R12 21/21; both starvation controls FAILED_AS_EXPECTED
-R16-R17  NOT_RUN
+R16 PASS    # ESEF_EXTERNAL_ORACLE_RECONCILIATION vs filings.xbrl.org: IBE-FY2024 EXACT_PACKAGE_MATCH (byte-identical incl. OIM facts); SAN/BBVA-FY2024 OPEN_CNMV_POSSIBLE_OMISSION (parallel -en OAM submission, ListadoIFA exposes only -es); FY2025 x3 ORACLE_OMISSION (index lag); 0 unexplained; BBVA es-vs-en sign diff on Equity@2023-01-01 recorded
+R17  NOT_RUN
 ```
 
 ## Checkpoint
@@ -204,6 +205,28 @@ G0-R verdict (after R17) is `GO`. The final verdict states are `GO` / `CONDITION
   deterministically with no dependence on CNMV/ESMA/xbrl.org availability or any
   machine-local cache.
 
+## Session-9 findings (R16)
+
+- **R16 PASS** (`g0-r/R16-esef-external-oracle/`) — reconciliation vs `filings.xbrl.org`
+  (oracle-only) keyed on LEI+period_end+ESEF+ES, full LEI history per issuer, 4-level
+  comparison (package sha256 → member manifest → iXBRL member → OIM fact multiset).
+- **EXACT_PACKAGE_MATCH** IBE-FY2024: oracle package sha256 byte-identical to CNMV raw
+  (89DFD3EF…); 833/833 OIM facts equal → oracle ingests CNMV bytes unchanged here.
+- **Coverage finding (opened, not hidden):** SAN/BBVA FY2024 — the oracle's ES filing is
+  a **parallel `-en` language-variant OAM submission** (distinct iXBRL, translated
+  extension taxonomy; SAN changes namespace santanderbank.com→santander.com). CNMV
+  ListadoIFA exposes exactly one ZIP per registro — the `-es` package our corpus holds.
+  Shared ifrs-full undimensioned numeric core 68%/59% proves same underlying report.
+  → `OPEN_CNMV_POSSIBLE_OMISSION` ×2: our corpus does not cover the `-en` submission;
+  feeds the final G0-R verdict as a corpus-completeness caveat.
+- **Real content divergence between issuer submissions:** BBVA `ifrs-full:Equity`
+  @2023-01-01 [FinancialEffectOfChangesInAccountingPolicyMember] = **-98M in `-en` vs
+  +98M in `-es`**. Between-submission difference, not a processing artifact.
+- **ORACLE_OMISSION ×3** for FY2025: no ES filing indexed (ingestion lag — ES-2024
+  arrived ~May-2025; SAN GB-2025 arrived 2026-03-04; oracle docs admit incompleteness).
+- SAN GB (FCA) packages share 0 members with CNMV packages — distinct submissions, no
+  silent dedup. Oracle `sha256` field verified == served package sha256 on all downloads.
+
 ## Blocking findings
 
 - None for the R0–R4 checkpoint. Long-horizon token/URL drift is monitored by re-running the R8
@@ -236,11 +259,12 @@ IBE  IBERDROLA, S.A.                       nif=A-48010615  LEI=5QK37QC7NWOJ8D7WV
 
 ## Next action
 
-Proceed to **R16 — ESEF_EXTERNAL_ORACLE_RECONCILIATION** (within G0-R): compare CNMV ESEF
-filings against `filings.xbrl.org/es-cnmv`; detect omissions, misalignments, identity/period
-issues, amended reports; explain or open every divergence as a finding; oracle never
-replaces CNMV. Then `R17 H2 vs ESEF`. Do **not** build product, UI, API, or MCP. G1 is not
-touched until R17 is closed.
+Proceed to **R17 — H2_VS_ESEF_PERIOD_RECONCILIATION** (final G0-R gate): H2 ≠ FY/ESEF;
+shared issuer+FY+period_end; H2 submission_scope preserved; all native contexts;
+CURRENT_HALF ≠ YTD; dimensions not collapsed; H2 revision representable; fact comparison
+≠ semantic equivalence; second-semester vs annual-cumulative duality. Then final G0-R
+verdict GO/CONDITIONAL_GO/NO_GO — must weigh the R16 coverage caveat (parallel -en OAM
+submissions). Do **not** build product, UI, API, or MCP.
 
 ## Session hygiene
 
