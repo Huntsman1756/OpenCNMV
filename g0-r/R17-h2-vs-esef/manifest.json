@@ -1,0 +1,34 @@
+{
+  "gate": "R17",
+  "status": "PASS",
+  "executed_at": "2026-09-16T00:00:00Z",
+  "code_commit": "n/a",
+  "inputs": [
+    "R12 committed IPP facts.jsonl + model_summary.json (6 H2 filings)",
+    "R11 committed ESEF facts.jsonl + model_summary.json (6 FY filings)",
+    "R15 offlineA artifact_manifest.json (source_registration_no per artifact)",
+    "CNMV OIR page for METROVACESA A87471264 (captured 2026-09-16) — H2 modification fixture",
+    "Circular 3/2018 (BOE-A-2018-9222) — normative H2-resubmission trigger"
+  ],
+  "outputs": [
+    "evidence/metrovacesa-oir-r17.html",
+    "evidence/r17_results.json"
+  ],
+  "sha256": {
+    "evidence/metrovacesa-oir-r17.html": "b98c1f6f61e3865e3b4be36238f44ca7dd3e121ee4dd305b97d1e847216c7731",
+    "evidence/r17_results.json": "dd1f9ca0b28d7e763d0266ea8c705078218ef5d86f158492fcfdc75d4b5fa299"
+  },
+  "findings": [
+    "All 6 H2<->FY pairs share issuer+fiscal-year+period_end while remaining distinct filings (distinct nreg vs registro, distinct taxonomy families)",
+    "CURRENT_HALF != YTD structurally proven: every H2 filing carries Jul->close AND Jan->close duration families plus prior-year comparatives of both kinds",
+    "submission_scope preserved from declared content (Modelo/Estadistico): banks HYBRID_OR_REFERENCED (ECR,S), IBE FULL (GEN,N + embedded complete report)",
+    "naive concept+period_end key collapses CURRENT_HALF+YTD+close-instant facts: 265-532 collisions/filing; canonical context-aware key: 0 collisions",
+    "IPP and ESEF concept URI sets are disjoint by construction (shared_concept_uris=0): fact comparison != semantic equivalence; no mapping attempted",
+    "H2 revision model representable: revision_event H2_RESUBMISSION with trigger ANNUAL_ACCOUNTS_FORMULATION; evidence split NORMATIVE_RULE (Circular 3/2018) vs SOURCE_OBSERVED (Metrovacesa regs 39018/39038/39246)"
+  ],
+  "limitations": [
+    "ECR scope label HYBRID_OR_REFERENCED derived from declared Modelo+Estadistico, not from size",
+    "No corpus H2 revision exists to bind; Metrovacesa fixture observed but trigger not asserted as IFA-caused",
+    "H2<->ESEF fact comparison is diagnostic only; no canonical concept mapping claimed"
+  ]
+}

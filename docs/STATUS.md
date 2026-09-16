@@ -32,7 +32,7 @@ R13 PASS    # SOURCE_REVISION_DETECTION: 13A REVISION_EXISTS + 13B REVISION_TARG
 R14 PASS    # ONLINE_CAPTURE_DETERMINISTIC: 2 isolated runs (fresh Arelle caches, PYTHONHASHSEED 1 vs 777); source_state equal; discovery/manifest/taxonomy/events/facts logical hashes all equal; negative control differs; 21/21 facts byte-identical to R11/R12 evidence
 R15 PASS    # OFFLINE_REBUILD_DETERMINISTIC (critical): zero discovery, 60 inputs sha256-verified pre-run, socket deny-all sentinel (preflight REACHABLE->DENIED), empty caches/profile, 0 connect attempts; A==B on all levels; A==R14 projections; facts==R11/R12 21/21; both starvation controls FAILED_AS_EXPECTED
 R16 PASS    # ESEF_EXTERNAL_ORACLE_RECONCILIATION vs filings.xbrl.org: IBE-FY2024 EXACT_PACKAGE_MATCH (byte-identical incl. OIM facts); SAN/BBVA-FY2024 OPEN_CNMV_POSSIBLE_OMISSION (parallel -en OAM submission, ListadoIFA exposes only -es); FY2025 x3 ORACLE_OMISSION (index lag); 0 unexplained; BBVA es-vs-en sign diff on Equity@2023-01-01 recorded
-R17  NOT_RUN
+R17 PASS    # H2_VS_ESEF_PERIOD_RECONCILIATION: 6 pairs; H2 nreg != FY registro, same period_end; scope from declared Modelo/Estadistico (banks HYBRID, IBE FULL); CURRENT_HALF!=YTD in all H2; naive concept+period_end key collides 265-532x/filing vs canonical 0; IPP vs ESEF concept sets disjoint; H2-revision model representable (Circular 3/2018 + Metrovacesa fixture)
 ```
 
 ## Checkpoint
@@ -227,6 +227,30 @@ G0-R verdict (after R17) is `GO`. The final verdict states are `GO` / `CONDITION
 - SAN GB (FCA) packages share 0 members with CNMV packages — distinct submissions, no
   silent dedup. Oracle `sha256` field verified == served package sha256 on all downloads.
 
+## Session-9 findings (R17 + final G0-R)
+
+- **R17 PASS** (`g0-r/R17-h2-vs-esef/`) — 6 H2↔FY pairs. H2 (IPP nreg) and FY (IFA
+  registro) are distinct filings sharing issuer+FY+period_end. Every H2 filing carries
+  CURRENT_HALF (Jul→close) **and** YTD (Jan→close) fact families plus prior-year
+  comparatives — `concept+period_end` is falsified as an identity key (265–532 naive
+  collisions/filing; canonical context-aware key: 0 collisions). `submission_scope`
+  classified from declared `Modelo`/`Estadistico` (banks ECR/S → HYBRID_OR_REFERENCED;
+  IBE GEN/N → FULL). IPP vs ESEF concept sets are disjoint — no automatic mapping.
+  H2-revision model demonstrated with two evidence levels kept separate:
+  `NORMATIVE_RULE` (Circular 3/2018 IFA→H2 resubmission trigger) and `SOURCE_OBSERVED`
+  (Metrovacesa: H2-2025 reg 39018 + IFA reg 39038 on 24/02/2026; H2 modification reg
+  39246 on 26/02/2026 — trigger not asserted as IFA-caused).
+- **G0-R FINAL VERDICT: GO** — under the thesis "canonical and reproducible layer over
+  filings exposed through the selected official CNMV surfaces". All 18 gates PASS.
+- **Binding G1 finding: `LANGUAGE_VARIANT_COVERAGE_UNRESOLVED`** — parallel `-en` OAM
+  submissions exist (R16) and are not interchangeable translations (BBVA sign diff).
+  Prohibited public claim: "complete CNMV/OAM ESEF coverage". First G1 investigation:
+  discover + model all OAM submission variants per issuer/period/language without
+  collapsing divergent variants (`submission_variant` on the model).
+- Pending housekeeping (not gates): upstream Arelle issue for the base64Binary
+  MemoryError (reproducer kept in R12); `_runs/` dirs may be deleted now that all
+  hashes/projections are committed.
+
 ## Blocking findings
 
 - None for the R0–R4 checkpoint. Long-horizon token/URL drift is monitored by re-running the R8
@@ -259,12 +283,13 @@ IBE  IBERDROLA, S.A.                       nif=A-48010615  LEI=5QK37QC7NWOJ8D7WV
 
 ## Next action
 
-Proceed to **R17 — H2_VS_ESEF_PERIOD_RECONCILIATION** (final G0-R gate): H2 ≠ FY/ESEF;
-shared issuer+FY+period_end; H2 submission_scope preserved; all native contexts;
-CURRENT_HALF ≠ YTD; dimensions not collapsed; H2 revision representable; fact comparison
-≠ semantic equivalence; second-semester vs annual-cumulative duality. Then final G0-R
-verdict GO/CONDITIONAL_GO/NO_GO — must weigh the R16 coverage caveat (parallel -en OAM
-submissions). Do **not** build product, UI, API, or MCP.
+**G0-R closed: all 18 gates PASS → final verdict `GO`.** The verdict authorises G1
+*design* only — no platform. Binding constraint carried into G1:
+`LANGUAGE_VARIANT_COVERAGE_UNRESOLVED` (see findings above); the prohibited public
+claim is "complete CNMV/OAM ESEF coverage". Housekeeping pending: file the upstream
+Arelle issue (base64Binary MemoryError, reproducer in `g0-r/R12-ipp-arelle-parse/`),
+optionally delete the gitignored `_runs/` dirs (R14 ~1.1 GB, R15) once their content is
+no longer needed locally.
 
 ## Session hygiene
 
