@@ -1,0 +1,58 @@
+{
+  "mode": "starve-esef",
+  "started_at": "2026-09-16T06:02:23+00:00",
+  "preflight_unguarded": {
+    "www.cnmv.es": "REACHABLE",
+    "www.xbrl.org": "REACHABLE",
+    "www.esma.europa.eu": "REACHABLE"
+  },
+  "preflight_guarded": {
+    "www.cnmv.es": "DENIED",
+    "www.xbrl.org": "DENIED",
+    "www.esma.europa.eu": "DENIED"
+  },
+  "network_block_verified": true,
+  "input_verification": {
+    "checked": 60,
+    "mismatches": 0,
+    "mismatch_detail": []
+  },
+  "arelle_version": "2.44.0",
+  "lexical_shim": {
+    "type": "base64Binary",
+    "arelle_version_gated": "2.44.0",
+    "orig_pattern_sha256": "CB74F11E4811A3159BD37FD007E18820CAE658E3C1F8A60D5D3B79ED9DD5FDD9",
+    "shim_source_sha256": "BF1F107900366B822DC592DAC99109D6E52959F55103A45629F9012A832BD995",
+    "selftest": {
+      "cases": 40,
+      "fuzz_cases": 4000,
+      "large_payload_bytes": 12582912
+    }
+  },
+  "starvation": {
+    "note": "esef_taxonomy_2024.zip removed from FY2025 package set",
+    "expected": "FAIL",
+    "run_ok": true,
+    "status": null,
+    "io_errors": 3,
+    "missing_ref_codes": 3,
+    "log_code_counts": {
+      "ERROR:": 11,
+      "ERROR:arelle": 12,
+      "ERROR:rpe": 1,
+      "ERROR:IOerror": 3,
+      "ERROR:xbrl.5.2.4.2.1": 327,
+      "ERROR:xbrldie": 1356,
+      "ERROR:xbrl.3.5.2.4.5": 1,
+      "ERROR:xbrl.3.5.2.4": 1,
+      "ERROR:xbrl.5.1.3.4": 1
+    },
+    "facts_loaded": 1952,
+    "outcome": "FAILED_AS_EXPECTED",
+    "exception": null
+  },
+  "external_connect_attempts_after_guard": [],
+  "unapproved_file_reads": [],
+  "unapproved_file_reads_count": 0,
+  "finished_at": "2026-09-16T06:02:41+00:00"
+}

@@ -1,0 +1,63 @@
+{
+  "gate": "R15",
+  "status": "PASS",
+  "executed_at": "2026-09-16T00:00:00Z",
+  "code_commit": "n/a",
+  "inputs": [
+    "R7 raw corpus artefacts (27) + artifact_manifest.json — sha256 verified pre-run",
+    "R10 taxonomy_manifest.json + official taxonomy raws + OPEN_CNMV derived packages — sha256 verified",
+    "R13 preserved pages (ListadoIFA-r13 x3, infadicionifa-r13 x7) + fetch_manifest.json — sha256 verified; events re-derived offline",
+    "arelle-release==2.44.0 + version/fingerprint-gated base64 shim (self-test at import)",
+    "canonicalizer code: r11_parse.py, r12_parse.py, r15_rebuild.py (hashes recorded)",
+    "R14 runA canonical projections — comparison reference only"
+  ],
+  "outputs": [
+    "evidence/offlineA/artifact_manifest.json",
+    "evidence/offlineA/events.json",
+    "evidence/offlineA/facts_index.json",
+    "evidence/offlineA/r15_run_result.json",
+    "evidence/offlineA/source_state.json",
+    "evidence/offlineA/taxonomy.json",
+    "evidence/offlineB/artifact_manifest.json",
+    "evidence/offlineB/events.json",
+    "evidence/offlineB/facts_index.json",
+    "evidence/offlineB/r15_run_result.json",
+    "evidence/offlineB/source_state.json",
+    "evidence/offlineB/taxonomy.json",
+    "evidence/r15_results.json",
+    "evidence/starvation_S1.json",
+    "evidence/starvation_S2.json"
+  ],
+  "sha256": {
+    "evidence/offlineA/artifact_manifest.json": "8196a56e5f73d5f1ab73ce141522197d600e0da3d063174c72ff504004d30030",
+    "evidence/offlineA/events.json": "4d92a6d0786f12864efa40563bdd23c792bdc79aaea1fd6099ef1c925dcc1b8f",
+    "evidence/offlineA/facts_index.json": "26af976096fd6085f5f1ef5f8bab4bf97367fb3d41064b8e0966452fa953e43a",
+    "evidence/offlineA/r15_run_result.json": "44bca0585eb8cb73bfbffa650b39fc1923174b5d1f1ef35cae81ac1e522acdf7",
+    "evidence/offlineA/source_state.json": "79d24ef8c09afd212d479bda65fbff16c4ddb712c9918ac7d20898d61cfe2f99",
+    "evidence/offlineA/taxonomy.json": "728372b0a318131abb8d45038e372530f123b764406640378210eb671ba3d5a1",
+    "evidence/offlineB/artifact_manifest.json": "8196a56e5f73d5f1ab73ce141522197d600e0da3d063174c72ff504004d30030",
+    "evidence/offlineB/events.json": "4d92a6d0786f12864efa40563bdd23c792bdc79aaea1fd6099ef1c925dcc1b8f",
+    "evidence/offlineB/facts_index.json": "26af976096fd6085f5f1ef5f8bab4bf97367fb3d41064b8e0966452fa953e43a",
+    "evidence/offlineB/r15_run_result.json": "4cda0e2809b1df6ffae991cf9483e5cc410556fced0d58192b0b619cbbfcd424",
+    "evidence/offlineB/source_state.json": "79d24ef8c09afd212d479bda65fbff16c4ddb712c9918ac7d20898d61cfe2f99",
+    "evidence/offlineB/taxonomy.json": "728372b0a318131abb8d45038e372530f123b764406640378210eb671ba3d5a1",
+    "evidence/r15_results.json": "8c7a564578d835a59fd83aa30ea6011e45ea36bb0fdf06deccdba83b2fff38f8",
+    "evidence/starvation_S1.json": "0ff6b1616b985fa78699ef23dcf99796c2ef288c5dd8ff64970748decc9c1c95",
+    "evidence/starvation_S2.json": "4483c23fd3ce0c24917b0d163b762091fdb9c44384fb39e381f969e2c05ca452"
+  },
+  "findings": [
+    "Zero discovery: no network, no listaifi/ListadoIFA/?e=/?t= access; closed input set verified by sha256 (60 inputs, 0 mismatches) before processing",
+    "Network denial verified: unguarded preflight REACHABLE (host online) -> socket deny-all sentinel -> guarded preflight DENIED; 0 connect attempts after guard; dead proxy env; empty caches",
+    "offline_A == offline_B on all levels (PYTHONHASHSEED 11 vs 999, isolated roots)",
+    "offline_A == R14 canonical projections on all offline-derivable levels (artifact_manifest, taxonomy, events, facts_index, source_state)",
+    "offline_A facts.jsonl byte-identical to committed R11/R12 evidence (21/21); ioerr=0; Control A equal",
+    "Starvation controls: esef_taxonomy_2024.zip removal -> FAILED_AS_EXPECTED (IOerror+unresolved concepts); xl-2003-12-31.xsd removal -> FAILED_AS_EXPECTED; pinned set is load-bearing",
+    "Read audit caught Arelle touching %LOCALAPPDATA%/Arelle/plugins.json despite TMP redirect -> user profile redirected into run root -> 0 unapproved reads"
+  ],
+  "limitations": [
+    "Network denial is process-level (socket sentinel + dead proxy + offline mode + empty caches), not an OS firewall rule (no elevation); every attempt would be logged+denied, none occurred",
+    "File-read audit covers Python open() only; C-level readers not instrumented",
+    "Determinism bounded to frozen corpus + this interpreter/dependency set; shim aborts loudly on upstream change",
+    "Discovery projection not rebuilt offline by design; R14 source_state is the provenance reference"
+  ]
+}

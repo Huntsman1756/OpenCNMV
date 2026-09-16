@@ -30,7 +30,8 @@ R11 PASS    # ESEF_ARELLE_PARSE: 6/6 load offline (ioerr=0, DTS complete); Contr
 R12 PASS    # IPP_ARELLE_PARSE: 15/15 load offline (ioerr=0, DTS from pinned pkg only); ipp_en vs ipp_ge + H1/H2 covered; typed dims exercised; Control A equal; Arelle base64Binary MemoryError shimmed (also in 2.45.0)
 R13 PASS    # SOURCE_REVISION_DETECTION: 13A REVISION_EXISTS + 13B REVISION_TARGET_EXACT (nregaud=registro, source-bound) + 13C semantics (IBE H1-2009 correction table); ESEF registro survives substitution (IBE FY2022 reg.19646) — R6 caveat closed for ESEF; IPP nreg persistence NOT_YET_PROVEN; R6 'empty column' claim corrected (Sí on 6/6 corpus rows = CERTIFICATE events, not revisions)
 R14 PASS    # ONLINE_CAPTURE_DETERMINISTIC: 2 isolated runs (fresh Arelle caches, PYTHONHASHSEED 1 vs 777); source_state equal; discovery/manifest/taxonomy/events/facts logical hashes all equal; negative control differs; 21/21 facts byte-identical to R11/R12 evidence
-R15-R17  NOT_RUN
+R15 PASS    # OFFLINE_REBUILD_DETERMINISTIC (critical): zero discovery, 60 inputs sha256-verified pre-run, socket deny-all sentinel (preflight REACHABLE->DENIED), empty caches/profile, 0 connect attempts; A==B on all levels; A==R14 projections; facts==R11/R12 21/21; both starvation controls FAILED_AS_EXPECTED
+R16-R17  NOT_RUN
 ```
 
 ## Checkpoint
@@ -180,6 +181,29 @@ G0-R verdict (after R17) is `GO`. The final verdict states are `GO` / `CONDITION
   (`g0-r/R12-ipp-arelle-parse/arelle_base64_reproducer.py`); upstream issue to be filed
   after R15/G0-R close (no existing upstream issue found; regex identical in 2.45.0).
 
+## Session-8 findings (R15)
+
+- **R15 PASS** (`g0-r/R15-offline-rebuild-deterministic/`) — the critical gate. Closed input
+  set (27 raw artefacts + R10 pinned/derived taxonomy packages + R13 preserved pages +
+  harness code + Arelle 2.44.0 + gated shim), all sha256-verified before processing.
+  Process-level network denial: unguarded preflight REACHABLE (host online) → socket
+  deny-all sentinel → guarded preflight DENIED; 0 post-guard connect attempts; dead-proxy
+  env; empty per-run caches **and** user profile (the read audit caught Arelle touching
+  `%LOCALAPPDATA%\Arelle\plugins.json` despite the TMP redirect — fixed by redirecting
+  USERPROFILE/APPDATA/LOCALAPPDATA/HOME into the run root).
+- Triple binding: offline_A == offline_B (PYTHONHASHSEED 11 vs 999) on all levels;
+  offline_A == R14 canonical projections (artifact manifest, taxonomy, events,
+  facts_index, source_state); offline_A facts byte-identical to committed R11/R12 (21/21).
+- Dependency starvation: `esef_taxonomy_2024.zip` removal → IOerror + 327 unresolved
+  concepts → FAILED_AS_EXPECTED; `xl-2003-12-31.xsd` removal from the derived IPP package
+  → IOerror + 181 xmlSchema errors → FAILED_AS_EXPECTED. The pinned set is load-bearing.
+- Honest limits: denial is process-level, not an OS firewall rule (no elevation); the
+  read audit covers Python `open()` only. Discovery is not rebuilt offline — R14's
+  `source_state` is the provenance reference.
+- **Central claim now demonstrated:** the captured CNMV financial data can be rebuilt
+  deterministically with no dependence on CNMV/ESMA/xbrl.org availability or any
+  machine-local cache.
+
 ## Blocking findings
 
 - None for the R0–R4 checkpoint. Long-horizon token/URL drift is monitored by re-running the R8
@@ -212,12 +236,11 @@ IBE  IBERDROLA, S.A.                       nif=A-48010615  LEI=5QK37QC7NWOJ8D7WV
 
 ## Next action
 
-Proceed to **R15 — OFFLINE_REBUILD_DETERMINISTIC** (critical, within G0-R): network denied,
-inputs = raw artefacts + pinned taxonomy packages + exact Arelle 2.44.0 + config +
-canonicalizer code + manifests only; must reproduce identical semantic artefacts. R14 already
-proved determinism across fresh caches/hash seeds and R12 removed user-cache dependence.
-Then `R16 oracle reconciliation → R17 H2 vs ESEF`. Do **not** build product, UI, API, or MCP.
-G1 is not touched until R17 is closed.
+Proceed to **R16 — ESEF_EXTERNAL_ORACLE_RECONCILIATION** (within G0-R): compare CNMV ESEF
+filings against `filings.xbrl.org/es-cnmv`; detect omissions, misalignments, identity/period
+issues, amended reports; explain or open every divergence as a finding; oracle never
+replaces CNMV. Then `R17 H2 vs ESEF`. Do **not** build product, UI, API, or MCP. G1 is not
+touched until R17 is closed.
 
 ## Session hygiene
 

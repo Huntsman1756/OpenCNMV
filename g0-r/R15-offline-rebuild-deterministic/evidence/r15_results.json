@@ -1,0 +1,263 @@
+{
+  "levels": {
+    "artifact_manifest": {
+      "offline_A": "614f32d6a13fecb6d15e7336db6288854cfb42de068848e7999b0e02d8e47a8c",
+      "offline_B": "614f32d6a13fecb6d15e7336db6288854cfb42de068848e7999b0e02d8e47a8c",
+      "A_eq_B": true
+    },
+    "taxonomy": {
+      "offline_A": "49b638412e620f0ab15de7d0ccdbb7351afdd5f70a2151521edf4014bf823046",
+      "offline_B": "49b638412e620f0ab15de7d0ccdbb7351afdd5f70a2151521edf4014bf823046",
+      "A_eq_B": true
+    },
+    "events": {
+      "offline_A": "c0b12dae64cc0dec4a9d35f35d31738969002f2cc84d14a56314fd6ca94e1534",
+      "offline_B": "c0b12dae64cc0dec4a9d35f35d31738969002f2cc84d14a56314fd6ca94e1534",
+      "A_eq_B": true
+    },
+    "facts_index": {
+      "offline_A": "81e48afb59b4be65b426b213ea5a63a5f7dc152639314bcfeff3f74e3f420573",
+      "offline_B": "81e48afb59b4be65b426b213ea5a63a5f7dc152639314bcfeff3f74e3f420573",
+      "A_eq_B": true
+    },
+    "source_state": {
+      "offline_A": "2743128446e440ace1da13824cbf9ae0ef8723b37a511723e1e2e15a8d875110",
+      "offline_B": "2743128446e440ace1da13824cbf9ae0ef8723b37a511723e1e2e15a8d875110",
+      "A_eq_B": true
+    }
+  },
+  "vs_r14": {
+    "artifact_manifest": {
+      "r14": "614f32d6a13fecb6d15e7336db6288854cfb42de068848e7999b0e02d8e47a8c",
+      "r15_A": "614f32d6a13fecb6d15e7336db6288854cfb42de068848e7999b0e02d8e47a8c",
+      "equal": true
+    },
+    "taxonomy": {
+      "r14": "49b638412e620f0ab15de7d0ccdbb7351afdd5f70a2151521edf4014bf823046",
+      "r15_A": "49b638412e620f0ab15de7d0ccdbb7351afdd5f70a2151521edf4014bf823046",
+      "equal": true
+    },
+    "events": {
+      "r14": "c0b12dae64cc0dec4a9d35f35d31738969002f2cc84d14a56314fd6ca94e1534",
+      "r15_A": "c0b12dae64cc0dec4a9d35f35d31738969002f2cc84d14a56314fd6ca94e1534",
+      "equal": true
+    },
+    "facts_index": {
+      "r14": "81e48afb59b4be65b426b213ea5a63a5f7dc152639314bcfeff3f74e3f420573",
+      "r15_A": "81e48afb59b4be65b426b213ea5a63a5f7dc152639314bcfeff3f74e3f420573",
+      "equal": true
+    },
+    "source_state": {
+      "r14": "2743128446e440ace1da13824cbf9ae0ef8723b37a511723e1e2e15a8d875110",
+      "r15_A": "2743128446e440ace1da13824cbf9ae0ef8723b37a511723e1e2e15a8d875110",
+      "equal": true
+    }
+  },
+  "facts_vs_R11_R12": {
+    "BBVA-FY2024": true,
+    "BBVA-FY2025": true,
+    "BBVA-H1-2024": true,
+    "BBVA-H1-2025": true,
+    "BBVA-H1-2026": true,
+    "BBVA-H2-2024": true,
+    "BBVA-H2-2025": true,
+    "IBE-FY2024": true,
+    "IBE-FY2025": true,
+    "IBE-H1-2024": true,
+    "IBE-H1-2025": true,
+    "IBE-H1-2026": true,
+    "IBE-H2-2024": true,
+    "IBE-H2-2025": true,
+    "SAN-FY2024": true,
+    "SAN-FY2025": true,
+    "SAN-H1-2024": true,
+    "SAN-H1-2025": true,
+    "SAN-H1-2026": true,
+    "SAN-H2-2024": true,
+    "SAN-H2-2025": true
+  },
+  "facts_equal_prior": "21/21",
+  "run_evidence": {
+    "A": {
+      "mode": "full",
+      "started_at": "2026-09-16T05:49:20+00:00",
+      "preflight_unguarded": {
+        "www.cnmv.es": "REACHABLE",
+        "www.xbrl.org": "REACHABLE",
+        "www.esma.europa.eu": "REACHABLE"
+      },
+      "preflight_guarded": {
+        "www.cnmv.es": "DENIED",
+        "www.xbrl.org": "DENIED",
+        "www.esma.europa.eu": "DENIED"
+      },
+      "network_block_verified": true,
+      "input_verification": {
+        "checked": 60,
+        "mismatches": 0,
+        "mismatch_detail": []
+      },
+      "arelle_version": "2.44.0",
+      "lexical_shim": {
+        "type": "base64Binary",
+        "arelle_version_gated": "2.44.0",
+        "orig_pattern_sha256": "CB74F11E4811A3159BD37FD007E18820CAE658E3C1F8A60D5D3B79ED9DD5FDD9",
+        "shim_source_sha256": "BF1F107900366B822DC592DAC99109D6E52959F55103A45629F9012A832BD995",
+        "selftest": {
+          "cases": 40,
+          "fuzz_cases": 4000,
+          "large_payload_bytes": 12582912
+        }
+      },
+      "external_connect_attempts_after_guard": [],
+      "unapproved_file_reads": [],
+      "unapproved_file_reads_count": 0,
+      "finished_at": "2026-09-16T05:56:16+00:00"
+    },
+    "B": {
+      "mode": "full",
+      "started_at": "2026-09-16T05:56:17+00:00",
+      "preflight_unguarded": {
+        "www.cnmv.es": "REACHABLE",
+        "www.xbrl.org": "REACHABLE",
+        "www.esma.europa.eu": "REACHABLE"
+      },
+      "preflight_guarded": {
+        "www.cnmv.es": "DENIED",
+        "www.xbrl.org": "DENIED",
+        "www.esma.europa.eu": "DENIED"
+      },
+      "network_block_verified": true,
+      "input_verification": {
+        "checked": 60,
+        "mismatches": 0,
+        "mismatch_detail": []
+      },
+      "arelle_version": "2.44.0",
+      "lexical_shim": {
+        "type": "base64Binary",
+        "arelle_version_gated": "2.44.0",
+        "orig_pattern_sha256": "CB74F11E4811A3159BD37FD007E18820CAE658E3C1F8A60D5D3B79ED9DD5FDD9",
+        "shim_source_sha256": "BF1F107900366B822DC592DAC99109D6E52959F55103A45629F9012A832BD995",
+        "selftest": {
+          "cases": 40,
+          "fuzz_cases": 4000,
+          "large_payload_bytes": 12582912
+        }
+      },
+      "external_connect_attempts_after_guard": [],
+      "unapproved_file_reads": [],
+      "unapproved_file_reads_count": 0,
+      "finished_at": "2026-09-16T06:02:23+00:00"
+    }
+  },
+  "starvation": {
+    "starve-esef": {
+      "note": "esef_taxonomy_2024.zip removed from FY2025 package set",
+      "expected": "FAIL",
+      "run_ok": true,
+      "status": null,
+      "io_errors": 3,
+      "missing_ref_codes": 3,
+      "log_code_counts": {
+        "ERROR:": 11,
+        "ERROR:arelle": 12,
+        "ERROR:rpe": 1,
+        "ERROR:IOerror": 3,
+        "ERROR:xbrl.5.2.4.2.1": 327,
+        "ERROR:xbrldie": 1356,
+        "ERROR:xbrl.3.5.2.4.5": 1,
+        "ERROR:xbrl.3.5.2.4": 1,
+        "ERROR:xbrl.5.1.3.4": 1
+      },
+      "facts_loaded": 1952,
+      "outcome": "FAILED_AS_EXPECTED",
+      "exception": null
+    },
+    "starve-ipp-xl": {
+      "note": "removed members: ['cnmv_ipp_2019-01-01/www.xbrl.org/2003/xl-2003-12-31.xsd']",
+      "expected": "FAIL",
+      "run_ok": true,
+      "status": null,
+      "io_errors": 1,
+      "missing_ref_codes": 1,
+      "log_code_counts": {
+        "ERROR:IOerror": 1,
+        "ERROR:xmlSchema": 181
+      },
+      "facts_loaded": 2934,
+      "outcome": "FAILED_AS_EXPECTED",
+      "exception": null,
+      "dts_resolution": [
+        {
+          "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R15-offline-rebuild-deterministic\\_runs\\S2\\entrypoints\\SAN-H1-2024.xbrl",
+          "resolved_from": "local_input"
+        },
+        {
+          "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01-definition.xml",
+          "resolved_from": "local_input"
+        },
+        {
+          "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01-label.xml",
+          "resolved_from": "local_input"
+        },
+        {
+          "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01.xsd",
+          "resolved_from": "local_input"
+        },
+        {
+          "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01-definition.xml",
+          "resolved_from": "local_input"
+        },
+        {
+          "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01-label.xml",
+          "resolved_from": "local_input"
+        },
+        {
+          "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01.xsd",
+          "resolved_from": "local_input"
+        },
+        {
+          "uri": "http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd",
+          "resolved_from": "local_input"
+        },
+        {
+          "uri": "http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd",
+          "resolved_from": "local_input"
+        },
+        {
+          "uri": "http://www.xbrl.org/2003/xlink-2003-12-31.xsd",
+          "resolved_from": "local_input"
+        },
+        {
+          "uri": "http://www.xbrl.org/2005/xbrldt-2005.xsd",
+          "resolved_from": "local_input"
+        },
+        {
+          "uri": "http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd",
+          "resolved_from": "local_input"
+        },
+        {
+          "uri": "http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd",
+          "resolved_from": "local_input"
+        }
+      ]
+    }
+  },
+  "acceptance": {
+    "network_block_verified": true,
+    "preflight_unguarded_reachable": true,
+    "external_connect_attempts_after_guard": 0,
+    "unapproved_file_reads": 0,
+    "input_verification_mismatches": 0,
+    "filings_parsed": 21,
+    "ioerr_total": 0,
+    "ctrlA_all_equal": true,
+    "offline_A_eq_B_all_levels": true,
+    "r15_A_eq_r14_all_levels": true,
+    "facts_equal_prior_gates": true,
+    "starve_esef_failed_as_expected": true,
+    "starve_ipp_xl_outcome": "FAILED_AS_EXPECTED"
+  },
+  "verdict": "PASS"
+}
