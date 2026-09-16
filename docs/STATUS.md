@@ -350,8 +350,19 @@ rebuilt deterministically from frozen G1 evidence. Key correction vs G1-B:
 `variant_version.artifact_set_id` is the per-version content identity.
 `version_event.affects[]` reaches variant/component granularity with
 nullable `source_nreg`. Spec: `docs/CANONICAL_MODEL_V1.md`. Tag
-`g1-model-frozen`. **G1 DESIGN COMPLETE** — next phase is G2 (durable core
-against the frozen contract), not more probes.
+`g1-model-frozen`. **G1 DESIGN COMPLETE.**
+
+**G2-A `DURABLE_CANONICAL_CORE`: PASS**
+(`g2/G2-A-durable-canonical-core/`, 6/6 checks). New durable library
+`src/opencnmv/` (model / source.cnmv / xbrl / canonicalize / provenance /
+serialize) rebuilds all four frozen V1 fixtures **byte-identically** from
+sha256-pinned evidence, offline (socket deny-all, 0 network calls), with a
+meta-path blocker proving 0 imports from `g0-r/`/`g1/` code. Objects
+conform to the frozen `canonical_model_v1.schema.json` — incompatible
+changes require `CANONICAL_MODEL_V2`. Next: G2-B
+`FULL_FROZEN_CORPUS_REBUILD` (offline rebuild of the whole frozen corpus,
+exercising the Arelle adapter), then G2-C columnar dataset, G2-D
+incremental capture. Preregistered in `docs/G2.md`.
 
 ## Session hygiene
 

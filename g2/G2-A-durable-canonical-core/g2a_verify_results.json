@@ -1,0 +1,35 @@
+{
+ "verdict": "PASS",
+ "checks": [
+  {
+   "check": "A1_byte_identical_to_frozen_fixtures",
+   "status": "PASS",
+   "detail": "['bbva_fy2024.json', 'ibe_fy2024.json', 'san_fy2024.json', 'tef_20484.json'] == frozen"
+  },
+  {
+   "check": "A5_rebuild_deterministic",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "A2_conformance_frozen_schema_and_model",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "A3_no_gate_code_imports",
+   "status": "PASS",
+   "detail": "21 modules clean"
+  },
+  {
+   "check": "A4_guards_and_pinned_inputs",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "A6_semantic_spot_checks",
+   "status": "PASS",
+   "detail": "IBE fallback / BBVA -98M / TEF en v1->v2, nreg null, 28/02 NOT_OBSERVABLE"
+  }
+ ]
+}

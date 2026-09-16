@@ -29,3 +29,6 @@ g0-r/R15-offline-rebuild-deterministic/_runs/
 # G1-B run roots (transient; canonical evidence committed under evidence/)
 g1/G1-B-dual-language-capture/_runs/
 g1/G1-C-extension-variant-identity/_runs/
+
+# G2-A run roots (transient; rebuild output compared byte-for-byte)
+g2/G2-A-durable-canonical-core/_out/

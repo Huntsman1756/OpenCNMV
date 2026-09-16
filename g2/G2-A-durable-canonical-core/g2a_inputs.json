@@ -1,0 +1,32 @@
+{
+ "g1a_results": {
+  "path": "g1/G1-A-oam-variant-discovery/g1a_results.json",
+  "sha256": "58fadb2395d247fea79dc88bfb03b87e6c910c762384addca2ca786d8e4d489c",
+  "bytes": 15592
+ },
+ "variant_inventory": {
+  "path": "g1/G1-B-dual-language-capture/evidence/capture/runA/variant_inventory.json",
+  "sha256": "58c87f0ecb47fe40fd553f4db8daeaa40554308bdf6319e910368f161c37c022",
+  "bytes": 33712
+ },
+ "bbva_comparison": {
+  "path": "g1/G1-B-dual-language-capture/evidence/compare/BBVA-FY2024.comparison.jsonl",
+  "sha256": "e77d8d7c8411c836ad3892416d2688a78587ef3e6b3bcc0d9aba86c44b9d2e53",
+  "bytes": 1741444
+ },
+ "san_mapping": {
+  "path": "g1/G1-C-extension-variant-identity/evidence/mapping/SAN-FY2024.mapping.json",
+  "sha256": "1d4b3b63932e3efd54ee2899cf9e9470b3225e7c5f1c62c339b2b872d9c5b38e",
+  "bytes": 94929
+ },
+ "g1d_results": {
+  "path": "g1/G1-D-variant-lifecycle-falsification/g1d_results.json",
+  "sha256": "801161ffb58694472eeeb3e3e2b15ad217ccdb4983c7a5f5fb459356c88cc6fa",
+  "bytes": 7036
+ },
+ "g1d_tef20484": {
+  "path": "g1/G1-D-variant-lifecycle-falsification/g1d_tef20484.json",
+  "sha256": "145400e96a14b55e9c3d4a54c3cb3f7efd8f81ff4c7c30c985c5667fddf09161",
+  "bytes": 19387
+ }
+}

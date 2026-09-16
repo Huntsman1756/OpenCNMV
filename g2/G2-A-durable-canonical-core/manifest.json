@@ -1,0 +1,238 @@
+{
+ "gate": "G2-A DURABLE_CANONICAL_CORE",
+ "status": "PASS",
+ "executed_at": "2026-09-16T18:35:24.210289+00:00",
+ "code_commit": null,
+ "inputs": {
+  "g1a_results": {
+   "path": "g1/G1-A-oam-variant-discovery/g1a_results.json",
+   "sha256": "58fadb2395d247fea79dc88bfb03b87e6c910c762384addca2ca786d8e4d489c",
+   "bytes": 15592
+  },
+  "variant_inventory": {
+   "path": "g1/G1-B-dual-language-capture/evidence/capture/runA/variant_inventory.json",
+   "sha256": "58c87f0ecb47fe40fd553f4db8daeaa40554308bdf6319e910368f161c37c022",
+   "bytes": 33712
+  },
+  "bbva_comparison": {
+   "path": "g1/G1-B-dual-language-capture/evidence/compare/BBVA-FY2024.comparison.jsonl",
+   "sha256": "e77d8d7c8411c836ad3892416d2688a78587ef3e6b3bcc0d9aba86c44b9d2e53",
+   "bytes": 1741444
+  },
+  "san_mapping": {
+   "path": "g1/G1-C-extension-variant-identity/evidence/mapping/SAN-FY2024.mapping.json",
+   "sha256": "1d4b3b63932e3efd54ee2899cf9e9470b3225e7c5f1c62c339b2b872d9c5b38e",
+   "bytes": 94929
+  },
+  "g1d_results": {
+   "path": "g1/G1-D-variant-lifecycle-falsification/g1d_results.json",
+   "sha256": "801161ffb58694472eeeb3e3e2b15ad217ccdb4983c7a5f5fb459356c88cc6fa",
+   "bytes": 7036
+  },
+  "g1d_tef20484": {
+   "path": "g1/G1-D-variant-lifecycle-falsification/g1d_tef20484.json",
+   "sha256": "145400e96a14b55e9c3d4a54c3cb3f7efd8f81ff4c7c30c985c5667fddf09161",
+   "bytes": 19387
+  }
+ },
+ "outputs": [
+  "g2a_verify_results.json",
+  "_out/run1|run2 (transient, byte-identical to frozen fixtures)"
+ ],
+ "artifacts": [
+  {
+   "file": "g2a_inputs.json",
+   "sha256": "070ef423654dcff140a02f1825048a53c8d5019a32f484300c699e0a4f4e2162",
+   "bytes": 1195,
+   "kind": "ARTIFACT"
+  },
+  {
+   "file": "g2a_rebuild.py",
+   "sha256": "9fc408efc1b4b2c213e28df4bf8a716f39593d90e310abeaf7d5dd7766e0dae2",
+   "bytes": 11839,
+   "kind": "CODE"
+  },
+  {
+   "file": "g2a_verify.py",
+   "sha256": "67fe1133d7310224b06ea02f7598783a52f14074b7baaf438fe1482104c31237",
+   "bytes": 5173,
+   "kind": "CODE"
+  },
+  {
+   "file": "g2a_verify_results.json",
+   "sha256": "cd2753ca07ebc6d4f6e2c48d20da4e3d6eb1291431aea8139f1b160877223641",
+   "bytes": 756,
+   "kind": "ARTIFACT"
+  },
+  {
+   "file": "README.md",
+   "sha256": "ce90b8442f5cfbcd9312af308c0130e3de36718e208177b9fc3f6dd6826b24ef",
+   "bytes": 1938,
+   "kind": "ARTIFACT"
+  },
+  {
+   "file": "src/opencnmv/__init__.py",
+   "sha256": "007b7c711d10a22df02b0f6346811c42d11455a34ba054621d4a141e444b92d3",
+   "bytes": 362,
+   "kind": "CODE"
+  },
+  {
+   "file": "src/opencnmv/canonicalize/__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0,
+   "kind": "CODE"
+  },
+  {
+   "file": "src/opencnmv/canonicalize/events.py",
+   "sha256": "691ff16afdb5aef70fff30991aaddf9c3e86f122daeccd1f6a7c5c4659dc1b23",
+   "bytes": 3617,
+   "kind": "CODE"
+  },
+  {
+   "file": "src/opencnmv/canonicalize/extension_mapping.py",
+   "sha256": "86391c5b410a73d00c7f04af7434dae78587d77353536180a50e2aba3b470e00",
+   "bytes": 949,
+   "kind": "CODE"
+  },
+  {
+   "file": "src/opencnmv/canonicalize/facts.py",
+   "sha256": "f2dc82a0f92d5eddd4cf3521c1e49213383dc185dee85474d5ae4291041604c1",
+   "bytes": 1464,
+   "kind": "CODE"
+  },
+  {
+   "file": "src/opencnmv/canonicalize/filing.py",
+   "sha256": "bbde7b7f629ea21e996a072483ac32351fd1f18a30d61af358963dd7d4c0b192",
+   "bytes": 1566,
+   "kind": "CODE"
+  },
+  {
+   "file": "src/opencnmv/canonicalize/variants.py",
+   "sha256": "1f2ba4b2e507e904b06c3450694c06784760ae0d0f47baf1d2711f985d9a2a61",
+   "bytes": 1614,
+   "kind": "CODE"
+  },
+  {
+   "file": "src/opencnmv/model/__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0,
+   "kind": "CODE"
+  },
+  {
+   "file": "src/opencnmv/model/canonical.py",
+   "sha256": "fad4d1451032e4e4d8a841130c6ebd086327289ce7f5471accbad42d354376e8",
+   "bytes": 5149,
+   "kind": "CODE"
+  },
+  {
+   "file": "src/opencnmv/model/ids.py",
+   "sha256": "ecdf84811dd657918b0df1a49f429865b44ba05f2ffe2a47bceda21b23a8e25e",
+   "bytes": 942,
+   "kind": "CODE"
+  },
+  {
+   "file": "src/opencnmv/provenance/__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0,
+   "kind": "CODE"
+  },
+  {
+   "file": "src/opencnmv/provenance/hashes.py",
+   "sha256": "f6e6911ec9a9795897dbe1d6c1530a09a0e28db3c0023b0ed5ac18550d48a754",
+   "bytes": 853,
+   "kind": "CODE"
+  },
+  {
+   "file": "src/opencnmv/provenance/manifests.py",
+   "sha256": "49e31a8119a1bb14f1636e1f65ab5d764305691c571e89cc55cb1b10772d04e5",
+   "bytes": 1273,
+   "kind": "CODE"
+  },
+  {
+   "file": "src/opencnmv/serialize.py",
+   "sha256": "0743056c3ceebdf5037cd866c64b533d5b26dfcb95cd50bca2f944b788719ddf",
+   "bytes": 613,
+   "kind": "CODE"
+  },
+  {
+   "file": "src/opencnmv/source/__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0,
+   "kind": "CODE"
+  },
+  {
+   "file": "src/opencnmv/source/cnmv/__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0,
+   "kind": "CODE"
+  },
+  {
+   "file": "src/opencnmv/source/cnmv/discovery.py",
+   "sha256": "25bec9fde82b6f9eeb51d81e6e6749f1ab66a0c74a0e607e48f4e1387952eeee",
+   "bytes": 4569,
+   "kind": "CODE"
+  },
+  {
+   "file": "src/opencnmv/source/cnmv/retrieval.py",
+   "sha256": "76d01ebb7668cf669c314b90250b4ed4d40fdd9181c59da6d88e1c5f757144aa",
+   "bytes": 1200,
+   "kind": "CODE"
+  },
+  {
+   "file": "src/opencnmv/xbrl/__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0,
+   "kind": "CODE"
+  },
+  {
+   "file": "src/opencnmv/xbrl/arelle.py",
+   "sha256": "a4caa0a369aa1eddee6a3f4438d92014001e1c13e1829ef6ccffee8c90e9b20a",
+   "bytes": 3505,
+   "kind": "CODE"
+  },
+  {
+   "file": "src/opencnmv/xbrl/taxonomy.py",
+   "sha256": "96139f8a476455d85f6da383cead4ac43c503b5e6585a8abc5a477c660a8370e",
+   "bytes": 1306,
+   "kind": "CODE"
+  }
+ ],
+ "sha256": {
+  "g2a_inputs.json": "070ef423654dcff140a02f1825048a53c8d5019a32f484300c699e0a4f4e2162",
+  "g2a_rebuild.py": "9fc408efc1b4b2c213e28df4bf8a716f39593d90e310abeaf7d5dd7766e0dae2",
+  "g2a_verify.py": "67fe1133d7310224b06ea02f7598783a52f14074b7baaf438fe1482104c31237",
+  "g2a_verify_results.json": "cd2753ca07ebc6d4f6e2c48d20da4e3d6eb1291431aea8139f1b160877223641",
+  "README.md": "ce90b8442f5cfbcd9312af308c0130e3de36718e208177b9fc3f6dd6826b24ef",
+  "src/opencnmv/__init__.py": "007b7c711d10a22df02b0f6346811c42d11455a34ba054621d4a141e444b92d3",
+  "src/opencnmv/canonicalize/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "src/opencnmv/canonicalize/events.py": "691ff16afdb5aef70fff30991aaddf9c3e86f122daeccd1f6a7c5c4659dc1b23",
+  "src/opencnmv/canonicalize/extension_mapping.py": "86391c5b410a73d00c7f04af7434dae78587d77353536180a50e2aba3b470e00",
+  "src/opencnmv/canonicalize/facts.py": "f2dc82a0f92d5eddd4cf3521c1e49213383dc185dee85474d5ae4291041604c1",
+  "src/opencnmv/canonicalize/filing.py": "bbde7b7f629ea21e996a072483ac32351fd1f18a30d61af358963dd7d4c0b192",
+  "src/opencnmv/canonicalize/variants.py": "1f2ba4b2e507e904b06c3450694c06784760ae0d0f47baf1d2711f985d9a2a61",
+  "src/opencnmv/model/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "src/opencnmv/model/canonical.py": "fad4d1451032e4e4d8a841130c6ebd086327289ce7f5471accbad42d354376e8",
+  "src/opencnmv/model/ids.py": "ecdf84811dd657918b0df1a49f429865b44ba05f2ffe2a47bceda21b23a8e25e",
+  "src/opencnmv/provenance/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "src/opencnmv/provenance/hashes.py": "f6e6911ec9a9795897dbe1d6c1530a09a0e28db3c0023b0ed5ac18550d48a754",
+  "src/opencnmv/provenance/manifests.py": "49e31a8119a1bb14f1636e1f65ab5d764305691c571e89cc55cb1b10772d04e5",
+  "src/opencnmv/serialize.py": "0743056c3ceebdf5037cd866c64b533d5b26dfcb95cd50bca2f944b788719ddf",
+  "src/opencnmv/source/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "src/opencnmv/source/cnmv/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "src/opencnmv/source/cnmv/discovery.py": "25bec9fde82b6f9eeb51d81e6e6749f1ab66a0c74a0e607e48f4e1387952eeee",
+  "src/opencnmv/source/cnmv/retrieval.py": "76d01ebb7668cf669c314b90250b4ed4d40fdd9181c59da6d88e1c5f757144aa",
+  "src/opencnmv/xbrl/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "src/opencnmv/xbrl/arelle.py": "a4caa0a369aa1eddee6a3f4438d92014001e1c13e1829ef6ccffee8c90e9b20a",
+  "src/opencnmv/xbrl/taxonomy.py": "96139f8a476455d85f6da383cead4ac43c503b5e6585a8abc5a477c660a8370e"
+ },
+ "findings": [
+  "production core rebuilds all 4 frozen V1 fixtures byte-identically",
+  "offline: socket deny-all, 0 network calls; pinned evidence inputs",
+  "no g0-r/g1 code imports; frozen schema + pydantic conformance",
+  "module layout per docs/G2.md"
+ ],
+ "limitations": [
+  "arelle adapter not exercised by fixture rebuild (G2-B scope)",
+  "package not yet pip-installable (sys.path); pyproject deferred"
+ ]
+}
