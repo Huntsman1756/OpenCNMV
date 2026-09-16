@@ -321,7 +321,8 @@ structural DTS evidence only — anchoring sets, XBRL properties,
 presentation/calculation/definition path signatures; two-tier (unordered →
 order-disambiguated), mutually-unique required, labels never read. Verdicts:
 415 PROVEN_EQUIVALENT / 11 AMBIGUOUS (real shared-signature cases) /
-2 CONFLICT / 21 UNMATCHED. Mapped re-comparison of G1-B baseline:
+2 CONFLICT / 21 UNMATCHED (evidence split: 138 tier-1 unique vs 277
+order-disambiguated PROVEN). Mapped re-comparison of G1-B baseline:
 UNMAPPED 4,239→132, VARIANT_ONLY 2,453→6, MATCH_EXACT 3,549→6,822,
 NUMERIC_EQUIVALENT 1→9, DIVERGENT 1→1 (BBVA ±98M preserved, no new
 divergences). Determinism: structure run1==run2, mapping + mapped dataset

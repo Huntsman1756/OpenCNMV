@@ -54,6 +54,21 @@ BBVA-FY2024: PROVEN 123  AMBIGUOUS 1  UNMATCHED 1
 BBVA-FY2025: PROVEN 99   AMBIGUOUS 10 UNMATCHED 10
 ```
 
+Evidence-strength split of the 415 PROVEN pairs (per `detail.tier`):
+
+```text
+tier-1 unique (structure alone)          138
+tier-2 order-disambiguated               277
+AMBIGUOUS after order                     11
+```
+
+Two thirds of all PROVEN pairings rest on sibling position as the deciding
+evidence — issuers' translated linkbases keep structurally identical sibling
+rows under the same parents, where only order separates them. This is the
+weakest tier of structural evidence and is recorded per-pair; a future gate
+could re-probe those 277 pairs if stronger evidence (e.g. widened anchor
+sets) becomes available.
+
 Empirical note: BBVA-FY2025 contains genuinely ambiguous elements — e.g.
 `ActivosPorImpuestos` matches both `TaxAssets` and `TangibleAssets` on the
 full unordered signature and order does not disambiguate. They stay

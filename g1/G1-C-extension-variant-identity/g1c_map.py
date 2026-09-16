@@ -309,6 +309,15 @@ def main():
                                    sort_keys=True).encode("utf-8"))
         doc["mapping_sha256"] = sha_of(out)
         doc["verdict_counts"] = dict(Counter(r["verdict"] for r in recs))
+        doc["proven_tier_counts"] = {
+            "tier1_unique": sum(1 for r in recs
+                                if r["verdict"] == "PROVEN_EQUIVALENT"
+                                and r.get("detail", {}).get("tier") == 1),
+            "tier2_order_disambiguated": sum(
+                1 for r in recs if r["verdict"] == "PROVEN_EQUIVALENT"
+                and r.get("detail", {}).get("tier") == 2)}
+        doc["ambiguous_after_order"] = sum(
+            1 for r in recs if r["verdict"] == "AMBIGUOUS")
         results.append(doc)
         print(doc["filing"], "->", doc["verdict_counts"], flush=True)
 
