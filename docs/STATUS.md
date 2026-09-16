@@ -284,13 +284,20 @@ IBE  IBERDROLA, S.A.                       nif=A-48010615  LEI=5QK37QC7NWOJ8D7WV
 ## Next action
 
 **G0-R closed and frozen at tag `g0-r-go` (`15c4778`): 18/18 PASS → final verdict `GO`.**
-The verdict authorises G1 *design* only. G1 framing lives in `docs/G1.md` — primary
-problem `LANGUAGE_VARIANT_COVERAGE_UNRESOLVED`, model correction `fact_structural_key`
-vs `fact_payload` (value/decimals are payload, not identity), and the first
-investigation (enumerate OAM submission variants beyond ListadoIFA). API/UI/MCP remain
-prohibited until the submission-identity question is answered. Housekeeping done:
-Arelle upstream issue filed (Arelle/Arelle#2595); `_runs/` deleted locally (~1.4 GB,
-all evidence committed).
+The verdict authorises G1 *design* only. G1 framing lives in `docs/G1.md`.
+
+**G1-A `OAM_VARIANT_DISCOVERY`: PASS** (`g1/G1-A-oam-variant-discovery/`).
+The `-en` variants are officially discoverable on the same CNMV surfaces
+(`busqueda?id=25`, `listadoifa`) via the `lang=en` interface — `verdocumento`
+tokens are language-dependent and resolve to the `-en` document set. All 6
+in-scope registros classify `SAME_REGISTRY_SAME_VERSION_VARIANTS`: `-es`/`-en`
+share `nregaud`, submission `nreg`, dates and `infadicionifa` history →
+`submission_variant` and `version_event` are orthogonal axes under `filing`
+(both pure orderings falsified). SAN-FY2024 `-en` is byte-identical to the
+oracle copy (sha `47923b30…`); SAN-FY2025 `-en` exists at CNMV though the
+oracle never indexed it. R16's `OPEN_CNMV_POSSIBLE_OMISSION` is now a
+confirmed, explained omission of the `lang=es`-only capture. Remaining
+falsification target: independent per-variant substitution history.
 
 ## Session hygiene
 

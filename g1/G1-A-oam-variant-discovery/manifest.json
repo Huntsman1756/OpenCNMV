@@ -1,0 +1,116 @@
+{
+ "gate": "G1-A",
+ "name": "OAM_VARIANT_DISCOVERY",
+ "status": "PASS",
+ "executed_at": "2026-09-16T11:20:25.157577+00:00",
+ "code_commit": "n/a (pre-commit)",
+ "inputs": [
+  "busqueda.aspx?id=25&lang={es,en} POST denom={SAN,BBVA,IBE}",
+  "webservices/verdocumento/ver?e=<token> (language-dependent)",
+  "Resultado-OIR.aspx?nreg=33155 (SAN FY2024 daily-feed entry)",
+  "filings.xbrl.org /source/es-cnmv (oracle declared source = busqueda?id=25)"
+ ],
+ "outputs": [
+  "g1/G1-A-oam-variant-discovery/README.md",
+  "g1/G1-A-oam-variant-discovery/g1a_results.json",
+  "g1/G1-A-oam-variant-discovery/evidence/ (11 artifacts)"
+ ],
+ "artifacts": [
+  {
+   "file": "evidence/busqueda25-SAN-es.html",
+   "sha256": "b7aa05d5e706cf53b72ee5097a9dfcf8dc8dbb9eeabe43c3a57201297183d64a",
+   "bytes": 227019,
+   "source_url": "https://www.cnmv.es/Portal/consultas/busqueda?id=25&lang=es [POST denom=BANCO SANTANDER]",
+   "kind": "SEARCH_RESULTS_PAGE"
+  },
+  {
+   "file": "evidence/busqueda25-SAN-en.html",
+   "sha256": "613a95251d0eca09b13ca5d76d7bcde7551376b50ef83dd40376368c2db36a3b",
+   "bytes": 219741,
+   "source_url": "https://www.cnmv.es/Portal/consultas/busqueda?id=25&lang=en [POST denom=BANCO SANTANDER]",
+   "kind": "SEARCH_RESULTS_PAGE"
+  },
+  {
+   "file": "evidence/esef-SAN-FY2024-en.zip",
+   "sha256": "47923b30c3763fe448ff8080bb3e38c50ae48d48171986a90947c8be347ccb37",
+   "bytes": 32228411,
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=z3t4s%2bfAVX1BGQZnsfUZuOUI3MytjNtoCr3CkuvEbTuze5HLI2BThe6mgBjw3Gx%2f (via busqueda?id=25&lang=en, registro 20509)",
+   "kind": "ESEF_PACKAGE_ZIP_EN"
+  },
+  {
+   "file": "evidence/esef-SAN-FY2025-en.zip",
+   "sha256": "77ac614a42c974965e04fd882a329952af393554b93b2873f1c021646ed95198",
+   "bytes": 25761267,
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=nNHQi6oviAY0cdF48HZ71CGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f (via busqueda?id=25&lang=en, registro 20875)",
+   "kind": "ESEF_PACKAGE_ZIP_EN"
+  },
+  {
+   "file": "evidence/busqueda25-BBVA-es.html",
+   "sha256": "5ea57ca1b50e5e55300afa6ac83ec5f95414c4a417294a6002c454197cf2f522",
+   "bytes": 227006,
+   "source_url": "https://www.cnmv.es/Portal/consultas/busqueda?id=25&lang=es [POST denom=BILBAO VIZCAYA]",
+   "kind": "SEARCH_RESULTS_PAGE"
+  },
+  {
+   "file": "evidence/busqueda25-BBVA-en.html",
+   "sha256": "32387dbef290997a8a976b69fa3b9f8933cf4c7e784b12dc50f8c7f6c7a48789",
+   "bytes": 219720,
+   "source_url": "https://www.cnmv.es/Portal/consultas/busqueda?id=25&lang=en [POST denom=BILBAO VIZCAYA]",
+   "kind": "SEARCH_RESULTS_PAGE"
+  },
+  {
+   "file": "evidence/esef-BBVA-FY2024-en.zip",
+   "sha256": "75be80e13b1fb8f56a8cad06353a7145f0fad524f654864d70f1aa35a2cce94e",
+   "bytes": 18883918,
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=zIyNvdRvmiF7HW0RJ8nz1OUI3MytjNtoCr3CkuvEbTuze5HLI2BThe6mgBjw3Gx%2f (via busqueda?id=25&lang=en, registro 20448)",
+   "kind": "ESEF_PACKAGE_ZIP_EN"
+  },
+  {
+   "file": "evidence/esef-BBVA-FY2025-en.zip",
+   "sha256": "40ff2f1798f798833cfb61a3b004cb7cdbed2682237a9d7d2b35b42b32ac54d3",
+   "bytes": 28427988,
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=205eF0bhFWbsd%2fkaEFBrGCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f (via busqueda?id=25&lang=en, registro 20854)",
+   "kind": "ESEF_PACKAGE_ZIP_EN"
+  },
+  {
+   "file": "evidence/busqueda25-IBE-es.html",
+   "sha256": "0e209de7b924a48ba55e3a316781e17d328358a4c8f8b293381c561735a52b04",
+   "bytes": 226881,
+   "source_url": "https://www.cnmv.es/Portal/consultas/busqueda?id=25&lang=es [POST denom=IBERDROLA]",
+   "kind": "SEARCH_RESULTS_PAGE"
+  },
+  {
+   "file": "evidence/busqueda25-IBE-en.html",
+   "sha256": "0ebb91323f95effd535736a298249164927e95950e5966f9aa698a7e71c53e7d",
+   "bytes": 219539,
+   "source_url": "https://www.cnmv.es/Portal/consultas/busqueda?id=25&lang=en [POST denom=IBERDROLA]",
+   "kind": "SEARCH_RESULTS_PAGE"
+  },
+  {
+   "file": "evidence/resultado-oir-33155.html",
+   "sha256": "5471e496894adbe1ad910e82de7e00fd3ccd7284617d69b58a194c390b4876fa",
+   "bytes": 216222,
+   "source_url": "https://internet.cnmv.es/Portal/Otra-Informacion-Relevante/Resultado-OIR.aspx?nreg=33155",
+   "kind": "OAM_FEED_ENTRY_DETAIL"
+  },
+  {
+   "file": "g1a_results.json",
+   "sha256": "5105aabd74e4f12355ed4759ba8d4ca1c4dc9e44af3667b9815a414106364377",
+   "bytes": 17366,
+   "kind": "RESULT_MATRIX"
+  }
+ ],
+ "findings": [
+  "-en variants are officially discoverable on the SAME CNMV surfaces (busqueda?id=25, listadoifa) via the lang=en interface: verdocumento tokens are language-dependent and resolve to the -en document set.",
+  "es and en share identical nregaud (registro oficial), submission nreg, dates, auditor and infadicionifa history page -> variants are parallel artifact sets inside ONE registry entry.",
+  "IBE has no -en: lang=en falls back to the -es package (fallback observable, not a distinct variant).",
+  "SAN-FY2024 -en package sha256 == oracle package sha256 (47923b30...) -> oracle sourced it from this surface; R16 OPEN_CNMV_POSSIBLE_OMISSION becomes a confirmed, explained omission of the lang=es-only capture.",
+  "SAN-FY2025 -en exists at CNMV (77ac614a...) while the oracle has no ES-2025 filing -> consistent with ORACLE_OMISSION lag.",
+  "Outcome for all 6 cases: SAME_REGISTRY_SAME_VERSION_VARIANTS. Model implication: submission_variant and version_event are orthogonal axes under filing; the pure version->variant and variant->version orderings are both rejected."
+ ],
+ "limitations": [
+  "Independent per-variant substitution is not observable in the 6 cases; shared registry-level history only (falsification target remains).",
+  "Standalone -en XHTML viewer documents (up to ~100MB) identified by token/title, not preserved.",
+  "Other possible OAM surfaces not exhaustively enumerated; claim is scoped to busqueda?id=25/listadoifa."
+ ]
+}

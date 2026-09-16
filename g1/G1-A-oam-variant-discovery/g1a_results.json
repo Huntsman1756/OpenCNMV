@@ -1,0 +1,566 @@
+{
+ "results": [
+  {
+   "issuer": "SAN",
+   "fy": "FY2024",
+   "registro": "20509",
+   "nreg_submission_es": [
+    "infadicionifa.aspx?id=0&amp;nreg=2025031067&amp;nregaud=20509"
+   ],
+   "nreg_submission_en": [
+    "infadicionifa.aspx?id=0&amp;nreg=2025031067&amp;nregaud=20509"
+   ],
+   "pub_date_es": "28/02/2025",
+   "pub_date_en": "28/02/2025",
+   "es_zip_sha256": "725fff01861cb0c186107280bf30b2c047a3a59af703d799f678e02c435cb9f5",
+   "en_zip_sha256": "47923b30c3763fe448ff8080bb3e38c50ae48d48171986a90947c8be347ccb37",
+   "es_package_tag": "es",
+   "en_package_tag": "en",
+   "oracle_en_sha256": "47923b30c3763fe448ff8080bb3e38c50ae48d48171986a90947c8be347ccb37",
+   "en_package_matches_oracle": true,
+   "verdict": "SAME_REGISTRY_SAME_VERSION_VARIANTS",
+   "note": "distinct -es/-en packages under one registro, shared nreg+dates+history"
+  },
+  {
+   "issuer": "SAN",
+   "fy": "FY2025",
+   "registro": "20875",
+   "nreg_submission_es": [
+    "infadicionifa.aspx?id=0&amp;nreg=2026029493&amp;nregaud=20875"
+   ],
+   "nreg_submission_en": [
+    "infadicionifa.aspx?id=0&amp;nreg=2026029493&amp;nregaud=20875"
+   ],
+   "pub_date_es": "25/02/2026",
+   "pub_date_en": "25/02/2026",
+   "es_zip_sha256": "07e95a16c7d1652d6c6298c39b19b6a1e90c5d4a8c01881b4ccaebdeaa700567",
+   "en_zip_sha256": "77ac614a42c974965e04fd882a329952af393554b93b2873f1c021646ed95198",
+   "es_package_tag": "es",
+   "en_package_tag": "en",
+   "oracle_en_sha256": null,
+   "en_package_matches_oracle": null,
+   "verdict": "SAME_REGISTRY_SAME_VERSION_VARIANTS",
+   "note": "distinct -es/-en packages under one registro, shared nreg+dates+history"
+  },
+  {
+   "issuer": "BBVA",
+   "fy": "FY2024",
+   "registro": "20448",
+   "nreg_submission_es": [
+    "infadicionifa.aspx?id=0&amp;nreg=2025022995&amp;nregaud=20448"
+   ],
+   "nreg_submission_en": [
+    "infadicionifa.aspx?id=0&amp;nreg=2025022995&amp;nregaud=20448"
+   ],
+   "pub_date_es": "14/02/2025",
+   "pub_date_en": "14/02/2025",
+   "es_zip_sha256": "69f04da4f6ebe4f3072401207ff83f6edc9d335c83df666525594a7062d7248a",
+   "en_zip_sha256": "75be80e13b1fb8f56a8cad06353a7145f0fad524f654864d70f1aa35a2cce94e",
+   "es_package_tag": "es",
+   "en_package_tag": "en",
+   "oracle_en_sha256": null,
+   "en_package_matches_oracle": null,
+   "verdict": "SAME_REGISTRY_SAME_VERSION_VARIANTS",
+   "note": "distinct -es/-en packages under one registro, shared nreg+dates+history"
+  },
+  {
+   "issuer": "BBVA",
+   "fy": "FY2025",
+   "registro": "20854",
+   "nreg_submission_es": [
+    "infadicionifa.aspx?id=0&amp;nreg=2026023391&amp;nregaud=20854"
+   ],
+   "nreg_submission_en": [
+    "infadicionifa.aspx?id=0&amp;nreg=2026023391&amp;nregaud=20854"
+   ],
+   "pub_date_es": "13/02/2026",
+   "pub_date_en": "13/02/2026",
+   "es_zip_sha256": "675a1d3a470fdc469beda39bf242ffcb496c6f1116da4d1fc562faa0734e3458",
+   "en_zip_sha256": "40ff2f1798f798833cfb61a3b004cb7cdbed2682237a9d7d2b35b42b32ac54d3",
+   "es_package_tag": "es",
+   "en_package_tag": "en",
+   "oracle_en_sha256": null,
+   "en_package_matches_oracle": null,
+   "verdict": "SAME_REGISTRY_SAME_VERSION_VARIANTS",
+   "note": "distinct -es/-en packages under one registro, shared nreg+dates+history"
+  },
+  {
+   "issuer": "IBE",
+   "fy": "FY2024",
+   "registro": "20515",
+   "nreg_submission_es": [
+    "infadicionifa.aspx?id=0&amp;nreg=2025031726&amp;nregaud=20515"
+   ],
+   "nreg_submission_en": [
+    "infadicionifa.aspx?id=0&amp;nreg=2025031726&amp;nregaud=20515"
+   ],
+   "pub_date_es": "28/02/2025",
+   "pub_date_en": "28/02/2025",
+   "es_zip_sha256": "89dfd3ef65527d1d4378464c2f70fa78b2fb7b4872264eacfa91d3faae1c42b4",
+   "en_zip_sha256": "89dfd3ef65527d1d4378464c2f70fa78b2fb7b4872264eacfa91d3faae1c42b4",
+   "es_package_tag": "es",
+   "en_package_tag": "es",
+   "oracle_en_sha256": null,
+   "en_package_matches_oracle": null,
+   "verdict": "SAME_REGISTRY_SAME_VERSION_VARIANTS",
+   "note": "lang=en falls back to -es package (no -en filed)"
+  },
+  {
+   "issuer": "IBE",
+   "fy": "FY2025",
+   "registro": "20934",
+   "nreg_submission_es": [
+    "infadicionifa.aspx?id=0&amp;nreg=2026031462&amp;nregaud=20934"
+   ],
+   "nreg_submission_en": [
+    "infadicionifa.aspx?id=0&amp;nreg=2026031462&amp;nregaud=20934"
+   ],
+   "pub_date_es": "27/02/2026",
+   "pub_date_en": "27/02/2026",
+   "es_zip_sha256": "066fdaf835ad6e81f0ff77eacb571f5d2a09f9fb42788fbc12d7041d2e51e05a",
+   "en_zip_sha256": "066fdaf835ad6e81f0ff77eacb571f5d2a09f9fb42788fbc12d7041d2e51e05a",
+   "es_package_tag": "es",
+   "en_package_tag": "es",
+   "oracle_en_sha256": null,
+   "en_package_matches_oracle": null,
+   "verdict": "SAME_REGISTRY_SAME_VERSION_VARIANTS",
+   "note": "lang=en falls back to -es package (no -en filed)"
+  }
+ ],
+ "rows_raw": [
+  {
+   "issuer": "SAN",
+   "registro": "20509",
+   "fy": "FY2024",
+   "ui_lang": "es",
+   "row": {
+    "cells": [
+     "20509",
+     "31/12/2024",
+     "28/02/2025",
+     "PRICEWATERHOUSECOOPERS AUDITORES, S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "RH1Ws6BP9aowyEPSjG62z0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "0bQwL3u99E3DOvBFo8qZUkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "pA2SAuUsZN0YboL7PRFSS%2bUI3MytjNtoCr3CkuvEbTuze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&amp;nreg=2025031067&amp;nregaud=20509"
+    ]
+   },
+   "zip_content_type": "application/zip",
+   "zip_sha256": "725fff01861cb0c186107280bf30b2c047a3a59af703d799f678e02c435cb9f5",
+   "zip_bytes": 33916843,
+   "report_members": [
+    "5493006QMFDDMYWIAM13-20241231-es/reports/5493006QMFDDMYWIAM13-20241231-es.xhtml"
+   ],
+   "package_lang_tag": "es"
+  },
+  {
+   "issuer": "SAN",
+   "registro": "20875",
+   "fy": "FY2025",
+   "ui_lang": "es",
+   "row": {
+    "cells": [
+     "20875",
+     "31/12/2025",
+     "25/02/2026",
+     "PRICEWATERHOUSECOOPERS AUDITORES, S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "CY8jX7ZdXl0lvualznPU%2b0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "QW%2f3fpb0yRNpsshQxKLD1UvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "zx7yqgi1%2fcEy59FQ5bdraSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&amp;nreg=2026029493&amp;nregaud=20875"
+    ]
+   },
+   "zip_content_type": "application/zip",
+   "zip_sha256": "07e95a16c7d1652d6c6298c39b19b6a1e90c5d4a8c01881b4ccaebdeaa700567",
+   "zip_bytes": 29430116,
+   "report_members": [
+    "5493006QMFDDMYWIAM13-2025-12-31-1-es/reports/5493006QMFDDMYWIAM13-2025-12-31-1-es.xhtml"
+   ],
+   "package_lang_tag": "es"
+  },
+  {
+   "issuer": "SAN",
+   "registro": "20509",
+   "fy": "FY2024",
+   "ui_lang": "en",
+   "row": {
+    "cells": [
+     "20509",
+     "31/12/2024",
+     "28/02/2025",
+     "PRICEWATERHOUSECOOPERS AUDITORES, S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "coih7onBYJxyLLoPhbLyo0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "P1S9gc3TyGZMbMDQ7N2yvUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "z3t4s%2bfAVX1BGQZnsfUZuOUI3MytjNtoCr3CkuvEbTuze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&amp;nreg=2025031067&amp;nregaud=20509"
+    ]
+   },
+   "zip_content_type": "application/zip",
+   "zip_sha256": "47923b30c3763fe448ff8080bb3e38c50ae48d48171986a90947c8be347ccb37",
+   "zip_bytes": 32228411,
+   "report_members": [
+    "5493006QMFDDMYWIAM13-20241231-en/reports/5493006QMFDDMYWIAM13-20241231-en.xhtml"
+   ],
+   "package_lang_tag": "en"
+  },
+  {
+   "issuer": "SAN",
+   "registro": "20875",
+   "fy": "FY2025",
+   "ui_lang": "en",
+   "row": {
+    "cells": [
+     "20875",
+     "31/12/2025",
+     "25/02/2026",
+     "PRICEWATERHOUSECOOPERS AUDITORES, S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "57IbS0W1JCzfxSpy1ysUq0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "z9vtpbwTwEPkvMFRTedpuEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "nNHQi6oviAY0cdF48HZ71CGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&amp;nreg=2026029493&amp;nregaud=20875"
+    ]
+   },
+   "zip_content_type": "application/zip",
+   "zip_sha256": "77ac614a42c974965e04fd882a329952af393554b93b2873f1c021646ed95198",
+   "zip_bytes": 25761267,
+   "report_members": [
+    "5493006QMFDDMYWIAM13-2025-12-31-1-en/reports/5493006QMFDDMYWIAM13-2025-12-31-1-en.xhtml"
+   ],
+   "package_lang_tag": "en"
+  },
+  {
+   "issuer": "BBVA",
+   "registro": "20448",
+   "fy": "FY2024",
+   "ui_lang": "es",
+   "row": {
+    "cells": [
+     "20448",
+     "31/12/2024",
+     "14/02/2025",
+     "ERNST &amp; YOUNG, S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "j%2fZysp8VxgIh1g1cNKSGdUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "%2bGpabasNUoHWKDwllY8mEEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "I4LcI0JZ39PnFVD%2bqkRz0OUI3MytjNtoCr3CkuvEbTuze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&amp;nreg=2025022995&amp;nregaud=20448"
+    ]
+   },
+   "zip_content_type": "application/zip",
+   "zip_sha256": "69f04da4f6ebe4f3072401207ff83f6edc9d335c83df666525594a7062d7248a",
+   "zip_bytes": 20388402,
+   "report_members": [
+    "K8MS7FD7N5Z2WQ51AZ71-20241231-0-es/reports/",
+    "K8MS7FD7N5Z2WQ51AZ71-20241231-0-es/reports/K8MS7FD7N5Z2WQ51AZ71-20241231-0-es.xhtml"
+   ],
+   "package_lang_tag": "es"
+  },
+  {
+   "issuer": "BBVA",
+   "registro": "20854",
+   "fy": "FY2025",
+   "ui_lang": "es",
+   "row": {
+    "cells": [
+     "20854",
+     "31/12/2025",
+     "13/02/2026",
+     "ERNST &amp; YOUNG, S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "Dv50%2bpxUKEkKpGw7VEb9mEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "aZxnPcZAq5oWUm3NdYPLtEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "yE2g%2bsujJYWsSB7a7Z2RXiGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&amp;nreg=2026023391&amp;nregaud=20854"
+    ]
+   },
+   "zip_content_type": "application/zip",
+   "zip_sha256": "675a1d3a470fdc469beda39bf242ffcb496c6f1116da4d1fc562faa0734e3458",
+   "zip_bytes": 28632634,
+   "report_members": [
+    "K8MS7FD7N5Z2WQ51AZ71-2025-12-31-1-es/reports/K8MS7FD7N5Z2WQ51AZ71-2025-12-31-1-es.xhtml"
+   ],
+   "package_lang_tag": "es"
+  },
+  {
+   "issuer": "BBVA",
+   "registro": "20448",
+   "fy": "FY2024",
+   "ui_lang": "en",
+   "row": {
+    "cells": [
+     "20448",
+     "31/12/2024",
+     "14/02/2025",
+     "ERNST &amp; YOUNG, S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "E70k6C2oBCLAGsYQUK7ExEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "%2baWlylmGhIQq9T8dCvu3J0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "zIyNvdRvmiF7HW0RJ8nz1OUI3MytjNtoCr3CkuvEbTuze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&amp;nreg=2025022995&amp;nregaud=20448"
+    ]
+   },
+   "zip_content_type": "application/zip",
+   "zip_sha256": "75be80e13b1fb8f56a8cad06353a7145f0fad524f654864d70f1aa35a2cce94e",
+   "zip_bytes": 18883918,
+   "report_members": [
+    "K8MS7FD7N5Z2WQ51AZ71-20241231-0-en/reports/",
+    "K8MS7FD7N5Z2WQ51AZ71-20241231-0-en/reports/K8MS7FD7N5Z2WQ51AZ71-20241231-0-en.xhtml"
+   ],
+   "package_lang_tag": "en"
+  },
+  {
+   "issuer": "BBVA",
+   "registro": "20854",
+   "fy": "FY2025",
+   "ui_lang": "en",
+   "row": {
+    "cells": [
+     "20854",
+     "31/12/2025",
+     "13/02/2026",
+     "ERNST &amp; YOUNG, S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "UFpvGR1WOTtAQYxwm79tsEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "yjl%2bFDWTW0okxMpAQeHUNEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "205eF0bhFWbsd%2fkaEFBrGCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&amp;nreg=2026023391&amp;nregaud=20854"
+    ]
+   },
+   "zip_content_type": "application/zip",
+   "zip_sha256": "40ff2f1798f798833cfb61a3b004cb7cdbed2682237a9d7d2b35b42b32ac54d3",
+   "zip_bytes": 28427988,
+   "report_members": [
+    "K8MS7FD7N5Z2WQ51AZ71-2025-12-31-1-en/reports/K8MS7FD7N5Z2WQ51AZ71-2025-12-31-1-en.xhtml"
+   ],
+   "package_lang_tag": "en"
+  },
+  {
+   "issuer": "IBE",
+   "registro": "20515",
+   "fy": "FY2024",
+   "ui_lang": "es",
+   "row": {
+    "cells": [
+     "20515",
+     "31/12/2024",
+     "28/02/2025",
+     "KPMG AUDITORES,S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "8iAjLypUlXcyOg1JmTML4kvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "Ms7Yuva7TaqIQ%2baU%2b0Yam0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "InFm9XzpazEYwfhw8%2fCSseUI3MytjNtoCr3CkuvEbTuze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&amp;nreg=2025031726&amp;nregaud=20515"
+    ]
+   },
+   "zip_content_type": "application/zip",
+   "zip_sha256": "89dfd3ef65527d1d4378464c2f70fa78b2fb7b4872264eacfa91d3faae1c42b4",
+   "zip_bytes": 28162648,
+   "report_members": [
+    "5QK37QC7NWOJ8D7WVQ45-20241231-es/reports/5QK37QC7NWOJ8D7WVQ45-20241231-es.xhtml"
+   ],
+   "package_lang_tag": "es"
+  },
+  {
+   "issuer": "IBE",
+   "registro": "20934",
+   "fy": "FY2025",
+   "ui_lang": "es",
+   "row": {
+    "cells": [
+     "20934",
+     "31/12/2025",
+     "27/02/2026",
+     "KPMG AUDITORES,S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "6MBEaFu8FI2yJlbD9ti8GUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "Azk%2bseVn1n8kGzB3RWnupUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "QoMIxzQb%2bN0EUHgZdcRm2yGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&amp;nreg=2026031462&amp;nregaud=20934"
+    ]
+   },
+   "zip_content_type": "application/zip",
+   "zip_sha256": "066fdaf835ad6e81f0ff77eacb571f5d2a09f9fb42788fbc12d7041d2e51e05a",
+   "zip_bytes": 10103299,
+   "report_members": [
+    "5QK37QC7NWOJ8D7WVQ45-2025-12-31-1-es/reports/5QK37QC7NWOJ8D7WVQ45-2025-12-31-1-es.xhtml"
+   ],
+   "package_lang_tag": "es"
+  },
+  {
+   "issuer": "IBE",
+   "registro": "20515",
+   "fy": "FY2024",
+   "ui_lang": "en",
+   "row": {
+    "cells": [
+     "20515",
+     "31/12/2024",
+     "28/02/2025",
+     "KPMG AUDITORES,S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "0NTjZ95kx8G6ZRC3V1639SJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "4BXJQa3Jr19l7UM%2fO4ZXiyJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "InFm9XzpazEYwfhw8%2fCSseUI3MytjNtoCr3CkuvEbTuze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&amp;nreg=2025031726&amp;nregaud=20515"
+    ]
+   },
+   "zip_content_type": "application/zip",
+   "zip_sha256": "89dfd3ef65527d1d4378464c2f70fa78b2fb7b4872264eacfa91d3faae1c42b4",
+   "zip_bytes": 28162648,
+   "report_members": [
+    "5QK37QC7NWOJ8D7WVQ45-20241231-es/reports/5QK37QC7NWOJ8D7WVQ45-20241231-es.xhtml"
+   ],
+   "package_lang_tag": "es"
+  },
+  {
+   "issuer": "IBE",
+   "registro": "20934",
+   "fy": "FY2025",
+   "ui_lang": "en",
+   "row": {
+    "cells": [
+     "20934",
+     "31/12/2025",
+     "27/02/2026",
+     "KPMG AUDITORES,S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "1RBAVivr5eAguAoRNLrx6SJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "9aL6Zr2yrWu%2bJNlmFxsy3CJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "QoMIxzQb%2bN0EUHgZdcRm2yGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&amp;nreg=2026031462&amp;nregaud=20934"
+    ]
+   },
+   "zip_content_type": "application/zip",
+   "zip_sha256": "066fdaf835ad6e81f0ff77eacb571f5d2a09f9fb42788fbc12d7041d2e51e05a",
+   "zip_bytes": 10103299,
+   "report_members": [
+    "5QK37QC7NWOJ8D7WVQ45-2025-12-31-1-es/reports/5QK37QC7NWOJ8D7WVQ45-2025-12-31-1-es.xhtml"
+   ],
+   "package_lang_tag": "es"
+  }
+ ]
+}
