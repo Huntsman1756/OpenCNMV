@@ -35,7 +35,7 @@
    "submitted_variant_count": 2,
    "oracle_en_sha256": "47923b30c3763fe448ff8080bb3e38c50ae48d48171986a90947c8be347ccb37",
    "en_package_matches_oracle": true,
-   "verdict": "SAME_REGISTRY_SAME_VERSION_VARIANTS",
+   "verdict": "DUAL_VARIANT_SHARED_REGISTRY",
    "note": "distinct -es/-en packages under one registro, shared nreg+dates+history"
   },
   {
@@ -73,7 +73,7 @@
    "submitted_variant_count": 2,
    "oracle_en_sha256": null,
    "en_package_matches_oracle": null,
-   "verdict": "SAME_REGISTRY_SAME_VERSION_VARIANTS",
+   "verdict": "DUAL_VARIANT_SHARED_REGISTRY",
    "note": "distinct -es/-en packages under one registro, shared nreg+dates+history"
   },
   {
@@ -111,7 +111,7 @@
    "submitted_variant_count": 2,
    "oracle_en_sha256": null,
    "en_package_matches_oracle": null,
-   "verdict": "SAME_REGISTRY_SAME_VERSION_VARIANTS",
+   "verdict": "DUAL_VARIANT_SHARED_REGISTRY",
    "note": "distinct -es/-en packages under one registro, shared nreg+dates+history"
   },
   {
@@ -149,7 +149,7 @@
    "submitted_variant_count": 2,
    "oracle_en_sha256": null,
    "en_package_matches_oracle": null,
-   "verdict": "SAME_REGISTRY_SAME_VERSION_VARIANTS",
+   "verdict": "DUAL_VARIANT_SHARED_REGISTRY",
    "note": "distinct -es/-en packages under one registro, shared nreg+dates+history"
   },
   {
@@ -186,7 +186,7 @@
    "submitted_variant_count": 1,
    "oracle_en_sha256": null,
    "en_package_matches_oracle": null,
-   "verdict": "SAME_REGISTRY_SAME_VERSION_VARIANTS",
+   "verdict": "SINGLE_VARIANT_WITH_UI_FALLBACK",
    "note": "single submitted variant; lang=en is UI fallback"
   },
   {
@@ -223,7 +223,7 @@
    "submitted_variant_count": 1,
    "oracle_en_sha256": null,
    "en_package_matches_oracle": null,
-   "verdict": "SAME_REGISTRY_SAME_VERSION_VARIANTS",
+   "verdict": "SINGLE_VARIANT_WITH_UI_FALLBACK",
    "note": "single submitted variant; lang=en is UI fallback"
   }
  ],

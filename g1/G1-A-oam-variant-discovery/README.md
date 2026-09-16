@@ -44,12 +44,12 @@ second `submission_variant`. The real outcome is:
 
 | Issuer | FY | registro | nreg (es==en) | pub date (es==en) | `-es` ZIP sha256 | `lang=en` resolved sha256 | resolution_mode(en) | verdict |
 |---|---|---|---|---|---|---|---|---|
-| SAN | 2024 | 20509 | 2025031067 == 2025031067 | 28/02/2025 == 28/02/2025 | `725fff01…` | `47923b30…` | SUBMITTED_VARIANT | SAME_REGISTRY_SAME_VERSION_VARIANTS |
-| SAN | 2025 | 20875 | 2026029493 == 2026029493 | 25/02/2026 == 25/02/2026 | `07e95a16…` | `77ac614a…` | SUBMITTED_VARIANT | SAME_REGISTRY_SAME_VERSION_VARIANTS |
-| BBVA | 2024 | 20448 | 2025022995 == 2025022995 | 14/02/2025 == 14/02/2025 | `69f04da4…` | `75be80e1…` | SUBMITTED_VARIANT | SAME_REGISTRY_SAME_VERSION_VARIANTS |
-| BBVA | 2025 | 20854 | 2026023406 == 2026023406 | 13/02/2026 == 13/02/2026 | `675a1d3a…` | `40ff2f17…` | SUBMITTED_VARIANT | SAME_REGISTRY_SAME_VERSION_VARIANTS |
-| IBE | 2024 | 20515 | 2025031726 == 2025031726 | 28/02/2025 == 28/02/2025 | `89dfd3ef…` | `89dfd3ef…` (same bytes) | FALLBACK_TO_ES | SAME_REGISTRY_SAME_VERSION_VARIANTS |
-| IBE | 2025 | 20934 | 2026031462 == 2026031462 | 27/02/2026 == 27/02/2026 | `066fdaf8…` | `066fdaf8…` (same bytes) | FALLBACK_TO_ES | SAME_REGISTRY_SAME_VERSION_VARIANTS |
+| SAN | 2024 | 20509 | 2025031067 == 2025031067 | 28/02/2025 == 28/02/2025 | `725fff01…` | `47923b30…` | SUBMITTED_VARIANT | DUAL_VARIANT_SHARED_REGISTRY |
+| SAN | 2025 | 20875 | 2026029493 == 2026029493 | 25/02/2026 == 25/02/2026 | `07e95a16…` | `77ac614a…` | SUBMITTED_VARIANT | DUAL_VARIANT_SHARED_REGISTRY |
+| BBVA | 2024 | 20448 | 2025022995 == 2025022995 | 14/02/2025 == 14/02/2025 | `69f04da4…` | `75be80e1…` | SUBMITTED_VARIANT | DUAL_VARIANT_SHARED_REGISTRY |
+| BBVA | 2025 | 20854 | 2026023406 == 2026023406 | 13/02/2026 == 13/02/2026 | `675a1d3a…` | `40ff2f17…` | SUBMITTED_VARIANT | DUAL_VARIANT_SHARED_REGISTRY |
+| IBE | 2024 | 20515 | 2025031726 == 2025031726 | 28/02/2025 == 28/02/2025 | `89dfd3ef…` | `89dfd3ef…` (same bytes) | FALLBACK_TO_ES | SINGLE_VARIANT_WITH_UI_FALLBACK |
+| IBE | 2025 | 20934 | 2026031462 == 2026031462 | 27/02/2026 == 27/02/2026 | `066fdaf8…` | `066fdaf8…` (same bytes) | FALLBACK_TO_ES | SINGLE_VARIANT_WITH_UI_FALLBACK |
 
 ## Answers to the four questions
 
@@ -90,10 +90,12 @@ but not the submission.
 
 ## Model implication
 
-The evidence supports the preregistered outcome
-`SAME_REGISTRY_SAME_VERSION_VARIANTS`: same registro, same submission nreg,
-same publication date, same `infadicionifa` history surface, different
-language artifact sets.
+All six registros land in the preregistered same-registry outcome, refined
+per filing: `DUAL_VARIANT_SHARED_REGISTRY` (SAN, BBVA — two real submitted
+variants) and `SINGLE_VARIANT_WITH_UI_FALLBACK` (IBE — one submitted variant;
+the `lang=en` view serves the same `-es` bytes). Same registro, same
+submission nreg, same publication date, same `infadicionifa` history
+surface; where two variants exist they are distinct language artifact sets.
 
 **Important honesty note:** current evidence does **not** distinguish the
 lifecycle ordering. The observed shape is still perfectly compatible with
@@ -133,7 +135,8 @@ experimentally falsified conclusion.
 
 | outcome | count |
 |---|---|
-| SAME_REGISTRY_SAME_VERSION_VARIANTS | 6 (4 filings with 2 submitted variants; 2 filings with 1 variant + en fallback) |
+| DUAL_VARIANT_SHARED_REGISTRY | 4 (SAN FY2024/FY2025, BBVA FY2024/FY2025) |
+| SINGLE_VARIANT_WITH_UI_FALLBACK | 2 (IBE FY2024/FY2025) |
 | SAME_REGISTRY_INDEPENDENT_VARIANT_VERSIONS | 0 |
 | DISTINCT_REGISTRY_SUBMISSIONS | 0 |
 | EXTERNAL_ONLY_VARIANT_UNPROVEN_AT_CNMV | 0 |

@@ -28,11 +28,12 @@ All pages and packages are preserved unmodified under evidence/ and hashed
 into manifest.json. Outcomes are classified into the preregistered
 vocabulary:
 
-  SAME_REGISTRY_SAME_VERSION_VARIANTS
-  SAME_REGISTRY_INDEPENDENT_VARIANT_VERSIONS
-  DISTINCT_REGISTRY_SUBMISSIONS
-  EXTERNAL_ONLY_VARIANT_UNPROVEN_AT_CNMV
-  UNRESOLVED
+  SAME_REGISTRY_* / DISTINCT_REGISTRY_* / EXTERNAL_ONLY_* / UNRESOLVED
+
+with the same-registry case refined per filing into:
+
+  DUAL_VARIANT_SHARED_REGISTRY      two real submitted variants, one registro
+  SINGLE_VARIANT_WITH_UI_FALLBACK   one submitted variant; lang=en falls back
 """
 from __future__ import annotations
 
@@ -191,15 +192,17 @@ def main() -> None:
             # UI-language view vs submitted variant: resolved_submission_language
             # is the language tag of the artifact set actually served; a lang=en
             # request that resolves to the -es set is FALLBACK, not a variant.
+            variants = sorted({t for t in (es_tag, en_tag) if t in ("es", "en")})
             if not same_registry:
                 verdict = "DISTINCT_REGISTRY_SUBMISSIONS"
                 note = ""
-            else:
-                verdict = "SAME_REGISTRY_SAME_VERSION_VARIANTS"
+            elif len(variants) == 2:
+                verdict = "DUAL_VARIANT_SHARED_REGISTRY"
                 note = ("distinct -es/-en packages under one registro, "
-                        "shared nreg+dates+history" if es_sha != en_sha
-                        else "single submitted variant; lang=en is UI fallback")
-            variants = sorted({t for t in (es_tag, en_tag) if t in ("es", "en")})
+                        "shared nreg+dates+history")
+            else:
+                verdict = "SINGLE_VARIANT_WITH_UI_FALLBACK"
+                note = "single submitted variant; lang=en is UI fallback"
             oracle_sha = iss["oracle_en_sha"].get(registro)
             matrix.append({
                 "issuer": iss["issuer"], "fy": fy, "registro": registro,

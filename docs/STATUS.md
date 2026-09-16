@@ -290,11 +290,10 @@ The verdict authorises G1 *design* only. G1 framing lives in `docs/G1.md`.
 The `-en` variants are officially discoverable on the same CNMV surfaces
 (`busqueda?id=25`, `listadoifa`) via the `lang=en` interface — `verdocumento`
 tokens are language-dependent and resolve to the `-en` document set. All 6
-in-scope registros classify `SAME_REGISTRY_SAME_VERSION_VARIANTS`: `-es`/`-en`
-share `nregaud`, submission `nreg`, dates and `infadicionifa` history.
-Corrected vocabulary: UI view ≠ submitted variant — 4 filings carry 2 real
-variants (SAN, BBVA), IBE's `lang=en` resolves to `-es` (`FALLBACK_TO_ES`,
-`submitted_variant_count=1`). Model: orthogonal axes are the
+in-scope registros share `nregaud`, submission `nreg`, dates and
+`infadicionifa` history; per-filing verdicts: `DUAL_VARIANT_SHARED_REGISTRY`
+(SAN, BBVA ×4) and `SINGLE_VARIANT_WITH_UI_FALLBACK` (IBE ×2 — `lang=en`
+resolves to `-es`, `submitted_variant_count=1`). UI view ≠ submitted variant. Model: orthogonal axes are the
 least-assumptive provisional shape — the lifecycle ordering is **not**
 experimentally falsified (would need a variant-only substitution). SAN-FY2024
 `-en` is byte-identical to the oracle copy (sha `47923b30…`); SAN-FY2025 `-en`

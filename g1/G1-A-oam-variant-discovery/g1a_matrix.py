@@ -98,12 +98,19 @@ def main() -> None:
             en_pkg = pkg_sha.get((iss["issuer"], registro, "en"))
             en_sha = en_pkg["sha"] if en_pkg else es_sha
             en_tag = en_pkg["tag"] if en_pkg else es_tag
-            verdict = ("DISTINCT_REGISTRY_SUBMISSIONS" if not same_registry
-                       else "SAME_REGISTRY_SAME_VERSION_VARIANTS")
+            variants = sorted({es_tag, en_tag} & {"es", "en"})
+            # Per-filing verdicts: "variants" only when two real submitted
+            # variants exist; a single-variant filing whose lang=en view
+            # falls back to -es is not a variant case.
+            if not same_registry:
+                verdict = "DISTINCT_REGISTRY_SUBMISSIONS"
+            elif len(variants) == 2:
+                verdict = "DUAL_VARIANT_SHARED_REGISTRY"
+            else:
+                verdict = "SINGLE_VARIANT_WITH_UI_FALLBACK"
             note = ("distinct -es/-en packages under one registro, "
                     "shared nreg+dates+history" if es_sha != en_sha
                     else "single submitted variant; lang=en is UI fallback")
-            variants = sorted({es_tag, en_tag} & {"es", "en"})
             oracle_sha = iss["oracle_en_sha"].get(registro)
             matrix.append({
                 "issuer": iss["issuer"], "fy": fy, "registro": registro,
