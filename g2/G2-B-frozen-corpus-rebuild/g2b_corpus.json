@@ -1,0 +1,187 @@
+[
+ {
+  "id": "SAN-FY2024-es",
+  "kind": "esef",
+  "fy": "FY2024",
+  "artifact": "g0-r/R07-raw-retrieval/evidence/esef-SAN-FY2024-package.zip",
+  "oracle_facts": "g1/G1-B-dual-language-capture/evidence/parse/run1/SAN-FY2024-es.facts.jsonl",
+  "oracle_summary": "g1/G1-B-dual-language-capture/evidence/parse/run1/SAN-FY2024-es.model_summary.json"
+ },
+ {
+  "id": "SAN-FY2025-es",
+  "kind": "esef",
+  "fy": "FY2025",
+  "artifact": "g0-r/R07-raw-retrieval/evidence/esef-SAN-FY2025-package.zip",
+  "oracle_facts": "g1/G1-B-dual-language-capture/evidence/parse/run1/SAN-FY2025-es.facts.jsonl",
+  "oracle_summary": "g1/G1-B-dual-language-capture/evidence/parse/run1/SAN-FY2025-es.model_summary.json"
+ },
+ {
+  "id": "BBVA-FY2024-es",
+  "kind": "esef",
+  "fy": "FY2024",
+  "artifact": "g0-r/R07-raw-retrieval/evidence/esef-BBVA-FY2024-package.zip",
+  "oracle_facts": "g1/G1-B-dual-language-capture/evidence/parse/run1/BBVA-FY2024-es.facts.jsonl",
+  "oracle_summary": "g1/G1-B-dual-language-capture/evidence/parse/run1/BBVA-FY2024-es.model_summary.json"
+ },
+ {
+  "id": "BBVA-FY2025-es",
+  "kind": "esef",
+  "fy": "FY2025",
+  "artifact": "g0-r/R07-raw-retrieval/evidence/esef-BBVA-FY2025-package.zip",
+  "oracle_facts": "g1/G1-B-dual-language-capture/evidence/parse/run1/BBVA-FY2025-es.facts.jsonl",
+  "oracle_summary": "g1/G1-B-dual-language-capture/evidence/parse/run1/BBVA-FY2025-es.model_summary.json"
+ },
+ {
+  "id": "IBE-FY2024-es",
+  "kind": "esef",
+  "fy": "FY2024",
+  "artifact": "g0-r/R07-raw-retrieval/evidence/esef-IBE-FY2024-package.zip",
+  "oracle_facts": "g1/G1-B-dual-language-capture/evidence/parse/run1/IBE-FY2024-es.facts.jsonl",
+  "oracle_summary": "g1/G1-B-dual-language-capture/evidence/parse/run1/IBE-FY2024-es.model_summary.json"
+ },
+ {
+  "id": "IBE-FY2025-es",
+  "kind": "esef",
+  "fy": "FY2025",
+  "artifact": "g0-r/R07-raw-retrieval/evidence/esef-IBE-FY2025-package.zip",
+  "oracle_facts": "g1/G1-B-dual-language-capture/evidence/parse/run1/IBE-FY2025-es.facts.jsonl",
+  "oracle_summary": "g1/G1-B-dual-language-capture/evidence/parse/run1/IBE-FY2025-es.model_summary.json"
+ },
+ {
+  "id": "SAN-FY2024-en",
+  "kind": "esef",
+  "fy": "FY2024",
+  "artifact": "g1/G1-A-oam-variant-discovery/evidence/esef-SAN-FY2024-en.zip",
+  "oracle_facts": "g1/G1-B-dual-language-capture/evidence/parse/run1/SAN-FY2024-en.facts.jsonl",
+  "oracle_summary": "g1/G1-B-dual-language-capture/evidence/parse/run1/SAN-FY2024-en.model_summary.json"
+ },
+ {
+  "id": "SAN-FY2025-en",
+  "kind": "esef",
+  "fy": "FY2025",
+  "artifact": "g1/G1-A-oam-variant-discovery/evidence/esef-SAN-FY2025-en.zip",
+  "oracle_facts": "g1/G1-B-dual-language-capture/evidence/parse/run1/SAN-FY2025-en.facts.jsonl",
+  "oracle_summary": "g1/G1-B-dual-language-capture/evidence/parse/run1/SAN-FY2025-en.model_summary.json"
+ },
+ {
+  "id": "BBVA-FY2024-en",
+  "kind": "esef",
+  "fy": "FY2024",
+  "artifact": "g1/G1-A-oam-variant-discovery/evidence/esef-BBVA-FY2024-en.zip",
+  "oracle_facts": "g1/G1-B-dual-language-capture/evidence/parse/run1/BBVA-FY2024-en.facts.jsonl",
+  "oracle_summary": "g1/G1-B-dual-language-capture/evidence/parse/run1/BBVA-FY2024-en.model_summary.json"
+ },
+ {
+  "id": "BBVA-FY2025-en",
+  "kind": "esef",
+  "fy": "FY2025",
+  "artifact": "g1/G1-A-oam-variant-discovery/evidence/esef-BBVA-FY2025-en.zip",
+  "oracle_facts": "g1/G1-B-dual-language-capture/evidence/parse/run1/BBVA-FY2025-en.facts.jsonl",
+  "oracle_summary": "g1/G1-B-dual-language-capture/evidence/parse/run1/BBVA-FY2025-en.model_summary.json"
+ },
+ {
+  "id": "SAN-H1-2024",
+  "kind": "ipp",
+  "artifact": "g0-r/R07-raw-retrieval/evidence/ipp-SAN-I-semestre-de-2024.zip",
+  "oracle_facts": "g0-r/R12-ipp-arelle-parse/evidence/SAN-H1-2024.facts.jsonl",
+  "oracle_summary": "g0-r/R12-ipp-arelle-parse/evidence/SAN-H1-2024.model_summary.json"
+ },
+ {
+  "id": "SAN-H2-2024",
+  "kind": "ipp",
+  "artifact": "g0-r/R07-raw-retrieval/evidence/ipp-SAN-II-semestre-de-2024.zip",
+  "oracle_facts": "g0-r/R12-ipp-arelle-parse/evidence/SAN-H2-2024.facts.jsonl",
+  "oracle_summary": "g0-r/R12-ipp-arelle-parse/evidence/SAN-H2-2024.model_summary.json"
+ },
+ {
+  "id": "SAN-H1-2025",
+  "kind": "ipp",
+  "artifact": "g0-r/R07-raw-retrieval/evidence/ipp-SAN-I-semestre-de-2025.zip",
+  "oracle_facts": "g0-r/R12-ipp-arelle-parse/evidence/SAN-H1-2025.facts.jsonl",
+  "oracle_summary": "g0-r/R12-ipp-arelle-parse/evidence/SAN-H1-2025.model_summary.json"
+ },
+ {
+  "id": "SAN-H2-2025",
+  "kind": "ipp",
+  "artifact": "g0-r/R07-raw-retrieval/evidence/ipp-SAN-II-semestre-de-2025.zip",
+  "oracle_facts": "g0-r/R12-ipp-arelle-parse/evidence/SAN-H2-2025.facts.jsonl",
+  "oracle_summary": "g0-r/R12-ipp-arelle-parse/evidence/SAN-H2-2025.model_summary.json"
+ },
+ {
+  "id": "SAN-H1-2026",
+  "kind": "ipp",
+  "artifact": "g0-r/R07-raw-retrieval/evidence/ipp-SAN-I-semestre-de-2026.zip",
+  "oracle_facts": "g0-r/R12-ipp-arelle-parse/evidence/SAN-H1-2026.facts.jsonl",
+  "oracle_summary": "g0-r/R12-ipp-arelle-parse/evidence/SAN-H1-2026.model_summary.json"
+ },
+ {
+  "id": "BBVA-H1-2024",
+  "kind": "ipp",
+  "artifact": "g0-r/R07-raw-retrieval/evidence/ipp-BBVA-I-semestre-de-2024.zip",
+  "oracle_facts": "g0-r/R12-ipp-arelle-parse/evidence/BBVA-H1-2024.facts.jsonl",
+  "oracle_summary": "g0-r/R12-ipp-arelle-parse/evidence/BBVA-H1-2024.model_summary.json"
+ },
+ {
+  "id": "BBVA-H2-2024",
+  "kind": "ipp",
+  "artifact": "g0-r/R07-raw-retrieval/evidence/ipp-BBVA-II-semestre-de-2024.zip",
+  "oracle_facts": "g0-r/R12-ipp-arelle-parse/evidence/BBVA-H2-2024.facts.jsonl",
+  "oracle_summary": "g0-r/R12-ipp-arelle-parse/evidence/BBVA-H2-2024.model_summary.json"
+ },
+ {
+  "id": "BBVA-H1-2025",
+  "kind": "ipp",
+  "artifact": "g0-r/R07-raw-retrieval/evidence/ipp-BBVA-I-semestre-de-2025.zip",
+  "oracle_facts": "g0-r/R12-ipp-arelle-parse/evidence/BBVA-H1-2025.facts.jsonl",
+  "oracle_summary": "g0-r/R12-ipp-arelle-parse/evidence/BBVA-H1-2025.model_summary.json"
+ },
+ {
+  "id": "BBVA-H2-2025",
+  "kind": "ipp",
+  "artifact": "g0-r/R07-raw-retrieval/evidence/ipp-BBVA-II-semestre-de-2025.zip",
+  "oracle_facts": "g0-r/R12-ipp-arelle-parse/evidence/BBVA-H2-2025.facts.jsonl",
+  "oracle_summary": "g0-r/R12-ipp-arelle-parse/evidence/BBVA-H2-2025.model_summary.json"
+ },
+ {
+  "id": "BBVA-H1-2026",
+  "kind": "ipp",
+  "artifact": "g0-r/R07-raw-retrieval/evidence/ipp-BBVA-I-semestre-de-2026.zip",
+  "oracle_facts": "g0-r/R12-ipp-arelle-parse/evidence/BBVA-H1-2026.facts.jsonl",
+  "oracle_summary": "g0-r/R12-ipp-arelle-parse/evidence/BBVA-H1-2026.model_summary.json"
+ },
+ {
+  "id": "IBE-H1-2024",
+  "kind": "ipp",
+  "artifact": "g0-r/R07-raw-retrieval/evidence/ipp-IBE-I-semestre-de-2024.zip",
+  "oracle_facts": "g0-r/R12-ipp-arelle-parse/evidence/IBE-H1-2024.facts.jsonl",
+  "oracle_summary": "g0-r/R12-ipp-arelle-parse/evidence/IBE-H1-2024.model_summary.json"
+ },
+ {
+  "id": "IBE-H2-2024",
+  "kind": "ipp",
+  "artifact": "g0-r/R07-raw-retrieval/evidence/ipp-IBE-II-semestre-de-2024.zip",
+  "oracle_facts": "g0-r/R12-ipp-arelle-parse/evidence/IBE-H2-2024.facts.jsonl",
+  "oracle_summary": "g0-r/R12-ipp-arelle-parse/evidence/IBE-H2-2024.model_summary.json"
+ },
+ {
+  "id": "IBE-H1-2025",
+  "kind": "ipp",
+  "artifact": "g0-r/R07-raw-retrieval/evidence/ipp-IBE-I-semestre-de-2025.zip",
+  "oracle_facts": "g0-r/R12-ipp-arelle-parse/evidence/IBE-H1-2025.facts.jsonl",
+  "oracle_summary": "g0-r/R12-ipp-arelle-parse/evidence/IBE-H1-2025.model_summary.json"
+ },
+ {
+  "id": "IBE-H2-2025",
+  "kind": "ipp",
+  "artifact": "g0-r/R07-raw-retrieval/evidence/ipp-IBE-II-semestre-de-2025.zip",
+  "oracle_facts": "g0-r/R12-ipp-arelle-parse/evidence/IBE-H2-2025.facts.jsonl",
+  "oracle_summary": "g0-r/R12-ipp-arelle-parse/evidence/IBE-H2-2025.model_summary.json"
+ },
+ {
+  "id": "IBE-H1-2026",
+  "kind": "ipp",
+  "artifact": "g0-r/R07-raw-retrieval/evidence/ipp-IBE-I-semestre-de-2026.zip",
+  "oracle_facts": "g0-r/R12-ipp-arelle-parse/evidence/IBE-H1-2026.facts.jsonl",
+  "oracle_summary": "g0-r/R12-ipp-arelle-parse/evidence/IBE-H1-2026.model_summary.json"
+ }
+]

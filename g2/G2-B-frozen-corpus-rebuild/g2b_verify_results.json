@@ -1,0 +1,100 @@
+{
+ "verdict": "PASS",
+ "checks": [
+  {
+   "name": "B1_input_sha_all_pinned",
+   "status": "PASS",
+   "detail": {
+    "mismatches": []
+   }
+  },
+  {
+   "name": "B2_parse_25_ok_ioerr0_dts",
+   "status": "PASS",
+   "detail": {
+    "not_ok": [],
+    "ioerr": []
+   }
+  },
+  {
+   "name": "B3_facts_equal_to_frozen_oracle",
+   "status": "PASS",
+   "detail": {
+    "byte_equal": [],
+    "lf_normalized_equal": [
+     "SAN-FY2024-es",
+     "SAN-FY2025-es",
+     "BBVA-FY2024-es",
+     "BBVA-FY2025-es",
+     "IBE-FY2024-es",
+     "IBE-FY2025-es",
+     "SAN-FY2024-en",
+     "SAN-FY2025-en",
+     "BBVA-FY2024-en",
+     "BBVA-FY2025-en",
+     "SAN-H1-2024",
+     "SAN-H2-2024",
+     "SAN-H1-2025",
+     "SAN-H2-2025",
+     "SAN-H1-2026",
+     "BBVA-H1-2024",
+     "BBVA-H2-2024",
+     "BBVA-H1-2025",
+     "BBVA-H2-2025",
+     "BBVA-H1-2026",
+     "IBE-H1-2024",
+     "IBE-H2-2024",
+     "IBE-H1-2025",
+     "IBE-H2-2025",
+     "IBE-H1-2026"
+    ],
+    "diff": [],
+    "multiset_diff": [],
+    "count_diff": []
+   }
+  },
+  {
+   "name": "B4_typed_dims_and_full_unit",
+   "status": "PASS",
+   "detail": {
+    "typed_dim_diff": {},
+    "compound_unit_selftest": true,
+    "corpus_compound_units": true
+   }
+  },
+  {
+   "name": "B5_controlA_api_eq_oim_25",
+   "status": "PASS",
+   "detail": {
+    "bad": []
+   }
+  },
+  {
+   "name": "B6_offline_no_gate_code",
+   "status": "PASS",
+   "detail": {
+    "net_attempts": {},
+    "gate_import_refs": []
+   }
+  },
+  {
+   "name": "B7_runA_eq_runB",
+   "status": "PASS",
+   "detail": {
+    "diff": [],
+    "corpus_hash": {
+     "A": "243df5e2354c21bccd448ff8f174c547c80f79ab4c7fd173afba1bd6d4d80ecf",
+     "B": "243df5e2354c21bccd448ff8f174c547c80f79ab4c7fd173afba1bd6d4d80ecf"
+    }
+   }
+  },
+  {
+   "name": "B8_negative_controls_fail",
+   "status": "PASS",
+   "detail": {
+    "esef_missing_esef_taxonomy": "FAILED_AS_EXPECTED",
+    "ipp_missing_xlink": "FAILED_AS_EXPECTED"
+   }
+  }
+ ]
+}

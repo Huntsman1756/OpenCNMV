@@ -359,10 +359,22 @@ serialize) rebuilds all four frozen V1 fixtures **byte-identically** from
 sha256-pinned evidence, offline (socket deny-all, 0 network calls), with a
 meta-path blocker proving 0 imports from `g0-r/`/`g1/` code. Objects
 conform to the frozen `canonical_model_v1.schema.json` — incompatible
-changes require `CANONICAL_MODEL_V2`. Next: G2-B
-`FULL_FROZEN_CORPUS_REBUILD` (offline rebuild of the whole frozen corpus,
-exercising the Arelle adapter), then G2-C columnar dataset, G2-D
-incremental capture. Preregistered in `docs/G2.md`.
+changes require `CANONICAL_MODEL_V2`.
+
+**G2-B `FULL_FROZEN_CORPUS_REBUILD`: PASS**
+(`g2/G2-B-frozen-corpus-rebuild/`, 8/8 checks). The production adapter
+(`opencnmv.xbrl.arelle` + `opencnmv.canonicalize.facts`) reparsed all 25
+frozen XBRL states — 10 ESEF variant packages + 15 IPP instances — fully
+offline: pinned Arelle 2.44.0 version check, one Session per filing,
+fingerprint-gated base64 shim, sha-verified `.xbrl` entrypoint for the
+`.zip`-suffixed IPP instances, isolated XDG_CONFIG_HOME/HOME/TEMP profile.
+facts.jsonl is content-identical to the frozen R12/G1-B oracles (LF-
+normalised; oracles were CRLF text-mode) with full multiset equality —
+concept, entity, period, explicit+typed dims, complete unit num/den,
+decimals, nil, xml:lang, value_sha256 — plus Control A (API multiset ==
+Arelle OIM multiset, 25/25) and cross-PYTHONHASHSEED determinism
+(identical corpus hash). Negative dependency controls fail as expected.
+Next: G2-C columnar dataset, G2-D incremental capture.
 
 ## Session hygiene
 

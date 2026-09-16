@@ -1,0 +1,332 @@
+{
+ "artifacts": {
+  "SAN-FY2024-es": {
+   "path": "g0-r/R07-raw-retrieval/evidence/esef-SAN-FY2024-package.zip",
+   "sha256": "725FFF01861CB0C186107280BF30B2C047A3A59AF703D799F678E02C435CB9F5"
+  },
+  "SAN-FY2025-es": {
+   "path": "g0-r/R07-raw-retrieval/evidence/esef-SAN-FY2025-package.zip",
+   "sha256": "07E95A16C7D1652D6C6298C39B19B6A1E90C5D4A8C01881B4CCAEBDEAA700567"
+  },
+  "BBVA-FY2024-es": {
+   "path": "g0-r/R07-raw-retrieval/evidence/esef-BBVA-FY2024-package.zip",
+   "sha256": "69F04DA4F6EBE4F3072401207FF83F6EDC9D335C83DF666525594A7062D7248A"
+  },
+  "BBVA-FY2025-es": {
+   "path": "g0-r/R07-raw-retrieval/evidence/esef-BBVA-FY2025-package.zip",
+   "sha256": "675A1D3A470FDC469BEDA39BF242FFCB496C6F1116DA4D1FC562FAA0734E3458"
+  },
+  "IBE-FY2024-es": {
+   "path": "g0-r/R07-raw-retrieval/evidence/esef-IBE-FY2024-package.zip",
+   "sha256": "89DFD3EF65527D1D4378464C2F70FA78B2FB7B4872264EACFA91D3FAAE1C42B4"
+  },
+  "IBE-FY2025-es": {
+   "path": "g0-r/R07-raw-retrieval/evidence/esef-IBE-FY2025-package.zip",
+   "sha256": "066FDAF835AD6E81F0FF77EACB571F5D2A09F9FB42788FBC12D7041D2E51E05A"
+  },
+  "SAN-FY2024-en": {
+   "path": "g1/G1-A-oam-variant-discovery/evidence/esef-SAN-FY2024-en.zip",
+   "sha256": "47923B30C3763FE448FF8080BB3E38C50AE48D48171986A90947C8BE347CCB37"
+  },
+  "SAN-FY2025-en": {
+   "path": "g1/G1-A-oam-variant-discovery/evidence/esef-SAN-FY2025-en.zip",
+   "sha256": "77AC614A42C974965E04FD882A329952AF393554B93B2873F1C021646ED95198"
+  },
+  "BBVA-FY2024-en": {
+   "path": "g1/G1-A-oam-variant-discovery/evidence/esef-BBVA-FY2024-en.zip",
+   "sha256": "75BE80E13B1FB8F56A8CAD06353A7145F0FAD524F654864D70F1AA35A2CCE94E"
+  },
+  "BBVA-FY2025-en": {
+   "path": "g1/G1-A-oam-variant-discovery/evidence/esef-BBVA-FY2025-en.zip",
+   "sha256": "40FF2F1798F798833CFB61A3B004CB7CDBED2682237A9D7D2B35B42B32AC54D3"
+  },
+  "SAN-H1-2024": {
+   "path": "g0-r/R07-raw-retrieval/evidence/ipp-SAN-I-semestre-de-2024.zip",
+   "sha256": "CE1AC869098AB698ADAF1AFC46B18C40E2E799EC2F9F1F9C90397A84AE13D849"
+  },
+  "SAN-H2-2024": {
+   "path": "g0-r/R07-raw-retrieval/evidence/ipp-SAN-II-semestre-de-2024.zip",
+   "sha256": "5190D66C279017A7E6B2AE64D8288AD0AB090531217F530FFF5C073713D2B47B"
+  },
+  "SAN-H1-2025": {
+   "path": "g0-r/R07-raw-retrieval/evidence/ipp-SAN-I-semestre-de-2025.zip",
+   "sha256": "9A61C3D439E4F84044A70E313F690325478485F868219DBD249A46535BF44D55"
+  },
+  "SAN-H2-2025": {
+   "path": "g0-r/R07-raw-retrieval/evidence/ipp-SAN-II-semestre-de-2025.zip",
+   "sha256": "93C1F22AE7E2685EF1FB3EC6893BE8843B1D1CDB17330CA57D460318D77658FA"
+  },
+  "SAN-H1-2026": {
+   "path": "g0-r/R07-raw-retrieval/evidence/ipp-SAN-I-semestre-de-2026.zip",
+   "sha256": "A1FAD8F54BD698B90BE2EDC797190467AA94A16A13426CAE92D96D9F21085434"
+  },
+  "BBVA-H1-2024": {
+   "path": "g0-r/R07-raw-retrieval/evidence/ipp-BBVA-I-semestre-de-2024.zip",
+   "sha256": "8B9C23B8B8E36B6BB758075FB954309958DE77F7E8B9B82455B5613643032797"
+  },
+  "BBVA-H2-2024": {
+   "path": "g0-r/R07-raw-retrieval/evidence/ipp-BBVA-II-semestre-de-2024.zip",
+   "sha256": "531FDDCCC904658D76BB44A53D0BC17BE8D9774504009EC76A02008A161155FA"
+  },
+  "BBVA-H1-2025": {
+   "path": "g0-r/R07-raw-retrieval/evidence/ipp-BBVA-I-semestre-de-2025.zip",
+   "sha256": "4934822FA97588D9E7B9223D2FAC1B453BD1C4113685905F7879230AE96281E0"
+  },
+  "BBVA-H2-2025": {
+   "path": "g0-r/R07-raw-retrieval/evidence/ipp-BBVA-II-semestre-de-2025.zip",
+   "sha256": "F65493B4F5FE26A5A102B78F5B5D03E3B2F89302508AAE5555A3D3EC64853861"
+  },
+  "BBVA-H1-2026": {
+   "path": "g0-r/R07-raw-retrieval/evidence/ipp-BBVA-I-semestre-de-2026.zip",
+   "sha256": "CFCCA1026C85D8C787A9773E9C061F0DE9C5BD4084C49247E5F39F73DFFB0A56"
+  },
+  "IBE-H1-2024": {
+   "path": "g0-r/R07-raw-retrieval/evidence/ipp-IBE-I-semestre-de-2024.zip",
+   "sha256": "FC4C773699CC819CCC7EE31D4EA433DBC3F5F11D32A1AB8231FD9F5E12BEB8E5"
+  },
+  "IBE-H2-2024": {
+   "path": "g0-r/R07-raw-retrieval/evidence/ipp-IBE-II-semestre-de-2024.zip",
+   "sha256": "8FD0C3F8557B4E7C2DC74B89A5132ABB11B240C1E947DB7228EC627AE4BB6C9D"
+  },
+  "IBE-H1-2025": {
+   "path": "g0-r/R07-raw-retrieval/evidence/ipp-IBE-I-semestre-de-2025.zip",
+   "sha256": "3885EF4FB5F260741D191E59D45FC1ABAE842F68EACCAFA94D67CBB0C714CDC3"
+  },
+  "IBE-H2-2025": {
+   "path": "g0-r/R07-raw-retrieval/evidence/ipp-IBE-II-semestre-de-2025.zip",
+   "sha256": "485B2C18444A815F09E3578203359268C6CE1EDA94EB32045E68CFF0CE526042"
+  },
+  "IBE-H1-2026": {
+   "path": "g0-r/R07-raw-retrieval/evidence/ipp-IBE-I-semestre-de-2026.zip",
+   "sha256": "5EB26CAB15C58FC6D06A87609E63C5720672118FC7C0A8981E5CFF0F5CC54C2E"
+  }
+ },
+ "taxonomy_packages": {
+  "esef_taxonomy_2022_v1.1.zip": {
+   "path": "g0-r/R10-taxonomy-pinning/evidence/esef_taxonomy_2022_v1.1.zip",
+   "sha256": "C3EDF1F79AC296241655736DA57CE4AF2E20AE181A2C486C90C71FFC199060E2"
+  },
+  "esef_taxonomy_2024.zip": {
+   "path": "g0-r/R10-taxonomy-pinning/evidence/esef_taxonomy_2024.zip",
+   "sha256": "17AA09DF058632A44D1B56289938120A7DA993A08E6F07C0AF1516B1D8F4E96D"
+  },
+  "ifrs-full_ifrs-2022-03-24-opencnmv-pkg.zip": {
+   "path": "g0-r/R10-taxonomy-pinning/evidence/ifrs-full_ifrs-2022-03-24-opencnmv-pkg.zip",
+   "sha256": "37D5D9F11E50CA029E3A9DA2801530196FC1C1A443A5B81785B5B59AB598CFF6"
+  },
+  "ifrs-full_ifrs-2024-03-27-opencnmv-pkg.zip": {
+   "path": "g0-r/R10-taxonomy-pinning/evidence/ifrs-full_ifrs-2024-03-27-opencnmv-pkg.zip",
+   "sha256": "DCCA65D6E54EA4A7B6F764D5760302948462F6F4EA01F4E223CB74B5E8D58084"
+  },
+  "xbrl-lei-2020-07-02-opencnmv-pkg.zip": {
+   "path": "g0-r/R10-taxonomy-pinning/evidence/xbrl-lei-2020-07-02-opencnmv-pkg.zip",
+   "sha256": "C12474D974EA0271B6AD2E390B421927FA215F307CE5987D48E0F3E7922A052D"
+  },
+  "cnmv-ipp-2019-01-01-opencnmv-pkg.zip": {
+   "path": "g0-r/R10-taxonomy-pinning/evidence/cnmv-ipp-2019-01-01-opencnmv-pkg.zip",
+   "sha256": "4C6C127E8E3F32306905FFC6354FAF7FE3F95AC58DC9F94FADA962DF6D5BE525"
+  }
+ },
+ "oracles": {
+  "SAN-FY2024-es.facts": {
+   "path": "g1/G1-B-dual-language-capture/evidence/parse/run1/SAN-FY2024-es.facts.jsonl",
+   "sha256": "4A2F0581204ACE1E21A0D67E3E7F55D39858BC2825D91F3710C5A11E91997489"
+  },
+  "SAN-FY2024-es.summary": {
+   "path": "g1/G1-B-dual-language-capture/evidence/parse/run1/SAN-FY2024-es.model_summary.json",
+   "sha256": "941EC39844D954C3EC73B815EEDDD461E49BD2F25293CB33ADD651026056682E"
+  },
+  "SAN-FY2025-es.facts": {
+   "path": "g1/G1-B-dual-language-capture/evidence/parse/run1/SAN-FY2025-es.facts.jsonl",
+   "sha256": "481665F3DE20E4759BA16F0E4E75879077B2F65EA523915EFCFED063C2FF8B9F"
+  },
+  "SAN-FY2025-es.summary": {
+   "path": "g1/G1-B-dual-language-capture/evidence/parse/run1/SAN-FY2025-es.model_summary.json",
+   "sha256": "22A41D58BD15D5B4486BF6A85176B2F187ACCB860B96116BE8D820E04FCA21AA"
+  },
+  "BBVA-FY2024-es.facts": {
+   "path": "g1/G1-B-dual-language-capture/evidence/parse/run1/BBVA-FY2024-es.facts.jsonl",
+   "sha256": "B9E060E080D5398A3780001CC77B03B4CB25083F2E163D772231975EB88BE926"
+  },
+  "BBVA-FY2024-es.summary": {
+   "path": "g1/G1-B-dual-language-capture/evidence/parse/run1/BBVA-FY2024-es.model_summary.json",
+   "sha256": "54BB019F2BC7CCBF410C0B8A3561DF9EDC0DE7472EADB0BA428FD99CAC9AD58C"
+  },
+  "BBVA-FY2025-es.facts": {
+   "path": "g1/G1-B-dual-language-capture/evidence/parse/run1/BBVA-FY2025-es.facts.jsonl",
+   "sha256": "C8745746895EB000B0502904A955ACFBA802FD77DE1A81022DA47B77207772D8"
+  },
+  "BBVA-FY2025-es.summary": {
+   "path": "g1/G1-B-dual-language-capture/evidence/parse/run1/BBVA-FY2025-es.model_summary.json",
+   "sha256": "73221AC639A2B5423FB8563F3C273F218BD39977A77F3770B1CB2A4826493655"
+  },
+  "IBE-FY2024-es.facts": {
+   "path": "g1/G1-B-dual-language-capture/evidence/parse/run1/IBE-FY2024-es.facts.jsonl",
+   "sha256": "AEACC1BF8093B737D5A6F8224B4F043DCFF1B07F0A453F60C378A19B3EC68A33"
+  },
+  "IBE-FY2024-es.summary": {
+   "path": "g1/G1-B-dual-language-capture/evidence/parse/run1/IBE-FY2024-es.model_summary.json",
+   "sha256": "03A2688528ADF7D49E8F5F6A714C63A563B8B63D2E261F3518D6A57E7CD23E1B"
+  },
+  "IBE-FY2025-es.facts": {
+   "path": "g1/G1-B-dual-language-capture/evidence/parse/run1/IBE-FY2025-es.facts.jsonl",
+   "sha256": "444FB972C262537B0A146B8EBE4D9B0BA0F6072270E2EDAAD38B8C7B1509F2F6"
+  },
+  "IBE-FY2025-es.summary": {
+   "path": "g1/G1-B-dual-language-capture/evidence/parse/run1/IBE-FY2025-es.model_summary.json",
+   "sha256": "147E1874F1FD7CE0B4D5DD6C1F12BA40D522AB213CF6D4039363F06BBF24C93D"
+  },
+  "SAN-FY2024-en.facts": {
+   "path": "g1/G1-B-dual-language-capture/evidence/parse/run1/SAN-FY2024-en.facts.jsonl",
+   "sha256": "DA9F55AEF73D97026F08A573B146CD91058BA0CA3E2FB157ADDEC603FDC14142"
+  },
+  "SAN-FY2024-en.summary": {
+   "path": "g1/G1-B-dual-language-capture/evidence/parse/run1/SAN-FY2024-en.model_summary.json",
+   "sha256": "A8AE2EB605C6600309F6496FC3F81B367044E4B3B9F7BA7A74BF7C7A27CAF538"
+  },
+  "SAN-FY2025-en.facts": {
+   "path": "g1/G1-B-dual-language-capture/evidence/parse/run1/SAN-FY2025-en.facts.jsonl",
+   "sha256": "14FD8FFAB0A70EB0BCBAFD4C2505A7089ED7C40CCBCEF62638FBB0678E2CD4F7"
+  },
+  "SAN-FY2025-en.summary": {
+   "path": "g1/G1-B-dual-language-capture/evidence/parse/run1/SAN-FY2025-en.model_summary.json",
+   "sha256": "2D51340F43C6C58B06721C4A96F858C5FE7EAB306979AC5659558C315BC2C58F"
+  },
+  "BBVA-FY2024-en.facts": {
+   "path": "g1/G1-B-dual-language-capture/evidence/parse/run1/BBVA-FY2024-en.facts.jsonl",
+   "sha256": "BAF69368D37CB16EB502F21E8BD69B991FEA345F0D3B45CDAB0AC150005C77DD"
+  },
+  "BBVA-FY2024-en.summary": {
+   "path": "g1/G1-B-dual-language-capture/evidence/parse/run1/BBVA-FY2024-en.model_summary.json",
+   "sha256": "665EBE0CBF9C706C8EADFCE3D1FE6D47E35A34A930594C209C3CE1E6E07DFA52"
+  },
+  "BBVA-FY2025-en.facts": {
+   "path": "g1/G1-B-dual-language-capture/evidence/parse/run1/BBVA-FY2025-en.facts.jsonl",
+   "sha256": "E0692920FE5FCA7904233633036F9A6080B4CB0D4B786A4985287D790193D13E"
+  },
+  "BBVA-FY2025-en.summary": {
+   "path": "g1/G1-B-dual-language-capture/evidence/parse/run1/BBVA-FY2025-en.model_summary.json",
+   "sha256": "B5B6C754C2FC7CDCE9928CF4F45C55375F331DA3BDF271D7E0F35357B1EBFE21"
+  },
+  "SAN-H1-2024.facts": {
+   "path": "g0-r/R12-ipp-arelle-parse/evidence/SAN-H1-2024.facts.jsonl",
+   "sha256": "3236F33CE8AB8C042B388630285254920F68B320103A4C035EEAE5E93B3012C7"
+  },
+  "SAN-H1-2024.summary": {
+   "path": "g0-r/R12-ipp-arelle-parse/evidence/SAN-H1-2024.model_summary.json",
+   "sha256": "907EA026FCB4AB3301D91B3B23F198726733CC1430F1935D1044A852121584F0"
+  },
+  "SAN-H2-2024.facts": {
+   "path": "g0-r/R12-ipp-arelle-parse/evidence/SAN-H2-2024.facts.jsonl",
+   "sha256": "7C621747AD06C3AE38B419E66CF9B763F3DD7E50ABE83DCF102C31D7C95D555C"
+  },
+  "SAN-H2-2024.summary": {
+   "path": "g0-r/R12-ipp-arelle-parse/evidence/SAN-H2-2024.model_summary.json",
+   "sha256": "63D7BFD981FAB7FC32792419984E3EB5CC5E2D2391AD9D69F48F67767112C5BA"
+  },
+  "SAN-H1-2025.facts": {
+   "path": "g0-r/R12-ipp-arelle-parse/evidence/SAN-H1-2025.facts.jsonl",
+   "sha256": "69EC847458D4DF164A149C9A1CFB5F363938F89E0ED70EADD93E2E6ADF64E3FA"
+  },
+  "SAN-H1-2025.summary": {
+   "path": "g0-r/R12-ipp-arelle-parse/evidence/SAN-H1-2025.model_summary.json",
+   "sha256": "EA7CE92CD67E4C079BFDD06023F2ED4441D3CD471DC458BE8539D73E61C34E75"
+  },
+  "SAN-H2-2025.facts": {
+   "path": "g0-r/R12-ipp-arelle-parse/evidence/SAN-H2-2025.facts.jsonl",
+   "sha256": "ADFB3135BB47B5A7D374939B2B510529C0F76652F5AF07F997F17918C4C4AED6"
+  },
+  "SAN-H2-2025.summary": {
+   "path": "g0-r/R12-ipp-arelle-parse/evidence/SAN-H2-2025.model_summary.json",
+   "sha256": "6914612D4C25C9795207780E662C77238FBF590DDE885A6B913AAED2AE92B47D"
+  },
+  "SAN-H1-2026.facts": {
+   "path": "g0-r/R12-ipp-arelle-parse/evidence/SAN-H1-2026.facts.jsonl",
+   "sha256": "292D8D52552800D5F9E921431A7C25D33D0FDF2732A13368AF4D2AB68E7A6D6D"
+  },
+  "SAN-H1-2026.summary": {
+   "path": "g0-r/R12-ipp-arelle-parse/evidence/SAN-H1-2026.model_summary.json",
+   "sha256": "C01F2A98A327C56D3C55A6AD671DD6354B0043F9DA698A67257C9A4110128801"
+  },
+  "BBVA-H1-2024.facts": {
+   "path": "g0-r/R12-ipp-arelle-parse/evidence/BBVA-H1-2024.facts.jsonl",
+   "sha256": "8355E4FFC8DEF569D2EBBE617C3DA93E458D0350418849FEB096A4EC4CA6BD0D"
+  },
+  "BBVA-H1-2024.summary": {
+   "path": "g0-r/R12-ipp-arelle-parse/evidence/BBVA-H1-2024.model_summary.json",
+   "sha256": "02170D72FF467F4B1127EBEA4F3010664038C36020C0C4A83CC6EEF7038D76EC"
+  },
+  "BBVA-H2-2024.facts": {
+   "path": "g0-r/R12-ipp-arelle-parse/evidence/BBVA-H2-2024.facts.jsonl",
+   "sha256": "C9560F16AD7916D708ABDCE22AFB2026539218E40E9CD5EA7B5EFD7CBE3C72AB"
+  },
+  "BBVA-H2-2024.summary": {
+   "path": "g0-r/R12-ipp-arelle-parse/evidence/BBVA-H2-2024.model_summary.json",
+   "sha256": "EDAB80629F0F429C687C9EED99A5905871E8507C066129AE247C95F53D78D3DC"
+  },
+  "BBVA-H1-2025.facts": {
+   "path": "g0-r/R12-ipp-arelle-parse/evidence/BBVA-H1-2025.facts.jsonl",
+   "sha256": "E860BF00E2ABF0D6143DE062A9A76B244DF100D8E7AB923846E570E4EC84E4F7"
+  },
+  "BBVA-H1-2025.summary": {
+   "path": "g0-r/R12-ipp-arelle-parse/evidence/BBVA-H1-2025.model_summary.json",
+   "sha256": "67AB10F10A0B984C9E9D9F39B129940EC4D7142D3707ADEB31DB821F88F20122"
+  },
+  "BBVA-H2-2025.facts": {
+   "path": "g0-r/R12-ipp-arelle-parse/evidence/BBVA-H2-2025.facts.jsonl",
+   "sha256": "B6BDFB41F24560760B73DC4D58DB1619D97FF994D1745F48D37F6C6CA97852BC"
+  },
+  "BBVA-H2-2025.summary": {
+   "path": "g0-r/R12-ipp-arelle-parse/evidence/BBVA-H2-2025.model_summary.json",
+   "sha256": "B212BD114B91FE90703A530BB5105BEB01CAD8FC2908A879FEF8B06EE7E540FA"
+  },
+  "BBVA-H1-2026.facts": {
+   "path": "g0-r/R12-ipp-arelle-parse/evidence/BBVA-H1-2026.facts.jsonl",
+   "sha256": "11A0F56E716A40CDDC6EF67A2CED98A1AEC69F4ECEECBB5BF03E782D10A4CF37"
+  },
+  "BBVA-H1-2026.summary": {
+   "path": "g0-r/R12-ipp-arelle-parse/evidence/BBVA-H1-2026.model_summary.json",
+   "sha256": "CCF45DC76D9F44106BD2B94202F127C790188391C8A08146E367B60549B3FFA5"
+  },
+  "IBE-H1-2024.facts": {
+   "path": "g0-r/R12-ipp-arelle-parse/evidence/IBE-H1-2024.facts.jsonl",
+   "sha256": "21F14FA13AFE811277597612D57FCE501E56203817996C42ECBFAE848B933D72"
+  },
+  "IBE-H1-2024.summary": {
+   "path": "g0-r/R12-ipp-arelle-parse/evidence/IBE-H1-2024.model_summary.json",
+   "sha256": "F18397F12DE4E2E0D598A77C983865798F49EEBE088FD244C36195F62EC0CB3B"
+  },
+  "IBE-H2-2024.facts": {
+   "path": "g0-r/R12-ipp-arelle-parse/evidence/IBE-H2-2024.facts.jsonl",
+   "sha256": "3363C9C416D83CC775B2EEB5E93FD9640EB4729054F07B5FF80BAC0003B1F36B"
+  },
+  "IBE-H2-2024.summary": {
+   "path": "g0-r/R12-ipp-arelle-parse/evidence/IBE-H2-2024.model_summary.json",
+   "sha256": "8F1A6FD6991CD257CD2F66A1B512F9455C419A5C2421EE68319A54DAFFA92288"
+  },
+  "IBE-H1-2025.facts": {
+   "path": "g0-r/R12-ipp-arelle-parse/evidence/IBE-H1-2025.facts.jsonl",
+   "sha256": "7F48DCD1201E026A122C0B3ED47F725451C7EF4A41DCAD7F49B19C9AB2AE536B"
+  },
+  "IBE-H1-2025.summary": {
+   "path": "g0-r/R12-ipp-arelle-parse/evidence/IBE-H1-2025.model_summary.json",
+   "sha256": "42BE0328448469C82955A18808B0321D369B85074F6186B200BE034F3534B1E4"
+  },
+  "IBE-H2-2025.facts": {
+   "path": "g0-r/R12-ipp-arelle-parse/evidence/IBE-H2-2025.facts.jsonl",
+   "sha256": "6D415E3FA0AACBB56FA3A2223A7FADB5667B84C895C8D00CC6FD96A26871CC9B"
+  },
+  "IBE-H2-2025.summary": {
+   "path": "g0-r/R12-ipp-arelle-parse/evidence/IBE-H2-2025.model_summary.json",
+   "sha256": "6C87A242242AF0458AD8C5130F67F1E709849AD3487C3831AE06CB5CC65390C0"
+  },
+  "IBE-H1-2026.facts": {
+   "path": "g0-r/R12-ipp-arelle-parse/evidence/IBE-H1-2026.facts.jsonl",
+   "sha256": "C2A18143270FBCEC2BD8D4A662C4A49C873950A4286A7BBEFF5D810A949E509C"
+  },
+  "IBE-H1-2026.summary": {
+   "path": "g0-r/R12-ipp-arelle-parse/evidence/IBE-H1-2026.model_summary.json",
+   "sha256": "2CB0227658601CE4015FF4659DBB2FD918F50A6A77EECAF0CE75FAD42CD52243"
+  }
+ }
+}
