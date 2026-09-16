@@ -291,13 +291,17 @@ The `-en` variants are officially discoverable on the same CNMV surfaces
 (`busqueda?id=25`, `listadoifa`) via the `lang=en` interface — `verdocumento`
 tokens are language-dependent and resolve to the `-en` document set. All 6
 in-scope registros classify `SAME_REGISTRY_SAME_VERSION_VARIANTS`: `-es`/`-en`
-share `nregaud`, submission `nreg`, dates and `infadicionifa` history →
-`submission_variant` and `version_event` are orthogonal axes under `filing`
-(both pure orderings falsified). SAN-FY2024 `-en` is byte-identical to the
-oracle copy (sha `47923b30…`); SAN-FY2025 `-en` exists at CNMV though the
-oracle never indexed it. R16's `OPEN_CNMV_POSSIBLE_OMISSION` is now a
-confirmed, explained omission of the `lang=es`-only capture. Remaining
-falsification target: independent per-variant substitution history.
+share `nregaud`, submission `nreg`, dates and `infadicionifa` history.
+Corrected vocabulary: UI view ≠ submitted variant — 4 filings carry 2 real
+variants (SAN, BBVA), IBE's `lang=en` resolves to `-es` (`FALLBACK_TO_ES`,
+`submitted_variant_count=1`). Model: orthogonal axes are the
+least-assumptive provisional shape — the lifecycle ordering is **not**
+experimentally falsified (would need a variant-only substitution). SAN-FY2024
+`-en` is byte-identical to the oracle copy (sha `47923b30…`); SAN-FY2025 `-en`
+exists at CNMV though the oracle never indexed it. R16's
+`OPEN_CNMV_POSSIBLE_OMISSION` is now a confirmed, explained omission of the
+`lang=es`-only capture. Next: G1-B dual-language capture + cross-variant
+fact comparison (BBVA ±98M mandatory test, IBE fallback as negative control).
 
 ## Session hygiene
 

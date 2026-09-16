@@ -188,17 +188,18 @@ def main() -> None:
                              and row_es["infadicion"] == row_en["infadicion"])
             es_sha = es.get("zip_sha256"); en_sha = en.get("zip_sha256")
             es_tag = es.get("package_lang_tag"); en_tag = en.get("package_lang_tag")
+            # UI-language view vs submitted variant: resolved_submission_language
+            # is the language tag of the artifact set actually served; a lang=en
+            # request that resolves to the -es set is FALLBACK, not a variant.
             if not same_registry:
                 verdict = "DISTINCT_REGISTRY_SUBMISSIONS"
-            elif es_sha == en_sha:
-                verdict = "SAME_REGISTRY_SAME_VERSION_VARIANTS"
-                note = "lang=en falls back to -es package (no -en filed)"
-            elif en_tag == "en" and es_tag == "es":
-                verdict = "SAME_REGISTRY_SAME_VERSION_VARIANTS"
-                note = "distinct -es/-en packages under one registro, shared nreg+dates+history"
-            else:
-                verdict = "UNRESOLVED"
                 note = ""
+            else:
+                verdict = "SAME_REGISTRY_SAME_VERSION_VARIANTS"
+                note = ("distinct -es/-en packages under one registro, "
+                        "shared nreg+dates+history" if es_sha != en_sha
+                        else "single submitted variant; lang=en is UI fallback")
+            variants = sorted({t for t in (es_tag, en_tag) if t in ("es", "en")})
             oracle_sha = iss["oracle_en_sha"].get(registro)
             matrix.append({
                 "issuer": iss["issuer"], "fy": fy, "registro": registro,
@@ -208,6 +209,13 @@ def main() -> None:
                 "pub_date_en": row_en["cells"][2] if row_en else None,
                 "es_zip_sha256": es_sha, "en_zip_sha256": en_sha,
                 "es_package_tag": es_tag, "en_package_tag": en_tag,
+                "requested_ui_language": ["es", "en"],
+                "resolved_submission_language": {"es": es_tag, "en": en_tag},
+                "resolution_mode": {"es": "SUBMITTED_VARIANT",
+                                    "en": "SUBMITTED_VARIANT" if en_tag == "en"
+                                         else "FALLBACK_TO_ES"},
+                "submitted_variants": variants,
+                "submitted_variant_count": len(variants),
                 "oracle_en_sha256": oracle_sha,
                 "en_package_matches_oracle": (en_sha == oracle_sha) if oracle_sha else None,
                 "verdict": verdict, "note": note})

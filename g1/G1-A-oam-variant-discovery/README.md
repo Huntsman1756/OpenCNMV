@@ -31,14 +31,25 @@ fall back to the `-es` package.
 
 ## Result matrix
 
-| Issuer | FY | registro | nreg (es==en) | pub date (es==en) | `-es` ZIP sha256 | `-en` ZIP sha256 | verdict |
-|---|---|---|---|---|---|---|---|
-| SAN | 2024 | 20509 | 2025031067 == 2025031067 | 28/02/2025 == 28/02/2025 | `725fff01…` | `47923b30…` | SAME_REGISTRY_SAME_VERSION_VARIANTS |
-| SAN | 2025 | 20875 | 2026029493 == 2026029493 | 25/02/2026 == 25/02/2026 | `07e95a16…` | `77ac614a…` | SAME_REGISTRY_SAME_VERSION_VARIANTS |
-| BBVA | 2024 | 20448 | 2025022995 == 2025022995 | 14/02/2025 == 14/02/2025 | `69f04da4…` | `75be80e1…` | SAME_REGISTRY_SAME_VERSION_VARIANTS |
-| BBVA | 2025 | 20854 | 2026023406 == 2026023406 | 13/02/2026 == 13/02/2026 | `675a1d3a…` | `40ff2f17…` | SAME_REGISTRY_SAME_VERSION_VARIANTS |
-| IBE | 2024 | 20515 | 2025031726 == 2025031726 | 28/02/2025 == 28/02/2025 | `89dfd3ef…` | `89dfd3ef…` (fallback) | SAME_REGISTRY_SAME_VERSION_VARIANTS |
-| IBE | 2025 | 20934 | 2026031462 == 2026031462 | 27/02/2026 == 27/02/2026 | `066fdaf8…` | `066fdaf8…` (fallback) | SAME_REGISTRY_SAME_VERSION_VARIANTS |
+**UI language view ≠ submitted variant.** `requested_ui_language=en` resolves
+to whichever artifact set the registry serves for that view; when no English
+filing exists the registry falls back to the `-es` set — a `FALLBACK`, not a
+second `submission_variant`. The real outcome is:
+
+```text
+4 filings with 2 submitted variants:   SAN FY2024/FY2025, BBVA FY2024/FY2025
+2 filings with 1 submitted variant:    IBE FY2024/FY2025
+                                       (lang=en → resolved es, FALLBACK)
+```
+
+| Issuer | FY | registro | nreg (es==en) | pub date (es==en) | `-es` ZIP sha256 | `lang=en` resolved sha256 | resolution_mode(en) | verdict |
+|---|---|---|---|---|---|---|---|---|
+| SAN | 2024 | 20509 | 2025031067 == 2025031067 | 28/02/2025 == 28/02/2025 | `725fff01…` | `47923b30…` | SUBMITTED_VARIANT | SAME_REGISTRY_SAME_VERSION_VARIANTS |
+| SAN | 2025 | 20875 | 2026029493 == 2026029493 | 25/02/2026 == 25/02/2026 | `07e95a16…` | `77ac614a…` | SUBMITTED_VARIANT | SAME_REGISTRY_SAME_VERSION_VARIANTS |
+| BBVA | 2024 | 20448 | 2025022995 == 2025022995 | 14/02/2025 == 14/02/2025 | `69f04da4…` | `75be80e1…` | SUBMITTED_VARIANT | SAME_REGISTRY_SAME_VERSION_VARIANTS |
+| BBVA | 2025 | 20854 | 2026023406 == 2026023406 | 13/02/2026 == 13/02/2026 | `675a1d3a…` | `40ff2f17…` | SUBMITTED_VARIANT | SAME_REGISTRY_SAME_VERSION_VARIANTS |
+| IBE | 2024 | 20515 | 2025031726 == 2025031726 | 28/02/2025 == 28/02/2025 | `89dfd3ef…` | `89dfd3ef…` (same bytes) | FALLBACK_TO_ES | SAME_REGISTRY_SAME_VERSION_VARIANTS |
+| IBE | 2025 | 20934 | 2026031462 == 2026031462 | 27/02/2026 == 27/02/2026 | `066fdaf8…` | `066fdaf8…` (same bytes) | FALLBACK_TO_ES | SAME_REGISTRY_SAME_VERSION_VARIANTS |
 
 ## Answers to the four questions
 
@@ -77,24 +88,29 @@ is shared by both variants; `language` selects the artifact set; package
 SHA-256 distinguishes variant content. LEI+period identifies the obligation
 but not the submission.
 
-## Model implication (falsification result)
+## Model implication
 
 The evidence supports the preregistered outcome
-`SAME_REGISTRY_SAME_VERSION_VARIANTS` and refines the model:
+`SAME_REGISTRY_SAME_VERSION_VARIANTS`: same registro, same submission nreg,
+same publication date, same `infadicionifa` history surface, different
+language artifact sets.
+
+**Important honesty note:** current evidence does **not** distinguish the
+lifecycle ordering. The observed shape is still perfectly compatible with
+`filing → filing_version → {variant es, variant en}` (both variants inside
+one version) and with `filing → {variant es, variant en} → version N`
+(variants evolving in sync). What is missing — and what would falsify — is
+a substitution affecting one variant but not the other. Until such a case is
+observed, the orthogonal representation
 
 ```text
-filing (identity = nregaud, registro oficial)
-  ├─ submission_variant   ← language axis: artifact set per lang
-  │     (es: {xhtml_ind, xhtml_cons, zip}; en: {xhtml_ind, xhtml_cons, zip})
-  └─ version_event        ← shared history (infadicionifa / substitutions),
-                            one timeline per registry entry
+filing (identity = nregaud)
+  ├─ submission_variant   (language → artifact set)
+  └─ version_event        (shared registry-level history)
 ```
 
-`submission_variant` and `version_event` are **orthogonal axes under the
-same filing**, not nested. A version event may replace one or both variant
-document sets; the registry keeps a single shared history. This rejects
-both pure orderings (`version → variant` and `variant → version`) in favour
-of the two-axis shape the summary anticipated.
+is the **least-assumptive, lossless provisional model** — not an
+experimentally falsified conclusion.
 
 ## Consequences for OpenCNMV
 
@@ -117,7 +133,7 @@ of the two-axis shape the summary anticipated.
 
 | outcome | count |
 |---|---|
-| SAME_REGISTRY_SAME_VERSION_VARIANTS | 6 (incl. 2 fallback) |
+| SAME_REGISTRY_SAME_VERSION_VARIANTS | 6 (4 filings with 2 submitted variants; 2 filings with 1 variant + en fallback) |
 | SAME_REGISTRY_INDEPENDENT_VARIANT_VERSIONS | 0 |
 | DISTINCT_REGISTRY_SUBMISSIONS | 0 |
 | EXTERNAL_ONLY_VARIANT_UNPROVEN_AT_CNMV | 0 |

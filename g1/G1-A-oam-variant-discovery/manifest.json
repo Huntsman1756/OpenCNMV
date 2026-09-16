@@ -95,9 +95,21 @@
   },
   {
    "file": "g1a_results.json",
-   "sha256": "5105aabd74e4f12355ed4759ba8d4ca1c4dc9e44af3667b9815a414106364377",
-   "bytes": 17366,
+   "sha256": "6764c43945616d0d8086110956c735915b7bfe73ca6855ab7805ba3935eea2ab",
+   "bytes": 15628,
    "kind": "RESULT_MATRIX"
+  },
+  {
+   "file": "g1a_matrix.py",
+   "sha256": "a263c4d065686507bd3ec7f1b2d7d22453514dd2907d0d3317c9094fc256d818",
+   "bytes": 7148,
+   "kind": "OFFLINE_MATRIX_DERIVATION"
+  },
+  {
+   "file": "g1a_discover.py",
+   "sha256": "bcda46f38d5ed6bc69b8b3a3fc82a2560fbfbd73afdec04957f70ccd283a5aec",
+   "bytes": 11457,
+   "kind": "PROBE_HARNESS"
   }
  ],
  "findings": [
