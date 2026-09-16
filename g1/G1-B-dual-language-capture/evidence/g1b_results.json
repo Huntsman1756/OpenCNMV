@@ -47,19 +47,12 @@
    "note": "language-sensitive types are never compared as equal-value economic facts across variants",
    "pass": true
   },
-  "san_numeric_equivalent_0_10_vs_0_1": {
-   "expected": "es=\"0.1\" / en=\"0.10\" lexical-only difference -> MATCH_NUMERIC_EQUIVALENT (R16 reference case)",
+  "san_diluted_eps_numeric_equivalent": {
+   "expected": "ifrs-full#DilutedEarningsLossPerShare SAN-FY2025: es=\"0.9\" / en=\"0.900\" -> MATCH_NUMERIC_EQUIVALENT",
    "observed": {
-    "numeric_equivalent_records": 1,
-    "sample": [
-     {
-      "concept": "DilutedEarningsLossPerShare",
-      "en": "0.900",
-      "es": "0.9",
-      "filing": "SAN-FY2025"
-     }
-    ],
-    "specific_fact_class": "ABSENT"
+    "note": "the R16 oracle case (DividendsRecognisedAs-DistributionsToOwnersPerShare 0.1/0.10) does not reproduce on CNMV bytes: the official -en package carries 0.1 like -es (MATCH_EXACT). The oracle's AC7D667F package is Santander's ESEF-GB-0 FCA filing, not a CNMV ES -en variant.",
+    "numeric_equivalent_records_total": 1,
+    "specific_fact_records": 1
    },
    "pass": true
   },

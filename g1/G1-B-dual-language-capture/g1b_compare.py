@@ -323,25 +323,25 @@ def main() -> int:
                     if bbva24 else None}
 
     san_ne = [r for r in dataset
-              if r["class"] == "MATCH_NUMERIC_EQUIVALENT"]
-    san_dps = next((r for r in san_ne
-                    if r["key"]["concept"].endswith(
-                        "#DividendsRecognisedAsDistributionsToOwnersPerShare")), None)
-    san_dps_any = next((r for r in dataset
-                        if r["filing"].startswith("SAN-")
-                        and r["key"]["concept"].endswith(
-                            "#DividendsRecognisedAsDistributionsToOwnersPerShare")), None)
-    checks["san_numeric_equivalent_0_10_vs_0_1"] = {
-        "pass": san_dps is not None or len(san_ne) > 0,
-        "expected": 'es="0.1" / en="0.10" lexical-only difference -> '
-                    "MATCH_NUMERIC_EQUIVALENT (R16 reference case)",
-        "observed": {"specific_fact_class": san_dps["class"] if san_dps else
-                        (san_dps_any["class"] if san_dps_any else "ABSENT"),
-                     "numeric_equivalent_records": len(san_ne),
-                     "sample": [{"filing": r["filing"],
-                                 "concept": r["key"]["concept"].rsplit("#", 1)[-1],
-                                 "es": r["es"]["value"], "en": r["en"]["value"]}
-                                for r in san_ne[:8]]}}
+              if r["class"] == "MATCH_NUMERIC_EQUIVALENT"
+              and r["filing"] == "SAN-FY2025"
+              and r["key"]["concept"].endswith("#DilutedEarningsLossPerShare")
+              and (r["es"]["value"] or "").strip() == "0.9"
+              and (r["en"]["value"] or "").strip() == "0.900"]
+    checks["san_diluted_eps_numeric_equivalent"] = {
+        "pass": len(san_ne) == 1,
+        "expected": 'ifrs-full#DilutedEarningsLossPerShare SAN-FY2025: '
+                    'es="0.9" / en="0.900" -> MATCH_NUMERIC_EQUIVALENT',
+        "observed": {"specific_fact_records": len(san_ne),
+                     "numeric_equivalent_records_total": sum(
+                         1 for r in dataset
+                         if r["class"] == "MATCH_NUMERIC_EQUIVALENT"),
+                     "note": "the R16 oracle case (DividendsRecognisedAs-"
+                             "DistributionsToOwnersPerShare 0.1/0.10) does not "
+                             "reproduce on CNMV bytes: the official -en "
+                             "package carries 0.1 like -es (MATCH_EXACT). The "
+                             "oracle's AC7D667F package is Santander's "
+                             "ESEF-GB-0 FCA filing, not a CNMV ES -en variant."}}
 
     ibe = [r for r in results if r["filing"].startswith("IBE-")]
     checks["ibe_no_phantom_en_variant"] = {

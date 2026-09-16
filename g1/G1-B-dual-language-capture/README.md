@@ -90,12 +90,14 @@ officially submitted values.
 
 **Numeric-equivalence control — PASS.** `ifrs-full#DilutedEarningsLossPerShare`
 SAN-FY2025: es `0.9` vs en `0.900` → `MATCH_NUMERIC_EQUIVALENT` (lexical-only
-difference, no false divergence). Note: the R16 oracle case
-(`DividendsRecognisedAsDistributionsToOwnersPerShare` 0.1/0.10) did **not**
-reproduce on CNMV bytes — the official `-en` package carries `0.1`, identical
-to `-es` (MATCH_EXACT). The oracle's SAN-FY2025 `-en` copy (sha `AC7D667F…`)
-differs from the CNMV-served one (`77ac614a…`), i.e. it is a different
-package, not an oracle omission this time.
+difference, no false divergence). Note on the R16 oracle case
+(`DividendsRecognisedAsDistributionsToOwnersPerShare` 0.1/0.10): it does not
+reproduce on CNMV bytes because the official CNMV `-en` package carries
+`0.1`, identical to `-es` (MATCH_EXACT). The `AC7D667F…` oracle package is
+**not** a CNMV `-en` variant — it is Santander's `ESEF-GB-0` filing to the
+FCA, a different authority's submission and out of cross-variant scope. The
+ES picture is unchanged: CNMV ES `-en` = `77ac614a…`, filings.xbrl.org ES
+SAN-FY2025 = absent → R16's `ORACLE_OMISSION` stands.
 
 **IBE negative control — PASS.** `submitted_variant_count=1`, en-view
 resolves `es` (`FALLBACK_TO_ES`), identical artifact set, comparison skipped,
