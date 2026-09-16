@@ -2,7 +2,7 @@
  "gate": "G1-E CANONICAL_MODEL_FREEZE",
  "status": "PASS",
  "executed_at": "2026-09-16T18:16:33.624170+00:00",
- "code_commit": null,
+ "code_commit": "1a34e0a",
  "inputs": [
   "G1-A g1a_results.json",
   "G1-B variant_inventory + comparison",
