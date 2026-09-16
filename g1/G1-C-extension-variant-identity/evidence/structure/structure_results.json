@@ -1,0 +1,172 @@
+[
+ {
+  "variant": "SAN-FY2024-es",
+  "package_sha256": "725FFF01861CB0C186107280BF30B2C047A3A59AF703D799F678E02C435CB9F5",
+  "structure_sha256": "200D89A1CE7CE4007827DE72F8E096D98DB2126FD9987D6B17FCA512C36EF414",
+  "ext_concepts": 1,
+  "ext_members": 101,
+  "relationship_counts": {
+   "widerNarrower": 72,
+   "parentChild": 511,
+   "summationItem": 210,
+   "dimensionDomain": 12,
+   "domainMember": 7844,
+   "hypercubeDimension": 14,
+   "dimensionDefault": 136
+  },
+  "elapsed_s": 15.3
+ },
+ {
+  "variant": "SAN-FY2024-en",
+  "package_sha256": "47923B30C3763FE448FF8080BB3E38C50AE48D48171986A90947C8BE347CCB37",
+  "structure_sha256": "09D78AB139212C87480E14C34434D7EEBFC08AB8CD6BBBBE7C4D1B3195F300ED",
+  "ext_concepts": 1,
+  "ext_members": 101,
+  "relationship_counts": {
+   "widerNarrower": 72,
+   "parentChild": 511,
+   "summationItem": 204,
+   "dimensionDomain": 12,
+   "domainMember": 7844,
+   "hypercubeDimension": 14,
+   "dimensionDefault": 136
+  },
+  "elapsed_s": 16.3
+ },
+ {
+  "variant": "SAN-FY2025-es",
+  "package_sha256": "07E95A16C7D1652D6C6298C39B19B6A1E90C5D4A8C01881B4CCAEBDEAA700567",
+  "structure_sha256": "2AD4EFD6FD782BE0D7DC371C8275B3DACDB236D77040FCBFCDAE7845501D2300",
+  "ext_concepts": 1,
+  "ext_members": 96,
+  "relationship_counts": {
+   "widerNarrower": 68,
+   "parentChild": 509,
+   "summationItem": 0,
+   "dimensionDomain": 12,
+   "domainMember": 8010,
+   "hypercubeDimension": 14,
+   "dimensionDefault": 138
+  },
+  "elapsed_s": 14.4
+ },
+ {
+  "variant": "SAN-FY2025-en",
+  "package_sha256": "77AC614A42C974965E04FD882A329952AF393554B93B2873F1C021646ED95198",
+  "structure_sha256": "01E14070278324F01FB189337890DB00855CC3821DC2309C17ED446E47C13C19",
+  "ext_concepts": 1,
+  "ext_members": 96,
+  "relationship_counts": {
+   "widerNarrower": 68,
+   "parentChild": 509,
+   "summationItem": 0,
+   "dimensionDomain": 12,
+   "domainMember": 8010,
+   "hypercubeDimension": 14,
+   "dimensionDefault": 138
+  },
+  "elapsed_s": 15.3
+ },
+ {
+  "variant": "BBVA-FY2024-es",
+  "package_sha256": "69F04DA4F6EBE4F3072401207FF83F6EDC9D335C83DF666525594A7062D7248A",
+  "structure_sha256": "1BC002CC82203ABF49B7F1E8233BB3620199415A8A06357FDF58DB220488A6EC",
+  "ext_concepts": 0,
+  "ext_members": 124,
+  "relationship_counts": {
+   "widerNarrower": 119,
+   "parentChild": 477,
+   "summationItem": 246,
+   "dimensionDomain": 5,
+   "domainMember": 7837,
+   "hypercubeDimension": 5,
+   "dimensionDefault": 136
+  },
+  "elapsed_s": 10.9
+ },
+ {
+  "variant": "BBVA-FY2024-en",
+  "package_sha256": "75BE80E13B1FB8F56A8CAD06353A7145F0FAD524F654864D70F1AA35A2CCE94E",
+  "structure_sha256": "5E3A32CC8F31DD2E47252BF8DCF3C53634634BB63C2447400BD95C068DCEFC2F",
+  "ext_concepts": 0,
+  "ext_members": 124,
+  "relationship_counts": {
+   "widerNarrower": 119,
+   "parentChild": 477,
+   "summationItem": 246,
+   "dimensionDomain": 5,
+   "domainMember": 7837,
+   "hypercubeDimension": 5,
+   "dimensionDefault": 136
+  },
+  "elapsed_s": 10.2
+ },
+ {
+  "variant": "BBVA-FY2025-es",
+  "package_sha256": "675A1D3A470FDC469BEDA39BF242FFCB496C6F1116DA4D1FC562FAA0734E3458",
+  "structure_sha256": "00D9FE0B29F474CB664DC5060B1CCA926F73A389294AC3CF7CD3034CF0AB746C",
+  "ext_concepts": 0,
+  "ext_members": 113,
+  "relationship_counts": {
+   "widerNarrower": 108,
+   "parentChild": 481,
+   "summationItem": 0,
+   "dimensionDomain": 5,
+   "domainMember": 8005,
+   "hypercubeDimension": 5,
+   "dimensionDefault": 138
+  },
+  "elapsed_s": 8.8
+ },
+ {
+  "variant": "BBVA-FY2025-en",
+  "package_sha256": "40FF2F1798F798833CFB61A3B004CB7CDBED2682237A9D7D2B35B42B32AC54D3",
+  "structure_sha256": "52412A8236D80C9AB470AF5AA941B2DECE4AC09842A98793E5F0B0315EBAD09D",
+  "ext_concepts": 0,
+  "ext_members": 113,
+  "relationship_counts": {
+   "widerNarrower": 108,
+   "parentChild": 479,
+   "summationItem": 0,
+   "dimensionDomain": 5,
+   "domainMember": 8005,
+   "hypercubeDimension": 5,
+   "dimensionDefault": 138
+  },
+  "elapsed_s": 8.5
+ },
+ {
+  "variant": "IBE-FY2024-es",
+  "package_sha256": "89DFD3EF65527D1D4378464C2F70FA78B2FB7B4872264EACFA91D3FAAE1C42B4",
+  "structure_sha256": "1302DE08F0AE3F3140C0172A57DBCFC806AA84D8BCAAEF65AB8019511EE62F8A",
+  "ext_concepts": 7,
+  "ext_members": 49,
+  "relationship_counts": {
+   "widerNarrower": 51,
+   "parentChild": 390,
+   "summationItem": 154,
+   "dimensionDomain": 3,
+   "domainMember": 7731,
+   "hypercubeDimension": 5,
+   "dimensionDefault": 137
+  },
+  "elapsed_s": 9.3
+ },
+ {
+  "variant": "IBE-FY2025-es",
+  "package_sha256": "066FDAF835AD6E81F0FF77EACB571F5D2A09F9FB42788FBC12D7041D2E51E05A",
+  "structure_sha256": "FB83C42EBE08A4D474DEA509E43F48F11C5D3C7AA81A04FA230B094199F86C3F",
+  "ext_concepts": 7,
+  "ext_members": 54,
+  "relationship_counts": {
+   "widerNarrower": 55,
+   "parentChild": 418,
+   "summationItem": 0,
+   "dimensionDomain": 3,
+   "domainMember": 7904,
+   "hypercubeDimension": 5,
+   "dimensionDefault": 139
+  },
+  "elapsed_s": 6.3
+ }
+]

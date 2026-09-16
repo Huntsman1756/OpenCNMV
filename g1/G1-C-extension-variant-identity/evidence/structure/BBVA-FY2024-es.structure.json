@@ -1,0 +1,4814 @@
+{
+ "ext_concepts": {},
+ "ext_members": {
+  "http://www.bbva.es/20241231#ActivosNoCorrientesYGruposEnajenablesDeElementosClasificadosComoMantenidosParaLaVentaQueNoSeReclasificaranEnResultados": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#AccumulatedOtherComprehensiveIncome"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#ElementosQueNoSeReclasificaranEnResultados",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 99.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "http://www.bbva.es/20241231#ElementosQueNoSeReclasificaranEnResultados",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#ActivosNoCorrientesYGruposEnajenablesDeElementosClasificadosComoMantenidosParaLaVentaQuePuedenReclasificarseEnResultados": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#AccumulatedOtherComprehensiveIncome"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#ElementosQuePuedenReclasificarseEnResultados",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 110.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 6.0,
+     "parent": "http://www.bbva.es/20241231#ElementosQuePuedenReclasificarseEnResultados",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#ActivosNoCorrientesYGruposEnajenablesDeElementosMantenidosParaLaVentaQueNoSeReclasificaranEnResultadosMantenidosParaLaVenta": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 180.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax",
+     "role": "http://www.bbva.es/role/EstadodelresultadoglobalcomponentesORIpresentadosantesdeimpuestosStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#ActivosNoCorrientesYGruposEnajenablesDeElementosQueSeReclasificaraAResultadoClasificadosComoMantenidosParaLaVenta": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [
+    {
+     "child": "http://www.bbva.es/20241231#TransferidoAResultadosActivosNoCorrientesYGruposEnajenablesDeElementosMantenidosParaLaVenta",
+     "weight": 1.0
+    },
+    {
+     "child": "http://www.bbva.es/20241231#OtrasReclasificacionesActivosNoCorrientesYGruposEnajenablesDeElementosMantenidosParaLaVenta",
+     "weight": 1.0
+    },
+    {
+     "child": "http://www.bbva.es/20241231#GananciasPerdidasDeValorContabilizadasEnElPatrimonioNetoActivosNoCorrientesYGruposEnajenablesDeElementosMantenidosParaLaVenta",
+     "weight": 1.0
+    }
+   ],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax",
+     "weight": -1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 204.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 5.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax",
+     "role": "http://www.bbva.es/role/EstadodelresultadoglobalcomponentesORIpresentadosantesdeimpuestosStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#ActivosPorImpuestos": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#Assets"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [
+    {
+     "child": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CurrentTaxAssets",
+     "weight": 1.0
+    },
+    {
+     "child": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#DeferredTaxAssets",
+     "weight": 1.0
+    }
+   ],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#Assets",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 37.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 13.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#StatementOfFinancialPositionAbstract",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#ActivosTangibles": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#Assets"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [
+    {
+     "child": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#PropertyPlantAndEquipment",
+     "weight": 1.0
+    },
+    {
+     "child": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#InvestmentProperty",
+     "weight": 1.0
+    }
+   ],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#Assets",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 29.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 11.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#StatementOfFinancialPositionAbstract",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#ActivosTangiblesCedidosEnArrendamientoOperativo": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#PropertyPlantAndEquipment"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#PropertyPlantAndEquipment",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 32.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#PropertyPlantAndEquipment",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#ActivosTangiblesDeUsoPropio": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#PropertyPlantAndEquipment"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#PropertyPlantAndEquipment",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 31.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#PropertyPlantAndEquipment",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#AdquisicionDeInstrumentosDePatrimonioPropio": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInFinancingActivitiesContinuingOperations"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#PagosPorActividadesDeFinanciacion",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 253.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 4.0,
+     "parent": "http://www.bbva.es/20241231#PagosPorActividadesDeFinanciacion",
+     "role": "http://www.bbva.es/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#AjustePorIncrementoDecrementoDeLosPasivosFinancierosCosteAmortizado": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInOperatingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#AumentoDisminucionNetoDeLosPasivosDeExplotacion",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 228.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "http://www.bbva.es/20241231#AumentoDisminucionNetoDeLosPasivosDeExplotacion",
+     "role": "http://www.bbva.es/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#AjustePorIncrementoDecrementoDeLosPasivosFinancierosDesignadosValorRazonableCambiosResultados": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInOperatingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#AumentoDisminucionNetoDeLosPasivosDeExplotacion",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 227.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "http://www.bbva.es/20241231#AumentoDisminucionNetoDeLosPasivosDeExplotacion",
+     "role": "http://www.bbva.es/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#AmortizacionInstrumentosPatrimonioPropio": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInFinancingActivitiesContinuingOperations"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#PagosPorActividadesDeFinanciacion",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 252.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "http://www.bbva.es/20241231#PagosPorActividadesDeFinanciacion",
+     "role": "http://www.bbva.es/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#AumentoDisminucionDeActivosFinancierosACosteAmortizado": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInOperatingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#AumentoDisminucionNetoDeLosActivosDeExplotacion",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 223.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 5.0,
+     "parent": "http://www.bbva.es/20241231#AumentoDisminucionNetoDeLosActivosDeExplotacion",
+     "role": "http://www.bbva.es/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#AumentoDisminucionDeActivosFinancierosAValorRazonableConCambiosEnOtroResultadoGlobal": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInOperatingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#AumentoDisminucionNetoDeLosActivosDeExplotacion",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 222.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 4.0,
+     "parent": "http://www.bbva.es/20241231#AumentoDisminucionNetoDeLosActivosDeExplotacion",
+     "role": "http://www.bbva.es/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#AumentoDisminucionDeActivosFinancierosDesignadosAValorRazonableConCambiosEnResultados": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInOperatingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#AumentoDisminucionNetoDeLosActivosDeExplotacion",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 221.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "http://www.bbva.es/20241231#AumentoDisminucionNetoDeLosActivosDeExplotacion",
+     "role": "http://www.bbva.es/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#AumentoDisminucionDeLosActivosFinancierosNoDestinadosANegociacionValoradosObligatoriamenteAValorRazonableConCambiosEnResultados": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInOperatingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#AumentoDisminucionNetoDeLosActivosDeExplotacion",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 220.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "http://www.bbva.es/20241231#AumentoDisminucionNetoDeLosActivosDeExplotacion",
+     "role": "http://www.bbva.es/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#AumentoDisminucionNetoDeLosActivosDeExplotacion": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInOperatingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [
+    {
+     "child": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#AdjustmentsForDecreaseIncreaseInOtherAssets",
+     "weight": 1.0
+    },
+    {
+     "child": "http://www.bbva.es/20241231#AumentoDisminucionDeLosActivosFinancierosNoDestinadosANegociacionValoradosObligatoriamenteAValorRazonableConCambiosEnResultados",
+     "weight": 1.0
+    },
+    {
+     "child": "http://www.bbva.es/20241231#AumentoDisminucionDeActivosFinancierosDesignadosAValorRazonableConCambiosEnResultados",
+     "weight": 1.0
+    },
+    {
+     "child": "http://www.bbva.es/20241231#AumentoDisminucionDeActivosFinancierosACosteAmortizado",
+     "weight": 1.0
+    },
+    {
+     "child": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#AdjustmentsForDecreaseIncreaseInFinancialAssetsHeldForTrading",
+     "weight": 1.0
+    },
+    {
+     "child": "http://www.bbva.es/20241231#AumentoDisminucionDeActivosFinancierosAValorRazonableConCambiosEnOtroResultadoGlobal",
+     "weight": 1.0
+    }
+   ],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInOperatingActivities",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 218.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 4.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInOperatingActivities",
+     "role": "http://www.bbva.es/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#AumentoDisminucionNetoDeLosPasivosDeExplotacion": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInOperatingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [
+    {
+     "child": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#AdjustmentsForIncreaseDecreaseInOtherLiabilities",
+     "weight": -1.0
+    },
+    {
+     "child": "http://www.bbva.es/20241231#AjustePorIncrementoDecrementoDeLosPasivosFinancierosCosteAmortizado",
+     "weight": 1.0
+    },
+    {
+     "child": "http://www.bbva.es/20241231#AjustePorIncrementoDecrementoDeLosPasivosFinancierosDesignadosValorRazonableCambiosResultados",
+     "weight": 1.0
+    },
+    {
+     "child": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#AdjustmentsForIncreaseDecreaseInFinancialLiabilitiesHeldForTrading",
+     "weight": -1.0
+    }
+   ],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInOperatingActivities",
+     "weight": -1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 225.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 5.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInOperatingActivities",
+     "role": "http://www.bbva.es/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#CambiosDelValorRazonableDeLosInstrumentosDeDeudaValoradosAValorRazonableConCambiosEnOtroResultadoGlobal": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#AccumulatedOtherComprehensiveIncome"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#ElementosQuePuedenReclasificarseEnResultados",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 108.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 4.0,
+     "parent": "http://www.bbva.es/20241231#ElementosQuePuedenReclasificarseEnResultados",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#CambiosDelValorRazonableDeLosInstrumentosDePatrimonioValoradosAValorRazonableConCambiosEnOtroResultadoGlobal": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#AccumulatedOtherComprehensiveIncome"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#ElementosQueNoSeReclasificaranEnResultados",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 101.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 4.0,
+     "parent": "http://www.bbva.es/20241231#ElementosQueNoSeReclasificaranEnResultados",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#CambiosDelValorRazonableDeLosPasivosFinancierosAValorRazonableConCambiosEnResultadosAtribuiblesACambiosEnElRiesgoDeCredito": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#AccumulatedOtherComprehensiveIncome"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#ElementosQueNoSeReclasificaranEnResultados",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 103.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 6.0,
+     "parent": "http://www.bbva.es/20241231#ElementosQueNoSeReclasificaranEnResultados",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#CambiosEnElPatrimonioNetoDistintosAlResultadoGlobalTotal": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#Equity"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ChangesInEquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#StatementOfChangesInEquityLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#StatementOfChangesInEquityAbstract"
+     ],
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ChangesInEquityAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ChangesInEquityAbstract",
+     "role": "http://www.bbva.es/role/EstadodecambiosenelpatrimonionetoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#CapitalDesembolsado": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#IssuedCapital"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#IssuedCapital",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 83.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#IssuedCapital",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#CapitalNoDesembolsadoExigido": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#IssuedCapital"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#IssuedCapital",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 84.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#IssuedCapital",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#CoberturaDeInversionesNetasEnNegociosEnElExtranjeroPorcionEfectiva": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#AccumulatedOtherComprehensiveIncome"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#ElementosQuePuedenReclasificarseEnResultados",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 105.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "http://www.bbva.es/20241231#ElementosQuePuedenReclasificarseEnResultados",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#ContratosDeSegurosVinculadosAPensiones": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherAssets"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherAssets",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 41.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherAssets",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#ConversionDeDivisas": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#AccumulatedOtherComprehensiveIncome"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#ElementosQuePuedenReclasificarseEnResultados",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 106.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "http://www.bbva.es/20241231#ElementosQuePuedenReclasificarseEnResultados",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#DelQueEfectoDeHiperinflaccionDeLasActividadesDeExplotacion": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInOperatingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 214.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInOperatingActivities",
+     "role": "http://www.bbva.es/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#DelQueEfectoDeHiperinflaccionDeLasActividadesDeFinanciacion": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInFinancingActivitiesContinuingOperations"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 248.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInFinancingActivitiesContinuingOperations",
+     "role": "http://www.bbva.es/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#DelQueEfectoDeHiperinflaccionDeLasActividadesDeInversion": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInInvestingActivitiesContinuingOperations"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 232.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInInvestingActivitiesContinuingOperations",
+     "role": "http://www.bbva.es/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#DepositosDeBancosCentralesAValorRazonableConCambiosEnResultados": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialLiabilitiesAtFairValueThroughProfitOrLossDesignatedAsUponInitialRecognition"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialLiabilitiesAtFairValueThroughProfitOrLossDesignatedAsUponInitialRecognition",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 53.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialLiabilitiesAtFairValueThroughProfitOrLossDesignatedAsUponInitialRecognition",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#DepositosDeBancosCentralesMantenidosParaNegociar": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialLiabilitiesAtFairValueThroughProfitOrLossClassifiedAsHeldForTrading"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialLiabilitiesAtFairValueThroughProfitOrLossClassifiedAsHeldForTrading",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 49.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialLiabilitiesAtFairValueThroughProfitOrLossClassifiedAsHeldForTrading",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#DepositosDeEntidadesDeCreditoAValorRazonableConCambiosEnResultados": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialLiabilitiesAtFairValueThroughProfitOrLossDesignatedAsUponInitialRecognition"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialLiabilitiesAtFairValueThroughProfitOrLossDesignatedAsUponInitialRecognition",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 54.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialLiabilitiesAtFairValueThroughProfitOrLossDesignatedAsUponInitialRecognition",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#DepositosDeEntidadesDeCreditoMantenidosParaNegociar": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialLiabilitiesAtFairValueThroughProfitOrLossClassifiedAsHeldForTrading"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialLiabilitiesAtFairValueThroughProfitOrLossClassifiedAsHeldForTrading",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 50.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 4.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialLiabilitiesAtFairValueThroughProfitOrLossClassifiedAsHeldForTrading",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#DepositosDeLaClientelaAValorRazonableConCambiosEnResultados": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialLiabilitiesAtFairValueThroughProfitOrLossDesignatedAsUponInitialRecognition"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialLiabilitiesAtFairValueThroughProfitOrLossDesignatedAsUponInitialRecognition",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 55.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialLiabilitiesAtFairValueThroughProfitOrLossDesignatedAsUponInitialRecognition",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#DepositosDeLaClientelaMantenidosParaNegociar": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialLiabilitiesAtFairValueThroughProfitOrLossClassifiedAsHeldForTrading"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialLiabilitiesAtFairValueThroughProfitOrLossClassifiedAsHeldForTrading",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 51.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 5.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialLiabilitiesAtFairValueThroughProfitOrLossClassifiedAsHeldForTrading",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#DerivadosDeCoberturaCoberturaDeFlujosDeEfectivoPorcionEfectiva": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#AccumulatedOtherComprehensiveIncome"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#ElementosQuePuedenReclasificarseEnResultados",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 107.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "http://www.bbva.es/20241231#ElementosQuePuedenReclasificarseEnResultados",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#DeterioroActivosFinancierosAValorRazonableConCambiosEnOtroResultadoGlobal": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ImpairmentLossOnFinancialAssets"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ImpairmentLossOnFinancialAssets",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 155.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ImpairmentLossOnFinancialAssets",
+     "role": "http://www.bbva.es/role/EstadodelresultadoglobalderesultadosporfuncindelgastoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#DeterioroActivosTangiblesNoFinancieros": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ProfitLossBeforeTax"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#DeterioroDelValorOReversionDelDeterioroDelValorDeActivosNoFinancieros",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 159.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "http://www.bbva.es/20241231#DeterioroDelValorOReversionDelDeterioroDelValorDeActivosNoFinancieros",
+     "role": "http://www.bbva.es/role/EstadodelresultadoglobalderesultadosporfuncindelgastoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#DeterioroDelValorOReversionDelDeterioroDelValorDeActivosNoFinancieros": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ProfitLossBeforeTax"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [
+    {
+     "child": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ImpairmentLossRecognisedInProfitOrLossIntangibleAssetsAndGoodwill",
+     "weight": 1.0
+    },
+    {
+     "child": "http://www.bbva.es/20241231#DeterioroOtrosActivosNoFinancieros",
+     "weight": 1.0
+    },
+    {
+     "child": "http://www.bbva.es/20241231#DeterioroActivosTangiblesNoFinancieros",
+     "weight": 1.0
+    }
+   ],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ProfitLossBeforeTax",
+     "weight": -1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 158.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ProfitLossFromOperatingActivities",
+     "role": "http://www.bbva.es/role/EstadodelresultadoglobalderesultadosporfuncindelgastoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#DeterioroDelValorOReversionDelDeterioroDelValorDeInversionesEnNegociosConjuntosOAsociadas": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ProfitLossBeforeTax"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ProfitLossBeforeTax",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 157.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ProfitLossFromOperatingActivities",
+     "role": "http://www.bbva.es/role/EstadodelresultadoglobalderesultadosporfuncindelgastoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#DeterioroOtrosActivosNoFinancieros": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ProfitLossBeforeTax"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#DeterioroDelValorOReversionDelDeterioroDelValorDeActivosNoFinancieros",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 161.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "http://www.bbva.es/20241231#DeterioroDelValorOReversionDelDeterioroDelValorDeActivosNoFinancieros",
+     "role": "http://www.bbva.es/role/EstadodelresultadoglobalderesultadosporfuncindelgastoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#DividendoACuenta": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#Equity"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#FondosPropios",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 95.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 10.0,
+     "parent": "http://www.bbva.es/20241231#FondosPropios",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#DividendoACuentaMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ComponentsOfEquityAxis"
+     ],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#EquityAttributableToOwnersOfParentMember",
+      "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#EquityMember"
+     ],
+     "order": 10.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#EquityAttributableToOwnersOfParentMember",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 10.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#EquityAttributableToOwnersOfParentMember",
+     "role": "http://www.bbva.es/role/EstadodecambiosenelpatrimonionetoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2020-01-21#domainItemType"
+  },
+  "http://www.bbva.es/20241231#EjercicioOVencimientoDeOtrosInstrumentosDePatrimonioEmitidos": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#Equity"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "http://www.bbva.es/20241231#CambiosEnElPatrimonioNetoDistintosAlResultadoGlobalTotal",
+      "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ChangesInEquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#StatementOfChangesInEquityLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#StatementOfChangesInEquityAbstract"
+     ],
+     "order": 4.0,
+     "parent": "http://www.bbva.es/20241231#CambiosEnElPatrimonioNetoDistintosAlResultadoGlobalTotal",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 4.0,
+     "parent": "http://www.bbva.es/20241231#CambiosEnElPatrimonioNetoDistintosAlResultadoGlobalTotal",
+     "role": "http://www.bbva.es/role/EstadodecambiosenelpatrimonionetoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#ElementosQueNoSeReclasificaranEnResultados": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#AccumulatedOtherComprehensiveIncome"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [
+    {
+     "child": "http://www.bbva.es/20241231#IneficaciaDeLasCoberturasDeValorRazonableEnLosInstrumentosDePatrimonioValoradosAValorRazonableConCambiosEnOtroResultadoGlobal",
+     "weight": 1.0
+    },
+    {
+     "child": "http://www.bbva.es/20241231#GananciasPerdidasActuarialesEnPlanesDePensionesDePrestacionesDefinidas",
+     "weight": 1.0
+    },
+    {
+     "child": "http://www.bbva.es/20241231#CambiosDelValorRazonableDeLosPasivosFinancierosAValorRazonableConCambiosEnResultadosAtribuiblesACambiosEnElRiesgoDeCredito",
+     "weight": 1.0
+    },
+    {
+     "child": "http://www.bbva.es/20241231#CambiosDelValorRazonableDeLosInstrumentosDePatrimonioValoradosAValorRazonableConCambiosEnOtroResultadoGlobal",
+     "weight": 1.0
+    },
+    {
+     "child": "http://www.bbva.es/20241231#ActivosNoCorrientesYGruposEnajenablesDeElementosClasificadosComoMantenidosParaLaVentaQueNoSeReclasificaranEnResultados",
+     "weight": 1.0
+    },
+    {
+     "child": "http://www.bbva.es/20241231#ParticipacionEnOtrosIngresosYGastosReconocidosDeInversionesEnNegociosConjuntosYAsociadasQueNoSeReclasificaranEnResultados",
+     "weight": 1.0
+    }
+   ],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#AccumulatedOtherComprehensiveIncome",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 97.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#AccumulatedOtherComprehensiveIncome",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#ElementosQuePuedenReclasificarseEnResultados": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#AccumulatedOtherComprehensiveIncome"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [
+    {
+     "child": "http://www.bbva.es/20241231#ConversionDeDivisas",
+     "weight": 1.0
+    },
+    {
+     "child": "http://www.bbva.es/20241231#CoberturaDeInversionesNetasEnNegociosEnElExtranjeroPorcionEfectiva",
+     "weight": 1.0
+    },
+    {
+     "child": "http://www.bbva.es/20241231#CambiosDelValorRazonableDeLosInstrumentosDeDeudaValoradosAValorRazonableConCambiosEnOtroResultadoGlobal",
+     "weight": 1.0
+    },
+    {
+     "child": "http://www.bbva.es/20241231#ActivosNoCorrientesYGruposEnajenablesDeElementosClasificadosComoMantenidosParaLaVentaQuePuedenReclasificarseEnResultados",
+     "weight": 1.0
+    },
+    {
+     "child": "http://www.bbva.es/20241231#DerivadosDeCoberturaCoberturaDeFlujosDeEfectivoPorcionEfectiva",
+     "weight": 1.0
+    },
+    {
+     "child": "http://www.bbva.es/20241231#ParticipacionEnOtrosIngresosYGastosReconocidosEnInversionesEnNegociosConjuntosYAsociadasQuePuedenReclasificarseEnResultados",
+     "weight": 1.0
+    },
+    {
+     "child": "http://www.bbva.es/20241231#InstrumentosDeCoberturaElementosNoDesignados",
+     "weight": 1.0
+    }
+   ],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#AccumulatedOtherComprehensiveIncome",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 104.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#AccumulatedOtherComprehensiveIncome",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#EmisionDeAccionesOrdinarias": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#Equity"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "http://www.bbva.es/20241231#CambiosEnElPatrimonioNetoDistintosAlResultadoGlobalTotal",
+      "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ChangesInEquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#StatementOfChangesInEquityLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#StatementOfChangesInEquityAbstract"
+     ],
+     "order": 1.0,
+     "parent": "http://www.bbva.es/20241231#CambiosEnElPatrimonioNetoDistintosAlResultadoGlobalTotal",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "http://www.bbva.es/20241231#CambiosEnElPatrimonioNetoDistintosAlResultadoGlobalTotal",
+     "role": "http://www.bbva.es/role/EstadodecambiosenelpatrimonionetoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#EmisionDeAccionesPreferentes": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#Equity"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "http://www.bbva.es/20241231#CambiosEnElPatrimonioNetoDistintosAlResultadoGlobalTotal",
+      "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ChangesInEquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#StatementOfChangesInEquityLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#StatementOfChangesInEquityAbstract"
+     ],
+     "order": 2.0,
+     "parent": "http://www.bbva.es/20241231#CambiosEnElPatrimonioNetoDistintosAlResultadoGlobalTotal",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "http://www.bbva.es/20241231#CambiosEnElPatrimonioNetoDistintosAlResultadoGlobalTotal",
+     "role": "http://www.bbva.es/role/EstadodecambiosenelpatrimonionetoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#EnajenacionDeInstrumentosDePatrimonioPropio": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInFinancingActivitiesContinuingOperations"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#EntradasDeEfectivoProcedentesDeActividadesDeFinanciacion",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 258.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "http://www.bbva.es/20241231#EntradasDeEfectivoProcedentesDeActividadesDeFinanciacion",
+     "role": "http://www.bbva.es/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#EntradasDeEfectivoProcedentesDeActividadesDeFinanciacion": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInFinancingActivitiesContinuingOperations"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [
+    {
+     "child": "http://www.bbva.es/20241231#OtrosCobrosRelacionadosConLasActividadesDeFinanciacion",
+     "weight": 1.0
+    },
+    {
+     "child": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ProceedsFromIssuingShares",
+     "weight": 1.0
+    },
+    {
+     "child": "http://www.bbva.es/20241231#EnajenacionDeInstrumentosDePatrimonioPropio",
+     "weight": 1.0
+    },
+    {
+     "child": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ProceedsFromIssueOfSubordinatedLiabilities",
+     "weight": 1.0
+    }
+   ],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInFinancingActivitiesContinuingOperations",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 255.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInFinancingActivitiesContinuingOperations",
+     "role": "http://www.bbva.es/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#FondoDeComercioNegativoReconocidoEnResultados": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ProfitLossBeforeTax"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ProfitLossBeforeTax",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 163.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 4.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ProfitLossFromOperatingActivities",
+     "role": "http://www.bbva.es/role/EstadodelresultadoglobalderesultadosporfuncindelgastoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#FondosPropios": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#Equity"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [
+    {
+     "child": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#RetainedEarnings",
+     "weight": 1.0
+    },
+    {
+     "child": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherReserves",
+     "weight": 1.0
+    },
+    {
+     "child": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherEquityInterest",
+     "weight": 1.0
+    },
+    {
+     "child": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#RevaluationSurplus",
+     "weight": 1.0
+    },
+    {
+     "child": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#SharePremium",
+     "weight": 1.0
+    },
+    {
+     "child": "http://www.bbva.es/20241231#InstrumentosDePatrimonioEmitidosDistintosDelCapital",
+     "weight": 1.0
+    },
+    {
+     "child": "http://www.bbva.es/20241231#DividendoACuenta",
+     "weight": 1.0
+    },
+    {
+     "child": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#IssuedCapital",
+     "weight": 1.0
+    },
+    {
+     "child": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#TreasuryShares",
+     "weight": -1.0
+    },
+    {
+     "child": "http://www.bbva.es/20241231#ResultadoAtribuibleALosPropietariosDeLaDominante",
+     "weight": 1.0
+    }
+   ],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#Equity",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 81.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 28.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#StatementOfFinancialPositionAbstract",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#GananciasPerdidasActuarialesEnPlanesDePensionesDePrestacionesDefinidas": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#AccumulatedOtherComprehensiveIncome"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#ElementosQueNoSeReclasificaranEnResultados",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 98.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "http://www.bbva.es/20241231#ElementosQueNoSeReclasificaranEnResultados",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#GananciasPerdidasAlDarDeBajaActivosFinancierosACosteAmortizado": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#InterestRevenueExpense"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#GananciasPerdidasAlDarDeBajaEnCuentasActivosYPasivosFinancierosNoValoradosAValorRazonableConCambiosEnResultadosNetas",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 130.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "http://www.bbva.es/20241231#GananciasPerdidasAlDarDeBajaEnCuentasActivosYPasivosFinancierosNoValoradosAValorRazonableConCambiosEnResultadosNetas",
+     "role": "http://www.bbva.es/role/EstadodelresultadoglobalderesultadosporfuncindelgastoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#GananciasPerdidasAlDarDeBajaEnCuentasActivosNoFinancierosYParticipacionesNetas": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ProfitLossBeforeTax"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ProfitLossBeforeTax",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 162.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ProfitLossFromOperatingActivities",
+     "role": "http://www.bbva.es/role/EstadodelresultadoglobalderesultadosporfuncindelgastoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#GananciasPerdidasAlDarDeBajaEnCuentasActivosYPasivosFinancierosNoValoradosAValorRazonableConCambiosEnResultadosNetas": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#InterestRevenueExpense"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [
+    {
+     "child": "http://www.bbva.es/20241231#GananciasPerdidasAlDarDeBajaActivosFinancierosACosteAmortizado",
+     "weight": 1.0
+    },
+    {
+     "child": "http://www.bbva.es/20241231#GananciasPerdidasAlDarDeBajaRestantesActivosYPasivosFinancieros",
+     "weight": 1.0
+    }
+   ],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#GrossProfit",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 129.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 8.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#IncomeStatementAbstract",
+     "role": "http://www.bbva.es/role/EstadodelresultadoglobalderesultadosporfuncindelgastoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#GananciasPerdidasAlDarDeBajaRestantesActivosYPasivosFinancieros": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#InterestRevenueExpense"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#GananciasPerdidasAlDarDeBajaEnCuentasActivosYPasivosFinancierosNoValoradosAValorRazonableConCambiosEnResultadosNetas",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 131.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "http://www.bbva.es/20241231#GananciasPerdidasAlDarDeBajaEnCuentasActivosYPasivosFinancierosNoValoradosAValorRazonableConCambiosEnResultadosNetas",
+     "role": "http://www.bbva.es/role/EstadodelresultadoglobalderesultadosporfuncindelgastoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#GananciasPerdidasDeValorContabilizadasEnElPatrimonioNetoActivosNoCorrientesYGruposEnajenablesDeElementosMantenidosParaLaVenta": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#ActivosNoCorrientesYGruposEnajenablesDeElementosQueSeReclasificaraAResultadoClasificadosComoMantenidosParaLaVenta",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 205.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "http://www.bbva.es/20241231#ActivosNoCorrientesYGruposEnajenablesDeElementosQueSeReclasificaraAResultadoClasificadosComoMantenidosParaLaVenta",
+     "role": "http://www.bbva.es/role/EstadodelresultadoglobalcomponentesORIpresentadosantesdeimpuestosStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#GananciasPerdidasPorActivosYPasivosFinancierosDesignadosAValorRazonableConCambiosEnResultadosNetas": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#InterestRevenueExpense"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#GrossProfit",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 140.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 11.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#IncomeStatementAbstract",
+     "role": "http://www.bbva.es/role/EstadodelresultadoglobalderesultadosporfuncindelgastoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#GananciasPerdidasPorActivosYPasivosFinancierosMantenidosParaNegociarNetas": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#InterestRevenueExpense"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [
+    {
+     "child": "http://www.bbva.es/20241231#ReclasificacionDeActivosFinancierosDesdeValorRazonableConCambiosEnOtroResultadoGlobalHaciaMantenidosParaNegociar",
+     "weight": 1.0
+    },
+    {
+     "child": "http://www.bbva.es/20241231#ReclasificacionDeActivosFinancierosDesdeCosteAmortizadoHaciaMantenidosParaNegociar",
+     "weight": 1.0
+    },
+    {
+     "child": "http://www.bbva.es/20241231#OtrasGananciasPerdidasMantenidosParaNegociar",
+     "weight": 1.0
+    }
+   ],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#GrossProfit",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 132.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 9.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#IncomeStatementAbstract",
+     "role": "http://www.bbva.es/role/EstadodelresultadoglobalderesultadosporfuncindelgastoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#GananciasPerdidasProcedentesDeActivosNoCorrientesYGruposEnajenablesDeElementosClasificadosComoMantenidosParaLaVentaNoAdmisiblesComoActividadesInterrumpidas": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ProfitLossBeforeTax"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ProfitLossBeforeTax",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 164.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 5.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ProfitLossFromOperatingActivities",
+     "role": "http://www.bbva.es/role/EstadodelresultadoglobalderesultadosporfuncindelgastoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#IncrementoODecrementoEnEfectivoYEquivalentesAlEfectivoIncluyendoSociedadesALaVenta": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashAndCashEquivalents"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [
+    {
+     "child": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInInvestingActivitiesContinuingOperations",
+     "weight": 1.0
+    },
+    {
+     "child": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#EffectOfExchangeRateChangesOnCashAndCashEquivalents",
+     "weight": 1.0
+    },
+    {
+     "child": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInOperatingActivities",
+     "weight": 1.0
+    },
+    {
+     "child": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInFinancingActivitiesContinuingOperations",
+     "weight": 1.0
+    }
+   ],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 261.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 5.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#StatementOfCashFlowsAbstract",
+     "role": "http://www.bbva.es/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#IneficaciaDeLasCoberturasDeValorRazonableEnLosInstrumentosDePatrimonioValoradosAValorRazonableConCambiosEnOtroResultadoGlobal": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#AccumulatedOtherComprehensiveIncome"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#ElementosQueNoSeReclasificaranEnResultados",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 102.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 5.0,
+     "parent": "http://www.bbva.es/20241231#ElementosQueNoSeReclasificaranEnResultados",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#InstrumentosDeCoberturaElementosNoDesignados": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#AccumulatedOtherComprehensiveIncome"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#ElementosQuePuedenReclasificarseEnResultados",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 109.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 5.0,
+     "parent": "http://www.bbva.es/20241231#ElementosQuePuedenReclasificarseEnResultados",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#InstrumentosDeDeudaAValorRazonableConCambiosEnOtroResultadoGlobal": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [
+    {
+     "child": "http://www.bbva.es/20241231#OtrasReclasificacionesDeDeudaAValorRazonableConCambiosEnOtroResultadoGlobal",
+     "weight": 1.0
+    },
+    {
+     "child": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ReclassificationAdjustmentsOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax",
+     "weight": -1.0
+    },
+    {
+     "child": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#GainsLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax",
+     "weight": 1.0
+    }
+   ],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 200.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 4.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax",
+     "role": "http://www.bbva.es/role/EstadodelresultadoglobalcomponentesORIpresentadosantesdeimpuestosStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#InstrumentosDePatrimonioEmitidosDistintosDeCapitalMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ComponentsOfEquityAxis"
+     ],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#EquityAttributableToOwnersOfParentMember",
+      "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#EquityMember"
+     ],
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#EquityAttributableToOwnersOfParentMember",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#EquityAttributableToOwnersOfParentMember",
+     "role": "http://www.bbva.es/role/EstadodecambiosenelpatrimonionetoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2020-01-21#domainItemType"
+  },
+  "http://www.bbva.es/20241231#InstrumentosDePatrimonioEmitidosDistintosDelCapital": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#Equity"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#FondosPropios",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 86.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "http://www.bbva.es/20241231#FondosPropios",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#InstrumentosDePatrimonioMantenidosParaNegociar": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughProfitOrLossClassifiedAsHeldForTrading"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughProfitOrLossClassifiedAsHeldForTrading",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 3.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughProfitOrLossClassifiedAsHeldForTrading",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#InstrumentosDePatrimonioNoDestinadosANegociacionValoradosAValorRazonableConCambiosEnResultados": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 9.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#Otras": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherReserves"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherReserves",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 92.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherReserves",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#OtrasGananciasPerdidasMantenidosParaNegociar": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#InterestRevenueExpense"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#GananciasPerdidasPorActivosYPasivosFinancierosMantenidosParaNegociarNetas",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 135.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "http://www.bbva.es/20241231#GananciasPerdidasPorActivosYPasivosFinancierosMantenidosParaNegociarNetas",
+     "role": "http://www.bbva.es/role/EstadodelresultadoglobalderesultadosporfuncindelgastoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#OtrasGananciasPerdidasNoDestinadasANegociacionValoradasObligatoriamenteAValorRazonableConCambiosEnResultados": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#GainsLossesOnFinancialAssetsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#GainsLossesOnFinancialAssetsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 139.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#GainsLossesOnFinancialAssetsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue",
+     "role": "http://www.bbva.es/role/EstadodelresultadoglobalderesultadosporfuncindelgastoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#OtrasReclasificacionesActivosNoCorrientesYGruposEnajenablesDeElementosMantenidosParaLaVenta": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#ActivosNoCorrientesYGruposEnajenablesDeElementosQueSeReclasificaraAResultadoClasificadosComoMantenidosParaLaVenta",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 207.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "http://www.bbva.es/20241231#ActivosNoCorrientesYGruposEnajenablesDeElementosQueSeReclasificaraAResultadoClasificadosComoMantenidosParaLaVenta",
+     "role": "http://www.bbva.es/role/EstadodelresultadoglobalcomponentesORIpresentadosantesdeimpuestosStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#OtrasReclasificacionesCoberturasDeFlujosDeEfectivo": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherComprehensiveIncomeBeforeTaxCashFlowHedges"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherComprehensiveIncomeBeforeTaxCashFlowHedges",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 199.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 4.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherComprehensiveIncomeBeforeTaxCashFlowHedges",
+     "role": "http://www.bbva.es/role/EstadodelresultadoglobalcomponentesORIpresentadosantesdeimpuestosStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#OtrasReclasificacionesCoberturasInversionesNetas": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherComprehensiveIncomeBeforeTaxHedgesOfNetInvestmentsInForeignOperations"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherComprehensiveIncomeBeforeTaxHedgesOfNetInvestmentsInForeignOperations",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 190.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherComprehensiveIncomeBeforeTaxHedgesOfNetInvestmentsInForeignOperations",
+     "role": "http://www.bbva.es/role/EstadodelresultadoglobalcomponentesORIpresentadosantesdeimpuestosStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#OtrasReclasificacionesConversionDeDivisas": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 194.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation",
+     "role": "http://www.bbva.es/role/EstadodelresultadoglobalcomponentesORIpresentadosantesdeimpuestosStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#OtrasReclasificacionesDeDeudaAValorRazonableConCambiosEnOtroResultadoGlobal": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#InstrumentosDeDeudaAValorRazonableConCambiosEnOtroResultadoGlobal",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 203.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "http://www.bbva.es/20241231#InstrumentosDeDeudaAValorRazonableConCambiosEnOtroResultadoGlobal",
+     "role": "http://www.bbva.es/role/EstadodelresultadoglobalcomponentesORIpresentadosantesdeimpuestosStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#OtrasRetribucionesALosEmpleadosALargoPlazo": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#Provisions"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#Provisions",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 71.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#Provisions",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#OtroResultadoGlobalAcumuladoParticipacionesNoDominantes": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#NoncontrollingInterests"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#NoncontrollingInterests",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 113.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#NoncontrollingInterests",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#OtroResultadoGlobalAcumuladoParticipacionesNoDominantesMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ComponentsOfEquityAxis"
+     ],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#NoncontrollingInterestsMember",
+      "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#EquityMember"
+     ],
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#NoncontrollingInterestsMember",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#NoncontrollingInterestsMember",
+     "role": "http://www.bbva.es/role/EstadodecambiosenelpatrimonionetoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2020-01-21#domainItemType"
+  },
+  "http://www.bbva.es/20241231#OtrosCobrosRelacionadosConActividadesDeInversion": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#InflowsOfCashFromInvestingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#InflowsOfCashFromInvestingActivities",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 246.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 6.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#InflowsOfCashFromInvestingActivities",
+     "role": "http://www.bbva.es/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#OtrosCobrosRelacionadosConLasActividadesDeFinanciacion": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInFinancingActivitiesContinuingOperations"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#EntradasDeEfectivoProcedentesDeActividadesDeFinanciacion",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 259.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 4.0,
+     "parent": "http://www.bbva.es/20241231#EntradasDeEfectivoProcedentesDeActividadesDeFinanciacion",
+     "role": "http://www.bbva.es/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#OtrosElementosParticipacionesNoDominantes": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#NoncontrollingInterests"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#NoncontrollingInterests",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 114.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#NoncontrollingInterests",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#OtrosElementosParticipacionesNoDominantesMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ComponentsOfEquityAxis"
+     ],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#NoncontrollingInterestsMember",
+      "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#EquityMember"
+     ],
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#NoncontrollingInterestsMember",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#NoncontrollingInterestsMember",
+     "role": "http://www.bbva.es/role/EstadodecambiosenelpatrimonionetoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2020-01-21#domainItemType"
+  },
+  "http://www.bbva.es/20241231#OtrosPagosActividadesDeFinanciacion": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInFinancingActivitiesContinuingOperations"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#PagosPorActividadesDeFinanciacion",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 254.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 5.0,
+     "parent": "http://www.bbva.es/20241231#PagosPorActividadesDeFinanciacion",
+     "role": "http://www.bbva.es/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#OtrosPagosRelacionadosConActividadesInversion": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OutflowsOfCashFromInvestingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OutflowsOfCashFromInvestingActivities",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 239.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 6.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OutflowsOfCashFromInvestingActivities",
+     "role": "http://www.bbva.es/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#OtrosPasivosFinancierosAValorRazonableConCambiosEnResultados": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialLiabilitiesAtFairValueThroughProfitOrLossDesignatedAsUponInitialRecognition"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialLiabilitiesAtFairValueThroughProfitOrLossDesignatedAsUponInitialRecognition",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 57.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 5.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialLiabilitiesAtFairValueThroughProfitOrLossDesignatedAsUponInitialRecognition",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#PagosPorActividadesDeFinanciacion": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInFinancingActivitiesContinuingOperations"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [
+    {
+     "child": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#DividendsPaidClassifiedAsFinancingActivities",
+     "weight": 1.0
+    },
+    {
+     "child": "http://www.bbva.es/20241231#AdquisicionDeInstrumentosDePatrimonioPropio",
+     "weight": 1.0
+    },
+    {
+     "child": "http://www.bbva.es/20241231#OtrosPagosActividadesDeFinanciacion",
+     "weight": 1.0
+    },
+    {
+     "child": "http://www.bbva.es/20241231#AmortizacionInstrumentosPatrimonioPropio",
+     "weight": 1.0
+    },
+    {
+     "child": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#RepaymentsOfSubordinatedLiabilities",
+     "weight": 1.0
+    }
+   ],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInFinancingActivitiesContinuingOperations",
+     "weight": -1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 249.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CashFlowsFromUsedInFinancingActivitiesContinuingOperations",
+     "role": "http://www.bbva.es/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#ParticipacionEnOtrosIngresosYGastosReconocidosDeInversionesEnNegociosConjuntosYAsociadasQueNoSeReclasificaranEnResultados": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#AccumulatedOtherComprehensiveIncome"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#ElementosQueNoSeReclasificaranEnResultados",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 100.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "http://www.bbva.es/20241231#ElementosQueNoSeReclasificaranEnResultados",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#ParticipacionEnOtrosIngresosYGastosReconocidosEnInversionesEnNegociosConjuntosYAsociadasQuePuedenReclasificarseEnResultados": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#AccumulatedOtherComprehensiveIncome"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#ElementosQuePuedenReclasificarseEnResultados",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 111.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 7.0,
+     "parent": "http://www.bbva.es/20241231#ElementosQuePuedenReclasificarseEnResultados",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#PasivosPorImpuestos": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#Liabilities"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [
+    {
+     "child": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#CurrentTaxLiabilities",
+     "weight": 1.0
+    },
+    {
+     "child": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#DeferredTaxLiabilities",
+     "weight": 1.0
+    }
+   ],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#Liabilities",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 75.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 24.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#StatementOfFinancialPositionAbstract",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#PosicionesCortasDeValoresMantenidasParaNegociar": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialLiabilitiesAtFairValueThroughProfitOrLossClassifiedAsHeldForTrading"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialLiabilitiesAtFairValueThroughProfitOrLossClassifiedAsHeldForTrading",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 48.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialLiabilitiesAtFairValueThroughProfitOrLossClassifiedAsHeldForTrading",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#PrestamosYAnticiposABancosCentralesACosteAmortizado": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtAmortisedCost"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtAmortisedCost",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 20.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtAmortisedCost",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#PrestamosYAnticiposABancosCentralesMantenidosParaNegociar": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughProfitOrLossClassifiedAsHeldForTrading"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughProfitOrLossClassifiedAsHeldForTrading",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 5.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 4.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughProfitOrLossClassifiedAsHeldForTrading",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#PrestamosYAnticiposAClientesMantenidosParaNegociar": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughProfitOrLossClassifiedAsHeldForTrading"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughProfitOrLossClassifiedAsHeldForTrading",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 7.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 6.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughProfitOrLossClassifiedAsHeldForTrading",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#PrestamosYAnticiposAEntidadesDeCreditoAValorRazonableConCambiosEnOtroResultadoGlobal": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughOtherComprehensiveIncome"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughOtherComprehensiveIncome",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 17.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughOtherComprehensiveIncome",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#PrestamosYAnticiposAEntidadesDeCreditoMantenidosParaNegociar": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughProfitOrLossClassifiedAsHeldForTrading"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughProfitOrLossClassifiedAsHeldForTrading",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 6.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 5.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughProfitOrLossClassifiedAsHeldForTrading",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#PrestamosYAnticiposALaClientelaNoDestinadosANegociacionValoradosAValorRazonableConCambiosEnResultados": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 11.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#PromemoriaCompromisosDePrestamosConcedidos": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#Equity"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 117.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 33.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#StatementOfFinancialPositionAbstract",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#PromemoriaGarantiasFinancierasConcedidas": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#Equity"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 118.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 34.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#StatementOfFinancialPositionAbstract",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#PromemoriaOtrosCompromisosConcedidos": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#Equity"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 119.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 35.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#StatementOfFinancialPositionAbstract",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#PromemoriaPasivosSubordinadosACosteAmortizado": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialLiabilitiesAtAmortisedCost"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 65.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherFinancialLiabilities",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#PromemoriaPasivosSubordinadosAValorRazonableConCambiosEnResultados": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialLiabilitiesAtFairValueThroughProfitOrLossDesignatedAsUponInitialRecognition"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 58.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "http://www.bbva.es/20241231#OtrosPasivosFinancierosAValorRazonableConCambiosEnResultados",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#ProvisionesOReversionDeProvisiones": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#GrossProfit"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ProfitLossFromOperatingActivities",
+     "weight": -1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 152.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 21.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#IncomeStatementAbstract",
+     "role": "http://www.bbva.es/role/EstadodelresultadoglobalderesultadosporfuncindelgastoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#ProvisionesPorCompromisosYGarantiasConcedidos": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#Provisions"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#Provisions",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 73.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 4.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#Provisions",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#ReclasificacionDeActivosFinancierosDesdeCosteAmortizadoHaciaMantenidosParaNegociar": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#InterestRevenueExpense"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#GananciasPerdidasPorActivosYPasivosFinancierosMantenidosParaNegociarNetas",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 134.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "http://www.bbva.es/20241231#GananciasPerdidasPorActivosYPasivosFinancierosMantenidosParaNegociarNetas",
+     "role": "http://www.bbva.es/role/EstadodelresultadoglobalderesultadosporfuncindelgastoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#ReclasificacionDeActivosFinancierosDesdeCosteAmortizadoHaciaNoDestinadosANegociacionValoradosObligatoriamenteAValorRazonableConCambiosEnResultados": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#GainsLossesOnFinancialAssetsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#GainsLossesOnFinancialAssetsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 138.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#GainsLossesOnFinancialAssetsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue",
+     "role": "http://www.bbva.es/role/EstadodelresultadoglobalderesultadosporfuncindelgastoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#ReclasificacionDeActivosFinancierosDesdeValorRazonableConCambiosEnOtroResultadoGlobalHaciaMantenidosParaNegociar": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#InterestRevenueExpense"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#GananciasPerdidasPorActivosYPasivosFinancierosMantenidosParaNegociarNetas",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 133.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "http://www.bbva.es/20241231#GananciasPerdidasPorActivosYPasivosFinancierosMantenidosParaNegociarNetas",
+     "role": "http://www.bbva.es/role/EstadodelresultadoglobalderesultadosporfuncindelgastoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#ReclasificacionDeActivosFinancierosDesdeValorRazonableConCambiosEnOtroResultadoGlobalHaciaNoDestinadosANegociacionValoradosAValorRazonableConCambiosEnResultados": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#GainsLossesOnFinancialAssetsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#GainsLossesOnFinancialAssetsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 137.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#GainsLossesOnFinancialAssetsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue",
+     "role": "http://www.bbva.es/role/EstadodelresultadoglobalderesultadosporfuncindelgastoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#ReservasOPerdidasAcumuladasDeInversionesEnNegociosConjuntosYAsociadas": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherReserves"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherReserves",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 91.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherReserves",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#RestantesIngresosPorIntereses": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#RevenueFromInterest"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#RevenueFromInterest",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 122.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#RevenueFromInterest",
+     "role": "http://www.bbva.es/role/EstadodelresultadoglobalderesultadosporfuncindelgastoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#RestoDeLosOtrosActivos": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherAssets"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherAssets",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 43.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherAssets",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#ResultadoAtribuibleALosPropietariosDeLaDominante": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#Equity"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#FondosPropios",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 94.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 9.0,
+     "parent": "http://www.bbva.es/20241231#FondosPropios",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#ResultadoAtribuibleALosPropietariosDeLaDominanteMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ComponentsOfEquityAxis"
+     ],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#EquityAttributableToOwnersOfParentMember",
+      "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#EquityMember"
+     ],
+     "order": 9.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#EquityAttributableToOwnersOfParentMember",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 9.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#EquityAttributableToOwnersOfParentMember",
+     "role": "http://www.bbva.es/role/EstadodecambiosenelpatrimonionetoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2020-01-21#domainItemType"
+  },
+  "http://www.bbva.es/20241231#SalidaDeFlujosDeEfectivoPorActivosNoCorrientesYPasivosMantenidosVenta": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OutflowsOfCashFromInvestingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OutflowsOfCashFromInvestingActivities",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 238.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 5.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OutflowsOfCashFromInvestingActivities",
+     "role": "http://www.bbva.es/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#TransferenciasEntreComponentesDelPatrimonioNeto": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#Equity"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "http://www.bbva.es/20241231#CambiosEnElPatrimonioNetoDistintosAlResultadoGlobalTotal",
+      "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#ChangesInEquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#StatementOfChangesInEquityLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#StatementOfChangesInEquityAbstract"
+     ],
+     "order": 12.0,
+     "parent": "http://www.bbva.es/20241231#CambiosEnElPatrimonioNetoDistintosAlResultadoGlobalTotal",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 12.0,
+     "parent": "http://www.bbva.es/20241231#CambiosEnElPatrimonioNetoDistintosAlResultadoGlobalTotal",
+     "role": "http://www.bbva.es/role/EstadodecambiosenelpatrimonionetoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#TransferidoAResultadosActivosNoCorrientesYGruposEnajenablesDeElementosMantenidosParaLaVenta": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "http://www.bbva.es/20241231#ActivosNoCorrientesYGruposEnajenablesDeElementosQueSeReclasificaraAResultadoClasificadosComoMantenidosParaLaVenta",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 206.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "http://www.bbva.es/20241231#ActivosNoCorrientesYGruposEnajenablesDeElementosQueSeReclasificaraAResultadoClasificadosComoMantenidosParaLaVenta",
+     "role": "http://www.bbva.es/role/EstadodelresultadoglobalcomponentesORIpresentadosantesdeimpuestosStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#ValoresRepresentativosDeDeudaACosteAmortizado": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtAmortisedCost"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtAmortisedCost",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 19.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtAmortisedCost",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#ValoresRepresentativosDeDeudaAValorRazonableConCambiosEnOtroResultadoGlobal": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughOtherComprehensiveIncome"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughOtherComprehensiveIncome",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 16.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughOtherComprehensiveIncome",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#ValoresRepresentativosDeDeudaDesignadosAValorRazonableConCambiosEnResultados": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughProfitOrLossDesignatedAsUponInitialRecognition"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughProfitOrLossDesignatedAsUponInitialRecognition",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 13.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughProfitOrLossDesignatedAsUponInitialRecognition",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#ValoresRepresentativosDeDeudaEmitidosAValorRazonableConCambiosEnResultados": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialLiabilitiesAtFairValueThroughProfitOrLossDesignatedAsUponInitialRecognition"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialLiabilitiesAtFairValueThroughProfitOrLossDesignatedAsUponInitialRecognition",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 56.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 4.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialLiabilitiesAtFairValueThroughProfitOrLossDesignatedAsUponInitialRecognition",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#ValoresRepresentativosDeDeudaMantenidosParaNegociar": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughProfitOrLossClassifiedAsHeldForTrading"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughProfitOrLossClassifiedAsHeldForTrading",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 4.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughProfitOrLossClassifiedAsHeldForTrading",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.bbva.es/20241231#ValoresRepresentativosDeDeudaNoDestinadosANegociacionValoradosAValorRazonableConCambiosEnResultados": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [
+    {
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue",
+     "weight": 1.0
+    }
+   ],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 10.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialAssetsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue",
+     "role": "http://www.bbva.es/role/EstadodesituacinfinancieraordendeliquidezStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  }
+ },
+ "extension_namespaces": [
+  "http://www.bbva.es/20241231"
+ ],
+ "family": "FY2024",
+ "lang": "es",
+ "package": "g0-r\\R07-raw-retrieval\\evidence\\esef-BBVA-FY2024-package.zip",
+ "package_sha256": "69F04DA4F6EBE4F3072401207FF83F6EDC9D335C83DF666525594A7062D7248A",
+ "relationship_counts": {
+  "dimensionDefault": 136,
+  "dimensionDomain": 5,
+  "domainMember": 7837,
+  "hypercubeDimension": 5,
+  "parentChild": 477,
+  "summationItem": 246,
+  "widerNarrower": 119
+ },
+ "variant": "BBVA-FY2024-es"
+}

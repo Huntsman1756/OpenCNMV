@@ -1,0 +1,3269 @@
+{
+ "ext_concepts": {
+  "http://www.santander.com/20251231#StatementTable": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#IncomeStatementAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedIncomeStatements"
+    },
+    {
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#IncomeStatementAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedIncomeStatementsParenthetical"
+    },
+    {
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    },
+    {
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheetsParenthetical"
+    }
+   ],
+   "substitutionGroup": "http://xbrl.org/2005/xbrldt#hypercubeItem",
+   "type": "http://www.xbrl.org/2003/instance#stringItemType"
+  }
+ },
+ "ext_members": {
+  "http://www.santander.com/20251231#AccumulatedOtherComprehensiveIncomeAttributableToNonControllingInterests": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#AccumulatedOtherComprehensiveIncome"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAndLiabilitiesAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 22.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 22.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#AccumulatedOtherComprehensiveIncomeAttributableToNonControllingInterestsMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfEquityAxis"
+     ],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfEquityDomain"
+     ],
+     "order": 11.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfEquityDomain",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 12.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfEquityDomain",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofChangesinTotalEquity"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#domainItemType"
+  },
+  "http://www.santander.com/20251231#AdjustmentsForDecreaseIncreaseInNonTradingFinancialAssetsMandatorilyAtFairValueThroughProfitOrLoss": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#IncreaseDecreaseInWorkingCapital"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 49.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 8.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInOperatingActivitiesAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofCashFlows"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#AdjustmentsForDecreaseIncreaseInOperatingAssets": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#AdjustmentsForDecreaseIncreaseInOtherAssets"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 47.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 6.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInOperatingActivitiesAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofCashFlows"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#AdjustmentsForIncreaseDecreaseInOperatingLiabilities": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#AdjustmentsForIncreaseDecreaseInOtherLiabilities"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 54.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 13.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInOperatingActivitiesAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofCashFlows"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#AmountsTransferredToInitialCarryingAmountOfHedgedItemsBeforeTax": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossBeforeTax"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 24.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeBeforeTaxCashFlowHedges",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofRecognizedIncomeandExpense"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#ArgentinaHyperinflationaryEconomy": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#GeographicalAreasAxis"
+     ],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#GeographicalAreasDomain"
+     ],
+     "order": 0.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#GeographicalAreasDomain",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#GeographicalAreasDomain",
+     "role": "http://www.santander.com/role/ConsolidatedIncomeStatementsParenthetical"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#domainItemType"
+  },
+  "http://www.santander.com/20251231#CalledUpPaidCapital": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#IssuedCapital"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAndLiabilitiesAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#ChangesInTheFairValueOfEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeHedgedItem": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeBeforeTaxGainsLossesOnHedgingInstrumentsThatHedgeInvestmentsInEquityInstruments"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 8.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeBeforeTaxGainsLossesOnHedgingInstrumentsThatHedgeInvestmentsInEquityInstruments",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofRecognizedIncomeandExpense"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#ChangesInTheFairValueOfEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeHedgingInstrument": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeBeforeTaxGainsLossesOnHedgingInstrumentsThatHedgeInvestmentsInEquityInstruments"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 9.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeBeforeTaxGainsLossesOnHedgingInstrumentsThatHedgeInvestmentsInEquityInstruments",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofRecognizedIncomeandExpense"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#CommitmentsAndGuaranteesGivenProvisionMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfProvisionsAxis"
+     ],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfOtherProvisionsDomain"
+     ],
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfOtherProvisionsDomain",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 4.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfOtherProvisionsDomain",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#domainItemType"
+  },
+  "http://www.santander.com/20251231#CompoundFinancialInstrumentEquityComponent": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityInstrumentsHeld"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAndLiabilitiesAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 7.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 7.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#DebtInstrumentsMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialLiabilitiesAxis"
+     ],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialLiabilitiesDomain"
+     ],
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialLiabilitiesDomain",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 4.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialLiabilitiesDomain",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#domainItemType"
+  },
+  "http://www.santander.com/20251231#DepositsCentralBanksMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialLiabilitiesAxis"
+     ],
+     "chain_up": [
+      "http://www.santander.com/20251231#DepositsMember",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialLiabilitiesDomain"
+     ],
+     "order": 1.0,
+     "parent": "http://www.santander.com/20251231#DepositsMember",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "http://www.santander.com/20251231#DepositsMember",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#domainItemType"
+  },
+  "http://www.santander.com/20251231#DepositsCreditInstitutionsMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialLiabilitiesAxis"
+     ],
+     "chain_up": [
+      "http://www.santander.com/20251231#DepositsMember",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialLiabilitiesDomain"
+     ],
+     "order": 2.0,
+     "parent": "http://www.santander.com/20251231#DepositsMember",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "http://www.santander.com/20251231#DepositsMember",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#domainItemType"
+  },
+  "http://www.santander.com/20251231#DepositsCustomersMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialLiabilitiesAxis"
+     ],
+     "chain_up": [
+      "http://www.santander.com/20251231#DepositsMember",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialLiabilitiesDomain"
+     ],
+     "order": 3.0,
+     "parent": "http://www.santander.com/20251231#DepositsMember",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "http://www.santander.com/20251231#DepositsMember",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#domainItemType"
+  },
+  "http://www.santander.com/20251231#DepositsMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialLiabilitiesAxis"
+     ],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialLiabilitiesDomain"
+     ],
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialLiabilitiesDomain",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialLiabilitiesDomain",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#domainItemType"
+  },
+  "http://www.santander.com/20251231#EquityAttributableToOwnersOfParentExcludingAccumulatedOtherComprehensiveIncome": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAttributableToOwnersOfParent"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAndLiabilitiesAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#ExpensesFromInsuranceAndReinsuranceContractsRecognisedInProfitOrLoss": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#InsuranceServiceResult"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 17.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 17.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedIncomeStatements"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#FinancialAssetsReclassifiedFromFairValueWithChangesInOtherComprehensiveIncomeMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CategoriesOfFinancialAssetsAxis"
+     ],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CategoriesOfFinancialAssetsDomain"
+     ],
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CategoriesOfFinancialAssetsDomain",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 4.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CategoriesOfFinancialAssetsDomain",
+     "role": "http://www.santander.com/role/ConsolidatedIncomeStatements"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#domainItemType"
+  },
+  "http://www.santander.com/20251231#GainsLossesOnDisposalsOfNonFinancialAssetsNet": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLoss"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 30.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 30.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedIncomeStatements"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#GainsLossesOnFinancialAssetsAndLiabilitiesAtFairValueThroughProfitOrLoss": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#GrossProfit"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 11.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 11.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedIncomeStatements"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#GainsLossesOnFinancialAssetsAndLiabilitiesHeldForTrading": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#GrossProfit"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 9.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 9.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedIncomeStatements"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#GainsLossesOnFinancialAssetsAndLiabilitiesNotMeasuredAtFairValueThroughProfitOrLossNet": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#GrossProfit"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 8.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 8.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedIncomeStatements"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#GainsLossesOnNonCurrentAssetsClassifiedAsHeldForSaleBeforeTax": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 35.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "http://www.santander.com/20251231#OtherComprehensiveIncomeBeforeTaxNonCurrentAssetsClassifiedAsHeldForSale",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofRecognizedIncomeandExpense"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#GainsLossesOnNoncurrentAssetsHeldForSaleNotClassifiedAsDiscontinuedOperations": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossBeforeTax"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 32.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 32.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedIncomeStatements"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#GainsLossesOnRemeasuringHedgingInstrumentsNotDesignatedBeforeTax": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 27.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "http://www.santander.com/20251231#OtherComprehensiveIncomeBeforeTaxHedgingInstrumentsNotDesignated",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofRecognizedIncomeandExpense"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#GainsOrLossesFromHedgeAccountingNet": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#GainLossOnHedgeIneffectivenessRecognisedInProfitOrLoss"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 12.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 12.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedIncomeStatements"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#ImpairmentLossOrReversalOfImpairmentRecognisedInProfitOrLossOtherNonFinancialAssetsNet": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 29.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 29.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedIncomeStatements"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#ImpairmentLossOrReversalOfImpairmentRecognisedInProfitOrLossTangibleAssets": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 27.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 27.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedIncomeStatements"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#ImpairmentLossReversalOfImpairmentOfInvestmentsInSubsidiariesJointVenturesAndAssociatesNet": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 25.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 25.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedIncomeStatements"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#ImpairmentLossReversalOfImpairmentRecognisedInProfitOrLossNonFinancialAssetsNet": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 26.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 26.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedIncomeStatements"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#IncomeFromInsuranceAndReinsuranceContractsRecognisedInProfitOrLoss": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#InsuranceServiceResult"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 16.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 16.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedIncomeStatements"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#IncreaseDecreaseInEquityOtherThanComprehensiveIncome": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#IncreaseDecreaseThroughTransfersAndOtherChangesEquity"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityAbstract"
+     ],
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofChangesinTotalEquity"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#IncreaseDecreaseThroughTransfersBetweenEquityItems": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquity"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityAbstract"
+     ],
+     "order": 14.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 14.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofChangesinTotalEquity"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#InflowsOfCashFromFinancingActivities": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherInflowsOutflowsOfCashClassifiedAsFinancingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 82.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 8.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInFinancingActivitiesAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofCashFlows"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#InsuranceContractsLinkedToPensions": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#InsuranceContractsThatAreAssets"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#AssetsAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 23.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#AssetsAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 23.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#AssetsAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#InterestIncomeFromOtherFinancialAssetsMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CategoriesOfFinancialAssetsAxis"
+     ],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CategoriesOfFinancialAssetsDomain"
+     ],
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CategoriesOfFinancialAssetsDomain",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CategoriesOfFinancialAssetsDomain",
+     "role": "http://www.santander.com/role/ConsolidatedIncomeStatements"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#domainItemType"
+  },
+  "http://www.santander.com/20251231#InterimDividends": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#DividendPayables"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAndLiabilitiesAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 17.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 17.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#InterimDividendsMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfEquityAxis"
+     ],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfEquityDomain"
+     ],
+     "order": 9.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfEquityDomain",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 10.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfEquityDomain",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofChangesinTotalEquity"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#domainItemType"
+  },
+  "http://www.santander.com/20251231#IssuanceOfOtherFinancialInstruments": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#IssueOfEquity"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityAbstract"
+     ],
+     "order": 5.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 5.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofChangesinTotalEquity"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#IssuanceOfPreferredShares": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#IssueOfEquity"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityAbstract"
+     ],
+     "order": 4.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 4.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofChangesinTotalEquity"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#LoansAndAdvancesCentralBanksMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialAssetsAxis"
+     ],
+     "chain_up": [
+      "http://www.santander.com/20251231#LoansAndAdvancesMember",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialAssetsDomain"
+     ],
+     "order": 1.0,
+     "parent": "http://www.santander.com/20251231#LoansAndAdvancesMember",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "http://www.santander.com/20251231#LoansAndAdvancesMember",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#domainItemType"
+  },
+  "http://www.santander.com/20251231#LoansAndAdvancesCreditInstitutionsMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialAssetsAxis"
+     ],
+     "chain_up": [
+      "http://www.santander.com/20251231#LoansAndAdvancesMember",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialAssetsDomain"
+     ],
+     "order": 2.0,
+     "parent": "http://www.santander.com/20251231#LoansAndAdvancesMember",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "http://www.santander.com/20251231#LoansAndAdvancesMember",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#domainItemType"
+  },
+  "http://www.santander.com/20251231#LoansAndAdvancesCustomersMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialAssetsAxis"
+     ],
+     "chain_up": [
+      "http://www.santander.com/20251231#LoansAndAdvancesMember",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialAssetsDomain"
+     ],
+     "order": 3.0,
+     "parent": "http://www.santander.com/20251231#LoansAndAdvancesMember",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "http://www.santander.com/20251231#LoansAndAdvancesMember",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#domainItemType"
+  },
+  "http://www.santander.com/20251231#LoansAndAdvancesMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialAssetsAxis"
+     ],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialAssetsDomain"
+     ],
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialAssetsDomain",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 4.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialAssetsDomain",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#domainItemType"
+  },
+  "http://www.santander.com/20251231#MaturityOfOtherFinancialInstruments": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#IncreaseDecreaseThroughTransfersAndOtherChangesEquity"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityAbstract"
+     ],
+     "order": 6.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 6.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofChangesinTotalEquity"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#MiscellaneousOtherReserves": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherReserves"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAndLiabilitiesAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 14.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 14.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#NonControllingInterestExcludingAccumulatedOtherComprehensiveIncome": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#NoncontrollingInterests"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAndLiabilitiesAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 23.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 23.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#NonControllingInterestExcludingAccumulatedOtherComprehensiveIncomeMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfEquityAxis"
+     ],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfEquityDomain"
+     ],
+     "order": 12.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfEquityDomain",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 13.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfEquityDomain",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofChangesinTotalEquity"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#domainItemType"
+  },
+  "http://www.santander.com/20251231#NonCurrentAssetsHeldForSaleThatWillNotBeReclassifiedToProfitOrLossBeforeTax": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossBeforeTax"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 4.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 4.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofRecognizedIncomeandExpense"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#OtherCommitmentsMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialInstrumentsAxis"
+     ],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialInstrumentsDomain"
+     ],
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialInstrumentsDomain",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialInstrumentsDomain",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#domainItemType"
+  },
+  "http://www.santander.com/20251231#OtherComprehensiveIncomeBeforeTaxHedgingInstrumentsNotDesignated": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 26.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 14.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofRecognizedIncomeandExpense"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#OtherComprehensiveIncomeBeforeTaxNonCurrentAssetsClassifiedAsHeldForSale": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 34.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 16.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofRecognizedIncomeandExpense"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#OtherComprehensiveIncomeItemsThatMayBeReclassifiedToProfitOrLoss": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#AccumulatedOtherComprehensiveIncome"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAndLiabilitiesAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 20.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 20.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#OtherComprehensiveIncomeItemsThatWillNotBeReclassifiedToProfitOrLoss": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#AccumulatedOtherComprehensiveIncome"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAndLiabilitiesAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 19.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 19.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#OtherEquityInstrumentsIssued": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ReserveOfEquityComponentOfConvertibleInstruments"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAndLiabilitiesAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 8.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 8.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#OtherEquityInstrumentsIssuedMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfEquityAxis"
+     ],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfEquityDomain"
+     ],
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfEquityDomain",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfEquityDomain",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofChangesinTotalEquity"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#domainItemType"
+  },
+  "http://www.santander.com/20251231#OtherFinancialAssetsAndLiabilitiesMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#AssetsAndLiabilitiesAxis"
+     ],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#AssetsAndLiabilitiesDomain"
+     ],
+     "order": 0.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#AssetsAndLiabilitiesDomain",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#AssetsAndLiabilitiesDomain",
+     "role": "http://www.santander.com/role/ConsolidatedIncomeStatements"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#domainItemType"
+  },
+  "http://www.santander.com/20251231#OtherFinancialLiabilitiesMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialLiabilitiesAxis"
+     ],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialLiabilitiesDomain"
+     ],
+     "order": 4.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialLiabilitiesDomain",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 5.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialLiabilitiesDomain",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#domainItemType"
+  },
+  "http://www.santander.com/20251231#OtherGainsOrLossesMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CategoriesOfFinancialAssetsAxis"
+     ],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CategoriesOfFinancialAssetsDomain"
+     ],
+     "order": 5.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CategoriesOfFinancialAssetsDomain",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 6.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CategoriesOfFinancialAssetsDomain",
+     "role": "http://www.santander.com/role/ConsolidatedIncomeStatements"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#domainItemType"
+  },
+  "http://www.santander.com/20251231#OtherGeneralAdministrativeExpenses": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#AdministrativeExpense"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 21.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 21.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedIncomeStatements"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#OtherInflowsOfCashClassifiedAsFinancingActivities": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherInflowsOutflowsOfCashClassifiedAsFinancingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 86.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 12.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInFinancingActivitiesAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofCashFlows"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#OtherLongTermEmployeeBenefitsProvisionMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfProvisionsAxis"
+     ],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfOtherProvisionsDomain"
+     ],
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfOtherProvisionsDomain",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfOtherProvisionsDomain",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#domainItemType"
+  },
+  "http://www.santander.com/20251231#OtherOperatingExpense": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherOperatingIncomeExpense"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 15.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 15.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedIncomeStatements"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#OtherOperatingIncome": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherOperatingIncomeExpense"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 14.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 14.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedIncomeStatements"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#OtherOutflowsOfCashClassifiedAsFinancingActivities": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherInflowsOutflowsOfCashClassifiedAsFinancingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 81.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 7.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInFinancingActivitiesAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofCashFlows"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#OtherPaymentsOfCashClassifiedAsInvestingActivities": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherInflowsOutflowsOfCashClassifiedAsInvestingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 67.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 8.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInInvestingActivitiesAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofCashFlows"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#OtherProceedsOfCashClassifiedAsInvestingActivities": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherInflowsOutflowsOfCashClassifiedAsInvestingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 74.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 15.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInInvestingActivitiesAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofCashFlows"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#OtherReclassificationAdjustmentsOnCashFlowHedgesBeforeTax": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ReclassificationAdjustmentsOnCashFlowHedgesBeforeTax"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 25.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 4.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeBeforeTaxCashFlowHedges",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofRecognizedIncomeandExpense"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#OtherReclassificationAdjustmentsOnExchangeDifferencesOnTranslationBeforeTax": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ReclassificationAdjustmentsOnExchangeDifferencesOnTranslationBeforeTax"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 20.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofRecognizedIncomeandExpense"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#OtherReclassificationAdjustmentsOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ReclassificationAdjustmentsOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 33.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeBeforeTaxFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofRecognizedIncomeandExpense"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#OtherReclassificationAdjustmentsOnHedgesOfNetInvestmentsInForeignOperationsBeforeTax": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ReclassificationAdjustmentsOnHedgesOfNetInvestmentsInForeignOperationsBeforeTax"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 16.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeBeforeTaxHedgesOfNetInvestmentsInForeignOperations",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofRecognizedIncomeandExpense"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#OtherReclassificationAdjustmentsOnHedgingInstrumentsNotDesignatedBeforeTax": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 29.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "http://www.santander.com/20251231#OtherComprehensiveIncomeBeforeTaxHedgingInstrumentsNotDesignated",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofRecognizedIncomeandExpense"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#OtherReclassificationAdjustmentsOnNonCurrentAssetsClassifiedAsHeldForSaleBeforeTax": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 37.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "http://www.santander.com/20251231#OtherComprehensiveIncomeBeforeTaxNonCurrentAssetsClassifiedAsHeldForSale",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofRecognizedIncomeandExpense"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#OutflowsOfCashFromFinancingActivities": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherInflowsOutflowsOfCashClassifiedAsFinancingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 76.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInFinancingActivitiesAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofCashFlows"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#PaymentsToAcquireEntityShares": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#PaymentsToAcquireOrRedeemEntitysShares"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 80.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 6.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInFinancingActivitiesAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofCashFlows"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#PaymentsToRedeemEntityShares": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#PaymentsToAcquireOrRedeemEntitysShares"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 79.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 5.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInFinancingActivitiesAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofCashFlows"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#PensionsAndOtherEmploymentDefinedBenefitObligationsProvisionMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfProvisionsAxis"
+     ],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfOtherProvisionsDomain"
+     ],
+     "order": 0.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfOtherProvisionsDomain",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfOtherProvisionsDomain",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#domainItemType"
+  },
+  "http://www.santander.com/20251231#ProfitLossAttributableToShareholdersOfParent": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLoss"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAndLiabilitiesAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 16.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 16.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#ProfitLossAttributableToShareholdersOfParentMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfEquityAxis"
+     ],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfEquityDomain"
+     ],
+     "order": 8.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfEquityDomain",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 9.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfEquityDomain",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofChangesinTotalEquity"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#domainItemType"
+  },
+  "http://www.santander.com/20251231#ProvisionsAndReversalOfProvisions": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#Provisions"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 23.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 23.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedIncomeStatements"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#PurchaseOfNonCurrentAssetsAndLiabilitiesClassifiedAsHeldForSale": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInInvestingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 66.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 7.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInInvestingActivitiesAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofCashFlows"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#ReclassificationAdjustmentsOnHedgingInstrumentsNotDesignatedBeforeTax": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 28.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "http://www.santander.com/20251231#OtherComprehensiveIncomeBeforeTaxHedgingInstrumentsNotDesignated",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofRecognizedIncomeandExpense"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#ReclassificationAdjustmentsOnNonCurrentAssetsClassifiedAsHeldForSaleBeforeTax": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 36.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "http://www.santander.com/20251231#OtherComprehensiveIncomeBeforeTaxNonCurrentAssetsClassifiedAsHeldForSale",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofRecognizedIncomeandExpense"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#ReclassifiedFinancialAssetsFromAmortizedCostMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CategoriesOfFinancialAssetsAxis"
+     ],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CategoriesOfFinancialAssetsDomain"
+     ],
+     "order": 4.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CategoriesOfFinancialAssetsDomain",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 5.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CategoriesOfFinancialAssetsDomain",
+     "role": "http://www.santander.com/role/ConsolidatedIncomeStatements"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#domainItemType"
+  },
+  "http://www.santander.com/20251231#ReservesOrAccumulatedLossesInJointVenturesInvestments": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherReserves"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAndLiabilitiesAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 13.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 13.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#ShortPositionsMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialLiabilitiesAxis"
+     ],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialLiabilitiesDomain"
+     ],
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialLiabilitiesDomain",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfFinancialLiabilitiesDomain",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#domainItemType"
+  },
+  "http://www.santander.com/20251231#StatementLineItems": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 0.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract",
+     "usable": "true"
+    },
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#IncomeStatementAbstract"
+     ],
+     "order": 0.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#IncomeStatementAbstract",
+     "usable": "true"
+    },
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 0.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract",
+     "usable": "true"
+    },
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#IncomeStatementAbstract"
+     ],
+     "order": 0.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#IncomeStatementAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "http://www.santander.com/20251231#StatementTable",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheetsParenthetical"
+    },
+    {
+     "order": 2.0,
+     "parent": "http://www.santander.com/20251231#StatementTable",
+     "role": "http://www.santander.com/role/ConsolidatedIncomeStatementsParenthetical"
+    },
+    {
+     "order": 3.0,
+     "parent": "http://www.santander.com/20251231#StatementTable",
+     "role": "http://www.santander.com/role/ConsolidatedIncomeStatements"
+    },
+    {
+     "order": 6.0,
+     "parent": "http://www.santander.com/20251231#StatementTable",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#stringItemType"
+  },
+  "http://www.santander.com/20251231#TangibleAssets": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#NoncurrentAssets"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#AssetsAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 13.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#AssetsAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 13.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#AssetsAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#TaxAssets": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#Assets"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#AssetsAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 19.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#AssetsAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 19.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#AssetsAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#TaxLiabilities": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#Liabilities"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#LiabilitiesAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAndLiabilitiesAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 8.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#LiabilitiesAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 8.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#LiabilitiesAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#TaxesAndOtherLegalContingenciesProvisionMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfProvisionsAxis"
+     ],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfOtherProvisionsDomain"
+     ],
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfOtherProvisionsDomain",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ClassesOfOtherProvisionsDomain",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#domainItemType"
+  },
+  "http://www.santander.com/20251231#TransferFromEquityToLiabilities": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#IncreaseDecreaseThroughTransfersAndOtherChangesEquity"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityAbstract"
+     ],
+     "order": 12.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 12.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofChangesinTotalEquity"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#TransferFromLiabilitiesToEquity": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#IncreaseDecreaseThroughTransfersAndOtherChangesEquity"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityAbstract"
+     ],
+     "order": 13.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 13.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedStatementsofChangesinTotalEquity"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.santander.com/20251231#UnpaidCapitalCalledUp": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#IssuedCapital"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAndLiabilitiesAbstract",
+      "http://www.santander.com/20251231#StatementLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfFinancialPositionAbstract"
+     ],
+     "order": 4.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 4.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAbstract",
+     "role": "http://www.santander.com/role/ConsolidatedBalanceSheets"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  }
+ },
+ "extension_namespaces": [
+  "http://www.santander.com/20251231"
+ ],
+ "family": "FY2025",
+ "lang": "en",
+ "package": "g1\\G1-A-oam-variant-discovery\\evidence\\esef-SAN-FY2025-en.zip",
+ "package_sha256": "77AC614A42C974965E04FD882A329952AF393554B93B2873F1C021646ED95198",
+ "relationship_counts": {
+  "dimensionDefault": 138,
+  "dimensionDomain": 12,
+  "domainMember": 8010,
+  "hypercubeDimension": 14,
+  "parentChild": 509,
+  "summationItem": 0,
+  "widerNarrower": 68
+ },
+ "variant": "SAN-FY2025-en"
+}

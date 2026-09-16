@@ -313,8 +313,21 @@ extension QNames even where ns identical — justified empirically);
 2,448/2,453 `VARIANT_ONLY` driven by extension dim members. Determinism:
 capture A==B, extraction run1==run2, dataset rebuild identical.
 `LANGUAGE_VARIANT_COVERAGE_UNRESOLVED` is closed for the in-scope corpus.
-Next open target: per-variant independent substitution (lifecycle) and
-anchoring-based extension mapping.
+
+**G1-C `EXTENSION_VARIANT_IDENTITY`: PASS**
+(`g1/G1-C-extension-variant-identity/`, 8/8 checks). Cross-variant pairing
+of issuer-extension elements (fact concepts + dimension members) on
+structural DTS evidence only — anchoring sets, XBRL properties,
+presentation/calculation/definition path signatures; two-tier (unordered →
+order-disambiguated), mutually-unique required, labels never read. Verdicts:
+415 PROVEN_EQUIVALENT / 11 AMBIGUOUS (real shared-signature cases) /
+2 CONFLICT / 21 UNMATCHED. Mapped re-comparison of G1-B baseline:
+UNMAPPED 4,239→132, VARIANT_ONLY 2,453→6, MATCH_EXACT 3,549→6,822,
+NUMERIC_EQUIVALENT 1→9, DIVERGENT 1→1 (BBVA ±98M preserved, no new
+divergences). Determinism: structure run1==run2, mapping + mapped dataset
+rebuilds byte-identical.
+Next open target (G1-D): `VARIANT_LIFECYCLE_FALSIFICATION` — a substitution
+touching one submitted variant but not the other.
 
 ## Session hygiene
 

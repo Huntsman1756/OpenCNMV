@@ -1,0 +1,1923 @@
+{
+ "ext_concepts": {
+  "http://www.iberdrola.com/20251231#ComponentesDelTotalResultadoGlobalAxis": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "http://www.iberdrola.com/20251231#ComponentesDelTotalResultadoGlobalTable",
+     "role": "http://www.iberdrola.com/role/EstadodelresultadoglobalcomponentesORIpresentadosnetosdeimpuestosStatement"
+    }
+   ],
+   "substitutionGroup": "http://xbrl.org/2005/xbrldt#dimensionItem",
+   "type": "http://www.xbrl.org/2003/instance#stringItemType"
+  },
+  "http://www.iberdrola.com/20251231#ComponentesDelTotalResultadoGlobalTable": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfComprehensiveIncomeAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodelresultadoglobalcomponentesORIpresentadosnetosdeimpuestosStatement"
+    }
+   ],
+   "substitutionGroup": "http://xbrl.org/2005/xbrldt#hypercubeItem",
+   "type": "http://www.xbrl.org/2003/instance#stringItemType"
+  },
+  "http://www.iberdrola.com/20251231#DeudaConEntidadesDeCreditoYObligacionesUOtrosValoresNegociables": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 5.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInFinancingActivitiesAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#stringItemType"
+  },
+  "http://www.iberdrola.com/20251231#InstrumentosDeCapitalConCaracteristicasDePasivoFinanciero": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 7.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInFinancingActivitiesAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#stringItemType"
+  },
+  "http://www.iberdrola.com/20251231#ObligacionesPerpetuasSubordinadas": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 4.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInFinancingActivitiesAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#stringItemType"
+  },
+  "http://www.iberdrola.com/20251231#PasivosFinancierosPorArrendamiento": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 6.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInFinancingActivitiesAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#stringItemType"
+  },
+  "http://www.iberdrola.com/20251231#VariacionDeCapitalCirculante": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 4.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInOperatingActivitiesAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#stringItemType"
+  }
+ },
+ "ext_members": {
+  "http://www.iberdrola.com/20251231#AjustesPorCambioDeValor": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAttributableToOwnersOfParent"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 32.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAttributableToOwnersOfParent",
+     "role": "http://www.iberdrola.com/role/EstadodesituacinfinancieracorrientenocorrienteStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#AjustesPorCambiosDeValorMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfEquityAxis"
+     ],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAttributableToOwnersOfParentMember",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfEquityDomain"
+     ],
+     "order": 7.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAttributableToOwnersOfParentMember",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 7.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAttributableToOwnersOfParentMember",
+     "role": "http://www.iberdrola.com/role/EstadodecambiosenelpatrimonionetoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#domainItemType"
+  },
+  "http://www.iberdrola.com/20251231#AmortizacionesProvisionesCorreccionesValorativasActivosFinancierosYGastosDePersonalPorPensiones": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#AdjustmentsForReconcileProfitLoss"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 98.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#AdjustmentsForReconcileProfitLossAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#BeneficioBrutoDeExplotacionEbitda": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossFromOperatingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 80.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 10.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodelresultadoglobalderesultadospornaturalezadelgastoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#CarteraDeValoresNoCorrientes": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#NoncurrentFinancialAssets"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 10.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 11.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#NoncurrentAssetsAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodesituacinfinancieracorrientenocorrienteStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#CobroPagoPorActivosFinancierosCorrientes": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInInvestingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 122.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 13.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInInvestingActivitiesAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#CobrosPagosPorCarteraDeValores": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OutflowsOfCashFromInvestingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 120.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 11.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInInvestingActivitiesAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#CobrosPagosPorOtrasInversiones": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OutflowsOfCashFromInvestingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 121.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 12.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInInvestingActivitiesAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#CombustibleNuclear": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CurrentAssets"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 18.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CurrentAssetsAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodesituacinfinancieracorrientenocorrienteStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#CorreccionValorativaDeDeudoresComercialesYActivosDeContrato": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossFromOperatingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 81.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 11.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodelresultadoglobalderesultadospornaturalezadelgastoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#DeudasConEntidadesDeCreditoYObligacionesUOtrosValoresNegociables": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#NoncurrentFinancialLiabilities"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 45.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 7.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#NoncurrentLiabilitiesAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodesituacinfinancieracorrientenocorrienteStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#DeudasConEntidadesDeCreditoYObligacionesUOtrosValoresNegociablesCorrientes": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CurrentFinancialLiabilities"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 59.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 6.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CurrentLiabilitiesAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodesituacinfinancieracorrientenocorrienteStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#DeudoresComercialesYOtrosActivosCorrientes": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CurrentAssets"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 23.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 7.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CurrentAssetsAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodesituacinfinancieracorrientenocorrienteStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#DevengoDeInteresesDeObligacionesPerpetuasSubordinadas": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#IncreaseDecreaseThroughTransfersAndOtherChangesEquity"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "http://www.iberdrola.com/20251231#OtrasVariacionesEnElPatrimonioNetoAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityAbstract"
+     ],
+     "order": 4.0,
+     "parent": "http://www.iberdrola.com/20251231#OtrasVariacionesEnElPatrimonioNetoAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 4.0,
+     "parent": "http://www.iberdrola.com/20251231#OtrasVariacionesEnElPatrimonioNetoAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodecambiosenelpatrimonionetoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#DistribucionDeResultadosDelEjercicioAnterior": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#DividendsPaid"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "http://www.iberdrola.com/20251231#OperacionesConSociosYPropietatiosAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityAbstract"
+     ],
+     "order": 3.0,
+     "parent": "http://www.iberdrola.com/20251231#OperacionesConSociosYPropietatiosAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "http://www.iberdrola.com/20251231#OperacionesConSociosYPropietatiosAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodecambiosenelpatrimonionetoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#EfectoFiscalDeOtrosResultadosGlobalesAImputarALosEstadosConsolidadosDeResultadosEnLosProximosEjerciciosCoberturaFlujosDeEfectivo": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLoss"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTaxAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityAbstract"
+     ],
+     "order": 4.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTaxAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 4.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTaxAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodelresultadoglobalcomponentesORIpresentadosnetosdeimpuestosStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#EmisionDeInstrumentosDeCapitalConCaracteristicasDePasivoFinanciero": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInFinancingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 138.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "http://www.iberdrola.com/20251231#InstrumentosDeCapitalConCaracteristicasDePasivoFinanciero",
+     "role": "http://www.iberdrola.com/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#EmisionDeObligacionesPerpetuasSubordinadas": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#IncreaseDecreaseThroughTransfersAndOtherChangesEquity"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "http://www.iberdrola.com/20251231#OtrasVariacionesEnElPatrimonioNetoAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityAbstract"
+     ],
+     "order": 2.0,
+     "parent": "http://www.iberdrola.com/20251231#OtrasVariacionesEnElPatrimonioNetoAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "http://www.iberdrola.com/20251231#OtrasVariacionesEnElPatrimonioNetoAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodecambiosenelpatrimonionetoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#EmisionDeObligacionesPerpetuasSubordinadas.": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInFinancingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 130.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "http://www.iberdrola.com/20251231#ObligacionesPerpetuasSubordinadas",
+     "role": "http://www.iberdrola.com/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#EmisionesYDisposicionesDeDeudasConEntidadesDeCreditoYObligacionesUOtrosValoresNegociables": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInFinancingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 133.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "http://www.iberdrola.com/20251231#DeudaConEntidadesDeCreditoYObligacionesUOtrosValoresNegociables",
+     "role": "http://www.iberdrola.com/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#GananciasPerdidasPorAccionBasicasYDiluidasProvenientesDeActividadesDiscontinuadas": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#BasicEarningsLossPerShare"
+   ],
+   "anchors_to": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#BasicEarningsLossPerShareFromDiscontinuedOperations",
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#DilutedEarningsLossPerShareFromDiscontinuedOperations"
+   ],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 96.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EarningsPerShareAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodelresultadoglobalderesultadospornaturalezadelgastoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#perShareItemType"
+  },
+  "http://www.iberdrola.com/20251231#GastoOperativoNeto": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossFromOperatingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 78.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 8.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodelresultadoglobalderesultadospornaturalezadelgastoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#GastosDeServicios": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossFromOperatingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 76.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 6.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ProfitLossAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodelresultadoglobalderesultadospornaturalezadelgastoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#InstalacionesCedidasYFinanciadasPorTerceros": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#NoncurrentLiabilities"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 40.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#NoncurrentLiabilitiesAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodesituacinfinancieracorrientenocorrienteStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#InstrumentosDeCapitalConCaracteristicasDePasivoFinancieroCorriente": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CurrentFinancialLiabilities"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 60.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 7.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CurrentLiabilitiesAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodesituacinfinancieracorrientenocorrienteStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#InstrumentosDeCapitalConCaracteristicasDePasivoFinancieroNoCorriente": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherNoncurrentFinancialLiabilities"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 46.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 8.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#NoncurrentLiabilitiesAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodesituacinfinancieracorrientenocorrienteStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#InteresesPagadosDeObligacionesPerpetuasSubordinadas": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInFinancingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 132.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "http://www.iberdrola.com/20251231#ObligacionesPerpetuasSubordinadas",
+     "role": "http://www.iberdrola.com/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#InteresesPagadosExcluidosInteresesCapitalizadosDeDeudasConEntidadesDeCreditoYObligacionesUOtrosValoresNegociables": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInFinancingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 135.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "http://www.iberdrola.com/20251231#DeudaConEntidadesDeCreditoYObligacionesUOtrosValoresNegociables",
+     "role": "http://www.iberdrola.com/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#InteresesPagadosExcluidosInteresesCapitalizadosDePasivosFinancierosPorArrendamiento": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 137.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "http://www.iberdrola.com/20251231#PasivosFinancierosPorArrendamiento",
+     "role": "http://www.iberdrola.com/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#OperacionesConSociosYPropietatiosAbstract": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityAbstract"
+     ],
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodecambiosenelpatrimonionetoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#stringItemType"
+  },
+  "http://www.iberdrola.com/20251231#OtrasReservasIndisponiblesMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfEquityAxis"
+     ],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAttributableToOwnersOfParentMember",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfEquityDomain"
+     ],
+     "order": 5.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAttributableToOwnersOfParentMember",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 5.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAttributableToOwnersOfParentMember",
+     "role": "http://www.iberdrola.com/role/EstadodecambiosenelpatrimonionetoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#domainItemType"
+  },
+  "http://www.iberdrola.com/20251231#OtrasVariacionesEnElPatrimonioNetoAbstract": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityAbstract"
+     ],
+     "order": 4.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 4.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodecambiosenelpatrimonionetoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#stringItemType"
+  },
+  "http://www.iberdrola.com/20251231#OtrosResultadosGlobalesAImputarALosEstadosConsolidadosDeResultadosEnLosProximosEjerciciosEnAjustesPorCambioDeValor": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTaxAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityAbstract"
+     ],
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTaxAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTaxAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodelresultadoglobalcomponentesORIpresentadosnetosdeimpuestosStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#OtrosResultadosGlobalesAImputarALosEstadosConsolidadosDeResultadosEnLosProximosEjerciciosEnVariacionDelCosteDeLaCobertura": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTaxAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityAbstract"
+     ],
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTaxAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTaxAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodelresultadoglobalcomponentesORIpresentadosnetosdeimpuestosStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#OtrosResultadosGlobalesDeLasSociedadesContabilizadasPorElMetodoDeParticipacionNetoDeImpuestos": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityAbstract"
+     ],
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodelresultadoglobalcomponentesORIpresentadosnetosdeimpuestosStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#stringItemType"
+  },
+  "http://www.iberdrola.com/20251231#OtrosResultadosGlobalesDeLasSociedadesContabilizadasPorElMetodoDeParticipacionNetoDeImpuestosEnAjustesPorCambiosDeValor": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncome"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "http://www.iberdrola.com/20251231#OtrosResultadosGlobalesDeLasSociedadesContabilizadasPorElMetodoDeParticipacionNetoDeImpuestos",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityAbstract"
+     ],
+     "order": 1.0,
+     "parent": "http://www.iberdrola.com/20251231#OtrosResultadosGlobalesDeLasSociedadesContabilizadasPorElMetodoDeParticipacionNetoDeImpuestos",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "http://www.iberdrola.com/20251231#OtrosResultadosGlobalesDeLasSociedadesContabilizadasPorElMetodoDeParticipacionNetoDeImpuestos",
+     "role": "http://www.iberdrola.com/role/EstadodelresultadoglobalcomponentesORIpresentadosnetosdeimpuestosStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#OtrosResultadosGlobalesQueNoSeImputaranALosEstadosConsolidadosDeResultadosEnLosProximosEjerciciosEnOtrasReservas": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTaxAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityAbstract"
+     ],
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTaxAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTaxAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodelresultadoglobalcomponentesORIpresentadosnetosdeimpuestosStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#PagoDePrincipalDePasivosFinancierosPorArrendamiento": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 136.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "http://www.iberdrola.com/20251231#PasivosFinancierosPorArrendamiento",
+     "role": "http://www.iberdrola.com/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#PagosDeInstrumentosDeCapitalConCaracteristicasDePasivoFinanciero": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#PaymentsOfOtherEquityInstruments"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 139.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "http://www.iberdrola.com/20251231#InstrumentosDeCapitalConCaracteristicasDePasivoFinanciero",
+     "role": "http://www.iberdrola.com/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#PagosDeProvisiones": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherInflowsOutflowsOfCashClassifiedAsOperatingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 106.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 5.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInOperatingActivitiesAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#PagosPorGastosDePersonalActivados": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OutflowsOfCashFromInvestingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 118.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 9.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInInvestingActivitiesAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#PropiedadPlantaYEquipoEnExplotacion": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#PropertyPlantAndEquipment"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 5.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 6.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#NoncurrentAssetsAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodesituacinfinancieracorrientenocorrienteStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#ReembolsoDeDeudasConEntidadesDeCreditoYObligacionesUOtrosValoresNegociables": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInFinancingActivities"
+   ],
+   "anchors_to": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#RepaymentsOfCurrentBorrowings",
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#RepaymentsOfNoncurrentBorrowings"
+   ],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 134.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "http://www.iberdrola.com/20251231#DeudaConEntidadesDeCreditoYObligacionesUOtrosValoresNegociables",
+     "role": "http://www.iberdrola.com/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#ReembolsoDeObligacionesPerpetuasSubordinadas": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#IncreaseDecreaseThroughTransfersAndOtherChangesEquity"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "http://www.iberdrola.com/20251231#OtrasVariacionesEnElPatrimonioNetoAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityAbstract"
+     ],
+     "order": 3.0,
+     "parent": "http://www.iberdrola.com/20251231#OtrasVariacionesEnElPatrimonioNetoAbstract",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "http://www.iberdrola.com/20251231#OtrasVariacionesEnElPatrimonioNetoAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodecambiosenelpatrimonionetoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#ReembolsoDeObligacionesPerpetuasSubordinadas.": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInFinancingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 131.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "http://www.iberdrola.com/20251231#ObligacionesPerpetuasSubordinadas",
+     "role": "http://www.iberdrola.com/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#Reservas": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#Equity"
+   ],
+   "anchors_to": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherReserves",
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#RetainedEarnings",
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#SharePremium",
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatutoryReserve"
+   ],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 33.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAttributableToOwnersOfParent",
+     "role": "http://www.iberdrola.com/role/EstadodesituacinfinancieracorrientenocorrienteStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#ResultadoAntesDeImpuestosDeActividadesDiscontinuadas": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInOperatingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 97.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInOperatingActivitiesAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#ResultadoNetoDePeriodo": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAttributableToOwnersOfParent"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 36.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "instant",
+   "pres_parents": [
+    {
+     "order": 6.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAttributableToOwnersOfParent",
+     "role": "http://www.iberdrola.com/role/EstadodesituacinfinancieracorrientenocorrienteStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#ResultadoNetoDelPeriodoMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfEquityAxis"
+     ],
+     "chain_up": [
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAttributableToOwnersOfParentMember",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ComponentsOfEquityDomain"
+     ],
+     "order": 9.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAttributableToOwnersOfParentMember",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 9.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#EquityAttributableToOwnersOfParentMember",
+     "role": "http://www.iberdrola.com/role/EstadodecambiosenelpatrimonionetoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#domainItemType"
+  },
+  "http://www.iberdrola.com/20251231#SubvencionesAplicadasYOtrosIngresosDiferidos": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#AdjustmentsForReconcileProfitLoss"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 100.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#AdjustmentsForReconcileProfitLossAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#TotalDeOtrosResultadosGlobalesDeLasSociedadesContabilizadasPorElMetodoDeParticipacionNetoDeImpuestos": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncome"
+   ],
+   "anchors_to": [],
+   "balance": "credit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "http://www.iberdrola.com/20251231#OtrosResultadosGlobalesDeLasSociedadesContabilizadasPorElMetodoDeParticipacionNetoDeImpuestos",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#OtherComprehensiveIncomeAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#ChangesInEquityAbstract",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityLineItems",
+      "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfChangesInEquityAbstract"
+     ],
+     "order": 2.0,
+     "parent": "http://www.iberdrola.com/20251231#OtrosResultadosGlobalesDeLasSociedadesContabilizadasPorElMetodoDeParticipacionNetoDeImpuestos",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 2.0,
+     "parent": "http://www.iberdrola.com/20251231#OtrosResultadosGlobalesDeLasSociedadesContabilizadasPorElMetodoDeParticipacionNetoDeImpuestos",
+     "role": "http://www.iberdrola.com/role/EstadodelresultadoglobalcomponentesORIpresentadosnetosdeimpuestosStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#TotalResultadoGlobalMember": {
+   "abstract": true,
+   "anchored_from": [],
+   "anchors_to": [],
+   "balance": null,
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 1.0,
+     "parent": "http://www.iberdrola.com/20251231#ComponentesDelTotalResultadoGlobalAxis",
+     "role": "http://www.iberdrola.com/role/EstadodelresultadoglobalcomponentesORIpresentadosnetosdeimpuestosStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/dtr/type/2022-03-31#domainItemType"
+  },
+  "http://www.iberdrola.com/20251231#VariacionDeEfectivoYOtrosActivosLiquidosEquivalentesProcedentesDeActivosYPasivosMantenidosParaLaVenta": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#IncreaseDecreaseInCashAndCashEquivalents"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 147.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 6.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#StatementOfCashFlowsAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  },
+  "http://www.iberdrola.com/20251231#VariacionDelEfectivoPorModificacionDelPerimetroDeConsolidacion": {
+   "abstract": false,
+   "anchored_from": [
+    "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInInvestingActivities"
+   ],
+   "anchors_to": [],
+   "balance": "debit",
+   "calc_children": [],
+   "calc_parents": [],
+   "member_paths": [
+    {
+     "axes": [],
+     "chain_up": [
+      "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder"
+     ],
+     "order": 112.0,
+     "parent": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor#LineItemsNotDimensionallyQualifiedPlaceholder",
+     "usable": "true"
+    }
+   ],
+   "nillable": true,
+   "periodType": "duration",
+   "pres_parents": [
+    {
+     "order": 3.0,
+     "parent": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full#CashFlowsFromUsedInInvestingActivitiesAbstract",
+     "role": "http://www.iberdrola.com/role/EstadodeflujosdeefectivomtodoindirectoStatement"
+    }
+   ],
+   "substitutionGroup": "http://www.xbrl.org/2003/instance#item",
+   "type": "http://www.xbrl.org/2003/instance#monetaryItemType"
+  }
+ },
+ "extension_namespaces": [
+  "http://www.iberdrola.com/20251231"
+ ],
+ "family": "FY2025",
+ "lang": "es",
+ "package": "g0-r\\R07-raw-retrieval\\evidence\\esef-IBE-FY2025-package.zip",
+ "package_sha256": "066FDAF835AD6E81F0FF77EACB571F5D2A09F9FB42788FBC12D7041D2E51E05A",
+ "relationship_counts": {
+  "dimensionDefault": 139,
+  "dimensionDomain": 3,
+  "domainMember": 7904,
+  "hypercubeDimension": 5,
+  "parentChild": 418,
+  "summationItem": 0,
+  "widerNarrower": 55
+ },
+ "variant": "IBE-FY2025-es"
+}

@@ -1,0 +1,104 @@
+{
+ "checks": {
+  "adversarial_ambiguity_control": {
+   "candidate_counts": {
+    "ns-es#A": 2,
+    "ns-es#B": 2
+   },
+   "detail": "identical signatures must yield AMBIGUOUS, never a pairing",
+   "pass": true
+  }
+ },
+ "results": [
+  {
+   "dim_members_en": 28,
+   "dim_members_es": 28,
+   "extension_namespaces": {
+    "en": [
+     "http://www.santander.com/20241231"
+    ],
+    "es": [
+     "http://www.santanderbank.com/20241231"
+    ]
+   },
+   "fact_concepts_en": 72,
+   "fact_concepts_es": 72,
+   "filing": "SAN-FY2024",
+   "mapping_sha256": "1d4b3b63932e3efd54ee2899cf9e9470b3225e7c5f1c62c339b2b872d9c5b38e",
+   "structure_en_sha256": "09d78ab139212c87480e14c34434d7eebfc08ab8cd6bbbbe7c4d1b3195f300ed",
+   "structure_es_sha256": "200d89a1ce7ce4007827de72f8e096d98db2126fd9987d6b17fca512c36ef414",
+   "verdict_counts": {
+    "CONFLICT": 2,
+    "PROVEN_EQUIVALENT": 96,
+    "UNMATCHED": 10
+   }
+  },
+  {
+   "dim_members_en": 27,
+   "dim_members_es": 27,
+   "extension_namespaces": {
+    "en": [
+     "http://www.santander.com/20251231"
+    ],
+    "es": [
+     "http://www.santander.com/20251231"
+    ]
+   },
+   "fact_concepts_en": 68,
+   "fact_concepts_es": 68,
+   "filing": "SAN-FY2025",
+   "mapping_sha256": "bf29473a27d1d8d3dda0acaf5375442d67433b67c2a916bc6d034bc3dc5afe58",
+   "structure_en_sha256": "01e14070278324f01fb189337890db00855cc3821dc2309c17ed446e47c13c19",
+   "structure_es_sha256": "2ad4efd6fd782be0d7dc371c8275b3dacdb236d77040fcbfcdae7845501d2300",
+   "verdict_counts": {
+    "PROVEN_EQUIVALENT": 97
+   }
+  },
+  {
+   "dim_members_en": 5,
+   "dim_members_es": 5,
+   "extension_namespaces": {
+    "en": [
+     "http://www.bbva.es/20241231"
+    ],
+    "es": [
+     "http://www.bbva.es/20241231"
+    ]
+   },
+   "fact_concepts_en": 119,
+   "fact_concepts_es": 119,
+   "filing": "BBVA-FY2024",
+   "mapping_sha256": "eee8380b30cd8cce17f4fe1125f6fee7bc60c28e68029a5f350b693ba95b96da",
+   "structure_en_sha256": "5e3a32cc8f31dd2e47252bf8dcf3c53634634bb63c2447400bd95c068dcefc2f",
+   "structure_es_sha256": "1bc002cc82203abf49b7f1e8233bb3620199415a8a06357fdf58db220488a6ec",
+   "verdict_counts": {
+    "AMBIGUOUS": 1,
+    "PROVEN_EQUIVALENT": 123,
+    "UNMATCHED": 1
+   }
+  },
+  {
+   "dim_members_en": 5,
+   "dim_members_es": 5,
+   "extension_namespaces": {
+    "en": [
+     "http://www.bbva.es/20251231"
+    ],
+    "es": [
+     "http://www.bbva.es/20251231"
+    ]
+   },
+   "fact_concepts_en": 108,
+   "fact_concepts_es": 108,
+   "filing": "BBVA-FY2025",
+   "mapping_sha256": "38a79e829a61f4bf2ed89b1bc061e9a0f87a8f0c2e1973e114e1536f5621941a",
+   "structure_en_sha256": "52412a8236d80c9ab470af5aa941b2dece4ac09842a98793e5f0b0315ebad09d",
+   "structure_es_sha256": "00d9fe0b29f474cb664dc5060b1cca926f73a389294ac3cf7cd3034cf0ab746c",
+   "verdict_counts": {
+    "AMBIGUOUS": 10,
+    "PROVEN_EQUIVALENT": 99,
+    "UNMATCHED": 10
+   }
+  }
+ ]
+}

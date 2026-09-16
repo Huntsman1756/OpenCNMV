@@ -1,0 +1,55 @@
+{
+ "checks": {
+  "adversarial_ambiguity_control": {
+   "candidate_counts": {
+    "ns-es#A": 2,
+    "ns-es#B": 2
+   },
+   "detail": "identical signatures must yield AMBIGUOUS, never a pairing",
+   "pass": true
+  },
+  "bbva_equity_98m_divergent_preserved": {
+   "observed": {
+    "en": "-98000000",
+    "es": "98000000"
+   },
+   "pass": true
+  },
+  "mapped_dataset_deterministic": {
+   "pass": true,
+   "sha256": "e6a5fcb3ce81cee04a90310dea136113329d58bc3df05d5ad6586ae83f52ab4d"
+  },
+  "mapping_dataset_deterministic": {
+   "mismatched": [],
+   "pass": true
+  },
+  "natural_ambiguity_present": {
+   "ambiguous_verdicts_in_corpus": 11,
+   "note": "shared-anchor same-structure elements must not be paired",
+   "pass": true
+  },
+  "no_new_divergences_vs_baseline": {
+   "baseline_divergent": 1,
+   "mapped_divergent": 1,
+   "pass": true
+  },
+  "only_proven_pairs_have_pair_id": {
+   "pass": true,
+   "proven": 415
+  },
+  "structure_extraction_deterministic": {
+   "mismatched": [],
+   "pass": true,
+   "run1": 10,
+   "run2": 10
+  }
+ },
+ "gate": "G1-C EXTENSION_VARIANT_IDENTITY",
+ "mapping_verdicts": {
+  "AMBIGUOUS": 11,
+  "CONFLICT": 2,
+  "PROVEN_EQUIVALENT": 415,
+  "UNMATCHED": 21
+ },
+ "verdict": "PASS"
+}

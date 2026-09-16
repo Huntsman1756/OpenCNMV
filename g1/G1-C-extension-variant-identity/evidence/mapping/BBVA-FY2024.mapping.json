@@ -1,0 +1,2949 @@
+{
+ "filing": "BBVA-FY2024",
+ "records": [
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#ActuarialGainsOrLossesOnDefinedBenefitPensionPlansThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfDebtInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfFinancialLiabilitiesAtFairValueThroughProfitOrLossAttributableToChangesInTheirCreditRisk",
+     "http://www.bbva.es/20241231#ForeignCurrencyTranslationThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgeIneffectivenessOfFairValueHedgesForEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgeOfNetInvestmentsInForeignOperationsEffectivePortionThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgingDerivativesCashFlowHedgesEffectivePortionThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgingInstrumentsNonDesignatedItemsThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#ShareOfOtherRecognizedIncomeAndExpenseOfInvestmentsInJointVenturesAndAssociatesThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#ShareOfOtherRecognizedIncomeAndExpenseOfInvestmentsInJointVenturesAndAssociatesThatWillNotBeReclassifiedToProfitOrLoss"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#ActivosNoCorrientesYGruposEnajenablesDeElementosClasificadosComoMantenidosParaLaVentaQueNoSeReclasificaranEnResultados::http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleThatWillNotBeReclassifiedToProfitOrLoss",
+   "source_qname": "http://www.bbva.es/20241231#ActivosNoCorrientesYGruposEnajenablesDeElementosClasificadosComoMantenidosParaLaVentaQueNoSeReclasificaranEnResultados",
+   "target_qname": "http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleThatWillNotBeReclassifiedToProfitOrLoss",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#ActuarialGainsOrLossesOnDefinedBenefitPensionPlansThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfDebtInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfFinancialLiabilitiesAtFairValueThroughProfitOrLossAttributableToChangesInTheirCreditRisk",
+     "http://www.bbva.es/20241231#ForeignCurrencyTranslationThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgeIneffectivenessOfFairValueHedgesForEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgeOfNetInvestmentsInForeignOperationsEffectivePortionThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgingDerivativesCashFlowHedgesEffectivePortionThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgingInstrumentsNonDesignatedItemsThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#ShareOfOtherRecognizedIncomeAndExpenseOfInvestmentsInJointVenturesAndAssociatesThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#ShareOfOtherRecognizedIncomeAndExpenseOfInvestmentsInJointVenturesAndAssociatesThatWillNotBeReclassifiedToProfitOrLoss"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#ActivosNoCorrientesYGruposEnajenablesDeElementosClasificadosComoMantenidosParaLaVentaQuePuedenReclasificarseEnResultados::http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleThatMayBeReclassifiedToProfitOrLoss",
+   "source_qname": "http://www.bbva.es/20241231#ActivosNoCorrientesYGruposEnajenablesDeElementosClasificadosComoMantenidosParaLaVentaQuePuedenReclasificarseEnResultados",
+   "target_qname": "http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleThatMayBeReclassifiedToProfitOrLoss",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#ActivosNoCorrientesYGruposEnajenablesDeElementosMantenidosParaLaVentaQueNoSeReclasificaranEnResultadosMantenidosParaLaVenta::http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsHeldForSaleThatWillNotBeReclassifiedToProfitOrLossNetOfTax",
+   "source_qname": "http://www.bbva.es/20241231#ActivosNoCorrientesYGruposEnajenablesDeElementosMantenidosParaLaVentaQueNoSeReclasificaranEnResultadosMantenidosParaLaVenta",
+   "target_qname": "http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsHeldForSaleThatWillNotBeReclassifiedToProfitOrLossNetOfTax",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#ActivosNoCorrientesYGruposEnajenablesDeElementosQueSeReclasificaraAResultadoClasificadosComoMantenidosParaLaVenta::http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsHeldForSaleThatWillBeReclassifiedToProfitOrLossNetOfTax",
+   "source_qname": "http://www.bbva.es/20241231#ActivosNoCorrientesYGruposEnajenablesDeElementosQueSeReclasificaraAResultadoClasificadosComoMantenidosParaLaVenta",
+   "target_qname": "http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsHeldForSaleThatWillBeReclassifiedToProfitOrLossNetOfTax",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#ActivosPorImpuestos::http://www.bbva.es/20241231#TaxAssets",
+   "source_qname": "http://www.bbva.es/20241231#ActivosPorImpuestos",
+   "target_qname": "http://www.bbva.es/20241231#TaxAssets",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#ActivosTangibles::http://www.bbva.es/20241231#TangibleAssets",
+   "source_qname": "http://www.bbva.es/20241231#ActivosTangibles",
+   "target_qname": "http://www.bbva.es/20241231#TangibleAssets",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#OtherTangibleAssetsLeasedOutUnderAnOperatingLease",
+     "http://www.bbva.es/20241231#TangibleAssetsForOwnUse"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#ActivosTangiblesCedidosEnArrendamientoOperativo::http://www.bbva.es/20241231#OtherTangibleAssetsLeasedOutUnderAnOperatingLease",
+   "source_qname": "http://www.bbva.es/20241231#ActivosTangiblesCedidosEnArrendamientoOperativo",
+   "target_qname": "http://www.bbva.es/20241231#OtherTangibleAssetsLeasedOutUnderAnOperatingLease",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#OtherTangibleAssetsLeasedOutUnderAnOperatingLease",
+     "http://www.bbva.es/20241231#TangibleAssetsForOwnUse"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#ActivosTangiblesDeUsoPropio::http://www.bbva.es/20241231#TangibleAssetsForOwnUse",
+   "source_qname": "http://www.bbva.es/20241231#ActivosTangiblesDeUsoPropio",
+   "target_qname": "http://www.bbva.es/20241231#TangibleAssetsForOwnUse",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#OtherPaymentsRelatingToFinancingActivities",
+     "http://www.bbva.es/20241231#TreasuryStockAcquisitionsFromFinancingActivities",
+     "http://www.bbva.es/20241231#TreasuryStockAmortizationFromFinancingActivities"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#AdquisicionDeInstrumentosDePatrimonioPropio::http://www.bbva.es/20241231#TreasuryStockAcquisitionsFromFinancingActivities",
+   "source_qname": "http://www.bbva.es/20241231#AdquisicionDeInstrumentosDePatrimonioPropio",
+   "target_qname": "http://www.bbva.es/20241231#TreasuryStockAcquisitionsFromFinancingActivities",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#IncreaseDecreaseInFinancialLiabilitiesAtAmortizedCost",
+     "http://www.bbva.es/20241231#IncreaseDecreaseInOtherFinancialLiabilitiesDesignatedAtFairValueThroughProfitOrLoss"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#AjustePorIncrementoDecrementoDeLosPasivosFinancierosCosteAmortizado::http://www.bbva.es/20241231#IncreaseDecreaseInFinancialLiabilitiesAtAmortizedCost",
+   "source_qname": "http://www.bbva.es/20241231#AjustePorIncrementoDecrementoDeLosPasivosFinancierosCosteAmortizado",
+   "target_qname": "http://www.bbva.es/20241231#IncreaseDecreaseInFinancialLiabilitiesAtAmortizedCost",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#IncreaseDecreaseInFinancialLiabilitiesAtAmortizedCost",
+     "http://www.bbva.es/20241231#IncreaseDecreaseInOtherFinancialLiabilitiesDesignatedAtFairValueThroughProfitOrLoss"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#AjustePorIncrementoDecrementoDeLosPasivosFinancierosDesignadosValorRazonableCambiosResultados::http://www.bbva.es/20241231#IncreaseDecreaseInOtherFinancialLiabilitiesDesignatedAtFairValueThroughProfitOrLoss",
+   "source_qname": "http://www.bbva.es/20241231#AjustePorIncrementoDecrementoDeLosPasivosFinancierosDesignadosValorRazonableCambiosResultados",
+   "target_qname": "http://www.bbva.es/20241231#IncreaseDecreaseInOtherFinancialLiabilitiesDesignatedAtFairValueThroughProfitOrLoss",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#OtherPaymentsRelatingToFinancingActivities",
+     "http://www.bbva.es/20241231#TreasuryStockAcquisitionsFromFinancingActivities",
+     "http://www.bbva.es/20241231#TreasuryStockAmortizationFromFinancingActivities"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#AmortizacionInstrumentosPatrimonioPropio::http://www.bbva.es/20241231#TreasuryStockAmortizationFromFinancingActivities",
+   "source_qname": "http://www.bbva.es/20241231#AmortizacionInstrumentosPatrimonioPropio",
+   "target_qname": "http://www.bbva.es/20241231#TreasuryStockAmortizationFromFinancingActivities",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#NetIncreaseDecreaseInFinancialAssetsAtAmortizedCost",
+     "http://www.bbva.es/20241231#NetIncreaseDecreaseInFinancialAssetsAtFairValueThroughOtherComprehensiveIncome",
+     "http://www.bbva.es/20241231#NetIncreaseDecreaseInNonTradingFinancialAssetsMandatorilyAtFairValueThroughProfitOrLoss",
+     "http://www.bbva.es/20241231#NetIncreaseDecreaseInOtherFinancialAssetsDesignatedAtFairValueThroughProfitOrLoss"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#AumentoDisminucionDeActivosFinancierosACosteAmortizado::http://www.bbva.es/20241231#NetIncreaseDecreaseInFinancialAssetsAtAmortizedCost",
+   "source_qname": "http://www.bbva.es/20241231#AumentoDisminucionDeActivosFinancierosACosteAmortizado",
+   "target_qname": "http://www.bbva.es/20241231#NetIncreaseDecreaseInFinancialAssetsAtAmortizedCost",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#NetIncreaseDecreaseInFinancialAssetsAtAmortizedCost",
+     "http://www.bbva.es/20241231#NetIncreaseDecreaseInFinancialAssetsAtFairValueThroughOtherComprehensiveIncome",
+     "http://www.bbva.es/20241231#NetIncreaseDecreaseInNonTradingFinancialAssetsMandatorilyAtFairValueThroughProfitOrLoss",
+     "http://www.bbva.es/20241231#NetIncreaseDecreaseInOtherFinancialAssetsDesignatedAtFairValueThroughProfitOrLoss"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#AumentoDisminucionDeActivosFinancierosAValorRazonableConCambiosEnOtroResultadoGlobal::http://www.bbva.es/20241231#NetIncreaseDecreaseInFinancialAssetsAtFairValueThroughOtherComprehensiveIncome",
+   "source_qname": "http://www.bbva.es/20241231#AumentoDisminucionDeActivosFinancierosAValorRazonableConCambiosEnOtroResultadoGlobal",
+   "target_qname": "http://www.bbva.es/20241231#NetIncreaseDecreaseInFinancialAssetsAtFairValueThroughOtherComprehensiveIncome",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#NetIncreaseDecreaseInFinancialAssetsAtAmortizedCost",
+     "http://www.bbva.es/20241231#NetIncreaseDecreaseInFinancialAssetsAtFairValueThroughOtherComprehensiveIncome",
+     "http://www.bbva.es/20241231#NetIncreaseDecreaseInNonTradingFinancialAssetsMandatorilyAtFairValueThroughProfitOrLoss",
+     "http://www.bbva.es/20241231#NetIncreaseDecreaseInOtherFinancialAssetsDesignatedAtFairValueThroughProfitOrLoss"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#AumentoDisminucionDeActivosFinancierosDesignadosAValorRazonableConCambiosEnResultados::http://www.bbva.es/20241231#NetIncreaseDecreaseInOtherFinancialAssetsDesignatedAtFairValueThroughProfitOrLoss",
+   "source_qname": "http://www.bbva.es/20241231#AumentoDisminucionDeActivosFinancierosDesignadosAValorRazonableConCambiosEnResultados",
+   "target_qname": "http://www.bbva.es/20241231#NetIncreaseDecreaseInOtherFinancialAssetsDesignatedAtFairValueThroughProfitOrLoss",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#NetIncreaseDecreaseInFinancialAssetsAtAmortizedCost",
+     "http://www.bbva.es/20241231#NetIncreaseDecreaseInFinancialAssetsAtFairValueThroughOtherComprehensiveIncome",
+     "http://www.bbva.es/20241231#NetIncreaseDecreaseInNonTradingFinancialAssetsMandatorilyAtFairValueThroughProfitOrLoss",
+     "http://www.bbva.es/20241231#NetIncreaseDecreaseInOtherFinancialAssetsDesignatedAtFairValueThroughProfitOrLoss"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#AumentoDisminucionDeLosActivosFinancierosNoDestinadosANegociacionValoradosObligatoriamenteAValorRazonableConCambiosEnResultados::http://www.bbva.es/20241231#NetIncreaseDecreaseInNonTradingFinancialAssetsMandatorilyAtFairValueThroughProfitOrLoss",
+   "source_qname": "http://www.bbva.es/20241231#AumentoDisminucionDeLosActivosFinancierosNoDestinadosANegociacionValoradosObligatoriamenteAValorRazonableConCambiosEnResultados",
+   "target_qname": "http://www.bbva.es/20241231#NetIncreaseDecreaseInNonTradingFinancialAssetsMandatorilyAtFairValueThroughProfitOrLoss",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#AumentoDisminucionNetoDeLosActivosDeExplotacion::http://www.bbva.es/20241231#NetIncreaseDecreaseInOperatingAssetsFromOperatingActivities",
+   "source_qname": "http://www.bbva.es/20241231#AumentoDisminucionNetoDeLosActivosDeExplotacion",
+   "target_qname": "http://www.bbva.es/20241231#NetIncreaseDecreaseInOperatingAssetsFromOperatingActivities",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#AumentoDisminucionNetoDeLosPasivosDeExplotacion::http://www.bbva.es/20241231#NetIncreaseDecreaseInOperatingLiabilitiesFromOperatingActivities",
+   "source_qname": "http://www.bbva.es/20241231#AumentoDisminucionNetoDeLosPasivosDeExplotacion",
+   "target_qname": "http://www.bbva.es/20241231#NetIncreaseDecreaseInOperatingLiabilitiesFromOperatingActivities",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#ActuarialGainsOrLossesOnDefinedBenefitPensionPlansThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfDebtInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfFinancialLiabilitiesAtFairValueThroughProfitOrLossAttributableToChangesInTheirCreditRisk",
+     "http://www.bbva.es/20241231#ForeignCurrencyTranslationThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgeIneffectivenessOfFairValueHedgesForEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgeOfNetInvestmentsInForeignOperationsEffectivePortionThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgingDerivativesCashFlowHedgesEffectivePortionThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgingInstrumentsNonDesignatedItemsThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#ShareOfOtherRecognizedIncomeAndExpenseOfInvestmentsInJointVenturesAndAssociatesThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#ShareOfOtherRecognizedIncomeAndExpenseOfInvestmentsInJointVenturesAndAssociatesThatWillNotBeReclassifiedToProfitOrLoss"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#CambiosDelValorRazonableDeLosInstrumentosDeDeudaValoradosAValorRazonableConCambiosEnOtroResultadoGlobal::http://www.bbva.es/20241231#FairValueChangesOfDebtInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatMayBeReclassifiedToProfitOrLoss",
+   "source_qname": "http://www.bbva.es/20241231#CambiosDelValorRazonableDeLosInstrumentosDeDeudaValoradosAValorRazonableConCambiosEnOtroResultadoGlobal",
+   "target_qname": "http://www.bbva.es/20241231#FairValueChangesOfDebtInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatMayBeReclassifiedToProfitOrLoss",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#ActuarialGainsOrLossesOnDefinedBenefitPensionPlansThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfDebtInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfFinancialLiabilitiesAtFairValueThroughProfitOrLossAttributableToChangesInTheirCreditRisk",
+     "http://www.bbva.es/20241231#ForeignCurrencyTranslationThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgeIneffectivenessOfFairValueHedgesForEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgeOfNetInvestmentsInForeignOperationsEffectivePortionThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgingDerivativesCashFlowHedgesEffectivePortionThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgingInstrumentsNonDesignatedItemsThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#ShareOfOtherRecognizedIncomeAndExpenseOfInvestmentsInJointVenturesAndAssociatesThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#ShareOfOtherRecognizedIncomeAndExpenseOfInvestmentsInJointVenturesAndAssociatesThatWillNotBeReclassifiedToProfitOrLoss"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#CambiosDelValorRazonableDeLosInstrumentosDePatrimonioValoradosAValorRazonableConCambiosEnOtroResultadoGlobal::http://www.bbva.es/20241231#FairValueChangesOfEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+   "source_qname": "http://www.bbva.es/20241231#CambiosDelValorRazonableDeLosInstrumentosDePatrimonioValoradosAValorRazonableConCambiosEnOtroResultadoGlobal",
+   "target_qname": "http://www.bbva.es/20241231#FairValueChangesOfEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#ActuarialGainsOrLossesOnDefinedBenefitPensionPlansThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfDebtInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfFinancialLiabilitiesAtFairValueThroughProfitOrLossAttributableToChangesInTheirCreditRisk",
+     "http://www.bbva.es/20241231#ForeignCurrencyTranslationThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgeIneffectivenessOfFairValueHedgesForEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgeOfNetInvestmentsInForeignOperationsEffectivePortionThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgingDerivativesCashFlowHedgesEffectivePortionThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgingInstrumentsNonDesignatedItemsThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#ShareOfOtherRecognizedIncomeAndExpenseOfInvestmentsInJointVenturesAndAssociatesThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#ShareOfOtherRecognizedIncomeAndExpenseOfInvestmentsInJointVenturesAndAssociatesThatWillNotBeReclassifiedToProfitOrLoss"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#CambiosDelValorRazonableDeLosPasivosFinancierosAValorRazonableConCambiosEnResultadosAtribuiblesACambiosEnElRiesgoDeCredito::http://www.bbva.es/20241231#FairValueChangesOfFinancialLiabilitiesAtFairValueThroughProfitOrLossAttributableToChangesInTheirCreditRisk",
+   "source_qname": "http://www.bbva.es/20241231#CambiosDelValorRazonableDeLosPasivosFinancierosAValorRazonableConCambiosEnResultadosAtribuiblesACambiosEnElRiesgoDeCredito",
+   "target_qname": "http://www.bbva.es/20241231#FairValueChangesOfFinancialLiabilitiesAtFairValueThroughProfitOrLossAttributableToChangesInTheirCreditRisk",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#CambiosEnElPatrimonioNetoDistintosAlResultadoGlobalTotal::http://www.bbva.es/20241231#ChangesInEquityOtherThanTotalIncomeOrExpenseRecognized",
+   "source_qname": "http://www.bbva.es/20241231#CambiosEnElPatrimonioNetoDistintosAlResultadoGlobalTotal",
+   "target_qname": "http://www.bbva.es/20241231#ChangesInEquityOtherThanTotalIncomeOrExpenseRecognized",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#PaidUpCapital",
+     "http://www.bbva.es/20241231#UnpaidCapitalWhichHasBeenCalledUp"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#CapitalDesembolsado::http://www.bbva.es/20241231#PaidUpCapital",
+   "source_qname": "http://www.bbva.es/20241231#CapitalDesembolsado",
+   "target_qname": "http://www.bbva.es/20241231#PaidUpCapital",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#PaidUpCapital",
+     "http://www.bbva.es/20241231#UnpaidCapitalWhichHasBeenCalledUp"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#CapitalNoDesembolsadoExigido::http://www.bbva.es/20241231#UnpaidCapitalWhichHasBeenCalledUp",
+   "source_qname": "http://www.bbva.es/20241231#CapitalNoDesembolsadoExigido",
+   "target_qname": "http://www.bbva.es/20241231#UnpaidCapitalWhichHasBeenCalledUp",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#ActuarialGainsOrLossesOnDefinedBenefitPensionPlansThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfDebtInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfFinancialLiabilitiesAtFairValueThroughProfitOrLossAttributableToChangesInTheirCreditRisk",
+     "http://www.bbva.es/20241231#ForeignCurrencyTranslationThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgeIneffectivenessOfFairValueHedgesForEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgeOfNetInvestmentsInForeignOperationsEffectivePortionThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgingDerivativesCashFlowHedgesEffectivePortionThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgingInstrumentsNonDesignatedItemsThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#ShareOfOtherRecognizedIncomeAndExpenseOfInvestmentsInJointVenturesAndAssociatesThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#ShareOfOtherRecognizedIncomeAndExpenseOfInvestmentsInJointVenturesAndAssociatesThatWillNotBeReclassifiedToProfitOrLoss"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#CoberturaDeInversionesNetasEnNegociosEnElExtranjeroPorcionEfectiva::http://www.bbva.es/20241231#HedgeOfNetInvestmentsInForeignOperationsEffectivePortionThatMayBeReclassifiedToProfitOrLoss",
+   "source_qname": "http://www.bbva.es/20241231#CoberturaDeInversionesNetasEnNegociosEnElExtranjeroPorcionEfectiva",
+   "target_qname": "http://www.bbva.es/20241231#HedgeOfNetInvestmentsInForeignOperationsEffectivePortionThatMayBeReclassifiedToProfitOrLoss",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#InsuranceContractsLinkedToPensions",
+     "http://www.bbva.es/20241231#RestOfOtherAssets"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#ContratosDeSegurosVinculadosAPensiones::http://www.bbva.es/20241231#InsuranceContractsLinkedToPensions",
+   "source_qname": "http://www.bbva.es/20241231#ContratosDeSegurosVinculadosAPensiones",
+   "target_qname": "http://www.bbva.es/20241231#InsuranceContractsLinkedToPensions",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#ActuarialGainsOrLossesOnDefinedBenefitPensionPlansThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfDebtInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfFinancialLiabilitiesAtFairValueThroughProfitOrLossAttributableToChangesInTheirCreditRisk",
+     "http://www.bbva.es/20241231#ForeignCurrencyTranslationThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgeIneffectivenessOfFairValueHedgesForEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgeOfNetInvestmentsInForeignOperationsEffectivePortionThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgingDerivativesCashFlowHedgesEffectivePortionThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgingInstrumentsNonDesignatedItemsThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#ShareOfOtherRecognizedIncomeAndExpenseOfInvestmentsInJointVenturesAndAssociatesThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#ShareOfOtherRecognizedIncomeAndExpenseOfInvestmentsInJointVenturesAndAssociatesThatWillNotBeReclassifiedToProfitOrLoss"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#ConversionDeDivisas::http://www.bbva.es/20241231#ForeignCurrencyTranslationThatMayBeReclassifiedToProfitOrLoss",
+   "source_qname": "http://www.bbva.es/20241231#ConversionDeDivisas",
+   "target_qname": "http://www.bbva.es/20241231#ForeignCurrencyTranslationThatMayBeReclassifiedToProfitOrLoss",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#DelQueEfectoDeHiperinflaccionDeLasActividadesDeExplotacion::http://www.bbva.es/20241231#OfWhichHyperinflationEffectFromOperatingActivities",
+   "source_qname": "http://www.bbva.es/20241231#DelQueEfectoDeHiperinflaccionDeLasActividadesDeExplotacion",
+   "target_qname": "http://www.bbva.es/20241231#OfWhichHyperinflationEffectFromOperatingActivities",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#DelQueEfectoDeHiperinflaccionDeLasActividadesDeFinanciacion::http://www.bbva.es/20241231#OfWhichHyperinflationEffectFromFinancingActivities",
+   "source_qname": "http://www.bbva.es/20241231#DelQueEfectoDeHiperinflaccionDeLasActividadesDeFinanciacion",
+   "target_qname": "http://www.bbva.es/20241231#OfWhichHyperinflationEffectFromFinancingActivities",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#DelQueEfectoDeHiperinflaccionDeLasActividadesDeInversion::http://www.bbva.es/20241231#OfWhichHyperinflationEffectFromInvestingActivities",
+   "source_qname": "http://www.bbva.es/20241231#DelQueEfectoDeHiperinflaccionDeLasActividadesDeInversion",
+   "target_qname": "http://www.bbva.es/20241231#OfWhichHyperinflationEffectFromInvestingActivities",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "candidates": [
+    "http://www.bbva.es/20241231#CustomerDepositsDesignatedAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently",
+    "http://www.bbva.es/20241231#DebtCertificatesAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently",
+    "http://www.bbva.es/20241231#DepositsFromCreditInstitutionsAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently",
+    "http://www.bbva.es/20241231#OtherFinancialLiabilitiesAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently"
+   ],
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "ordered_candidates": [],
+   "source_qname": "http://www.bbva.es/20241231#DepositosDeBancosCentralesAValorRazonableConCambiosEnResultados",
+   "target_qname": null,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#CustomerDepositsHeldForTrading",
+     "http://www.bbva.es/20241231#DepositsFromCentralBanksHeldForTrading",
+     "http://www.bbva.es/20241231#DepositsFromCreditInstitutionsHeldForTrading",
+     "http://www.bbva.es/20241231#ShortPositionsFinancialLiabiltiesHeldForTrading"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#DepositosDeBancosCentralesMantenidosParaNegociar::http://www.bbva.es/20241231#DepositsFromCentralBanksHeldForTrading",
+   "source_qname": "http://www.bbva.es/20241231#DepositosDeBancosCentralesMantenidosParaNegociar",
+   "target_qname": "http://www.bbva.es/20241231#DepositsFromCentralBanksHeldForTrading",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#CustomerDepositsDesignatedAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently",
+     "http://www.bbva.es/20241231#DebtCertificatesAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently",
+     "http://www.bbva.es/20241231#DepositsFromCreditInstitutionsAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently",
+     "http://www.bbva.es/20241231#OtherFinancialLiabilitiesAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#DepositosDeEntidadesDeCreditoAValorRazonableConCambiosEnResultados::http://www.bbva.es/20241231#DepositsFromCreditInstitutionsAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently",
+   "source_qname": "http://www.bbva.es/20241231#DepositosDeEntidadesDeCreditoAValorRazonableConCambiosEnResultados",
+   "target_qname": "http://www.bbva.es/20241231#DepositsFromCreditInstitutionsAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#CustomerDepositsHeldForTrading",
+     "http://www.bbva.es/20241231#DepositsFromCentralBanksHeldForTrading",
+     "http://www.bbva.es/20241231#DepositsFromCreditInstitutionsHeldForTrading",
+     "http://www.bbva.es/20241231#ShortPositionsFinancialLiabiltiesHeldForTrading"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#DepositosDeEntidadesDeCreditoMantenidosParaNegociar::http://www.bbva.es/20241231#DepositsFromCreditInstitutionsHeldForTrading",
+   "source_qname": "http://www.bbva.es/20241231#DepositosDeEntidadesDeCreditoMantenidosParaNegociar",
+   "target_qname": "http://www.bbva.es/20241231#DepositsFromCreditInstitutionsHeldForTrading",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#CustomerDepositsDesignatedAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently",
+     "http://www.bbva.es/20241231#DebtCertificatesAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently",
+     "http://www.bbva.es/20241231#DepositsFromCreditInstitutionsAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently",
+     "http://www.bbva.es/20241231#OtherFinancialLiabilitiesAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#CustomerDepositsDesignatedAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently::http://www.bbva.es/20241231#DepositosDeLaClientelaAValorRazonableConCambiosEnResultados",
+   "source_qname": "http://www.bbva.es/20241231#DepositosDeLaClientelaAValorRazonableConCambiosEnResultados",
+   "target_qname": "http://www.bbva.es/20241231#CustomerDepositsDesignatedAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#CustomerDepositsHeldForTrading",
+     "http://www.bbva.es/20241231#DepositsFromCentralBanksHeldForTrading",
+     "http://www.bbva.es/20241231#DepositsFromCreditInstitutionsHeldForTrading",
+     "http://www.bbva.es/20241231#ShortPositionsFinancialLiabiltiesHeldForTrading"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#CustomerDepositsHeldForTrading::http://www.bbva.es/20241231#DepositosDeLaClientelaMantenidosParaNegociar",
+   "source_qname": "http://www.bbva.es/20241231#DepositosDeLaClientelaMantenidosParaNegociar",
+   "target_qname": "http://www.bbva.es/20241231#CustomerDepositsHeldForTrading",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "direction": "en_only",
+   "evidence": [
+    "ANCHOR",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "source_qname": "http://www.bbva.es/20241231#DepositsFromCentralBanksAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently",
+   "target_qname": null,
+   "verdict": "UNMATCHED"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#ActuarialGainsOrLossesOnDefinedBenefitPensionPlansThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfDebtInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfFinancialLiabilitiesAtFairValueThroughProfitOrLossAttributableToChangesInTheirCreditRisk",
+     "http://www.bbva.es/20241231#ForeignCurrencyTranslationThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgeIneffectivenessOfFairValueHedgesForEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgeOfNetInvestmentsInForeignOperationsEffectivePortionThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgingDerivativesCashFlowHedgesEffectivePortionThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgingInstrumentsNonDesignatedItemsThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#ShareOfOtherRecognizedIncomeAndExpenseOfInvestmentsInJointVenturesAndAssociatesThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#ShareOfOtherRecognizedIncomeAndExpenseOfInvestmentsInJointVenturesAndAssociatesThatWillNotBeReclassifiedToProfitOrLoss"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#DerivadosDeCoberturaCoberturaDeFlujosDeEfectivoPorcionEfectiva::http://www.bbva.es/20241231#HedgingDerivativesCashFlowHedgesEffectivePortionThatMayBeReclassifiedToProfitOrLoss",
+   "source_qname": "http://www.bbva.es/20241231#DerivadosDeCoberturaCoberturaDeFlujosDeEfectivoPorcionEfectiva",
+   "target_qname": "http://www.bbva.es/20241231#HedgingDerivativesCashFlowHedgesEffectivePortionThatMayBeReclassifiedToProfitOrLoss",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#DeterioroActivosFinancierosAValorRazonableConCambiosEnOtroResultadoGlobal::http://www.bbva.es/20241231#ImpairmentLossOnFinancialAssetsAtFairValueThroughOtherComprehensiveIncome",
+   "source_qname": "http://www.bbva.es/20241231#DeterioroActivosFinancierosAValorRazonableConCambiosEnOtroResultadoGlobal",
+   "target_qname": "http://www.bbva.es/20241231#ImpairmentLossOnFinancialAssetsAtFairValueThroughOtherComprehensiveIncome",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#ImpairmentOrReversalOfImpairmentOnNonFinancialTangibleAssets",
+     "http://www.bbva.es/20241231#ImpairmentOrReversalOfImpairmentOnOtherNonFinancialAssets"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#DeterioroActivosTangiblesNoFinancieros::http://www.bbva.es/20241231#ImpairmentOrReversalOfImpairmentOnNonFinancialTangibleAssets",
+   "source_qname": "http://www.bbva.es/20241231#DeterioroActivosTangiblesNoFinancieros",
+   "target_qname": "http://www.bbva.es/20241231#ImpairmentOrReversalOfImpairmentOnNonFinancialTangibleAssets",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#DeterioroDelValorOReversionDelDeterioroDelValorDeActivosNoFinancieros::http://www.bbva.es/20241231#ImpairmentOrReversalOfImpairmentOnNonFinancialAssets",
+   "source_qname": "http://www.bbva.es/20241231#DeterioroDelValorOReversionDelDeterioroDelValorDeActivosNoFinancieros",
+   "target_qname": "http://www.bbva.es/20241231#ImpairmentOrReversalOfImpairmentOnNonFinancialAssets",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#GainsLossesFromNonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleNotQualifyingAsDiscontinuedOperations",
+     "http://www.bbva.es/20241231#GainsLossesOnDerecognitionOfNonFinancialAssetsAndSubsidiariesNet",
+     "http://www.bbva.es/20241231#ImpairmentOrReversalOfImpairmentOfInvestmentsInJointVenturesAndAssociates",
+     "http://www.bbva.es/20241231#NegativeGoodwillRecognizedInProfitOrLoss"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#DeterioroDelValorOReversionDelDeterioroDelValorDeInversionesEnNegociosConjuntosOAsociadas::http://www.bbva.es/20241231#ImpairmentOrReversalOfImpairmentOfInvestmentsInJointVenturesAndAssociates",
+   "source_qname": "http://www.bbva.es/20241231#DeterioroDelValorOReversionDelDeterioroDelValorDeInversionesEnNegociosConjuntosOAsociadas",
+   "target_qname": "http://www.bbva.es/20241231#ImpairmentOrReversalOfImpairmentOfInvestmentsInJointVenturesAndAssociates",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#ImpairmentOrReversalOfImpairmentOnNonFinancialTangibleAssets",
+     "http://www.bbva.es/20241231#ImpairmentOrReversalOfImpairmentOnOtherNonFinancialAssets"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#DeterioroOtrosActivosNoFinancieros::http://www.bbva.es/20241231#ImpairmentOrReversalOfImpairmentOnOtherNonFinancialAssets",
+   "source_qname": "http://www.bbva.es/20241231#DeterioroOtrosActivosNoFinancieros",
+   "target_qname": "http://www.bbva.es/20241231#ImpairmentOrReversalOfImpairmentOnOtherNonFinancialAssets",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#EquityInstrumentsIssuedOtherThanCapital",
+     "http://www.bbva.es/20241231#InterimDividend",
+     "http://www.bbva.es/20241231#ProfitLossAttributableToOwnersOfParent"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#DividendoACuenta::http://www.bbva.es/20241231#InterimDividend",
+   "source_qname": "http://www.bbva.es/20241231#DividendoACuenta",
+   "target_qname": "http://www.bbva.es/20241231#InterimDividend",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#EquityInstrumentsIssuedOtherThanCapitalMember",
+     "http://www.bbva.es/20241231#InterimDividendMember",
+     "http://www.bbva.es/20241231#ProfitLossAttributableToOwnersOfParentMember"
+    ]
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#DividendoACuentaMember::http://www.bbva.es/20241231#InterimDividendMember",
+   "source_qname": "http://www.bbva.es/20241231#DividendoACuentaMember",
+   "target_qname": "http://www.bbva.es/20241231#InterimDividendMember",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#IssueOfCommonShares",
+     "http://www.bbva.es/20241231#IssueOfPreferredShares",
+     "http://www.bbva.es/20241231#SettlementOrMaturityOfOtherEquityInstrumentsIssued",
+     "http://www.bbva.es/20241231#TransfersWithinTotalEquity"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#EjercicioOVencimientoDeOtrosInstrumentosDePatrimonioEmitidos::http://www.bbva.es/20241231#SettlementOrMaturityOfOtherEquityInstrumentsIssued",
+   "source_qname": "http://www.bbva.es/20241231#EjercicioOVencimientoDeOtrosInstrumentosDePatrimonioEmitidos",
+   "target_qname": "http://www.bbva.es/20241231#SettlementOrMaturityOfOtherEquityInstrumentsIssued",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#ElementosQueNoSeReclasificaranEnResultados::http://www.bbva.es/20241231#ItemsThatWillNotBeReclassifiedToProfitOrLoss",
+   "source_qname": "http://www.bbva.es/20241231#ElementosQueNoSeReclasificaranEnResultados",
+   "target_qname": "http://www.bbva.es/20241231#ItemsThatWillNotBeReclassifiedToProfitOrLoss",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#ElementosQuePuedenReclasificarseEnResultados::http://www.bbva.es/20241231#ItemsThatMayBeReclassifiedToProfitOrLoss",
+   "source_qname": "http://www.bbva.es/20241231#ElementosQuePuedenReclasificarseEnResultados",
+   "target_qname": "http://www.bbva.es/20241231#ItemsThatMayBeReclassifiedToProfitOrLoss",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#IssueOfCommonShares",
+     "http://www.bbva.es/20241231#IssueOfPreferredShares",
+     "http://www.bbva.es/20241231#SettlementOrMaturityOfOtherEquityInstrumentsIssued",
+     "http://www.bbva.es/20241231#TransfersWithinTotalEquity"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#EmisionDeAccionesOrdinarias::http://www.bbva.es/20241231#IssueOfCommonShares",
+   "source_qname": "http://www.bbva.es/20241231#EmisionDeAccionesOrdinarias",
+   "target_qname": "http://www.bbva.es/20241231#IssueOfCommonShares",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#IssueOfCommonShares",
+     "http://www.bbva.es/20241231#IssueOfPreferredShares",
+     "http://www.bbva.es/20241231#SettlementOrMaturityOfOtherEquityInstrumentsIssued",
+     "http://www.bbva.es/20241231#TransfersWithinTotalEquity"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#EmisionDeAccionesPreferentes::http://www.bbva.es/20241231#IssueOfPreferredShares",
+   "source_qname": "http://www.bbva.es/20241231#EmisionDeAccionesPreferentes",
+   "target_qname": "http://www.bbva.es/20241231#IssueOfPreferredShares",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#CollectionsTreasurySharesDisposal",
+     "http://www.bbva.es/20241231#OtherItemsRelatingToFinancingActivities"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#CollectionsTreasurySharesDisposal::http://www.bbva.es/20241231#EnajenacionDeInstrumentosDePatrimonioPropio",
+   "source_qname": "http://www.bbva.es/20241231#EnajenacionDeInstrumentosDePatrimonioPropio",
+   "target_qname": "http://www.bbva.es/20241231#CollectionsTreasurySharesDisposal",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#CollectionsFromFinancingActivities::http://www.bbva.es/20241231#EntradasDeEfectivoProcedentesDeActividadesDeFinanciacion",
+   "source_qname": "http://www.bbva.es/20241231#EntradasDeEfectivoProcedentesDeActividadesDeFinanciacion",
+   "target_qname": "http://www.bbva.es/20241231#CollectionsFromFinancingActivities",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#GainsLossesFromNonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleNotQualifyingAsDiscontinuedOperations",
+     "http://www.bbva.es/20241231#GainsLossesOnDerecognitionOfNonFinancialAssetsAndSubsidiariesNet",
+     "http://www.bbva.es/20241231#ImpairmentOrReversalOfImpairmentOfInvestmentsInJointVenturesAndAssociates",
+     "http://www.bbva.es/20241231#NegativeGoodwillRecognizedInProfitOrLoss"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#FondoDeComercioNegativoReconocidoEnResultados::http://www.bbva.es/20241231#NegativeGoodwillRecognizedInProfitOrLoss",
+   "source_qname": "http://www.bbva.es/20241231#FondoDeComercioNegativoReconocidoEnResultados",
+   "target_qname": "http://www.bbva.es/20241231#NegativeGoodwillRecognizedInProfitOrLoss",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#FondosPropios::http://www.bbva.es/20241231#ShareholdersEquity",
+   "source_qname": "http://www.bbva.es/20241231#FondosPropios",
+   "target_qname": "http://www.bbva.es/20241231#ShareholdersEquity",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#ActuarialGainsOrLossesOnDefinedBenefitPensionPlansThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfDebtInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfFinancialLiabilitiesAtFairValueThroughProfitOrLossAttributableToChangesInTheirCreditRisk",
+     "http://www.bbva.es/20241231#ForeignCurrencyTranslationThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgeIneffectivenessOfFairValueHedgesForEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgeOfNetInvestmentsInForeignOperationsEffectivePortionThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgingDerivativesCashFlowHedgesEffectivePortionThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgingInstrumentsNonDesignatedItemsThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#ShareOfOtherRecognizedIncomeAndExpenseOfInvestmentsInJointVenturesAndAssociatesThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#ShareOfOtherRecognizedIncomeAndExpenseOfInvestmentsInJointVenturesAndAssociatesThatWillNotBeReclassifiedToProfitOrLoss"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#ActuarialGainsOrLossesOnDefinedBenefitPensionPlansThatWillNotBeReclassifiedToProfitOrLoss::http://www.bbva.es/20241231#GananciasPerdidasActuarialesEnPlanesDePensionesDePrestacionesDefinidas",
+   "source_qname": "http://www.bbva.es/20241231#GananciasPerdidasActuarialesEnPlanesDePensionesDePrestacionesDefinidas",
+   "target_qname": "http://www.bbva.es/20241231#ActuarialGainsOrLossesOnDefinedBenefitPensionPlansThatWillNotBeReclassifiedToProfitOrLoss",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#GainsLossesOnDerecognitionOfFinancialAssetsAtAmortizedCost",
+     "http://www.bbva.es/20241231#GainsLossesOnDerecognitionOfOtherFinancialAssetsAndLiabilities",
+     "http://www.bbva.es/20241231#ReclassificationOfFinancialAssetsFromAmortizedCostToHeldForTrading",
+     "http://www.bbva.es/20241231#ReclassificationOfFinancialAssetsFromFairValueThroughOtherComprehensiveIncomeToHeldForTrading",
+     "http://www.bbva.es/20241231#ReclassificationOfOtherGainsLossesToHeldForTrading"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#GainsLossesOnDerecognitionOfFinancialAssetsAtAmortizedCost::http://www.bbva.es/20241231#GananciasPerdidasAlDarDeBajaActivosFinancierosACosteAmortizado",
+   "source_qname": "http://www.bbva.es/20241231#GananciasPerdidasAlDarDeBajaActivosFinancierosACosteAmortizado",
+   "target_qname": "http://www.bbva.es/20241231#GainsLossesOnDerecognitionOfFinancialAssetsAtAmortizedCost",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#GainsLossesFromNonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleNotQualifyingAsDiscontinuedOperations",
+     "http://www.bbva.es/20241231#GainsLossesOnDerecognitionOfNonFinancialAssetsAndSubsidiariesNet",
+     "http://www.bbva.es/20241231#ImpairmentOrReversalOfImpairmentOfInvestmentsInJointVenturesAndAssociates",
+     "http://www.bbva.es/20241231#NegativeGoodwillRecognizedInProfitOrLoss"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#GainsLossesOnDerecognitionOfNonFinancialAssetsAndSubsidiariesNet::http://www.bbva.es/20241231#GananciasPerdidasAlDarDeBajaEnCuentasActivosNoFinancierosYParticipacionesNetas",
+   "source_qname": "http://www.bbva.es/20241231#GananciasPerdidasAlDarDeBajaEnCuentasActivosNoFinancierosYParticipacionesNetas",
+   "target_qname": "http://www.bbva.es/20241231#GainsLossesOnDerecognitionOfNonFinancialAssetsAndSubsidiariesNet",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#GainsOrLossesOnDerecognitionOfFinancialAssetsAndLiabilitiesNotMeasuredAtFairValueThroughProfitOrLossNet::http://www.bbva.es/20241231#GananciasPerdidasAlDarDeBajaEnCuentasActivosYPasivosFinancierosNoValoradosAValorRazonableConCambiosEnResultadosNetas",
+   "source_qname": "http://www.bbva.es/20241231#GananciasPerdidasAlDarDeBajaEnCuentasActivosYPasivosFinancierosNoValoradosAValorRazonableConCambiosEnResultadosNetas",
+   "target_qname": "http://www.bbva.es/20241231#GainsOrLossesOnDerecognitionOfFinancialAssetsAndLiabilitiesNotMeasuredAtFairValueThroughProfitOrLossNet",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#GainsLossesOnDerecognitionOfFinancialAssetsAtAmortizedCost",
+     "http://www.bbva.es/20241231#GainsLossesOnDerecognitionOfOtherFinancialAssetsAndLiabilities",
+     "http://www.bbva.es/20241231#ReclassificationOfFinancialAssetsFromAmortizedCostToHeldForTrading",
+     "http://www.bbva.es/20241231#ReclassificationOfFinancialAssetsFromFairValueThroughOtherComprehensiveIncomeToHeldForTrading",
+     "http://www.bbva.es/20241231#ReclassificationOfOtherGainsLossesToHeldForTrading"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#GainsLossesOnDerecognitionOfOtherFinancialAssetsAndLiabilities::http://www.bbva.es/20241231#GananciasPerdidasAlDarDeBajaRestantesActivosYPasivosFinancieros",
+   "source_qname": "http://www.bbva.es/20241231#GananciasPerdidasAlDarDeBajaRestantesActivosYPasivosFinancieros",
+   "target_qname": "http://www.bbva.es/20241231#GainsLossesOnDerecognitionOfOtherFinancialAssetsAndLiabilities",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#NonCurrentAssetsHeldForSaleTransferredToProfitOrLoss",
+     "http://www.bbva.es/20241231#OtherReclassificationsOfNonCurrentAssetsHeldForSale",
+     "http://www.bbva.es/20241231#ValuationGainsLossesTakenToEquityNonCurrentAssetsHeldForSale"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#GananciasPerdidasDeValorContabilizadasEnElPatrimonioNetoActivosNoCorrientesYGruposEnajenablesDeElementosMantenidosParaLaVenta::http://www.bbva.es/20241231#ValuationGainsLossesTakenToEquityNonCurrentAssetsHeldForSale",
+   "source_qname": "http://www.bbva.es/20241231#GananciasPerdidasDeValorContabilizadasEnElPatrimonioNetoActivosNoCorrientesYGruposEnajenablesDeElementosMantenidosParaLaVenta",
+   "target_qname": "http://www.bbva.es/20241231#ValuationGainsLossesTakenToEquityNonCurrentAssetsHeldForSale",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#GainsOrLossesOnFinancialAssetsAndLiabilitiesDesignatedAtFairValueThroughProfitOrLossNet::http://www.bbva.es/20241231#GananciasPerdidasPorActivosYPasivosFinancierosDesignadosAValorRazonableConCambiosEnResultadosNetas",
+   "source_qname": "http://www.bbva.es/20241231#GananciasPerdidasPorActivosYPasivosFinancierosDesignadosAValorRazonableConCambiosEnResultadosNetas",
+   "target_qname": "http://www.bbva.es/20241231#GainsOrLossesOnFinancialAssetsAndLiabilitiesDesignatedAtFairValueThroughProfitOrLossNet",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#GainsOrLossesOnFinancialAssetsAndLiabilitiesHeldForTradingNet::http://www.bbva.es/20241231#GananciasPerdidasPorActivosYPasivosFinancierosMantenidosParaNegociarNetas",
+   "source_qname": "http://www.bbva.es/20241231#GananciasPerdidasPorActivosYPasivosFinancierosMantenidosParaNegociarNetas",
+   "target_qname": "http://www.bbva.es/20241231#GainsOrLossesOnFinancialAssetsAndLiabilitiesHeldForTradingNet",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#GainsLossesFromNonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleNotQualifyingAsDiscontinuedOperations",
+     "http://www.bbva.es/20241231#GainsLossesOnDerecognitionOfNonFinancialAssetsAndSubsidiariesNet",
+     "http://www.bbva.es/20241231#ImpairmentOrReversalOfImpairmentOfInvestmentsInJointVenturesAndAssociates",
+     "http://www.bbva.es/20241231#NegativeGoodwillRecognizedInProfitOrLoss"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#GainsLossesFromNonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleNotQualifyingAsDiscontinuedOperations::http://www.bbva.es/20241231#GananciasPerdidasProcedentesDeActivosNoCorrientesYGruposEnajenablesDeElementosClasificadosComoMantenidosParaLaVentaNoAdmisiblesComoActividadesInterrumpidas",
+   "source_qname": "http://www.bbva.es/20241231#GananciasPerdidasProcedentesDeActivosNoCorrientesYGruposEnajenablesDeElementosClasificadosComoMantenidosParaLaVentaNoAdmisiblesComoActividadesInterrumpidas",
+   "target_qname": "http://www.bbva.es/20241231#GainsLossesFromNonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleNotQualifyingAsDiscontinuedOperations",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#IncreaseDecreaseInCashAndCashEquivalentsIncludingCompaniesHeldForSale::http://www.bbva.es/20241231#IncrementoODecrementoEnEfectivoYEquivalentesAlEfectivoIncluyendoSociedadesALaVenta",
+   "source_qname": "http://www.bbva.es/20241231#IncrementoODecrementoEnEfectivoYEquivalentesAlEfectivoIncluyendoSociedadesALaVenta",
+   "target_qname": "http://www.bbva.es/20241231#IncreaseDecreaseInCashAndCashEquivalentsIncludingCompaniesHeldForSale",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#ActuarialGainsOrLossesOnDefinedBenefitPensionPlansThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfDebtInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfFinancialLiabilitiesAtFairValueThroughProfitOrLossAttributableToChangesInTheirCreditRisk",
+     "http://www.bbva.es/20241231#ForeignCurrencyTranslationThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgeIneffectivenessOfFairValueHedgesForEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgeOfNetInvestmentsInForeignOperationsEffectivePortionThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgingDerivativesCashFlowHedgesEffectivePortionThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgingInstrumentsNonDesignatedItemsThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#ShareOfOtherRecognizedIncomeAndExpenseOfInvestmentsInJointVenturesAndAssociatesThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#ShareOfOtherRecognizedIncomeAndExpenseOfInvestmentsInJointVenturesAndAssociatesThatWillNotBeReclassifiedToProfitOrLoss"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#HedgeIneffectivenessOfFairValueHedgesForEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss::http://www.bbva.es/20241231#IneficaciaDeLasCoberturasDeValorRazonableEnLosInstrumentosDePatrimonioValoradosAValorRazonableConCambiosEnOtroResultadoGlobal",
+   "source_qname": "http://www.bbva.es/20241231#IneficaciaDeLasCoberturasDeValorRazonableEnLosInstrumentosDePatrimonioValoradosAValorRazonableConCambiosEnOtroResultadoGlobal",
+   "target_qname": "http://www.bbva.es/20241231#HedgeIneffectivenessOfFairValueHedgesForEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#ActuarialGainsOrLossesOnDefinedBenefitPensionPlansThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfDebtInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfFinancialLiabilitiesAtFairValueThroughProfitOrLossAttributableToChangesInTheirCreditRisk",
+     "http://www.bbva.es/20241231#ForeignCurrencyTranslationThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgeIneffectivenessOfFairValueHedgesForEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgeOfNetInvestmentsInForeignOperationsEffectivePortionThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgingDerivativesCashFlowHedgesEffectivePortionThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgingInstrumentsNonDesignatedItemsThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#ShareOfOtherRecognizedIncomeAndExpenseOfInvestmentsInJointVenturesAndAssociatesThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#ShareOfOtherRecognizedIncomeAndExpenseOfInvestmentsInJointVenturesAndAssociatesThatWillNotBeReclassifiedToProfitOrLoss"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#HedgingInstrumentsNonDesignatedItemsThatMayBeReclassifiedToProfitOrLoss::http://www.bbva.es/20241231#InstrumentosDeCoberturaElementosNoDesignados",
+   "source_qname": "http://www.bbva.es/20241231#InstrumentosDeCoberturaElementosNoDesignados",
+   "target_qname": "http://www.bbva.es/20241231#HedgingInstrumentsNonDesignatedItemsThatMayBeReclassifiedToProfitOrLoss",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#InstrumentosDeDeudaAValorRazonableConCambiosEnOtroResultadoGlobal::http://www.bbva.es/20241231#ORIDebtSecuritiesAtFairValueThroughOtherComprehensiveIncome",
+   "source_qname": "http://www.bbva.es/20241231#InstrumentosDeDeudaAValorRazonableConCambiosEnOtroResultadoGlobal",
+   "target_qname": "http://www.bbva.es/20241231#ORIDebtSecuritiesAtFairValueThroughOtherComprehensiveIncome",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#EquityInstrumentsIssuedOtherThanCapitalMember",
+     "http://www.bbva.es/20241231#InterimDividendMember",
+     "http://www.bbva.es/20241231#ProfitLossAttributableToOwnersOfParentMember"
+    ]
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#EquityInstrumentsIssuedOtherThanCapitalMember::http://www.bbva.es/20241231#InstrumentosDePatrimonioEmitidosDistintosDeCapitalMember",
+   "source_qname": "http://www.bbva.es/20241231#InstrumentosDePatrimonioEmitidosDistintosDeCapitalMember",
+   "target_qname": "http://www.bbva.es/20241231#EquityInstrumentsIssuedOtherThanCapitalMember",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#EquityInstrumentsIssuedOtherThanCapital",
+     "http://www.bbva.es/20241231#InterimDividend",
+     "http://www.bbva.es/20241231#ProfitLossAttributableToOwnersOfParent"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#EquityInstrumentsIssuedOtherThanCapital::http://www.bbva.es/20241231#InstrumentosDePatrimonioEmitidosDistintosDelCapital",
+   "source_qname": "http://www.bbva.es/20241231#InstrumentosDePatrimonioEmitidosDistintosDelCapital",
+   "target_qname": "http://www.bbva.es/20241231#EquityInstrumentsIssuedOtherThanCapital",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#DebtSecuritiesHeldForTrading",
+     "http://www.bbva.es/20241231#EquityInstrumentsHeldForTrading",
+     "http://www.bbva.es/20241231#LoansAndAdvancesToCentralBanksHeldForTrading",
+     "http://www.bbva.es/20241231#LoansAndAdvancesToCreditInstitutionsHeldForTrading",
+     "http://www.bbva.es/20241231#LoansAndAdvancesToCustomersHeldForTrading"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#EquityInstrumentsHeldForTrading::http://www.bbva.es/20241231#InstrumentosDePatrimonioMantenidosParaNegociar",
+   "source_qname": "http://www.bbva.es/20241231#InstrumentosDePatrimonioMantenidosParaNegociar",
+   "target_qname": "http://www.bbva.es/20241231#EquityInstrumentsHeldForTrading",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#DebtSecuritiesAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue",
+     "http://www.bbva.es/20241231#EquityInstrumentsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue",
+     "http://www.bbva.es/20241231#LoansAndAdvancesToCustomersAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#EquityInstrumentsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue::http://www.bbva.es/20241231#InstrumentosDePatrimonioNoDestinadosANegociacionValoradosAValorRazonableConCambiosEnResultados",
+   "source_qname": "http://www.bbva.es/20241231#InstrumentosDePatrimonioNoDestinadosANegociacionValoradosAValorRazonableConCambiosEnResultados",
+   "target_qname": "http://www.bbva.es/20241231#EquityInstrumentsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#Other",
+     "http://www.bbva.es/20241231#ReservesOrAccumulatedLossesOfInvestmentsInSubsidiariesJointVenturesAndAssociates"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#Other::http://www.bbva.es/20241231#Otras",
+   "source_qname": "http://www.bbva.es/20241231#Otras",
+   "target_qname": "http://www.bbva.es/20241231#Other",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#GainsLossesOnDerecognitionOfFinancialAssetsAtAmortizedCost",
+     "http://www.bbva.es/20241231#GainsLossesOnDerecognitionOfOtherFinancialAssetsAndLiabilities",
+     "http://www.bbva.es/20241231#ReclassificationOfFinancialAssetsFromAmortizedCostToHeldForTrading",
+     "http://www.bbva.es/20241231#ReclassificationOfFinancialAssetsFromFairValueThroughOtherComprehensiveIncomeToHeldForTrading",
+     "http://www.bbva.es/20241231#ReclassificationOfOtherGainsLossesToHeldForTrading"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#OtrasGananciasPerdidasMantenidosParaNegociar::http://www.bbva.es/20241231#ReclassificationOfOtherGainsLossesToHeldForTrading",
+   "source_qname": "http://www.bbva.es/20241231#OtrasGananciasPerdidasMantenidosParaNegociar",
+   "target_qname": "http://www.bbva.es/20241231#ReclassificationOfOtherGainsLossesToHeldForTrading",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#ReclassificationOfFinancialAssetsFromAmortizedCostToNonTradingFinancialAssetsMandatorilyAtFairValueThroughProfitOrLoss",
+     "http://www.bbva.es/20241231#ReclassificationOfFinancialAssetsFromFairValueThroughOtherComprehensiveIncomeToNonTradingFinancialAssetsMandatorilyAtFairValueThroughProfitOrLoss",
+     "http://www.bbva.es/20241231#ReclassificationOfOtherGainsLossesToNonTradingFinancialAssetsMandatorilyAtFairValueThroughProfitOrLoss"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#OtrasGananciasPerdidasNoDestinadasANegociacionValoradasObligatoriamenteAValorRazonableConCambiosEnResultados::http://www.bbva.es/20241231#ReclassificationOfOtherGainsLossesToNonTradingFinancialAssetsMandatorilyAtFairValueThroughProfitOrLoss",
+   "source_qname": "http://www.bbva.es/20241231#OtrasGananciasPerdidasNoDestinadasANegociacionValoradasObligatoriamenteAValorRazonableConCambiosEnResultados",
+   "target_qname": "http://www.bbva.es/20241231#ReclassificationOfOtherGainsLossesToNonTradingFinancialAssetsMandatorilyAtFairValueThroughProfitOrLoss",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#NonCurrentAssetsHeldForSaleTransferredToProfitOrLoss",
+     "http://www.bbva.es/20241231#OtherReclassificationsOfNonCurrentAssetsHeldForSale",
+     "http://www.bbva.es/20241231#ValuationGainsLossesTakenToEquityNonCurrentAssetsHeldForSale"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#OtherReclassificationsOfNonCurrentAssetsHeldForSale::http://www.bbva.es/20241231#OtrasReclasificacionesActivosNoCorrientesYGruposEnajenablesDeElementosMantenidosParaLaVenta",
+   "source_qname": "http://www.bbva.es/20241231#OtrasReclasificacionesActivosNoCorrientesYGruposEnajenablesDeElementosMantenidosParaLaVenta",
+   "target_qname": "http://www.bbva.es/20241231#OtherReclassificationsOfNonCurrentAssetsHeldForSale",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#OtherReclassificationsCashFlowHedgesEffectivePortion::http://www.bbva.es/20241231#OtrasReclasificacionesCoberturasDeFlujosDeEfectivo",
+   "source_qname": "http://www.bbva.es/20241231#OtrasReclasificacionesCoberturasDeFlujosDeEfectivo",
+   "target_qname": "http://www.bbva.es/20241231#OtherReclassificationsCashFlowHedgesEffectivePortion",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#OtherReclassificationsHedgeOfNetInvestmentsInForeignOperations::http://www.bbva.es/20241231#OtrasReclasificacionesCoberturasInversionesNetas",
+   "source_qname": "http://www.bbva.es/20241231#OtrasReclasificacionesCoberturasInversionesNetas",
+   "target_qname": "http://www.bbva.es/20241231#OtherReclassificationsHedgeOfNetInvestmentsInForeignOperations",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#OtherReclassificationsForeignCurrencyTranslation::http://www.bbva.es/20241231#OtrasReclasificacionesConversionDeDivisas",
+   "source_qname": "http://www.bbva.es/20241231#OtrasReclasificacionesConversionDeDivisas",
+   "target_qname": "http://www.bbva.es/20241231#OtherReclassificationsForeignCurrencyTranslation",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#OtherReclassificationsDebtSecuritiesAtFairValueThroughOtherComprehensiveIncome::http://www.bbva.es/20241231#OtrasReclasificacionesDeDeudaAValorRazonableConCambiosEnOtroResultadoGlobal",
+   "source_qname": "http://www.bbva.es/20241231#OtrasReclasificacionesDeDeudaAValorRazonableConCambiosEnOtroResultadoGlobal",
+   "target_qname": "http://www.bbva.es/20241231#OtherReclassificationsDebtSecuritiesAtFairValueThroughOtherComprehensiveIncome",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#OtherLongTermEmployeeBenefits",
+     "http://www.bbva.es/20241231#ProvisionsCommitmentsAndGuaranteesGiven"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#OtherLongTermEmployeeBenefits::http://www.bbva.es/20241231#OtrasRetribucionesALosEmpleadosALargoPlazo",
+   "source_qname": "http://www.bbva.es/20241231#OtrasRetribucionesALosEmpleadosALargoPlazo",
+   "target_qname": "http://www.bbva.es/20241231#OtherLongTermEmployeeBenefits",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#AccumulatedOtherComprehensiveIncomeNonControllingInterest",
+     "http://www.bbva.es/20241231#OtherNonControllingInterestItems"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#AccumulatedOtherComprehensiveIncomeNonControllingInterest::http://www.bbva.es/20241231#OtroResultadoGlobalAcumuladoParticipacionesNoDominantes",
+   "source_qname": "http://www.bbva.es/20241231#OtroResultadoGlobalAcumuladoParticipacionesNoDominantes",
+   "target_qname": "http://www.bbva.es/20241231#AccumulatedOtherComprehensiveIncomeNonControllingInterest",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#AccumulatedOtherComprehensiveIncomeNonControllingInterestMember",
+     "http://www.bbva.es/20241231#OtherNonControllingInterestItemsMember"
+    ]
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#AccumulatedOtherComprehensiveIncomeNonControllingInterestMember::http://www.bbva.es/20241231#OtroResultadoGlobalAcumuladoParticipacionesNoDominantesMember",
+   "source_qname": "http://www.bbva.es/20241231#OtroResultadoGlobalAcumuladoParticipacionesNoDominantesMember",
+   "target_qname": "http://www.bbva.es/20241231#AccumulatedOtherComprehensiveIncomeNonControllingInterestMember",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#OtherCollectionsRelatedToInvestingActivities::http://www.bbva.es/20241231#OtrosCobrosRelacionadosConActividadesDeInversion",
+   "source_qname": "http://www.bbva.es/20241231#OtrosCobrosRelacionadosConActividadesDeInversion",
+   "target_qname": "http://www.bbva.es/20241231#OtherCollectionsRelatedToInvestingActivities",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#CollectionsTreasurySharesDisposal",
+     "http://www.bbva.es/20241231#OtherItemsRelatingToFinancingActivities"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#OtherItemsRelatingToFinancingActivities::http://www.bbva.es/20241231#OtrosCobrosRelacionadosConLasActividadesDeFinanciacion",
+   "source_qname": "http://www.bbva.es/20241231#OtrosCobrosRelacionadosConLasActividadesDeFinanciacion",
+   "target_qname": "http://www.bbva.es/20241231#OtherItemsRelatingToFinancingActivities",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#AccumulatedOtherComprehensiveIncomeNonControllingInterest",
+     "http://www.bbva.es/20241231#OtherNonControllingInterestItems"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#OtherNonControllingInterestItems::http://www.bbva.es/20241231#OtrosElementosParticipacionesNoDominantes",
+   "source_qname": "http://www.bbva.es/20241231#OtrosElementosParticipacionesNoDominantes",
+   "target_qname": "http://www.bbva.es/20241231#OtherNonControllingInterestItems",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#AccumulatedOtherComprehensiveIncomeNonControllingInterestMember",
+     "http://www.bbva.es/20241231#OtherNonControllingInterestItemsMember"
+    ]
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#OtherNonControllingInterestItemsMember::http://www.bbva.es/20241231#OtrosElementosParticipacionesNoDominantesMember",
+   "source_qname": "http://www.bbva.es/20241231#OtrosElementosParticipacionesNoDominantesMember",
+   "target_qname": "http://www.bbva.es/20241231#OtherNonControllingInterestItemsMember",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#OtherPaymentsRelatingToFinancingActivities",
+     "http://www.bbva.es/20241231#TreasuryStockAcquisitionsFromFinancingActivities",
+     "http://www.bbva.es/20241231#TreasuryStockAmortizationFromFinancingActivities"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#OtherPaymentsRelatingToFinancingActivities::http://www.bbva.es/20241231#OtrosPagosActividadesDeFinanciacion",
+   "source_qname": "http://www.bbva.es/20241231#OtrosPagosActividadesDeFinanciacion",
+   "target_qname": "http://www.bbva.es/20241231#OtherPaymentsRelatingToFinancingActivities",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#InvestmentNonCurrentAssetsClassifiedAsHeldForSaleAndAssociatedLiabilites",
+     "http://www.bbva.es/20241231#InvestmentOtherSettlementsRelatedToInvestingActivities"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#InvestmentOtherSettlementsRelatedToInvestingActivities::http://www.bbva.es/20241231#OtrosPagosRelacionadosConActividadesInversion",
+   "source_qname": "http://www.bbva.es/20241231#OtrosPagosRelacionadosConActividadesInversion",
+   "target_qname": "http://www.bbva.es/20241231#InvestmentOtherSettlementsRelatedToInvestingActivities",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#CustomerDepositsDesignatedAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently",
+     "http://www.bbva.es/20241231#DebtCertificatesAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently",
+     "http://www.bbva.es/20241231#DepositsFromCreditInstitutionsAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently",
+     "http://www.bbva.es/20241231#OtherFinancialLiabilitiesAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#OtherFinancialLiabilitiesAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently::http://www.bbva.es/20241231#OtrosPasivosFinancierosAValorRazonableConCambiosEnResultados",
+   "source_qname": "http://www.bbva.es/20241231#OtrosPasivosFinancierosAValorRazonableConCambiosEnResultados",
+   "target_qname": "http://www.bbva.es/20241231#OtherFinancialLiabilitiesAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#PagosPorActividadesDeFinanciacion::http://www.bbva.es/20241231#PaymentsFromFinancingActivities",
+   "source_qname": "http://www.bbva.es/20241231#PagosPorActividadesDeFinanciacion",
+   "target_qname": "http://www.bbva.es/20241231#PaymentsFromFinancingActivities",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#ActuarialGainsOrLossesOnDefinedBenefitPensionPlansThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfDebtInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfFinancialLiabilitiesAtFairValueThroughProfitOrLossAttributableToChangesInTheirCreditRisk",
+     "http://www.bbva.es/20241231#ForeignCurrencyTranslationThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgeIneffectivenessOfFairValueHedgesForEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgeOfNetInvestmentsInForeignOperationsEffectivePortionThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgingDerivativesCashFlowHedgesEffectivePortionThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgingInstrumentsNonDesignatedItemsThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#ShareOfOtherRecognizedIncomeAndExpenseOfInvestmentsInJointVenturesAndAssociatesThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#ShareOfOtherRecognizedIncomeAndExpenseOfInvestmentsInJointVenturesAndAssociatesThatWillNotBeReclassifiedToProfitOrLoss"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#ParticipacionEnOtrosIngresosYGastosReconocidosDeInversionesEnNegociosConjuntosYAsociadasQueNoSeReclasificaranEnResultados::http://www.bbva.es/20241231#ShareOfOtherRecognizedIncomeAndExpenseOfInvestmentsInJointVenturesAndAssociatesThatWillNotBeReclassifiedToProfitOrLoss",
+   "source_qname": "http://www.bbva.es/20241231#ParticipacionEnOtrosIngresosYGastosReconocidosDeInversionesEnNegociosConjuntosYAsociadasQueNoSeReclasificaranEnResultados",
+   "target_qname": "http://www.bbva.es/20241231#ShareOfOtherRecognizedIncomeAndExpenseOfInvestmentsInJointVenturesAndAssociatesThatWillNotBeReclassifiedToProfitOrLoss",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#ActuarialGainsOrLossesOnDefinedBenefitPensionPlansThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfDebtInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#FairValueChangesOfFinancialLiabilitiesAtFairValueThroughProfitOrLossAttributableToChangesInTheirCreditRisk",
+     "http://www.bbva.es/20241231#ForeignCurrencyTranslationThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgeIneffectivenessOfFairValueHedgesForEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgeOfNetInvestmentsInForeignOperationsEffectivePortionThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgingDerivativesCashFlowHedgesEffectivePortionThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#HedgingInstrumentsNonDesignatedItemsThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#NonCurrentAssetsAndDisposalGroupsClassifiedAsHeldForSaleThatWillNotBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#ShareOfOtherRecognizedIncomeAndExpenseOfInvestmentsInJointVenturesAndAssociatesThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.bbva.es/20241231#ShareOfOtherRecognizedIncomeAndExpenseOfInvestmentsInJointVenturesAndAssociatesThatWillNotBeReclassifiedToProfitOrLoss"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#ParticipacionEnOtrosIngresosYGastosReconocidosEnInversionesEnNegociosConjuntosYAsociadasQuePuedenReclasificarseEnResultados::http://www.bbva.es/20241231#ShareOfOtherRecognizedIncomeAndExpenseOfInvestmentsInJointVenturesAndAssociatesThatMayBeReclassifiedToProfitOrLoss",
+   "source_qname": "http://www.bbva.es/20241231#ParticipacionEnOtrosIngresosYGastosReconocidosEnInversionesEnNegociosConjuntosYAsociadasQuePuedenReclasificarseEnResultados",
+   "target_qname": "http://www.bbva.es/20241231#ShareOfOtherRecognizedIncomeAndExpenseOfInvestmentsInJointVenturesAndAssociatesThatMayBeReclassifiedToProfitOrLoss",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#PasivosPorImpuestos::http://www.bbva.es/20241231#TaxLiabilities",
+   "source_qname": "http://www.bbva.es/20241231#PasivosPorImpuestos",
+   "target_qname": "http://www.bbva.es/20241231#TaxLiabilities",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#CustomerDepositsHeldForTrading",
+     "http://www.bbva.es/20241231#DepositsFromCentralBanksHeldForTrading",
+     "http://www.bbva.es/20241231#DepositsFromCreditInstitutionsHeldForTrading",
+     "http://www.bbva.es/20241231#ShortPositionsFinancialLiabiltiesHeldForTrading"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#PosicionesCortasDeValoresMantenidasParaNegociar::http://www.bbva.es/20241231#ShortPositionsFinancialLiabiltiesHeldForTrading",
+   "source_qname": "http://www.bbva.es/20241231#PosicionesCortasDeValoresMantenidasParaNegociar",
+   "target_qname": "http://www.bbva.es/20241231#ShortPositionsFinancialLiabiltiesHeldForTrading",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#DebtSecuritiesAtAmortisedCost",
+     "http://www.bbva.es/20241231#LoansAndAdvancesToCentralBanksAtAmortisedCost"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#LoansAndAdvancesToCentralBanksAtAmortisedCost::http://www.bbva.es/20241231#PrestamosYAnticiposABancosCentralesACosteAmortizado",
+   "source_qname": "http://www.bbva.es/20241231#PrestamosYAnticiposABancosCentralesACosteAmortizado",
+   "target_qname": "http://www.bbva.es/20241231#LoansAndAdvancesToCentralBanksAtAmortisedCost",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#DebtSecuritiesHeldForTrading",
+     "http://www.bbva.es/20241231#EquityInstrumentsHeldForTrading",
+     "http://www.bbva.es/20241231#LoansAndAdvancesToCentralBanksHeldForTrading",
+     "http://www.bbva.es/20241231#LoansAndAdvancesToCreditInstitutionsHeldForTrading",
+     "http://www.bbva.es/20241231#LoansAndAdvancesToCustomersHeldForTrading"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#LoansAndAdvancesToCentralBanksHeldForTrading::http://www.bbva.es/20241231#PrestamosYAnticiposABancosCentralesMantenidosParaNegociar",
+   "source_qname": "http://www.bbva.es/20241231#PrestamosYAnticiposABancosCentralesMantenidosParaNegociar",
+   "target_qname": "http://www.bbva.es/20241231#LoansAndAdvancesToCentralBanksHeldForTrading",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#DebtSecuritiesHeldForTrading",
+     "http://www.bbva.es/20241231#EquityInstrumentsHeldForTrading",
+     "http://www.bbva.es/20241231#LoansAndAdvancesToCentralBanksHeldForTrading",
+     "http://www.bbva.es/20241231#LoansAndAdvancesToCreditInstitutionsHeldForTrading",
+     "http://www.bbva.es/20241231#LoansAndAdvancesToCustomersHeldForTrading"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#LoansAndAdvancesToCustomersHeldForTrading::http://www.bbva.es/20241231#PrestamosYAnticiposAClientesMantenidosParaNegociar",
+   "source_qname": "http://www.bbva.es/20241231#PrestamosYAnticiposAClientesMantenidosParaNegociar",
+   "target_qname": "http://www.bbva.es/20241231#LoansAndAdvancesToCustomersHeldForTrading",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#DebtSecuritiesAtFairValueThroughOtherComprehensiveIncome",
+     "http://www.bbva.es/20241231#LoansAndAdvancesToCreditInstitutionsAtFairValueThroughOtherComprehensiveIncome"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#LoansAndAdvancesToCreditInstitutionsAtFairValueThroughOtherComprehensiveIncome::http://www.bbva.es/20241231#PrestamosYAnticiposAEntidadesDeCreditoAValorRazonableConCambiosEnOtroResultadoGlobal",
+   "source_qname": "http://www.bbva.es/20241231#PrestamosYAnticiposAEntidadesDeCreditoAValorRazonableConCambiosEnOtroResultadoGlobal",
+   "target_qname": "http://www.bbva.es/20241231#LoansAndAdvancesToCreditInstitutionsAtFairValueThroughOtherComprehensiveIncome",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#DebtSecuritiesHeldForTrading",
+     "http://www.bbva.es/20241231#EquityInstrumentsHeldForTrading",
+     "http://www.bbva.es/20241231#LoansAndAdvancesToCentralBanksHeldForTrading",
+     "http://www.bbva.es/20241231#LoansAndAdvancesToCreditInstitutionsHeldForTrading",
+     "http://www.bbva.es/20241231#LoansAndAdvancesToCustomersHeldForTrading"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#LoansAndAdvancesToCreditInstitutionsHeldForTrading::http://www.bbva.es/20241231#PrestamosYAnticiposAEntidadesDeCreditoMantenidosParaNegociar",
+   "source_qname": "http://www.bbva.es/20241231#PrestamosYAnticiposAEntidadesDeCreditoMantenidosParaNegociar",
+   "target_qname": "http://www.bbva.es/20241231#LoansAndAdvancesToCreditInstitutionsHeldForTrading",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#DebtSecuritiesAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue",
+     "http://www.bbva.es/20241231#EquityInstrumentsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue",
+     "http://www.bbva.es/20241231#LoansAndAdvancesToCustomersAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#LoansAndAdvancesToCustomersAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue::http://www.bbva.es/20241231#PrestamosYAnticiposALaClientelaNoDestinadosANegociacionValoradosAValorRazonableConCambiosEnResultados",
+   "source_qname": "http://www.bbva.es/20241231#PrestamosYAnticiposALaClientelaNoDestinadosANegociacionValoradosAValorRazonableConCambiosEnResultados",
+   "target_qname": "http://www.bbva.es/20241231#LoansAndAdvancesToCustomersAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#MemorandumFinancialGuaranteesGiven",
+     "http://www.bbva.es/20241231#MemorandumLoanCommitmentsGiven",
+     "http://www.bbva.es/20241231#MemorandumOtherCommitmentsGiven"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#MemorandumLoanCommitmentsGiven::http://www.bbva.es/20241231#PromemoriaCompromisosDePrestamosConcedidos",
+   "source_qname": "http://www.bbva.es/20241231#PromemoriaCompromisosDePrestamosConcedidos",
+   "target_qname": "http://www.bbva.es/20241231#MemorandumLoanCommitmentsGiven",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#MemorandumFinancialGuaranteesGiven",
+     "http://www.bbva.es/20241231#MemorandumLoanCommitmentsGiven",
+     "http://www.bbva.es/20241231#MemorandumOtherCommitmentsGiven"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#MemorandumFinancialGuaranteesGiven::http://www.bbva.es/20241231#PromemoriaGarantiasFinancierasConcedidas",
+   "source_qname": "http://www.bbva.es/20241231#PromemoriaGarantiasFinancierasConcedidas",
+   "target_qname": "http://www.bbva.es/20241231#MemorandumFinancialGuaranteesGiven",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#MemorandumFinancialGuaranteesGiven",
+     "http://www.bbva.es/20241231#MemorandumLoanCommitmentsGiven",
+     "http://www.bbva.es/20241231#MemorandumOtherCommitmentsGiven"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#MemorandumOtherCommitmentsGiven::http://www.bbva.es/20241231#PromemoriaOtrosCompromisosConcedidos",
+   "source_qname": "http://www.bbva.es/20241231#PromemoriaOtrosCompromisosConcedidos",
+   "target_qname": "http://www.bbva.es/20241231#MemorandumOtherCommitmentsGiven",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#MemorandumItemSubordinatedLiabilitiesAtAmortisedCost::http://www.bbva.es/20241231#PromemoriaPasivosSubordinadosACosteAmortizado",
+   "source_qname": "http://www.bbva.es/20241231#PromemoriaPasivosSubordinadosACosteAmortizado",
+   "target_qname": "http://www.bbva.es/20241231#MemorandumItemSubordinatedLiabilitiesAtAmortisedCost",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#MemorandumItemSubordinatedLiabilitiesAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently::http://www.bbva.es/20241231#PromemoriaPasivosSubordinadosAValorRazonableConCambiosEnResultados",
+   "source_qname": "http://www.bbva.es/20241231#PromemoriaPasivosSubordinadosAValorRazonableConCambiosEnResultados",
+   "target_qname": "http://www.bbva.es/20241231#MemorandumItemSubordinatedLiabilitiesAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#ProvisionesOReversionDeProvisiones::http://www.bbva.es/20241231#ProvisionsOrReversalOfProvisions",
+   "source_qname": "http://www.bbva.es/20241231#ProvisionesOReversionDeProvisiones",
+   "target_qname": "http://www.bbva.es/20241231#ProvisionsOrReversalOfProvisions",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#OtherLongTermEmployeeBenefits",
+     "http://www.bbva.es/20241231#ProvisionsCommitmentsAndGuaranteesGiven"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#ProvisionesPorCompromisosYGarantiasConcedidos::http://www.bbva.es/20241231#ProvisionsCommitmentsAndGuaranteesGiven",
+   "source_qname": "http://www.bbva.es/20241231#ProvisionesPorCompromisosYGarantiasConcedidos",
+   "target_qname": "http://www.bbva.es/20241231#ProvisionsCommitmentsAndGuaranteesGiven",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#GainsLossesOnDerecognitionOfFinancialAssetsAtAmortizedCost",
+     "http://www.bbva.es/20241231#GainsLossesOnDerecognitionOfOtherFinancialAssetsAndLiabilities",
+     "http://www.bbva.es/20241231#ReclassificationOfFinancialAssetsFromAmortizedCostToHeldForTrading",
+     "http://www.bbva.es/20241231#ReclassificationOfFinancialAssetsFromFairValueThroughOtherComprehensiveIncomeToHeldForTrading",
+     "http://www.bbva.es/20241231#ReclassificationOfOtherGainsLossesToHeldForTrading"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#ReclasificacionDeActivosFinancierosDesdeCosteAmortizadoHaciaMantenidosParaNegociar::http://www.bbva.es/20241231#ReclassificationOfFinancialAssetsFromAmortizedCostToHeldForTrading",
+   "source_qname": "http://www.bbva.es/20241231#ReclasificacionDeActivosFinancierosDesdeCosteAmortizadoHaciaMantenidosParaNegociar",
+   "target_qname": "http://www.bbva.es/20241231#ReclassificationOfFinancialAssetsFromAmortizedCostToHeldForTrading",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#ReclassificationOfFinancialAssetsFromAmortizedCostToNonTradingFinancialAssetsMandatorilyAtFairValueThroughProfitOrLoss",
+     "http://www.bbva.es/20241231#ReclassificationOfFinancialAssetsFromFairValueThroughOtherComprehensiveIncomeToNonTradingFinancialAssetsMandatorilyAtFairValueThroughProfitOrLoss",
+     "http://www.bbva.es/20241231#ReclassificationOfOtherGainsLossesToNonTradingFinancialAssetsMandatorilyAtFairValueThroughProfitOrLoss"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#ReclasificacionDeActivosFinancierosDesdeCosteAmortizadoHaciaNoDestinadosANegociacionValoradosObligatoriamenteAValorRazonableConCambiosEnResultados::http://www.bbva.es/20241231#ReclassificationOfFinancialAssetsFromAmortizedCostToNonTradingFinancialAssetsMandatorilyAtFairValueThroughProfitOrLoss",
+   "source_qname": "http://www.bbva.es/20241231#ReclasificacionDeActivosFinancierosDesdeCosteAmortizadoHaciaNoDestinadosANegociacionValoradosObligatoriamenteAValorRazonableConCambiosEnResultados",
+   "target_qname": "http://www.bbva.es/20241231#ReclassificationOfFinancialAssetsFromAmortizedCostToNonTradingFinancialAssetsMandatorilyAtFairValueThroughProfitOrLoss",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#GainsLossesOnDerecognitionOfFinancialAssetsAtAmortizedCost",
+     "http://www.bbva.es/20241231#GainsLossesOnDerecognitionOfOtherFinancialAssetsAndLiabilities",
+     "http://www.bbva.es/20241231#ReclassificationOfFinancialAssetsFromAmortizedCostToHeldForTrading",
+     "http://www.bbva.es/20241231#ReclassificationOfFinancialAssetsFromFairValueThroughOtherComprehensiveIncomeToHeldForTrading",
+     "http://www.bbva.es/20241231#ReclassificationOfOtherGainsLossesToHeldForTrading"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#ReclasificacionDeActivosFinancierosDesdeValorRazonableConCambiosEnOtroResultadoGlobalHaciaMantenidosParaNegociar::http://www.bbva.es/20241231#ReclassificationOfFinancialAssetsFromFairValueThroughOtherComprehensiveIncomeToHeldForTrading",
+   "source_qname": "http://www.bbva.es/20241231#ReclasificacionDeActivosFinancierosDesdeValorRazonableConCambiosEnOtroResultadoGlobalHaciaMantenidosParaNegociar",
+   "target_qname": "http://www.bbva.es/20241231#ReclassificationOfFinancialAssetsFromFairValueThroughOtherComprehensiveIncomeToHeldForTrading",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#ReclassificationOfFinancialAssetsFromAmortizedCostToNonTradingFinancialAssetsMandatorilyAtFairValueThroughProfitOrLoss",
+     "http://www.bbva.es/20241231#ReclassificationOfFinancialAssetsFromFairValueThroughOtherComprehensiveIncomeToNonTradingFinancialAssetsMandatorilyAtFairValueThroughProfitOrLoss",
+     "http://www.bbva.es/20241231#ReclassificationOfOtherGainsLossesToNonTradingFinancialAssetsMandatorilyAtFairValueThroughProfitOrLoss"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#ReclasificacionDeActivosFinancierosDesdeValorRazonableConCambiosEnOtroResultadoGlobalHaciaNoDestinadosANegociacionValoradosAValorRazonableConCambiosEnResultados::http://www.bbva.es/20241231#ReclassificationOfFinancialAssetsFromFairValueThroughOtherComprehensiveIncomeToNonTradingFinancialAssetsMandatorilyAtFairValueThroughProfitOrLoss",
+   "source_qname": "http://www.bbva.es/20241231#ReclasificacionDeActivosFinancierosDesdeValorRazonableConCambiosEnOtroResultadoGlobalHaciaNoDestinadosANegociacionValoradosAValorRazonableConCambiosEnResultados",
+   "target_qname": "http://www.bbva.es/20241231#ReclassificationOfFinancialAssetsFromFairValueThroughOtherComprehensiveIncomeToNonTradingFinancialAssetsMandatorilyAtFairValueThroughProfitOrLoss",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#Other",
+     "http://www.bbva.es/20241231#ReservesOrAccumulatedLossesOfInvestmentsInSubsidiariesJointVenturesAndAssociates"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#ReservasOPerdidasAcumuladasDeInversionesEnNegociosConjuntosYAsociadas::http://www.bbva.es/20241231#ReservesOrAccumulatedLossesOfInvestmentsInSubsidiariesJointVenturesAndAssociates",
+   "source_qname": "http://www.bbva.es/20241231#ReservasOPerdidasAcumuladasDeInversionesEnNegociosConjuntosYAsociadas",
+   "target_qname": "http://www.bbva.es/20241231#ReservesOrAccumulatedLossesOfInvestmentsInSubsidiariesJointVenturesAndAssociates",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#OtherInterestIncome::http://www.bbva.es/20241231#RestantesIngresosPorIntereses",
+   "source_qname": "http://www.bbva.es/20241231#RestantesIngresosPorIntereses",
+   "target_qname": "http://www.bbva.es/20241231#OtherInterestIncome",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#InsuranceContractsLinkedToPensions",
+     "http://www.bbva.es/20241231#RestOfOtherAssets"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#RestOfOtherAssets::http://www.bbva.es/20241231#RestoDeLosOtrosActivos",
+   "source_qname": "http://www.bbva.es/20241231#RestoDeLosOtrosActivos",
+   "target_qname": "http://www.bbva.es/20241231#RestOfOtherAssets",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#EquityInstrumentsIssuedOtherThanCapital",
+     "http://www.bbva.es/20241231#InterimDividend",
+     "http://www.bbva.es/20241231#ProfitLossAttributableToOwnersOfParent"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#ProfitLossAttributableToOwnersOfParent::http://www.bbva.es/20241231#ResultadoAtribuibleALosPropietariosDeLaDominante",
+   "source_qname": "http://www.bbva.es/20241231#ResultadoAtribuibleALosPropietariosDeLaDominante",
+   "target_qname": "http://www.bbva.es/20241231#ProfitLossAttributableToOwnersOfParent",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#EquityInstrumentsIssuedOtherThanCapitalMember",
+     "http://www.bbva.es/20241231#InterimDividendMember",
+     "http://www.bbva.es/20241231#ProfitLossAttributableToOwnersOfParentMember"
+    ]
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#ProfitLossAttributableToOwnersOfParentMember::http://www.bbva.es/20241231#ResultadoAtribuibleALosPropietariosDeLaDominanteMember",
+   "source_qname": "http://www.bbva.es/20241231#ResultadoAtribuibleALosPropietariosDeLaDominanteMember",
+   "target_qname": "http://www.bbva.es/20241231#ProfitLossAttributableToOwnersOfParentMember",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#InvestmentNonCurrentAssetsClassifiedAsHeldForSaleAndAssociatedLiabilites",
+     "http://www.bbva.es/20241231#InvestmentOtherSettlementsRelatedToInvestingActivities"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#InvestmentNonCurrentAssetsClassifiedAsHeldForSaleAndAssociatedLiabilites::http://www.bbva.es/20241231#SalidaDeFlujosDeEfectivoPorActivosNoCorrientesYPasivosMantenidosVenta",
+   "source_qname": "http://www.bbva.es/20241231#SalidaDeFlujosDeEfectivoPorActivosNoCorrientesYPasivosMantenidosVenta",
+   "target_qname": "http://www.bbva.es/20241231#InvestmentNonCurrentAssetsClassifiedAsHeldForSaleAndAssociatedLiabilites",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#IssueOfCommonShares",
+     "http://www.bbva.es/20241231#IssueOfPreferredShares",
+     "http://www.bbva.es/20241231#SettlementOrMaturityOfOtherEquityInstrumentsIssued",
+     "http://www.bbva.es/20241231#TransfersWithinTotalEquity"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#TransferenciasEntreComponentesDelPatrimonioNeto::http://www.bbva.es/20241231#TransfersWithinTotalEquity",
+   "source_qname": "http://www.bbva.es/20241231#TransferenciasEntreComponentesDelPatrimonioNeto",
+   "target_qname": "http://www.bbva.es/20241231#TransfersWithinTotalEquity",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#NonCurrentAssetsHeldForSaleTransferredToProfitOrLoss",
+     "http://www.bbva.es/20241231#OtherReclassificationsOfNonCurrentAssetsHeldForSale",
+     "http://www.bbva.es/20241231#ValuationGainsLossesTakenToEquityNonCurrentAssetsHeldForSale"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#NonCurrentAssetsHeldForSaleTransferredToProfitOrLoss::http://www.bbva.es/20241231#TransferidoAResultadosActivosNoCorrientesYGruposEnajenablesDeElementosMantenidosParaLaVenta",
+   "source_qname": "http://www.bbva.es/20241231#TransferidoAResultadosActivosNoCorrientesYGruposEnajenablesDeElementosMantenidosParaLaVenta",
+   "target_qname": "http://www.bbva.es/20241231#NonCurrentAssetsHeldForSaleTransferredToProfitOrLoss",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#DebtSecuritiesAtAmortisedCost",
+     "http://www.bbva.es/20241231#LoansAndAdvancesToCentralBanksAtAmortisedCost"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#DebtSecuritiesAtAmortisedCost::http://www.bbva.es/20241231#ValoresRepresentativosDeDeudaACosteAmortizado",
+   "source_qname": "http://www.bbva.es/20241231#ValoresRepresentativosDeDeudaACosteAmortizado",
+   "target_qname": "http://www.bbva.es/20241231#DebtSecuritiesAtAmortisedCost",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#DebtSecuritiesAtFairValueThroughOtherComprehensiveIncome",
+     "http://www.bbva.es/20241231#LoansAndAdvancesToCreditInstitutionsAtFairValueThroughOtherComprehensiveIncome"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#DebtSecuritiesAtFairValueThroughOtherComprehensiveIncome::http://www.bbva.es/20241231#ValoresRepresentativosDeDeudaAValorRazonableConCambiosEnOtroResultadoGlobal",
+   "source_qname": "http://www.bbva.es/20241231#ValoresRepresentativosDeDeudaAValorRazonableConCambiosEnOtroResultadoGlobal",
+   "target_qname": "http://www.bbva.es/20241231#DebtSecuritiesAtFairValueThroughOtherComprehensiveIncome",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#DebtSecuritiesAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently::http://www.bbva.es/20241231#ValoresRepresentativosDeDeudaDesignadosAValorRazonableConCambiosEnResultados",
+   "source_qname": "http://www.bbva.es/20241231#ValoresRepresentativosDeDeudaDesignadosAValorRazonableConCambiosEnResultados",
+   "target_qname": "http://www.bbva.es/20241231#DebtSecuritiesAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#CustomerDepositsDesignatedAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently",
+     "http://www.bbva.es/20241231#DebtCertificatesAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently",
+     "http://www.bbva.es/20241231#DepositsFromCreditInstitutionsAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently",
+     "http://www.bbva.es/20241231#OtherFinancialLiabilitiesAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#DebtCertificatesAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently::http://www.bbva.es/20241231#ValoresRepresentativosDeDeudaEmitidosAValorRazonableConCambiosEnResultados",
+   "source_qname": "http://www.bbva.es/20241231#ValoresRepresentativosDeDeudaEmitidosAValorRazonableConCambiosEnResultados",
+   "target_qname": "http://www.bbva.es/20241231#DebtCertificatesAtFairValueThroughProfitOrLossDesignatedUponInitialRecognitionOrSubsequently",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#DebtSecuritiesHeldForTrading",
+     "http://www.bbva.es/20241231#EquityInstrumentsHeldForTrading",
+     "http://www.bbva.es/20241231#LoansAndAdvancesToCentralBanksHeldForTrading",
+     "http://www.bbva.es/20241231#LoansAndAdvancesToCreditInstitutionsHeldForTrading",
+     "http://www.bbva.es/20241231#LoansAndAdvancesToCustomersHeldForTrading"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#DebtSecuritiesHeldForTrading::http://www.bbva.es/20241231#ValoresRepresentativosDeDeudaMantenidosParaNegociar",
+   "source_qname": "http://www.bbva.es/20241231#ValoresRepresentativosDeDeudaMantenidosParaNegociar",
+   "target_qname": "http://www.bbva.es/20241231#DebtSecuritiesHeldForTrading",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.bbva.es/20241231#DebtSecuritiesAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue",
+     "http://www.bbva.es/20241231#EquityInstrumentsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue",
+     "http://www.bbva.es/20241231#LoansAndAdvancesToCustomersAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "BBVA-FY2024",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.bbva.es/20241231#DebtSecuritiesAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue::http://www.bbva.es/20241231#ValoresRepresentativosDeDeudaNoDestinadosANegociacionValoradosAValorRazonableConCambiosEnResultados",
+   "source_qname": "http://www.bbva.es/20241231#ValoresRepresentativosDeDeudaNoDestinadosANegociacionValoradosAValorRazonableConCambiosEnResultados",
+   "target_qname": "http://www.bbva.es/20241231#DebtSecuritiesAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue",
+   "verdict": "PROVEN_EQUIVALENT"
+  }
+ ]
+}

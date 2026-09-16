@@ -1,0 +1,202 @@
+{
+ "gate": "G1-C EXTENSION_VARIANT_IDENTITY",
+ "status": "PASS",
+ "executed_at": "2026-09-16T16:02:17.104718+00:00",
+ "code_commit": "3e86c55d94b00b811d4ff8c3f592e848e27df7cf",
+ "inputs": [
+  "g1/G1-A-oam-variant-discovery/evidence/esef-*-en.zip",
+  "g0-r/R07-raw-retrieval/evidence/esef-*-package.zip",
+  "g0-r/R10-taxonomy-pinning/evidence/*.zip",
+  "g1/G1-B-dual-language-capture/evidence/parse/run1/*.facts.jsonl",
+  "g1/G1-B-dual-language-capture/evidence/compare/*"
+ ],
+ "outputs": [
+  "evidence/structure/",
+  "evidence/mapping/",
+  "evidence/compare_mapped/",
+  "evidence/g1c_results.json"
+ ],
+ "artifacts": [
+  {
+   "file": "evidence/structure/BBVA-FY2024-en.structure.json",
+   "bytes": 172568,
+   "sha256": "5e3a32cc8f31dd2e47252bf8dcf3c53634634bb63c2447400bd95c068dcefc2f"
+  },
+  {
+   "file": "evidence/structure/BBVA-FY2024-es.structure.json",
+   "bytes": 173460,
+   "sha256": "1bc002cc82203abf49b7f1e8233bb3620199415a8a06357fdf58db220488a6ec"
+  },
+  {
+   "file": "evidence/structure/BBVA-FY2025-en.structure.json",
+   "bytes": 133887,
+   "sha256": "52412a8236d80c9ab470af5aa941b2dece4ac09842a98793e5f0b0315ebad09d"
+  },
+  {
+   "file": "evidence/structure/BBVA-FY2025-es.structure.json",
+   "bytes": 134483,
+   "sha256": "00d9fe0b29f474cb664dc5060b1cca926f73a389294ac3cf7cd3034cf0ab746c"
+  },
+  {
+   "file": "evidence/structure/IBE-FY2024-es.structure.json",
+   "bytes": 73187,
+   "sha256": "1302de08f0ae3f3140c0172a57dbcfc806aa84d8bcaaef65ab8019511ee62f8a"
+  },
+  {
+   "file": "evidence/structure/IBE-FY2025-es.structure.json",
+   "bytes": 73046,
+   "sha256": "fb83c42ebe08a4d474dea509e43f48f11c5d3c7aa81a04fa230b094199f86c3f"
+  },
+  {
+   "file": "evidence/structure/SAN-FY2024-en.structure.json",
+   "bytes": 140756,
+   "sha256": "09d78ab139212c87480e14c34434d7eebfc08ab8cd6bbbbe7c4d1b3195f300ed"
+  },
+  {
+   "file": "evidence/structure/SAN-FY2024-es.structure.json",
+   "bytes": 145245,
+   "sha256": "200d89a1ce7ce4007827de72f8e096d98db2126fd9987d6b17fca512c36ef414"
+  },
+  {
+   "file": "evidence/structure/SAN-FY2025-en.structure.json",
+   "bytes": 117288,
+   "sha256": "01e14070278324f01fb189337890db00855cc3821dc2309c17ed446e47c13c19"
+  },
+  {
+   "file": "evidence/structure/SAN-FY2025-es.structure.json",
+   "bytes": 118606,
+   "sha256": "2ad4efd6fd782be0d7dc371c8275b3dacdb236d77040fcbfcdae7845501d2300"
+  },
+  {
+   "file": "evidence/structure/structure_results.json",
+   "bytes": 5041,
+   "sha256": "9a937cf02e097c12bc2ae36f78e4a2da9ab474d6b5a631f0cbe7d18ac1065958"
+  },
+  {
+   "file": "evidence/mapping/BBVA-FY2024.mapping.json",
+   "bytes": 142472,
+   "sha256": "eee8380b30cd8cce17f4fe1125f6fee7bc60c28e68029a5f350b693ba95b96da"
+  },
+  {
+   "file": "evidence/mapping/BBVA-FY2025.mapping.json",
+   "bytes": 128550,
+   "sha256": "38a79e829a61f4bf2ed89b1bc061e9a0f87a8f0c2e1973e114e1536f5621941a"
+  },
+  {
+   "file": "evidence/mapping/mapping_results.json",
+   "bytes": 2950,
+   "sha256": "4a9fadec955bdd3ec42f7b53dc9f63daa172989a4be011f6f6e63d816a5c8084"
+  },
+  {
+   "file": "evidence/mapping/SAN-FY2024.mapping.json",
+   "bytes": 94929,
+   "sha256": "1d4b3b63932e3efd54ee2899cf9e9470b3225e7c5f1c62c339b2b872d9c5b38e"
+  },
+  {
+   "file": "evidence/mapping/SAN-FY2025.mapping.json",
+   "bytes": 88907,
+   "sha256": "bf29473a27d1d8d3dda0acaf5375442d67433b67c2a916bc6d034bc3dc5afe58"
+  },
+  {
+   "file": "evidence/compare_mapped/BBVA-FY2024.comparison.jsonl",
+   "bytes": 103525,
+   "sha256": "940a493e85a73a5ab9c674e164f9b445f64147aeb1f73a404c9a7fca0fc865f9"
+  },
+  {
+   "file": "evidence/compare_mapped/BBVA-FY2025.comparison.jsonl",
+   "bytes": 158407,
+   "sha256": "a19fada797d9431e998385c60ed786d5c9eddc2ffec3ca688e5147a7b8108a70"
+  },
+  {
+   "file": "evidence/compare_mapped/g1c_mapped_dataset.json",
+   "bytes": 543968,
+   "sha256": "e6a5fcb3ce81cee04a90310dea136113329d58bc3df05d5ad6586ae83f52ab4d"
+  },
+  {
+   "file": "evidence/compare_mapped/g1c_mapped_results.json",
+   "bytes": 3655,
+   "sha256": "b7790b6ba35f915714264057589d972662b7737c3a7733005985fe16adb30643"
+  },
+  {
+   "file": "evidence/compare_mapped/SAN-FY2024.comparison.jsonl",
+   "bytes": 120309,
+   "sha256": "9951896519990e8f98a084d3cfd8d59db91275115d7361b2a96068143520df41"
+  },
+  {
+   "file": "evidence/compare_mapped/SAN-FY2025.comparison.jsonl",
+   "bytes": 87764,
+   "sha256": "756013491f6d9b27bba46372b7306c67cf4167049df7c6ac49ff3fabda0f11cd"
+  },
+  {
+   "file": "g1c_structure.py",
+   "bytes": 11122,
+   "sha256": "7bb0d861879c1173dd70d332c67aa4ee929b83c992285ea8406d68668b58ba4b"
+  },
+  {
+   "file": "g1c_map.py",
+   "bytes": 14246,
+   "sha256": "e0f47b9ed029f88a76564d82369f7396c08b300b646323579554806aee16549c"
+  },
+  {
+   "file": "g1c_compare_mapped.py",
+   "bytes": 9518,
+   "sha256": "8c66a9068e4b222a573ef7749dd0e4dcbae8396323e81461bf2e281c6650116f"
+  },
+  {
+   "file": "g1c_verify.py",
+   "bytes": 6270,
+   "sha256": "af630855c5165a5b1dfa745b1b7269cf1c007462725f22890706647adf033872"
+  },
+  {
+   "file": "README.md",
+   "bytes": 5439,
+   "sha256": "ac2b0ce3ef20a7ab9cbfe02f46ee0b867c0e6e277dfd609b441f7a5773026dae"
+  },
+  {
+   "file": "evidence/g1c_results.json",
+   "bytes": 1260,
+   "sha256": "db431e2eb2297d267eea101c64aef7f966f8288b6eef30cbfee7d2439af310d6"
+  }
+ ],
+ "sha256": {
+  "evidence/structure/BBVA-FY2024-en.structure.json": "5e3a32cc8f31dd2e47252bf8dcf3c53634634bb63c2447400bd95c068dcefc2f",
+  "evidence/structure/BBVA-FY2024-es.structure.json": "1bc002cc82203abf49b7f1e8233bb3620199415a8a06357fdf58db220488a6ec",
+  "evidence/structure/BBVA-FY2025-en.structure.json": "52412a8236d80c9ab470af5aa941b2dece4ac09842a98793e5f0b0315ebad09d",
+  "evidence/structure/BBVA-FY2025-es.structure.json": "00d9fe0b29f474cb664dc5060b1cca926f73a389294ac3cf7cd3034cf0ab746c",
+  "evidence/structure/IBE-FY2024-es.structure.json": "1302de08f0ae3f3140c0172a57dbcfc806aa84d8bcaaef65ab8019511ee62f8a",
+  "evidence/structure/IBE-FY2025-es.structure.json": "fb83c42ebe08a4d474dea509e43f48f11c5d3c7aa81a04fa230b094199f86c3f",
+  "evidence/structure/SAN-FY2024-en.structure.json": "09d78ab139212c87480e14c34434d7eebfc08ab8cd6bbbbe7c4d1b3195f300ed",
+  "evidence/structure/SAN-FY2024-es.structure.json": "200d89a1ce7ce4007827de72f8e096d98db2126fd9987d6b17fca512c36ef414",
+  "evidence/structure/SAN-FY2025-en.structure.json": "01e14070278324f01fb189337890db00855cc3821dc2309c17ed446e47c13c19",
+  "evidence/structure/SAN-FY2025-es.structure.json": "2ad4efd6fd782be0d7dc371c8275b3dacdb236d77040fcbfcdae7845501d2300",
+  "evidence/structure/structure_results.json": "9a937cf02e097c12bc2ae36f78e4a2da9ab474d6b5a631f0cbe7d18ac1065958",
+  "evidence/mapping/BBVA-FY2024.mapping.json": "eee8380b30cd8cce17f4fe1125f6fee7bc60c28e68029a5f350b693ba95b96da",
+  "evidence/mapping/BBVA-FY2025.mapping.json": "38a79e829a61f4bf2ed89b1bc061e9a0f87a8f0c2e1973e114e1536f5621941a",
+  "evidence/mapping/mapping_results.json": "4a9fadec955bdd3ec42f7b53dc9f63daa172989a4be011f6f6e63d816a5c8084",
+  "evidence/mapping/SAN-FY2024.mapping.json": "1d4b3b63932e3efd54ee2899cf9e9470b3225e7c5f1c62c339b2b872d9c5b38e",
+  "evidence/mapping/SAN-FY2025.mapping.json": "bf29473a27d1d8d3dda0acaf5375442d67433b67c2a916bc6d034bc3dc5afe58",
+  "evidence/compare_mapped/BBVA-FY2024.comparison.jsonl": "940a493e85a73a5ab9c674e164f9b445f64147aeb1f73a404c9a7fca0fc865f9",
+  "evidence/compare_mapped/BBVA-FY2025.comparison.jsonl": "a19fada797d9431e998385c60ed786d5c9eddc2ffec3ca688e5147a7b8108a70",
+  "evidence/compare_mapped/g1c_mapped_dataset.json": "e6a5fcb3ce81cee04a90310dea136113329d58bc3df05d5ad6586ae83f52ab4d",
+  "evidence/compare_mapped/g1c_mapped_results.json": "b7790b6ba35f915714264057589d972662b7737c3a7733005985fe16adb30643",
+  "evidence/compare_mapped/SAN-FY2024.comparison.jsonl": "9951896519990e8f98a084d3cfd8d59db91275115d7361b2a96068143520df41",
+  "evidence/compare_mapped/SAN-FY2025.comparison.jsonl": "756013491f6d9b27bba46372b7306c67cf4167049df7c6ac49ff3fabda0f11cd",
+  "g1c_structure.py": "7bb0d861879c1173dd70d332c67aa4ee929b83c992285ea8406d68668b58ba4b",
+  "g1c_map.py": "e0f47b9ed029f88a76564d82369f7396c08b300b646323579554806aee16549c",
+  "g1c_compare_mapped.py": "8c66a9068e4b222a573ef7749dd0e4dcbae8396323e81461bf2e281c6650116f",
+  "g1c_verify.py": "af630855c5165a5b1dfa745b1b7269cf1c007462725f22890706647adf033872",
+  "README.md": "ac2b0ce3ef20a7ab9cbfe02f46ee0b867c0e6e277dfd609b441f7a5773026dae",
+  "evidence/g1c_results.json": "db431e2eb2297d267eea101c64aef7f966f8288b6eef30cbfee7d2439af310d6"
+ },
+ "findings": [
+  "415/449 ext elements PROVEN_EQUIVALENT via structural 1:1 rule",
+  "11 AMBIGUOUS (real shared-signature), 2 CONFLICT, 21 UNMATCHED",
+  "mapped re-comparison: UNMAPPED 4239->132, VARIANT_ONLY 2453->6, no new divergences",
+  "BBVA +98M/-98M divergence preserved"
+ ],
+ "limitations": [
+  "PROVEN = structural 1:1 equivalence, not semantic certainty",
+  "order_disambiguated pairs rely on sibling position",
+  "dual-variant filings only; IBE single-variant skipped"
+ ]
+}

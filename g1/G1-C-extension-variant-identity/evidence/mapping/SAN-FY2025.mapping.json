@@ -1,0 +1,2038 @@
+{
+ "filing": "SAN-FY2025",
+ "records": [
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#FinancialAssetsReclassifiedFromFairValueWithChangesInOtherComprehensiveIncomeMember",
+     "http://www.santander.com/20251231#InterestIncomeFromOtherFinancialAssetsMember",
+     "http://www.santander.com/20251231#OtherGainsOrLossesMember",
+     "http://www.santander.com/20251231#ReclassifiedFinancialAssetsFromAmortizedCostMember"
+    ]
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#ActivosFinancierosReclasificadosDesdeCosteAmortizadoMember::http://www.santander.com/20251231#ReclassifiedFinancialAssetsFromAmortizedCostMember",
+   "source_qname": "http://www.santander.com/20251231#ActivosFinancierosReclasificadosDesdeCosteAmortizadoMember",
+   "target_qname": "http://www.santander.com/20251231#ReclassifiedFinancialAssetsFromAmortizedCostMember",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#FinancialAssetsReclassifiedFromFairValueWithChangesInOtherComprehensiveIncomeMember",
+     "http://www.santander.com/20251231#InterestIncomeFromOtherFinancialAssetsMember",
+     "http://www.santander.com/20251231#OtherGainsOrLossesMember",
+     "http://www.santander.com/20251231#ReclassifiedFinancialAssetsFromAmortizedCostMember"
+    ]
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#ActivosFinancierosReclasificadosDesdeValorRazonableConCambiosEnOtroResultadoGlobalMember::http://www.santander.com/20251231#FinancialAssetsReclassifiedFromFairValueWithChangesInOtherComprehensiveIncomeMember",
+   "source_qname": "http://www.santander.com/20251231#ActivosFinancierosReclasificadosDesdeValorRazonableConCambiosEnOtroResultadoGlobalMember",
+   "target_qname": "http://www.santander.com/20251231#FinancialAssetsReclassifiedFromFairValueWithChangesInOtherComprehensiveIncomeMember",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#ActivosNoCorrientesMantenidosParaLaVentaQueNoSeReclasificaranAResultadosAntesDeImpuestos::http://www.santander.com/20251231#NonCurrentAssetsHeldForSaleThatWillNotBeReclassifiedToProfitOrLossBeforeTax",
+   "source_qname": "http://www.santander.com/20251231#ActivosNoCorrientesMantenidosParaLaVentaQueNoSeReclasificaranAResultadosAntesDeImpuestos",
+   "target_qname": "http://www.santander.com/20251231#NonCurrentAssetsHeldForSaleThatWillNotBeReclassifiedToProfitOrLossBeforeTax",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#ActivosPorImpuestos::http://www.santander.com/20251231#TaxAssets",
+   "source_qname": "http://www.santander.com/20251231#ActivosPorImpuestos",
+   "target_qname": "http://www.santander.com/20251231#TaxAssets",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#ActivosTangibles::http://www.santander.com/20251231#TangibleAssets",
+   "source_qname": "http://www.santander.com/20251231#ActivosTangibles",
+   "target_qname": "http://www.santander.com/20251231#TangibleAssets",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#AdquisicionActivosNoCorrientesYPasivosQueSeHanClasificadoComoMantenidosParaLaVenta::http://www.santander.com/20251231#PurchaseOfNonCurrentAssetsAndLiabilitiesClassifiedAsHeldForSale",
+   "source_qname": "http://www.santander.com/20251231#AdquisicionActivosNoCorrientesYPasivosQueSeHanClasificadoComoMantenidosParaLaVenta",
+   "target_qname": "http://www.santander.com/20251231#PurchaseOfNonCurrentAssetsAndLiabilitiesClassifiedAsHeldForSale",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#PaymentsToAcquireEntityShares",
+     "http://www.santander.com/20251231#PaymentsToRedeemEntityShares"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#AdquisicionDeInstrumentosDePatrimonioPropio::http://www.santander.com/20251231#PaymentsToAcquireEntityShares",
+   "source_qname": "http://www.santander.com/20251231#AdquisicionDeInstrumentosDePatrimonioPropio",
+   "target_qname": "http://www.santander.com/20251231#PaymentsToAcquireEntityShares",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#PaymentsToAcquireEntityShares",
+     "http://www.santander.com/20251231#PaymentsToRedeemEntityShares"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#AmortizacionDeInstrumentosDePatrimonioPropio::http://www.santander.com/20251231#PaymentsToRedeemEntityShares",
+   "source_qname": "http://www.santander.com/20251231#AmortizacionDeInstrumentosDePatrimonioPropio",
+   "target_qname": "http://www.santander.com/20251231#PaymentsToRedeemEntityShares",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#ArgentinaEconomiaHiperinflacionariaMember::http://www.santander.com/20251231#ArgentinaHyperinflationaryEconomy",
+   "source_qname": "http://www.santander.com/20251231#ArgentinaEconomiaHiperinflacionariaMember",
+   "target_qname": "http://www.santander.com/20251231#ArgentinaHyperinflationaryEconomy",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#AdjustmentsForDecreaseIncreaseInOperatingAssets::http://www.santander.com/20251231#AumentoDisminucionNetaDeLosActivosDeExplotacion",
+   "source_qname": "http://www.santander.com/20251231#AumentoDisminucionNetaDeLosActivosDeExplotacion",
+   "target_qname": "http://www.santander.com/20251231#AdjustmentsForDecreaseIncreaseInOperatingAssets",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#AdjustmentsForDecreaseIncreaseInNonTradingFinancialAssetsMandatorilyAtFairValueThroughProfitOrLoss::http://www.santander.com/20251231#AumentoDisminucionNetaDeLosActivosDeExplotacionActivosFinancierosNoDestinadosANegociacionValoradosObligatoriamenteAValorRazonableConCambiosEnResultados",
+   "source_qname": "http://www.santander.com/20251231#AumentoDisminucionNetaDeLosActivosDeExplotacionActivosFinancierosNoDestinadosANegociacionValoradosObligatoriamenteAValorRazonableConCambiosEnResultados",
+   "target_qname": "http://www.santander.com/20251231#AdjustmentsForDecreaseIncreaseInNonTradingFinancialAssetsMandatorilyAtFairValueThroughProfitOrLoss",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#AdjustmentsForIncreaseDecreaseInOperatingLiabilities::http://www.santander.com/20251231#AumentoDisminucionNetaDeLosPasivosDeExplotacion",
+   "source_qname": "http://www.santander.com/20251231#AumentoDisminucionNetaDeLosPasivosDeExplotacion",
+   "target_qname": "http://www.santander.com/20251231#AdjustmentsForIncreaseDecreaseInOperatingLiabilities",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#ChangesInTheFairValueOfEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeHedgedItem",
+     "http://www.santander.com/20251231#ChangesInTheFairValueOfEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeHedgingInstrument"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#CambiosDelValorRazonableDeLosInstrumentosDePatrimonioValoradosAValorRazonableConCambiosEnOtroResultadoGlobalElementoCubierto::http://www.santander.com/20251231#ChangesInTheFairValueOfEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeHedgedItem",
+   "source_qname": "http://www.santander.com/20251231#CambiosDelValorRazonableDeLosInstrumentosDePatrimonioValoradosAValorRazonableConCambiosEnOtroResultadoGlobalElementoCubierto",
+   "target_qname": "http://www.santander.com/20251231#ChangesInTheFairValueOfEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeHedgedItem",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#ChangesInTheFairValueOfEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeHedgedItem",
+     "http://www.santander.com/20251231#ChangesInTheFairValueOfEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeHedgingInstrument"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#CambiosDelValorRazonableDeLosInstrumentosDePatrimonioValoradosAValorRazonableConCambiosEnOtroResultadoGlobalInstrumentoDeCobertura::http://www.santander.com/20251231#ChangesInTheFairValueOfEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeHedgingInstrument",
+   "source_qname": "http://www.santander.com/20251231#CambiosDelValorRazonableDeLosInstrumentosDePatrimonioValoradosAValorRazonableConCambiosEnOtroResultadoGlobalInstrumentoDeCobertura",
+   "target_qname": "http://www.santander.com/20251231#ChangesInTheFairValueOfEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeHedgingInstrument",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#CalledUpPaidCapital",
+     "http://www.santander.com/20251231#UnpaidCapitalCalledUp"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#CalledUpPaidCapital::http://www.santander.com/20251231#CapitalDesembolsado",
+   "source_qname": "http://www.santander.com/20251231#CapitalDesembolsado",
+   "target_qname": "http://www.santander.com/20251231#CalledUpPaidCapital",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#CalledUpPaidCapital",
+     "http://www.santander.com/20251231#UnpaidCapitalCalledUp"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#CapitalNoDesembolsadoExigido::http://www.santander.com/20251231#UnpaidCapitalCalledUp",
+   "source_qname": "http://www.santander.com/20251231#CapitalNoDesembolsadoExigido",
+   "target_qname": "http://www.santander.com/20251231#UnpaidCapitalCalledUp",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#ComponenteDePatrimonioNetoDeLosInstrumentosFinancierosCompuestos::http://www.santander.com/20251231#CompoundFinancialInstrumentEquityComponent",
+   "source_qname": "http://www.santander.com/20251231#ComponenteDePatrimonioNetoDeLosInstrumentosFinancierosCompuestos",
+   "target_qname": "http://www.santander.com/20251231#CompoundFinancialInstrumentEquityComponent",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#CommitmentsAndGuaranteesGivenProvisionMember",
+     "http://www.santander.com/20251231#OtherLongTermEmployeeBenefitsProvisionMember",
+     "http://www.santander.com/20251231#PensionsAndOtherEmploymentDefinedBenefitObligationsProvisionMember",
+     "http://www.santander.com/20251231#TaxesAndOtherLegalContingenciesProvisionMember"
+    ]
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#CommitmentsAndGuaranteesGivenProvisionMember::http://www.santander.com/20251231#CompromisosYGarantiasConcedidosMember",
+   "source_qname": "http://www.santander.com/20251231#CompromisosYGarantiasConcedidosMember",
+   "target_qname": "http://www.santander.com/20251231#CommitmentsAndGuaranteesGivenProvisionMember",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#ContratosDeSegurosVinculadosAPensiones::http://www.santander.com/20251231#InsuranceContractsLinkedToPensions",
+   "source_qname": "http://www.santander.com/20251231#ContratosDeSegurosVinculadosAPensiones",
+   "target_qname": "http://www.santander.com/20251231#InsuranceContractsLinkedToPensions",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#CommitmentsAndGuaranteesGivenProvisionMember",
+     "http://www.santander.com/20251231#OtherLongTermEmployeeBenefitsProvisionMember",
+     "http://www.santander.com/20251231#PensionsAndOtherEmploymentDefinedBenefitObligationsProvisionMember",
+     "http://www.santander.com/20251231#TaxesAndOtherLegalContingenciesProvisionMember"
+    ]
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#CuestionesProcesalesYLitigiosPorImpuestosPendientesMember::http://www.santander.com/20251231#TaxesAndOtherLegalContingenciesProvisionMember",
+   "source_qname": "http://www.santander.com/20251231#CuestionesProcesalesYLitigiosPorImpuestosPendientesMember",
+   "target_qname": "http://www.santander.com/20251231#TaxesAndOtherLegalContingenciesProvisionMember",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#DeclaracionLineItems::http://www.santander.com/20251231#StatementLineItems",
+   "source_qname": "http://www.santander.com/20251231#DeclaracionLineItems",
+   "target_qname": "http://www.santander.com/20251231#StatementLineItems",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT",
+   "pair_id": "PAIR::http://www.santander.com/20251231#DeclaracionTable::http://www.santander.com/20251231#StatementTable",
+   "source_qname": "http://www.santander.com/20251231#DeclaracionTable",
+   "target_qname": "http://www.santander.com/20251231#StatementTable",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#DepositsCentralBanksMember",
+     "http://www.santander.com/20251231#DepositsCreditInstitutionsMember",
+     "http://www.santander.com/20251231#DepositsCustomersMember"
+    ]
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#DepositosBancosCentralesMember::http://www.santander.com/20251231#DepositsCentralBanksMember",
+   "source_qname": "http://www.santander.com/20251231#DepositosBancosCentralesMember",
+   "target_qname": "http://www.santander.com/20251231#DepositsCentralBanksMember",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#DepositsCentralBanksMember",
+     "http://www.santander.com/20251231#DepositsCreditInstitutionsMember",
+     "http://www.santander.com/20251231#DepositsCustomersMember"
+    ]
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#DepositosClientelaMember::http://www.santander.com/20251231#DepositsCustomersMember",
+   "source_qname": "http://www.santander.com/20251231#DepositosClientelaMember",
+   "target_qname": "http://www.santander.com/20251231#DepositsCustomersMember",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#DepositsCentralBanksMember",
+     "http://www.santander.com/20251231#DepositsCreditInstitutionsMember",
+     "http://www.santander.com/20251231#DepositsCustomersMember"
+    ]
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#DepositosEntidadesDeCreditoMember::http://www.santander.com/20251231#DepositsCreditInstitutionsMember",
+   "source_qname": "http://www.santander.com/20251231#DepositosEntidadesDeCreditoMember",
+   "target_qname": "http://www.santander.com/20251231#DepositsCreditInstitutionsMember",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#DebtInstrumentsMember",
+     "http://www.santander.com/20251231#DepositsMember",
+     "http://www.santander.com/20251231#OtherFinancialLiabilitiesMember",
+     "http://www.santander.com/20251231#ShortPositionsMember"
+    ]
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#DepositosMember::http://www.santander.com/20251231#DepositsMember",
+   "source_qname": "http://www.santander.com/20251231#DepositosMember",
+   "target_qname": "http://www.santander.com/20251231#DepositsMember",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#ImpairmentLossOrReversalOfImpairmentRecognisedInProfitOrLossOtherNonFinancialAssetsNet",
+     "http://www.santander.com/20251231#ImpairmentLossOrReversalOfImpairmentRecognisedInProfitOrLossTangibleAssets",
+     "http://www.santander.com/20251231#ImpairmentLossReversalOfImpairmentOfInvestmentsInSubsidiariesJointVenturesAndAssociatesNet",
+     "http://www.santander.com/20251231#ImpairmentLossReversalOfImpairmentRecognisedInProfitOrLossNonFinancialAssetsNet"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#DeterioroDelValorOReversionDelDeterioroDelValorDeActivosNoFinancieros::http://www.santander.com/20251231#ImpairmentLossReversalOfImpairmentRecognisedInProfitOrLossNonFinancialAssetsNet",
+   "source_qname": "http://www.santander.com/20251231#DeterioroDelValorOReversionDelDeterioroDelValorDeActivosNoFinancieros",
+   "target_qname": "http://www.santander.com/20251231#ImpairmentLossReversalOfImpairmentRecognisedInProfitOrLossNonFinancialAssetsNet",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#ImpairmentLossOrReversalOfImpairmentRecognisedInProfitOrLossOtherNonFinancialAssetsNet",
+     "http://www.santander.com/20251231#ImpairmentLossOrReversalOfImpairmentRecognisedInProfitOrLossTangibleAssets",
+     "http://www.santander.com/20251231#ImpairmentLossReversalOfImpairmentOfInvestmentsInSubsidiariesJointVenturesAndAssociatesNet",
+     "http://www.santander.com/20251231#ImpairmentLossReversalOfImpairmentRecognisedInProfitOrLossNonFinancialAssetsNet"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#DeterioroDelValorOReversionDelDeterioroDelValorDeInversionesEnNegociosConjuntosOAsociadas::http://www.santander.com/20251231#ImpairmentLossReversalOfImpairmentOfInvestmentsInSubsidiariesJointVenturesAndAssociatesNet",
+   "source_qname": "http://www.santander.com/20251231#DeterioroDelValorOReversionDelDeterioroDelValorDeInversionesEnNegociosConjuntosOAsociadas",
+   "target_qname": "http://www.santander.com/20251231#ImpairmentLossReversalOfImpairmentOfInvestmentsInSubsidiariesJointVenturesAndAssociatesNet",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#DividendosACuenta::http://www.santander.com/20251231#InterimDividends",
+   "source_qname": "http://www.santander.com/20251231#DividendosACuenta",
+   "target_qname": "http://www.santander.com/20251231#InterimDividends",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#AccumulatedOtherComprehensiveIncomeAttributableToNonControllingInterestsMember",
+     "http://www.santander.com/20251231#InterimDividendsMember",
+     "http://www.santander.com/20251231#NonControllingInterestExcludingAccumulatedOtherComprehensiveIncomeMember",
+     "http://www.santander.com/20251231#OtherEquityInstrumentsIssuedMember",
+     "http://www.santander.com/20251231#ProfitLossAttributableToShareholdersOfParentMember"
+    ]
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#DividendosACuentaMember::http://www.santander.com/20251231#InterimDividendsMember",
+   "source_qname": "http://www.santander.com/20251231#DividendosACuentaMember",
+   "target_qname": "http://www.santander.com/20251231#InterimDividendsMember",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#MaturityOfOtherFinancialInstruments",
+     "http://www.santander.com/20251231#TransferFromEquityToLiabilities"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#EjercicioOVencimientoDeOtrosInstrumentosDePatrimonioEmitidos::http://www.santander.com/20251231#MaturityOfOtherFinancialInstruments",
+   "source_qname": "http://www.santander.com/20251231#EjercicioOVencimientoDeOtrosInstrumentosDePatrimonioEmitidos",
+   "target_qname": "http://www.santander.com/20251231#MaturityOfOtherFinancialInstruments",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#IssuanceOfOtherFinancialInstruments",
+     "http://www.santander.com/20251231#IssuanceOfPreferredShares"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#EmisionDeAccionesPreferentes::http://www.santander.com/20251231#IssuanceOfPreferredShares",
+   "source_qname": "http://www.santander.com/20251231#EmisionDeAccionesPreferentes",
+   "target_qname": "http://www.santander.com/20251231#IssuanceOfPreferredShares",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#IssuanceOfOtherFinancialInstruments",
+     "http://www.santander.com/20251231#IssuanceOfPreferredShares"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#EmisionDeOtrosInstrumentosDePatrimonio::http://www.santander.com/20251231#IssuanceOfOtherFinancialInstruments",
+   "source_qname": "http://www.santander.com/20251231#EmisionDeOtrosInstrumentosDePatrimonio",
+   "target_qname": "http://www.santander.com/20251231#IssuanceOfOtherFinancialInstruments",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#InflowsOfCashFromFinancingActivities",
+     "http://www.santander.com/20251231#OtherInflowsOfCashClassifiedAsFinancingActivities"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#EntradasDeEfectivoDeActividadesDeFinanciacion::http://www.santander.com/20251231#InflowsOfCashFromFinancingActivities",
+   "source_qname": "http://www.santander.com/20251231#EntradasDeEfectivoDeActividadesDeFinanciacion",
+   "target_qname": "http://www.santander.com/20251231#InflowsOfCashFromFinancingActivities",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#GainsLossesOnFinancialAssetsAndLiabilitiesAtFairValueThroughProfitOrLoss",
+     "http://www.santander.com/20251231#GainsLossesOnFinancialAssetsAndLiabilitiesHeldForTrading",
+     "http://www.santander.com/20251231#GainsLossesOnFinancialAssetsAndLiabilitiesNotMeasuredAtFairValueThroughProfitOrLossNet"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#GainsLossesOnFinancialAssetsAndLiabilitiesNotMeasuredAtFairValueThroughProfitOrLossNet::http://www.santander.com/20251231#GananciasOPerdidasAlDarDeBajaEnCuentasActivosYPasivosFinancierosNoValoradosAValorRazonableConCambiosEnResultadosNetas",
+   "source_qname": "http://www.santander.com/20251231#GananciasOPerdidasAlDarDeBajaEnCuentasActivosYPasivosFinancierosNoValoradosAValorRazonableConCambiosEnResultadosNetas",
+   "target_qname": "http://www.santander.com/20251231#GainsLossesOnFinancialAssetsAndLiabilitiesNotMeasuredAtFairValueThroughProfitOrLossNet",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#GainsLossesOnNonCurrentAssetsClassifiedAsHeldForSaleBeforeTax",
+     "http://www.santander.com/20251231#GainsLossesOnRemeasuringHedgingInstrumentsNotDesignatedBeforeTax",
+     "http://www.santander.com/20251231#OtherReclassificationAdjustmentsOnHedgingInstrumentsNotDesignatedBeforeTax",
+     "http://www.santander.com/20251231#OtherReclassificationAdjustmentsOnNonCurrentAssetsClassifiedAsHeldForSaleBeforeTax"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#GainsLossesOnRemeasuringHedgingInstrumentsNotDesignatedBeforeTax::http://www.santander.com/20251231#GananciasOPerdidasDeValorContabilizadasEnElPatrimonioNetoInstrumentosDeCoberturaElementosNoDesignados",
+   "source_qname": "http://www.santander.com/20251231#GananciasOPerdidasDeValorContabilizadasEnElPatrimonioNetoInstrumentosDeCoberturaElementosNoDesignados",
+   "target_qname": "http://www.santander.com/20251231#GainsLossesOnRemeasuringHedgingInstrumentsNotDesignatedBeforeTax",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#GainsOrLossesFromHedgeAccountingNet::http://www.santander.com/20251231#GananciasOPerdidasNetasDeContabilidadDeCobertura",
+   "source_qname": "http://www.santander.com/20251231#GananciasOPerdidasNetasDeContabilidadDeCobertura",
+   "target_qname": "http://www.santander.com/20251231#GainsOrLossesFromHedgeAccountingNet",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#GainsLossesOnNoncurrentAssetsHeldForSaleNotClassifiedAsDiscontinuedOperations::http://www.santander.com/20251231#GananciasOPerdidasProcedentesDeActivosNoCorrientesYGruposEnajenablesDeElementosClasificadosComoMantenidosParaLaVentaNoAdmisiblesComoActividadesInterrumpidas",
+   "source_qname": "http://www.santander.com/20251231#GananciasOPerdidasProcedentesDeActivosNoCorrientesYGruposEnajenablesDeElementosClasificadosComoMantenidosParaLaVentaNoAdmisiblesComoActividadesInterrumpidas",
+   "target_qname": "http://www.santander.com/20251231#GainsLossesOnNoncurrentAssetsHeldForSaleNotClassifiedAsDiscontinuedOperations",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#GainsLossesOnFinancialAssetsAndLiabilitiesAtFairValueThroughProfitOrLoss",
+     "http://www.santander.com/20251231#GainsLossesOnFinancialAssetsAndLiabilitiesHeldForTrading",
+     "http://www.santander.com/20251231#GainsLossesOnFinancialAssetsAndLiabilitiesNotMeasuredAtFairValueThroughProfitOrLossNet"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#GainsLossesOnFinancialAssetsAndLiabilitiesAtFairValueThroughProfitOrLoss::http://www.santander.com/20251231#GananciasOPerdidasSobreActivosYPasivosFinancierosAValorRazonableConCambiosEnResultados",
+   "source_qname": "http://www.santander.com/20251231#GananciasOPerdidasSobreActivosYPasivosFinancierosAValorRazonableConCambiosEnResultados",
+   "target_qname": "http://www.santander.com/20251231#GainsLossesOnFinancialAssetsAndLiabilitiesAtFairValueThroughProfitOrLoss",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#GainsLossesOnNonCurrentAssetsClassifiedAsHeldForSaleBeforeTax",
+     "http://www.santander.com/20251231#GainsLossesOnRemeasuringHedgingInstrumentsNotDesignatedBeforeTax",
+     "http://www.santander.com/20251231#OtherReclassificationAdjustmentsOnHedgingInstrumentsNotDesignatedBeforeTax",
+     "http://www.santander.com/20251231#OtherReclassificationAdjustmentsOnNonCurrentAssetsClassifiedAsHeldForSaleBeforeTax"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#GainsLossesOnNonCurrentAssetsClassifiedAsHeldForSaleBeforeTax::http://www.santander.com/20251231#GananciasPerdidasDeValorContabilizadasEnElPatrimonioNetoActivosNoCorrientesYGruposEnajenablesDeElementosMantenidosParaLaVentaAntesDeImpuestos",
+   "source_qname": "http://www.santander.com/20251231#GananciasPerdidasDeValorContabilizadasEnElPatrimonioNetoActivosNoCorrientesYGruposEnajenablesDeElementosMantenidosParaLaVentaAntesDeImpuestos",
+   "target_qname": "http://www.santander.com/20251231#GainsLossesOnNonCurrentAssetsClassifiedAsHeldForSaleBeforeTax",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#GainsLossesOnDisposalsOfNonFinancialAssetsNet::http://www.santander.com/20251231#GananciasPerdidasPorEnajenacionesDeActivosNoFinancierosNeto",
+   "source_qname": "http://www.santander.com/20251231#GananciasPerdidasPorEnajenacionesDeActivosNoFinancierosNeto",
+   "target_qname": "http://www.santander.com/20251231#GainsLossesOnDisposalsOfNonFinancialAssetsNet",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#GainsLossesOnFinancialAssetsAndLiabilitiesAtFairValueThroughProfitOrLoss",
+     "http://www.santander.com/20251231#GainsLossesOnFinancialAssetsAndLiabilitiesHeldForTrading",
+     "http://www.santander.com/20251231#GainsLossesOnFinancialAssetsAndLiabilitiesNotMeasuredAtFairValueThroughProfitOrLossNet"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#GainsLossesOnFinancialAssetsAndLiabilitiesHeldForTrading::http://www.santander.com/20251231#GananciasPerdidasSobreActivosYPasivosFinancierosMantenidosParaNegociar",
+   "source_qname": "http://www.santander.com/20251231#GananciasPerdidasSobreActivosYPasivosFinancierosMantenidosParaNegociar",
+   "target_qname": "http://www.santander.com/20251231#GainsLossesOnFinancialAssetsAndLiabilitiesHeldForTrading",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#ExpensesFromInsuranceAndReinsuranceContractsRecognisedInProfitOrLoss::http://www.santander.com/20251231#GastosDeContratosDeSeguroYReaseguroReconocidosEnPerdidasYGanancias",
+   "source_qname": "http://www.santander.com/20251231#GastosDeContratosDeSeguroYReaseguroReconocidosEnPerdidasYGanancias",
+   "target_qname": "http://www.santander.com/20251231#ExpensesFromInsuranceAndReinsuranceContractsRecognisedInProfitOrLoss",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#AmountsTransferredToInitialCarryingAmountOfHedgedItemsBeforeTax::http://www.santander.com/20251231#ImporteTransferidoEnLibrosInicialDeLosElementosCubiertosAntesDeImpuestos",
+   "source_qname": "http://www.santander.com/20251231#ImporteTransferidoEnLibrosInicialDeLosElementosCubiertosAntesDeImpuestos",
+   "target_qname": "http://www.santander.com/20251231#AmountsTransferredToInitialCarryingAmountOfHedgedItemsBeforeTax",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#IncreaseDecreaseInEquityOtherThanComprehensiveIncome",
+     "http://www.santander.com/20251231#TransferFromLiabilitiesToEquity"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#IncreaseDecreaseInEquityOtherThanComprehensiveIncome::http://www.santander.com/20251231#IncrementoDecrementoPorOtrasVariacionesDelPatrimonioNeto",
+   "source_qname": "http://www.santander.com/20251231#IncrementoDecrementoPorOtrasVariacionesDelPatrimonioNeto",
+   "target_qname": "http://www.santander.com/20251231#IncreaseDecreaseInEquityOtherThanComprehensiveIncome",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#IncomeFromInsuranceAndReinsuranceContractsRecognisedInProfitOrLoss::http://www.santander.com/20251231#IngresosDeContratosDeSeguroYReaseguroReconocidosEnPerdidasYGanancias",
+   "source_qname": "http://www.santander.com/20251231#IngresosDeContratosDeSeguroYReaseguroReconocidosEnPerdidasYGanancias",
+   "target_qname": "http://www.santander.com/20251231#IncomeFromInsuranceAndReinsuranceContractsRecognisedInProfitOrLoss",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#FinancialAssetsReclassifiedFromFairValueWithChangesInOtherComprehensiveIncomeMember",
+     "http://www.santander.com/20251231#InterestIncomeFromOtherFinancialAssetsMember",
+     "http://www.santander.com/20251231#OtherGainsOrLossesMember",
+     "http://www.santander.com/20251231#ReclassifiedFinancialAssetsFromAmortizedCostMember"
+    ]
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#IngresosPorInteresesDeOtrosActivosFinancierosMember::http://www.santander.com/20251231#InterestIncomeFromOtherFinancialAssetsMember",
+   "source_qname": "http://www.santander.com/20251231#IngresosPorInteresesDeOtrosActivosFinancierosMember",
+   "target_qname": "http://www.santander.com/20251231#InterestIncomeFromOtherFinancialAssetsMember",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#OtherComprehensiveIncomeBeforeTaxHedgingInstrumentsNotDesignated",
+     "http://www.santander.com/20251231#OtherComprehensiveIncomeBeforeTaxNonCurrentAssetsClassifiedAsHeldForSale"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#InstrumentosDeCoberturaElementosNoDesignadosOtroResultadoGlobalAntesDeImpuestos::http://www.santander.com/20251231#OtherComprehensiveIncomeBeforeTaxHedgingInstrumentsNotDesignated",
+   "source_qname": "http://www.santander.com/20251231#InstrumentosDeCoberturaElementosNoDesignadosOtroResultadoGlobalAntesDeImpuestos",
+   "target_qname": "http://www.santander.com/20251231#OtherComprehensiveIncomeBeforeTaxHedgingInstrumentsNotDesignated",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#DebtInstrumentsMember",
+     "http://www.santander.com/20251231#DepositsMember",
+     "http://www.santander.com/20251231#OtherFinancialLiabilitiesMember",
+     "http://www.santander.com/20251231#ShortPositionsMember"
+    ]
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#DebtInstrumentsMember::http://www.santander.com/20251231#InstrumentosDeDeudaMember",
+   "source_qname": "http://www.santander.com/20251231#InstrumentosDeDeudaMember",
+   "target_qname": "http://www.santander.com/20251231#DebtInstrumentsMember",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#FinancialAssetsReclassifiedFromFairValueWithChangesInOtherComprehensiveIncomeMember",
+     "http://www.santander.com/20251231#InterestIncomeFromOtherFinancialAssetsMember",
+     "http://www.santander.com/20251231#OtherGainsOrLossesMember",
+     "http://www.santander.com/20251231#ReclassifiedFinancialAssetsFromAmortizedCostMember"
+    ]
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#OtherGainsOrLossesMember::http://www.santander.com/20251231#OtrasGananciasOPerdidasMember",
+   "source_qname": "http://www.santander.com/20251231#OtrasGananciasOPerdidasMember",
+   "target_qname": "http://www.santander.com/20251231#OtherGainsOrLossesMember",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#GainsLossesOnNonCurrentAssetsClassifiedAsHeldForSaleBeforeTax",
+     "http://www.santander.com/20251231#GainsLossesOnRemeasuringHedgingInstrumentsNotDesignatedBeforeTax",
+     "http://www.santander.com/20251231#OtherReclassificationAdjustmentsOnHedgingInstrumentsNotDesignatedBeforeTax",
+     "http://www.santander.com/20251231#OtherReclassificationAdjustmentsOnNonCurrentAssetsClassifiedAsHeldForSaleBeforeTax"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#OtherReclassificationAdjustmentsOnNonCurrentAssetsClassifiedAsHeldForSaleBeforeTax::http://www.santander.com/20251231#OtrasReclasificacionesActivosNoCorrientesYGruposEnajenablesDeElementosMantenidosParaLaVentaAntesDeImpuestos",
+   "source_qname": "http://www.santander.com/20251231#OtrasReclasificacionesActivosNoCorrientesYGruposEnajenablesDeElementosMantenidosParaLaVentaAntesDeImpuestos",
+   "target_qname": "http://www.santander.com/20251231#OtherReclassificationAdjustmentsOnNonCurrentAssetsClassifiedAsHeldForSaleBeforeTax",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#GainsLossesOnNonCurrentAssetsClassifiedAsHeldForSaleBeforeTax",
+     "http://www.santander.com/20251231#GainsLossesOnRemeasuringHedgingInstrumentsNotDesignatedBeforeTax",
+     "http://www.santander.com/20251231#OtherReclassificationAdjustmentsOnHedgingInstrumentsNotDesignatedBeforeTax",
+     "http://www.santander.com/20251231#OtherReclassificationAdjustmentsOnNonCurrentAssetsClassifiedAsHeldForSaleBeforeTax"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#OtherReclassificationAdjustmentsOnHedgingInstrumentsNotDesignatedBeforeTax::http://www.santander.com/20251231#OtrasReclasificacionesInstrumentosDeCoberturaElementosNoDesignados",
+   "source_qname": "http://www.santander.com/20251231#OtrasReclasificacionesInstrumentosDeCoberturaElementosNoDesignados",
+   "target_qname": "http://www.santander.com/20251231#OtherReclassificationAdjustmentsOnHedgingInstrumentsNotDesignatedBeforeTax",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#OtherReclassificationAdjustmentsOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax::http://www.santander.com/20251231#OtrasReclasificacionesInstrumentosDeDeudaAValorRazonableConCambiosEnOtroResultadoGlobal",
+   "source_qname": "http://www.santander.com/20251231#OtrasReclasificacionesInstrumentosDeDeudaAValorRazonableConCambiosEnOtroResultadoGlobal",
+   "target_qname": "http://www.santander.com/20251231#OtherReclassificationAdjustmentsOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#MiscellaneousOtherReserves",
+     "http://www.santander.com/20251231#ReservesOrAccumulatedLossesInJointVenturesInvestments"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#MiscellaneousOtherReserves::http://www.santander.com/20251231#OtrasReservas",
+   "source_qname": "http://www.santander.com/20251231#OtrasReservas",
+   "target_qname": "http://www.santander.com/20251231#MiscellaneousOtherReserves",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#CommitmentsAndGuaranteesGivenProvisionMember",
+     "http://www.santander.com/20251231#OtherLongTermEmployeeBenefitsProvisionMember",
+     "http://www.santander.com/20251231#PensionsAndOtherEmploymentDefinedBenefitObligationsProvisionMember",
+     "http://www.santander.com/20251231#TaxesAndOtherLegalContingenciesProvisionMember"
+    ]
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#OtherLongTermEmployeeBenefitsProvisionMember::http://www.santander.com/20251231#OtrasRetribucionesALosEmpleadosALargoPlazoMember",
+   "source_qname": "http://www.santander.com/20251231#OtrasRetribucionesALosEmpleadosALargoPlazoMember",
+   "target_qname": "http://www.santander.com/20251231#OtherLongTermEmployeeBenefitsProvisionMember",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#AccumulatedOtherComprehensiveIncomeAttributableToNonControllingInterests",
+     "http://www.santander.com/20251231#OtherComprehensiveIncomeItemsThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.santander.com/20251231#OtherComprehensiveIncomeItemsThatWillNotBeReclassifiedToProfitOrLoss"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#AccumulatedOtherComprehensiveIncomeAttributableToNonControllingInterests::http://www.santander.com/20251231#OtroResultadoGlobalAcumuladoAtribuibleAParticipacionesNoDominantes",
+   "source_qname": "http://www.santander.com/20251231#OtroResultadoGlobalAcumuladoAtribuibleAParticipacionesNoDominantes",
+   "target_qname": "http://www.santander.com/20251231#AccumulatedOtherComprehensiveIncomeAttributableToNonControllingInterests",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#AccumulatedOtherComprehensiveIncomeAttributableToNonControllingInterestsMember",
+     "http://www.santander.com/20251231#InterimDividendsMember",
+     "http://www.santander.com/20251231#NonControllingInterestExcludingAccumulatedOtherComprehensiveIncomeMember",
+     "http://www.santander.com/20251231#OtherEquityInstrumentsIssuedMember",
+     "http://www.santander.com/20251231#ProfitLossAttributableToShareholdersOfParentMember"
+    ]
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#AccumulatedOtherComprehensiveIncomeAttributableToNonControllingInterestsMember::http://www.santander.com/20251231#OtroResultadoGlobalAcumuladoAtribuibleAParticipacionesNoDominantesMember",
+   "source_qname": "http://www.santander.com/20251231#OtroResultadoGlobalAcumuladoAtribuibleAParticipacionesNoDominantesMember",
+   "target_qname": "http://www.santander.com/20251231#AccumulatedOtherComprehensiveIncomeAttributableToNonControllingInterestsMember",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#AccumulatedOtherComprehensiveIncomeAttributableToNonControllingInterests",
+     "http://www.santander.com/20251231#OtherComprehensiveIncomeItemsThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.santander.com/20251231#OtherComprehensiveIncomeItemsThatWillNotBeReclassifiedToProfitOrLoss"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#OtherComprehensiveIncomeItemsThatWillNotBeReclassifiedToProfitOrLoss::http://www.santander.com/20251231#OtroResultadoGlobalAcumuladoElementosQueNoSeReclasificaranEnResultados",
+   "source_qname": "http://www.santander.com/20251231#OtroResultadoGlobalAcumuladoElementosQueNoSeReclasificaranEnResultados",
+   "target_qname": "http://www.santander.com/20251231#OtherComprehensiveIncomeItemsThatWillNotBeReclassifiedToProfitOrLoss",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#AccumulatedOtherComprehensiveIncomeAttributableToNonControllingInterests",
+     "http://www.santander.com/20251231#OtherComprehensiveIncomeItemsThatMayBeReclassifiedToProfitOrLoss",
+     "http://www.santander.com/20251231#OtherComprehensiveIncomeItemsThatWillNotBeReclassifiedToProfitOrLoss"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#OtherComprehensiveIncomeItemsThatMayBeReclassifiedToProfitOrLoss::http://www.santander.com/20251231#OtroResultadoGlobalAcumuladoElementosQuePuedenReclasificarseEnResultados",
+   "source_qname": "http://www.santander.com/20251231#OtroResultadoGlobalAcumuladoElementosQuePuedenReclasificarseEnResultados",
+   "target_qname": "http://www.santander.com/20251231#OtherComprehensiveIncomeItemsThatMayBeReclassifiedToProfitOrLoss",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#OtherComprehensiveIncomeBeforeTaxHedgingInstrumentsNotDesignated",
+     "http://www.santander.com/20251231#OtherComprehensiveIncomeBeforeTaxNonCurrentAssetsClassifiedAsHeldForSale"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#OtherComprehensiveIncomeBeforeTaxNonCurrentAssetsClassifiedAsHeldForSale::http://www.santander.com/20251231#OtroResultadoGlobalAntesDeImpuestosActivosNoCorrientesYGruposEnajenablesDeElementosMantenidosParaLaVenta",
+   "source_qname": "http://www.santander.com/20251231#OtroResultadoGlobalAntesDeImpuestosActivosNoCorrientesYGruposEnajenablesDeElementosMantenidosParaLaVenta",
+   "target_qname": "http://www.santander.com/20251231#OtherComprehensiveIncomeBeforeTaxNonCurrentAssetsClassifiedAsHeldForSale",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#OtherReclassificationAdjustmentsOnCashFlowHedgesBeforeTax::http://www.santander.com/20251231#OtrosAjustesPorReclasificacionEnCoberturasDeFlujoDeEfectivoAntesDeImpuestos",
+   "source_qname": "http://www.santander.com/20251231#OtrosAjustesPorReclasificacionEnCoberturasDeFlujoDeEfectivoAntesDeImpuestos",
+   "target_qname": "http://www.santander.com/20251231#OtherReclassificationAdjustmentsOnCashFlowHedgesBeforeTax",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#OtherReclassificationAdjustmentsOnHedgesOfNetInvestmentsInForeignOperationsBeforeTax::http://www.santander.com/20251231#OtrosAjustesPorReclasificacionEnCoberturasDeInversionesNetasEnOperacionesEnElExtranjeroAntesDeImpuestos",
+   "source_qname": "http://www.santander.com/20251231#OtrosAjustesPorReclasificacionEnCoberturasDeInversionesNetasEnOperacionesEnElExtranjeroAntesDeImpuestos",
+   "target_qname": "http://www.santander.com/20251231#OtherReclassificationAdjustmentsOnHedgesOfNetInvestmentsInForeignOperationsBeforeTax",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#OtherReclassificationAdjustmentsOnExchangeDifferencesOnTranslationBeforeTax::http://www.santander.com/20251231#OtrosAjustesPorReclasificacionPorDiferenciasDeCambioPorConversionAntesDeImpuestos",
+   "source_qname": "http://www.santander.com/20251231#OtrosAjustesPorReclasificacionPorDiferenciasDeCambioPorConversionAntesDeImpuestos",
+   "target_qname": "http://www.santander.com/20251231#OtherReclassificationAdjustmentsOnExchangeDifferencesOnTranslationBeforeTax",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#InflowsOfCashFromFinancingActivities",
+     "http://www.santander.com/20251231#OtherInflowsOfCashClassifiedAsFinancingActivities"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#OtherInflowsOfCashClassifiedAsFinancingActivities::http://www.santander.com/20251231#OtrosCobrosRelacionadosConActividadesDeFinanciacion",
+   "source_qname": "http://www.santander.com/20251231#OtrosCobrosRelacionadosConActividadesDeFinanciacion",
+   "target_qname": "http://www.santander.com/20251231#OtherInflowsOfCashClassifiedAsFinancingActivities",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#OtherProceedsOfCashClassifiedAsInvestingActivities::http://www.santander.com/20251231#OtrosCobrosRelacionadosConActividadesDeInversion",
+   "source_qname": "http://www.santander.com/20251231#OtrosCobrosRelacionadosConActividadesDeInversion",
+   "target_qname": "http://www.santander.com/20251231#OtherProceedsOfCashClassifiedAsInvestingActivities",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#OtherCommitmentsMember::http://www.santander.com/20251231#OtrosCompromisosConcedidosMember",
+   "source_qname": "http://www.santander.com/20251231#OtrosCompromisosConcedidosMember",
+   "target_qname": "http://www.santander.com/20251231#OtherCommitmentsMember",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#NonControllingInterestExcludingAccumulatedOtherComprehensiveIncome::http://www.santander.com/20251231#OtrosElementosExcluyendoElResultadoGlobalAcumuladoParticipacionesNoDominantes",
+   "source_qname": "http://www.santander.com/20251231#OtrosElementosExcluyendoElResultadoGlobalAcumuladoParticipacionesNoDominantes",
+   "target_qname": "http://www.santander.com/20251231#NonControllingInterestExcludingAccumulatedOtherComprehensiveIncome",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#AccumulatedOtherComprehensiveIncomeAttributableToNonControllingInterestsMember",
+     "http://www.santander.com/20251231#InterimDividendsMember",
+     "http://www.santander.com/20251231#NonControllingInterestExcludingAccumulatedOtherComprehensiveIncomeMember",
+     "http://www.santander.com/20251231#OtherEquityInstrumentsIssuedMember",
+     "http://www.santander.com/20251231#ProfitLossAttributableToShareholdersOfParentMember"
+    ]
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#NonControllingInterestExcludingAccumulatedOtherComprehensiveIncomeMember::http://www.santander.com/20251231#OtrosElementosExcluyendoElResultadoGlobalAcumuladoParticipacionesNoDominantesMember",
+   "source_qname": "http://www.santander.com/20251231#OtrosElementosExcluyendoElResultadoGlobalAcumuladoParticipacionesNoDominantesMember",
+   "target_qname": "http://www.santander.com/20251231#NonControllingInterestExcludingAccumulatedOtherComprehensiveIncomeMember",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#OtherGeneralAdministrativeExpenses::http://www.santander.com/20251231#OtrosGastosDeAdministracion",
+   "source_qname": "http://www.santander.com/20251231#OtrosGastosDeAdministracion",
+   "target_qname": "http://www.santander.com/20251231#OtherGeneralAdministrativeExpenses",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#OtherOperatingExpense::http://www.santander.com/20251231#OtrosGastosDeExplotacion",
+   "source_qname": "http://www.santander.com/20251231#OtrosGastosDeExplotacion",
+   "target_qname": "http://www.santander.com/20251231#OtherOperatingExpense",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#OtherOperatingIncome::http://www.santander.com/20251231#OtrosIngresosDeExplotacion",
+   "source_qname": "http://www.santander.com/20251231#OtrosIngresosDeExplotacion",
+   "target_qname": "http://www.santander.com/20251231#OtherOperatingIncome",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#OtherEquityInstrumentsIssued::http://www.santander.com/20251231#OtrosInstrumentosDePatrimonioEmitidos",
+   "source_qname": "http://www.santander.com/20251231#OtrosInstrumentosDePatrimonioEmitidos",
+   "target_qname": "http://www.santander.com/20251231#OtherEquityInstrumentsIssued",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#AccumulatedOtherComprehensiveIncomeAttributableToNonControllingInterestsMember",
+     "http://www.santander.com/20251231#InterimDividendsMember",
+     "http://www.santander.com/20251231#NonControllingInterestExcludingAccumulatedOtherComprehensiveIncomeMember",
+     "http://www.santander.com/20251231#OtherEquityInstrumentsIssuedMember",
+     "http://www.santander.com/20251231#ProfitLossAttributableToShareholdersOfParentMember"
+    ]
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#OtherEquityInstrumentsIssuedMember::http://www.santander.com/20251231#OtrosInstrumentosDePatrimonioEmitidosMember",
+   "source_qname": "http://www.santander.com/20251231#OtrosInstrumentosDePatrimonioEmitidosMember",
+   "target_qname": "http://www.santander.com/20251231#OtherEquityInstrumentsIssuedMember",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#OtherOutflowsOfCashClassifiedAsFinancingActivities",
+     "http://www.santander.com/20251231#OutflowsOfCashFromFinancingActivities"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#OtherOutflowsOfCashClassifiedAsFinancingActivities::http://www.santander.com/20251231#OtrosPagosRelacionadosConActividadesDeFinanciacion",
+   "source_qname": "http://www.santander.com/20251231#OtrosPagosRelacionadosConActividadesDeFinanciacion",
+   "target_qname": "http://www.santander.com/20251231#OtherOutflowsOfCashClassifiedAsFinancingActivities",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#OtherPaymentsOfCashClassifiedAsInvestingActivities::http://www.santander.com/20251231#OtrosPagosRelacionadosConActividadesDeInversion",
+   "source_qname": "http://www.santander.com/20251231#OtrosPagosRelacionadosConActividadesDeInversion",
+   "target_qname": "http://www.santander.com/20251231#OtherPaymentsOfCashClassifiedAsInvestingActivities",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#DebtInstrumentsMember",
+     "http://www.santander.com/20251231#DepositsMember",
+     "http://www.santander.com/20251231#OtherFinancialLiabilitiesMember",
+     "http://www.santander.com/20251231#ShortPositionsMember"
+    ]
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#OtherFinancialLiabilitiesMember::http://www.santander.com/20251231#OtrosPasivosFinancierosMember",
+   "source_qname": "http://www.santander.com/20251231#OtrosPasivosFinancierosMember",
+   "target_qname": "http://www.santander.com/20251231#OtherFinancialLiabilitiesMember",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#PasivosPorImpuestos::http://www.santander.com/20251231#TaxLiabilities",
+   "source_qname": "http://www.santander.com/20251231#PasivosPorImpuestos",
+   "target_qname": "http://www.santander.com/20251231#TaxLiabilities",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#EquityAttributableToOwnersOfParentExcludingAccumulatedOtherComprehensiveIncome::http://www.santander.com/20251231#PatrimonioNetoAtribuibleALosPropietariosDeLaDominanteExcluidoElOtroResultadoGlobalAcumulado",
+   "source_qname": "http://www.santander.com/20251231#PatrimonioNetoAtribuibleALosPropietariosDeLaDominanteExcluidoElOtroResultadoGlobalAcumulado",
+   "target_qname": "http://www.santander.com/20251231#EquityAttributableToOwnersOfParentExcludingAccumulatedOtherComprehensiveIncome",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#CommitmentsAndGuaranteesGivenProvisionMember",
+     "http://www.santander.com/20251231#OtherLongTermEmployeeBenefitsProvisionMember",
+     "http://www.santander.com/20251231#PensionsAndOtherEmploymentDefinedBenefitObligationsProvisionMember",
+     "http://www.santander.com/20251231#TaxesAndOtherLegalContingenciesProvisionMember"
+    ]
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#PensionesYOtrasObligacionesDePrestacionesDefinidasPostEmpleoMember::http://www.santander.com/20251231#PensionsAndOtherEmploymentDefinedBenefitObligationsProvisionMember",
+   "source_qname": "http://www.santander.com/20251231#PensionesYOtrasObligacionesDePrestacionesDefinidasPostEmpleoMember",
+   "target_qname": "http://www.santander.com/20251231#PensionsAndOtherEmploymentDefinedBenefitObligationsProvisionMember",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#ImpairmentLossOrReversalOfImpairmentRecognisedInProfitOrLossOtherNonFinancialAssetsNet",
+     "http://www.santander.com/20251231#ImpairmentLossOrReversalOfImpairmentRecognisedInProfitOrLossTangibleAssets",
+     "http://www.santander.com/20251231#ImpairmentLossReversalOfImpairmentOfInvestmentsInSubsidiariesJointVenturesAndAssociatesNet",
+     "http://www.santander.com/20251231#ImpairmentLossReversalOfImpairmentRecognisedInProfitOrLossNonFinancialAssetsNet"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#ImpairmentLossOrReversalOfImpairmentRecognisedInProfitOrLossTangibleAssets::http://www.santander.com/20251231#PerdidaPorDeterioroOReversionDelDeterioroReconocidoEnResultadosActivosTangibles",
+   "source_qname": "http://www.santander.com/20251231#PerdidaPorDeterioroOReversionDelDeterioroReconocidoEnResultadosActivosTangibles",
+   "target_qname": "http://www.santander.com/20251231#ImpairmentLossOrReversalOfImpairmentRecognisedInProfitOrLossTangibleAssets",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#ImpairmentLossOrReversalOfImpairmentRecognisedInProfitOrLossOtherNonFinancialAssetsNet",
+     "http://www.santander.com/20251231#ImpairmentLossOrReversalOfImpairmentRecognisedInProfitOrLossTangibleAssets",
+     "http://www.santander.com/20251231#ImpairmentLossReversalOfImpairmentOfInvestmentsInSubsidiariesJointVenturesAndAssociatesNet",
+     "http://www.santander.com/20251231#ImpairmentLossReversalOfImpairmentRecognisedInProfitOrLossNonFinancialAssetsNet"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#ImpairmentLossOrReversalOfImpairmentRecognisedInProfitOrLossOtherNonFinancialAssetsNet::http://www.santander.com/20251231#PerdidaPorDeterioroOReversionDelDeterioroReconocidoEnResultadosOtrosActivosNoFinancierosNeto",
+   "source_qname": "http://www.santander.com/20251231#PerdidaPorDeterioroOReversionDelDeterioroReconocidoEnResultadosOtrosActivosNoFinancierosNeto",
+   "target_qname": "http://www.santander.com/20251231#ImpairmentLossOrReversalOfImpairmentRecognisedInProfitOrLossOtherNonFinancialAssetsNet",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#DebtInstrumentsMember",
+     "http://www.santander.com/20251231#DepositsMember",
+     "http://www.santander.com/20251231#OtherFinancialLiabilitiesMember",
+     "http://www.santander.com/20251231#ShortPositionsMember"
+    ]
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#PosicionesCortasMember::http://www.santander.com/20251231#ShortPositionsMember",
+   "source_qname": "http://www.santander.com/20251231#PosicionesCortasMember",
+   "target_qname": "http://www.santander.com/20251231#ShortPositionsMember",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#LoansAndAdvancesCentralBanksMember",
+     "http://www.santander.com/20251231#LoansAndAdvancesCreditInstitutionsMember",
+     "http://www.santander.com/20251231#LoansAndAdvancesCustomersMember"
+    ]
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#LoansAndAdvancesCentralBanksMember::http://www.santander.com/20251231#PrestamosYAnticiposBancosCentralesMember",
+   "source_qname": "http://www.santander.com/20251231#PrestamosYAnticiposBancosCentralesMember",
+   "target_qname": "http://www.santander.com/20251231#LoansAndAdvancesCentralBanksMember",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#LoansAndAdvancesCentralBanksMember",
+     "http://www.santander.com/20251231#LoansAndAdvancesCreditInstitutionsMember",
+     "http://www.santander.com/20251231#LoansAndAdvancesCustomersMember"
+    ]
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#LoansAndAdvancesCustomersMember::http://www.santander.com/20251231#PrestamosYAnticiposClientelaMember",
+   "source_qname": "http://www.santander.com/20251231#PrestamosYAnticiposClientelaMember",
+   "target_qname": "http://www.santander.com/20251231#LoansAndAdvancesCustomersMember",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#LoansAndAdvancesCentralBanksMember",
+     "http://www.santander.com/20251231#LoansAndAdvancesCreditInstitutionsMember",
+     "http://www.santander.com/20251231#LoansAndAdvancesCustomersMember"
+    ]
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#LoansAndAdvancesCreditInstitutionsMember::http://www.santander.com/20251231#PrestamosYAnticiposEntidadesDeCreditoMember",
+   "source_qname": "http://www.santander.com/20251231#PrestamosYAnticiposEntidadesDeCreditoMember",
+   "target_qname": "http://www.santander.com/20251231#LoansAndAdvancesCreditInstitutionsMember",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#LoansAndAdvancesMember::http://www.santander.com/20251231#PrestamosYAnticiposMember",
+   "source_qname": "http://www.santander.com/20251231#PrestamosYAnticiposMember",
+   "target_qname": "http://www.santander.com/20251231#LoansAndAdvancesMember",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#ProvisionesYReversionDeProvisiones::http://www.santander.com/20251231#ProvisionsAndReversalOfProvisions",
+   "source_qname": "http://www.santander.com/20251231#ProvisionesYReversionDeProvisiones",
+   "target_qname": "http://www.santander.com/20251231#ProvisionsAndReversalOfProvisions",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#IncreaseDecreaseInEquityOtherThanComprehensiveIncome",
+     "http://www.santander.com/20251231#TransferFromLiabilitiesToEquity"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#ReclasificacionDeInstrumentosFinancierosDelPasivoAlPatrimonioNeto::http://www.santander.com/20251231#TransferFromLiabilitiesToEquity",
+   "source_qname": "http://www.santander.com/20251231#ReclasificacionDeInstrumentosFinancierosDelPasivoAlPatrimonioNeto",
+   "target_qname": "http://www.santander.com/20251231#TransferFromLiabilitiesToEquity",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#MaturityOfOtherFinancialInstruments",
+     "http://www.santander.com/20251231#TransferFromEquityToLiabilities"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#ReclasificacionDeInstrumentosFinancierosDelPatrimonioNetoAlPasivo::http://www.santander.com/20251231#TransferFromEquityToLiabilities",
+   "source_qname": "http://www.santander.com/20251231#ReclasificacionDeInstrumentosFinancierosDelPatrimonioNetoAlPasivo",
+   "target_qname": "http://www.santander.com/20251231#TransferFromEquityToLiabilities",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#MiscellaneousOtherReserves",
+     "http://www.santander.com/20251231#ReservesOrAccumulatedLossesInJointVenturesInvestments"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#ReservasOPerdidasAcumuladasDeInversionesEnNegociosConjuntosYAsociadas::http://www.santander.com/20251231#ReservesOrAccumulatedLossesInJointVenturesInvestments",
+   "source_qname": "http://www.santander.com/20251231#ReservasOPerdidasAcumuladasDeInversionesEnNegociosConjuntosYAsociadas",
+   "target_qname": "http://www.santander.com/20251231#ReservesOrAccumulatedLossesInJointVenturesInvestments",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#OtherFinancialAssetsAndLiabilitiesMember::http://www.santander.com/20251231#RestoDeActivosYPasivosMember",
+   "source_qname": "http://www.santander.com/20251231#RestoDeActivosYPasivosMember",
+   "target_qname": "http://www.santander.com/20251231#OtherFinancialAssetsAndLiabilitiesMember",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#ProfitLossAttributableToShareholdersOfParent::http://www.santander.com/20251231#ResultadoAtribuibleALosPropietariosDeLaDominante",
+   "source_qname": "http://www.santander.com/20251231#ResultadoAtribuibleALosPropietariosDeLaDominante",
+   "target_qname": "http://www.santander.com/20251231#ProfitLossAttributableToShareholdersOfParent",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#AccumulatedOtherComprehensiveIncomeAttributableToNonControllingInterestsMember",
+     "http://www.santander.com/20251231#InterimDividendsMember",
+     "http://www.santander.com/20251231#NonControllingInterestExcludingAccumulatedOtherComprehensiveIncomeMember",
+     "http://www.santander.com/20251231#OtherEquityInstrumentsIssuedMember",
+     "http://www.santander.com/20251231#ProfitLossAttributableToShareholdersOfParentMember"
+    ]
+   },
+   "evidence": [
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#ProfitLossAttributableToShareholdersOfParentMember::http://www.santander.com/20251231#ResultadoAtribuidoALosPropietariosDeLaDominanteMember",
+   "source_qname": "http://www.santander.com/20251231#ResultadoAtribuidoALosPropietariosDeLaDominanteMember",
+   "target_qname": "http://www.santander.com/20251231#ProfitLossAttributableToShareholdersOfParentMember",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#OtherOutflowsOfCashClassifiedAsFinancingActivities",
+     "http://www.santander.com/20251231#OutflowsOfCashFromFinancingActivities"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#OutflowsOfCashFromFinancingActivities::http://www.santander.com/20251231#SalidasDeEfectivoDeActividadesDeFinanciacion",
+   "source_qname": "http://www.santander.com/20251231#SalidasDeEfectivoDeActividadesDeFinanciacion",
+   "target_qname": "http://www.santander.com/20251231#OutflowsOfCashFromFinancingActivities",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_differs": false,
+    "tier": 1
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#IncreaseDecreaseThroughTransfersBetweenEquityItems::http://www.santander.com/20251231#TransferenciasEntreComponentesDelPatrimonioNeto",
+   "source_qname": "http://www.santander.com/20251231#TransferenciasEntreComponentesDelPatrimonioNeto",
+   "target_qname": "http://www.santander.com/20251231#IncreaseDecreaseThroughTransfersBetweenEquityItems",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#ReclassificationAdjustmentsOnHedgingInstrumentsNotDesignatedBeforeTax",
+     "http://www.santander.com/20251231#ReclassificationAdjustmentsOnNonCurrentAssetsClassifiedAsHeldForSaleBeforeTax"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#ReclassificationAdjustmentsOnHedgingInstrumentsNotDesignatedBeforeTax::http://www.santander.com/20251231#TransferidoAResultadosInstrumentosDeCoberturaElementosNoDesignados",
+   "source_qname": "http://www.santander.com/20251231#TransferidoAResultadosInstrumentosDeCoberturaElementosNoDesignados",
+   "target_qname": "http://www.santander.com/20251231#ReclassificationAdjustmentsOnHedgingInstrumentsNotDesignatedBeforeTax",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "detail": {
+    "order_disambiguated": true,
+    "tier": 2,
+    "tier1_candidates": [
+     "http://www.santander.com/20251231#ReclassificationAdjustmentsOnHedgingInstrumentsNotDesignatedBeforeTax",
+     "http://www.santander.com/20251231#ReclassificationAdjustmentsOnNonCurrentAssetsClassifiedAsHeldForSaleBeforeTax"
+    ]
+   },
+   "evidence": [
+    "ANCHOR",
+    "XBRL_PROPERTIES",
+    "PRESENTATION_PATH",
+    "CALCULATION_ROLE",
+    "DEFINITION_PATH"
+   ],
+   "filing": "SAN-FY2025",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20251231#ReclassificationAdjustmentsOnNonCurrentAssetsClassifiedAsHeldForSaleBeforeTax::http://www.santander.com/20251231#TransferidosAResultadosActivosNoCorrientesYGruposEnajenablesDeElementosMantenidosParaLaVentaAntesDeImpuestos",
+   "source_qname": "http://www.santander.com/20251231#TransferidosAResultadosActivosNoCorrientesYGruposEnajenablesDeElementosMantenidosParaLaVentaAntesDeImpuestos",
+   "target_qname": "http://www.santander.com/20251231#ReclassificationAdjustmentsOnNonCurrentAssetsClassifiedAsHeldForSaleBeforeTax",
+   "verdict": "PROVEN_EQUIVALENT"
+  }
+ ]
+}

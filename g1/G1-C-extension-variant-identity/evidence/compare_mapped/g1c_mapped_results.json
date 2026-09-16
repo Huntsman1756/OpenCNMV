@@ -1,0 +1,140 @@
+{
+ "baseline_divergent": 1,
+ "class_totals": {
+  "DIVERGENT_SUBMISSION_FACT": 1,
+  "LANGUAGE_SENSITIVE_NOT_COMPARED": 683,
+  "MATCH_NUMERIC_EQUIVALENT": 9,
+  "UNMAPPED_VARIANT_FACT": 132,
+  "VARIANT_ONLY_FACT": 6
+ },
+ "divergent_records": 1,
+ "mapped_dataset_sha256": "e6a5fcb3ce81cee04a90310dea136113329d58bc3df05d5ad6586ae83f52ab4d",
+ "match_exact_total": 6818,
+ "results": [
+  {
+   "comparison_jsonl_sha256": "9951896519990e8f98a084d3cfd8d59db91275115d7361b2a96068143520df41",
+   "counts": {
+    "LANGUAGE_SENSITIVE_NOT_COMPARED": 182,
+    "MATCH_EXACT": 1751,
+    "UNMAPPED_VARIANT_FACT": 36
+   },
+   "delta_vs_g1b": {
+    "MATCH_EXACT": {
+     "baseline": 848,
+     "mapped": 1751
+    },
+    "UNMAPPED_VARIANT_FACT": {
+     "baseline": 1008,
+     "mapped": 36
+    },
+    "VARIANT_ONLY_FACT": {
+     "baseline": 834,
+     "mapped": 0
+    }
+   },
+   "facts_en": 1951,
+   "facts_es": 1951,
+   "filing": "SAN-FY2024",
+   "match_exact_count": 1751,
+   "match_exact_keys_sha256": "1f6e8ccbccfb4e88afff0ac0a151260a7181d2dca66105a2c22242e2a7fdbe09",
+   "proven_pairs_applied": 96
+  },
+  {
+   "comparison_jsonl_sha256": "756013491f6d9b27bba46372b7306c67cf4167049df7c6ac49ff3fabda0f11cd",
+   "counts": {
+    "LANGUAGE_SENSITIVE_NOT_COMPARED": 180,
+    "MATCH_EXACT": 1771,
+    "MATCH_NUMERIC_EQUIVALENT": 1
+   },
+   "delta_vs_g1b": {
+    "MATCH_EXACT": {
+     "baseline": 907,
+     "mapped": 1771
+    },
+    "UNMAPPED_VARIANT_FACT": {
+     "baseline": 984,
+     "mapped": 0
+    },
+    "VARIANT_ONLY_FACT": {
+     "baseline": 744,
+     "mapped": 0
+    }
+   },
+   "facts_en": 1952,
+   "facts_es": 1952,
+   "filing": "SAN-FY2025",
+   "match_exact_count": 1771,
+   "match_exact_keys_sha256": "9533fc3c46f22fa469733741f22bacfd22ca60c2381e5c367e7a35f46475fadb",
+   "proven_pairs_applied": 97
+  },
+  {
+   "comparison_jsonl_sha256": "940a493e85a73a5ab9c674e164f9b445f64147aeb1f73a404c9a7fca0fc865f9",
+   "counts": {
+    "DIVERGENT_SUBMISSION_FACT": 1,
+    "LANGUAGE_SENSITIVE_NOT_COMPARED": 161,
+    "MATCH_EXACT": 1675,
+    "MATCH_NUMERIC_EQUIVALENT": 5,
+    "UNMAPPED_VARIANT_FACT": 6,
+    "VARIANT_ONLY_FACT": 4
+   },
+   "delta_vs_g1b": {
+    "MATCH_EXACT": {
+     "baseline": 896,
+     "mapped": 1675
+    },
+    "MATCH_NUMERIC_EQUIVALENT": {
+     "baseline": 0,
+     "mapped": 5
+    },
+    "UNMAPPED_VARIANT_FACT": {
+     "baseline": 1114,
+     "mapped": 6
+    },
+    "VARIANT_ONLY_FACT": {
+     "baseline": 464,
+     "mapped": 4
+    }
+   },
+   "facts_en": 1847,
+   "facts_es": 1847,
+   "filing": "BBVA-FY2024",
+   "match_exact_count": 1675,
+   "match_exact_keys_sha256": "28d4383ab602639886045ad4877ac11cd9b854cc47f41fdb4e2c91bf47f22082",
+   "proven_pairs_applied": 123
+  },
+  {
+   "comparison_jsonl_sha256": "a19fada797d9431e998385c60ed786d5c9eddc2ffec3ca688e5147a7b8108a70",
+   "counts": {
+    "LANGUAGE_SENSITIVE_NOT_COMPARED": 160,
+    "MATCH_EXACT": 1621,
+    "MATCH_NUMERIC_EQUIVALENT": 3,
+    "UNMAPPED_VARIANT_FACT": 90,
+    "VARIANT_ONLY_FACT": 2
+   },
+   "delta_vs_g1b": {
+    "MATCH_EXACT": {
+     "baseline": 898,
+     "mapped": 1621
+    },
+    "MATCH_NUMERIC_EQUIVALENT": {
+     "baseline": 0,
+     "mapped": 3
+    },
+    "UNMAPPED_VARIANT_FACT": {
+     "baseline": 1133,
+     "mapped": 90
+    },
+    "VARIANT_ONLY_FACT": {
+     "baseline": 411,
+     "mapped": 2
+    }
+   },
+   "facts_en": 1830,
+   "facts_es": 1830,
+   "filing": "BBVA-FY2025",
+   "match_exact_count": 1621,
+   "match_exact_keys_sha256": "450535e47a3a68aa7d3205497cf1695e7fed9e82a4e0f250a84e517731d1d180",
+   "proven_pairs_applied": 99
+  }
+ ]
+}
