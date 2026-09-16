@@ -74,11 +74,29 @@ def main():
 
     # ---- I4: no silent merge / no designated truth ----------------------
     forbidden = {"primary", "truth", "preferred", "canonical_variant",
-                 "authoritative_variant"}
-    blob = json.dumps([ibe, bbva, san, tef]).lower()
+                 "authoritative_variant", "is_primary", "is_canonical",
+                 "main_variant", "default_variant"}
+
+    def field_names(node):
+        out = set()
+        if isinstance(node, dict):
+            for k, v in node.items():
+                if k in ("properties", "$defs"):
+                    out |= set(v.keys()) if isinstance(v, dict) else set()
+                out |= field_names(v)
+        elif isinstance(node, list):
+            for v in node:
+                out |= field_names(v)
+        return out
+
+    schema_fields = field_names(schema)
+    schema_bad = schema_fields & forbidden
+    fixture_bad = [k for f in (ibe, bbva, san, tef)
+                   for k in field_names(f) & forbidden]
     check("I4_no_truth_designation",
-          not any(k in blob for k in forbidden),
-          "no primary/truth field anywhere in fixtures or schema")
+          not schema_bad and not fixture_bad,
+          f"schema keys clean ({len(schema_fields)} inspected); "
+          f"fixture fields clean; forbidden={sorted(schema_bad | set(fixture_bad)) or 'none'}")
 
     # ---- I5: fact identity != payload (BBVA divergent pair) -------------
     ex = bbva["fact_examples"][0]

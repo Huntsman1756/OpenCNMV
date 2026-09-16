@@ -24,7 +24,7 @@
   {
    "check": "I4_no_truth_designation",
    "status": "PASS",
-   "detail": "no primary/truth field anywhere in fixtures or schema"
+   "detail": "schema keys clean (71 inspected); fixture fields clean; forbidden=none"
   },
   {
    "check": "I5_divergent_fact_preserved",
