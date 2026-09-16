@@ -2,7 +2,7 @@
  "gate": "G2-A DURABLE_CANONICAL_CORE",
  "status": "PASS",
  "executed_at": "2026-09-16T18:35:24.210289+00:00",
- "code_commit": null,
+ "code_commit": "19d309e",
  "inputs": {
   "g1a_results": {
    "path": "g1/G1-A-oam-variant-discovery/g1a_results.json",
