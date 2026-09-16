@@ -1,0 +1,1952 @@
+[
+  {
+    "filing": "SAN-H1-2024",
+    "issuer": "SAN",
+    "semester": "H1",
+    "model": "ipp_en",
+    "artifact": "ipp-SAN-I-semestre-de-2024.zip",
+    "artifact_sha256": "CE1AC869098AB698ADAF1AFC46B18C40E2E799EC2F9F1F9C90397A84AE13D849",
+    "arelle_version": "2.44.0",
+    "runtime": {
+      "internetConnectivity": "offline",
+      "plugins": "saveLoadableOIM",
+      "validate": true,
+      "taxonomy_packages": [
+        "cnmv-ipp-2019-01-01-opencnmv-pkg.zip"
+      ],
+      "lexical_shim": {
+        "type": "base64Binary",
+        "arelle_version_gated": "2.44.0",
+        "orig_pattern_sha256": "CB74F11E4811A3159BD37FD007E18820CAE658E3C1F8A60D5D3B79ED9DD5FDD9",
+        "shim_source_sha256": "BF1F107900366B822DC592DAC99109D6E52959F55103A45629F9012A832BD995",
+        "selftest": {
+          "cases": 40,
+          "fuzz_cases": 4000,
+          "large_payload_bytes": 12582912
+        }
+      },
+      "entrypoint_note": "raw artefact is XML stored with .zip suffix; Arelle treats .zip as archive - fed via sha256-verified .xbrl copy"
+    },
+    "run_ok": true,
+    "elapsed_s": 3.0,
+    "counts": {
+      "facts": 2934,
+      "contexts": 135,
+      "units": 1,
+      "concepts": 1262,
+      "dts_documents": 14,
+      "fact_footnote_relationships": 0,
+      "nil_facts": 0,
+      "contexts_explicit_dims": 145,
+      "contexts_typed_dims": 16,
+      "fact_languages": []
+    },
+    "concept_namespaces": {
+      "www.xbrl.org": 54,
+      "xbrl.org": 4,
+      "www.cnmv.es": 1204
+    },
+    "log_code_counts": {},
+    "dts_resolution": [
+      {
+        "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\SAN-H1-2024.xbrl",
+        "resolved_from": "local_input"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01-definition.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01-label.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01-definition.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01-label.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xl-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xlink-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2005/xbrldt-2005.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd",
+        "resolved_from": "taxonomy_package"
+      }
+    ],
+    "offline_evidence": {
+      "io_errors": 0,
+      "download_attempts_in_log": 0
+    },
+    "outputs": {
+      "facts_jsonl": "SAN-H1-2024.facts.jsonl",
+      "facts_jsonl_sha256": "3236F33CE8AB8C042B388630285254920F68B320103A4C035EEAE5E93B3012C7",
+      "arelle_log": "SAN-H1-2024.arelle-log.json",
+      "oim_json_sha256": "75F03D047060FE5BCD1D16F367CCE8419E3955221A814FB5730ECCE1CFF2FA7C",
+      "oim_json_gz": "SAN-H1-2024.oim.json.gz",
+      "oim_json_gz_sha256": "A08F6BF131AC881778F24C067B76F91E9C5C78EFFB9BE8D86269635B244A5AB4"
+    },
+    "control_A": {
+      "fact_count_api": 2934,
+      "fact_count_oim": 2934,
+      "fact_multiset_equal": true,
+      "concept_coverage_equal": true,
+      "distinct_context_signatures_api": 135,
+      "decimals_distribution_equal": true,
+      "nil_count_api": 0,
+      "nil_count_oim": 0,
+      "multiset_diff_sample": []
+    }
+  },
+  {
+    "filing": "SAN-H2-2024",
+    "issuer": "SAN",
+    "semester": "H2",
+    "model": "ipp_en",
+    "artifact": "ipp-SAN-II-semestre-de-2024.zip",
+    "artifact_sha256": "5190D66C279017A7E6B2AE64D8288AD0AB090531217F530FFF5C073713D2B47B",
+    "arelle_version": "2.44.0",
+    "runtime": {
+      "internetConnectivity": "offline",
+      "plugins": "saveLoadableOIM",
+      "validate": true,
+      "taxonomy_packages": [
+        "cnmv-ipp-2019-01-01-opencnmv-pkg.zip"
+      ],
+      "lexical_shim": {
+        "type": "base64Binary",
+        "arelle_version_gated": "2.44.0",
+        "orig_pattern_sha256": "CB74F11E4811A3159BD37FD007E18820CAE658E3C1F8A60D5D3B79ED9DD5FDD9",
+        "shim_source_sha256": "BF1F107900366B822DC592DAC99109D6E52959F55103A45629F9012A832BD995",
+        "selftest": {
+          "cases": 40,
+          "fuzz_cases": 4000,
+          "large_payload_bytes": 12582912
+        }
+      },
+      "entrypoint_note": "raw artefact is XML stored with .zip suffix; Arelle treats .zip as archive - fed via sha256-verified .xbrl copy"
+    },
+    "run_ok": true,
+    "elapsed_s": 1.5,
+    "counts": {
+      "facts": 2771,
+      "contexts": 120,
+      "units": 1,
+      "concepts": 1262,
+      "dts_documents": 14,
+      "fact_footnote_relationships": 0,
+      "nil_facts": 0,
+      "contexts_explicit_dims": 130,
+      "contexts_typed_dims": 1,
+      "fact_languages": []
+    },
+    "concept_namespaces": {
+      "www.xbrl.org": 54,
+      "xbrl.org": 4,
+      "www.cnmv.es": 1204
+    },
+    "log_code_counts": {},
+    "dts_resolution": [
+      {
+        "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\SAN-H2-2024.xbrl",
+        "resolved_from": "local_input"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01-definition.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01-label.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01-definition.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01-label.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xl-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xlink-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2005/xbrldt-2005.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd",
+        "resolved_from": "taxonomy_package"
+      }
+    ],
+    "offline_evidence": {
+      "io_errors": 0,
+      "download_attempts_in_log": 0
+    },
+    "outputs": {
+      "facts_jsonl": "SAN-H2-2024.facts.jsonl",
+      "facts_jsonl_sha256": "7C621747AD06C3AE38B419E66CF9B763F3DD7E50ABE83DCF102C31D7C95D555C",
+      "arelle_log": "SAN-H2-2024.arelle-log.json",
+      "oim_json_sha256": "E96DDCA94A75B9B90E0C95D70ACB9B75CFF5153AEEFDCA072498E02D1E4AFD6E",
+      "oim_json_gz": "SAN-H2-2024.oim.json.gz",
+      "oim_json_gz_sha256": "6D60CCC43DB60709691DB96920FBAA4B2053184E1A415FA0104862C318E0C34F"
+    },
+    "control_A": {
+      "fact_count_api": 2771,
+      "fact_count_oim": 2771,
+      "fact_multiset_equal": true,
+      "concept_coverage_equal": true,
+      "distinct_context_signatures_api": 120,
+      "decimals_distribution_equal": true,
+      "nil_count_api": 0,
+      "nil_count_oim": 0,
+      "multiset_diff_sample": []
+    }
+  },
+  {
+    "filing": "SAN-H1-2025",
+    "issuer": "SAN",
+    "semester": "H1",
+    "model": "ipp_en",
+    "artifact": "ipp-SAN-I-semestre-de-2025.zip",
+    "artifact_sha256": "9A61C3D439E4F84044A70E313F690325478485F868219DBD249A46535BF44D55",
+    "arelle_version": "2.44.0",
+    "runtime": {
+      "internetConnectivity": "offline",
+      "plugins": "saveLoadableOIM",
+      "validate": true,
+      "taxonomy_packages": [
+        "cnmv-ipp-2019-01-01-opencnmv-pkg.zip"
+      ],
+      "lexical_shim": {
+        "type": "base64Binary",
+        "arelle_version_gated": "2.44.0",
+        "orig_pattern_sha256": "CB74F11E4811A3159BD37FD007E18820CAE658E3C1F8A60D5D3B79ED9DD5FDD9",
+        "shim_source_sha256": "BF1F107900366B822DC592DAC99109D6E52959F55103A45629F9012A832BD995",
+        "selftest": {
+          "cases": 40,
+          "fuzz_cases": 4000,
+          "large_payload_bytes": 12582912
+        }
+      },
+      "entrypoint_note": "raw artefact is XML stored with .zip suffix; Arelle treats .zip as archive - fed via sha256-verified .xbrl copy"
+    },
+    "run_ok": true,
+    "elapsed_s": 5.9,
+    "counts": {
+      "facts": 2961,
+      "contexts": 135,
+      "units": 1,
+      "concepts": 1262,
+      "dts_documents": 14,
+      "fact_footnote_relationships": 0,
+      "nil_facts": 0,
+      "contexts_explicit_dims": 145,
+      "contexts_typed_dims": 16,
+      "fact_languages": []
+    },
+    "concept_namespaces": {
+      "www.xbrl.org": 54,
+      "xbrl.org": 4,
+      "www.cnmv.es": 1204
+    },
+    "log_code_counts": {},
+    "dts_resolution": [
+      {
+        "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\SAN-H1-2025.xbrl",
+        "resolved_from": "local_input"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01-definition.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01-label.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01-definition.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01-label.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xl-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xlink-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2005/xbrldt-2005.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd",
+        "resolved_from": "taxonomy_package"
+      }
+    ],
+    "offline_evidence": {
+      "io_errors": 0,
+      "download_attempts_in_log": 0
+    },
+    "outputs": {
+      "facts_jsonl": "SAN-H1-2025.facts.jsonl",
+      "facts_jsonl_sha256": "69EC847458D4DF164A149C9A1CFB5F363938F89E0ED70EADD93E2E6ADF64E3FA",
+      "arelle_log": "SAN-H1-2025.arelle-log.json",
+      "oim_json_sha256": "B67C6891F1C67BF7C788750D1CB55754E9B287B789D9E7C0A064EC59AF78C00F",
+      "oim_json_gz": "SAN-H1-2025.oim.json.gz",
+      "oim_json_gz_sha256": "1F22E7C10D99DD5A053A750753AF86D2D8B32079631D506374D5816C35468742"
+    },
+    "control_A": {
+      "fact_count_api": 2961,
+      "fact_count_oim": 2961,
+      "fact_multiset_equal": true,
+      "concept_coverage_equal": true,
+      "distinct_context_signatures_api": 135,
+      "decimals_distribution_equal": true,
+      "nil_count_api": 0,
+      "nil_count_oim": 0,
+      "multiset_diff_sample": []
+    }
+  },
+  {
+    "filing": "SAN-H2-2025",
+    "issuer": "SAN",
+    "semester": "H2",
+    "model": "ipp_en",
+    "artifact": "ipp-SAN-II-semestre-de-2025.zip",
+    "artifact_sha256": "93C1F22AE7E2685EF1FB3EC6893BE8843B1D1CDB17330CA57D460318D77658FA",
+    "arelle_version": "2.44.0",
+    "runtime": {
+      "internetConnectivity": "offline",
+      "plugins": "saveLoadableOIM",
+      "validate": true,
+      "taxonomy_packages": [
+        "cnmv-ipp-2019-01-01-opencnmv-pkg.zip"
+      ],
+      "lexical_shim": {
+        "type": "base64Binary",
+        "arelle_version_gated": "2.44.0",
+        "orig_pattern_sha256": "CB74F11E4811A3159BD37FD007E18820CAE658E3C1F8A60D5D3B79ED9DD5FDD9",
+        "shim_source_sha256": "BF1F107900366B822DC592DAC99109D6E52959F55103A45629F9012A832BD995",
+        "selftest": {
+          "cases": 40,
+          "fuzz_cases": 4000,
+          "large_payload_bytes": 12582912
+        }
+      },
+      "entrypoint_note": "raw artefact is XML stored with .zip suffix; Arelle treats .zip as archive - fed via sha256-verified .xbrl copy"
+    },
+    "run_ok": true,
+    "elapsed_s": 1.6,
+    "counts": {
+      "facts": 2724,
+      "contexts": 120,
+      "units": 1,
+      "concepts": 1262,
+      "dts_documents": 14,
+      "fact_footnote_relationships": 0,
+      "nil_facts": 0,
+      "contexts_explicit_dims": 130,
+      "contexts_typed_dims": 1,
+      "fact_languages": []
+    },
+    "concept_namespaces": {
+      "www.xbrl.org": 54,
+      "xbrl.org": 4,
+      "www.cnmv.es": 1204
+    },
+    "log_code_counts": {},
+    "dts_resolution": [
+      {
+        "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\SAN-H2-2025.xbrl",
+        "resolved_from": "local_input"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01-definition.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01-label.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01-definition.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01-label.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xl-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xlink-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2005/xbrldt-2005.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd",
+        "resolved_from": "taxonomy_package"
+      }
+    ],
+    "offline_evidence": {
+      "io_errors": 0,
+      "download_attempts_in_log": 0
+    },
+    "outputs": {
+      "facts_jsonl": "SAN-H2-2025.facts.jsonl",
+      "facts_jsonl_sha256": "ADFB3135BB47B5A7D374939B2B510529C0F76652F5AF07F997F17918C4C4AED6",
+      "arelle_log": "SAN-H2-2025.arelle-log.json",
+      "oim_json_sha256": "1D44AE923BBB2EF75BFE58190BE17D7EFF24D06C2F9C79B58119DBF7375532AB",
+      "oim_json_gz": "SAN-H2-2025.oim.json.gz",
+      "oim_json_gz_sha256": "622F6226B82A69E01FDD524464E66252A687C00600F6A62428BEC34555D8E8D0"
+    },
+    "control_A": {
+      "fact_count_api": 2724,
+      "fact_count_oim": 2724,
+      "fact_multiset_equal": true,
+      "concept_coverage_equal": true,
+      "distinct_context_signatures_api": 120,
+      "decimals_distribution_equal": true,
+      "nil_count_api": 0,
+      "nil_count_oim": 0,
+      "multiset_diff_sample": []
+    }
+  },
+  {
+    "filing": "SAN-H1-2026",
+    "issuer": "SAN",
+    "semester": "H1",
+    "model": "ipp_en",
+    "artifact": "ipp-SAN-I-semestre-de-2026.zip",
+    "artifact_sha256": "A1FAD8F54BD698B90BE2EDC797190467AA94A16A13426CAE92D96D9F21085434",
+    "arelle_version": "2.44.0",
+    "runtime": {
+      "internetConnectivity": "offline",
+      "plugins": "saveLoadableOIM",
+      "validate": true,
+      "taxonomy_packages": [
+        "cnmv-ipp-2019-01-01-opencnmv-pkg.zip"
+      ],
+      "lexical_shim": {
+        "type": "base64Binary",
+        "arelle_version_gated": "2.44.0",
+        "orig_pattern_sha256": "CB74F11E4811A3159BD37FD007E18820CAE658E3C1F8A60D5D3B79ED9DD5FDD9",
+        "shim_source_sha256": "BF1F107900366B822DC592DAC99109D6E52959F55103A45629F9012A832BD995",
+        "selftest": {
+          "cases": 40,
+          "fuzz_cases": 4000,
+          "large_payload_bytes": 12582912
+        }
+      },
+      "entrypoint_note": "raw artefact is XML stored with .zip suffix; Arelle treats .zip as archive - fed via sha256-verified .xbrl copy"
+    },
+    "run_ok": true,
+    "elapsed_s": 7.7,
+    "counts": {
+      "facts": 2455,
+      "contexts": 135,
+      "units": 1,
+      "concepts": 1262,
+      "dts_documents": 14,
+      "fact_footnote_relationships": 0,
+      "nil_facts": 0,
+      "contexts_explicit_dims": 145,
+      "contexts_typed_dims": 16,
+      "fact_languages": []
+    },
+    "concept_namespaces": {
+      "www.xbrl.org": 54,
+      "xbrl.org": 4,
+      "www.cnmv.es": 1204
+    },
+    "log_code_counts": {},
+    "dts_resolution": [
+      {
+        "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\SAN-H1-2026.xbrl",
+        "resolved_from": "local_input"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01-definition.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01-label.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01-definition.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01-label.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xl-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xlink-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2005/xbrldt-2005.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd",
+        "resolved_from": "taxonomy_package"
+      }
+    ],
+    "offline_evidence": {
+      "io_errors": 0,
+      "download_attempts_in_log": 0
+    },
+    "outputs": {
+      "facts_jsonl": "SAN-H1-2026.facts.jsonl",
+      "facts_jsonl_sha256": "292D8D52552800D5F9E921431A7C25D33D0FDF2732A13368AF4D2AB68E7A6D6D",
+      "arelle_log": "SAN-H1-2026.arelle-log.json",
+      "oim_json_sha256": "5C0500E1B55303E69DF59EBBA7C18D6801DFBA4A16BB0B54AB3EE85F5C33A778",
+      "oim_json_gz": "SAN-H1-2026.oim.json.gz",
+      "oim_json_gz_sha256": "77C4E68108E93DEDC246A88FDE6F4BA41420736794D9366CF4627B3DB945970E"
+    },
+    "control_A": {
+      "fact_count_api": 2455,
+      "fact_count_oim": 2455,
+      "fact_multiset_equal": true,
+      "concept_coverage_equal": true,
+      "distinct_context_signatures_api": 135,
+      "decimals_distribution_equal": true,
+      "nil_count_api": 0,
+      "nil_count_oim": 0,
+      "multiset_diff_sample": []
+    }
+  },
+  {
+    "filing": "BBVA-H1-2024",
+    "issuer": "BBVA",
+    "semester": "H1",
+    "model": "ipp_en",
+    "artifact": "ipp-BBVA-I-semestre-de-2024.zip",
+    "artifact_sha256": "8B9C23B8B8E36B6BB758075FB954309958DE77F7E8B9B82455B5613643032797",
+    "arelle_version": "2.44.0",
+    "runtime": {
+      "internetConnectivity": "offline",
+      "plugins": "saveLoadableOIM",
+      "validate": true,
+      "taxonomy_packages": [
+        "cnmv-ipp-2019-01-01-opencnmv-pkg.zip"
+      ],
+      "lexical_shim": {
+        "type": "base64Binary",
+        "arelle_version_gated": "2.44.0",
+        "orig_pattern_sha256": "CB74F11E4811A3159BD37FD007E18820CAE658E3C1F8A60D5D3B79ED9DD5FDD9",
+        "shim_source_sha256": "BF1F107900366B822DC592DAC99109D6E52959F55103A45629F9012A832BD995",
+        "selftest": {
+          "cases": 40,
+          "fuzz_cases": 4000,
+          "large_payload_bytes": 12582912
+        }
+      },
+      "entrypoint_note": "raw artefact is XML stored with .zip suffix; Arelle treats .zip as archive - fed via sha256-verified .xbrl copy"
+    },
+    "run_ok": true,
+    "elapsed_s": 2.8,
+    "counts": {
+      "facts": 1679,
+      "contexts": 133,
+      "units": 1,
+      "concepts": 1262,
+      "dts_documents": 14,
+      "fact_footnote_relationships": 0,
+      "nil_facts": 0,
+      "contexts_explicit_dims": 143,
+      "contexts_typed_dims": 16,
+      "fact_languages": []
+    },
+    "concept_namespaces": {
+      "www.xbrl.org": 54,
+      "xbrl.org": 4,
+      "www.cnmv.es": 1204
+    },
+    "log_code_counts": {},
+    "dts_resolution": [
+      {
+        "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\BBVA-H1-2024.xbrl",
+        "resolved_from": "local_input"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01-definition.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01-label.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01-definition.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01-label.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xl-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xlink-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2005/xbrldt-2005.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd",
+        "resolved_from": "taxonomy_package"
+      }
+    ],
+    "offline_evidence": {
+      "io_errors": 0,
+      "download_attempts_in_log": 0
+    },
+    "outputs": {
+      "facts_jsonl": "BBVA-H1-2024.facts.jsonl",
+      "facts_jsonl_sha256": "8355E4FFC8DEF569D2EBBE617C3DA93E458D0350418849FEB096A4EC4CA6BD0D",
+      "arelle_log": "BBVA-H1-2024.arelle-log.json",
+      "oim_json_sha256": "2808ECE53D127BC9D64708E293D0A8592281FA96E787D6EBACB114CD9FC269E4",
+      "oim_json_gz": "BBVA-H1-2024.oim.json.gz",
+      "oim_json_gz_sha256": "AF968D0C8F9AE4C507E26095CB0D7540D9C5F19FDBDCFF28F20A366D3E50A4A2"
+    },
+    "control_A": {
+      "fact_count_api": 1679,
+      "fact_count_oim": 1679,
+      "fact_multiset_equal": true,
+      "concept_coverage_equal": true,
+      "distinct_context_signatures_api": 133,
+      "decimals_distribution_equal": true,
+      "nil_count_api": 0,
+      "nil_count_oim": 0,
+      "multiset_diff_sample": []
+    }
+  },
+  {
+    "filing": "BBVA-H2-2024",
+    "issuer": "BBVA",
+    "semester": "H2",
+    "model": "ipp_en",
+    "artifact": "ipp-BBVA-II-semestre-de-2024.zip",
+    "artifact_sha256": "531FDDCCC904658D76BB44A53D0BC17BE8D9774504009EC76A02008A161155FA",
+    "arelle_version": "2.44.0",
+    "runtime": {
+      "internetConnectivity": "offline",
+      "plugins": "saveLoadableOIM",
+      "validate": true,
+      "taxonomy_packages": [
+        "cnmv-ipp-2019-01-01-opencnmv-pkg.zip"
+      ],
+      "lexical_shim": {
+        "type": "base64Binary",
+        "arelle_version_gated": "2.44.0",
+        "orig_pattern_sha256": "CB74F11E4811A3159BD37FD007E18820CAE658E3C1F8A60D5D3B79ED9DD5FDD9",
+        "shim_source_sha256": "BF1F107900366B822DC592DAC99109D6E52959F55103A45629F9012A832BD995",
+        "selftest": {
+          "cases": 40,
+          "fuzz_cases": 4000,
+          "large_payload_bytes": 12582912
+        }
+      },
+      "entrypoint_note": "raw artefact is XML stored with .zip suffix; Arelle treats .zip as archive - fed via sha256-verified .xbrl copy"
+    },
+    "run_ok": true,
+    "elapsed_s": 1.6,
+    "counts": {
+      "facts": 1866,
+      "contexts": 120,
+      "units": 1,
+      "concepts": 1262,
+      "dts_documents": 14,
+      "fact_footnote_relationships": 0,
+      "nil_facts": 0,
+      "contexts_explicit_dims": 130,
+      "contexts_typed_dims": 1,
+      "fact_languages": []
+    },
+    "concept_namespaces": {
+      "www.xbrl.org": 54,
+      "xbrl.org": 4,
+      "www.cnmv.es": 1204
+    },
+    "log_code_counts": {},
+    "dts_resolution": [
+      {
+        "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\BBVA-H2-2024.xbrl",
+        "resolved_from": "local_input"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01-definition.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01-label.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01-definition.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01-label.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xl-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xlink-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2005/xbrldt-2005.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd",
+        "resolved_from": "taxonomy_package"
+      }
+    ],
+    "offline_evidence": {
+      "io_errors": 0,
+      "download_attempts_in_log": 0
+    },
+    "outputs": {
+      "facts_jsonl": "BBVA-H2-2024.facts.jsonl",
+      "facts_jsonl_sha256": "C9560F16AD7916D708ABDCE22AFB2026539218E40E9CD5EA7B5EFD7CBE3C72AB",
+      "arelle_log": "BBVA-H2-2024.arelle-log.json",
+      "oim_json_sha256": "212ED68B01EDF279D376C3EF7DC3659D6646D706BB6EE0421AA1AAD88806A3BD",
+      "oim_json_gz": "BBVA-H2-2024.oim.json.gz",
+      "oim_json_gz_sha256": "FE44D21D23D5DEF2E07EC4571C38FA0D951ECD566CC07C7C4884D1E182A2F796"
+    },
+    "control_A": {
+      "fact_count_api": 1866,
+      "fact_count_oim": 1866,
+      "fact_multiset_equal": true,
+      "concept_coverage_equal": true,
+      "distinct_context_signatures_api": 120,
+      "decimals_distribution_equal": true,
+      "nil_count_api": 0,
+      "nil_count_oim": 0,
+      "multiset_diff_sample": []
+    }
+  },
+  {
+    "filing": "BBVA-H1-2025",
+    "issuer": "BBVA",
+    "semester": "H1",
+    "model": "ipp_en",
+    "artifact": "ipp-BBVA-I-semestre-de-2025.zip",
+    "artifact_sha256": "4934822FA97588D9E7B9223D2FAC1B453BD1C4113685905F7879230AE96281E0",
+    "arelle_version": "2.44.0",
+    "runtime": {
+      "internetConnectivity": "offline",
+      "plugins": "saveLoadableOIM",
+      "validate": true,
+      "taxonomy_packages": [
+        "cnmv-ipp-2019-01-01-opencnmv-pkg.zip"
+      ],
+      "lexical_shim": {
+        "type": "base64Binary",
+        "arelle_version_gated": "2.44.0",
+        "orig_pattern_sha256": "CB74F11E4811A3159BD37FD007E18820CAE658E3C1F8A60D5D3B79ED9DD5FDD9",
+        "shim_source_sha256": "BF1F107900366B822DC592DAC99109D6E52959F55103A45629F9012A832BD995",
+        "selftest": {
+          "cases": 40,
+          "fuzz_cases": 4000,
+          "large_payload_bytes": 12582912
+        }
+      },
+      "entrypoint_note": "raw artefact is XML stored with .zip suffix; Arelle treats .zip as archive - fed via sha256-verified .xbrl copy"
+    },
+    "run_ok": true,
+    "elapsed_s": 2.5,
+    "counts": {
+      "facts": 1674,
+      "contexts": 133,
+      "units": 1,
+      "concepts": 1262,
+      "dts_documents": 14,
+      "fact_footnote_relationships": 0,
+      "nil_facts": 0,
+      "contexts_explicit_dims": 143,
+      "contexts_typed_dims": 16,
+      "fact_languages": []
+    },
+    "concept_namespaces": {
+      "www.xbrl.org": 54,
+      "xbrl.org": 4,
+      "www.cnmv.es": 1204
+    },
+    "log_code_counts": {},
+    "dts_resolution": [
+      {
+        "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\BBVA-H1-2025.xbrl",
+        "resolved_from": "local_input"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01-definition.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01-label.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01-definition.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01-label.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xl-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xlink-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2005/xbrldt-2005.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd",
+        "resolved_from": "taxonomy_package"
+      }
+    ],
+    "offline_evidence": {
+      "io_errors": 0,
+      "download_attempts_in_log": 0
+    },
+    "outputs": {
+      "facts_jsonl": "BBVA-H1-2025.facts.jsonl",
+      "facts_jsonl_sha256": "E860BF00E2ABF0D6143DE062A9A76B244DF100D8E7AB923846E570E4EC84E4F7",
+      "arelle_log": "BBVA-H1-2025.arelle-log.json",
+      "oim_json_sha256": "59E070EBD47B2532B98C4AD1CE035C98C2DAFAB649055019F14A741EB9575A0D",
+      "oim_json_gz": "BBVA-H1-2025.oim.json.gz",
+      "oim_json_gz_sha256": "0DB300A57A14FB7B5C5C0B9EEB9A8F1E8BE2069906A053A3CF480F25F72B6540"
+    },
+    "control_A": {
+      "fact_count_api": 1674,
+      "fact_count_oim": 1674,
+      "fact_multiset_equal": true,
+      "concept_coverage_equal": true,
+      "distinct_context_signatures_api": 133,
+      "decimals_distribution_equal": true,
+      "nil_count_api": 0,
+      "nil_count_oim": 0,
+      "multiset_diff_sample": []
+    }
+  },
+  {
+    "filing": "BBVA-H2-2025",
+    "issuer": "BBVA",
+    "semester": "H2",
+    "model": "ipp_en",
+    "artifact": "ipp-BBVA-II-semestre-de-2025.zip",
+    "artifact_sha256": "F65493B4F5FE26A5A102B78F5B5D03E3B2F89302508AAE5555A3D3EC64853861",
+    "arelle_version": "2.44.0",
+    "runtime": {
+      "internetConnectivity": "offline",
+      "plugins": "saveLoadableOIM",
+      "validate": true,
+      "taxonomy_packages": [
+        "cnmv-ipp-2019-01-01-opencnmv-pkg.zip"
+      ],
+      "lexical_shim": {
+        "type": "base64Binary",
+        "arelle_version_gated": "2.44.0",
+        "orig_pattern_sha256": "CB74F11E4811A3159BD37FD007E18820CAE658E3C1F8A60D5D3B79ED9DD5FDD9",
+        "shim_source_sha256": "BF1F107900366B822DC592DAC99109D6E52959F55103A45629F9012A832BD995",
+        "selftest": {
+          "cases": 40,
+          "fuzz_cases": 4000,
+          "large_payload_bytes": 12582912
+        }
+      },
+      "entrypoint_note": "raw artefact is XML stored with .zip suffix; Arelle treats .zip as archive - fed via sha256-verified .xbrl copy"
+    },
+    "run_ok": true,
+    "elapsed_s": 1.4,
+    "counts": {
+      "facts": 1875,
+      "contexts": 120,
+      "units": 1,
+      "concepts": 1262,
+      "dts_documents": 14,
+      "fact_footnote_relationships": 0,
+      "nil_facts": 0,
+      "contexts_explicit_dims": 130,
+      "contexts_typed_dims": 1,
+      "fact_languages": []
+    },
+    "concept_namespaces": {
+      "www.xbrl.org": 54,
+      "xbrl.org": 4,
+      "www.cnmv.es": 1204
+    },
+    "log_code_counts": {},
+    "dts_resolution": [
+      {
+        "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\BBVA-H2-2025.xbrl",
+        "resolved_from": "local_input"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01-definition.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01-label.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01-definition.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01-label.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xl-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xlink-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2005/xbrldt-2005.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd",
+        "resolved_from": "taxonomy_package"
+      }
+    ],
+    "offline_evidence": {
+      "io_errors": 0,
+      "download_attempts_in_log": 0
+    },
+    "outputs": {
+      "facts_jsonl": "BBVA-H2-2025.facts.jsonl",
+      "facts_jsonl_sha256": "B6BDFB41F24560760B73DC4D58DB1619D97FF994D1745F48D37F6C6CA97852BC",
+      "arelle_log": "BBVA-H2-2025.arelle-log.json",
+      "oim_json_sha256": "A9245CF4100440BC51DDE9D8337118DFCD82634C1578C7401AF3DCAC81656FB3",
+      "oim_json_gz": "BBVA-H2-2025.oim.json.gz",
+      "oim_json_gz_sha256": "D576243A72B4F081A3B90A44699B09A00A4C18F0A8A0765E660CC12398748821"
+    },
+    "control_A": {
+      "fact_count_api": 1875,
+      "fact_count_oim": 1875,
+      "fact_multiset_equal": true,
+      "concept_coverage_equal": true,
+      "distinct_context_signatures_api": 120,
+      "decimals_distribution_equal": true,
+      "nil_count_api": 0,
+      "nil_count_oim": 0,
+      "multiset_diff_sample": []
+    }
+  },
+  {
+    "filing": "BBVA-H1-2026",
+    "issuer": "BBVA",
+    "semester": "H1",
+    "model": "ipp_en",
+    "artifact": "ipp-BBVA-I-semestre-de-2026.zip",
+    "artifact_sha256": "CFCCA1026C85D8C787A9773E9C061F0DE9C5BD4084C49247E5F39F73DFFB0A56",
+    "arelle_version": "2.44.0",
+    "runtime": {
+      "internetConnectivity": "offline",
+      "plugins": "saveLoadableOIM",
+      "validate": true,
+      "taxonomy_packages": [
+        "cnmv-ipp-2019-01-01-opencnmv-pkg.zip"
+      ],
+      "lexical_shim": {
+        "type": "base64Binary",
+        "arelle_version_gated": "2.44.0",
+        "orig_pattern_sha256": "CB74F11E4811A3159BD37FD007E18820CAE658E3C1F8A60D5D3B79ED9DD5FDD9",
+        "shim_source_sha256": "BF1F107900366B822DC592DAC99109D6E52959F55103A45629F9012A832BD995",
+        "selftest": {
+          "cases": 40,
+          "fuzz_cases": 4000,
+          "large_payload_bytes": 12582912
+        }
+      },
+      "entrypoint_note": "raw artefact is XML stored with .zip suffix; Arelle treats .zip as archive - fed via sha256-verified .xbrl copy"
+    },
+    "run_ok": true,
+    "elapsed_s": 2.8,
+    "counts": {
+      "facts": 1686,
+      "contexts": 133,
+      "units": 1,
+      "concepts": 1262,
+      "dts_documents": 14,
+      "fact_footnote_relationships": 0,
+      "nil_facts": 0,
+      "contexts_explicit_dims": 143,
+      "contexts_typed_dims": 16,
+      "fact_languages": []
+    },
+    "concept_namespaces": {
+      "www.xbrl.org": 54,
+      "xbrl.org": 4,
+      "www.cnmv.es": 1204
+    },
+    "log_code_counts": {},
+    "dts_resolution": [
+      {
+        "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\BBVA-H1-2026.xbrl",
+        "resolved_from": "local_input"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01-definition.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01-label.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01-definition.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01-label.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xl-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xlink-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2005/xbrldt-2005.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd",
+        "resolved_from": "taxonomy_package"
+      }
+    ],
+    "offline_evidence": {
+      "io_errors": 0,
+      "download_attempts_in_log": 0
+    },
+    "outputs": {
+      "facts_jsonl": "BBVA-H1-2026.facts.jsonl",
+      "facts_jsonl_sha256": "11A0F56E716A40CDDC6EF67A2CED98A1AEC69F4ECEECBB5BF03E782D10A4CF37",
+      "arelle_log": "BBVA-H1-2026.arelle-log.json",
+      "oim_json_sha256": "989F4612E23018B4FEF2C622D866E1D951B1C68D7A03FE54C15AA91D77F3AF15",
+      "oim_json_gz": "BBVA-H1-2026.oim.json.gz",
+      "oim_json_gz_sha256": "B75FDCAA206CD6D491E01AEBF297F46127F20907423C71C9B976D110BA172426"
+    },
+    "control_A": {
+      "fact_count_api": 1686,
+      "fact_count_oim": 1686,
+      "fact_multiset_equal": true,
+      "concept_coverage_equal": true,
+      "distinct_context_signatures_api": 133,
+      "decimals_distribution_equal": true,
+      "nil_count_api": 0,
+      "nil_count_oim": 0,
+      "multiset_diff_sample": []
+    }
+  },
+  {
+    "filing": "IBE-H1-2024",
+    "issuer": "IBE",
+    "semester": "H1",
+    "model": "ipp_ge",
+    "artifact": "ipp-IBE-I-semestre-de-2024.zip",
+    "artifact_sha256": "FC4C773699CC819CCC7EE31D4EA433DBC3F5F11D32A1AB8231FD9F5E12BEB8E5",
+    "arelle_version": "2.44.0",
+    "runtime": {
+      "internetConnectivity": "offline",
+      "plugins": "saveLoadableOIM",
+      "validate": true,
+      "taxonomy_packages": [
+        "cnmv-ipp-2019-01-01-opencnmv-pkg.zip"
+      ],
+      "lexical_shim": {
+        "type": "base64Binary",
+        "arelle_version_gated": "2.44.0",
+        "orig_pattern_sha256": "CB74F11E4811A3159BD37FD007E18820CAE658E3C1F8A60D5D3B79ED9DD5FDD9",
+        "shim_source_sha256": "BF1F107900366B822DC592DAC99109D6E52959F55103A45629F9012A832BD995",
+        "selftest": {
+          "cases": 40,
+          "fuzz_cases": 4000,
+          "large_payload_bytes": 12582912
+        }
+      },
+      "entrypoint_note": "raw artefact is XML stored with .zip suffix; Arelle treats .zip as archive - fed via sha256-verified .xbrl copy"
+    },
+    "run_ok": true,
+    "elapsed_s": 1.6,
+    "counts": {
+      "facts": 1121,
+      "contexts": 94,
+      "units": 1,
+      "concepts": 869,
+      "dts_documents": 14,
+      "fact_footnote_relationships": 0,
+      "nil_facts": 0,
+      "contexts_explicit_dims": 104,
+      "contexts_typed_dims": 15,
+      "fact_languages": []
+    },
+    "concept_namespaces": {
+      "www.xbrl.org": 54,
+      "xbrl.org": 4,
+      "www.cnmv.es": 811
+    },
+    "log_code_counts": {},
+    "dts_resolution": [
+      {
+        "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\IBE-H1-2024.xbrl",
+        "resolved_from": "local_input"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_2019-01-01-definition.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_2019-01-01-label.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_2019-01-01.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_dim_2019-01-01-definition.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_dim_2019-01-01-label.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_dim_2019-01-01.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xl-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xlink-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2005/xbrldt-2005.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd",
+        "resolved_from": "taxonomy_package"
+      }
+    ],
+    "offline_evidence": {
+      "io_errors": 0,
+      "download_attempts_in_log": 0
+    },
+    "outputs": {
+      "facts_jsonl": "IBE-H1-2024.facts.jsonl",
+      "facts_jsonl_sha256": "21F14FA13AFE811277597612D57FCE501E56203817996C42ECBFAE848B933D72",
+      "arelle_log": "IBE-H1-2024.arelle-log.json",
+      "oim_json_sha256": "A4B02687242A4B4DB052AD8696891D9EB35A219B9AB87FD9B932D677CE19F8FF",
+      "oim_json_gz": "IBE-H1-2024.oim.json.gz",
+      "oim_json_gz_sha256": "70C3D14EFBB51DA7C194789F1DF16AF20D8CA36BADAB077B200AF09D90CA2AC4"
+    },
+    "control_A": {
+      "fact_count_api": 1121,
+      "fact_count_oim": 1121,
+      "fact_multiset_equal": true,
+      "concept_coverage_equal": true,
+      "distinct_context_signatures_api": 94,
+      "decimals_distribution_equal": true,
+      "nil_count_api": 0,
+      "nil_count_oim": 0,
+      "multiset_diff_sample": []
+    }
+  },
+  {
+    "filing": "IBE-H2-2024",
+    "issuer": "IBE",
+    "semester": "H2",
+    "model": "ipp_ge",
+    "artifact": "ipp-IBE-II-semestre-de-2024.zip",
+    "artifact_sha256": "8FD0C3F8557B4E7C2DC74B89A5132ABB11B240C1E947DB7228EC627AE4BB6C9D",
+    "arelle_version": "2.44.0",
+    "runtime": {
+      "internetConnectivity": "offline",
+      "plugins": "saveLoadableOIM",
+      "validate": true,
+      "taxonomy_packages": [
+        "cnmv-ipp-2019-01-01-opencnmv-pkg.zip"
+      ],
+      "lexical_shim": {
+        "type": "base64Binary",
+        "arelle_version_gated": "2.44.0",
+        "orig_pattern_sha256": "CB74F11E4811A3159BD37FD007E18820CAE658E3C1F8A60D5D3B79ED9DD5FDD9",
+        "shim_source_sha256": "BF1F107900366B822DC592DAC99109D6E52959F55103A45629F9012A832BD995",
+        "selftest": {
+          "cases": 40,
+          "fuzz_cases": 4000,
+          "large_payload_bytes": 12582912
+        }
+      },
+      "entrypoint_note": "raw artefact is XML stored with .zip suffix; Arelle treats .zip as archive - fed via sha256-verified .xbrl copy"
+    },
+    "run_ok": true,
+    "elapsed_s": 1.1,
+    "counts": {
+      "facts": 1263,
+      "contexts": 96,
+      "units": 1,
+      "concepts": 869,
+      "dts_documents": 14,
+      "fact_footnote_relationships": 0,
+      "nil_facts": 0,
+      "contexts_explicit_dims": 106,
+      "contexts_typed_dims": 15,
+      "fact_languages": []
+    },
+    "concept_namespaces": {
+      "www.xbrl.org": 54,
+      "xbrl.org": 4,
+      "www.cnmv.es": 811
+    },
+    "log_code_counts": {},
+    "dts_resolution": [
+      {
+        "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\IBE-H2-2024.xbrl",
+        "resolved_from": "local_input"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_2019-01-01-definition.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_2019-01-01-label.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_2019-01-01.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_dim_2019-01-01-definition.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_dim_2019-01-01-label.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_dim_2019-01-01.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xl-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xlink-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2005/xbrldt-2005.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd",
+        "resolved_from": "taxonomy_package"
+      }
+    ],
+    "offline_evidence": {
+      "io_errors": 0,
+      "download_attempts_in_log": 0
+    },
+    "outputs": {
+      "facts_jsonl": "IBE-H2-2024.facts.jsonl",
+      "facts_jsonl_sha256": "3363C9C416D83CC775B2EEB5E93FD9640EB4729054F07B5FF80BAC0003B1F36B",
+      "arelle_log": "IBE-H2-2024.arelle-log.json",
+      "oim_json_sha256": "774137AE51E82EC0288E85A0A3CA192BA5C526F26793B49962C12FA40E2F245B",
+      "oim_json_gz": "IBE-H2-2024.oim.json.gz",
+      "oim_json_gz_sha256": "33C9F80F67420A152CB2E3CF840FDACB453A3EEA8B2C76F17D481140CF57E991"
+    },
+    "control_A": {
+      "fact_count_api": 1263,
+      "fact_count_oim": 1263,
+      "fact_multiset_equal": true,
+      "concept_coverage_equal": true,
+      "distinct_context_signatures_api": 96,
+      "decimals_distribution_equal": true,
+      "nil_count_api": 0,
+      "nil_count_oim": 0,
+      "multiset_diff_sample": []
+    }
+  },
+  {
+    "filing": "IBE-H1-2025",
+    "issuer": "IBE",
+    "semester": "H1",
+    "model": "ipp_ge",
+    "artifact": "ipp-IBE-I-semestre-de-2025.zip",
+    "artifact_sha256": "3885EF4FB5F260741D191E59D45FC1ABAE842F68EACCAFA94D67CBB0C714CDC3",
+    "arelle_version": "2.44.0",
+    "runtime": {
+      "internetConnectivity": "offline",
+      "plugins": "saveLoadableOIM",
+      "validate": true,
+      "taxonomy_packages": [
+        "cnmv-ipp-2019-01-01-opencnmv-pkg.zip"
+      ],
+      "lexical_shim": {
+        "type": "base64Binary",
+        "arelle_version_gated": "2.44.0",
+        "orig_pattern_sha256": "CB74F11E4811A3159BD37FD007E18820CAE658E3C1F8A60D5D3B79ED9DD5FDD9",
+        "shim_source_sha256": "BF1F107900366B822DC592DAC99109D6E52959F55103A45629F9012A832BD995",
+        "selftest": {
+          "cases": 40,
+          "fuzz_cases": 4000,
+          "large_payload_bytes": 12582912
+        }
+      },
+      "entrypoint_note": "raw artefact is XML stored with .zip suffix; Arelle treats .zip as archive - fed via sha256-verified .xbrl copy"
+    },
+    "run_ok": true,
+    "elapsed_s": 1.7,
+    "counts": {
+      "facts": 1114,
+      "contexts": 94,
+      "units": 1,
+      "concepts": 869,
+      "dts_documents": 14,
+      "fact_footnote_relationships": 0,
+      "nil_facts": 0,
+      "contexts_explicit_dims": 104,
+      "contexts_typed_dims": 15,
+      "fact_languages": []
+    },
+    "concept_namespaces": {
+      "www.xbrl.org": 54,
+      "xbrl.org": 4,
+      "www.cnmv.es": 811
+    },
+    "log_code_counts": {},
+    "dts_resolution": [
+      {
+        "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\IBE-H1-2025.xbrl",
+        "resolved_from": "local_input"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_2019-01-01-definition.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_2019-01-01-label.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_2019-01-01.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_dim_2019-01-01-definition.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_dim_2019-01-01-label.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_dim_2019-01-01.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xl-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xlink-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2005/xbrldt-2005.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd",
+        "resolved_from": "taxonomy_package"
+      }
+    ],
+    "offline_evidence": {
+      "io_errors": 0,
+      "download_attempts_in_log": 0
+    },
+    "outputs": {
+      "facts_jsonl": "IBE-H1-2025.facts.jsonl",
+      "facts_jsonl_sha256": "7F48DCD1201E026A122C0B3ED47F725451C7EF4A41DCAD7F49B19C9AB2AE536B",
+      "arelle_log": "IBE-H1-2025.arelle-log.json",
+      "oim_json_sha256": "D9ACF8922D71357ECC02F53BDD1023320597DCF39CC1CB8A8D87FA1336B09327",
+      "oim_json_gz": "IBE-H1-2025.oim.json.gz",
+      "oim_json_gz_sha256": "43A863D8D2EDB885BDDB9936D053D0F54747433D56C78A3816E904181F2A6DC2"
+    },
+    "control_A": {
+      "fact_count_api": 1114,
+      "fact_count_oim": 1114,
+      "fact_multiset_equal": true,
+      "concept_coverage_equal": true,
+      "distinct_context_signatures_api": 94,
+      "decimals_distribution_equal": true,
+      "nil_count_api": 0,
+      "nil_count_oim": 0,
+      "multiset_diff_sample": []
+    }
+  },
+  {
+    "filing": "IBE-H2-2025",
+    "issuer": "IBE",
+    "semester": "H2",
+    "model": "ipp_ge",
+    "artifact": "ipp-IBE-II-semestre-de-2025.zip",
+    "artifact_sha256": "485B2C18444A815F09E3578203359268C6CE1EDA94EB32045E68CFF0CE526042",
+    "arelle_version": "2.44.0",
+    "runtime": {
+      "internetConnectivity": "offline",
+      "plugins": "saveLoadableOIM",
+      "validate": true,
+      "taxonomy_packages": [
+        "cnmv-ipp-2019-01-01-opencnmv-pkg.zip"
+      ],
+      "lexical_shim": {
+        "type": "base64Binary",
+        "arelle_version_gated": "2.44.0",
+        "orig_pattern_sha256": "CB74F11E4811A3159BD37FD007E18820CAE658E3C1F8A60D5D3B79ED9DD5FDD9",
+        "shim_source_sha256": "BF1F107900366B822DC592DAC99109D6E52959F55103A45629F9012A832BD995",
+        "selftest": {
+          "cases": 40,
+          "fuzz_cases": 4000,
+          "large_payload_bytes": 12582912
+        }
+      },
+      "entrypoint_note": "raw artefact is XML stored with .zip suffix; Arelle treats .zip as archive - fed via sha256-verified .xbrl copy"
+    },
+    "run_ok": true,
+    "elapsed_s": 1.1,
+    "counts": {
+      "facts": 1281,
+      "contexts": 96,
+      "units": 1,
+      "concepts": 869,
+      "dts_documents": 14,
+      "fact_footnote_relationships": 0,
+      "nil_facts": 0,
+      "contexts_explicit_dims": 106,
+      "contexts_typed_dims": 15,
+      "fact_languages": []
+    },
+    "concept_namespaces": {
+      "www.xbrl.org": 54,
+      "xbrl.org": 4,
+      "www.cnmv.es": 811
+    },
+    "log_code_counts": {},
+    "dts_resolution": [
+      {
+        "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\IBE-H2-2025.xbrl",
+        "resolved_from": "local_input"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_2019-01-01-definition.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_2019-01-01-label.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_2019-01-01.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_dim_2019-01-01-definition.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_dim_2019-01-01-label.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_dim_2019-01-01.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xl-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xlink-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2005/xbrldt-2005.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd",
+        "resolved_from": "taxonomy_package"
+      }
+    ],
+    "offline_evidence": {
+      "io_errors": 0,
+      "download_attempts_in_log": 0
+    },
+    "outputs": {
+      "facts_jsonl": "IBE-H2-2025.facts.jsonl",
+      "facts_jsonl_sha256": "6D415E3FA0AACBB56FA3A2223A7FADB5667B84C895C8D00CC6FD96A26871CC9B",
+      "arelle_log": "IBE-H2-2025.arelle-log.json",
+      "oim_json_sha256": "B847D074E9D2136516F093AC1B43D40832FDC801C6D8081FD328A12342625EA1",
+      "oim_json_gz": "IBE-H2-2025.oim.json.gz",
+      "oim_json_gz_sha256": "95DBA7392B1452D7575839A00E924783DA5AF084260305BED3F689362C8DB571"
+    },
+    "control_A": {
+      "fact_count_api": 1281,
+      "fact_count_oim": 1281,
+      "fact_multiset_equal": true,
+      "concept_coverage_equal": true,
+      "distinct_context_signatures_api": 96,
+      "decimals_distribution_equal": true,
+      "nil_count_api": 0,
+      "nil_count_oim": 0,
+      "multiset_diff_sample": []
+    }
+  },
+  {
+    "filing": "IBE-H1-2026",
+    "issuer": "IBE",
+    "semester": "H1",
+    "model": "ipp_ge",
+    "artifact": "ipp-IBE-I-semestre-de-2026.zip",
+    "artifact_sha256": "5EB26CAB15C58FC6D06A87609E63C5720672118FC7C0A8981E5CFF0F5CC54C2E",
+    "arelle_version": "2.44.0",
+    "runtime": {
+      "internetConnectivity": "offline",
+      "plugins": "saveLoadableOIM",
+      "validate": true,
+      "taxonomy_packages": [
+        "cnmv-ipp-2019-01-01-opencnmv-pkg.zip"
+      ],
+      "lexical_shim": {
+        "type": "base64Binary",
+        "arelle_version_gated": "2.44.0",
+        "orig_pattern_sha256": "CB74F11E4811A3159BD37FD007E18820CAE658E3C1F8A60D5D3B79ED9DD5FDD9",
+        "shim_source_sha256": "BF1F107900366B822DC592DAC99109D6E52959F55103A45629F9012A832BD995",
+        "selftest": {
+          "cases": 40,
+          "fuzz_cases": 4000,
+          "large_payload_bytes": 12582912
+        }
+      },
+      "entrypoint_note": "raw artefact is XML stored with .zip suffix; Arelle treats .zip as archive - fed via sha256-verified .xbrl copy"
+    },
+    "run_ok": true,
+    "elapsed_s": 1.4,
+    "counts": {
+      "facts": 1110,
+      "contexts": 94,
+      "units": 1,
+      "concepts": 869,
+      "dts_documents": 14,
+      "fact_footnote_relationships": 0,
+      "nil_facts": 0,
+      "contexts_explicit_dims": 104,
+      "contexts_typed_dims": 15,
+      "fact_languages": []
+    },
+    "concept_namespaces": {
+      "www.xbrl.org": 54,
+      "xbrl.org": 4,
+      "www.cnmv.es": 811
+    },
+    "log_code_counts": {},
+    "dts_resolution": [
+      {
+        "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\IBE-H1-2026.xbrl",
+        "resolved_from": "local_input"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_2019-01-01-definition.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_2019-01-01-label.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_2019-01-01.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_dim_2019-01-01-definition.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_dim_2019-01-01-label.xml",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_dim_2019-01-01.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xl-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2003/xlink-2003-12-31.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/2005/xbrldt-2005.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd",
+        "resolved_from": "taxonomy_package"
+      },
+      {
+        "uri": "http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd",
+        "resolved_from": "taxonomy_package"
+      }
+    ],
+    "offline_evidence": {
+      "io_errors": 0,
+      "download_attempts_in_log": 0
+    },
+    "outputs": {
+      "facts_jsonl": "IBE-H1-2026.facts.jsonl",
+      "facts_jsonl_sha256": "C2A18143270FBCEC2BD8D4A662C4A49C873950A4286A7BBEFF5D810A949E509C",
+      "arelle_log": "IBE-H1-2026.arelle-log.json",
+      "oim_json_sha256": "4EEA959FA30EBAB2CE712B84A0D5A3E12BE97056BB1E422D75C1F502513EDEFC",
+      "oim_json_gz": "IBE-H1-2026.oim.json.gz",
+      "oim_json_gz_sha256": "259D0C0FCCE671C3485740E4CEDC1B31CBF1FFBE72450F04E57B2E5CC2381A3F"
+    },
+    "control_A": {
+      "fact_count_api": 1110,
+      "fact_count_oim": 1110,
+      "fact_multiset_equal": true,
+      "concept_coverage_equal": true,
+      "distinct_context_signatures_api": 94,
+      "decimals_distribution_equal": true,
+      "nil_count_api": 0,
+      "nil_count_oim": 0,
+      "multiset_diff_sample": []
+    }
+  }
+]

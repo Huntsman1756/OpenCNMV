@@ -1,0 +1,241 @@
+{
+  "package": "cnmv-ipp-2019-01-01-opencnmv-pkg",
+  "source_zip": "cnmv-ipp_2019-01-01.zip",
+  "source_zip_sha256": "87C445220D9D046069793F84830C73B473F2B8CA9ADD4DA9F381532EA00D611E",
+  "package_file": "cnmv-ipp-2019-01-01-opencnmv-pkg.zip",
+  "package_sha256": "4C6C127E8E3F32306905FFC6354FAF7FE3F95AC58DC9F94FADA962DF6D5BE525",
+  "rewrites": {
+    "http://www.cnmv.es/xbrl/ipp/": "ipp/ (canonical layout)",
+    "http://www.xbrl.org/": "www.xbrl.org/ (R10-pinned base schemas)"
+  },
+  "members": [
+    {
+      "member": "samples/InformeSemestral_Bancos_S2.xbrl",
+      "source_member": "InformeSemestral_Bancos_S2.xbrl",
+      "sha256": "B6A7EE42FCB922A8F6FF4E1CC2583276855B91811C3C459100524A95DEDE2BDD",
+      "bytes": 427709
+    },
+    {
+      "member": "samples/InformeSemestral_General_S2.xbrl",
+      "source_member": "InformeSemestral_General_S2.xbrl",
+      "sha256": "41C843F0148D7E180C57755C610F2D14AB858192A54E2364337C191F7EBBDE1C",
+      "bytes": 293085
+    },
+    {
+      "member": "samples/InformeSemestral_Seguros_S2.xbrl",
+      "source_member": "InformeSemestral_Seguros_S2.xbrl",
+      "sha256": "63A86E84828F3979883EFC56E0F65DD70EE2E7FDA4EC0C5B71447D5A24B18F2B",
+      "bytes": 350301
+    },
+    {
+      "member": "samples/InformeTrimestral_T1.xbrl",
+      "source_member": "InformeTrimestral_T1.xbrl",
+      "sha256": "9CCA283030497B6E14253AE5B47E989E9FCF2FFC2ECEA880DCA80D5FF6D8F9AA",
+      "bytes": 6857
+    },
+    {
+      "member": "ipp/en/2019-01-01/ipp_en_2019-01-01-definition.xml",
+      "source_member": "ipp_en_2019-01-01-definition.xml",
+      "sha256": "021CFB69BF152F579802B1DB32FE052AB1682F1F1C90387CEF658BD0937D4945",
+      "bytes": 537101
+    },
+    {
+      "member": "ipp/en/2019-01-01/ipp_en_2019-01-01-label.xml",
+      "source_member": "ipp_en_2019-01-01-label.xml",
+      "sha256": "825D4DBFA8A240330DEAFB9B44C886FCB2F9AF0396237414E6B7BA445D57DABD",
+      "bytes": 699814
+    },
+    {
+      "member": "ipp/en/2019-01-01/ipp_en_2019-01-01.xsd",
+      "source_member": "ipp_en_2019-01-01.xsd",
+      "sha256": "5C7A8F6FA021631873068D0040130C4704F53DF7E14F59946E8C1C64AD0A7D58",
+      "bytes": 224675
+    },
+    {
+      "member": "ipp/en/2019-01-01/ipp_en_dim_2019-01-01-definition.xml",
+      "source_member": "ipp_en_dim_2019-01-01-definition.xml",
+      "sha256": "D7E02C81A5A083CAF79C370B31431E6A5BA1DFBF24FB008426389475B143275C",
+      "bytes": 156812
+    },
+    {
+      "member": "ipp/en/2019-01-01/ipp_en_dim_2019-01-01-label.xml",
+      "source_member": "ipp_en_dim_2019-01-01-label.xml",
+      "sha256": "7341C71AC5BB8676225D3CD7162E8FCB9D66BF9FC0ABC1DD2211199119FADAD8",
+      "bytes": 59024
+    },
+    {
+      "member": "ipp/en/2019-01-01/ipp_en_dim_2019-01-01.xsd",
+      "source_member": "ipp_en_dim_2019-01-01.xsd",
+      "sha256": "93A2D35801CF725248244C4B2787E9C0A4960E7110C7FA8F050ABFA11F7AD6F6",
+      "bytes": 35231
+    },
+    {
+      "member": "ipp/ge/2019-01-01/ipp_ge_2019-01-01-definition.xml",
+      "source_member": "ipp_ge_2019-01-01-definition.xml",
+      "sha256": "42F0A687CDE12BDD56AC8CEAF7F944627D2A150AF9EA4684DF4269C02647FEBB",
+      "bytes": 328577
+    },
+    {
+      "member": "ipp/ge/2019-01-01/ipp_ge_2019-01-01-label.xml",
+      "source_member": "ipp_ge_2019-01-01-label.xml",
+      "sha256": "FBDC0667E0745F9288CB4421BDD0CAA65A7779135A4479C736A41F9389D2A964",
+      "bytes": 460028
+    },
+    {
+      "member": "ipp/ge/2019-01-01/ipp_ge_2019-01-01.xsd",
+      "source_member": "ipp_ge_2019-01-01.xsd",
+      "sha256": "C30DC74E9CD175DA6A16C511081DB464B8E4C398E600EA703A4E27656E93BEC8",
+      "bytes": 151558
+    },
+    {
+      "member": "ipp/ge/2019-01-01/ipp_ge_dim_2019-01-01-definition.xml",
+      "source_member": "ipp_ge_dim_2019-01-01-definition.xml",
+      "sha256": "749F0A8A3A6585209E2995C7B62C0AD5D1E6277F5F2D671303F879205326A93A",
+      "bytes": 39489
+    },
+    {
+      "member": "ipp/ge/2019-01-01/ipp_ge_dim_2019-01-01-label.xml",
+      "source_member": "ipp_ge_dim_2019-01-01-label.xml",
+      "sha256": "8F892D49B9E8D1E3B2BD79A487551FA2FB35060D6F0A89687218895B4F4D2327",
+      "bytes": 45436
+    },
+    {
+      "member": "ipp/ge/2019-01-01/ipp_ge_dim_2019-01-01.xsd",
+      "source_member": "ipp_ge_dim_2019-01-01.xsd",
+      "sha256": "3DC310C304B3A130D9460FA561B81DD85FA5F35BCD6039CF562F3C038CDF2D0E",
+      "bytes": 19305
+    },
+    {
+      "member": "ipp/se/2019-01-01/ipp_se_2019-01-01-definition.xml",
+      "source_member": "ipp_se_2019-01-01-definition.xml",
+      "sha256": "C58007244D1208ED516F45142A8112F67AC596CBA9B86847901B9985C7DA3F61",
+      "bytes": 381790
+    },
+    {
+      "member": "ipp/se/2019-01-01/ipp_se_2019-01-01-label.xml",
+      "source_member": "ipp_se_2019-01-01-label.xml",
+      "sha256": "96986AD8704C45D264A559BA351B221C31D2955DA61B8B9E4495C78DDF461912",
+      "bytes": 530165
+    },
+    {
+      "member": "ipp/se/2019-01-01/ipp_se_2019-01-01.xsd",
+      "source_member": "ipp_se_2019-01-01.xsd",
+      "sha256": "8E8550A394F5967B2D59BCC1AA079DD250596F65D23078888B82B730F15A7039",
+      "bytes": 175095
+    },
+    {
+      "member": "ipp/se/2019-01-01/ipp_se_dim_2019-01-01-definition.xml",
+      "source_member": "ipp_se_dim_2019-01-01-definition.xml",
+      "sha256": "14A97513094AB568F816F309DA1200002B00C2D1AA3EF242BCE35D63F3CD9537",
+      "bytes": 44261
+    },
+    {
+      "member": "ipp/se/2019-01-01/ipp_se_dim_2019-01-01-label.xml",
+      "source_member": "ipp_se_dim_2019-01-01-label.xml",
+      "sha256": "3ACEFC2EED4D4E07349788BD7DCADD42BBCA1C3AD6CBF3AA6ECF01BAA62EB89B",
+      "bytes": 53499
+    },
+    {
+      "member": "ipp/se/2019-01-01/ipp_se_dim_2019-01-01.xsd",
+      "source_member": "ipp_se_dim_2019-01-01.xsd",
+      "sha256": "A4D3BC65222A1C00E1601587E7B181D87F226D28369D2995570CA000737866DD",
+      "bytes": 22124
+    },
+    {
+      "member": "ipp/ti/2019-01-01/ipp_ti_2019-01-01-definition.xml",
+      "source_member": "ipp_ti_2019-01-01-definition.xml",
+      "sha256": "71273E1A51AA6DBBEF358C2450692286A8724882E680AFE96A3D5839677FCF8A",
+      "bytes": 26230
+    },
+    {
+      "member": "ipp/ti/2019-01-01/ipp_ti_2019-01-01-label.xml",
+      "source_member": "ipp_ti_2019-01-01-label.xml",
+      "sha256": "CDA3284300927F039A773BF49F2F2A0626779C05A01BF85BB42877D8A62BB430",
+      "bytes": 34185
+    },
+    {
+      "member": "ipp/ti/2019-01-01/ipp_ti_2019-01-01.xsd",
+      "source_member": "ipp_ti_2019-01-01.xsd",
+      "sha256": "2B5D02D0598F6830BF80B75A26F37CF71FBD0038FAF0F85D2D63598DD24098BC",
+      "bytes": 16090
+    },
+    {
+      "member": "ipp/ti/2019-01-01/ipp_ti_dim_2019-01-01-definition.xml",
+      "source_member": "ipp_ti_dim_2019-01-01-definition.xml",
+      "sha256": "468E52AD626D4039B2422279457FEB0141DC7032B9391DDF42B9F0FE6A37D4CB",
+      "bytes": 2829
+    },
+    {
+      "member": "ipp/ti/2019-01-01/ipp_ti_dim_2019-01-01-label.xml",
+      "source_member": "ipp_ti_dim_2019-01-01-label.xml",
+      "sha256": "948BC76C9E25771F45B25F50BBE1617BC83F540498C52A119E40CFEF2F8D0A6C",
+      "bytes": 4465
+    },
+    {
+      "member": "ipp/ti/2019-01-01/ipp_ti_dim_2019-01-01.xsd",
+      "source_member": "ipp_ti_dim_2019-01-01.xsd",
+      "sha256": "555D5AE4D285556E29E997E856D49628AAD3C227930EBC05087151D2D76F1965",
+      "bytes": 3326
+    },
+    {
+      "member": "www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd",
+      "source_member": "xbrlorg_www.xbrl.org_2003_xbrl-instance-2003-12-31.xsd",
+      "sha256": "5DBAD94CECF42918B976449A8E1CB800D57E96442A9D0F5C00CA77E4DA831827",
+      "bytes": 23637
+    },
+    {
+      "member": "www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd",
+      "source_member": "xbrlorg_www.xbrl.org_2003_xbrl-linkbase-2003-12-31.xsd",
+      "sha256": "F906CD30BC47A81BD1C97E24447F4917B21EB3D8A8B4FC520129CE2534AC5BCA",
+      "bytes": 16088
+    },
+    {
+      "member": "www.xbrl.org/2003/xl-2003-12-31.xsd",
+      "source_member": "xbrlorg_www.xbrl.org_2003_xl-2003-12-31.xsd",
+      "sha256": "E28B0965D34F4879833B433A62D0D1E86E8B1F22E6B7642BAB861983F5BB5818",
+      "bytes": 8734
+    },
+    {
+      "member": "www.xbrl.org/2003/xlink-2003-12-31.xsd",
+      "source_member": "xbrlorg_www.xbrl.org_2003_xlink-2003-12-31.xsd",
+      "sha256": "5FFA8CB747CCD11E0D6420CF5668B60E3B7A64E20915D0E1774E5559D3343971",
+      "bytes": 3350
+    },
+    {
+      "member": "www.xbrl.org/2005/xbrldt-2005.xsd",
+      "source_member": "xbrlorg_www.xbrl.org_2005_xbrldt-2005.xsd",
+      "sha256": "CAF850F08D74C087C7946E6EA6D9FB5C0E9F8EDF63BF639CCB9143E77E3390C7",
+      "bytes": 3929
+    },
+    {
+      "member": "www.xbrl.org/2006/xbrldi-2006.xsd",
+      "source_member": "xbrlorg_www.xbrl.org_2006_xbrldi-2006.xsd",
+      "sha256": "EEC226EE84A0A1CF61F377780767267EF11F3C8E1A26EFE5266A2B0ABDC6AF05",
+      "bytes": 1808
+    },
+    {
+      "member": "www.xbrl.org/dtr/type/2020-01-21/types.xsd",
+      "source_member": "xbrlorg_www.xbrl.org_dtr_type_2020-01-21_types.xsd",
+      "sha256": "A62F1F3635BC6B6CDDD1422AB2C9BA00EBBE73CEFC3500E207FA0E9C12EE0293",
+      "bytes": 43431
+    },
+    {
+      "member": "www.xbrl.org/dtr/type/2022-03-31/types.xsd",
+      "source_member": "xbrlorg_www.xbrl.org_dtr_type_2022-03-31_types.xsd",
+      "sha256": "E7EB1BEF6A68845CC0DD5D370D18CEDA92978DD54A6809A22286D4E6AF87CA4B",
+      "bytes": 45291
+    },
+    {
+      "member": "www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd",
+      "source_member": "xbrlorg_www.xbrl.org_dtr_type_nonNumeric-2009-12-16.xsd",
+      "sha256": "8D932E134A34B692D917919B1BF38C3106CF54B3F085F02850A51EB8DB8F347B",
+      "bytes": 4024
+    },
+    {
+      "member": "www.xbrl.org/dtr/type/numeric-2009-12-16.xsd",
+      "source_member": "xbrlorg_www.xbrl.org_dtr_type_numeric-2009-12-16.xsd",
+      "sha256": "5D5A951356396CA5CDEDAE38DEF3A7C243AC49394B77670E6B76E00A3A9B966E",
+      "bytes": 3462
+    }
+  ]
+}

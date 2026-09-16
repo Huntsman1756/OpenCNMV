@@ -1,0 +1,130 @@
+{
+  "filing": "BBVA-H2-2025",
+  "issuer": "BBVA",
+  "semester": "H2",
+  "model": "ipp_en",
+  "artifact": "ipp-BBVA-II-semestre-de-2025.zip",
+  "artifact_sha256": "F65493B4F5FE26A5A102B78F5B5D03E3B2F89302508AAE5555A3D3EC64853861",
+  "arelle_version": "2.44.0",
+  "runtime": {
+    "internetConnectivity": "offline",
+    "plugins": "saveLoadableOIM",
+    "validate": true,
+    "taxonomy_packages": [
+      "cnmv-ipp-2019-01-01-opencnmv-pkg.zip"
+    ],
+    "lexical_shim": {
+      "type": "base64Binary",
+      "arelle_version_gated": "2.44.0",
+      "orig_pattern_sha256": "CB74F11E4811A3159BD37FD007E18820CAE658E3C1F8A60D5D3B79ED9DD5FDD9",
+      "shim_source_sha256": "BF1F107900366B822DC592DAC99109D6E52959F55103A45629F9012A832BD995",
+      "selftest": {
+        "cases": 40,
+        "fuzz_cases": 4000,
+        "large_payload_bytes": 12582912
+      }
+    },
+    "entrypoint_note": "raw artefact is XML stored with .zip suffix; Arelle treats .zip as archive - fed via sha256-verified .xbrl copy"
+  },
+  "run_ok": true,
+  "elapsed_s": 1.4,
+  "counts": {
+    "facts": 1875,
+    "contexts": 120,
+    "units": 1,
+    "concepts": 1262,
+    "dts_documents": 14,
+    "fact_footnote_relationships": 0,
+    "nil_facts": 0,
+    "contexts_explicit_dims": 130,
+    "contexts_typed_dims": 1,
+    "fact_languages": []
+  },
+  "concept_namespaces": {
+    "www.xbrl.org": 54,
+    "xbrl.org": 4,
+    "www.cnmv.es": 1204
+  },
+  "log_code_counts": {},
+  "dts_resolution": [
+    {
+      "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\BBVA-H2-2025.xbrl",
+      "resolved_from": "local_input"
+    },
+    {
+      "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01-definition.xml",
+      "resolved_from": "taxonomy_package"
+    },
+    {
+      "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01-label.xml",
+      "resolved_from": "taxonomy_package"
+    },
+    {
+      "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01.xsd",
+      "resolved_from": "taxonomy_package"
+    },
+    {
+      "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01-definition.xml",
+      "resolved_from": "taxonomy_package"
+    },
+    {
+      "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01-label.xml",
+      "resolved_from": "taxonomy_package"
+    },
+    {
+      "uri": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_dim_2019-01-01.xsd",
+      "resolved_from": "taxonomy_package"
+    },
+    {
+      "uri": "http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd",
+      "resolved_from": "taxonomy_package"
+    },
+    {
+      "uri": "http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd",
+      "resolved_from": "taxonomy_package"
+    },
+    {
+      "uri": "http://www.xbrl.org/2003/xl-2003-12-31.xsd",
+      "resolved_from": "taxonomy_package"
+    },
+    {
+      "uri": "http://www.xbrl.org/2003/xlink-2003-12-31.xsd",
+      "resolved_from": "taxonomy_package"
+    },
+    {
+      "uri": "http://www.xbrl.org/2005/xbrldt-2005.xsd",
+      "resolved_from": "taxonomy_package"
+    },
+    {
+      "uri": "http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd",
+      "resolved_from": "taxonomy_package"
+    },
+    {
+      "uri": "http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd",
+      "resolved_from": "taxonomy_package"
+    }
+  ],
+  "offline_evidence": {
+    "io_errors": 0,
+    "download_attempts_in_log": 0
+  },
+  "outputs": {
+    "facts_jsonl": "BBVA-H2-2025.facts.jsonl",
+    "facts_jsonl_sha256": "B6BDFB41F24560760B73DC4D58DB1619D97FF994D1745F48D37F6C6CA97852BC",
+    "arelle_log": "BBVA-H2-2025.arelle-log.json",
+    "oim_json_sha256": "A9245CF4100440BC51DDE9D8337118DFCD82634C1578C7401AF3DCAC81656FB3",
+    "oim_json_gz": "BBVA-H2-2025.oim.json.gz",
+    "oim_json_gz_sha256": "D576243A72B4F081A3B90A44699B09A00A4C18F0A8A0765E660CC12398748821"
+  },
+  "control_A": {
+    "fact_count_api": 1875,
+    "fact_count_oim": 1875,
+    "fact_multiset_equal": true,
+    "concept_coverage_equal": true,
+    "distinct_context_signatures_api": 120,
+    "decimals_distribution_equal": true,
+    "nil_count_api": 0,
+    "nil_count_oim": 0,
+    "multiset_diff_sample": []
+  }
+}

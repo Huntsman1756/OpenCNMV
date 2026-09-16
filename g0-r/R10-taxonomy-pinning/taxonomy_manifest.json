@@ -8,7 +8,8 @@
   "filing_family": "IPP",
   "required_by": "IPP corpus (15 IPP_XBRL artefacts): ipp_en (SAN/BBVA) + ipp_ge (IBE) entry points",
   "evidence_path": "g0-r\\R10-taxonomy-pinning\\evidence\\cnmv-ipp_2019-01-01.zip",
-  "content_check": true
+  "content_check": true,
+  "kind": "OFFICIAL_TAXONOMY_RAW"
  },
  {
   "package": "esma-esef-2022",
@@ -21,7 +22,8 @@
   "evidence_path": "g0-r\\R10-taxonomy-pinning\\evidence\\esef_taxonomy_2022_v1.1.zip",
   "content_check": true,
   "media_type": "application/zip",
-  "byte_size": 14291196
+  "byte_size": 14291196,
+  "kind": "OFFICIAL_TAXONOMY_RAW"
  },
  {
   "package": "esma-esef-2024",
@@ -34,7 +36,8 @@
   "evidence_path": "g0-r\\R10-taxonomy-pinning\\evidence\\esef_taxonomy_2024.zip",
   "content_check": true,
   "media_type": "application/zip",
-  "byte_size": 14703853
+  "byte_size": 14703853,
+  "kind": "OFFICIAL_TAXONOMY_RAW"
  },
  {
   "package": "xbrl.org:2003/xbrl-instance-2003-12-31.xsd",
@@ -46,7 +49,8 @@
   "required_by": "imported by CNMV IPP taxonomy and/or ESMA/issuer ESEF extensions",
   "evidence_path": "g0-r\\R10-taxonomy-pinning\\evidence\\xbrlorg_www.xbrl.org_2003_xbrl-instance-2003-12-31.xsd",
   "media_type": "",
-  "byte_size": 23637
+  "byte_size": 23637,
+  "kind": "OFFICIAL_TAXONOMY_RAW"
  },
  {
   "package": "xbrl.org:2003/xbrl-linkbase-2003-12-31.xsd",
@@ -58,7 +62,8 @@
   "required_by": "imported by CNMV IPP taxonomy and/or ESMA/issuer ESEF extensions",
   "evidence_path": "g0-r\\R10-taxonomy-pinning\\evidence\\xbrlorg_www.xbrl.org_2003_xbrl-linkbase-2003-12-31.xsd",
   "media_type": "",
-  "byte_size": 16088
+  "byte_size": 16088,
+  "kind": "OFFICIAL_TAXONOMY_RAW"
  },
  {
   "package": "xbrl.org:2005/xbrldt-2005.xsd",
@@ -70,7 +75,8 @@
   "required_by": "imported by CNMV IPP taxonomy and/or ESMA/issuer ESEF extensions",
   "evidence_path": "g0-r\\R10-taxonomy-pinning\\evidence\\xbrlorg_www.xbrl.org_2005_xbrldt-2005.xsd",
   "media_type": "",
-  "byte_size": 3929
+  "byte_size": 3929,
+  "kind": "OFFICIAL_TAXONOMY_RAW"
  },
  {
   "package": "xbrl.org:2006/xbrldi-2006.xsd",
@@ -82,7 +88,8 @@
   "required_by": "imported by CNMV IPP taxonomy and/or ESMA/issuer ESEF extensions",
   "evidence_path": "g0-r\\R10-taxonomy-pinning\\evidence\\xbrlorg_www.xbrl.org_2006_xbrldi-2006.xsd",
   "media_type": "",
-  "byte_size": 1808
+  "byte_size": 1808,
+  "kind": "OFFICIAL_TAXONOMY_RAW"
  },
  {
   "package": "xbrl.org:dtr/type/2020-01-21/types.xsd",
@@ -94,7 +101,8 @@
   "required_by": "imported by CNMV IPP taxonomy and/or ESMA/issuer ESEF extensions",
   "evidence_path": "g0-r\\R10-taxonomy-pinning\\evidence\\xbrlorg_www.xbrl.org_dtr_type_2020-01-21_types.xsd",
   "media_type": "",
-  "byte_size": 43431
+  "byte_size": 43431,
+  "kind": "OFFICIAL_TAXONOMY_RAW"
  },
  {
   "package": "xbrl.org:dtr/type/2022-03-31/types.xsd",
@@ -106,7 +114,32 @@
   "required_by": "imported by CNMV IPP taxonomy and/or ESMA/issuer ESEF extensions",
   "evidence_path": "g0-r\\R10-taxonomy-pinning\\evidence\\xbrlorg_www.xbrl.org_dtr_type_2022-03-31_types.xsd",
   "media_type": "",
-  "byte_size": 45291
+  "byte_size": 45291,
+  "kind": "OFFICIAL_TAXONOMY_RAW"
+ },
+ {
+  "package": "xbrl.org:2003/xl-2003-12-31.xsd",
+  "source_url": "http://www.xbrl.org/2003/xl-2003-12-31.xsd",
+  "retrieved_at": "2026-09-16",
+  "sha256": "E28B0965D34F4879833B433A62D0D1E86E8B1F22E6B7642BAB861983F5BB5818",
+  "taxonomy_version": "2003",
+  "filing_family": "ALL",
+  "required_by": "imported by xbrl-linkbase-2003-12-31.xsd (transitive dep of CNMV IPP taxonomy, discovered by R12)",
+  "evidence_path": "g0-r/R10-taxonomy-pinning/evidence/xbrlorg_www.xbrl.org_2003_xl-2003-12-31.xsd",
+  "byte_size": 8734,
+  "kind": "OFFICIAL_TAXONOMY_RAW"
+ },
+ {
+  "package": "xbrl.org:2003/xlink-2003-12-31.xsd",
+  "source_url": "http://www.xbrl.org/2003/xlink-2003-12-31.xsd",
+  "retrieved_at": "2026-09-16",
+  "sha256": "5FFA8CB747CCD11E0D6420CF5668B60E3B7A64E20915D0E1774E5559D3343971",
+  "taxonomy_version": "2003",
+  "filing_family": "ALL",
+  "required_by": "imported by xbrl-linkbase-2003-12-31.xsd (transitive dep of CNMV IPP taxonomy, discovered by R12)",
+  "evidence_path": "g0-r/R10-taxonomy-pinning/evidence/xbrlorg_www.xbrl.org_2003_xlink-2003-12-31.xsd",
+  "byte_size": 3350,
+  "kind": "OFFICIAL_TAXONOMY_RAW"
  },
  {
   "package": "xbrl.org:dtr/type/numeric-2009-12-16.xsd",
@@ -118,7 +151,8 @@
   "required_by": "imported by CNMV IPP taxonomy and/or ESMA/issuer ESEF extensions",
   "evidence_path": "g0-r\\R10-taxonomy-pinning\\evidence\\xbrlorg_www.xbrl.org_dtr_type_numeric-2009-12-16.xsd",
   "media_type": "",
-  "byte_size": 3462
+  "byte_size": 3462,
+  "kind": "OFFICIAL_TAXONOMY_RAW"
  },
  {
   "package": "xbrl.org:dtr/type/nonNumeric-2009-12-16.xsd",
@@ -130,7 +164,8 @@
   "required_by": "imported by CNMV IPP taxonomy and/or ESMA/issuer ESEF extensions",
   "evidence_path": "g0-r\\R10-taxonomy-pinning\\evidence\\xbrlorg_www.xbrl.org_dtr_type_nonNumeric-2009-12-16.xsd",
   "media_type": "",
-  "byte_size": 4024
+  "byte_size": 4024,
+  "kind": "OFFICIAL_TAXONOMY_RAW"
  },
  {
   "package": "issuer-extension-BBVA-FY2024",
@@ -142,7 +177,8 @@
   "required_by": "BBVA FY2024 ESEF filing",
   "contained_in": "g0-r/R07-raw-retrieval/evidence\\esef-BBVA-FY2024-package.zip",
   "member_path": "K8MS7FD7N5Z2WQ51AZ71-20241231-0-es/www.bbva.es/20241231/K8MS7FD7N5Z2WQ51AZ71-2024-12-31.xsd",
-  "note": "issuer extension taxonomy; identifier URL resolved via the package META-INF/catalog.xml"
+  "note": "issuer extension taxonomy; identifier URL resolved via the package META-INF/catalog.xml",
+  "kind": "OFFICIAL_TAXONOMY_RAW"
  },
  {
   "package": "issuer-extension-BBVA-FY2025",
@@ -154,7 +190,8 @@
   "required_by": "BBVA FY2025 ESEF filing",
   "contained_in": "g0-r/R07-raw-retrieval/evidence\\esef-BBVA-FY2025-package.zip",
   "member_path": "K8MS7FD7N5Z2WQ51AZ71-2025-12-31-1-es/www.bbva.es/20251231/K8MS7FD7N5Z2WQ51AZ71-2025-12-31.xsd",
-  "note": "issuer extension taxonomy; identifier URL resolved via the package META-INF/catalog.xml"
+  "note": "issuer extension taxonomy; identifier URL resolved via the package META-INF/catalog.xml",
+  "kind": "OFFICIAL_TAXONOMY_RAW"
  },
  {
   "package": "issuer-extension-IBE-FY2024",
@@ -166,7 +203,8 @@
   "required_by": "IBE FY2024 ESEF filing",
   "contained_in": "g0-r/R07-raw-retrieval/evidence\\esef-IBE-FY2024-package.zip",
   "member_path": "5QK37QC7NWOJ8D7WVQ45-20241231-es/www.iberdrola.com/20241231/5QK37QC7NWOJ8D7WVQ45-2024-12-31.xsd",
-  "note": "issuer extension taxonomy; identifier URL resolved via the package META-INF/catalog.xml"
+  "note": "issuer extension taxonomy; identifier URL resolved via the package META-INF/catalog.xml",
+  "kind": "OFFICIAL_TAXONOMY_RAW"
  },
  {
   "package": "issuer-extension-IBE-FY2025",
@@ -178,7 +216,8 @@
   "required_by": "IBE FY2025 ESEF filing",
   "contained_in": "g0-r/R07-raw-retrieval/evidence\\esef-IBE-FY2025-package.zip",
   "member_path": "5QK37QC7NWOJ8D7WVQ45-2025-12-31-1-es/www.iberdrola.com/20251231/5QK37QC7NWOJ8D7WVQ45-2025-12-31.xsd",
-  "note": "issuer extension taxonomy; identifier URL resolved via the package META-INF/catalog.xml"
+  "note": "issuer extension taxonomy; identifier URL resolved via the package META-INF/catalog.xml",
+  "kind": "OFFICIAL_TAXONOMY_RAW"
  },
  {
   "package": "issuer-extension-SAN-FY2024",
@@ -190,7 +229,8 @@
   "required_by": "SAN FY2024 ESEF filing",
   "contained_in": "g0-r/R07-raw-retrieval/evidence\\esef-SAN-FY2024-package.zip",
   "member_path": "5493006QMFDDMYWIAM13-20241231-es/www.santanderbank.com/20241231/5493006QMFDDMYWIAM13-2024-12-31.xsd",
-  "note": "issuer extension taxonomy; identifier URL resolved via the package META-INF/catalog.xml"
+  "note": "issuer extension taxonomy; identifier URL resolved via the package META-INF/catalog.xml",
+  "kind": "OFFICIAL_TAXONOMY_RAW"
  },
  {
   "package": "issuer-extension-SAN-FY2025",
@@ -202,7 +242,8 @@
   "required_by": "SAN FY2025 ESEF filing",
   "contained_in": "g0-r/R07-raw-retrieval/evidence\\esef-SAN-FY2025-package.zip",
   "member_path": "5493006QMFDDMYWIAM13-2025-12-31-1-es/www.santander.com/20251231/5493006QMFDDMYWIAM13-2025-12-31.xsd",
-  "note": "issuer extension taxonomy; identifier URL resolved via the package META-INF/catalog.xml"
+  "note": "issuer extension taxonomy; identifier URL resolved via the package META-INF/catalog.xml",
+  "kind": "OFFICIAL_TAXONOMY_RAW"
  },
  {
   "package": "ifrs-full_ifrs-2022-03-24",
@@ -215,7 +256,8 @@
   "evidence_path": "g0-r/R10-taxonomy-pinning/evidence/ifrs-full_ifrs-2022-03-24-opencnmv-pkg.zip",
   "content_check": true,
   "member_count": 43,
-  "package_origin": "locally assembled taxonomy package over canonical pinned files (META-INF/catalog.xml rewriteURI)"
+  "package_origin": "locally assembled taxonomy package over canonical pinned files (META-INF/catalog.xml rewriteURI)",
+  "kind": "OPEN_CNMV_DERIVED_TAXONOMY_PACKAGE"
  },
  {
   "package": "ifrs-full_ifrs-2024-03-27",
@@ -228,7 +270,8 @@
   "evidence_path": "g0-r/R10-taxonomy-pinning/evidence/ifrs-full_ifrs-2024-03-27-opencnmv-pkg.zip",
   "content_check": true,
   "member_count": 44,
-  "package_origin": "locally assembled taxonomy package over canonical pinned files (META-INF/catalog.xml rewriteURI)"
+  "package_origin": "locally assembled taxonomy package over canonical pinned files (META-INF/catalog.xml rewriteURI)",
+  "kind": "OPEN_CNMV_DERIVED_TAXONOMY_PACKAGE"
  },
  {
   "package": "xbrl-lei-2020-07-02",
@@ -241,6 +284,21 @@
   "evidence_path": "g0-r/R10-taxonomy-pinning/evidence/xbrl-lei-2020-07-02-opencnmv-pkg.zip",
   "content_check": true,
   "member_count": 7,
-  "package_origin": "locally assembled taxonomy package over canonical pinned files (META-INF/catalog.xml rewriteURI)"
+  "package_origin": "locally assembled taxonomy package over canonical pinned files (META-INF/catalog.xml rewriteURI)",
+  "kind": "OPEN_CNMV_DERIVED_TAXONOMY_PACKAGE"
+ },
+ {
+  "package": "cnmv-ipp-2019-01-01-opencnmv-pkg",
+  "source_url": "re-wraps pinned cnmv-ipp_2019-01-01.zip members under canonical http://www.cnmv.es/xbrl/ipp/ paths (see ipp_pkg_members.json)",
+  "retrieved_at": "2026-09-16 (assembled locally; member bytes identical to pinned zip)",
+  "sha256": "4C6C127E8E3F32306905FFC6354FAF7FE3F95AC58DC9F94FADA962DF6D5BE525",
+  "taxonomy_version": "2019-01-01",
+  "filing_family": "IPP",
+  "required_by": "R12 IPP_ARELLE_PARSE - offline resolution of http://www.cnmv.es/xbrl/ipp/{en,ge}/2019-01-01 schemaRefs",
+  "evidence_path": "g0-r/R10-taxonomy-pinning/evidence/cnmv-ipp-2019-01-01-opencnmv-pkg.zip",
+  "content_check": true,
+  "member_count": 38,
+  "package_origin": "locally assembled taxonomy package over the pinned CNMV flat zip + R10-pinned xbrl.org base schemas (META-INF/catalog.xml rewriteURI); whole DTS resolves from pinned inputs",
+  "kind": "OPEN_CNMV_DERIVED_TAXONOMY_PACKAGE"
  }
 ]

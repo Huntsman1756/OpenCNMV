@@ -12,3 +12,10 @@ Thumbs.db
 
 # R11 brel oracle venv (not part of evidence)
 g0-r/R11-esef-arelle-parse/.venv-brel/
+
+# Python
+__pycache__/
+*.pyc
+
+# R12 temp entrypoint copies (byte-identical, deleted per run)
+g0-r/R12-ipp-arelle-parse/evidence/_entrypoints/

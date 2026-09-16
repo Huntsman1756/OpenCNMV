@@ -1,0 +1,56 @@
+{
+  "gate": "R12",
+  "name": "IPP_ARELLE_PARSE",
+  "status": "PASS",
+  "executed_at": "2026-09-16T00:00:00Z",
+  "code_commit": "n/a",
+  "inputs": [
+    "g0-r/R07-raw-retrieval IPP_XBRL artefacts (15): ipp-{SAN,BBVA,IBE}-{I,II}-semestre-de-{2024,2025,2026}.zip (raw XML instances; .zip suffix is a storage name, not an archive)",
+    "g0-r/R10-taxonomy-pinning: cnmv-ipp-2019-01-01-opencnmv-pkg.zip (locally-assembled package: pinned CNMV flat zip + pinned xbrl.org base schemas; member provenance in ipp_pkg_members.json)",
+    "arelle-release == 2.44.0 (Python API, arelle.api.Session)"
+  ],
+  "outputs": [
+    "g0-r/R12-ipp-arelle-parse/README.md",
+    "g0-r/R12-ipp-arelle-parse/r12_parse.py",
+    "g0-r/R12-ipp-arelle-parse/evidence/{FID}.facts.jsonl (15 deterministic API fact inventories)",
+    "g0-r/R12-ipp-arelle-parse/evidence/{FID}.model_summary.json (15)",
+    "g0-r/R12-ipp-arelle-parse/evidence/{FID}.oim.json.gz (15 Arelle saveLoadableOIM xBRL-JSON exports)",
+    "g0-r/R12-ipp-arelle-parse/evidence/{FID}.arelle-log.json (15)",
+    "g0-r/R12-ipp-arelle-parse/evidence/r12_results.json",
+    "R10 addendum: pin_ipp_pkg.py, evidence/cnmv-ipp-2019-01-01-opencnmv-pkg.zip, evidence/ipp_pkg_members.json, +2 xbrl.org pin rows in taxonomy_manifest.json"
+  ],
+  "sha256": {
+    "ipp-SAN-I-semestre-de-2024.zip": "CE1AC869098AB698ADAF1AFC46B18C40E2E799EC2F9F1F9C90397A84AE13D849",
+    "ipp-SAN-II-semestre-de-2024.zip": "5190D66C279017A7E6B2AE64D8288AD0AB090531217F530FFF5C073713D2B47B",
+    "ipp-SAN-I-semestre-de-2025.zip": "9A61C3D439E4F84044A70E313F690325478485F868219DBD249A46535BF44D55",
+    "ipp-SAN-II-semestre-de-2025.zip": "93C1F22AE7E2685EF1FB3EC6893BE8843B1D1CDB17330CA57D460318D77658FA",
+    "ipp-SAN-I-semestre-de-2026.zip": "A1FAD8F54BD698B90BE2EDC797190467AA94A16A13426CAE92D96D9F21085434",
+    "ipp-BBVA-I-semestre-de-2024.zip": "8B9C23B8B8E36B6BB758075FB954309958DE77F7E8B9B82455B5613643032797",
+    "ipp-BBVA-II-semestre-de-2024.zip": "531FDDCCC904658D76BB44A53D0BC17BE8D9774504009EC76A02008A161155FA",
+    "ipp-BBVA-I-semestre-de-2025.zip": "4934822FA97588D9E7B9223D2FAC1B453BD1C4113685905F7879230AE96281E0",
+    "ipp-BBVA-II-semestre-de-2025.zip": "F65493B4F5FE26A5A102B78F5B5D03E3B2F89302508AAE5555A3D3EC64853861",
+    "ipp-BBVA-I-semestre-de-2026.zip": "CFCCA1026C85D8C787A9773E9C061F0DE9C5BD4084C49247E5F39F73DFFB0A56",
+    "ipp-IBE-I-semestre-de-2024.zip": "FC4C773699CC819CCC7EE31D4EA433DBC3F5F11D32A1AB8231FD9F5E12BEB8E5",
+    "ipp-IBE-II-semestre-de-2024.zip": "8FD0C3F8557B4E7C2DC74B89A5132ABB11B240C1E947DB7228EC627AE4BB6C9D",
+    "ipp-IBE-I-semestre-de-2025.zip": "3885EF4FB5F260741D191E59D45FC1ABAE842F68EACCAFA94D67CBB0C714CDC3",
+    "ipp-IBE-II-semestre-de-2025.zip": "485B2C18444A815F09E3578203359268C6CE1EDA94EB32045E68CFF0CE526042",
+    "ipp-IBE-I-semestre-de-2026.zip": "5EB26CAB15C58FC6D06A87609E63C5720672118FC7C0A8981E5CFF0F5CC54C2E",
+    "note": "per-output evidence hashes (facts.jsonl, oim.json.gz, arelle-log.json) in each {FID}.model_summary.json"
+  },
+  "findings": [
+    "All 15 IPP instances load fully offline under Arelle 2.44.0 with the pinned IPP taxonomy package: DTS complete (14 docs), ioerr=0, zero download attempts, zero warnings/errors.",
+    "Coverage deliberate: ipp_en credit-entity model (SAN, BBVA), ipp_ge general model (IBE), H1 and H2, all five corpus slots. ipp_en DTS=1262 concepts vs ipp_ge=869 - real model heterogeneity, preserved.",
+    "Fact preservation verified: QName, value/xValue, context (entity, period), unit, decimals, nil, explicit AND typed dimensions (1-16 typed-dim contexts per filing - absent in ESEF corpus), language.",
+    "Control A (Arelle Python API vs Arelle saveLoadableOIM xBRL-JSON): normalized fact multisets equal, concept coverage equal, decimals/nil equal for all 15 filings.",
+    "Arelle limitation: lexicalPatterns['base64Binary'] nested-quantifier regex raises MemoryError on ~8MB embedded-PDF base64Binary facts (also present in 2.45.0). Harness substitutes a linear-time validator that is version-gated (arelle-release==2.44.0) and fingerprint-gated (orig pattern sha256); equivalence proven at install vs the original pattern object (40 curated + 4000 fuzz + 12MB payload); fails loudly on upstream change. Raw facts preserved; re-run reproduced byte-identical facts.jsonl on 15/15.",
+    "Raw IPP artefacts carry a .zip suffix while being XML instances; Arelle treats .zip as archive - entrypoint fed as byte-identical .xbrl copy (sha256 verified, deleted post-run).",
+    "R10 amended by R12: CNMV flat zip re-wrapped as a taxonomy package; xl-2003-12-31.xsd and xlink-2003-12-31.xsd (transitive imports of xbrl-linkbase) pinned; every DTS doc resolves from the package - no per-user Arelle cache dependence.",
+    "R10 taxonomy_manifest now distinguishes OFFICIAL_TAXONOMY_RAW (19) vs OPEN_CNMV_DERIVED_TAXONOMY_PACKAGE (4) via the `kind` field."
+  ],
+  "limitations": [
+    "Lexical shim replaces only the base64Binary XSD lexical pattern (not XBRL semantics); version+fingerprint gated, aborts on upstream change; equivalence self-tested against the original pattern object at every run.",
+    "ipp package /se/ and /ti/ paths inferred by analogy; only /en/ and /ge/ exercised by the frozen corpus.",
+    "No second-parser control on IPP (Brel is a partial iXBRL/ESEF oracle per R11); adapter bounded by Control A only.",
+    "OIM comparison uses xBRL-JSON; OIM-CSV equivalence transitive via the same Arelle model."
+  ]
+}

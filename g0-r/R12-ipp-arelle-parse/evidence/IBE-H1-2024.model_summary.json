@@ -1,0 +1,130 @@
+{
+  "filing": "IBE-H1-2024",
+  "issuer": "IBE",
+  "semester": "H1",
+  "model": "ipp_ge",
+  "artifact": "ipp-IBE-I-semestre-de-2024.zip",
+  "artifact_sha256": "FC4C773699CC819CCC7EE31D4EA433DBC3F5F11D32A1AB8231FD9F5E12BEB8E5",
+  "arelle_version": "2.44.0",
+  "runtime": {
+    "internetConnectivity": "offline",
+    "plugins": "saveLoadableOIM",
+    "validate": true,
+    "taxonomy_packages": [
+      "cnmv-ipp-2019-01-01-opencnmv-pkg.zip"
+    ],
+    "lexical_shim": {
+      "type": "base64Binary",
+      "arelle_version_gated": "2.44.0",
+      "orig_pattern_sha256": "CB74F11E4811A3159BD37FD007E18820CAE658E3C1F8A60D5D3B79ED9DD5FDD9",
+      "shim_source_sha256": "BF1F107900366B822DC592DAC99109D6E52959F55103A45629F9012A832BD995",
+      "selftest": {
+        "cases": 40,
+        "fuzz_cases": 4000,
+        "large_payload_bytes": 12582912
+      }
+    },
+    "entrypoint_note": "raw artefact is XML stored with .zip suffix; Arelle treats .zip as archive - fed via sha256-verified .xbrl copy"
+  },
+  "run_ok": true,
+  "elapsed_s": 1.6,
+  "counts": {
+    "facts": 1121,
+    "contexts": 94,
+    "units": 1,
+    "concepts": 869,
+    "dts_documents": 14,
+    "fact_footnote_relationships": 0,
+    "nil_facts": 0,
+    "contexts_explicit_dims": 104,
+    "contexts_typed_dims": 15,
+    "fact_languages": []
+  },
+  "concept_namespaces": {
+    "www.xbrl.org": 54,
+    "xbrl.org": 4,
+    "www.cnmv.es": 811
+  },
+  "log_code_counts": {},
+  "dts_resolution": [
+    {
+      "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\IBE-H1-2024.xbrl",
+      "resolved_from": "local_input"
+    },
+    {
+      "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_2019-01-01-definition.xml",
+      "resolved_from": "taxonomy_package"
+    },
+    {
+      "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_2019-01-01-label.xml",
+      "resolved_from": "taxonomy_package"
+    },
+    {
+      "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_2019-01-01.xsd",
+      "resolved_from": "taxonomy_package"
+    },
+    {
+      "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_dim_2019-01-01-definition.xml",
+      "resolved_from": "taxonomy_package"
+    },
+    {
+      "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_dim_2019-01-01-label.xml",
+      "resolved_from": "taxonomy_package"
+    },
+    {
+      "uri": "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_dim_2019-01-01.xsd",
+      "resolved_from": "taxonomy_package"
+    },
+    {
+      "uri": "http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd",
+      "resolved_from": "taxonomy_package"
+    },
+    {
+      "uri": "http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd",
+      "resolved_from": "taxonomy_package"
+    },
+    {
+      "uri": "http://www.xbrl.org/2003/xl-2003-12-31.xsd",
+      "resolved_from": "taxonomy_package"
+    },
+    {
+      "uri": "http://www.xbrl.org/2003/xlink-2003-12-31.xsd",
+      "resolved_from": "taxonomy_package"
+    },
+    {
+      "uri": "http://www.xbrl.org/2005/xbrldt-2005.xsd",
+      "resolved_from": "taxonomy_package"
+    },
+    {
+      "uri": "http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd",
+      "resolved_from": "taxonomy_package"
+    },
+    {
+      "uri": "http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd",
+      "resolved_from": "taxonomy_package"
+    }
+  ],
+  "offline_evidence": {
+    "io_errors": 0,
+    "download_attempts_in_log": 0
+  },
+  "outputs": {
+    "facts_jsonl": "IBE-H1-2024.facts.jsonl",
+    "facts_jsonl_sha256": "21F14FA13AFE811277597612D57FCE501E56203817996C42ECBFAE848B933D72",
+    "arelle_log": "IBE-H1-2024.arelle-log.json",
+    "oim_json_sha256": "A4B02687242A4B4DB052AD8696891D9EB35A219B9AB87FD9B932D677CE19F8FF",
+    "oim_json_gz": "IBE-H1-2024.oim.json.gz",
+    "oim_json_gz_sha256": "70C3D14EFBB51DA7C194789F1DF16AF20D8CA36BADAB077B200AF09D90CA2AC4"
+  },
+  "control_A": {
+    "fact_count_api": 1121,
+    "fact_count_oim": 1121,
+    "fact_multiset_equal": true,
+    "concept_coverage_equal": true,
+    "distinct_context_signatures_api": 94,
+    "decimals_distribution_equal": true,
+    "nil_count_api": 0,
+    "nil_count_oim": 0,
+    "multiset_diff_sample": []
+  }
+}

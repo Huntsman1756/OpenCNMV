@@ -25,9 +25,10 @@ R6  PASS    # source filing key: nreg/registro = logical filing (best observed);
 R7  PASS    # RAW_ARTIFACT_RETRIEVAL (remediated): 27 raw artefacts (15 IPP + 6 ESEF_COVER + 6 ESEF_PACKAGE_ZIP_XBRL); components enumerated
 R8  PASS    # RAW_SHA256_STABLE (remediated): 27/27 MATCH on complete inventory; IPP re-resolved via nreg
 R9  PASS    # TAXONOMY_DISCOVERY (remediated): IPP 2019-01-01 (ipp_en vs ipp_ge); ESEF FY2024+FY2025 schemaRefs observed; SAN domain changed
-R10 PASS    # TAXONOMY_PINNING (amended by R11): + IFRS full_ifrs 2022/2024 + LEI module pinned as locally-assembled packages; manifest 20 rows; Arelle 2.44.0
+R10 PASS    # TAXONOMY_PINNING (amended by R11+R12): + IFRS full_ifrs 2022/2024 + LEI + IPP pkg + xl/xlink pinned as locally-assembled packages; manifest 23 rows; Arelle 2.44.0
 R11 PASS    # ESEF_ARELLE_PARSE: 6/6 load offline (ioerr=0, DTS complete); Control A API-vs-OIM equal; Control B Arelle-vs-Brel concept containment (Brel partial oracle)
-R12-R17  NOT_RUN
+R12 PASS    # IPP_ARELLE_PARSE: 15/15 load offline (ioerr=0, DTS from pinned pkg only); ipp_en vs ipp_ge + H1/H2 covered; typed dims exercised; Control A equal; Arelle base64Binary MemoryError shimmed (also in 2.45.0)
+R13-R17  NOT_RUN
 ```
 
 ## Checkpoint
@@ -122,6 +123,24 @@ G0-R verdict (after R17) is `GO`. The final verdict states are `GO` / `CONDITION
   - Brel installed in isolated `.venv-brel` inside the gate dir (its pins conflict with the
     main env); the global env was restored after an accidental global install.
 
+## Session-5 findings (R12)
+
+- **R12 PASS:** all 15 IPP instances parse offline under Arelle 2.44.0. Deliberate coverage:
+  `ipp_en` credit model (SAN/BBVA, 1262 DTS concepts) vs `ipp_ge` general (IBE, 869), H1+H2
+  across all five corpus slots; **typed dimensions exercised** (1–16 typed-dim contexts per
+  filing — absent in the ESEF corpus). Control A (API vs OIM) multiset-equal on 15/15.
+- **Arelle limitation found & documented:** `lexicalPatterns['base64Binary']` raises
+  `MemoryError` on the ~8 MB embedded-PDF `base64BinaryItemType` facts that IPP instances
+  carry; identical regex in 2.45.0 → pin unchanged. Harness substitutes a linear-time
+  equivalent lexical check (facts preserved raw, sha256+len recorded).
+- **Entrypoint quirk:** raw IPP artefacts are XML stored with `.zip` suffix → Arelle treats
+  them as archives; harness feeds byte-identical `.xbrl` copies (sha256-verified, deleted).
+- **R10 amended by R12:** CNMV IPP flat zip re-wrapped as taxonomy package
+  `cnmv-ipp-2019-01-01-opencnmv-pkg.zip` (CNMV + all pinned xbrl.org bases under
+  rewriteURI); `xl-2003-12-31.xsd`/`xlink-2003-12-31.xsd` newly pinned (transitive imports
+  of xbrl-linkbase). Every DTS doc now resolves from the package — no dependence on
+  Arelle's per-user web cache (matters for R15).
+
 ## Blocking findings
 
 - None for the R0–R4 checkpoint. Long-horizon token/URL drift is monitored by re-running the R8
@@ -154,11 +173,12 @@ IBE  IBERDROLA, S.A.                       nif=A-48010615  LEI=5QK37QC7NWOJ8D7WV
 
 ## Next action
 
-Proceed to **R12 — IPP_ARELLE_PARSE** (within G0-R): reuse the R11 Arelle harness pattern on the
-15 IPP artefacts — deliberately cover the credit-entity model (`ipp_en`: SAN/BBVA), the general
-model (`ipp_ge`: IBE), H1 and H2, and the taxonomy/model heterogeneity actually observed in the
-corpus. Then `R13 revisions → R14/R15 determinism → R16 oracle reconciliation → R17 H2 vs ESEF`.
-Do **not** build product, UI, API, or MCP. G1 is not touched until R17 is closed.
+Proceed to **R13 — SOURCE_REVISION_DETECTION** (within G0-R): `13A REVISION_EXISTS`,
+`13B REVISION_TARGET_EXACT`, `13C REVISION_SEMANTICS_EXTRACTED` on the CNMV sources; also the
+deferred R6 caveat (`source_registration_no` stability across a real substitution is
+NOT_YET_PROVEN — R13 is where it can be falsified). Then `R14/R15 determinism → R16 oracle
+reconciliation → R17 H2 vs ESEF`. Do **not** build product, UI, API, or MCP. G1 is not touched
+until R17 is closed.
 
 ## Session hygiene
 
