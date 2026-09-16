@@ -100,8 +100,8 @@ PERIÓDICA PREVIAMENTE PUBLICADA"** yields (`h1_2009_semantics` in
    "complementary documents exist", dominated by `CERTIFICATE` events — it is a
    revision-*detection surface*, not a revision marker.
 2. ESEF revision events bind to their target via `nregaud` = registro oficial —
-   exact, source-provided, no inference. `filing` = registro; each event (and the
-   `?e=` artefact version) = `filing_version` material.
+   exact, source-provided, no inference. `filing` = registro; events attach to the
+   filing and only `SUBSTITUTION` marks a version transition (see model note).
 3. ESEF registro survives a real substitution (IBE FY2022, registro 19646);
    `fecha_publicacion` tracks the last substitution. This closes the R6 caveat
    **for ESEF only**.
@@ -112,6 +112,31 @@ PERIÓDICA PREVIAMENTE PUBLICADA"** yields (`h1_2009_semantics` in
    row-level re-parse of the unchanged R1 snapshot (no semantic drift since R1).
 6. Arelle/`ver?e=` tokens on `infadicionifa` pages are per-document artefact
    locators, same class as the filing `?e=` tokens (R4/R6).
+
+## Model note (recorded post-gate; does not change the verdict)
+
+The `infadicionifa` event stream maps to `revision_event` / `complementary_event`
+records, **not** to `filing_version` rows:
+
+```text
+filing
+  └─ filing_version
+       ├─ artifacts
+       └─ events
+
+revision_event:
+  event_registration_no            # infadicionifa `nreg`
+  target_source_registration_no    # `nregaud` = Nº Registro Oficial
+  event_type                       # CERTIFICATE | SUBSTITUTION | TAGGING_CORRECTION | OTHER
+  event_date
+  artifact_sha256                  # the ver?e= document
+  creates_version_transition       # CERTIFICATE→false, SUBSTITUTION→true
+```
+
+A `CERTIFICATE` does not create a `filing_version`; the six corpus `Sí` events
+therefore produce no fictitious versions. A `SUBSTITUTION` is evidence of a version
+transition under the same `source_registration_no`, even though CNMV does not keep
+the superseded bytes publicly retrievable.
 
 ## Limitations
 

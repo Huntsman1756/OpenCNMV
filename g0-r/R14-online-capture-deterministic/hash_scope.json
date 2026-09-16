@@ -1,0 +1,38 @@
+{
+  "gate": "R14",
+  "preregistered": "before run A; see manifest.executed_at",
+  "logical_hash_includes": [
+    "issuer identity (nif, issuer code)",
+    "filing identity: family + slot + source_registration_no (nreg / registro oficial)",
+    "artifact_role",
+    "stable ?e locator (final_url / per-component token)",
+    "raw_sha256",
+    "byte_size",
+    "media_type",
+    "taxonomy selection: observed schemaRef URIs + pinned package names + package sha256",
+    "fact QName",
+    "fact value_sha256 + value_len (multi-MB base64 facts compared by hash+length, never inlined)",
+    "context signature (entity scheme + identifier + period)",
+    "period (start/end/instant/forever)",
+    "unit",
+    "decimals",
+    "nil flag",
+    "language (xml:lang)",
+    "explicit dimensions (E:) and typed dimensions (T:)",
+    "revision/complementary event semantics (event_registration_no, target nregaud, type, date, doc locator)"
+  ],
+  "logical_hash_excludes": [
+    "retrieved_at",
+    "HTTP Date / response timing",
+    "elapsed_ms",
+    "temporary paths / run roots",
+    "process IDs",
+    "log ordering and log noise (arelle-log kept as audit, not hashed)",
+    "IPP ephemeral transport locator descargaxbrlipp.ashx?t={GUID}"
+  ],
+  "explicitly_not_excluded": [
+    "?e= verdocumento tokens — R4 declared them stable; a difference between runs MUST be detected"
+  ],
+  "validity_precondition": "source_state_A == source_state_B; if the normalized source observation differs, the run pair is inconclusive for pipeline determinism (drift is reported, not blamed on the pipeline)",
+  "negative_control": "control_projection = artifact manifest + retrieved_at + IPP ?t={GUID}; A/B hashes MUST differ — proves the normalizer removes real volatility"
+}

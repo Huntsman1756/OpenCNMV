@@ -19,3 +19,6 @@ __pycache__/
 
 # R12 temp entrypoint copies (byte-identical, deleted per run)
 g0-r/R12-ipp-arelle-parse/evidence/_entrypoints/
+
+# R14 run roots (transient; canonical projections copied to evidence/)
+g0-r/R14-online-capture-deterministic/_runs/
