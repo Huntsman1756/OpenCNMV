@@ -283,13 +283,14 @@ IBE  IBERDROLA, S.A.                       nif=A-48010615  LEI=5QK37QC7NWOJ8D7WV
 
 ## Next action
 
-**G0-R closed: all 18 gates PASS → final verdict `GO`.** The verdict authorises G1
-*design* only — no platform. Binding constraint carried into G1:
-`LANGUAGE_VARIANT_COVERAGE_UNRESOLVED` (see findings above); the prohibited public
-claim is "complete CNMV/OAM ESEF coverage". Housekeeping pending: file the upstream
-Arelle issue (base64Binary MemoryError, reproducer in `g0-r/R12-ipp-arelle-parse/`),
-optionally delete the gitignored `_runs/` dirs (R14 ~1.1 GB, R15) once their content is
-no longer needed locally.
+**G0-R closed and frozen at tag `g0-r-go` (`15c4778`): 18/18 PASS → final verdict `GO`.**
+The verdict authorises G1 *design* only. G1 framing lives in `docs/G1.md` — primary
+problem `LANGUAGE_VARIANT_COVERAGE_UNRESOLVED`, model correction `fact_structural_key`
+vs `fact_payload` (value/decimals are payload, not identity), and the first
+investigation (enumerate OAM submission variants beyond ListadoIFA). API/UI/MCP remain
+prohibited until the submission-identity question is answered. Housekeeping done:
+Arelle upstream issue filed (Arelle/Arelle#2595); `_runs/` deleted locally (~1.4 GB,
+all evidence committed).
 
 ## Session hygiene
 
