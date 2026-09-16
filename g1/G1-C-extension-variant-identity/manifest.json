@@ -2,7 +2,7 @@
  "gate": "G1-C EXTENSION_VARIANT_IDENTITY",
  "status": "PASS",
  "executed_at": "2026-09-16T16:02:17.104718+00:00",
- "code_commit": "3e86c55d94b00b811d4ff8c3f592e848e27df7cf",
+ "code_commit": "95b4803",
  "inputs": [
   "g1/G1-A-oam-variant-discovery/evidence/esef-*-en.zip",
   "g0-r/R07-raw-retrieval/evidence/esef-*-package.zip",
@@ -186,7 +186,8 @@
   "g1c_compare_mapped.py": "8c66a9068e4b222a573ef7749dd0e4dcbae8396323e81461bf2e281c6650116f",
   "g1c_verify.py": "af630855c5165a5b1dfa745b1b7269cf1c007462725f22890706647adf033872",
   "README.md": "ac2b0ce3ef20a7ab9cbfe02f46ee0b867c0e6e277dfd609b441f7a5773026dae",
-  "evidence/g1c_results.json": "db431e2eb2297d267eea101c64aef7f966f8288b6eef30cbfee7d2439af310d6"
+  "evidence/g1c_results.json": "db431e2eb2297d267eea101c64aef7f966f8288b6eef30cbfee7d2439af310d6",
+  "manifest.json": "29a7b5e985da6eb785fe3f3b9fc5396eadecae0eae27bb513532eba2f1b260c3"
  },
  "findings": [
   "415/449 ext elements PROVEN_EQUIVALENT via structural 1:1 rule",
