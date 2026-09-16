@@ -249,6 +249,7 @@ def main() -> int:
     def load_mod(name, path):
         spec = iu.spec_from_file_location(name, path)
         mod = iu.module_from_spec(spec)
+        sys.modules[name] = mod          # inspect.getsource needs module resolvable
         spec.loader.exec_module(mod)
         return mod
 

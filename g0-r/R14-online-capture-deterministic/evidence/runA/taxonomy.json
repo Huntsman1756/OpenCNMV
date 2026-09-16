@@ -1,0 +1,317 @@
+[
+  {
+    "filing": "BBVA-FY2024",
+    "schema_refs": [],
+    "issuer_ext_package": null,
+    "disclosure": "esef-2022",
+    "taxonomy_packages": [
+      {
+        "name": "esef_taxonomy_2022_v1.1.zip",
+        "sha256": "C3EDF1F79AC296241655736DA57CE4AF2E20AE181A2C486C90C71FFC199060E2"
+      },
+      {
+        "name": "ifrs-full_ifrs-2022-03-24-opencnmv-pkg.zip",
+        "sha256": "37D5D9F11E50CA029E3A9DA2801530196FC1C1A443A5B81785B5B59AB598CFF6"
+      },
+      {
+        "name": "xbrl-lei-2020-07-02-opencnmv-pkg.zip",
+        "sha256": "C12474D974EA0271B6AD2E390B421927FA215F307CE5987D48E0F3E7922A052D"
+      }
+    ]
+  },
+  {
+    "filing": "BBVA-FY2025",
+    "schema_refs": [],
+    "issuer_ext_package": null,
+    "disclosure": "esef-2024",
+    "taxonomy_packages": [
+      {
+        "name": "esef_taxonomy_2024.zip",
+        "sha256": "17AA09DF058632A44D1B56289938120A7DA993A08E6F07C0AF1516B1D8F4E96D"
+      },
+      {
+        "name": "ifrs-full_ifrs-2024-03-27-opencnmv-pkg.zip",
+        "sha256": "DCCA65D6E54EA4A7B6F764D5760302948462F6F4EA01F4E223CB74B5E8D58084"
+      },
+      {
+        "name": "xbrl-lei-2020-07-02-opencnmv-pkg.zip",
+        "sha256": "C12474D974EA0271B6AD2E390B421927FA215F307CE5987D48E0F3E7922A052D"
+      }
+    ]
+  },
+  {
+    "filing": "BBVA-H1-2024",
+    "schema_refs": [
+      "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01.xsd"
+    ],
+    "model": "ipp_en",
+    "taxonomy_packages": [
+      {
+        "name": "cnmv-ipp-2019-01-01-opencnmv-pkg.zip",
+        "sha256": "4C6C127E8E3F32306905FFC6354FAF7FE3F95AC58DC9F94FADA962DF6D5BE525"
+      }
+    ]
+  },
+  {
+    "filing": "BBVA-H1-2025",
+    "schema_refs": [
+      "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01.xsd"
+    ],
+    "model": "ipp_en",
+    "taxonomy_packages": [
+      {
+        "name": "cnmv-ipp-2019-01-01-opencnmv-pkg.zip",
+        "sha256": "4C6C127E8E3F32306905FFC6354FAF7FE3F95AC58DC9F94FADA962DF6D5BE525"
+      }
+    ]
+  },
+  {
+    "filing": "BBVA-H1-2026",
+    "schema_refs": [
+      "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01.xsd"
+    ],
+    "model": "ipp_en",
+    "taxonomy_packages": [
+      {
+        "name": "cnmv-ipp-2019-01-01-opencnmv-pkg.zip",
+        "sha256": "4C6C127E8E3F32306905FFC6354FAF7FE3F95AC58DC9F94FADA962DF6D5BE525"
+      }
+    ]
+  },
+  {
+    "filing": "BBVA-H2-2024",
+    "schema_refs": [
+      "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01.xsd"
+    ],
+    "model": "ipp_en",
+    "taxonomy_packages": [
+      {
+        "name": "cnmv-ipp-2019-01-01-opencnmv-pkg.zip",
+        "sha256": "4C6C127E8E3F32306905FFC6354FAF7FE3F95AC58DC9F94FADA962DF6D5BE525"
+      }
+    ]
+  },
+  {
+    "filing": "BBVA-H2-2025",
+    "schema_refs": [
+      "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01.xsd"
+    ],
+    "model": "ipp_en",
+    "taxonomy_packages": [
+      {
+        "name": "cnmv-ipp-2019-01-01-opencnmv-pkg.zip",
+        "sha256": "4C6C127E8E3F32306905FFC6354FAF7FE3F95AC58DC9F94FADA962DF6D5BE525"
+      }
+    ]
+  },
+  {
+    "filing": "IBE-FY2024",
+    "schema_refs": [],
+    "issuer_ext_package": null,
+    "disclosure": "esef-2022",
+    "taxonomy_packages": [
+      {
+        "name": "esef_taxonomy_2022_v1.1.zip",
+        "sha256": "C3EDF1F79AC296241655736DA57CE4AF2E20AE181A2C486C90C71FFC199060E2"
+      },
+      {
+        "name": "ifrs-full_ifrs-2022-03-24-opencnmv-pkg.zip",
+        "sha256": "37D5D9F11E50CA029E3A9DA2801530196FC1C1A443A5B81785B5B59AB598CFF6"
+      },
+      {
+        "name": "xbrl-lei-2020-07-02-opencnmv-pkg.zip",
+        "sha256": "C12474D974EA0271B6AD2E390B421927FA215F307CE5987D48E0F3E7922A052D"
+      }
+    ]
+  },
+  {
+    "filing": "IBE-FY2025",
+    "schema_refs": [],
+    "issuer_ext_package": null,
+    "disclosure": "esef-2024",
+    "taxonomy_packages": [
+      {
+        "name": "esef_taxonomy_2024.zip",
+        "sha256": "17AA09DF058632A44D1B56289938120A7DA993A08E6F07C0AF1516B1D8F4E96D"
+      },
+      {
+        "name": "ifrs-full_ifrs-2024-03-27-opencnmv-pkg.zip",
+        "sha256": "DCCA65D6E54EA4A7B6F764D5760302948462F6F4EA01F4E223CB74B5E8D58084"
+      },
+      {
+        "name": "xbrl-lei-2020-07-02-opencnmv-pkg.zip",
+        "sha256": "C12474D974EA0271B6AD2E390B421927FA215F307CE5987D48E0F3E7922A052D"
+      }
+    ]
+  },
+  {
+    "filing": "IBE-H1-2024",
+    "schema_refs": [
+      "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_2019-01-01.xsd"
+    ],
+    "model": "ipp_ge",
+    "taxonomy_packages": [
+      {
+        "name": "cnmv-ipp-2019-01-01-opencnmv-pkg.zip",
+        "sha256": "4C6C127E8E3F32306905FFC6354FAF7FE3F95AC58DC9F94FADA962DF6D5BE525"
+      }
+    ]
+  },
+  {
+    "filing": "IBE-H1-2025",
+    "schema_refs": [
+      "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_2019-01-01.xsd"
+    ],
+    "model": "ipp_ge",
+    "taxonomy_packages": [
+      {
+        "name": "cnmv-ipp-2019-01-01-opencnmv-pkg.zip",
+        "sha256": "4C6C127E8E3F32306905FFC6354FAF7FE3F95AC58DC9F94FADA962DF6D5BE525"
+      }
+    ]
+  },
+  {
+    "filing": "IBE-H1-2026",
+    "schema_refs": [
+      "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_2019-01-01.xsd"
+    ],
+    "model": "ipp_ge",
+    "taxonomy_packages": [
+      {
+        "name": "cnmv-ipp-2019-01-01-opencnmv-pkg.zip",
+        "sha256": "4C6C127E8E3F32306905FFC6354FAF7FE3F95AC58DC9F94FADA962DF6D5BE525"
+      }
+    ]
+  },
+  {
+    "filing": "IBE-H2-2024",
+    "schema_refs": [
+      "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_2019-01-01.xsd"
+    ],
+    "model": "ipp_ge",
+    "taxonomy_packages": [
+      {
+        "name": "cnmv-ipp-2019-01-01-opencnmv-pkg.zip",
+        "sha256": "4C6C127E8E3F32306905FFC6354FAF7FE3F95AC58DC9F94FADA962DF6D5BE525"
+      }
+    ]
+  },
+  {
+    "filing": "IBE-H2-2025",
+    "schema_refs": [
+      "http://www.cnmv.es/xbrl/ipp/ge/2019-01-01/ipp_ge_2019-01-01.xsd"
+    ],
+    "model": "ipp_ge",
+    "taxonomy_packages": [
+      {
+        "name": "cnmv-ipp-2019-01-01-opencnmv-pkg.zip",
+        "sha256": "4C6C127E8E3F32306905FFC6354FAF7FE3F95AC58DC9F94FADA962DF6D5BE525"
+      }
+    ]
+  },
+  {
+    "filing": "SAN-FY2024",
+    "schema_refs": [],
+    "issuer_ext_package": null,
+    "disclosure": "esef-2022",
+    "taxonomy_packages": [
+      {
+        "name": "esef_taxonomy_2022_v1.1.zip",
+        "sha256": "C3EDF1F79AC296241655736DA57CE4AF2E20AE181A2C486C90C71FFC199060E2"
+      },
+      {
+        "name": "ifrs-full_ifrs-2022-03-24-opencnmv-pkg.zip",
+        "sha256": "37D5D9F11E50CA029E3A9DA2801530196FC1C1A443A5B81785B5B59AB598CFF6"
+      },
+      {
+        "name": "xbrl-lei-2020-07-02-opencnmv-pkg.zip",
+        "sha256": "C12474D974EA0271B6AD2E390B421927FA215F307CE5987D48E0F3E7922A052D"
+      }
+    ]
+  },
+  {
+    "filing": "SAN-FY2025",
+    "schema_refs": [],
+    "issuer_ext_package": null,
+    "disclosure": "esef-2024",
+    "taxonomy_packages": [
+      {
+        "name": "esef_taxonomy_2024.zip",
+        "sha256": "17AA09DF058632A44D1B56289938120A7DA993A08E6F07C0AF1516B1D8F4E96D"
+      },
+      {
+        "name": "ifrs-full_ifrs-2024-03-27-opencnmv-pkg.zip",
+        "sha256": "DCCA65D6E54EA4A7B6F764D5760302948462F6F4EA01F4E223CB74B5E8D58084"
+      },
+      {
+        "name": "xbrl-lei-2020-07-02-opencnmv-pkg.zip",
+        "sha256": "C12474D974EA0271B6AD2E390B421927FA215F307CE5987D48E0F3E7922A052D"
+      }
+    ]
+  },
+  {
+    "filing": "SAN-H1-2024",
+    "schema_refs": [
+      "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01.xsd"
+    ],
+    "model": "ipp_en",
+    "taxonomy_packages": [
+      {
+        "name": "cnmv-ipp-2019-01-01-opencnmv-pkg.zip",
+        "sha256": "4C6C127E8E3F32306905FFC6354FAF7FE3F95AC58DC9F94FADA962DF6D5BE525"
+      }
+    ]
+  },
+  {
+    "filing": "SAN-H1-2025",
+    "schema_refs": [
+      "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01.xsd"
+    ],
+    "model": "ipp_en",
+    "taxonomy_packages": [
+      {
+        "name": "cnmv-ipp-2019-01-01-opencnmv-pkg.zip",
+        "sha256": "4C6C127E8E3F32306905FFC6354FAF7FE3F95AC58DC9F94FADA962DF6D5BE525"
+      }
+    ]
+  },
+  {
+    "filing": "SAN-H1-2026",
+    "schema_refs": [
+      "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01.xsd"
+    ],
+    "model": "ipp_en",
+    "taxonomy_packages": [
+      {
+        "name": "cnmv-ipp-2019-01-01-opencnmv-pkg.zip",
+        "sha256": "4C6C127E8E3F32306905FFC6354FAF7FE3F95AC58DC9F94FADA962DF6D5BE525"
+      }
+    ]
+  },
+  {
+    "filing": "SAN-H2-2024",
+    "schema_refs": [
+      "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01.xsd"
+    ],
+    "model": "ipp_en",
+    "taxonomy_packages": [
+      {
+        "name": "cnmv-ipp-2019-01-01-opencnmv-pkg.zip",
+        "sha256": "4C6C127E8E3F32306905FFC6354FAF7FE3F95AC58DC9F94FADA962DF6D5BE525"
+      }
+    ]
+  },
+  {
+    "filing": "SAN-H2-2025",
+    "schema_refs": [
+      "http://www.cnmv.es/xbrl/ipp/en/2019-01-01/ipp_en_2019-01-01.xsd"
+    ],
+    "model": "ipp_en",
+    "taxonomy_packages": [
+      {
+        "name": "cnmv-ipp-2019-01-01-opencnmv-pkg.zip",
+        "sha256": "4C6C127E8E3F32306905FFC6354FAF7FE3F95AC58DC9F94FADA962DF6D5BE525"
+      }
+    ]
+  }
+]

@@ -1,0 +1,112 @@
+{
+  "levels": {
+    "discovery": {
+      "A": "013dfce7736e2e1835888a50eb1d9dc0d4795c1779aefb95f6f3590cc6a3c6c9",
+      "B": "013dfce7736e2e1835888a50eb1d9dc0d4795c1779aefb95f6f3590cc6a3c6c9",
+      "equal": true
+    },
+    "artifact_manifest": {
+      "A": "754846c8d6993220b873fedd06f1644700407918ade71ce1e781f32188b1f286",
+      "B": "754846c8d6993220b873fedd06f1644700407918ade71ce1e781f32188b1f286",
+      "equal": true
+    },
+    "taxonomy": {
+      "A": "49b638412e620f0ab15de7d0ccdbb7351afdd5f70a2151521edf4014bf823046",
+      "B": "49b638412e620f0ab15de7d0ccdbb7351afdd5f70a2151521edf4014bf823046",
+      "equal": true
+    },
+    "events": {
+      "A": "c0b12dae64cc0dec4a9d35f35d31738969002f2cc84d14a56314fd6ca94e1534",
+      "B": "c0b12dae64cc0dec4a9d35f35d31738969002f2cc84d14a56314fd6ca94e1534",
+      "equal": true
+    },
+    "facts_index": {
+      "A": "81e48afb59b4be65b426b213ea5a63a5f7dc152639314bcfeff3f74e3f420573",
+      "B": "81e48afb59b4be65b426b213ea5a63a5f7dc152639314bcfeff3f74e3f420573",
+      "equal": true
+    },
+    "source_state": {
+      "A": "725019557a6194ab7cdf7e341b41462c134763536863800b49cbeb6a3bc043f8",
+      "B": "725019557a6194ab7cdf7e341b41462c134763536863800b49cbeb6a3bc043f8",
+      "equal": true
+    },
+    "control_projection": {
+      "A": "463a2b29991e924d9a0ee5e99dad0c7c0294566afd7b5cad37934c9dcc2f00ed",
+      "B": "a64a721456ab21b19b7e942db3795fa0974a688fb18b09f572d83d8f6569fb37",
+      "equal": false
+    }
+  },
+  "source_state_equal": true,
+  "determinism_levels_equal": true,
+  "negative_control_differs": true,
+  "filings_parsed": 21,
+  "ctrlA_all_equal": true,
+  "ioerr_total": 0,
+  "facts_vs_R11_R12": {
+    "BBVA-FY2024": {
+      "equal_to_prior_gate": true
+    },
+    "BBVA-FY2025": {
+      "equal_to_prior_gate": true
+    },
+    "BBVA-H1-2024": {
+      "equal_to_prior_gate": true
+    },
+    "BBVA-H1-2025": {
+      "equal_to_prior_gate": true
+    },
+    "BBVA-H1-2026": {
+      "equal_to_prior_gate": true
+    },
+    "BBVA-H2-2024": {
+      "equal_to_prior_gate": true
+    },
+    "BBVA-H2-2025": {
+      "equal_to_prior_gate": true
+    },
+    "IBE-FY2024": {
+      "equal_to_prior_gate": true
+    },
+    "IBE-FY2025": {
+      "equal_to_prior_gate": true
+    },
+    "IBE-H1-2024": {
+      "equal_to_prior_gate": true
+    },
+    "IBE-H1-2025": {
+      "equal_to_prior_gate": true
+    },
+    "IBE-H1-2026": {
+      "equal_to_prior_gate": true
+    },
+    "IBE-H2-2024": {
+      "equal_to_prior_gate": true
+    },
+    "IBE-H2-2025": {
+      "equal_to_prior_gate": true
+    },
+    "SAN-FY2024": {
+      "equal_to_prior_gate": true
+    },
+    "SAN-FY2025": {
+      "equal_to_prior_gate": true
+    },
+    "SAN-H1-2024": {
+      "equal_to_prior_gate": true
+    },
+    "SAN-H1-2025": {
+      "equal_to_prior_gate": true
+    },
+    "SAN-H1-2026": {
+      "equal_to_prior_gate": true
+    },
+    "SAN-H2-2024": {
+      "equal_to_prior_gate": true
+    },
+    "SAN-H2-2025": {
+      "equal_to_prior_gate": true
+    }
+  },
+  "facts_equal_to_prior_gates": "21/21",
+  "verdict": "PASS"
+}

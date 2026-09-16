@@ -1,0 +1,68 @@
+[
+  {
+    "family": "ESEF",
+    "issuer": "BBVA",
+    "slot": "FY2024",
+    "event_registration_no": "2025022995",
+    "target_source_registration_no": "20448",
+    "event_type": "CERTIFICATE",
+    "creates_version_transition": false,
+    "event_date": "14/02/2025",
+    "doc_locator": "ESt%2fi0Z2GCpvoyS0Qik%2fljRrhoEkzHQchfVA4waeCAWP13%2fQ49HhKrz69rsiH53l"
+  },
+  {
+    "family": "ESEF",
+    "issuer": "BBVA",
+    "slot": "FY2025",
+    "event_registration_no": "2026023391",
+    "target_source_registration_no": "20854",
+    "event_type": "CERTIFICATE",
+    "creates_version_transition": false,
+    "event_date": "13/02/2026",
+    "doc_locator": "kh1lvetwVJuYD4m90M4EUYv7E7uDxU6ofZ4EZ4fA%2bb6P13%2fQ49HhKrz69rsiH53l"
+  },
+  {
+    "family": "ESEF",
+    "issuer": "IBE",
+    "slot": "FY2024",
+    "event_registration_no": "2025031726",
+    "target_source_registration_no": "20515",
+    "event_type": "CERTIFICATE",
+    "creates_version_transition": false,
+    "event_date": "28/02/2025",
+    "doc_locator": "N%2fyGcMbpQ4SZ3qxRO%2bu2r%2fvdLm7tcQUd3NwKAeOkqIuP13%2fQ49HhKrz69rsiH53l"
+  },
+  {
+    "family": "ESEF",
+    "issuer": "IBE",
+    "slot": "FY2025",
+    "event_registration_no": "2026031462",
+    "target_source_registration_no": "20934",
+    "event_type": "CERTIFICATE",
+    "creates_version_transition": false,
+    "event_date": "27/02/2026",
+    "doc_locator": "KwWhnZj4PdTX3XfgZQkZBBFHH%2bsT7u3BIESiYVYScsGP13%2fQ49HhKrz69rsiH53l"
+  },
+  {
+    "family": "ESEF",
+    "issuer": "SAN",
+    "slot": "FY2024",
+    "event_registration_no": "2025031067",
+    "target_source_registration_no": "20509",
+    "event_type": "CERTIFICATE",
+    "creates_version_transition": false,
+    "event_date": "28/02/2025",
+    "doc_locator": "er74Gqx5eF%2fLNimWjMW%2fp4h3lNeTnSOgpTAd%2b57hba6P13%2fQ49HhKrz69rsiH53l"
+  },
+  {
+    "family": "ESEF",
+    "issuer": "SAN",
+    "slot": "FY2025",
+    "event_registration_no": "2026029493",
+    "target_source_registration_no": "20875",
+    "event_type": "CERTIFICATE",
+    "creates_version_transition": false,
+    "event_date": "25/02/2026",
+    "doc_locator": "9Ju2eXeX%2bOJ9kb7ypzHcbBZ%2fpzgsXGsq2VpA%2fGBiFNiP13%2fQ49HhKrz69rsiH53l"
+  }
+]

@@ -1,0 +1,164 @@
+[
+  {
+    "family": "ESEF",
+    "issuer": "BBVA",
+    "slot": "FY2024",
+    "source_registration_no": "20448",
+    "component_locators": {
+      "ESEF_COVER": "j%2fZysp8VxgIh1g1cNKSGdUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "IXBRL_CONSOLIDATED": "%2bGpabasNUoHWKDwllY8mEEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "ESEF_PACKAGE_ZIP_XBRL": "I4LcI0JZ39PnFVD%2bqkRz0OUI3MytjNtoCr3CkuvEbTuze5HLI2BThe6mgBjw3Gx%2f"
+    },
+    "ampliacion": true
+  },
+  {
+    "family": "ESEF",
+    "issuer": "BBVA",
+    "slot": "FY2025",
+    "source_registration_no": "20854",
+    "component_locators": {
+      "ESEF_COVER": "Dv50%2bpxUKEkKpGw7VEb9mEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "IXBRL_CONSOLIDATED": "aZxnPcZAq5oWUm3NdYPLtEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "ESEF_PACKAGE_ZIP_XBRL": "yE2g%2bsujJYWsSB7a7Z2RXiGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    },
+    "ampliacion": true
+  },
+  {
+    "family": "ESEF",
+    "issuer": "IBE",
+    "slot": "FY2024",
+    "source_registration_no": "20515",
+    "component_locators": {
+      "ESEF_COVER": "8iAjLypUlXcyOg1JmTML4kvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "IXBRL_CONSOLIDATED": "Ms7Yuva7TaqIQ%2baU%2b0Yam0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "ESEF_PACKAGE_ZIP_XBRL": "InFm9XzpazEYwfhw8%2fCSseUI3MytjNtoCr3CkuvEbTuze5HLI2BThe6mgBjw3Gx%2f"
+    },
+    "ampliacion": true
+  },
+  {
+    "family": "ESEF",
+    "issuer": "IBE",
+    "slot": "FY2025",
+    "source_registration_no": "20934",
+    "component_locators": {
+      "ESEF_COVER": "6MBEaFu8FI2yJlbD9ti8GUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "IXBRL_CONSOLIDATED": "Azk%2bseVn1n8kGzB3RWnupUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "ESEF_PACKAGE_ZIP_XBRL": "QoMIxzQb%2bN0EUHgZdcRm2yGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    },
+    "ampliacion": true
+  },
+  {
+    "family": "ESEF",
+    "issuer": "SAN",
+    "slot": "FY2024",
+    "source_registration_no": "20509",
+    "component_locators": {
+      "ESEF_COVER": "RH1Ws6BP9aowyEPSjG62z0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "IXBRL_CONSOLIDATED": "0bQwL3u99E3DOvBFo8qZUkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "ESEF_PACKAGE_ZIP_XBRL": "pA2SAuUsZN0YboL7PRFSS%2bUI3MytjNtoCr3CkuvEbTuze5HLI2BThe6mgBjw3Gx%2f"
+    },
+    "ampliacion": true
+  },
+  {
+    "family": "ESEF",
+    "issuer": "SAN",
+    "slot": "FY2025",
+    "source_registration_no": "20875",
+    "component_locators": {
+      "ESEF_COVER": "CY8jX7ZdXl0lvualznPU%2b0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "IXBRL_CONSOLIDATED": "QW%2f3fpb0yRNpsshQxKLD1UvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "ESEF_PACKAGE_ZIP_XBRL": "zx7yqgi1%2fcEy59FQ5bdraSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    },
+    "ampliacion": true
+  },
+  {
+    "family": "IPP",
+    "issuer": "BBVA",
+    "slot": "H1-2024",
+    "source_registration_no": "2024102594"
+  },
+  {
+    "family": "IPP",
+    "issuer": "BBVA",
+    "slot": "H1-2025",
+    "source_registration_no": "2025106553"
+  },
+  {
+    "family": "IPP",
+    "issuer": "BBVA",
+    "slot": "H1-2026",
+    "source_registration_no": "2026109500"
+  },
+  {
+    "family": "IPP",
+    "issuer": "BBVA",
+    "slot": "H2-2024",
+    "source_registration_no": "2025023010"
+  },
+  {
+    "family": "IPP",
+    "issuer": "BBVA",
+    "slot": "H2-2025",
+    "source_registration_no": "2026023406"
+  },
+  {
+    "family": "IPP",
+    "issuer": "IBE",
+    "slot": "H1-2024",
+    "source_registration_no": "2024099131"
+  },
+  {
+    "family": "IPP",
+    "issuer": "IBE",
+    "slot": "H1-2025",
+    "source_registration_no": "2025101457"
+  },
+  {
+    "family": "IPP",
+    "issuer": "IBE",
+    "slot": "H1-2026",
+    "source_registration_no": "2026103709"
+  },
+  {
+    "family": "IPP",
+    "issuer": "IBE",
+    "slot": "H2-2024",
+    "source_registration_no": "2025031737"
+  },
+  {
+    "family": "IPP",
+    "issuer": "IBE",
+    "slot": "H2-2025",
+    "source_registration_no": "2026031470"
+  },
+  {
+    "family": "IPP",
+    "issuer": "SAN",
+    "slot": "H1-2024",
+    "source_registration_no": "2024098684"
+  },
+  {
+    "family": "IPP",
+    "issuer": "SAN",
+    "slot": "H1-2025",
+    "source_registration_no": "2025106044"
+  },
+  {
+    "family": "IPP",
+    "issuer": "SAN",
+    "slot": "H1-2026",
+    "source_registration_no": "2026103368"
+  },
+  {
+    "family": "IPP",
+    "issuer": "SAN",
+    "slot": "H2-2024",
+    "source_registration_no": "2025031125"
+  },
+  {
+    "family": "IPP",
+    "issuer": "SAN",
+    "slot": "H2-2025",
+    "source_registration_no": "2026029523"
+  }
+]

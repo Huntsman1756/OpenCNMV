@@ -76,9 +76,9 @@ def main() -> int:
     res["ioerr_total"] = sum(v.get("ioerr") or 0 for v in fa.values())
 
     # cross-gate oracle: R14 run-A fact hashes vs committed R11/R12 evidence
+    REPO = GATE.parents[1]
     r12 = {p.stem.split(".")[0]: p for p in
-           (REPO := GATE.parents[1]).glob(
-               "g0-r/R12-ipp-arelle-parse/evidence/*.facts.jsonl")}
+           REPO.glob("g0-r/R12-ipp-arelle-parse/evidence/*.facts.jsonl")}
     r11 = {p.stem.split(".")[0]: p for p in
            REPO.glob("g0-r/R11-esef-arelle-parse/evidence/*.facts.jsonl")}
     prev = {}

@@ -1,0 +1,64 @@
+{
+  "gate": "R14",
+  "status": "PASS",
+  "executed_at": "2026-09-16T00:00:00Z",
+  "code_commit": "n/a",
+  "inputs": [
+    "CNMV live: listaifi?nif=, ListadoIFA?nif=, detalleifialdia?nreg=, descargaxbrlipp.ashx?t={GUID}, verdocumento/ver?e=, infadicionifa?nreg&nregaud (2 isolated runs)",
+    "Pinned taxonomy packages from R10 (ESEF 2022/2024 + IFRS + LEI stacks; cnmv-ipp package)",
+    "arelle-release==2.44.0; R11/R12 harness code reused unmodified (globals redirected per run)",
+    "hash_scope.json preregistered before run A"
+  ],
+  "outputs": [
+    "evidence/r14_results.json",
+    "evidence/runA/artifact_manifest.json",
+    "evidence/runA/control_projection.json",
+    "evidence/runA/discovery.json",
+    "evidence/runA/events.json",
+    "evidence/runA/facts_index.json",
+    "evidence/runA/fetch_log.json",
+    "evidence/runA/source_state.json",
+    "evidence/runA/taxonomy.json",
+    "evidence/runB/artifact_manifest.json",
+    "evidence/runB/control_projection.json",
+    "evidence/runB/discovery.json",
+    "evidence/runB/events.json",
+    "evidence/runB/facts_index.json",
+    "evidence/runB/fetch_log.json",
+    "evidence/runB/source_state.json",
+    "evidence/runB/taxonomy.json"
+  ],
+  "sha256": {
+    "evidence/r14_results.json": "e369df87df8f9bf135b68ff363463a1b844c5f5c68090eca0956a99d488db1b7",
+    "evidence/runA/artifact_manifest.json": "8fc6819d169d763844df318649ccd7bb19d110c7f035c596e66c6a33ec31df46",
+    "evidence/runA/control_projection.json": "44da240a3454e1ce3c4c759f6cf7f1b9e6d07a634a50710c05d4d342b0fd4bcc",
+    "evidence/runA/discovery.json": "e9f3195145edf0eb381dc16b9c3eb222c44aabcda0e84a6a2efdea137f72f84e",
+    "evidence/runA/events.json": "4d92a6d0786f12864efa40563bdd23c792bdc79aaea1fd6099ef1c925dcc1b8f",
+    "evidence/runA/facts_index.json": "efbd54604ca9e137afa7a42cfa8195bd77cf08751eb37f00c9051a584c7060f1",
+    "evidence/runA/fetch_log.json": "2ba1b70afd2abe35936b2fe11b349eeb6dc9e9778955a785a2c62dab7fd999e7",
+    "evidence/runA/source_state.json": "2129b29fa4670969c2a5198cfe4335218f2d1037b3bd44159a90cfcd94105cfe",
+    "evidence/runA/taxonomy.json": "728372b0a318131abb8d45038e372530f123b764406640378210eb671ba3d5a1",
+    "evidence/runB/artifact_manifest.json": "8fc6819d169d763844df318649ccd7bb19d110c7f035c596e66c6a33ec31df46",
+    "evidence/runB/control_projection.json": "e4e3377dd7a0b6a0a29425af6f1e487b088c7099eb4c03d3b7f2cae6e92f6945",
+    "evidence/runB/discovery.json": "e9f3195145edf0eb381dc16b9c3eb222c44aabcda0e84a6a2efdea137f72f84e",
+    "evidence/runB/events.json": "4d92a6d0786f12864efa40563bdd23c792bdc79aaea1fd6099ef1c925dcc1b8f",
+    "evidence/runB/facts_index.json": "efbd54604ca9e137afa7a42cfa8195bd77cf08751eb37f00c9051a584c7060f1",
+    "evidence/runB/fetch_log.json": "66332115791b1898243f3cf0f01a7c525b21adc5b56c9a9f115ad158331102b5",
+    "evidence/runB/source_state.json": "2129b29fa4670969c2a5198cfe4335218f2d1037b3bd44159a90cfcd94105cfe",
+    "evidence/runB/taxonomy.json": "728372b0a318131abb8d45038e372530f123b764406640378210eb671ba3d5a1"
+  },
+  "findings": [
+    "source_state_equal: same normalized source observation across runs A/B",
+    "discovery/artifact_manifest/taxonomy/events/facts_index logical hashes all equal (A==B)",
+    "negative control differs: control_projection (adds retrieved_at + ?t GUID) A!=B — normalizer removes real volatility",
+    "27/27 artefacts byte-identical across runs incl. stable ?e= locators (in scope)",
+    "21/21 facts.jsonl byte-identical to committed R11/R12 evidence (cross-session determinism)",
+    "ioerr=0; Control A (API vs OIM) multiset-equal on all 21 filings",
+    "empty isolated Arelle cache per run via TMP redirect — no cache dependence"
+  ],
+  "limitations": [
+    "Determinism proven for the frozen corpus at this source state; CNMV byte-stability forever is not claimed (source_state drift check exists for that)",
+    "IPP ?t={GUID} is ephemeral by design and correctly excluded",
+    "IXBRL_CONSOLIDATED/INDIVIDUAL direct-view tokens recorded in discovery but not re-downloaded (byte-equal package members per R7)"
+  ]
+}

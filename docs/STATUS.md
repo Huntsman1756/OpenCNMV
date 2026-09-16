@@ -29,7 +29,8 @@ R10 PASS    # TAXONOMY_PINNING (amended by R11+R12): + IFRS full_ifrs 2022/2024 
 R11 PASS    # ESEF_ARELLE_PARSE: 6/6 load offline (ioerr=0, DTS complete); Control A API-vs-OIM equal; Control B Arelle-vs-Brel concept containment (Brel partial oracle)
 R12 PASS    # IPP_ARELLE_PARSE: 15/15 load offline (ioerr=0, DTS from pinned pkg only); ipp_en vs ipp_ge + H1/H2 covered; typed dims exercised; Control A equal; Arelle base64Binary MemoryError shimmed (also in 2.45.0)
 R13 PASS    # SOURCE_REVISION_DETECTION: 13A REVISION_EXISTS + 13B REVISION_TARGET_EXACT (nregaud=registro, source-bound) + 13C semantics (IBE H1-2009 correction table); ESEF registro survives substitution (IBE FY2022 reg.19646) — R6 caveat closed for ESEF; IPP nreg persistence NOT_YET_PROVEN; R6 'empty column' claim corrected (Sí on 6/6 corpus rows = CERTIFICATE events, not revisions)
-R14-R17  NOT_RUN
+R14 PASS    # ONLINE_CAPTURE_DETERMINISTIC: 2 isolated runs (fresh Arelle caches, PYTHONHASHSEED 1 vs 777); source_state equal; discovery/manifest/taxonomy/events/facts logical hashes all equal; negative control differs; 21/21 facts byte-identical to R11/R12 evidence
+R15-R17  NOT_RUN
 ```
 
 ## Checkpoint
@@ -163,6 +164,22 @@ G0-R verdict (after R17) is `GO`. The final verdict states are `GO` / `CONDITION
   - Limitation: the listing serves only the current version of a filing; no
     superseded-version locator found.
 
+## Session-7 findings (R14)
+
+- **R14 PASS** (`g0-r/R14-online-capture-deterministic/`): adversarial determinism test with a
+  preregistered hash scope (`hash_scope.json`). Two isolated online captures (distinct temp
+  roots, empty per-run Arelle caches via `TMP` redirect, `PYTHONHASHSEED` 1 vs 777):
+  `source_state` equal → all five logical levels equal (discovery, artifact manifest,
+  taxonomy selection, events, fact inventory). Negative control (`+retrieved_at`, `+?t=GUID`)
+  differs as required. `?e=` in scope and stable. Bonus: run-A `facts.jsonl` byte-identical
+  to committed R11/R12 evidence (21/21) — cross-session determinism.
+- Model note folded into R13 README: `infadicionifa` rows are `revision_event`s attached to
+  the filing; `CERTIFICATE→creates_version_transition=false`, `SUBSTITUTION→true` — the six
+  corpus `Sí` create no fictitious `filing_version`s.
+- Arelle `base64Binary` MemoryError has a kept synthetic reproducer
+  (`g0-r/R12-ipp-arelle-parse/arelle_base64_reproducer.py`); upstream issue to be filed
+  after R15/G0-R close (no existing upstream issue found; regex identical in 2.45.0).
+
 ## Blocking findings
 
 - None for the R0–R4 checkpoint. Long-horizon token/URL drift is monitored by re-running the R8
@@ -195,13 +212,12 @@ IBE  IBERDROLA, S.A.                       nif=A-48010615  LEI=5QK37QC7NWOJ8D7WV
 
 ## Next action
 
-Proceed to **R14 — ONLINE_CAPTURE_DETERMINISTIC** (within G0-R): with the same source state,
-the pipeline must produce semantically identical output (exclude timestamps/temp paths/logs
-from the logical hash). Then **R15 — OFFLINE_REBUILD_DETERMINISTIC** (critical): network
-denied, only raw artefacts + pinned taxonomy packages + exact Arelle 2.44.0 + config +
-canonicalizer + manifests; the R12 work already removed Arelle per-user cache dependence and
-version/fingerprint-gated the base64 shim. Then `R16 oracle reconciliation → R17 H2 vs ESEF`.
-Do **not** build product, UI, API, or MCP. G1 is not touched until R17 is closed.
+Proceed to **R15 — OFFLINE_REBUILD_DETERMINISTIC** (critical, within G0-R): network denied,
+inputs = raw artefacts + pinned taxonomy packages + exact Arelle 2.44.0 + config +
+canonicalizer code + manifests only; must reproduce identical semantic artefacts. R14 already
+proved determinism across fresh caches/hash seeds and R12 removed user-cache dependence.
+Then `R16 oracle reconciliation → R17 H2 vs ESEF`. Do **not** build product, UI, API, or MCP.
+G1 is not touched until R17 is closed.
 
 ## Session hygiene
 

@@ -1,0 +1,149 @@
+{
+  "SAN-H1-2024": {
+    "facts_jsonl_sha256": "3236F33CE8AB8C042B388630285254920F68B320103A4C035EEAE5E93B3012C7",
+    "facts": 2934,
+    "contexts": 135,
+    "ioerr": 0,
+    "ctrlA": true
+  },
+  "SAN-H2-2024": {
+    "facts_jsonl_sha256": "7C621747AD06C3AE38B419E66CF9B763F3DD7E50ABE83DCF102C31D7C95D555C",
+    "facts": 2771,
+    "contexts": 120,
+    "ioerr": 0,
+    "ctrlA": true
+  },
+  "SAN-H1-2025": {
+    "facts_jsonl_sha256": "69EC847458D4DF164A149C9A1CFB5F363938F89E0ED70EADD93E2E6ADF64E3FA",
+    "facts": 2961,
+    "contexts": 135,
+    "ioerr": 0,
+    "ctrlA": true
+  },
+  "SAN-H2-2025": {
+    "facts_jsonl_sha256": "ADFB3135BB47B5A7D374939B2B510529C0F76652F5AF07F997F17918C4C4AED6",
+    "facts": 2724,
+    "contexts": 120,
+    "ioerr": 0,
+    "ctrlA": true
+  },
+  "SAN-H1-2026": {
+    "facts_jsonl_sha256": "292D8D52552800D5F9E921431A7C25D33D0FDF2732A13368AF4D2AB68E7A6D6D",
+    "facts": 2455,
+    "contexts": 135,
+    "ioerr": 0,
+    "ctrlA": true
+  },
+  "SAN-FY2025": {
+    "facts_jsonl_sha256": "1775A62B5232A4C5C8D3E6402FBB01480B30E60D87AFEF114EB512E05DCE46EB",
+    "facts": 1952,
+    "contexts": 329,
+    "ioerr": 0,
+    "ctrlA": true
+  },
+  "SAN-FY2024": {
+    "facts_jsonl_sha256": "581CB8E155D252458BED8B115B45703445D48F598B87AE8377635C5D0F3C87AA",
+    "facts": 1951,
+    "contexts": 329,
+    "ioerr": 0,
+    "ctrlA": true
+  },
+  "BBVA-H1-2024": {
+    "facts_jsonl_sha256": "8355E4FFC8DEF569D2EBBE617C3DA93E458D0350418849FEB096A4EC4CA6BD0D",
+    "facts": 1679,
+    "contexts": 133,
+    "ioerr": 0,
+    "ctrlA": true
+  },
+  "BBVA-H2-2024": {
+    "facts_jsonl_sha256": "C9560F16AD7916D708ABDCE22AFB2026539218E40E9CD5EA7B5EFD7CBE3C72AB",
+    "facts": 1866,
+    "contexts": 120,
+    "ioerr": 0,
+    "ctrlA": true
+  },
+  "BBVA-H1-2025": {
+    "facts_jsonl_sha256": "E860BF00E2ABF0D6143DE062A9A76B244DF100D8E7AB923846E570E4EC84E4F7",
+    "facts": 1674,
+    "contexts": 133,
+    "ioerr": 0,
+    "ctrlA": true
+  },
+  "BBVA-H2-2025": {
+    "facts_jsonl_sha256": "B6BDFB41F24560760B73DC4D58DB1619D97FF994D1745F48D37F6C6CA97852BC",
+    "facts": 1875,
+    "contexts": 120,
+    "ioerr": 0,
+    "ctrlA": true
+  },
+  "BBVA-H1-2026": {
+    "facts_jsonl_sha256": "11A0F56E716A40CDDC6EF67A2CED98A1AEC69F4ECEECBB5BF03E782D10A4CF37",
+    "facts": 1686,
+    "contexts": 133,
+    "ioerr": 0,
+    "ctrlA": true
+  },
+  "BBVA-FY2025": {
+    "facts_jsonl_sha256": "A353903A1CF7C2A009C19940D73F6D1BA0256FC5D8A944913FE36DA10FA96762",
+    "facts": 1830,
+    "contexts": 155,
+    "ioerr": 0,
+    "ctrlA": true
+  },
+  "BBVA-FY2024": {
+    "facts_jsonl_sha256": "582BA8DCD487D99A03776C0C6C2501DB67F7A6ABBAADE1B3AE6EECE5CB047192",
+    "facts": 1847,
+    "contexts": 183,
+    "ioerr": 0,
+    "ctrlA": true
+  },
+  "IBE-H1-2024": {
+    "facts_jsonl_sha256": "21F14FA13AFE811277597612D57FCE501E56203817996C42ECBFAE848B933D72",
+    "facts": 1121,
+    "contexts": 94,
+    "ioerr": 0,
+    "ctrlA": true
+  },
+  "IBE-H2-2024": {
+    "facts_jsonl_sha256": "3363C9C416D83CC775B2EEB5E93FD9640EB4729054F07B5FF80BAC0003B1F36B",
+    "facts": 1263,
+    "contexts": 96,
+    "ioerr": 0,
+    "ctrlA": true
+  },
+  "IBE-H1-2025": {
+    "facts_jsonl_sha256": "7F48DCD1201E026A122C0B3ED47F725451C7EF4A41DCAD7F49B19C9AB2AE536B",
+    "facts": 1114,
+    "contexts": 94,
+    "ioerr": 0,
+    "ctrlA": true
+  },
+  "IBE-H2-2025": {
+    "facts_jsonl_sha256": "6D415E3FA0AACBB56FA3A2223A7FADB5667B84C895C8D00CC6FD96A26871CC9B",
+    "facts": 1281,
+    "contexts": 96,
+    "ioerr": 0,
+    "ctrlA": true
+  },
+  "IBE-H1-2026": {
+    "facts_jsonl_sha256": "C2A18143270FBCEC2BD8D4A662C4A49C873950A4286A7BBEFF5D810A949E509C",
+    "facts": 1110,
+    "contexts": 94,
+    "ioerr": 0,
+    "ctrlA": true
+  },
+  "IBE-FY2025": {
+    "facts_jsonl_sha256": "886E6AD875D92C259011DBDCBF3E90A63933CF1E7A83941E5791718137093AF7",
+    "facts": 869,
+    "contexts": 59,
+    "ioerr": 0,
+    "ctrlA": true
+  },
+  "IBE-FY2024": {
+    "facts_jsonl_sha256": "E82E508129E59EE208FA38A5F745BEB612BD2ED8DC49EBFBEC92DA859A0F62CD",
+    "facts": 833,
+    "contexts": 59,
+    "ioerr": 0,
+    "ctrlA": true
+  }
+}
