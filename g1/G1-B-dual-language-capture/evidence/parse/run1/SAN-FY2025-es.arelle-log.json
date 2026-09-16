@@ -1,0 +1,172 @@
+[
+ {
+  "level": "ERROR",
+  "code": "",
+  "message": "Unable to load module Validate ESMA ESEF"
+ },
+ {
+  "level": "ERROR",
+  "code": "arelle:pluginLoadingError",
+  "message": "Exception loading plug-in Validate ESMA ESEF: No module named 'tinycss2'\nTraceback (most recent call last):\n  File \"C:\\Users\\rome_\\AppData\\Local\\hermes\\hermes-agent\\venv\\Lib\\site-packages\\arelle\\plugin_system\\_plugin_manager.py\", line 678, in pluginClassMethods\n    pluginMethodsForClass = self.pluginMethodsForClasses[className]\n                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^\nKeyError: 'CntlrCmdLine.Options'\n\nDuring handling of the above exception, another exception occurred:\n"
+ },
+ {
+  "level": "ERROR",
+  "code": "",
+  "message": "Unable to load module Validate ESMA ESEF"
+ },
+ {
+  "level": "ERROR",
+  "code": "arelle:pluginLoadingError",
+  "message": "Exception loading plug-in Validate ESMA ESEF: No module named 'tinycss2'\nTraceback (most recent call last):\n  File \"C:\\Users\\rome_\\AppData\\Local\\hermes\\hermes-agent\\venv\\Lib\\site-packages\\arelle\\plugin_system\\_plugin_manager.py\", line 678, in pluginClassMethods\n    pluginMethodsForClass = self.pluginMethodsForClasses[className]\n                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^\nKeyError: 'CntlrCmdLine.Options'\n\nDuring handling of the above exception, another exception occurred:\n"
+ },
+ {
+  "level": "ERROR",
+  "code": "",
+  "message": "Unable to load module Validate ESMA ESEF"
+ },
+ {
+  "level": "ERROR",
+  "code": "arelle:pluginLoadingError",
+  "message": "Exception loading plug-in Validate ESMA ESEF: No module named 'tinycss2'\nTraceback (most recent call last):\n  File \"C:\\Users\\rome_\\AppData\\Local\\hermes\\hermes-agent\\venv\\Lib\\site-packages\\arelle\\plugin_system\\_plugin_manager.py\", line 678, in pluginClassMethods\n    pluginMethodsForClass = self.pluginMethodsForClasses[className]\n                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^\nKeyError: 'DisclosureSystem.Types'\n\nDuring handling of the above exception, another exception occurred"
+ },
+ {
+  "level": "ERROR",
+  "code": "",
+  "message": "Unable to load module Validate ESMA ESEF"
+ },
+ {
+  "level": "ERROR",
+  "code": "arelle:pluginLoadingError",
+  "message": "Exception loading plug-in Validate ESMA ESEF: No module named 'tinycss2'\nTraceback (most recent call last):\n  File \"C:\\Users\\rome_\\AppData\\Local\\hermes\\hermes-agent\\venv\\Lib\\site-packages\\arelle\\plugin_system\\_plugin_manager.py\", line 678, in pluginClassMethods\n    pluginMethodsForClass = self.pluginMethodsForClasses[className]\n                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^\nKeyError: 'DisclosureSystem.ConfigURL'\n\nDuring handling of the above exception, another exception occu"
+ },
+ {
+  "level": "ERROR",
+  "code": "arelle:disclosureSystemName",
+  "message": "Disclosure System \"esef-2024\" not recognized (a plug-in may be needed)."
+ },
+ {
+  "level": "ERROR",
+  "code": "",
+  "message": "Unable to load module Validate ESMA ESEF"
+ },
+ {
+  "level": "ERROR",
+  "code": "arelle:pluginLoadingError",
+  "message": "Exception loading plug-in Validate ESMA ESEF: No module named 'tinycss2'\nTraceback (most recent call last):\n  File \"C:\\Users\\rome_\\AppData\\Local\\hermes\\hermes-agent\\venv\\Lib\\site-packages\\arelle\\plugin_system\\_plugin_manager.py\", line 678, in pluginClassMethods\n    pluginMethodsForClass = self.pluginMethodsForClasses[className]\n                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^\nKeyError: 'CntlrCmdLine.Utility.Run'\n\nDuring handling of the above exception, another exception occurr"
+ },
+ {
+  "level": "ERROR",
+  "code": "rpe:documentTypeFileExtensionMismatch",
+  "message": "Report package document type 'https://xbrl.org/report-package/2023/xbri' does not match the file extension: .zip"
+ },
+ {
+  "level": "ERROR",
+  "code": "",
+  "message": "Unable to load module Validate ESMA ESEF"
+ },
+ {
+  "level": "ERROR",
+  "code": "arelle:pluginLoadingError",
+  "message": "Exception loading plug-in Validate ESMA ESEF: No module named 'tinycss2'\nTraceback (most recent call last):\n  File \"C:\\Users\\rome_\\AppData\\Local\\hermes\\hermes-agent\\venv\\Lib\\site-packages\\arelle\\plugin_system\\_plugin_manager.py\", line 678, in pluginClassMethods\n    pluginMethodsForClass = self.pluginMethodsForClasses[className]\n                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^\nKeyError: 'ModelDocument.PullLoader'\n\nDuring handling of the above exception, another exception occurr"
+ },
+ {
+  "level": "ERROR",
+  "code": "",
+  "message": "Unable to load module Validate ESMA ESEF"
+ },
+ {
+  "level": "ERROR",
+  "code": "arelle:pluginLoadingError",
+  "message": "Exception loading plug-in Validate ESMA ESEF: No module named 'tinycss2'\nTraceback (most recent call last):\n  File \"C:\\Users\\rome_\\AppData\\Local\\hermes\\hermes-agent\\venv\\Lib\\site-packages\\arelle\\plugin_system\\_plugin_manager.py\", line 678, in pluginClassMethods\n    pluginMethodsForClass = self.pluginMethodsForClasses[className]\n                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^\nKeyError: 'ModelXbrl.LoadComplete'\n\nDuring handling of the above exception, another exception occurred"
+ },
+ {
+  "level": "ERROR",
+  "code": "",
+  "message": "Unable to load module Validate ESMA ESEF"
+ },
+ {
+  "level": "ERROR",
+  "code": "arelle:pluginLoadingError",
+  "message": "Exception loading plug-in Validate ESMA ESEF: No module named 'tinycss2'\nTraceback (most recent call last):\n  File \"C:\\Users\\rome_\\AppData\\Local\\hermes\\hermes-agent\\venv\\Lib\\site-packages\\arelle\\plugin_system\\_plugin_manager.py\", line 678, in pluginClassMethods\n    pluginMethodsForClass = self.pluginMethodsForClasses[className]\n                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^\nKeyError: 'Validate.XBRL.Start'\n\nDuring handling of the above exception, another exception occurred:\n\n"
+ },
+ {
+  "level": "ERROR",
+  "code": "",
+  "message": "Unable to load module Validate ESMA ESEF"
+ },
+ {
+  "level": "ERROR",
+  "code": "arelle:pluginLoadingError",
+  "message": "Exception loading plug-in Validate ESMA ESEF: No module named 'tinycss2'\nTraceback (most recent call last):\n  File \"C:\\Users\\rome_\\AppData\\Local\\hermes\\hermes-agent\\venv\\Lib\\site-packages\\arelle\\plugin_system\\_plugin_manager.py\", line 678, in pluginClassMethods\n    pluginMethodsForClass = self.pluginMethodsForClasses[className]\n                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^\nKeyError: 'Validate.XBRL.Finally'\n\nDuring handling of the above exception, another exception occurred:"
+ },
+ {
+  "level": "ERROR",
+  "code": "",
+  "message": "Unable to load module Validate ESMA ESEF"
+ },
+ {
+  "level": "ERROR",
+  "code": "arelle:pluginLoadingError",
+  "message": "Exception loading plug-in Validate ESMA ESEF: No module named 'tinycss2'\nTraceback (most recent call last):\n  File \"C:\\Users\\rome_\\AppData\\Local\\hermes\\hermes-agent\\venv\\Lib\\site-packages\\arelle\\plugin_system\\_plugin_manager.py\", line 678, in pluginClassMethods\n    pluginMethodsForClass = self.pluginMethodsForClasses[className]\n                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^\nKeyError: 'ValidateFormula.Compiled'\n\nDuring handling of the above exception, another exception occurr"
+ },
+ {
+  "level": "WARNING",
+  "code": "message:positive",
+  "message": "Reported value is below 0"
+ },
+ {
+  "level": "WARNING",
+  "code": "message:positive",
+  "message": "Reported value is below 0"
+ },
+ {
+  "level": "WARNING",
+  "code": "message:positive",
+  "message": "Reported value is below 0"
+ },
+ {
+  "level": "WARNING",
+  "code": "message:positive",
+  "message": "Reported value is below 0"
+ },
+ {
+  "level": "WARNING",
+  "code": "message:positive",
+  "message": "Reported value is below 0"
+ },
+ {
+  "level": "WARNING",
+  "code": "message:positive",
+  "message": "Reported value is below 0"
+ },
+ {
+  "level": "ERROR",
+  "code": "",
+  "message": "Unable to load module Validate ESMA ESEF"
+ },
+ {
+  "level": "ERROR",
+  "code": "arelle:pluginLoadingError",
+  "message": "Exception loading plug-in Validate ESMA ESEF: No module named 'tinycss2'\nTraceback (most recent call last):\n  File \"C:\\Users\\rome_\\AppData\\Local\\hermes\\hermes-agent\\venv\\Lib\\site-packages\\arelle\\plugin_system\\_plugin_manager.py\", line 678, in pluginClassMethods\n    pluginMethodsForClass = self.pluginMethodsForClasses[className]\n                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^\nKeyError: 'ValidateFormula.Finished'\n\nDuring handling of the above exception, another exception occurr"
+ },
+ {
+  "level": "ERROR",
+  "code": "",
+  "message": "Unable to load module Validate ESMA ESEF"
+ },
+ {
+  "level": "ERROR",
+  "code": "arelle:pluginLoadingError",
+  "message": "Exception loading plug-in Validate ESMA ESEF: No module named 'tinycss2'\nTraceback (most recent call last):\n  File \"C:\\Users\\rome_\\AppData\\Local\\hermes\\hermes-agent\\venv\\Lib\\site-packages\\arelle\\plugin_system\\_plugin_manager.py\", line 678, in pluginClassMethods\n    pluginMethodsForClass = self.pluginMethodsForClasses[className]\n                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^\nKeyError: 'Validate.Finally'\n\nDuring handling of the above exception, another exception occurred:\n\nTra"
+ },
+ {
+  "level": "ERROR",
+  "code": "",
+  "message": "Unable to load module Validate ESMA ESEF"
+ },
+ {
+  "level": "ERROR",
+  "code": "arelle:pluginLoadingError",
+  "message": "Exception loading plug-in Validate ESMA ESEF: No module named 'tinycss2'\nTraceback (most recent call last):\n  File \"C:\\Users\\rome_\\AppData\\Local\\hermes\\hermes-agent\\venv\\Lib\\site-packages\\arelle\\plugin_system\\_plugin_manager.py\", line 678, in pluginClassMethods\n    pluginMethodsForClass = self.pluginMethodsForClasses[className]\n                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^\nKeyError: 'Validate.Complete'\n\nDuring handling of the above exception, another exception occurred:\n\nTr"
+ }
+]

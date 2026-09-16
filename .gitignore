@@ -25,3 +25,6 @@ g0-r/R14-online-capture-deterministic/_runs/
 
 # R15 run roots
 g0-r/R15-offline-rebuild-deterministic/_runs/
+
+# G1-B run roots (transient; canonical evidence committed under evidence/)
+g1/G1-B-dual-language-capture/_runs/

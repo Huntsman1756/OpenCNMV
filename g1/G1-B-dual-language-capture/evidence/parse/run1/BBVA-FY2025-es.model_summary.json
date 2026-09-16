@@ -1,0 +1,61 @@
+{
+ "variant": "BBVA-FY2025-es",
+ "lang": "es",
+ "family": "FY2025",
+ "package": "g0-r\\R07-raw-retrieval\\evidence\\esef-BBVA-FY2025-package.zip",
+ "package_sha256": "675A1D3A470FDC469BEDA39BF242FFCB496C6F1116DA4D1FC562FAA0734E3458",
+ "arelle_version": "2.44.0",
+ "runtime": {
+  "internetConnectivity": "offline",
+  "disclosureSystemName": "esef-2024",
+  "plugins": "validate/ESEF|saveLoadableOIM",
+  "validate": true,
+  "taxonomy_packages": [
+   "esef_taxonomy_2024.zip",
+   "ifrs-full_ifrs-2024-03-27-opencnmv-pkg.zip",
+   "xbrl-lei-2020-07-02-opencnmv-pkg.zip"
+  ]
+ },
+ "run_ok": true,
+ "elapsed_s": 54.4,
+ "counts": {
+  "facts": 1830,
+  "contexts": 155,
+  "units": 2,
+  "concepts": 5667,
+  "dts_documents": 88,
+  "fact_footnote_relationships": 0,
+  "nil_facts": 0,
+  "fact_languages": [
+   "es"
+  ],
+  "facts_extension_ns": 567
+ },
+ "extension_namespaces": [
+  "http://www.bbva.es/20251231"
+ ],
+ "log_code_counts": {
+  "ERROR:": 13,
+  "ERROR:arelle": 14,
+  "ERROR:rpe": 1
+ },
+ "offline_evidence": {
+  "io_errors": 0,
+  "download_attempts_in_log": 0
+ },
+ "outputs": {
+  "facts_jsonl": "BBVA-FY2025-es.facts.jsonl",
+  "facts_jsonl_sha256": "C8745746895EB000B0502904A955ACFBA802FD77DE1A81022DA47B77207772D8",
+  "oim_json_sha256": "A7EA21E253DEB7943634DF60AE63ED29133E82F383C08EDFE51FE81A98C8AD3F",
+  "oim_json_gz_sha256": "5D17E85734225291297AF366DA1AE9282D0891FC98CC025BE890424855456C98"
+ },
+ "control_A": {
+  "fact_count_api": 1830,
+  "fact_count_oim": 1830,
+  "fact_multiset_equal": true,
+  "concept_coverage_equal": true,
+  "decimals_distribution_equal": true,
+  "nil_count_api": 0,
+  "nil_count_oim": 0
+ }
+}

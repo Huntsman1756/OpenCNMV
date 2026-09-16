@@ -1,0 +1,998 @@
+{
+ "gate": "G1-B",
+ "stage": "capture",
+ "run": "A",
+ "executed_at": "2026-09-16T15:02:42+00:00",
+ "filings": [
+  {
+   "issuer": "BBVA",
+   "fy": "FY2024",
+   "registro": "20448",
+   "views": {
+    "es": {
+     "requested_ui_language": "es",
+     "registry_row": {
+      "registro": "20448",
+      "cells": [
+       "20448",
+       "31/12/2024",
+       "14/02/2025",
+       "ERNST &amp; YOUNG, S.L.",
+       "Individual  /   Consolidada",
+       "",
+       "",
+       "Sí",
+       "Favorable /  Favorable",
+       "- /  -",
+       ""
+      ],
+      "infadicion": [
+       "infadicionifa.aspx?id=0&amp;nreg=2025022995&amp;nregaud=20448"
+      ]
+     },
+     "document_locators": {
+      "ESEF_COVER": "j%2fZysp8VxgIh1g1cNKSGdUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "IXBRL_CONSOLIDATED": "%2bGpabasNUoHWKDwllY8mEEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "ESEF_PACKAGE_ZIP_XBRL": "I4LcI0JZ39PnFVD%2bqkRz0OUI3MytjNtoCr3CkuvEbTuze5HLI2BThe6mgBjw3Gx%2f"
+     },
+     "resolved_doc_language": {
+      "ESEF_COVER": null,
+      "IXBRL_CONSOLIDATED": "es",
+      "ESEF_PACKAGE_ZIP_XBRL": "es"
+     },
+     "viewer_prefix_probes": [
+      {
+       "role": "ESEF_COVER",
+       "prefix_bytes": 262144,
+       "prefix_sha256": "177ba822dab825149fd150c05c87d9323ee9ea0669a58f685ef5209040c58609",
+       "media_hint": "XHTML",
+       "content_type": "application/xhtml+xml",
+       "detected_lang": null,
+       "title": "Banco Cuentas Anuales Diciembre 2024 BBVA,SA"
+      },
+      {
+       "role": "IXBRL_CONSOLIDATED",
+       "prefix_bytes": 262144,
+       "prefix_sha256": "622e117a37141639743fc1cbbf93eb565f977999e42486b0025cc959bce2f08b",
+       "media_hint": "XHTML",
+       "content_type": "application/xhtml+xml",
+       "detected_lang": "es",
+       "title": "K8MS7FD7N5Z2WQ51AZ71-20241231-es"
+      }
+     ],
+     "package": {
+      "sha256": "69f04da4f6ebe4f3072401207ff83f6edc9d335c83df666525594a7062d7248a",
+      "bytes": 20388402,
+      "content_type": "application/zip",
+      "lang_tag": "es"
+     },
+     "resolved_submission_language": "es",
+     "resolution_mode": "SUBMITTED_VARIANT",
+     "variant_artifact_set_id": "3af22f8b44e1f1d90ad63f75932d3f20d1f33892d8b7de6517484f88ce8afdae",
+     "token_zip_identical_across_views": false,
+     "preserved_reference": {
+      "path": "g0-r\\R07-raw-retrieval\\evidence\\esef-BBVA-FY2024-package.zip",
+      "sha256": "69f04da4f6ebe4f3072401207ff83f6edc9d335c83df666525594a7062d7248a",
+      "match": true
+     }
+    },
+    "en": {
+     "requested_ui_language": "en",
+     "registry_row": {
+      "registro": "20448",
+      "cells": [
+       "20448",
+       "31/12/2024",
+       "14/02/2025",
+       "ERNST &amp; YOUNG, S.L.",
+       "Individual  /   Consolidated",
+       "",
+       "",
+       "Yes",
+       "Unqualified opinion /  Unqualified opinion",
+       "- /  -",
+       ""
+      ],
+      "infadicion": [
+       "infadicionifa.aspx?id=0&amp;nreg=2025022995&amp;nregaud=20448"
+      ]
+     },
+     "document_locators": {
+      "ESEF_COVER": "E70k6C2oBCLAGsYQUK7ExEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "IXBRL_CONSOLIDATED": "%2baWlylmGhIQq9T8dCvu3J0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "ESEF_PACKAGE_ZIP_XBRL": "zIyNvdRvmiF7HW0RJ8nz1OUI3MytjNtoCr3CkuvEbTuze5HLI2BThe6mgBjw3Gx%2f"
+     },
+     "resolved_doc_language": {
+      "ESEF_COVER": null,
+      "IXBRL_CONSOLIDATED": "en",
+      "ESEF_PACKAGE_ZIP_XBRL": "en"
+     },
+     "viewer_prefix_probes": [
+      {
+       "role": "ESEF_COVER",
+       "prefix_bytes": 262144,
+       "prefix_sha256": "2e7faa6d65c9fe5487595259dd26c372b8e655315b7515bb00c13afb5127375c",
+       "media_hint": "XHTML",
+       "content_type": "application/xhtml+xml",
+       "detected_lang": null,
+       "title": "Bank Annual Report BBVA,S.A. 2024"
+      },
+      {
+       "role": "IXBRL_CONSOLIDATED",
+       "prefix_bytes": 262144,
+       "prefix_sha256": "866e12a52449515fd7963f449c23fa9f8c4e4a0d621f4ae31acacc2fcc91d2ec",
+       "media_hint": "XHTML",
+       "content_type": "application/xhtml+xml",
+       "detected_lang": "en",
+       "title": "K8MS7FD7N5Z2WQ51AZ71-20241231-en"
+      }
+     ],
+     "package": {
+      "sha256": "75be80e13b1fb8f56a8cad06353a7145f0fad524f654864d70f1aa35a2cce94e",
+      "bytes": 18883918,
+      "content_type": "application/zip",
+      "lang_tag": "en"
+     },
+     "resolved_submission_language": "en",
+     "resolution_mode": "SUBMITTED_VARIANT",
+     "variant_artifact_set_id": "3f45dbf2ef52d2cba1ebd554bc5a17fc8bca35c6bf32ad9c63d5057e6f4661b1",
+     "token_zip_identical_across_views": false,
+     "preserved_reference": {
+      "path": "g1\\G1-A-oam-variant-discovery\\evidence\\esef-BBVA-FY2024-en.zip",
+      "sha256": "75be80e13b1fb8f56a8cad06353a7145f0fad524f654864d70f1aa35a2cce94e",
+      "match": true
+     }
+    }
+   },
+   "submitted_variants": [
+    {
+     "language": "en",
+     "artifact_set_id": "3f45dbf2ef52d2cba1ebd554bc5a17fc8bca35c6bf32ad9c63d5057e6f4661b1",
+     "package_sha256": "75be80e13b1fb8f56a8cad06353a7145f0fad524f654864d70f1aa35a2cce94e",
+     "served_to_views": [
+      "en"
+     ]
+    },
+    {
+     "language": "es",
+     "artifact_set_id": "3af22f8b44e1f1d90ad63f75932d3f20d1f33892d8b7de6517484f88ce8afdae",
+     "package_sha256": "69f04da4f6ebe4f3072401207ff83f6edc9d335c83df666525594a7062d7248a",
+     "served_to_views": [
+      "es"
+     ]
+    }
+   ],
+   "submitted_variant_count": 2,
+   "bad_model_variant_count": 2
+  },
+  {
+   "issuer": "BBVA",
+   "fy": "FY2025",
+   "registro": "20854",
+   "views": {
+    "es": {
+     "requested_ui_language": "es",
+     "registry_row": {
+      "registro": "20854",
+      "cells": [
+       "20854",
+       "31/12/2025",
+       "13/02/2026",
+       "ERNST &amp; YOUNG, S.L.",
+       "Individual  /   Consolidada",
+       "",
+       "",
+       "Sí",
+       "Favorable /  Favorable",
+       "- /  -",
+       ""
+      ],
+      "infadicion": [
+       "infadicionifa.aspx?id=0&amp;nreg=2026023391&amp;nregaud=20854"
+      ]
+     },
+     "document_locators": {
+      "ESEF_COVER": "Dv50%2bpxUKEkKpGw7VEb9mEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "IXBRL_CONSOLIDATED": "aZxnPcZAq5oWUm3NdYPLtEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "ESEF_PACKAGE_ZIP_XBRL": "yE2g%2bsujJYWsSB7a7Z2RXiGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+     },
+     "resolved_doc_language": {
+      "ESEF_COVER": null,
+      "IXBRL_CONSOLIDATED": "es",
+      "ESEF_PACKAGE_ZIP_XBRL": "es"
+     },
+     "viewer_prefix_probes": [
+      {
+       "role": "ESEF_COVER",
+       "prefix_bytes": 262144,
+       "prefix_sha256": "78ea8f87163bfb2daf6f20ea509d5855ab9c5abd309e4c7919e9e16538f3a5bd",
+       "media_hint": "XHTML",
+       "content_type": "application/xhtml+xml",
+       "detected_lang": null,
+       "title": "Banco Cuentas Anuales Diciembre 2025 BBVA,SA (Wdata)"
+      },
+      {
+       "role": "IXBRL_CONSOLIDATED",
+       "prefix_bytes": 262144,
+       "prefix_sha256": "ddfe50933643793dacbbffc49e385b3d3a1a6f8facac50581c7cab05f92af746",
+       "media_hint": "XHTML",
+       "content_type": "application/xhtml+xml",
+       "detected_lang": "es",
+       "title": "K8MS7FD7N5Z2WQ51AZ71-2025-12-31-1-es"
+      }
+     ],
+     "package": {
+      "sha256": "675a1d3a470fdc469beda39bf242ffcb496c6f1116da4d1fc562faa0734e3458",
+      "bytes": 28632634,
+      "content_type": "application/zip",
+      "lang_tag": "es"
+     },
+     "resolved_submission_language": "es",
+     "resolution_mode": "SUBMITTED_VARIANT",
+     "variant_artifact_set_id": "2120d42074b90cc65c1f63e3790ecfb62187ca5c20b4bdeb5252874ab84f7463",
+     "token_zip_identical_across_views": false,
+     "preserved_reference": {
+      "path": "g0-r\\R07-raw-retrieval\\evidence\\esef-BBVA-FY2025-package.zip",
+      "sha256": "675a1d3a470fdc469beda39bf242ffcb496c6f1116da4d1fc562faa0734e3458",
+      "match": true
+     }
+    },
+    "en": {
+     "requested_ui_language": "en",
+     "registry_row": {
+      "registro": "20854",
+      "cells": [
+       "20854",
+       "31/12/2025",
+       "13/02/2026",
+       "ERNST &amp; YOUNG, S.L.",
+       "Individual  /   Consolidated",
+       "",
+       "",
+       "Yes",
+       "Unqualified opinion /  Unqualified opinion",
+       "- /  -",
+       ""
+      ],
+      "infadicion": [
+       "infadicionifa.aspx?id=0&amp;nreg=2026023391&amp;nregaud=20854"
+      ]
+     },
+     "document_locators": {
+      "ESEF_COVER": "UFpvGR1WOTtAQYxwm79tsEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "IXBRL_CONSOLIDATED": "yjl%2bFDWTW0okxMpAQeHUNEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "ESEF_PACKAGE_ZIP_XBRL": "205eF0bhFWbsd%2fkaEFBrGCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+     },
+     "resolved_doc_language": {
+      "ESEF_COVER": null,
+      "IXBRL_CONSOLIDATED": "en",
+      "ESEF_PACKAGE_ZIP_XBRL": "en"
+     },
+     "viewer_prefix_probes": [
+      {
+       "role": "ESEF_COVER",
+       "prefix_bytes": 262144,
+       "prefix_sha256": "489d226cb5da5073ccc6d44046756bc0367f72c6ea7bbadfaa3191cb60e65ed5",
+       "media_hint": "XHTML",
+       "content_type": "application/xhtml+xml",
+       "detected_lang": null,
+       "title": "Bank Annual Report BBVA,S.A. 2025 (Wdata)"
+      },
+      {
+       "role": "IXBRL_CONSOLIDATED",
+       "prefix_bytes": 262144,
+       "prefix_sha256": "19cbb3becd4871d5e6d95749fda5bc23f7cd809848852d8cb1cbeb97ef54e7a5",
+       "media_hint": "XHTML",
+       "content_type": "application/xhtml+xml",
+       "detected_lang": "en",
+       "title": "K8MS7FD7N5Z2WQ51AZ71-2025-12-31-1-en"
+      }
+     ],
+     "package": {
+      "sha256": "40ff2f1798f798833cfb61a3b004cb7cdbed2682237a9d7d2b35b42b32ac54d3",
+      "bytes": 28427988,
+      "content_type": "application/zip",
+      "lang_tag": "en"
+     },
+     "resolved_submission_language": "en",
+     "resolution_mode": "SUBMITTED_VARIANT",
+     "variant_artifact_set_id": "3c0064bac1f0a560e37d6dcc8f44f608cc110e47c65340cc9f39be81a330a147",
+     "token_zip_identical_across_views": false,
+     "preserved_reference": {
+      "path": "g1\\G1-A-oam-variant-discovery\\evidence\\esef-BBVA-FY2025-en.zip",
+      "sha256": "40ff2f1798f798833cfb61a3b004cb7cdbed2682237a9d7d2b35b42b32ac54d3",
+      "match": true
+     }
+    }
+   },
+   "submitted_variants": [
+    {
+     "language": "en",
+     "artifact_set_id": "3c0064bac1f0a560e37d6dcc8f44f608cc110e47c65340cc9f39be81a330a147",
+     "package_sha256": "40ff2f1798f798833cfb61a3b004cb7cdbed2682237a9d7d2b35b42b32ac54d3",
+     "served_to_views": [
+      "en"
+     ]
+    },
+    {
+     "language": "es",
+     "artifact_set_id": "2120d42074b90cc65c1f63e3790ecfb62187ca5c20b4bdeb5252874ab84f7463",
+     "package_sha256": "675a1d3a470fdc469beda39bf242ffcb496c6f1116da4d1fc562faa0734e3458",
+     "served_to_views": [
+      "es"
+     ]
+    }
+   ],
+   "submitted_variant_count": 2,
+   "bad_model_variant_count": 2
+  },
+  {
+   "issuer": "IBE",
+   "fy": "FY2024",
+   "registro": "20515",
+   "views": {
+    "es": {
+     "requested_ui_language": "es",
+     "registry_row": {
+      "registro": "20515",
+      "cells": [
+       "20515",
+       "31/12/2024",
+       "28/02/2025",
+       "KPMG AUDITORES,S.L.",
+       "Individual  /   Consolidada",
+       "",
+       "",
+       "Sí",
+       "Favorable /  Favorable",
+       "- /  -",
+       ""
+      ],
+      "infadicion": [
+       "infadicionifa.aspx?id=0&amp;nreg=2025031726&amp;nregaud=20515"
+      ]
+     },
+     "document_locators": {
+      "ESEF_COVER": "8iAjLypUlXcyOg1JmTML4kvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "IXBRL_CONSOLIDATED": "Ms7Yuva7TaqIQ%2baU%2b0Yam0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "ESEF_PACKAGE_ZIP_XBRL": "InFm9XzpazEYwfhw8%2fCSseUI3MytjNtoCr3CkuvEbTuze5HLI2BThe6mgBjw3Gx%2f"
+     },
+     "resolved_doc_language": {
+      "ESEF_COVER": null,
+      "IXBRL_CONSOLIDATED": "es",
+      "ESEF_PACKAGE_ZIP_XBRL": "es"
+     },
+     "viewer_prefix_probes": [
+      {
+       "role": "ESEF_COVER",
+       "prefix_bytes": 262144,
+       "prefix_sha256": "050bb2325973378ce243cdf0ded0428d601adc68302a8b6c5c26c5bf4b661ec0",
+       "media_hint": "XHTML",
+       "content_type": "application/xhtml+xml",
+       "detected_lang": null,
+       "title": "1. Portada Iberdrola_SA 2024"
+      },
+      {
+       "role": "IXBRL_CONSOLIDATED",
+       "prefix_bytes": 262144,
+       "prefix_sha256": "d7e80ae142438374dc5fcfea3db2c39ef5fdde759d9898b583fde8e2f9cc733b",
+       "media_hint": "XHTML",
+       "content_type": "application/xhtml+xml",
+       "detected_lang": "es",
+       "title": "5QK37QC7NWOJ8D7WVQ45-20241231-es"
+      }
+     ],
+     "package": {
+      "sha256": "89dfd3ef65527d1d4378464c2f70fa78b2fb7b4872264eacfa91d3faae1c42b4",
+      "bytes": 28162648,
+      "content_type": "application/zip",
+      "lang_tag": "es"
+     },
+     "resolved_submission_language": "es",
+     "resolution_mode": "SUBMITTED_VARIANT",
+     "variant_artifact_set_id": "e2bed29467bf120c208894f4803e81745d416acf335174f85f8a64439fd593d5",
+     "token_zip_identical_across_views": true,
+     "preserved_reference": {
+      "path": "g0-r\\R07-raw-retrieval\\evidence\\esef-IBE-FY2024-package.zip",
+      "sha256": "89dfd3ef65527d1d4378464c2f70fa78b2fb7b4872264eacfa91d3faae1c42b4",
+      "match": true
+     }
+    },
+    "en": {
+     "requested_ui_language": "en",
+     "registry_row": {
+      "registro": "20515",
+      "cells": [
+       "20515",
+       "31/12/2024",
+       "28/02/2025",
+       "KPMG AUDITORES,S.L.",
+       "Individual  /   Consolidated",
+       "",
+       "",
+       "Yes",
+       "Unqualified opinion /  Unqualified opinion",
+       "- /  -",
+       ""
+      ],
+      "infadicion": [
+       "infadicionifa.aspx?id=0&amp;nreg=2025031726&amp;nregaud=20515"
+      ]
+     },
+     "document_locators": {
+      "ESEF_COVER": "0NTjZ95kx8G6ZRC3V1639SJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+      "IXBRL_CONSOLIDATED": "4BXJQa3Jr19l7UM%2fO4ZXiyJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+      "ESEF_PACKAGE_ZIP_XBRL": "InFm9XzpazEYwfhw8%2fCSseUI3MytjNtoCr3CkuvEbTuze5HLI2BThe6mgBjw3Gx%2f"
+     },
+     "resolved_doc_language": {
+      "ESEF_COVER": "es",
+      "IXBRL_CONSOLIDATED": "es",
+      "ESEF_PACKAGE_ZIP_XBRL": "es"
+     },
+     "viewer_prefix_probes": [
+      {
+       "role": "ESEF_COVER",
+       "prefix_bytes": 262144,
+       "prefix_sha256": "b57e1b6b2c3d5ca8e6d189785e9bee059d8c9536ef4f50f54a3f04d918a9189f",
+       "media_hint": "PDF",
+       "content_type": "application/pdf",
+       "detected_lang": "es",
+       "title": null
+      },
+      {
+       "role": "IXBRL_CONSOLIDATED",
+       "prefix_bytes": 262144,
+       "prefix_sha256": "7a64dac4ecc64b2075015415ecfbd352f8570550ea583688cc0086042573135f",
+       "media_hint": "PDF",
+       "content_type": "application/pdf",
+       "detected_lang": "es",
+       "title": null
+      }
+     ],
+     "package": {
+      "sha256": "89dfd3ef65527d1d4378464c2f70fa78b2fb7b4872264eacfa91d3faae1c42b4",
+      "bytes": 28162648,
+      "content_type": "application/zip",
+      "lang_tag": "es"
+     },
+     "resolved_submission_language": "es",
+     "resolution_mode": "FALLBACK_TO_ES",
+     "variant_artifact_set_id": "e2bed29467bf120c208894f4803e81745d416acf335174f85f8a64439fd593d5",
+     "token_zip_identical_across_views": true,
+     "preserved_reference": {
+      "path": "g0-r\\R07-raw-retrieval\\evidence\\esef-IBE-FY2024-package.zip",
+      "sha256": "89dfd3ef65527d1d4378464c2f70fa78b2fb7b4872264eacfa91d3faae1c42b4",
+      "match": true
+     }
+    }
+   },
+   "submitted_variants": [
+    {
+     "language": "es",
+     "artifact_set_id": "e2bed29467bf120c208894f4803e81745d416acf335174f85f8a64439fd593d5",
+     "package_sha256": "89dfd3ef65527d1d4378464c2f70fa78b2fb7b4872264eacfa91d3faae1c42b4",
+     "served_to_views": [
+      "es",
+      "en"
+     ]
+    }
+   ],
+   "submitted_variant_count": 1,
+   "bad_model_variant_count": 2
+  },
+  {
+   "issuer": "IBE",
+   "fy": "FY2025",
+   "registro": "20934",
+   "views": {
+    "es": {
+     "requested_ui_language": "es",
+     "registry_row": {
+      "registro": "20934",
+      "cells": [
+       "20934",
+       "31/12/2025",
+       "27/02/2026",
+       "KPMG AUDITORES,S.L.",
+       "Individual  /   Consolidada",
+       "",
+       "",
+       "Sí",
+       "Favorable /  Favorable",
+       "- /  -",
+       ""
+      ],
+      "infadicion": [
+       "infadicionifa.aspx?id=0&amp;nreg=2026031462&amp;nregaud=20934"
+      ]
+     },
+     "document_locators": {
+      "ESEF_COVER": "6MBEaFu8FI2yJlbD9ti8GUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "IXBRL_CONSOLIDATED": "Azk%2bseVn1n8kGzB3RWnupUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "ESEF_PACKAGE_ZIP_XBRL": "QoMIxzQb%2bN0EUHgZdcRm2yGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+     },
+     "resolved_doc_language": {
+      "ESEF_COVER": null,
+      "IXBRL_CONSOLIDATED": "es",
+      "ESEF_PACKAGE_ZIP_XBRL": "es"
+     },
+     "viewer_prefix_probes": [
+      {
+       "role": "ESEF_COVER",
+       "prefix_bytes": 262144,
+       "prefix_sha256": "2d7aab83919f343117d3eb38061971387f44fc2a4da473974888f35858f5e8da",
+       "media_hint": "XHTML",
+       "content_type": "application/xhtml+xml",
+       "detected_lang": null,
+       "title": "1. Portada Iberdrola_SA 2025 2026-02-27-12-48"
+      },
+      {
+       "role": "IXBRL_CONSOLIDATED",
+       "prefix_bytes": 262144,
+       "prefix_sha256": "2995bca40f86f023d09b374676983651156c1a8c02bc4b840634a0cff11882e2",
+       "media_hint": "XHTML",
+       "content_type": "application/xhtml+xml",
+       "detected_lang": "es",
+       "title": "5QK37QC7NWOJ8D7WVQ45-2025-12-31-1-es"
+      }
+     ],
+     "package": {
+      "sha256": "066fdaf835ad6e81f0ff77eacb571f5d2a09f9fb42788fbc12d7041d2e51e05a",
+      "bytes": 10103299,
+      "content_type": "application/zip",
+      "lang_tag": "es"
+     },
+     "resolved_submission_language": "es",
+     "resolution_mode": "SUBMITTED_VARIANT",
+     "variant_artifact_set_id": "b65f44b89846f72b94f4a809fffdd7f81e3499787233c5adda11d36979d04298",
+     "token_zip_identical_across_views": true,
+     "preserved_reference": {
+      "path": "g0-r\\R07-raw-retrieval\\evidence\\esef-IBE-FY2025-package.zip",
+      "sha256": "066fdaf835ad6e81f0ff77eacb571f5d2a09f9fb42788fbc12d7041d2e51e05a",
+      "match": true
+     }
+    },
+    "en": {
+     "requested_ui_language": "en",
+     "registry_row": {
+      "registro": "20934",
+      "cells": [
+       "20934",
+       "31/12/2025",
+       "27/02/2026",
+       "KPMG AUDITORES,S.L.",
+       "Individual  /   Consolidated",
+       "",
+       "",
+       "Yes",
+       "Unqualified opinion /  Unqualified opinion",
+       "- /  -",
+       ""
+      ],
+      "infadicion": [
+       "infadicionifa.aspx?id=0&amp;nreg=2026031462&amp;nregaud=20934"
+      ]
+     },
+     "document_locators": {
+      "ESEF_COVER": "1RBAVivr5eAguAoRNLrx6SJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+      "IXBRL_CONSOLIDATED": "9aL6Zr2yrWu%2bJNlmFxsy3CJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+      "ESEF_PACKAGE_ZIP_XBRL": "QoMIxzQb%2bN0EUHgZdcRm2yGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+     },
+     "resolved_doc_language": {
+      "ESEF_COVER": null,
+      "IXBRL_CONSOLIDATED": null,
+      "ESEF_PACKAGE_ZIP_XBRL": "es"
+     },
+     "viewer_prefix_probes": [
+      {
+       "role": "ESEF_COVER",
+       "prefix_bytes": 262144,
+       "prefix_sha256": "4b30a89adaaa6ca5a4fbafb7449c86f348bd6d40c5d07c44d62c6f9646ffd3cc",
+       "media_hint": "PDF",
+       "content_type": "application/pdf",
+       "detected_lang": null,
+       "title": null
+      },
+      {
+       "role": "IXBRL_CONSOLIDATED",
+       "prefix_bytes": 262144,
+       "prefix_sha256": "ed60735e884e1bcb9009b686cb0c97baed5de8066cb7a64255816aa87e9ea2f3",
+       "media_hint": "PDF",
+       "content_type": "application/pdf",
+       "detected_lang": null,
+       "title": null
+      }
+     ],
+     "package": {
+      "sha256": "066fdaf835ad6e81f0ff77eacb571f5d2a09f9fb42788fbc12d7041d2e51e05a",
+      "bytes": 10103299,
+      "content_type": "application/zip",
+      "lang_tag": "es"
+     },
+     "resolved_submission_language": "es",
+     "resolution_mode": "FALLBACK_TO_ES",
+     "variant_artifact_set_id": "b65f44b89846f72b94f4a809fffdd7f81e3499787233c5adda11d36979d04298",
+     "token_zip_identical_across_views": true,
+     "preserved_reference": {
+      "path": "g0-r\\R07-raw-retrieval\\evidence\\esef-IBE-FY2025-package.zip",
+      "sha256": "066fdaf835ad6e81f0ff77eacb571f5d2a09f9fb42788fbc12d7041d2e51e05a",
+      "match": true
+     }
+    }
+   },
+   "submitted_variants": [
+    {
+     "language": "es",
+     "artifact_set_id": "b65f44b89846f72b94f4a809fffdd7f81e3499787233c5adda11d36979d04298",
+     "package_sha256": "066fdaf835ad6e81f0ff77eacb571f5d2a09f9fb42788fbc12d7041d2e51e05a",
+     "served_to_views": [
+      "es",
+      "en"
+     ]
+    }
+   ],
+   "submitted_variant_count": 1,
+   "bad_model_variant_count": 2
+  },
+  {
+   "issuer": "SAN",
+   "fy": "FY2024",
+   "registro": "20509",
+   "views": {
+    "es": {
+     "requested_ui_language": "es",
+     "registry_row": {
+      "registro": "20509",
+      "cells": [
+       "20509",
+       "31/12/2024",
+       "28/02/2025",
+       "PRICEWATERHOUSECOOPERS AUDITORES, S.L.",
+       "Individual  /   Consolidada",
+       "",
+       "",
+       "Sí",
+       "Favorable /  Favorable",
+       "- /  -",
+       ""
+      ],
+      "infadicion": [
+       "infadicionifa.aspx?id=0&amp;nreg=2025031067&amp;nregaud=20509"
+      ]
+     },
+     "document_locators": {
+      "ESEF_COVER": "RH1Ws6BP9aowyEPSjG62z0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "IXBRL_CONSOLIDATED": "0bQwL3u99E3DOvBFo8qZUkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "ESEF_PACKAGE_ZIP_XBRL": "pA2SAuUsZN0YboL7PRFSS%2bUI3MytjNtoCr3CkuvEbTuze5HLI2BThe6mgBjw3Gx%2f"
+     },
+     "resolved_doc_language": {
+      "ESEF_COVER": null,
+      "IXBRL_CONSOLIDATED": "es",
+      "ESEF_PACKAGE_ZIP_XBRL": "es"
+     },
+     "viewer_prefix_probes": [
+      {
+       "role": "ESEF_COVER",
+       "prefix_bytes": 262144,
+       "prefix_sha256": "53d823057f3ed9b4c4dc6238245aaf6ab2660602abbb3d64f6e9c181aa7a4dea",
+       "media_hint": "XHTML",
+       "content_type": "application/xhtml+xml",
+       "detected_lang": null,
+       "title": "5493006QMFDDMYWIAM13-20241231-es"
+      },
+      {
+       "role": "IXBRL_CONSOLIDATED",
+       "prefix_bytes": 262144,
+       "prefix_sha256": "ac9aeff80ad7a63c55e7da0966e744f11941a8fe0f7695fad9be6c9b80db511f",
+       "media_hint": "XHTML",
+       "content_type": "application/xhtml+xml",
+       "detected_lang": "es",
+       "title": "5493006QMFDDMYWIAM13-20241231-es"
+      }
+     ],
+     "package": {
+      "sha256": "725fff01861cb0c186107280bf30b2c047a3a59af703d799f678e02c435cb9f5",
+      "bytes": 33916843,
+      "content_type": "application/zip",
+      "lang_tag": "es"
+     },
+     "resolved_submission_language": "es",
+     "resolution_mode": "SUBMITTED_VARIANT",
+     "variant_artifact_set_id": "3181a4e4acfcd9fc6c5925ce03d6b0704a946c1589e61b0e54102d12f093d0c6",
+     "token_zip_identical_across_views": false,
+     "preserved_reference": {
+      "path": "g0-r\\R07-raw-retrieval\\evidence\\esef-SAN-FY2024-package.zip",
+      "sha256": "725fff01861cb0c186107280bf30b2c047a3a59af703d799f678e02c435cb9f5",
+      "match": true
+     }
+    },
+    "en": {
+     "requested_ui_language": "en",
+     "registry_row": {
+      "registro": "20509",
+      "cells": [
+       "20509",
+       "31/12/2024",
+       "28/02/2025",
+       "PRICEWATERHOUSECOOPERS AUDITORES, S.L.",
+       "Individual  /   Consolidated",
+       "",
+       "",
+       "Yes",
+       "Unqualified opinion /  Unqualified opinion",
+       "- /  -",
+       ""
+      ],
+      "infadicion": [
+       "infadicionifa.aspx?id=0&amp;nreg=2025031067&amp;nregaud=20509"
+      ]
+     },
+     "document_locators": {
+      "ESEF_COVER": "coih7onBYJxyLLoPhbLyo0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "IXBRL_CONSOLIDATED": "P1S9gc3TyGZMbMDQ7N2yvUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "ESEF_PACKAGE_ZIP_XBRL": "z3t4s%2bfAVX1BGQZnsfUZuOUI3MytjNtoCr3CkuvEbTuze5HLI2BThe6mgBjw3Gx%2f"
+     },
+     "resolved_doc_language": {
+      "ESEF_COVER": null,
+      "IXBRL_CONSOLIDATED": "en",
+      "ESEF_PACKAGE_ZIP_XBRL": "en"
+     },
+     "viewer_prefix_probes": [
+      {
+       "role": "ESEF_COVER",
+       "prefix_bytes": 262144,
+       "prefix_sha256": "926d03393fd21e55c08e7720d26c6017b17ffae5426636e2e5c1ed7259729dcf",
+       "media_hint": "XHTML",
+       "content_type": "application/xhtml+xml",
+       "detected_lang": null,
+       "title": "5493006QMFDDMYWIAM13-20241231-en"
+      },
+      {
+       "role": "IXBRL_CONSOLIDATED",
+       "prefix_bytes": 262144,
+       "prefix_sha256": "a18e2099af8a849ecfaf12990963b79a556c62dd9c3ebd40446a6a3e5d182c82",
+       "media_hint": "XHTML",
+       "content_type": "application/xhtml+xml",
+       "detected_lang": "en",
+       "title": "5493006QMFDDMYWIAM13-20241231-en"
+      }
+     ],
+     "package": {
+      "sha256": "47923b30c3763fe448ff8080bb3e38c50ae48d48171986a90947c8be347ccb37",
+      "bytes": 32228411,
+      "content_type": "application/zip",
+      "lang_tag": "en"
+     },
+     "resolved_submission_language": "en",
+     "resolution_mode": "SUBMITTED_VARIANT",
+     "variant_artifact_set_id": "fcca5a8b365d497f7033aaa92a99b358c94b298ea65ed6b058e4888a07cd3770",
+     "token_zip_identical_across_views": false,
+     "preserved_reference": {
+      "path": "g1\\G1-A-oam-variant-discovery\\evidence\\esef-SAN-FY2024-en.zip",
+      "sha256": "47923b30c3763fe448ff8080bb3e38c50ae48d48171986a90947c8be347ccb37",
+      "match": true
+     }
+    }
+   },
+   "submitted_variants": [
+    {
+     "language": "en",
+     "artifact_set_id": "fcca5a8b365d497f7033aaa92a99b358c94b298ea65ed6b058e4888a07cd3770",
+     "package_sha256": "47923b30c3763fe448ff8080bb3e38c50ae48d48171986a90947c8be347ccb37",
+     "served_to_views": [
+      "en"
+     ]
+    },
+    {
+     "language": "es",
+     "artifact_set_id": "3181a4e4acfcd9fc6c5925ce03d6b0704a946c1589e61b0e54102d12f093d0c6",
+     "package_sha256": "725fff01861cb0c186107280bf30b2c047a3a59af703d799f678e02c435cb9f5",
+     "served_to_views": [
+      "es"
+     ]
+    }
+   ],
+   "submitted_variant_count": 2,
+   "bad_model_variant_count": 2
+  },
+  {
+   "issuer": "SAN",
+   "fy": "FY2025",
+   "registro": "20875",
+   "views": {
+    "es": {
+     "requested_ui_language": "es",
+     "registry_row": {
+      "registro": "20875",
+      "cells": [
+       "20875",
+       "31/12/2025",
+       "25/02/2026",
+       "PRICEWATERHOUSECOOPERS AUDITORES, S.L.",
+       "Individual  /   Consolidada",
+       "",
+       "",
+       "Sí",
+       "Favorable /  Favorable",
+       "- /  -",
+       ""
+      ],
+      "infadicion": [
+       "infadicionifa.aspx?id=0&amp;nreg=2026029493&amp;nregaud=20875"
+      ]
+     },
+     "document_locators": {
+      "ESEF_COVER": "CY8jX7ZdXl0lvualznPU%2b0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "IXBRL_CONSOLIDATED": "QW%2f3fpb0yRNpsshQxKLD1UvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "ESEF_PACKAGE_ZIP_XBRL": "zx7yqgi1%2fcEy59FQ5bdraSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+     },
+     "resolved_doc_language": {
+      "ESEF_COVER": null,
+      "IXBRL_CONSOLIDATED": "es",
+      "ESEF_PACKAGE_ZIP_XBRL": "es"
+     },
+     "viewer_prefix_probes": [
+      {
+       "role": "ESEF_COVER",
+       "prefix_bytes": 262144,
+       "prefix_sha256": "7b452f7dc5451098a691bb558d0b689bf7deca7aff5a10751cb761ef3c881c56",
+       "media_hint": "XHTML",
+       "content_type": "application/xhtml+xml",
+       "detected_lang": null,
+       "title": "5493006QMFDDMYWIAM13-2025-12-31-1-es"
+      },
+      {
+       "role": "IXBRL_CONSOLIDATED",
+       "prefix_bytes": 262144,
+       "prefix_sha256": "1061010b2854270a4c6e87783bd5df22b2057f34314f3e15ec59c87abd30aed6",
+       "media_hint": "XHTML",
+       "content_type": "application/xhtml+xml",
+       "detected_lang": "es",
+       "title": "5493006QMFDDMYWIAM13-2025-12-31-1-es"
+      }
+     ],
+     "package": {
+      "sha256": "07e95a16c7d1652d6c6298c39b19b6a1e90c5d4a8c01881b4ccaebdeaa700567",
+      "bytes": 29430116,
+      "content_type": "application/zip",
+      "lang_tag": "es"
+     },
+     "resolved_submission_language": "es",
+     "resolution_mode": "SUBMITTED_VARIANT",
+     "variant_artifact_set_id": "1af341555bc83a5ae72edacd329485dc6ab9ccd269fd528fa6d5236d93408918",
+     "token_zip_identical_across_views": false,
+     "preserved_reference": {
+      "path": "g0-r\\R07-raw-retrieval\\evidence\\esef-SAN-FY2025-package.zip",
+      "sha256": "07e95a16c7d1652d6c6298c39b19b6a1e90c5d4a8c01881b4ccaebdeaa700567",
+      "match": true
+     }
+    },
+    "en": {
+     "requested_ui_language": "en",
+     "registry_row": {
+      "registro": "20875",
+      "cells": [
+       "20875",
+       "31/12/2025",
+       "25/02/2026",
+       "PRICEWATERHOUSECOOPERS AUDITORES, S.L.",
+       "Individual  /   Consolidated",
+       "",
+       "",
+       "Yes",
+       "Unqualified opinion /  Unqualified opinion",
+       "- /  -",
+       ""
+      ],
+      "infadicion": [
+       "infadicionifa.aspx?id=0&amp;nreg=2026029493&amp;nregaud=20875"
+      ]
+     },
+     "document_locators": {
+      "ESEF_COVER": "57IbS0W1JCzfxSpy1ysUq0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "IXBRL_CONSOLIDATED": "z9vtpbwTwEPkvMFRTedpuEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+      "ESEF_PACKAGE_ZIP_XBRL": "nNHQi6oviAY0cdF48HZ71CGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+     },
+     "resolved_doc_language": {
+      "ESEF_COVER": null,
+      "IXBRL_CONSOLIDATED": "en",
+      "ESEF_PACKAGE_ZIP_XBRL": "en"
+     },
+     "viewer_prefix_probes": [
+      {
+       "role": "ESEF_COVER",
+       "prefix_bytes": 262144,
+       "prefix_sha256": "917bfd1b17e24b5cf6aa63567c8321043e4141a298f51d133a79f82b65eaaa34",
+       "media_hint": "XHTML",
+       "content_type": "application/xhtml+xml",
+       "detected_lang": null,
+       "title": "5493006QMFDDMYWIAM13-2025-12-31-1-en"
+      },
+      {
+       "role": "IXBRL_CONSOLIDATED",
+       "prefix_bytes": 262144,
+       "prefix_sha256": "919de02bc3de3de4cfe24ca44375fa206b591a266b95f8d64dbaef4daa041e14",
+       "media_hint": "XHTML",
+       "content_type": "application/xhtml+xml",
+       "detected_lang": "en",
+       "title": "5493006QMFDDMYWIAM13-2025-12-31-1-en"
+      }
+     ],
+     "package": {
+      "sha256": "77ac614a42c974965e04fd882a329952af393554b93b2873f1c021646ed95198",
+      "bytes": 25761267,
+      "content_type": "application/zip",
+      "lang_tag": "en"
+     },
+     "resolved_submission_language": "en",
+     "resolution_mode": "SUBMITTED_VARIANT",
+     "variant_artifact_set_id": "2e9ef4139ca330076e90160c9b80dcfded820538a59cde609a7a8b51f652fa67",
+     "token_zip_identical_across_views": false,
+     "preserved_reference": {
+      "path": "g1\\G1-A-oam-variant-discovery\\evidence\\esef-SAN-FY2025-en.zip",
+      "sha256": "77ac614a42c974965e04fd882a329952af393554b93b2873f1c021646ed95198",
+      "match": true
+     }
+    }
+   },
+   "submitted_variants": [
+    {
+     "language": "en",
+     "artifact_set_id": "2e9ef4139ca330076e90160c9b80dcfded820538a59cde609a7a8b51f652fa67",
+     "package_sha256": "77ac614a42c974965e04fd882a329952af393554b93b2873f1c021646ed95198",
+     "served_to_views": [
+      "en"
+     ]
+    },
+    {
+     "language": "es",
+     "artifact_set_id": "1af341555bc83a5ae72edacd329485dc6ab9ccd269fd528fa6d5236d93408918",
+     "package_sha256": "07e95a16c7d1652d6c6298c39b19b6a1e90c5d4a8c01881b4ccaebdeaa700567",
+     "served_to_views": [
+      "es"
+     ]
+    }
+   ],
+   "submitted_variant_count": 2,
+   "bad_model_variant_count": 2
+  }
+ ],
+ "fetch_log": [
+  {
+   "kind": "SEARCH_PAGE",
+   "file": "busqueda25-SAN-es.html",
+   "sha256": "b7aa05d5e706cf53b72ee5097a9dfcf8dc8dbb9eeabe43c3a57201297183d64a",
+   "retrieved_at": "2026-09-16T15:00:01+00:00"
+  },
+  {
+   "kind": "SEARCH_PAGE",
+   "file": "busqueda25-SAN-en.html",
+   "sha256": "613a95251d0eca09b13ca5d76d7bcde7551376b50ef83dd40376368c2db36a3b",
+   "retrieved_at": "2026-09-16T15:00:34+00:00"
+  },
+  {
+   "kind": "SEARCH_PAGE",
+   "file": "busqueda25-BBVA-es.html",
+   "sha256": "5ea57ca1b50e5e55300afa6ac83ec5f95414c4a417294a6002c454197cf2f522",
+   "retrieved_at": "2026-09-16T15:00:59+00:00"
+  },
+  {
+   "kind": "SEARCH_PAGE",
+   "file": "busqueda25-BBVA-en.html",
+   "sha256": "32387dbef290997a8a976b69fa3b9f8933cf4c7e784b12dc50f8c7f6c7a48789",
+   "retrieved_at": "2026-09-16T15:01:41+00:00"
+  },
+  {
+   "kind": "SEARCH_PAGE",
+   "file": "busqueda25-IBE-es.html",
+   "sha256": "0e209de7b924a48ba55e3a316781e17d328358a4c8f8b293381c561735a52b04",
+   "retrieved_at": "2026-09-16T15:01:57+00:00"
+  },
+  {
+   "kind": "SEARCH_PAGE",
+   "file": "busqueda25-IBE-en.html",
+   "sha256": "0ebb91323f95effd535736a298249164927e95950e5966f9aa698a7e71c53e7d",
+   "retrieved_at": "2026-09-16T15:02:34+00:00"
+  }
+ ]
+}

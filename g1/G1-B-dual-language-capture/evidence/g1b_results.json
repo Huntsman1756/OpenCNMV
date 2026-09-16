@@ -1,0 +1,186 @@
+{
+ "gate": "G1-B",
+ "verdict": "PASS",
+ "checks": {
+  "adversarial_bad_model_fails": {
+   "bad_model": "requested_ui_language as variant identity -> 2 for all filings incl. IBE (phantom EN)",
+   "good_model": {
+    "BBVA-FY2024": 2,
+    "BBVA-FY2025": 2,
+    "IBE-FY2024": 1,
+    "IBE-FY2025": 1,
+    "SAN-FY2024": 2,
+    "SAN-FY2025": 2
+   },
+   "pass": true
+  },
+  "bbva_equity_98m_divergent": {
+   "expected": "es=+98000000, en=-98000000 (R16 reference case)",
+   "observed": {
+    "en": "-98000000",
+    "es": "98000000"
+   },
+   "pass": true
+  },
+  "ibe_no_phantom_en_variant": {
+   "observed": [
+    {
+     "comparison": "SKIPPED_SINGLE_VARIANT",
+     "en_resolution_mode": "FALLBACK_TO_ES",
+     "en_set_equals_es_set": true,
+     "filing": "IBE-FY2024",
+     "registro": "20515",
+     "submitted_variant_count": 1
+    },
+    {
+     "comparison": "SKIPPED_SINGLE_VARIANT",
+     "en_resolution_mode": "FALLBACK_TO_ES",
+     "en_set_equals_es_set": true,
+     "filing": "IBE-FY2025",
+     "registro": "20934",
+     "submitted_variant_count": 1
+    }
+   ],
+   "pass": true
+  },
+  "no_language_sensitive_divergence": {
+   "note": "language-sensitive types are never compared as equal-value economic facts across variants",
+   "pass": true
+  },
+  "san_numeric_equivalent_0_10_vs_0_1": {
+   "expected": "es=\"0.1\" / en=\"0.10\" lexical-only difference -> MATCH_NUMERIC_EQUIVALENT (R16 reference case)",
+   "observed": {
+    "numeric_equivalent_records": 1,
+    "sample": [
+     {
+      "concept": "DilutedEarningsLossPerShare",
+      "en": "0.900",
+      "es": "0.9",
+      "filing": "SAN-FY2025"
+     }
+    ],
+    "specific_fact_class": "ABSENT"
+   },
+   "pass": true
+  },
+  "capture_inventory_core_equal": {
+   "pass": true,
+   "runA": "7fe9de03cae67a18bd92e19cd69b94dea98f06de08b17230cb193586c12f1c47",
+   "runB": "7fe9de03cae67a18bd92e19cd69b94dea98f06de08b17230cb193586c12f1c47"
+  },
+  "extraction_facts_identical": {
+   "pass": true,
+   "variants_checked": [
+    "BBVA-FY2024-en",
+    "BBVA-FY2024-es",
+    "BBVA-FY2025-en",
+    "BBVA-FY2025-es",
+    "IBE-FY2024-es",
+    "IBE-FY2025-es",
+    "SAN-FY2024-en",
+    "SAN-FY2024-es",
+    "SAN-FY2025-en",
+    "SAN-FY2025-es"
+   ],
+   "mismatches": {}
+  },
+  "comparison_dataset_deterministic": {
+   "pass": true,
+   "sha256": "6c3ba596586b46b8825488feea9089b9783a4d638cf2133f9315c6d055332a8a",
+   "rerun_returncode": 0
+  }
+ },
+ "class_totals": {
+  "DIVERGENT_SUBMISSION_FACT": 1,
+  "LANGUAGE_SENSITIVE_NOT_COMPARED": 683,
+  "MATCH_NUMERIC_EQUIVALENT": 1,
+  "UNMAPPED_VARIANT_FACT": 4239,
+  "VARIANT_ONLY_FACT": 2453
+ },
+ "match_exact_total": 3549,
+ "divergence_dataset_sha256": "6c3ba596586b46b8825488feea9089b9783a4d638cf2133f9315c6d055332a8a",
+ "per_filing": [
+  {
+   "comparison_jsonl": "SAN-FY2024.comparison.jsonl",
+   "comparison_jsonl_sha256": "0f2d7a0fd8a178fbf5b4ebf31966df88c8bbe8a8d05ddd853cde6b087b5bb52e",
+   "counts": {
+    "LANGUAGE_SENSITIVE_NOT_COMPARED": 182,
+    "MATCH_EXACT": 848,
+    "UNMAPPED_VARIANT_FACT": 1008,
+    "VARIANT_ONLY_FACT": 834
+   },
+   "facts_en": 1951,
+   "facts_es": 1951,
+   "filing": "SAN-FY2024",
+   "match_exact_count": 848,
+   "match_exact_keys_sha256": "f019547b22fc4c537b4d62656ecfc99da890b32d095ffb5077cfae4c595d03be",
+   "registro": "20509"
+  },
+  {
+   "comparison_jsonl": "SAN-FY2025.comparison.jsonl",
+   "comparison_jsonl_sha256": "8d653f2714dcc0349a6faf8131ca0ed09d4311b82a21475b9d0db5f7046f30ef",
+   "counts": {
+    "LANGUAGE_SENSITIVE_NOT_COMPARED": 180,
+    "MATCH_EXACT": 907,
+    "MATCH_NUMERIC_EQUIVALENT": 1,
+    "UNMAPPED_VARIANT_FACT": 984,
+    "VARIANT_ONLY_FACT": 744
+   },
+   "facts_en": 1952,
+   "facts_es": 1952,
+   "filing": "SAN-FY2025",
+   "match_exact_count": 907,
+   "match_exact_keys_sha256": "9ee3fb71470c4a0fd3af8e5e95c0cf00515c5918a40b9d5a96b2adc2787f813d",
+   "registro": "20875"
+  },
+  {
+   "comparison_jsonl": "BBVA-FY2024.comparison.jsonl",
+   "comparison_jsonl_sha256": "e77d8d7c8411c836ad3892416d2688a78587ef3e6b3bcc0d9aba86c44b9d2e53",
+   "counts": {
+    "DIVERGENT_SUBMISSION_FACT": 1,
+    "LANGUAGE_SENSITIVE_NOT_COMPARED": 161,
+    "MATCH_EXACT": 896,
+    "UNMAPPED_VARIANT_FACT": 1114,
+    "VARIANT_ONLY_FACT": 464
+   },
+   "facts_en": 1847,
+   "facts_es": 1847,
+   "filing": "BBVA-FY2024",
+   "match_exact_count": 896,
+   "match_exact_keys_sha256": "8e3407c26213048aa251b6ba2365e0e0de82ce6f454bbdbd836e88ce8e5b8373",
+   "registro": "20448"
+  },
+  {
+   "comparison_jsonl": "BBVA-FY2025.comparison.jsonl",
+   "comparison_jsonl_sha256": "21e7207a3cfe63b61581c434c2eab8cb2ec9ab349c832ca56850a0d7673f9aa2",
+   "counts": {
+    "LANGUAGE_SENSITIVE_NOT_COMPARED": 160,
+    "MATCH_EXACT": 898,
+    "UNMAPPED_VARIANT_FACT": 1133,
+    "VARIANT_ONLY_FACT": 411
+   },
+   "facts_en": 1830,
+   "facts_es": 1830,
+   "filing": "BBVA-FY2025",
+   "match_exact_count": 898,
+   "match_exact_keys_sha256": "d444e49ada2676efcd365e8506eaba7e3e010bdae26ccb4980f26f510d569867",
+   "registro": "20854"
+  },
+  {
+   "comparison": "SKIPPED_SINGLE_VARIANT",
+   "en_resolution_mode": "FALLBACK_TO_ES",
+   "en_set_equals_es_set": true,
+   "filing": "IBE-FY2024",
+   "registro": "20515",
+   "submitted_variant_count": 1
+  },
+  {
+   "comparison": "SKIPPED_SINGLE_VARIANT",
+   "en_resolution_mode": "FALLBACK_TO_ES",
+   "en_set_equals_es_set": true,
+   "filing": "IBE-FY2025",
+   "registro": "20934",
+   "submitted_variant_count": 1
+  }
+ ]
+}

@@ -299,8 +299,22 @@ experimentally falsified (would need a variant-only substitution). SAN-FY2024
 `-en` is byte-identical to the oracle copy (sha `47923b30…`); SAN-FY2025 `-en`
 exists at CNMV though the oracle never indexed it. R16's
 `OPEN_CNMV_POSSIBLE_OMISSION` is now a confirmed, explained omission of the
-`lang=es`-only capture. Next: G1-B dual-language capture + cross-variant
-fact comparison (BBVA ±98M mandatory test, IBE fallback as negative control).
+`lang=es`-only capture.
+
+**G1-B `DUAL_LANGUAGE_CAPTURE`: PASS** (`g1/G1-B-dual-language-capture/`,
+8/8 checks). Dual-lang capture with content-based `variant_artifact_set_id`;
+4 filings × 2 variants, IBE ×2 = 1 variant + `FALLBACK_TO_ES` (adversarial
+bad-model control proves the phantom-EN failure). 10 unique packages parsed
+offline (Arelle 2.44.0, Control A equal, ioerr=0). Cross-variant comparison:
+BBVA `Equity` +98M/−98M → `DIVERGENT_SUBMISSION_FACT` (mandatory test);
+SAN `0.9`/`0.900` → `MATCH_NUMERIC_EQUIVALENT`; 683 textual pairs →
+`LANGUAGE_SENSITIVE_NOT_COMPARED`; extension facts `UNMAPPED` (0 shared
+extension QNames even where ns identical — justified empirically);
+2,448/2,453 `VARIANT_ONLY` driven by extension dim members. Determinism:
+capture A==B, extraction run1==run2, dataset rebuild identical.
+`LANGUAGE_VARIANT_COVERAGE_UNRESOLVED` is closed for the in-scope corpus.
+Next open target: per-variant independent substitution (lifecycle) and
+anchoring-based extension mapping.
 
 ## Session hygiene
 

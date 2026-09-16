@@ -1,0 +1,62 @@
+{
+ "variant": "IBE-FY2025-es",
+ "lang": "es",
+ "family": "FY2025",
+ "package": "g0-r\\R07-raw-retrieval\\evidence\\esef-IBE-FY2025-package.zip",
+ "package_sha256": "066FDAF835AD6E81F0FF77EACB571F5D2A09F9FB42788FBC12D7041D2E51E05A",
+ "arelle_version": "2.44.0",
+ "runtime": {
+  "internetConnectivity": "offline",
+  "disclosureSystemName": "esef-2024",
+  "plugins": "validate/ESEF|saveLoadableOIM",
+  "validate": true,
+  "taxonomy_packages": [
+   "esef_taxonomy_2024.zip",
+   "ifrs-full_ifrs-2024-03-27-opencnmv-pkg.zip",
+   "xbrl-lei-2020-07-02-opencnmv-pkg.zip"
+  ]
+ },
+ "run_ok": true,
+ "elapsed_s": 25.5,
+ "counts": {
+  "facts": 869,
+  "contexts": 59,
+  "units": 2,
+  "concepts": 5615,
+  "dts_documents": 88,
+  "fact_footnote_relationships": 0,
+  "nil_facts": 0,
+  "fact_languages": [
+   "es"
+  ],
+  "facts_extension_ns": 198
+ },
+ "extension_namespaces": [
+  "http://www.iberdrola.com/20251231"
+ ],
+ "log_code_counts": {
+  "ERROR:": 13,
+  "ERROR:arelle": 14,
+  "ERROR:rpe": 1,
+  "WARNING:message": 2
+ },
+ "offline_evidence": {
+  "io_errors": 0,
+  "download_attempts_in_log": 0
+ },
+ "outputs": {
+  "facts_jsonl": "IBE-FY2025-es.facts.jsonl",
+  "facts_jsonl_sha256": "444FB972C262537B0A146B8EBE4D9B0BA0F6072270E2EDAAD38B8C7B1509F2F6",
+  "oim_json_sha256": "23BA23ADA48ED1B9A16B53C9E84DECED8B55B2AF98A848F4AE9603ACEFF0F4F8",
+  "oim_json_gz_sha256": "8D1F8D54EC601BF0B299A0E2F66AA75B75196091A384EAD1D47D837C90D85867"
+ },
+ "control_A": {
+  "fact_count_api": 869,
+  "fact_count_oim": 869,
+  "fact_multiset_equal": true,
+  "concept_coverage_equal": true,
+  "decimals_distribution_equal": true,
+  "nil_count_api": 0,
+  "nil_count_oim": 0
+ }
+}

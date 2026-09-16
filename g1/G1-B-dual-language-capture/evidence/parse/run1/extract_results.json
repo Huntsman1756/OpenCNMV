@@ -1,0 +1,613 @@
+[
+ {
+  "variant": "SAN-FY2024-es",
+  "lang": "es",
+  "family": "FY2024",
+  "package": "g0-r\\R07-raw-retrieval\\evidence\\esef-SAN-FY2024-package.zip",
+  "package_sha256": "725FFF01861CB0C186107280BF30B2C047A3A59AF703D799F678E02C435CB9F5",
+  "arelle_version": "2.44.0",
+  "runtime": {
+   "internetConnectivity": "offline",
+   "disclosureSystemName": "esef-2022",
+   "plugins": "validate/ESEF|saveLoadableOIM",
+   "validate": true,
+   "taxonomy_packages": [
+    "esef_taxonomy_2022_v1.1.zip",
+    "ifrs-full_ifrs-2022-03-24-opencnmv-pkg.zip",
+    "xbrl-lei-2020-07-02-opencnmv-pkg.zip"
+   ]
+  },
+  "run_ok": true,
+  "elapsed_s": 74.1,
+  "counts": {
+   "facts": 1951,
+   "contexts": 329,
+   "units": 2,
+   "concepts": 5575,
+   "dts_documents": 84,
+   "fact_footnote_relationships": 0,
+   "nil_facts": 0,
+   "fact_languages": [
+    "es"
+   ],
+   "facts_extension_ns": 504
+  },
+  "extension_namespaces": [
+   "http://www.santanderbank.com/20241231"
+  ],
+  "log_code_counts": {
+   "ERROR:": 13,
+   "ERROR:arelle": 14,
+   "WARNING:message": 6
+  },
+  "offline_evidence": {
+   "io_errors": 0,
+   "download_attempts_in_log": 0
+  },
+  "outputs": {
+   "facts_jsonl": "SAN-FY2024-es.facts.jsonl",
+   "facts_jsonl_sha256": "4A2F0581204ACE1E21A0D67E3E7F55D39858BC2825D91F3710C5A11E91997489",
+   "oim_json_sha256": "6945BC565FED1C9F2487D647DFAF534DBE0B18133C5D4ABBA7D97FE7CAA933F2",
+   "oim_json_gz_sha256": "0AAB19F9820D2BDBB94712F80992ABA82A1F275DFFB0C6DC84B528291CE03DC3"
+  },
+  "control_A": {
+   "fact_count_api": 1951,
+   "fact_count_oim": 1951,
+   "fact_multiset_equal": true,
+   "concept_coverage_equal": true,
+   "decimals_distribution_equal": true,
+   "nil_count_api": 0,
+   "nil_count_oim": 0
+  }
+ },
+ {
+  "variant": "SAN-FY2024-en",
+  "lang": "en",
+  "family": "FY2024",
+  "package": "g1\\G1-A-oam-variant-discovery\\evidence\\esef-SAN-FY2024-en.zip",
+  "package_sha256": "47923B30C3763FE448FF8080BB3E38C50AE48D48171986A90947C8BE347CCB37",
+  "arelle_version": "2.44.0",
+  "runtime": {
+   "internetConnectivity": "offline",
+   "disclosureSystemName": "esef-2022",
+   "plugins": "validate/ESEF|saveLoadableOIM",
+   "validate": true,
+   "taxonomy_packages": [
+    "esef_taxonomy_2022_v1.1.zip",
+    "ifrs-full_ifrs-2022-03-24-opencnmv-pkg.zip",
+    "xbrl-lei-2020-07-02-opencnmv-pkg.zip"
+   ]
+  },
+  "run_ok": true,
+  "elapsed_s": 66.2,
+  "counts": {
+   "facts": 1951,
+   "contexts": 329,
+   "units": 2,
+   "concepts": 5575,
+   "dts_documents": 82,
+   "fact_footnote_relationships": 0,
+   "nil_facts": 0,
+   "fact_languages": [
+    "en"
+   ],
+   "facts_extension_ns": 504
+  },
+  "extension_namespaces": [
+   "http://www.santander.com/20241231"
+  ],
+  "log_code_counts": {
+   "ERROR:": 13,
+   "ERROR:arelle": 14,
+   "WARNING:message": 6
+  },
+  "offline_evidence": {
+   "io_errors": 0,
+   "download_attempts_in_log": 0
+  },
+  "outputs": {
+   "facts_jsonl": "SAN-FY2024-en.facts.jsonl",
+   "facts_jsonl_sha256": "DA9F55AEF73D97026F08A573B146CD91058BA0CA3E2FB157ADDEC603FDC14142",
+   "oim_json_sha256": "4B5C314FC3EB36C53FAE5CE32CFF699B6022E6C446384FF84496DA26E13A8994",
+   "oim_json_gz_sha256": "4618D9C54C8B1F6AAC7C9B3ABC359374AC25B6A46FEC60386A96F0FE3603BD20"
+  },
+  "control_A": {
+   "fact_count_api": 1951,
+   "fact_count_oim": 1951,
+   "fact_multiset_equal": true,
+   "concept_coverage_equal": true,
+   "decimals_distribution_equal": true,
+   "nil_count_api": 0,
+   "nil_count_oim": 0
+  }
+ },
+ {
+  "variant": "SAN-FY2025-es",
+  "lang": "es",
+  "family": "FY2025",
+  "package": "g0-r\\R07-raw-retrieval\\evidence\\esef-SAN-FY2025-package.zip",
+  "package_sha256": "07E95A16C7D1652D6C6298C39B19B6A1E90C5D4A8C01881B4CCAEBDEAA700567",
+  "arelle_version": "2.44.0",
+  "runtime": {
+   "internetConnectivity": "offline",
+   "disclosureSystemName": "esef-2024",
+   "plugins": "validate/ESEF|saveLoadableOIM",
+   "validate": true,
+   "taxonomy_packages": [
+    "esef_taxonomy_2024.zip",
+    "ifrs-full_ifrs-2024-03-27-opencnmv-pkg.zip",
+    "xbrl-lei-2020-07-02-opencnmv-pkg.zip"
+   ]
+  },
+  "run_ok": true,
+  "elapsed_s": 66.7,
+  "counts": {
+   "facts": 1952,
+   "contexts": 329,
+   "units": 2,
+   "concepts": 5651,
+   "dts_documents": 88,
+   "fact_footnote_relationships": 0,
+   "nil_facts": 0,
+   "fact_languages": [
+    "es"
+   ],
+   "facts_extension_ns": 492
+  },
+  "extension_namespaces": [
+   "http://www.santander.com/20251231"
+  ],
+  "log_code_counts": {
+   "ERROR:": 13,
+   "ERROR:arelle": 14,
+   "ERROR:rpe": 1,
+   "WARNING:message": 6
+  },
+  "offline_evidence": {
+   "io_errors": 0,
+   "download_attempts_in_log": 0
+  },
+  "outputs": {
+   "facts_jsonl": "SAN-FY2025-es.facts.jsonl",
+   "facts_jsonl_sha256": "481665F3DE20E4759BA16F0E4E75879077B2F65EA523915EFCFED063C2FF8B9F",
+   "oim_json_sha256": "8D67E6766CB273AACFCDF05938DB02F15B82713FBA98D275F08DB57AD9D97351",
+   "oim_json_gz_sha256": "AAA2FA2718260801E35160B931880C93DA4418C460D17B6E5C378335F7DF3F49"
+  },
+  "control_A": {
+   "fact_count_api": 1952,
+   "fact_count_oim": 1952,
+   "fact_multiset_equal": true,
+   "concept_coverage_equal": true,
+   "decimals_distribution_equal": true,
+   "nil_count_api": 0,
+   "nil_count_oim": 0
+  }
+ },
+ {
+  "variant": "SAN-FY2025-en",
+  "lang": "en",
+  "family": "FY2025",
+  "package": "g1\\G1-A-oam-variant-discovery\\evidence\\esef-SAN-FY2025-en.zip",
+  "package_sha256": "77AC614A42C974965E04FD882A329952AF393554B93B2873F1C021646ED95198",
+  "arelle_version": "2.44.0",
+  "runtime": {
+   "internetConnectivity": "offline",
+   "disclosureSystemName": "esef-2024",
+   "plugins": "validate/ESEF|saveLoadableOIM",
+   "validate": true,
+   "taxonomy_packages": [
+    "esef_taxonomy_2024.zip",
+    "ifrs-full_ifrs-2024-03-27-opencnmv-pkg.zip",
+    "xbrl-lei-2020-07-02-opencnmv-pkg.zip"
+   ]
+  },
+  "run_ok": true,
+  "elapsed_s": 80.4,
+  "counts": {
+   "facts": 1952,
+   "contexts": 329,
+   "units": 2,
+   "concepts": 5651,
+   "dts_documents": 86,
+   "fact_footnote_relationships": 0,
+   "nil_facts": 0,
+   "fact_languages": [
+    "en"
+   ],
+   "facts_extension_ns": 492
+  },
+  "extension_namespaces": [
+   "http://www.santander.com/20251231"
+  ],
+  "log_code_counts": {
+   "ERROR:": 13,
+   "ERROR:arelle": 14,
+   "ERROR:rpe": 1,
+   "WARNING:message": 6
+  },
+  "offline_evidence": {
+   "io_errors": 0,
+   "download_attempts_in_log": 0
+  },
+  "outputs": {
+   "facts_jsonl": "SAN-FY2025-en.facts.jsonl",
+   "facts_jsonl_sha256": "14FD8FFAB0A70EB0BCBAFD4C2505A7089ED7C40CCBCEF62638FBB0678E2CD4F7",
+   "oim_json_sha256": "399A40EB0D14219339BC3EBAEAA4ACEBA91FAFE6898408F51F777C399C45ECFA",
+   "oim_json_gz_sha256": "65A7592545487D915F8A80925D1819A57B14E2ECF5D34F174839B5779F9B4586"
+  },
+  "control_A": {
+   "fact_count_api": 1952,
+   "fact_count_oim": 1952,
+   "fact_multiset_equal": true,
+   "concept_coverage_equal": true,
+   "decimals_distribution_equal": true,
+   "nil_count_api": 0,
+   "nil_count_oim": 0
+  }
+ },
+ {
+  "variant": "BBVA-FY2024-es",
+  "lang": "es",
+  "family": "FY2024",
+  "package": "g0-r\\R07-raw-retrieval\\evidence\\esef-BBVA-FY2024-package.zip",
+  "package_sha256": "69F04DA4F6EBE4F3072401207FF83F6EDC9D335C83DF666525594A7062D7248A",
+  "arelle_version": "2.44.0",
+  "runtime": {
+   "internetConnectivity": "offline",
+   "disclosureSystemName": "esef-2022",
+   "plugins": "validate/ESEF|saveLoadableOIM",
+   "validate": true,
+   "taxonomy_packages": [
+    "esef_taxonomy_2022_v1.1.zip",
+    "ifrs-full_ifrs-2022-03-24-opencnmv-pkg.zip",
+    "xbrl-lei-2020-07-02-opencnmv-pkg.zip"
+   ]
+  },
+  "run_ok": true,
+  "elapsed_s": 65.5,
+  "counts": {
+   "facts": 1847,
+   "contexts": 183,
+   "units": 2,
+   "concepts": 5597,
+   "dts_documents": 84,
+   "fact_footnote_relationships": 0,
+   "nil_facts": 0,
+   "fact_languages": [
+    "es"
+   ],
+   "facts_extension_ns": 557
+  },
+  "extension_namespaces": [
+   "http://www.bbva.es/20241231"
+  ],
+  "log_code_counts": {
+   "ERROR:": 13,
+   "ERROR:arelle": 14
+  },
+  "offline_evidence": {
+   "io_errors": 0,
+   "download_attempts_in_log": 0
+  },
+  "outputs": {
+   "facts_jsonl": "BBVA-FY2024-es.facts.jsonl",
+   "facts_jsonl_sha256": "B9E060E080D5398A3780001CC77B03B4CB25083F2E163D772231975EB88BE926",
+   "oim_json_sha256": "585313509150985545DD8F5F55CBE07CBBEBB225BE1F370EF4DE9D2F39913290",
+   "oim_json_gz_sha256": "1A6C3505BEEE2852C0068DBB5B251BB17ABA2C19D85353B0264CBB067F6656BF"
+  },
+  "control_A": {
+   "fact_count_api": 1847,
+   "fact_count_oim": 1847,
+   "fact_multiset_equal": true,
+   "concept_coverage_equal": true,
+   "decimals_distribution_equal": true,
+   "nil_count_api": 0,
+   "nil_count_oim": 0
+  }
+ },
+ {
+  "variant": "BBVA-FY2024-en",
+  "lang": "en",
+  "family": "FY2024",
+  "package": "g1\\G1-A-oam-variant-discovery\\evidence\\esef-BBVA-FY2024-en.zip",
+  "package_sha256": "75BE80E13B1FB8F56A8CAD06353A7145F0FAD524F654864D70F1AA35A2CCE94E",
+  "arelle_version": "2.44.0",
+  "runtime": {
+   "internetConnectivity": "offline",
+   "disclosureSystemName": "esef-2022",
+   "plugins": "validate/ESEF|saveLoadableOIM",
+   "validate": true,
+   "taxonomy_packages": [
+    "esef_taxonomy_2022_v1.1.zip",
+    "ifrs-full_ifrs-2022-03-24-opencnmv-pkg.zip",
+    "xbrl-lei-2020-07-02-opencnmv-pkg.zip"
+   ]
+  },
+  "run_ok": true,
+  "elapsed_s": 54.5,
+  "counts": {
+   "facts": 1847,
+   "contexts": 183,
+   "units": 2,
+   "concepts": 5597,
+   "dts_documents": 82,
+   "fact_footnote_relationships": 0,
+   "nil_facts": 0,
+   "fact_languages": [
+    "en"
+   ],
+   "facts_extension_ns": 557
+  },
+  "extension_namespaces": [
+   "http://www.bbva.es/20241231"
+  ],
+  "log_code_counts": {
+   "ERROR:": 13,
+   "ERROR:arelle": 14
+  },
+  "offline_evidence": {
+   "io_errors": 0,
+   "download_attempts_in_log": 0
+  },
+  "outputs": {
+   "facts_jsonl": "BBVA-FY2024-en.facts.jsonl",
+   "facts_jsonl_sha256": "BAF69368D37CB16EB502F21E8BD69B991FEA345F0D3B45CDAB0AC150005C77DD",
+   "oim_json_sha256": "8BE59087B5F141E36024E8B646E8FB29584D104FEDBC5FB8E6D8E76C1E743610",
+   "oim_json_gz_sha256": "25D028AA9CB632ABD6370E4BE8F5B532376C16FD8FC4420D808120FD05F8A782"
+  },
+  "control_A": {
+   "fact_count_api": 1847,
+   "fact_count_oim": 1847,
+   "fact_multiset_equal": true,
+   "concept_coverage_equal": true,
+   "decimals_distribution_equal": true,
+   "nil_count_api": 0,
+   "nil_count_oim": 0
+  }
+ },
+ {
+  "variant": "BBVA-FY2025-es",
+  "lang": "es",
+  "family": "FY2025",
+  "package": "g0-r\\R07-raw-retrieval\\evidence\\esef-BBVA-FY2025-package.zip",
+  "package_sha256": "675A1D3A470FDC469BEDA39BF242FFCB496C6F1116DA4D1FC562FAA0734E3458",
+  "arelle_version": "2.44.0",
+  "runtime": {
+   "internetConnectivity": "offline",
+   "disclosureSystemName": "esef-2024",
+   "plugins": "validate/ESEF|saveLoadableOIM",
+   "validate": true,
+   "taxonomy_packages": [
+    "esef_taxonomy_2024.zip",
+    "ifrs-full_ifrs-2024-03-27-opencnmv-pkg.zip",
+    "xbrl-lei-2020-07-02-opencnmv-pkg.zip"
+   ]
+  },
+  "run_ok": true,
+  "elapsed_s": 54.4,
+  "counts": {
+   "facts": 1830,
+   "contexts": 155,
+   "units": 2,
+   "concepts": 5667,
+   "dts_documents": 88,
+   "fact_footnote_relationships": 0,
+   "nil_facts": 0,
+   "fact_languages": [
+    "es"
+   ],
+   "facts_extension_ns": 567
+  },
+  "extension_namespaces": [
+   "http://www.bbva.es/20251231"
+  ],
+  "log_code_counts": {
+   "ERROR:": 13,
+   "ERROR:arelle": 14,
+   "ERROR:rpe": 1
+  },
+  "offline_evidence": {
+   "io_errors": 0,
+   "download_attempts_in_log": 0
+  },
+  "outputs": {
+   "facts_jsonl": "BBVA-FY2025-es.facts.jsonl",
+   "facts_jsonl_sha256": "C8745746895EB000B0502904A955ACFBA802FD77DE1A81022DA47B77207772D8",
+   "oim_json_sha256": "A7EA21E253DEB7943634DF60AE63ED29133E82F383C08EDFE51FE81A98C8AD3F",
+   "oim_json_gz_sha256": "5D17E85734225291297AF366DA1AE9282D0891FC98CC025BE890424855456C98"
+  },
+  "control_A": {
+   "fact_count_api": 1830,
+   "fact_count_oim": 1830,
+   "fact_multiset_equal": true,
+   "concept_coverage_equal": true,
+   "decimals_distribution_equal": true,
+   "nil_count_api": 0,
+   "nil_count_oim": 0
+  }
+ },
+ {
+  "variant": "BBVA-FY2025-en",
+  "lang": "en",
+  "family": "FY2025",
+  "package": "g1\\G1-A-oam-variant-discovery\\evidence\\esef-BBVA-FY2025-en.zip",
+  "package_sha256": "40FF2F1798F798833CFB61A3B004CB7CDBED2682237A9D7D2B35B42B32AC54D3",
+  "arelle_version": "2.44.0",
+  "runtime": {
+   "internetConnectivity": "offline",
+   "disclosureSystemName": "esef-2024",
+   "plugins": "validate/ESEF|saveLoadableOIM",
+   "validate": true,
+   "taxonomy_packages": [
+    "esef_taxonomy_2024.zip",
+    "ifrs-full_ifrs-2024-03-27-opencnmv-pkg.zip",
+    "xbrl-lei-2020-07-02-opencnmv-pkg.zip"
+   ]
+  },
+  "run_ok": true,
+  "elapsed_s": 52.6,
+  "counts": {
+   "facts": 1830,
+   "contexts": 155,
+   "units": 2,
+   "concepts": 5667,
+   "dts_documents": 86,
+   "fact_footnote_relationships": 0,
+   "nil_facts": 0,
+   "fact_languages": [
+    "en"
+   ],
+   "facts_extension_ns": 566
+  },
+  "extension_namespaces": [
+   "http://www.bbva.es/20251231"
+  ],
+  "log_code_counts": {
+   "ERROR:": 13,
+   "ERROR:arelle": 14,
+   "ERROR:rpe": 1
+  },
+  "offline_evidence": {
+   "io_errors": 0,
+   "download_attempts_in_log": 0
+  },
+  "outputs": {
+   "facts_jsonl": "BBVA-FY2025-en.facts.jsonl",
+   "facts_jsonl_sha256": "E0692920FE5FCA7904233633036F9A6080B4CB0D4B786A4985287D790193D13E",
+   "oim_json_sha256": "BF3F2998E1CB0506937DCF6881F163B45500358EC6C90B52C580653902FB840F",
+   "oim_json_gz_sha256": "3F2F57FCADC88FAD10590C0889B4E186654CD82615CEE8400F0EAFD37C3F77CC"
+  },
+  "control_A": {
+   "fact_count_api": 1830,
+   "fact_count_oim": 1830,
+   "fact_multiset_equal": true,
+   "concept_coverage_equal": true,
+   "decimals_distribution_equal": true,
+   "nil_count_api": 0,
+   "nil_count_oim": 0
+  }
+ },
+ {
+  "variant": "IBE-FY2024-es",
+  "lang": "es",
+  "family": "FY2024",
+  "package": "g0-r\\R07-raw-retrieval\\evidence\\esef-IBE-FY2024-package.zip",
+  "package_sha256": "89DFD3EF65527D1D4378464C2F70FA78B2FB7B4872264EACFA91D3FAAE1C42B4",
+  "arelle_version": "2.44.0",
+  "runtime": {
+   "internetConnectivity": "offline",
+   "disclosureSystemName": "esef-2022",
+   "plugins": "validate/ESEF|saveLoadableOIM",
+   "validate": true,
+   "taxonomy_packages": [
+    "esef_taxonomy_2022_v1.1.zip",
+    "ifrs-full_ifrs-2022-03-24-opencnmv-pkg.zip",
+    "xbrl-lei-2020-07-02-opencnmv-pkg.zip"
+   ]
+  },
+  "run_ok": true,
+  "elapsed_s": 27.6,
+  "counts": {
+   "facts": 833,
+   "contexts": 59,
+   "units": 2,
+   "concepts": 5529,
+   "dts_documents": 84,
+   "fact_footnote_relationships": 0,
+   "nil_facts": 0,
+   "fact_languages": [
+    "es"
+   ],
+   "facts_extension_ns": 174
+  },
+  "extension_namespaces": [
+   "http://www.iberdrola.com/20241231"
+  ],
+  "log_code_counts": {
+   "ERROR:": 13,
+   "ERROR:arelle": 14,
+   "WARNING:message": 2
+  },
+  "offline_evidence": {
+   "io_errors": 0,
+   "download_attempts_in_log": 0
+  },
+  "outputs": {
+   "facts_jsonl": "IBE-FY2024-es.facts.jsonl",
+   "facts_jsonl_sha256": "AEACC1BF8093B737D5A6F8224B4F043DCFF1B07F0A453F60C378A19B3EC68A33",
+   "oim_json_sha256": "8A14D95223DAB681CED387A004D75DE30CBD4F89ED75A0A1FBB586A79DCFD130",
+   "oim_json_gz_sha256": "91E10DB363F090C7893095647E40F671B1555DD620665F4FBEBA2D0D1EBBDAA9"
+  },
+  "control_A": {
+   "fact_count_api": 833,
+   "fact_count_oim": 833,
+   "fact_multiset_equal": true,
+   "concept_coverage_equal": true,
+   "decimals_distribution_equal": true,
+   "nil_count_api": 0,
+   "nil_count_oim": 0
+  }
+ },
+ {
+  "variant": "IBE-FY2025-es",
+  "lang": "es",
+  "family": "FY2025",
+  "package": "g0-r\\R07-raw-retrieval\\evidence\\esef-IBE-FY2025-package.zip",
+  "package_sha256": "066FDAF835AD6E81F0FF77EACB571F5D2A09F9FB42788FBC12D7041D2E51E05A",
+  "arelle_version": "2.44.0",
+  "runtime": {
+   "internetConnectivity": "offline",
+   "disclosureSystemName": "esef-2024",
+   "plugins": "validate/ESEF|saveLoadableOIM",
+   "validate": true,
+   "taxonomy_packages": [
+    "esef_taxonomy_2024.zip",
+    "ifrs-full_ifrs-2024-03-27-opencnmv-pkg.zip",
+    "xbrl-lei-2020-07-02-opencnmv-pkg.zip"
+   ]
+  },
+  "run_ok": true,
+  "elapsed_s": 25.5,
+  "counts": {
+   "facts": 869,
+   "contexts": 59,
+   "units": 2,
+   "concepts": 5615,
+   "dts_documents": 88,
+   "fact_footnote_relationships": 0,
+   "nil_facts": 0,
+   "fact_languages": [
+    "es"
+   ],
+   "facts_extension_ns": 198
+  },
+  "extension_namespaces": [
+   "http://www.iberdrola.com/20251231"
+  ],
+  "log_code_counts": {
+   "ERROR:": 13,
+   "ERROR:arelle": 14,
+   "ERROR:rpe": 1,
+   "WARNING:message": 2
+  },
+  "offline_evidence": {
+   "io_errors": 0,
+   "download_attempts_in_log": 0
+  },
+  "outputs": {
+   "facts_jsonl": "IBE-FY2025-es.facts.jsonl",
+   "facts_jsonl_sha256": "444FB972C262537B0A146B8EBE4D9B0BA0F6072270E2EDAAD38B8C7B1509F2F6",
+   "oim_json_sha256": "23BA23ADA48ED1B9A16B53C9E84DECED8B55B2AF98A848F4AE9603ACEFF0F4F8",
+   "oim_json_gz_sha256": "8D1F8D54EC601BF0B299A0E2F66AA75B75196091A384EAD1D47D837C90D85867"
+  },
+  "control_A": {
+   "fact_count_api": 869,
+   "fact_count_oim": 869,
+   "fact_multiset_equal": true,
+   "concept_coverage_equal": true,
+   "decimals_distribution_equal": true,
+   "nil_count_api": 0,
+   "nil_count_oim": 0
+  }
+ }
+]

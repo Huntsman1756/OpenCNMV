@@ -1,0 +1,62 @@
+{
+ "variant": "SAN-FY2025-en",
+ "lang": "en",
+ "family": "FY2025",
+ "package": "g1\\G1-A-oam-variant-discovery\\evidence\\esef-SAN-FY2025-en.zip",
+ "package_sha256": "77AC614A42C974965E04FD882A329952AF393554B93B2873F1C021646ED95198",
+ "arelle_version": "2.44.0",
+ "runtime": {
+  "internetConnectivity": "offline",
+  "disclosureSystemName": "esef-2024",
+  "plugins": "validate/ESEF|saveLoadableOIM",
+  "validate": true,
+  "taxonomy_packages": [
+   "esef_taxonomy_2024.zip",
+   "ifrs-full_ifrs-2024-03-27-opencnmv-pkg.zip",
+   "xbrl-lei-2020-07-02-opencnmv-pkg.zip"
+  ]
+ },
+ "run_ok": true,
+ "elapsed_s": 80.4,
+ "counts": {
+  "facts": 1952,
+  "contexts": 329,
+  "units": 2,
+  "concepts": 5651,
+  "dts_documents": 86,
+  "fact_footnote_relationships": 0,
+  "nil_facts": 0,
+  "fact_languages": [
+   "en"
+  ],
+  "facts_extension_ns": 492
+ },
+ "extension_namespaces": [
+  "http://www.santander.com/20251231"
+ ],
+ "log_code_counts": {
+  "ERROR:": 13,
+  "ERROR:arelle": 14,
+  "ERROR:rpe": 1,
+  "WARNING:message": 6
+ },
+ "offline_evidence": {
+  "io_errors": 0,
+  "download_attempts_in_log": 0
+ },
+ "outputs": {
+  "facts_jsonl": "SAN-FY2025-en.facts.jsonl",
+  "facts_jsonl_sha256": "14FD8FFAB0A70EB0BCBAFD4C2505A7089ED7C40CCBCEF62638FBB0678E2CD4F7",
+  "oim_json_sha256": "399A40EB0D14219339BC3EBAEAA4ACEBA91FAFE6898408F51F777C399C45ECFA",
+  "oim_json_gz_sha256": "65A7592545487D915F8A80925D1819A57B14E2ECF5D34F174839B5779F9B4586"
+ },
+ "control_A": {
+  "fact_count_api": 1952,
+  "fact_count_oim": 1952,
+  "fact_multiset_equal": true,
+  "concept_coverage_equal": true,
+  "decimals_distribution_equal": true,
+  "nil_count_api": 0,
+  "nil_count_oim": 0
+ }
+}
