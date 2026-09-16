@@ -1,0 +1,102 @@
+{
+ "gate": "G1-E CANONICAL_MODEL_FREEZE",
+ "status": "PASS",
+ "executed_at": "2026-09-16T18:16:33.624170+00:00",
+ "code_commit": null,
+ "inputs": [
+  "G1-A g1a_results.json",
+  "G1-B variant_inventory + comparison",
+  "G1-C SAN-FY2024.mapping.json",
+  "G1-D g1d_results + g1d_tef20484"
+ ],
+ "outputs": [
+  "canonical_model_v1.schema.json",
+  "fixtures/*.json",
+  "g1e_verify_results.json",
+  "docs/CANONICAL_MODEL_V1.md"
+ ],
+ "artifacts": [
+  {
+   "file": "canonical_model.py",
+   "sha256": "92ecd37389c324441d6c9d3059b9a62ac831e73f3c639ba8e8ae59d81aaa8da7",
+   "bytes": 7349,
+   "kind": "CODE"
+  },
+  {
+   "file": "canonical_model_v1.schema.json",
+   "sha256": "921f1d09aacf12836ead554d309ad6fa1d139ced5afe6192cb8ab94c69614bd1",
+   "bytes": 10890,
+   "kind": "ARTIFACT"
+  },
+  {
+   "file": "fixtures/bbva_fy2024.json",
+   "sha256": "b5e711e3ee4491731ee525490cdd648cc038a74a54400403ec3c3830ac9e66ee",
+   "bytes": 3900,
+   "kind": "ARTIFACT"
+  },
+  {
+   "file": "fixtures/ibe_fy2024.json",
+   "sha256": "9ade261f64baaea720a28cdfcb999129febcfea78b5cf52a0d6f78df50d4deaf",
+   "bytes": 1881,
+   "kind": "ARTIFACT"
+  },
+  {
+   "file": "fixtures/san_fy2024.json",
+   "sha256": "162b6ea5f20a169c01258ca9fe4510c97adb1d7e0d6388d52bf8fea49535d4e5",
+   "bytes": 3502,
+   "kind": "ARTIFACT"
+  },
+  {
+   "file": "fixtures/tef_20484.json",
+   "sha256": "6b09ee8152dbef471a1736049247f608761b560975221b803d0772848a1b7dc1",
+   "bytes": 5887,
+   "kind": "ARTIFACT"
+  },
+  {
+   "file": "g1e_build_fixtures.py",
+   "sha256": "0222e108be6dc8b520886a104fa714afd90b6ba2d73dba5153bdc641007ed8fe",
+   "bytes": 12713,
+   "kind": "CODE"
+  },
+  {
+   "file": "g1e_verify.py",
+   "sha256": "5ca673aa35a91496a571762e9dada4a602b52f2ffc4fbb3736364b7fddb09097",
+   "bytes": 7475,
+   "kind": "CODE"
+  },
+  {
+   "file": "g1e_verify_results.json",
+   "sha256": "4680a99d67d4f96ce1995fc2f2d99eb513e68350689172ee3bda02790df4b6e2",
+   "bytes": 1608,
+   "kind": "ARTIFACT"
+  },
+  {
+   "file": "README.md",
+   "sha256": "c7331fb0b1e4afb8d8066b9775180edf2b5c4a35f962d17952b3c460045bc49b",
+   "bytes": 2031,
+   "kind": "ARTIFACT"
+  }
+ ],
+ "sha256": {
+  "canonical_model.py": "92ecd37389c324441d6c9d3059b9a62ac831e73f3c639ba8e8ae59d81aaa8da7",
+  "canonical_model_v1.schema.json": "921f1d09aacf12836ead554d309ad6fa1d139ced5afe6192cb8ab94c69614bd1",
+  "fixtures/bbva_fy2024.json": "b5e711e3ee4491731ee525490cdd648cc038a74a54400403ec3c3830ac9e66ee",
+  "fixtures/ibe_fy2024.json": "9ade261f64baaea720a28cdfcb999129febcfea78b5cf52a0d6f78df50d4deaf",
+  "fixtures/san_fy2024.json": "162b6ea5f20a169c01258ca9fe4510c97adb1d7e0d6388d52bf8fea49535d4e5",
+  "fixtures/tef_20484.json": "6b09ee8152dbef471a1736049247f608761b560975221b803d0772848a1b7dc1",
+  "g1e_build_fixtures.py": "0222e108be6dc8b520886a104fa714afd90b6ba2d73dba5153bdc641007ed8fe",
+  "g1e_verify.py": "5ca673aa35a91496a571762e9dada4a602b52f2ffc4fbb3736364b7fddb09097",
+  "g1e_verify_results.json": "4680a99d67d4f96ce1995fc2f2d99eb513e68350689172ee3bda02790df4b6e2",
+  "README.md": "c7331fb0b1e4afb8d8066b9775180edf2b5c4a35f962d17952b3c460045bc49b"
+ },
+ "findings": [
+  "canonical model V1 frozen: variant_id stable, artifact_set_id per version",
+  "TEF-20484 encoded: en v1(unobserved)->v2 via EN_ONLY_REPLACED event, nreg null",
+  "invariants I1-I9 asserted over fixtures",
+  "fixtures+schema rebuild byte-identical"
+ ],
+ "limitations": [
+  "schema is a contract, not a storage layout; G2 owns durable persistence",
+  "unobserved superseded versions carry no bytes (CNMV serves current state only)"
+ ]
+}

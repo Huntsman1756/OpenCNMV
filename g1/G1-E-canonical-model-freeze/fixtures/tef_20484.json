@@ -1,0 +1,170 @@
+{
+ "filing_id": "cnmv:ifa:20484",
+ "issuer": {
+  "denomination": "TELEFONICA, S.A.",
+  "lei": "549300EEJH4FEPDBBR25"
+ },
+ "registro_oficial": "20484",
+ "family": "ESEF_IFA",
+ "period_end": "2024-12-31",
+ "filing_versions": [
+  {
+   "filing_version_id": "cnmv:ifa:20484#nreg:2025030764",
+   "source_nreg": "2025030764",
+   "filed_at": "2025-02-27",
+   "submission_kind": "ORIGINAL_SUBMISSION"
+  },
+  {
+   "filing_version_id": "cnmv:ifa:20484#nreg:2025031622",
+   "source_nreg": "2025031622",
+   "filed_at": "2025-02-28",
+   "submission_kind": "SUBSTITUTION"
+  }
+ ],
+ "submission_variants": [
+  {
+   "variant_id": "cnmv:ifa:20484#es",
+   "filing_id": "cnmv:ifa:20484",
+   "submission_language": "es",
+   "variant_versions": [
+    {
+     "variant_version_id": "cnmv:ifa:20484#es#v1",
+     "variant_id": "cnmv:ifa:20484#es",
+     "observed": true,
+     "artifact_set_id": "accbb890908569f1a37d6c3589e9222e911acecd686aeb41776b073c130403ae",
+     "artifacts": [
+      {
+       "artifact_id": "sha256:2430050472810f11c1f06fda6b1f7da2dc693f3fc8cdaf9b936e2fbdd32ce5e9",
+       "role": "IXBRL_INDIVIDUAL",
+       "sha256": "2430050472810f11c1f06fda6b1f7da2dc693f3fc8cdaf9b936e2fbdd32ce5e9",
+       "bytes": 15055961,
+       "media_type": "application/xhtml+xml",
+       "package_lang_tag": null
+      },
+      {
+       "artifact_id": "sha256:c7c9c6d0f96f590006f8318fc41117111fe442a879457f6fe0648b34b3d63513",
+       "role": "IXBRL_CONSOLIDATED",
+       "sha256": "c7c9c6d0f96f590006f8318fc41117111fe442a879457f6fe0648b34b3d63513",
+       "bytes": 73272310,
+       "media_type": "application/xhtml+xml",
+       "package_lang_tag": null
+      },
+      {
+       "artifact_id": "sha256:cc7f2e1c110e6a15673c277d072d7ae16a9bdaadd0242ea8fcac0df90fad42ca",
+       "role": "ESEF_PACKAGE_ZIP_XBRL",
+       "sha256": "cc7f2e1c110e6a15673c277d072d7ae16a9bdaadd0242ea8fcac0df90fad42ca",
+       "bytes": 27123830,
+       "media_type": "application/zip",
+       "package_lang_tag": "es"
+      }
+     ],
+     "created_by_event_id": "cnmv:ifa:20484#evt:2025-02-28",
+     "supersedes_variant_version_id": null
+    }
+   ]
+  },
+  {
+   "variant_id": "cnmv:ifa:20484#en",
+   "filing_id": "cnmv:ifa:20484",
+   "submission_language": "en",
+   "variant_versions": [
+    {
+     "variant_version_id": "cnmv:ifa:20484#en#v1",
+     "variant_id": "cnmv:ifa:20484#en",
+     "observed": false,
+     "artifact_set_id": null,
+     "artifacts": [],
+     "created_by_event_id": null,
+     "supersedes_variant_version_id": null
+    },
+    {
+     "variant_version_id": "cnmv:ifa:20484#en#v2",
+     "variant_id": "cnmv:ifa:20484#en",
+     "observed": true,
+     "artifact_set_id": "0cb8057f80a9c5a03435c7998bd951fca311123b96dc591836061dcf1ae7aa73",
+     "artifacts": [
+      {
+       "artifact_id": "sha256:dd0530b6cc6e53ac001f4e6134d3e5304d2a865169ced85316d098928b13d4de",
+       "role": "IXBRL_INDIVIDUAL",
+       "sha256": "dd0530b6cc6e53ac001f4e6134d3e5304d2a865169ced85316d098928b13d4de",
+       "bytes": 14237690,
+       "media_type": "application/xhtml+xml",
+       "package_lang_tag": null
+      },
+      {
+       "artifact_id": "sha256:d6c65db97c5a0b038e7ac4efd348f968005320d98488e132cdc80db9c0fdb6d9",
+       "role": "IXBRL_CONSOLIDATED",
+       "sha256": "d6c65db97c5a0b038e7ac4efd348f968005320d98488e132cdc80db9c0fdb6d9",
+       "bytes": 78594726,
+       "media_type": "application/xhtml+xml",
+       "package_lang_tag": null
+      },
+      {
+       "artifact_id": "sha256:f8726a6e653a62a97be21f6082a1b49e70f8cdc62575513ab5db41fa562214f1",
+       "role": "ESEF_PACKAGE_ZIP_XBRL",
+       "sha256": "f8726a6e653a62a97be21f6082a1b49e70f8cdc62575513ab5db41fa562214f1",
+       "bytes": 31618309,
+       "media_type": "application/zip",
+       "package_lang_tag": "en"
+      }
+     ],
+     "created_by_event_id": "cnmv:ifa:20484#evt:2025-03-13",
+     "supersedes_variant_version_id": "cnmv:ifa:20484#en#v1"
+    }
+   ]
+  }
+ ],
+ "view_resolutions": [
+  {
+   "requested_ui_language": "es",
+   "resolved_variant_id": "cnmv:ifa:20484#es",
+   "resolution_mode": "SUBMITTED_VARIANT"
+  },
+  {
+   "requested_ui_language": "en",
+   "resolved_variant_id": "cnmv:ifa:20484#en",
+   "resolution_mode": "SUBMITTED_VARIANT"
+  }
+ ],
+ "version_events": [
+  {
+   "event_id": "cnmv:ifa:20484#evt:2025-02-28",
+   "event_date": "2025-02-28",
+   "event_type": "SUBSTITUTION",
+   "source_label": "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+   "source_nreg": "2025031622",
+   "evidence_artifact_id": "sha256:27315343e70c4d2335aac3ff18a544467dbf358040688d8ce84d8bb38f136264",
+   "scope_status": "VARIANT_SCOPE_NOT_OBSERVABLE",
+   "affects": [
+    {
+     "variant_id": null,
+     "affected_component_scope": "NOT_IDENTIFIED",
+     "component_description": "reason scoped to Cuentas Anuales Individuales; silent on language",
+     "before_variant_version_id": null,
+     "after_variant_version_id": null,
+     "scope_basis": "sha256:27315343e70c4d2335aac3ff18a544467dbf358040688d8ce84d8bb38f136264"
+    }
+   ]
+  },
+  {
+   "event_id": "cnmv:ifa:20484#evt:2025-03-13",
+   "event_date": "2025-03-13",
+   "event_type": "SUBSTITUTION",
+   "source_label": "Otra información complementaria (Otros) [label; doc content is a substitution cert]",
+   "source_nreg": null,
+   "evidence_artifact_id": "sha256:e66a65e3ef8219293e8c7749bed7643ecc2920d93d35e0fdd3edd6a32c893466",
+   "scope_status": "EN_ONLY_REPLACED",
+   "affects": [
+    {
+     "variant_id": "cnmv:ifa:20484#en",
+     "affected_component_scope": "SOURCE_DESCRIBED",
+     "component_description": "versión en inglés publicada de los Estados Financieros Consolidados y respectivo Informe de Gestión",
+     "before_variant_version_id": "cnmv:ifa:20484#en#v1",
+     "after_variant_version_id": "cnmv:ifa:20484#en#v2",
+     "scope_basis": "sha256:e66a65e3ef8219293e8c7749bed7643ecc2920d93d35e0fdd3edd6a32c893466"
+    }
+   ]
+  }
+ ],
+ "extension_mappings": []
+}

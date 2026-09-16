@@ -1,0 +1,65 @@
+{
+ "verdict": "PASS",
+ "checks": [
+  {
+   "check": "fixtures_validate_against_json_schema",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "I1_ui_language_ne_variant",
+   "status": "PASS",
+   "detail": "IBE: en view resolves to #es, 1 variant only"
+  },
+  {
+   "check": "I2_variant_id_not_content_hash",
+   "status": "PASS",
+   "detail": "variant_id = filing#lang; no content hash"
+  },
+  {
+   "check": "I3_variant_version_is_content_state",
+   "status": "PASS",
+   "detail": "observed <=> artifact_set_id present"
+  },
+  {
+   "check": "I4_no_truth_designation",
+   "status": "PASS",
+   "detail": "no primary/truth field anywhere in fixtures or schema"
+  },
+  {
+   "check": "I5_divergent_fact_preserved",
+   "status": "PASS",
+   "detail": "Equity +98M/-98M on distinct variant_versions, one filing"
+  },
+  {
+   "check": "I6_structural_key_full",
+   "status": "PASS",
+   "detail": "dims+entity+unit are part of identity"
+  },
+  {
+   "check": "I7_event_scope_below_variant_and_null_nreg",
+   "status": "PASS",
+   "detail": "13/03 event: en variant, component SOURCE_DESCRIBED, nreg null"
+  },
+  {
+   "check": "I8_no_inferred_both",
+   "status": "PASS",
+   "detail": "28/02 event stays NOT_OBSERVABLE"
+  },
+  {
+   "check": "I9_only_proven_mappings",
+   "status": "PASS",
+   "detail": "SAN-FY2024: only PROVEN recorded as mappings; 12 non-proven elements never merged"
+  },
+  {
+   "check": "tef_temporal_shape",
+   "status": "PASS",
+   "detail": "en: v1(unobserved)->v2(observed); es: single version"
+  },
+  {
+   "check": "fixtures_rebuild_deterministic",
+   "status": "PASS",
+   "detail": ""
+  }
+ ]
+}

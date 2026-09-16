@@ -342,6 +342,17 @@ AMPER/BANKINTER/URBAR substitutions are `SINGLE_VARIANT_WITH_UI_FALLBACK`
 (cannot falsify). Caveat recorded: label-based substitution detection is a
 lower bound — the decisive TEF event was labelled "otros".
 
+**G1-E `CANONICAL_MODEL_FREEZE`: PASS**
+(`g1/G1-E-canonical-model-freeze/`, 12/12 checks). Canonical model V1 frozen
+as Pydantic schema + exported JSON Schema + invariants I1–I9 + four fixtures
+rebuilt deterministically from frozen G1 evidence. Key correction vs G1-B:
+`submission_variant.variant_id` (filing#language) is the stable identity;
+`variant_version.artifact_set_id` is the per-version content identity.
+`version_event.affects[]` reaches variant/component granularity with
+nullable `source_nreg`. Spec: `docs/CANONICAL_MODEL_V1.md`. Tag
+`g1-model-frozen`. **G1 DESIGN COMPLETE** — next phase is G2 (durable core
+against the frozen contract), not more probes.
+
 ## Session hygiene
 
 - Update this file at the end of every session.

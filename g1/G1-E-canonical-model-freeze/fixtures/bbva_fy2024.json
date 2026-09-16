@@ -1,0 +1,125 @@
+{
+ "filing_id": "cnmv:ifa:20448",
+ "issuer": {
+  "denomination": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A.",
+  "lei": "K8MS7FD7N5Z2WQ51AZ71"
+ },
+ "registro_oficial": "20448",
+ "family": "ESEF_IFA",
+ "period_end": "31/12/2024",
+ "filing_versions": [
+  {
+   "filing_version_id": "cnmv:ifa:20448#nreg:2025022995",
+   "source_nreg": "2025022995",
+   "filed_at": null,
+   "submission_kind": "ORIGINAL_SUBMISSION"
+  }
+ ],
+ "submission_variants": [
+  {
+   "variant_id": "cnmv:ifa:20448#es",
+   "filing_id": "cnmv:ifa:20448",
+   "submission_language": "es",
+   "variant_versions": [
+    {
+     "variant_version_id": "cnmv:ifa:20448#es#v1",
+     "variant_id": "cnmv:ifa:20448#es",
+     "observed": true,
+     "artifact_set_id": "3af22f8b44e1f1d90ad63f75932d3f20d1f33892d8b7de6517484f88ce8afdae",
+     "artifacts": [
+      {
+       "artifact_id": "sha256:69f04da4f6ebe4f3072401207ff83f6edc9d335c83df666525594a7062d7248a",
+       "role": "ESEF_PACKAGE_ZIP_XBRL",
+       "sha256": "69f04da4f6ebe4f3072401207ff83f6edc9d335c83df666525594a7062d7248a",
+       "bytes": 20388402,
+       "media_type": "application/zip",
+       "package_lang_tag": "es"
+      }
+     ],
+     "created_by_event_id": "cnmv:ifa:20448#evt:formulacion",
+     "supersedes_variant_version_id": null
+    }
+   ]
+  },
+  {
+   "variant_id": "cnmv:ifa:20448#en",
+   "filing_id": "cnmv:ifa:20448",
+   "submission_language": "en",
+   "variant_versions": [
+    {
+     "variant_version_id": "cnmv:ifa:20448#en#v1",
+     "variant_id": "cnmv:ifa:20448#en",
+     "observed": true,
+     "artifact_set_id": "3f45dbf2ef52d2cba1ebd554bc5a17fc8bca35c6bf32ad9c63d5057e6f4661b1",
+     "artifacts": [
+      {
+       "artifact_id": "sha256:75be80e13b1fb8f56a8cad06353a7145f0fad524f654864d70f1aa35a2cce94e",
+       "role": "ESEF_PACKAGE_ZIP_XBRL",
+       "sha256": "75be80e13b1fb8f56a8cad06353a7145f0fad524f654864d70f1aa35a2cce94e",
+       "bytes": 18883918,
+       "media_type": "application/zip",
+       "package_lang_tag": "en"
+      }
+     ],
+     "created_by_event_id": "cnmv:ifa:20448#evt:formulacion",
+     "supersedes_variant_version_id": null
+    }
+   ]
+  }
+ ],
+ "view_resolutions": [
+  {
+   "requested_ui_language": "es",
+   "resolved_variant_id": "cnmv:ifa:20448#es",
+   "resolution_mode": "SUBMITTED_VARIANT"
+  },
+  {
+   "requested_ui_language": "en",
+   "resolved_variant_id": "cnmv:ifa:20448#en",
+   "resolution_mode": "SUBMITTED_VARIANT"
+  }
+ ],
+ "version_events": [
+  {
+   "event_id": "cnmv:ifa:20448#evt:formulacion",
+   "event_date": "14/02/2025",
+   "event_type": "CERTIFICATE",
+   "source_label": "formulación y firma",
+   "source_nreg": "2025022995",
+   "evidence_artifact_id": null,
+   "scope_status": "NOT_A_VERSION_TRANSITION",
+   "affects": []
+  }
+ ],
+ "extension_mappings": [],
+ "fact_examples": [
+  {
+   "note": "I5: same structural key (sans language), divergent payload",
+   "comparison_class": "DIVERGENT_SUBMISSION_FACT",
+   "key": {
+    "concept": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#Equity",
+    "concept_type": "http://www.xbrl.org/2003/instance#monetaryItemType",
+    "dimensions": {
+     "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#RetrospectiveApplicationAndRetrospectiveRestatementAxis": "E:https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialEffectOfChangesInAccountingPolicyMember"
+    },
+    "entity": "http://standards.iso.org/iso/17442|K8MS7FD7N5Z2WQ51AZ71",
+    "period": "2023-01-01",
+    "unit": "http://www.xbrl.org/2003/iso4217#EUR"
+   },
+   "es": {
+    "variant_version_id": "cnmv:ifa:20448#es#v1",
+    "lang": "es",
+    "value": "98000000",
+    "decimals": "-6",
+    "value_sha256": "FFCE16958984F416DF43C38A47F6FA7CA92EDBA47176B53A1A1F921C5A0C561C"
+   },
+   "en": {
+    "variant_version_id": "cnmv:ifa:20448#en#v1",
+    "lang": "en",
+    "value": "-98000000",
+    "decimals": "-6",
+    "value_sha256": "68E61DD45ADE9E2A070DBBE575DAD885225D3612E75EFCA368701376FC02621A"
+   }
+  }
+ ]
+}

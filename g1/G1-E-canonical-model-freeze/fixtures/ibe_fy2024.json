@@ -1,0 +1,70 @@
+{
+ "filing_id": "cnmv:ifa:20515",
+ "issuer": {
+  "denomination": "IBERDROLA, S.A.",
+  "lei": "5QK37QC7NWOJ8D7WVQ45"
+ },
+ "registro_oficial": "20515",
+ "family": "ESEF_IFA",
+ "period_end": "31/12/2024",
+ "filing_versions": [
+  {
+   "filing_version_id": "cnmv:ifa:20515#nreg:2025031726",
+   "source_nreg": "2025031726",
+   "filed_at": null,
+   "submission_kind": "ORIGINAL_SUBMISSION"
+  }
+ ],
+ "submission_variants": [
+  {
+   "variant_id": "cnmv:ifa:20515#es",
+   "filing_id": "cnmv:ifa:20515",
+   "submission_language": "es",
+   "variant_versions": [
+    {
+     "variant_version_id": "cnmv:ifa:20515#es#v1",
+     "variant_id": "cnmv:ifa:20515#es",
+     "observed": true,
+     "artifact_set_id": "e2bed29467bf120c208894f4803e81745d416acf335174f85f8a64439fd593d5",
+     "artifacts": [
+      {
+       "artifact_id": "sha256:89dfd3ef65527d1d4378464c2f70fa78b2fb7b4872264eacfa91d3faae1c42b4",
+       "role": "ESEF_PACKAGE_ZIP_XBRL",
+       "sha256": "89dfd3ef65527d1d4378464c2f70fa78b2fb7b4872264eacfa91d3faae1c42b4",
+       "bytes": 28162648,
+       "media_type": "application/zip",
+       "package_lang_tag": "es"
+      }
+     ],
+     "created_by_event_id": "cnmv:ifa:20515#evt:formulacion",
+     "supersedes_variant_version_id": null
+    }
+   ]
+  }
+ ],
+ "view_resolutions": [
+  {
+   "requested_ui_language": "es",
+   "resolved_variant_id": "cnmv:ifa:20515#es",
+   "resolution_mode": "SUBMITTED_VARIANT"
+  },
+  {
+   "requested_ui_language": "en",
+   "resolved_variant_id": "cnmv:ifa:20515#es",
+   "resolution_mode": "FALLBACK_TO_ES"
+  }
+ ],
+ "version_events": [
+  {
+   "event_id": "cnmv:ifa:20515#evt:formulacion",
+   "event_date": "28/02/2025",
+   "event_type": "CERTIFICATE",
+   "source_label": "formulación y firma",
+   "source_nreg": "2025031726",
+   "evidence_artifact_id": null,
+   "scope_status": "NOT_A_VERSION_TRANSITION",
+   "affects": []
+  }
+ ],
+ "extension_mappings": []
+}

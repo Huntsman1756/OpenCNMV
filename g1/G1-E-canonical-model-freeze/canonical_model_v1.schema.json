@@ -1,0 +1,607 @@
+{
+ "$defs": {
+  "Artifact": {
+   "properties": {
+    "artifact_id": {
+     "title": "Artifact Id",
+     "type": "string"
+    },
+    "role": {
+     "$ref": "#/$defs/ArtifactRole"
+    },
+    "sha256": {
+     "title": "Sha256",
+     "type": "string"
+    },
+    "bytes": {
+     "anyOf": [
+      {
+       "type": "integer"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Bytes"
+    },
+    "media_type": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Media Type"
+    },
+    "source_url": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Source Url"
+    },
+    "package_lang_tag": {
+     "anyOf": [
+      {
+       "$ref": "#/$defs/Lang"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null
+    }
+   },
+   "required": [
+    "artifact_id",
+    "role",
+    "sha256"
+   ],
+   "title": "Artifact",
+   "type": "object"
+  },
+  "ArtifactRole": {
+   "enum": [
+    "ESEF_PACKAGE_ZIP_XBRL",
+    "IXBRL_CONSOLIDATED",
+    "IXBRL_INDIVIDUAL",
+    "ESEF_COVER",
+    "EVENT_DOCUMENT",
+    "INFADICIONIFA_PAGE",
+    "SEARCH_RESULTS_PAGE"
+   ],
+   "title": "ArtifactRole",
+   "type": "string"
+  },
+  "ComponentScope": {
+   "enum": [
+    "WHOLE_VARIANT_ARTIFACT_SET",
+    "SOURCE_DESCRIBED",
+    "NOT_IDENTIFIED"
+   ],
+   "title": "ComponentScope",
+   "type": "string"
+  },
+  "EventAffects": {
+   "description": "I7: an event may point below variant granularity.",
+   "properties": {
+    "variant_id": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Variant Id"
+    },
+    "affected_component_scope": {
+     "$ref": "#/$defs/ComponentScope",
+     "default": "NOT_IDENTIFIED"
+    },
+    "component_description": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Component Description"
+    },
+    "before_variant_version_id": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Before Variant Version Id"
+    },
+    "after_variant_version_id": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "After Variant Version Id"
+    },
+    "scope_basis": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Scope Basis"
+    }
+   },
+   "title": "EventAffects",
+   "type": "object"
+  },
+  "EventType": {
+   "enum": [
+    "CERTIFICATE",
+    "SUBSTITUTION",
+    "OTHER_SUPPLEMENTARY",
+    "ORIGINAL_SUBMISSION"
+   ],
+   "title": "EventType",
+   "type": "string"
+  },
+  "ExtensionMapping": {
+   "description": "I9: cross-variant identity rewrite evidence (G1-C).",
+   "properties": {
+    "pair_id": {
+     "title": "Pair Id",
+     "type": "string"
+    },
+    "filing_id": {
+     "title": "Filing Id",
+     "type": "string"
+    },
+    "source_variant_id": {
+     "title": "Source Variant Id",
+     "type": "string"
+    },
+    "target_variant_id": {
+     "title": "Target Variant Id",
+     "type": "string"
+    },
+    "source_qname": {
+     "title": "Source Qname",
+     "type": "string"
+    },
+    "target_qname": {
+     "title": "Target Qname",
+     "type": "string"
+    },
+    "mapping_type": {
+     "title": "Mapping Type",
+     "type": "string"
+    },
+    "verdict": {
+     "title": "Verdict",
+     "type": "string"
+    },
+    "evidence": {
+     "items": {
+      "type": "string"
+     },
+     "title": "Evidence",
+     "type": "array"
+    }
+   },
+   "required": [
+    "pair_id",
+    "filing_id",
+    "source_variant_id",
+    "target_variant_id",
+    "source_qname",
+    "target_qname",
+    "mapping_type",
+    "verdict"
+   ],
+   "title": "ExtensionMapping",
+   "type": "object"
+  },
+  "FilingVersion": {
+   "description": "A source submission record, kept when CNMV exposes one.",
+   "properties": {
+    "filing_version_id": {
+     "title": "Filing Version Id",
+     "type": "string"
+    },
+    "source_nreg": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Source Nreg"
+    },
+    "filed_at": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Filed At"
+    },
+    "submission_kind": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Submission Kind"
+    }
+   },
+   "required": [
+    "filing_version_id"
+   ],
+   "title": "FilingVersion",
+   "type": "object"
+  },
+  "IssuerRef": {
+   "properties": {
+    "denomination": {
+     "title": "Denomination",
+     "type": "string"
+    },
+    "nif": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Nif"
+    },
+    "lei": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Lei"
+    }
+   },
+   "required": [
+    "denomination"
+   ],
+   "title": "IssuerRef",
+   "type": "object"
+  },
+  "Lang": {
+   "enum": [
+    "es",
+    "en"
+   ],
+   "title": "Lang",
+   "type": "string"
+  },
+  "ResolutionMode": {
+   "enum": [
+    "SUBMITTED_VARIANT",
+    "FALLBACK_TO_ES"
+   ],
+   "title": "ResolutionMode",
+   "type": "string"
+  },
+  "ScopeStatus": {
+   "description": "Preregistered lifecycle scope vocabulary (G1-D).",
+   "enum": [
+    "BOTH_VARIANTS_REPLACED",
+    "ES_ONLY_REPLACED",
+    "EN_ONLY_REPLACED",
+    "VARIANT_SCOPE_NOT_OBSERVABLE",
+    "NOT_A_VERSION_TRANSITION"
+   ],
+   "title": "ScopeStatus",
+   "type": "string"
+  },
+  "SubmissionVariant": {
+   "description": "I2: stable identity = (filing_id, submission_language).",
+   "properties": {
+    "variant_id": {
+     "title": "Variant Id",
+     "type": "string"
+    },
+    "filing_id": {
+     "title": "Filing Id",
+     "type": "string"
+    },
+    "submission_language": {
+     "$ref": "#/$defs/Lang"
+    },
+    "variant_versions": {
+     "items": {
+      "$ref": "#/$defs/VariantVersion"
+     },
+     "title": "Variant Versions",
+     "type": "array"
+    }
+   },
+   "required": [
+    "variant_id",
+    "filing_id",
+    "submission_language"
+   ],
+   "title": "SubmissionVariant",
+   "type": "object"
+  },
+  "VariantVersion": {
+   "description": "I3: the content state of one variant. artifact_set_id identifies the\nversion's content, never the variant itself (I2).",
+   "properties": {
+    "variant_version_id": {
+     "title": "Variant Version Id",
+     "type": "string"
+    },
+    "variant_id": {
+     "title": "Variant Id",
+     "type": "string"
+    },
+    "observed": {
+     "title": "Observed",
+     "type": "boolean"
+    },
+    "artifact_set_id": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Artifact Set Id"
+    },
+    "artifacts": {
+     "items": {
+      "$ref": "#/$defs/Artifact"
+     },
+     "title": "Artifacts",
+     "type": "array"
+    },
+    "created_by_event_id": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Created By Event Id"
+    },
+    "supersedes_variant_version_id": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Supersedes Variant Version Id"
+    }
+   },
+   "required": [
+    "variant_version_id",
+    "variant_id",
+    "observed"
+   ],
+   "title": "VariantVersion",
+   "type": "object"
+  },
+  "VersionEvent": {
+   "properties": {
+    "event_id": {
+     "title": "Event Id",
+     "type": "string"
+    },
+    "event_date": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Event Date"
+    },
+    "event_type": {
+     "$ref": "#/$defs/EventType"
+    },
+    "source_label": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Source Label"
+    },
+    "source_nreg": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Source Nreg"
+    },
+    "evidence_artifact_id": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Evidence Artifact Id"
+    },
+    "scope_status": {
+     "$ref": "#/$defs/ScopeStatus"
+    },
+    "affects": {
+     "items": {
+      "$ref": "#/$defs/EventAffects"
+     },
+     "title": "Affects",
+     "type": "array"
+    }
+   },
+   "required": [
+    "event_id",
+    "event_type",
+    "scope_status"
+   ],
+   "title": "VersionEvent",
+   "type": "object"
+  },
+  "ViewResolution": {
+   "description": "I1: what a UI view resolved to — an observation, not an identity.",
+   "properties": {
+    "requested_ui_language": {
+     "$ref": "#/$defs/Lang"
+    },
+    "resolved_variant_id": {
+     "title": "Resolved Variant Id",
+     "type": "string"
+    },
+    "resolution_mode": {
+     "$ref": "#/$defs/ResolutionMode"
+    }
+   },
+   "required": [
+    "requested_ui_language",
+    "resolved_variant_id",
+    "resolution_mode"
+   ],
+   "title": "ViewResolution",
+   "type": "object"
+  }
+ },
+ "properties": {
+  "filing_id": {
+   "title": "Filing Id",
+   "type": "string"
+  },
+  "issuer": {
+   "$ref": "#/$defs/IssuerRef"
+  },
+  "registro_oficial": {
+   "title": "Registro Oficial",
+   "type": "string"
+  },
+  "family": {
+   "title": "Family",
+   "type": "string"
+  },
+  "period_end": {
+   "title": "Period End",
+   "type": "string"
+  },
+  "filing_versions": {
+   "items": {
+    "$ref": "#/$defs/FilingVersion"
+   },
+   "title": "Filing Versions",
+   "type": "array"
+  },
+  "submission_variants": {
+   "items": {
+    "$ref": "#/$defs/SubmissionVariant"
+   },
+   "title": "Submission Variants",
+   "type": "array"
+  },
+  "view_resolutions": {
+   "items": {
+    "$ref": "#/$defs/ViewResolution"
+   },
+   "title": "View Resolutions",
+   "type": "array"
+  },
+  "version_events": {
+   "items": {
+    "$ref": "#/$defs/VersionEvent"
+   },
+   "title": "Version Events",
+   "type": "array"
+  },
+  "extension_mappings": {
+   "items": {
+    "$ref": "#/$defs/ExtensionMapping"
+   },
+   "title": "Extension Mappings",
+   "type": "array"
+  }
+ },
+ "required": [
+  "filing_id",
+  "issuer",
+  "registro_oficial",
+  "family",
+  "period_end"
+ ],
+ "title": "CanonicalFiling",
+ "type": "object"
+}
