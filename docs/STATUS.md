@@ -327,8 +327,20 @@ UNMAPPED 4,239→132, VARIANT_ONLY 2,453→6, MATCH_EXACT 3,549→6,822,
 NUMERIC_EQUIVALENT 1→9, DIVERGENT 1→1 (BBVA ±98M preserved, no new
 divergences). Determinism: structure run1==run2, mapping + mapped dataset
 rebuilds byte-identical.
-Next open target (G1-D): `VARIANT_LIFECYCLE_FALSIFICATION` — a substitution
-touching one submitted variant but not the other.
+
+**G1-D `VARIANT_LIFECYCLE_FALSIFICATION`: PASS**
+(`g1/G1-D-variant-lifecycle-falsification/`, 11/11 checks). Scan of 96
+official filings found exactly one dual-variant filing with a substitution:
+TELEFONICA FY2024 (`nregaud` 20484). Its 2025-03-13 event is
+`EN_ONLY_REPLACED` on explicit certificate text (published English
+consolidated statements appeared in Spanish); the 2025-02-28 event stays
+`VARIANT_SCOPE_NOT_OBSERVABLE` (individual-accounts scope, silent on
+language). Verdict: `INDEPENDENT_VARIANT_LIFECYCLE_PROVEN` — a version_event
+can affect a subset of submission_variants; `variant -> versions` gains
+strong evidence and version events need an explicit affected-artefact scope.
+AMPER/BANKINTER/URBAR substitutions are `SINGLE_VARIANT_WITH_UI_FALLBACK`
+(cannot falsify). Caveat recorded: label-based substitution detection is a
+lower bound — the decisive TEF event was labelled "otros".
 
 ## Session hygiene
 

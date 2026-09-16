@@ -1,0 +1,659 @@
+{
+ "probe": "G1-D VARIANT_LIFECYCLE_FALSIFICATION",
+ "executed_at": "2026-09-16T16:43:24.566415+00:00",
+ "artifacts": [
+  {
+   "file": "evidence/busqueda25-AMPER-es.html",
+   "sha256": "a16afa93fa5bf6b75fa978b033a08c306057056faa5fbfee6a55aedf53c87a6e",
+   "bytes": 223446,
+   "kind": "SEARCH_RESULTS_PAGE",
+   "source_url": "https://www.cnmv.es/Portal/consultas/busqueda?id=25&lang=es [POST denom=AMPER]",
+   "note": "raw served bytes (refetched after CRLF fix)"
+  },
+  {
+   "file": "evidence/pkg-AMPER-es-46282dd8ecd6.zip",
+   "sha256": "46282dd8ecd6cf57bb9f076586f097904a6df9d19165a2354a41e2c733e1fa29",
+   "bytes": 26408570,
+   "kind": "ESEF_PACKAGE_ZIP",
+   "ui_lang": "es",
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=yvbu81OOpyqHnQ85uoZp7SGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f (busqueda lang=es, registro 20938)"
+  },
+  {
+   "file": "evidence/busqueda25-AMPER-en.html",
+   "sha256": "be288da79c73b0dbfdab4827bcf76ce7a6e95c23cf5787ead8df34f1c518fe61",
+   "bytes": 216142,
+   "kind": "SEARCH_RESULTS_PAGE",
+   "source_url": "https://www.cnmv.es/Portal/consultas/busqueda?id=25&lang=en [POST denom=AMPER]",
+   "note": "raw served bytes (refetched after CRLF fix)"
+  },
+  {
+   "file": "evidence/pkg-AMPER-es-46282dd8ecd6.zip",
+   "sha256": "46282dd8ecd6cf57bb9f076586f097904a6df9d19165a2354a41e2c733e1fa29",
+   "bytes": 26408570,
+   "kind": "ESEF_PACKAGE_ZIP",
+   "ui_lang": "en",
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=yvbu81OOpyqHnQ85uoZp7SGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f (busqueda lang=en, registro 20938)"
+  },
+  {
+   "file": "evidence/infadicionifa-AMPER-es.html",
+   "sha256": "a2cbf539e87b9fbf071d02795e98ad3e476b69da40de70cb1ca4e88a41ad14f7",
+   "bytes": 218000,
+   "kind": "INFADICIONIFA_PAGE",
+   "source_url": "https://www.cnmv.es/portal/consultas/ifa/infadicionifa?id=0&lang=es&nreg=2026031562&nregaud=20938",
+   "note": "raw served bytes (refetched after CRLF fix)"
+  },
+  {
+   "file": "evidence/doc-AMPER-es-e1-0.pdf",
+   "sha256": "a7d4bf453ad13bcda4862990b7b624f20fda86c683f83be9d5fd5b2c08b80741",
+   "bytes": 223281,
+   "kind": "EVENT_DOCUMENT",
+   "ui_lang": "es",
+   "event_row": [
+    "28/02/2026",
+    "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+    "",
+    ""
+   ],
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=Gb49LLg7dSIYJFA%2fM52eURFHH%2bsT7u3BIESiYVYScsGP13%2fQ49HhKrz69rsiH53l"
+  },
+  {
+   "file": "evidence/doc-AMPER-es-e2-0.pdf",
+   "sha256": "db52f1955d24031963c83bba9c3898b04b26fc9196e356aee17f46fab8b610a6",
+   "bytes": 164543,
+   "kind": "EVENT_DOCUMENT",
+   "ui_lang": "es",
+   "event_row": [
+    "04/03/2026",
+    "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+    "",
+    ""
+   ],
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=O200%2fFw3vCN8tHXgJORaLcnt0PLiPhnwP7IUG2YiCFuP13%2fQ49HhKrz69rsiH53l"
+  },
+  {
+   "file": "evidence/doc-AMPER-es-e3-0.pdf",
+   "sha256": "db52f1955d24031963c83bba9c3898b04b26fc9196e356aee17f46fab8b610a6",
+   "bytes": 164543,
+   "kind": "EVENT_DOCUMENT",
+   "ui_lang": "es",
+   "event_row": [
+    "04/03/2026",
+    "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+    "",
+    ""
+   ],
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=O200%2fFw3vCN8tHXgJORaLcnt0PLiPhnwP7IUG2YiCFuP13%2fQ49HhKrz69rsiH53l"
+  },
+  {
+   "file": "evidence/infadicionifa-AMPER-en.html",
+   "sha256": "7bcb741b056aea403cc0a924d424d6dcfc06ab1305616fb43c3bd81d744bc3bc",
+   "bytes": 210228,
+   "kind": "INFADICIONIFA_PAGE",
+   "source_url": "https://www.cnmv.es/portal/consultas/ifa/infadicionifa?id=0&lang=en&nreg=2026031562&nregaud=20938",
+   "note": "raw served bytes (refetched after CRLF fix)"
+  },
+  {
+   "file": "evidence/doc-AMPER-en-e1-0.pdf",
+   "sha256": "a7d4bf453ad13bcda4862990b7b624f20fda86c683f83be9d5fd5b2c08b80741",
+   "bytes": 223281,
+   "kind": "EVENT_DOCUMENT",
+   "ui_lang": "en",
+   "event_row": [
+    "28/02/2026",
+    "Certificate issued by the Board Secretary on the preparation and signature of the annual financial report",
+    "",
+    ""
+   ],
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=Gb49LLg7dSIYJFA%2fM52eURFHH%2bsT7u3BIESiYVYScsGP13%2fQ49HhKrz69rsiH53l"
+  },
+  {
+   "file": "evidence/doc-AMPER-en-e2-0.pdf",
+   "sha256": "db52f1955d24031963c83bba9c3898b04b26fc9196e356aee17f46fab8b610a6",
+   "bytes": 164543,
+   "kind": "EVENT_DOCUMENT",
+   "ui_lang": "en",
+   "event_row": [
+    "04/03/2026",
+    "Certificate issued by the Board Secretary on the replacement of the annual financial report",
+    "",
+    ""
+   ],
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=O200%2fFw3vCN8tHXgJORaLcnt0PLiPhnwP7IUG2YiCFuP13%2fQ49HhKrz69rsiH53l"
+  },
+  {
+   "file": "evidence/doc-AMPER-en-e3-0.pdf",
+   "sha256": "db52f1955d24031963c83bba9c3898b04b26fc9196e356aee17f46fab8b610a6",
+   "bytes": 164543,
+   "kind": "EVENT_DOCUMENT",
+   "ui_lang": "en",
+   "event_row": [
+    "04/03/2026",
+    "Certificate issued by the Board Secretary on the replacement of the annual financial report",
+    "",
+    ""
+   ],
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=O200%2fFw3vCN8tHXgJORaLcnt0PLiPhnwP7IUG2YiCFuP13%2fQ49HhKrz69rsiH53l"
+  },
+  {
+   "file": "evidence/busqueda25-BANKINTER-es.html",
+   "sha256": "0873c28f3fbef340fbf33e38d9887708005b47cca58f0ce5251aa0b2f4eb5dcb",
+   "bytes": 223483,
+   "kind": "SEARCH_RESULTS_PAGE",
+   "source_url": "https://www.cnmv.es/Portal/consultas/busqueda?id=25&lang=es [POST denom=BANKINTER]",
+   "note": "raw served bytes (refetched after CRLF fix)"
+  },
+  {
+   "file": "evidence/busqueda25-BANKINTER-en.html",
+   "sha256": "2c72a9efeea76e8b123a47da0f90181fc13b46dd3bfad47999f41ede3c7c53ba",
+   "bytes": 216145,
+   "kind": "SEARCH_RESULTS_PAGE",
+   "source_url": "https://www.cnmv.es/Portal/consultas/busqueda?id=25&lang=en [POST denom=BANKINTER]",
+   "note": "raw served bytes (refetched after CRLF fix)"
+  },
+  {
+   "file": "evidence/infadicionifa-BANKINTER-es.html",
+   "sha256": "516db88c2f8c8706b038c8d9914277c4df71df711ce0778a4e74f607354a938f",
+   "bytes": 216649,
+   "kind": "INFADICIONIFA_PAGE",
+   "source_url": "https://www.cnmv.es/portal/consultas/ifa/infadicionifa?id=0&lang=es&nreg=2026026888&nregaud=20860",
+   "note": "raw served bytes (refetched after CRLF fix)"
+  },
+  {
+   "file": "evidence/doc-BANKINTER-es-e1-0.pdf",
+   "sha256": "6080c8659fc22c626ed532f8015d221ce5a22e4434d104636962566e407056b8",
+   "bytes": 142395,
+   "kind": "EVENT_DOCUMENT",
+   "ui_lang": "es",
+   "event_row": [
+    "20/02/2026",
+    "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+    "",
+    ""
+   ],
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=r44bEEAfgJc%2bMcj0H21jUM0hHqmtu1jZlldOIwVIXdKP13%2fQ49HhKrz69rsiH53l"
+  },
+  {
+   "file": "evidence/doc-BANKINTER-es-e2-0.pdf",
+   "sha256": "87050ed4ef394cc34e5a4115c07359e71e4620d7b8801d2ac756fc3d0321a6dd",
+   "bytes": 142395,
+   "kind": "EVENT_DOCUMENT",
+   "ui_lang": "es",
+   "event_row": [
+    "24/02/2026",
+    "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+    "",
+    ""
+   ],
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=HHb5F0LwuQXpuSNgP%2fOhx8dk2gGHSSkn60Dzjc3luO2P13%2fQ49HhKrz69rsiH53l"
+  },
+  {
+   "file": "evidence/infadicionifa-BANKINTER-en.html",
+   "sha256": "777b57a03e341557edaa70f7bc0c382e59de70ff417f9448d8bfebdc3234d2f6",
+   "bytes": 208894,
+   "kind": "INFADICIONIFA_PAGE",
+   "source_url": "https://www.cnmv.es/portal/consultas/ifa/infadicionifa?id=0&lang=en&nreg=2026026888&nregaud=20860",
+   "note": "raw served bytes (refetched after CRLF fix)"
+  },
+  {
+   "file": "evidence/doc-BANKINTER-en-e1-0.pdf",
+   "sha256": "6080c8659fc22c626ed532f8015d221ce5a22e4434d104636962566e407056b8",
+   "bytes": 142395,
+   "kind": "EVENT_DOCUMENT",
+   "ui_lang": "en",
+   "event_row": [
+    "20/02/2026",
+    "Certificate issued by the Board Secretary on the preparation and signature of the annual financial report",
+    "",
+    ""
+   ],
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=r44bEEAfgJc%2bMcj0H21jUM0hHqmtu1jZlldOIwVIXdKP13%2fQ49HhKrz69rsiH53l"
+  },
+  {
+   "file": "evidence/doc-BANKINTER-en-e2-0.pdf",
+   "sha256": "87050ed4ef394cc34e5a4115c07359e71e4620d7b8801d2ac756fc3d0321a6dd",
+   "bytes": 142395,
+   "kind": "EVENT_DOCUMENT",
+   "ui_lang": "en",
+   "event_row": [
+    "24/02/2026",
+    "Certificate issued by the Board Secretary on the replacement of the annual financial report",
+    "",
+    ""
+   ],
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=HHb5F0LwuQXpuSNgP%2fOhx8dk2gGHSSkn60Dzjc3luO2P13%2fQ49HhKrz69rsiH53l"
+  },
+  {
+   "file": "evidence/busqueda25-URBAR-es.html",
+   "sha256": "53a0b3da31e5f90dca2da4d9d9f76073cf95ddcaafc67dcaaa6d7101ed6c9729",
+   "bytes": 223427,
+   "kind": "SEARCH_RESULTS_PAGE",
+   "source_url": "https://www.cnmv.es/Portal/consultas/busqueda?id=25&lang=es [POST denom=URBAR]",
+   "note": "raw served bytes (refetched after CRLF fix)"
+  },
+  {
+   "file": "evidence/pkg-URBAR-es-56032eb7c905.zip",
+   "sha256": "56032eb7c905727193dc70fa4ff8769dd123f8b0c2849a1cab1b7bc85ef5349c",
+   "bytes": 6228844,
+   "kind": "ESEF_PACKAGE_ZIP",
+   "ui_lang": "es",
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=h63iTYA2edUKqRaUj8UmuSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f (busqueda lang=es, registro 21257)"
+  },
+  {
+   "file": "evidence/busqueda25-URBAR-en.html",
+   "sha256": "751116127cc2740f06128214b043965b7303f456e7677af710cb44765b0a3285",
+   "bytes": 216105,
+   "kind": "SEARCH_RESULTS_PAGE",
+   "source_url": "https://www.cnmv.es/Portal/consultas/busqueda?id=25&lang=en [POST denom=URBAR]",
+   "note": "raw served bytes (refetched after CRLF fix)"
+  },
+  {
+   "file": "evidence/pkg-URBAR-es-56032eb7c905.zip",
+   "sha256": "56032eb7c905727193dc70fa4ff8769dd123f8b0c2849a1cab1b7bc85ef5349c",
+   "bytes": 6228844,
+   "kind": "ESEF_PACKAGE_ZIP",
+   "ui_lang": "en",
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=h63iTYA2edUKqRaUj8UmuSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f (busqueda lang=en, registro 21257)"
+  },
+  {
+   "file": "evidence/infadicionifa-URBAR-es.html",
+   "sha256": "d50065f013efa09eb9ce25182ecd3e8268cf7b41e5ba13f1aab6e9f6e4d6eaab",
+   "bytes": 216704,
+   "kind": "INFADICIONIFA_PAGE",
+   "source_url": "https://www.cnmv.es/portal/consultas/ifa/infadicionifa?id=0&lang=es&nreg=2026073666&nregaud=21257",
+   "note": "raw served bytes (refetched after CRLF fix)"
+  },
+  {
+   "file": "evidence/doc-URBAR-es-e1-0.pdf",
+   "sha256": "c27ba0f37f61f4eabca335b2a648248ecc104ed1650deb9380b49c2e5a9c28aa",
+   "bytes": 179043,
+   "kind": "EVENT_DOCUMENT",
+   "ui_lang": "es",
+   "event_row": [
+    "25/05/2026",
+    "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+    "",
+    ""
+   ],
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=I1FXI5MW1NPZUH8CMsSL70xOBi3c3QD1qVeKMQG7uS%2bP13%2fQ49HhKrz69rsiH53l"
+  },
+  {
+   "file": "evidence/doc-URBAR-es-e2-0.pdf",
+   "sha256": "58e61947131d85c7899a4f457e4568c65c20531d8ade4c82265ae788d16a6288",
+   "bytes": 110727,
+   "kind": "EVENT_DOCUMENT",
+   "ui_lang": "es",
+   "event_row": [
+    "18/06/2026",
+    "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+    "",
+    ""
+   ],
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=%2flzwL2l7h1a908bKF6%2fpp5QM%2bxKBomzdz%2fCkjNCsMbGP13%2fQ49HhKrz69rsiH53l"
+  },
+  {
+   "file": "evidence/infadicionifa-URBAR-en.html",
+   "sha256": "ec8858a5fdb8f0d7699a240b2f4be82fc6b6c98b8ceb2fd48bba8fe48fda193a",
+   "bytes": 208949,
+   "kind": "INFADICIONIFA_PAGE",
+   "source_url": "https://www.cnmv.es/portal/consultas/ifa/infadicionifa?id=0&lang=en&nreg=2026073666&nregaud=21257",
+   "note": "raw served bytes (refetched after CRLF fix)"
+  },
+  {
+   "file": "evidence/doc-URBAR-en-e1-0.pdf",
+   "sha256": "c27ba0f37f61f4eabca335b2a648248ecc104ed1650deb9380b49c2e5a9c28aa",
+   "bytes": 179043,
+   "kind": "EVENT_DOCUMENT",
+   "ui_lang": "en",
+   "event_row": [
+    "25/05/2026",
+    "Certificate issued by the Board Secretary on the preparation and signature of the annual financial report",
+    "",
+    ""
+   ],
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=I1FXI5MW1NPZUH8CMsSL70xOBi3c3QD1qVeKMQG7uS%2bP13%2fQ49HhKrz69rsiH53l"
+  },
+  {
+   "file": "evidence/doc-URBAR-en-e2-0.pdf",
+   "sha256": "58e61947131d85c7899a4f457e4568c65c20531d8ade4c82265ae788d16a6288",
+   "bytes": 110727,
+   "kind": "EVENT_DOCUMENT",
+   "ui_lang": "en",
+   "event_row": [
+    "18/06/2026",
+    "Certificate issued by the Board Secretary on the replacement of the annual financial report",
+    "",
+    ""
+   ],
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=%2flzwL2l7h1a908bKF6%2fpp5QM%2bxKBomzdz%2fCkjNCsMbGP13%2fQ49HhKrz69rsiH53l"
+  },
+  {
+   "file": "g1d_capture.json",
+   "sha256": "fc566f0da2b43a6b95ee56dd4b334d7fc7777b6d4662ca820dc432df60937f24",
+   "bytes": 16177,
+   "kind": "CAPTURE_MATRIX"
+  },
+  {
+   "file": "evidence/busqueda25-TELEFONICA-es.html",
+   "sha256": "2271a7c5801115f99bbb0944f7a8327f12c98697f2980ab2453c5f8e5d662e88",
+   "bytes": 227000,
+   "kind": "SEARCH_RESULTS_PAGE",
+   "source_url": "https://www.cnmv.es/Portal/consultas/busqueda?id=25&lang=es",
+   "note": "raw served bytes (refetched after CRLF fix)"
+  },
+  {
+   "file": "evidence/doc-TEF-20484-es-0.prefix",
+   "sha256": "60b1418b77717b89987ec5d70f1416b662f05691403c12741901fa5f11870436",
+   "bytes": 262144,
+   "kind": "DOC_XHTML_PREFIX",
+   "ui_lang": "es",
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=O8E%2b%2fNZSH3yx1fkqKVUxz0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f"
+  },
+  {
+   "file": "evidence/doc-TEF-20484-es-1.prefix",
+   "sha256": "17227ff91ac147abbfce0ff59aa59095780d57df6c5c990b063fe1221964529b",
+   "bytes": 262144,
+   "kind": "DOC_XHTML_PREFIX",
+   "ui_lang": "es",
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=IDZTClDB49q%2bARpFtdRXc0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f"
+  },
+  {
+   "file": "evidence/pkg-TEF-20484-es-cc7f2e1c110e.zip",
+   "sha256": "cc7f2e1c110e6a15673c277d072d7ae16a9bdaadd0242ea8fcac0df90fad42ca",
+   "bytes": 27123830,
+   "kind": "ESEF_PACKAGE_ZIP",
+   "ui_lang": "es",
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=epUNPd6wVdSBcMFnw%2f3GpOUI3MytjNtoCr3CkuvEbTuze5HLI2BThe6mgBjw3Gx%2f"
+  },
+  {
+   "file": "evidence/busqueda25-TELEFONICA-en.html",
+   "sha256": "2c9ed04641cf9ef9e1a8bec74b845216800bd4b25772cb4304b9b5de70842366",
+   "bytes": 219722,
+   "kind": "SEARCH_RESULTS_PAGE",
+   "source_url": "https://www.cnmv.es/Portal/consultas/busqueda?id=25&lang=en",
+   "note": "raw served bytes (refetched after CRLF fix)"
+  },
+  {
+   "file": "evidence/doc-TEF-20484-en-0.prefix",
+   "sha256": "bdf018b026337b3b446ba85a03111ed872fedbca03f3708e5aa62b6e09a54d84",
+   "bytes": 262144,
+   "kind": "DOC_XHTML_PREFIX",
+   "ui_lang": "en",
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=kOKq2bcT0XhFJAUY7KaDRUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f"
+  },
+  {
+   "file": "evidence/doc-TEF-20484-en-1.prefix",
+   "sha256": "8c8a74c7434ff0f5fe1178ad597fa4b8812b95a6b72c677c5bcf80c4cacf080c",
+   "bytes": 262144,
+   "kind": "DOC_XHTML_PREFIX",
+   "ui_lang": "en",
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=rG5xUFoqBWnumZeeM%2fl6FUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f"
+  },
+  {
+   "file": "evidence/pkg-TEF-20484-en-f8726a6e653a.zip",
+   "sha256": "f8726a6e653a62a97be21f6082a1b49e70f8cdc62575513ab5db41fa562214f1",
+   "bytes": 31618309,
+   "kind": "ESEF_PACKAGE_ZIP",
+   "ui_lang": "en",
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=kNEOg6cb5SOz4EkjOvtpg%2bUI3MytjNtoCr3CkuvEbTuze5HLI2BThe6mgBjw3Gx%2f"
+  },
+  {
+   "file": "evidence/infadicionifa-TELEFONICA-es.html",
+   "sha256": "60d94540b902b833f78a0d05d12cdf73d01f58a6333d0843f33bde6298782d0e",
+   "bytes": 217974,
+   "kind": "INFADICIONIFA_PAGE",
+   "source_url": "https://www.cnmv.es/portal/consultas/ifa/infadicionifa?id=0&lang=es&nreg=2025030764&nregaud=20484",
+   "note": "raw served bytes (refetched after CRLF fix)"
+  },
+  {
+   "file": "evidence/doc-TEF-20484-es-e1-0.pdf",
+   "sha256": "e66a65e3ef8219293e8c7749bed7643ecc2920d93d35e0fdd3edd6a32c893466",
+   "bytes": 183414,
+   "kind": "EVENT_DOCUMENT",
+   "ui_lang": "es",
+   "event_row": [
+    "13/03/2025",
+    "Otra información complementaria (Otros)",
+    "",
+    ""
+   ],
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=OTSaBJNlQpxE07cYCuOCDpQLBzHuF7IMWlEYIxOIoQuP13%2fQ49HhKrz69rsiH53l"
+  },
+  {
+   "file": "evidence/doc-TEF-20484-es-e2-0.pdf",
+   "sha256": "fecbe1b7ea475a0cc173cbead275f39da2aa005df833606416c2bc73a0747506",
+   "bytes": 105581,
+   "kind": "EVENT_DOCUMENT",
+   "ui_lang": "es",
+   "event_row": [
+    "27/02/2025",
+    "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+    "",
+    ""
+   ],
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=C8Fb9DibZuYb%2bMHBVjQfKc%2fwg%2fYhVN05kiaOrwRxu9qP13%2fQ49HhKrz69rsiH53l"
+  },
+  {
+   "file": "evidence/doc-TEF-20484-es-e3-0.pdf",
+   "sha256": "27315343e70c4d2335aac3ff18a544467dbf358040688d8ce84d8bb38f136264",
+   "bytes": 185122,
+   "kind": "EVENT_DOCUMENT",
+   "ui_lang": "es",
+   "event_row": [
+    "28/02/2025",
+    "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+    "",
+    ""
+   ],
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=2TruFxgRv3tO9WtLKc0hOwPg9q3gHJycV5YB2RgE8huP13%2fQ49HhKrz69rsiH53l"
+  },
+  {
+   "file": "evidence/infadicionifa-TELEFONICA-en.html",
+   "sha256": "501790eaa17e7bd49792146274517db4deb687ba7a916a1630601001215a86dd",
+   "bytes": 210199,
+   "kind": "INFADICIONIFA_PAGE",
+   "source_url": "https://www.cnmv.es/portal/consultas/ifa/infadicionifa?id=0&lang=en&nreg=2025030764&nregaud=20484",
+   "note": "raw served bytes (refetched after CRLF fix)"
+  },
+  {
+   "file": "evidence/doc-TEF-20484-en-e1-0.pdf",
+   "sha256": "e66a65e3ef8219293e8c7749bed7643ecc2920d93d35e0fdd3edd6a32c893466",
+   "bytes": 183414,
+   "kind": "EVENT_DOCUMENT",
+   "ui_lang": "en",
+   "event_row": [
+    "13/03/2025",
+    "Other supplementary information (Other)",
+    "",
+    ""
+   ],
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=OTSaBJNlQpxE07cYCuOCDpQLBzHuF7IMWlEYIxOIoQuP13%2fQ49HhKrz69rsiH53l"
+  },
+  {
+   "file": "evidence/doc-TEF-20484-en-e2-0.pdf",
+   "sha256": "fecbe1b7ea475a0cc173cbead275f39da2aa005df833606416c2bc73a0747506",
+   "bytes": 105581,
+   "kind": "EVENT_DOCUMENT",
+   "ui_lang": "en",
+   "event_row": [
+    "27/02/2025",
+    "Certificate issued by the Board Secretary on the preparation and signature of the annual financial report",
+    "",
+    ""
+   ],
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=C8Fb9DibZuYb%2bMHBVjQfKc%2fwg%2fYhVN05kiaOrwRxu9qP13%2fQ49HhKrz69rsiH53l"
+  },
+  {
+   "file": "evidence/doc-TEF-20484-en-e3-0.pdf",
+   "sha256": "27315343e70c4d2335aac3ff18a544467dbf358040688d8ce84d8bb38f136264",
+   "bytes": 185122,
+   "kind": "EVENT_DOCUMENT",
+   "ui_lang": "en",
+   "event_row": [
+    "28/02/2025",
+    "Certificate issued by the Board Secretary on the replacement of the annual financial report",
+    "",
+    ""
+   ],
+   "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=2TruFxgRv3tO9WtLKc0hOwPg9q3gHJycV5YB2RgE8huP13%2fQ49HhKrz69rsiH53l"
+  },
+  {
+   "file": "g1d_tef20484.json",
+   "sha256": "145400e96a14b55e9c3d4a54c3cb3f7efd8f81ff4c7c30c985c5667fddf09161",
+   "bytes": 19387,
+   "kind": "ANALYSIS"
+  },
+  {
+   "file": "g1d_probe.py",
+   "sha256": "77f7e48661e50b48c892e24a8495562596d11f957a0999165c95f0a6b61e3a67",
+   "bytes": 12616,
+   "kind": "CODE"
+  },
+  {
+   "file": "g1d_scan.py",
+   "sha256": "11b68bc80e20ad7bc5ba6e578790711597120ecda19c14cbf7f743012f9aae04",
+   "bytes": 8267,
+   "kind": "CODE"
+  },
+  {
+   "file": "g1d_scan2.py",
+   "sha256": "8003de6449bcb6e429038b713160240aacbb37c36d151e75ba3b61573e2e2ed2",
+   "bytes": 4968,
+   "kind": "CODE"
+  },
+  {
+   "file": "g1d_tef_capture.py",
+   "sha256": "497b115fdd2f6a91f01d23bb772ea7aeacbedb890991e3cc2cde1bf9b9130dc5",
+   "bytes": 12709,
+   "kind": "CODE"
+  },
+  {
+   "file": "g1d_results.py",
+   "sha256": "78a26f27cb36c67c5674d87f7d92e0bcc600a4cadebc1bdd858dc91f74e9d3f5",
+   "bytes": 10638,
+   "kind": "CODE"
+  },
+  {
+   "file": "g1d_verify.py",
+   "sha256": "3233d5f3025cfefe9069a122139c18128f1dab55acc6e7ec71357082b2eaabe4",
+   "bytes": 6651,
+   "kind": "CODE"
+  },
+  {
+   "file": "g1d_scan.json",
+   "sha256": "0a03610bdefb87dd2bec187e60a7368f4e31999945fa0fec69dfd86dcec24302",
+   "bytes": 54958,
+   "kind": "ARTIFACT"
+  },
+  {
+   "file": "g1d_scan2.json",
+   "sha256": "26f40a28540ba902b836241beb46346d5196a42e70c0445ddc737cb92b1127db",
+   "bytes": 46694,
+   "kind": "ARTIFACT"
+  },
+  {
+   "file": "g1d_results.json",
+   "sha256": "801161ffb58694472eeeb3e3e2b15ad217ccdb4983c7a5f5fb459356c88cc6fa",
+   "bytes": 7036,
+   "kind": "ARTIFACT"
+  },
+  {
+   "file": "g1d_verify_results.json",
+   "sha256": "17f47fc202822849e6e04212bd0bd3978220ebf4a35591418cbcc089683906fe",
+   "bytes": 1554,
+   "kind": "ARTIFACT"
+  },
+  {
+   "file": "README.md",
+   "sha256": "13c8fcfb8fc2e84a75effac5cac31021aa9b567add6c8b2a0377e5e732e1f153",
+   "bytes": 5092,
+   "kind": "ARTIFACT"
+  }
+ ],
+ "gate": "G1-D VARIANT_LIFECYCLE_FALSIFICATION",
+ "status": "PASS",
+ "code_commit": null,
+ "inputs": [
+  "CNMV busqueda?id=25 (es/en)",
+  "CNMV infadicionifa (es/en)",
+  "CNMV verdocumento artifact bytes",
+  "g1d_scan.json (96 filings)",
+  "g1d_scan2 results",
+  "preserved TEF-20484 cert PDFs"
+ ],
+ "outputs": [
+  "g1d_results.json",
+  "g1d_verify_results.json"
+ ],
+ "sha256": {
+  "evidence/busqueda25-AMPER-es.html": "a16afa93fa5bf6b75fa978b033a08c306057056faa5fbfee6a55aedf53c87a6e",
+  "evidence/pkg-AMPER-es-46282dd8ecd6.zip": "46282dd8ecd6cf57bb9f076586f097904a6df9d19165a2354a41e2c733e1fa29",
+  "evidence/busqueda25-AMPER-en.html": "be288da79c73b0dbfdab4827bcf76ce7a6e95c23cf5787ead8df34f1c518fe61",
+  "evidence/infadicionifa-AMPER-es.html": "a2cbf539e87b9fbf071d02795e98ad3e476b69da40de70cb1ca4e88a41ad14f7",
+  "evidence/doc-AMPER-es-e1-0.pdf": "a7d4bf453ad13bcda4862990b7b624f20fda86c683f83be9d5fd5b2c08b80741",
+  "evidence/doc-AMPER-es-e2-0.pdf": "db52f1955d24031963c83bba9c3898b04b26fc9196e356aee17f46fab8b610a6",
+  "evidence/doc-AMPER-es-e3-0.pdf": "db52f1955d24031963c83bba9c3898b04b26fc9196e356aee17f46fab8b610a6",
+  "evidence/infadicionifa-AMPER-en.html": "7bcb741b056aea403cc0a924d424d6dcfc06ab1305616fb43c3bd81d744bc3bc",
+  "evidence/doc-AMPER-en-e1-0.pdf": "a7d4bf453ad13bcda4862990b7b624f20fda86c683f83be9d5fd5b2c08b80741",
+  "evidence/doc-AMPER-en-e2-0.pdf": "db52f1955d24031963c83bba9c3898b04b26fc9196e356aee17f46fab8b610a6",
+  "evidence/doc-AMPER-en-e3-0.pdf": "db52f1955d24031963c83bba9c3898b04b26fc9196e356aee17f46fab8b610a6",
+  "evidence/busqueda25-BANKINTER-es.html": "0873c28f3fbef340fbf33e38d9887708005b47cca58f0ce5251aa0b2f4eb5dcb",
+  "evidence/busqueda25-BANKINTER-en.html": "2c72a9efeea76e8b123a47da0f90181fc13b46dd3bfad47999f41ede3c7c53ba",
+  "evidence/infadicionifa-BANKINTER-es.html": "516db88c2f8c8706b038c8d9914277c4df71df711ce0778a4e74f607354a938f",
+  "evidence/doc-BANKINTER-es-e1-0.pdf": "6080c8659fc22c626ed532f8015d221ce5a22e4434d104636962566e407056b8",
+  "evidence/doc-BANKINTER-es-e2-0.pdf": "87050ed4ef394cc34e5a4115c07359e71e4620d7b8801d2ac756fc3d0321a6dd",
+  "evidence/infadicionifa-BANKINTER-en.html": "777b57a03e341557edaa70f7bc0c382e59de70ff417f9448d8bfebdc3234d2f6",
+  "evidence/doc-BANKINTER-en-e1-0.pdf": "6080c8659fc22c626ed532f8015d221ce5a22e4434d104636962566e407056b8",
+  "evidence/doc-BANKINTER-en-e2-0.pdf": "87050ed4ef394cc34e5a4115c07359e71e4620d7b8801d2ac756fc3d0321a6dd",
+  "evidence/busqueda25-URBAR-es.html": "53a0b3da31e5f90dca2da4d9d9f76073cf95ddcaafc67dcaaa6d7101ed6c9729",
+  "evidence/pkg-URBAR-es-56032eb7c905.zip": "56032eb7c905727193dc70fa4ff8769dd123f8b0c2849a1cab1b7bc85ef5349c",
+  "evidence/busqueda25-URBAR-en.html": "751116127cc2740f06128214b043965b7303f456e7677af710cb44765b0a3285",
+  "evidence/infadicionifa-URBAR-es.html": "d50065f013efa09eb9ce25182ecd3e8268cf7b41e5ba13f1aab6e9f6e4d6eaab",
+  "evidence/doc-URBAR-es-e1-0.pdf": "c27ba0f37f61f4eabca335b2a648248ecc104ed1650deb9380b49c2e5a9c28aa",
+  "evidence/doc-URBAR-es-e2-0.pdf": "58e61947131d85c7899a4f457e4568c65c20531d8ade4c82265ae788d16a6288",
+  "evidence/infadicionifa-URBAR-en.html": "ec8858a5fdb8f0d7699a240b2f4be82fc6b6c98b8ceb2fd48bba8fe48fda193a",
+  "evidence/doc-URBAR-en-e1-0.pdf": "c27ba0f37f61f4eabca335b2a648248ecc104ed1650deb9380b49c2e5a9c28aa",
+  "evidence/doc-URBAR-en-e2-0.pdf": "58e61947131d85c7899a4f457e4568c65c20531d8ade4c82265ae788d16a6288",
+  "g1d_capture.json": "fc566f0da2b43a6b95ee56dd4b334d7fc7777b6d4662ca820dc432df60937f24",
+  "evidence/busqueda25-TELEFONICA-es.html": "2271a7c5801115f99bbb0944f7a8327f12c98697f2980ab2453c5f8e5d662e88",
+  "evidence/doc-TEF-20484-es-0.prefix": "60b1418b77717b89987ec5d70f1416b662f05691403c12741901fa5f11870436",
+  "evidence/doc-TEF-20484-es-1.prefix": "17227ff91ac147abbfce0ff59aa59095780d57df6c5c990b063fe1221964529b",
+  "evidence/pkg-TEF-20484-es-cc7f2e1c110e.zip": "cc7f2e1c110e6a15673c277d072d7ae16a9bdaadd0242ea8fcac0df90fad42ca",
+  "evidence/busqueda25-TELEFONICA-en.html": "2c9ed04641cf9ef9e1a8bec74b845216800bd4b25772cb4304b9b5de70842366",
+  "evidence/doc-TEF-20484-en-0.prefix": "bdf018b026337b3b446ba85a03111ed872fedbca03f3708e5aa62b6e09a54d84",
+  "evidence/doc-TEF-20484-en-1.prefix": "8c8a74c7434ff0f5fe1178ad597fa4b8812b95a6b72c677c5bcf80c4cacf080c",
+  "evidence/pkg-TEF-20484-en-f8726a6e653a.zip": "f8726a6e653a62a97be21f6082a1b49e70f8cdc62575513ab5db41fa562214f1",
+  "evidence/infadicionifa-TELEFONICA-es.html": "60d94540b902b833f78a0d05d12cdf73d01f58a6333d0843f33bde6298782d0e",
+  "evidence/doc-TEF-20484-es-e1-0.pdf": "e66a65e3ef8219293e8c7749bed7643ecc2920d93d35e0fdd3edd6a32c893466",
+  "evidence/doc-TEF-20484-es-e2-0.pdf": "fecbe1b7ea475a0cc173cbead275f39da2aa005df833606416c2bc73a0747506",
+  "evidence/doc-TEF-20484-es-e3-0.pdf": "27315343e70c4d2335aac3ff18a544467dbf358040688d8ce84d8bb38f136264",
+  "evidence/infadicionifa-TELEFONICA-en.html": "501790eaa17e7bd49792146274517db4deb687ba7a916a1630601001215a86dd",
+  "evidence/doc-TEF-20484-en-e1-0.pdf": "e66a65e3ef8219293e8c7749bed7643ecc2920d93d35e0fdd3edd6a32c893466",
+  "evidence/doc-TEF-20484-en-e2-0.pdf": "fecbe1b7ea475a0cc173cbead275f39da2aa005df833606416c2bc73a0747506",
+  "evidence/doc-TEF-20484-en-e3-0.pdf": "27315343e70c4d2335aac3ff18a544467dbf358040688d8ce84d8bb38f136264",
+  "g1d_tef20484.json": "145400e96a14b55e9c3d4a54c3cb3f7efd8f81ff4c7c30c985c5667fddf09161",
+  "g1d_probe.py": "77f7e48661e50b48c892e24a8495562596d11f957a0999165c95f0a6b61e3a67",
+  "g1d_scan.py": "11b68bc80e20ad7bc5ba6e578790711597120ecda19c14cbf7f743012f9aae04",
+  "g1d_scan2.py": "8003de6449bcb6e429038b713160240aacbb37c36d151e75ba3b61573e2e2ed2",
+  "g1d_tef_capture.py": "497b115fdd2f6a91f01d23bb772ea7aeacbedb890991e3cc2cde1bf9b9130dc5",
+  "g1d_results.py": "78a26f27cb36c67c5674d87f7d92e0bcc600a4cadebc1bdd858dc91f74e9d3f5",
+  "g1d_verify.py": "3233d5f3025cfefe9069a122139c18128f1dab55acc6e7ec71357082b2eaabe4",
+  "g1d_scan.json": "0a03610bdefb87dd2bec187e60a7368f4e31999945fa0fec69dfd86dcec24302",
+  "g1d_scan2.json": "26f40a28540ba902b836241beb46346d5196a42e70c0445ddc737cb92b1127db",
+  "g1d_results.json": "801161ffb58694472eeeb3e3e2b15ad217ccdb4983c7a5f5fb459356c88cc6fa",
+  "g1d_verify_results.json": "17f47fc202822849e6e04212bd0bd3978220ebf4a35591418cbcc089683906fe",
+  "README.md": "13c8fcfb8fc2e84a75effac5cac31021aa9b567add6c8b2a0377e5e732e1f153"
+ },
+ "findings": [
+  "TELEFONICA nregaud 20484 is DUAL_VARIANT_SHARED_REGISTRY with 2 substitution events",
+  "2025-03-13 event = EN_ONLY_REPLACED (official cert: published English consolidated statements appeared in Spanish)",
+  "2025-02-28 event = VARIANT_SCOPE_NOT_OBSERVABLE (individual-accounts scope, silent on language)",
+  "INDEPENDENT_VARIANT_LIFECYCLE_PROVEN -> variant -> versions gains strong evidence",
+  "event label unreliable: decisive event labelled otros, not sustitucion",
+  "AMPER/BANKINTER/URBAR substitutions are SINGLE_VARIANT_WITH_UI_FALLBACK - cannot falsify"
+ ],
+ "limitations": [
+  "CNMV serves only current state; pre-substitution package bytes not observable",
+  "label-based substitution scan is a lower bound",
+  "one observed en-only event does not prove partial replacement is always possible"
+ ]
+}

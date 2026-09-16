@@ -1,0 +1,60 @@
+{
+ "verdict": "PASS",
+ "checks": [
+  {
+   "check": "tef20484_dual_variant",
+   "status": "PASS",
+   "detail": "es=cc7f2e1c110e en=f8726a6e653a"
+  },
+  {
+   "check": "variant_packages_preserved",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "en_only_replaced_event",
+   "status": "PASS",
+   "detail": "que se ha detectado que, la versión en inglés publicada de los Estados Financieros Consolidados de Telefónica,"
+  },
+  {
+   "check": "feb_event_scope_not_observable",
+   "status": "PASS",
+   "detail": "la incorporación a las Cuentas Anuales Individuales de Telefónica, S.A. del ejercicio 2024 del informe de audi"
+  },
+  {
+   "check": "shared_event_history_same_docs",
+   "status": "PASS",
+   "detail": "es/en views serve byte-identical certificates"
+  },
+  {
+   "check": "scope_vocabulary_and_no_inferred_both",
+   "status": "PASS",
+   "detail": "scopes=['EN_ONLY_REPLACED', 'VARIANT_SCOPE_NOT_OBSERVABLE']"
+  },
+  {
+   "check": "filing_verdict_independent_lifecycle",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "other_candidates_not_dual",
+   "status": "PASS",
+   "detail": "[('AMPER', 'SINGLE_VARIANT_WITH_UI_FALLBACK'), ('BANKINTER', 'SINGLE_VARIANT_WITH_UI_FALLBACK'), ('URBAR', 'SINGLE_VARIANT_WITH_UI_FALLBACK')]"
+  },
+  {
+   "check": "pdf_text_extraction_deterministic",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "results_dataset_deterministic",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "manifest_artifacts_preserved",
+   "status": "PASS",
+   "detail": "59 artifacts ok"
+  }
+ ]
+}

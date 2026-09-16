@@ -1,0 +1,249 @@
+{
+ "gate": "G1-D VARIANT_LIFECYCLE_FALSIFICATION",
+ "question": "Can a version_event affect only a subset of submission_variant, or does a CNMV substitution always replace the complete submission set?",
+ "scope_vocabulary": [
+  "BOTH_VARIANTS_REPLACED",
+  "ES_ONLY_REPLACED",
+  "EN_ONLY_REPLACED",
+  "VARIANT_SCOPE_NOT_OBSERVABLE"
+ ],
+ "scan": {
+  "filings_scanned": 96,
+  "dual_variant_filings": [
+   {
+    "denom": "INDITEX",
+    "nregaud": "20121",
+    "period_end": "31/01/2024"
+   },
+   {
+    "denom": "INDITEX",
+    "nregaud": "20525",
+    "period_end": "31/01/2025"
+   },
+   {
+    "denom": "INDITEX",
+    "nregaud": "20941",
+    "period_end": "31/01/2026"
+   },
+   {
+    "denom": "MERLIN PROPERTIES",
+    "nregaud": "20080",
+    "period_end": "31/12/2023"
+   },
+   {
+    "denom": "MERLIN PROPERTIES",
+    "nregaud": "20492",
+    "period_end": "31/12/2024"
+   },
+   {
+    "denom": "MERLIN PROPERTIES",
+    "nregaud": "20913",
+    "period_end": "31/12/2025"
+   },
+   {
+    "denom": "BANCO SANTANDER",
+    "nregaud": "20044",
+    "period_end": "31/12/2023"
+   },
+   {
+    "denom": "BANCO SANTANDER",
+    "nregaud": "20509",
+    "period_end": "31/12/2024"
+   },
+   {
+    "denom": "BANCO SANTANDER",
+    "nregaud": "20875",
+    "period_end": "31/12/2025"
+   },
+   {
+    "denom": "TELEFONICA",
+    "nregaud": "20052",
+    "period_end": "31/12/2023"
+   },
+   {
+    "denom": "TELEFONICA",
+    "nregaud": "20484",
+    "period_end": "31/12/2024"
+   },
+   {
+    "denom": "TELEFONICA",
+    "nregaud": "20868",
+    "period_end": "31/12/2025"
+   }
+  ],
+  "filings_with_substitution_row": [
+   {
+    "denom": "ACCIONA",
+    "nregaud": "20113",
+    "period_end": "31/12/2023",
+    "substitution_rows": 1
+   },
+   {
+    "denom": "AMADEUS",
+    "nregaud": "20505",
+    "period_end": "31/12/2024",
+    "substitution_rows": 1
+   },
+   {
+    "denom": "BANKINTER",
+    "nregaud": "20860",
+    "period_end": "31/12/2025",
+    "substitution_rows": 1
+   },
+   {
+    "denom": "TELEFONICA",
+    "nregaud": "20484",
+    "period_end": "31/12/2024",
+    "substitution_rows": 1
+   },
+   {
+    "denom": "AMPER",
+    "nregaud": "20103",
+    "period_end": "31/12/2023",
+    "substitution_rows": 1
+   },
+   {
+    "denom": "AMPER",
+    "nregaud": "20519",
+    "period_end": "31/12/2024",
+    "substitution_rows": 1
+   },
+   {
+    "denom": "AMPER",
+    "nregaud": "20938",
+    "period_end": "31/12/2025",
+    "substitution_rows": 2
+   },
+   {
+    "denom": "URBAR",
+    "nregaud": "21257",
+    "period_end": "31/12/2025",
+    "substitution_rows": 1
+   }
+  ],
+  "dual_plus_substitution": [
+   {
+    "denom": "TELEFONICA",
+    "nregaud": "20484",
+    "period_end": "31/12/2024"
+   }
+  ],
+  "note": "substitution detection counts rows whose event label contains 'sustitución'; TEF-20484's decisive event is labelled 'otros', so label-based detection is a lower bound only"
+ },
+ "candidates": [
+  {
+   "issuer": "AMPER",
+   "nregaud": "20938",
+   "verdict": "SINGLE_VARIANT_WITH_UI_FALLBACK",
+   "classification_method": "PACKAGE_LANG_TAG",
+   "substitution_rows": 2,
+   "can_falsify": false
+  },
+  {
+   "issuer": "BANKINTER",
+   "nregaud": "20860",
+   "verdict": "SINGLE_VARIANT_WITH_UI_FALLBACK",
+   "classification_method": "ZIP_TOKEN_EQUAL",
+   "substitution_rows": 1,
+   "can_falsify": false
+  },
+  {
+   "issuer": "URBAR",
+   "nregaud": "21257",
+   "verdict": "SINGLE_VARIANT_WITH_UI_FALLBACK",
+   "classification_method": "PACKAGE_LANG_TAG",
+   "substitution_rows": 1,
+   "can_falsify": false
+  },
+  {
+   "issuer": "TELEFONICA",
+   "nregaud": "20484",
+   "verdict": "DUAL_VARIANT_SHARED_REGISTRY",
+   "classification_method": "PACKAGE_LANG_TAG+PACKAGE_SHA256",
+   "submitted_variants": [
+    "en",
+    "es"
+   ],
+   "package_sha256": {
+    "es": "cc7f2e1c110e6a15673c277d072d7ae16a9bdaadd0242ea8fcac0df90fad42ca",
+    "en": "f8726a6e653a62a97be21f6082a1b49e70f8cdc62575513ab5db41fa562214f1"
+   },
+   "can_falsify": true
+  }
+ ],
+ "tef_20484": {
+  "verdict_p1": "DUAL_VARIANT_SHARED_REGISTRY",
+  "nregaud": "20484",
+  "nreg": "2025030764",
+  "nreg_history": [
+   {
+    "nreg": "2025030764",
+    "submitted": "2025-02-27",
+    "kind": "ORIGINAL_SUBMISSION"
+   },
+   {
+    "nreg": "2025031622",
+    "submitted": "2025-02-28",
+    "kind": "SUBSTITUTION",
+    "replaces": "2025030764",
+    "scope": "VARIANT_SCOPE_NOT_OBSERVABLE"
+   },
+   {
+    "nreg": null,
+    "submitted": "2025-03-13",
+    "kind": "SUBSTITUTION",
+    "replaces": "2025031622",
+    "scope": "EN_ONLY_REPLACED"
+   }
+  ],
+  "events": [
+   {
+    "event_date": "2025-02-28",
+    "event_label": "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+    "doc": "doc-TEF-20484-es-e3-0.pdf",
+    "doc_sha256": "27315343e70c4d2335aac3ff18a544467dbf358040688d8ce84d8bb38f136264",
+    "replaces_nreg": "2025030764",
+    "new_nreg": "2025031622",
+    "reason_clause": "la incorporación a las Cuentas Anuales Individuales de Telefónica, S.A. del ejercicio 2024 del informe de auditoría, de la declaración de responsabilidad y de la hoja de firmas",
+    "reason_scopes_language": false,
+    "scope": "VARIANT_SCOPE_NOT_OBSERVABLE",
+    "scope_basis": "reason clause does not identify the affected artefact set at variant granularity"
+   },
+   {
+    "event_date": "2025-03-13",
+    "event_label": "Otra información complementaria (Otros)  [label is not 'sustitución'; doc content is a substitution certificate]",
+    "doc": "doc-TEF-20484-es-e1-0.pdf",
+    "doc_sha256": "e66a65e3ef8219293e8c7749bed7643ecc2920d93d35e0fdd3edd6a32c893466",
+    "replaces_nreg": "2025031622",
+    "new_nreg": null,
+    "reason_clause": "que se ha detectado que, la versión en inglés publicada de los Estados Financieros Consolidados de Telefónica, S.A. y de las sociedades dependientes que componen su Grupo, y el respectivo Informe de Gestión, aparece en español",
+    "reason_scopes_language": true,
+    "scope": "EN_ONLY_REPLACED",
+    "scope_basis": "reason clause explicitly scopes the replaced artefact to the English published version"
+   }
+  ],
+  "event_doc_bytes_equal_across_ui_langs": {
+   "doc-TEF-20484-es-e1-0.pdf": true,
+   "doc-TEF-20484-es-e2-0.pdf": true,
+   "doc-TEF-20484-es-e3-0.pdf": true
+  },
+  "served_package_internal_zip_dates": {
+   "es": [
+    "(2025, 2, 27, 15, 15, 22)",
+    "(2025, 2, 27, 15, 15, 24)"
+   ],
+   "en": [
+    "(2025, 2, 27, 15, 14, 54)",
+    "(2025, 2, 27, 15, 14, 56)"
+   ]
+  }
+ },
+ "verdict": {
+  "filing": "INDEPENDENT_VARIANT_LIFECYCLE_PROVEN",
+  "events_with_variant_scope": [
+   "EN_ONLY_REPLACED"
+  ],
+  "model_implication": "A version_event affected only the -en submission_variant (official certificate: the published English version of the consolidated statements appeared in Spanish). Shared registry + shared event log, but per-variant artefact scope -> variant -> versions gains strong evidence.",
+  "both_not_inferred": "No event is classified BOTH_VARIANTS_REPLACED merely because registry/dates are shared; the 28/02 event stays VARIANT_SCOPE_NOT_OBSERVABLE (reason scoped to individual accounts, silent on language)."
+ }
+}

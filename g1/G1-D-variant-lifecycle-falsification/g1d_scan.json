@@ -1,0 +1,2003 @@
+{
+ "executed_at": "2026-09-16T16:26:28.629877+00:00",
+ "results": [
+  {
+   "denom": "ACS",
+   "entity_pick": null,
+   "row": {
+    "cells": [
+     "20952",
+     "31/12/2025",
+     "31/03/2026",
+     "DELOITTE AUDITORES, S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "TJE5sZHVYogCoKrsNAK4WEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "YF%2b9vAgQDDbWP9zgJ36c9UvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "BKWcMTEG2CRZcpvjHwDUyCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026045496&nregaud=20952"
+    ]
+   },
+   "registro": "20952",
+   "pub_date": "31/03/2026",
+   "nreg": "2026045496",
+   "nregaud": "20952",
+   "substitution_events_es": [],
+   "row_en": {
+    "cells": [
+     "20952",
+     "31/12/2025",
+     "31/03/2026",
+     "DELOITTE AUDITORES, S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "TJE5sZHVYogCoKrsNAK4WEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "YF%2b9vAgQDDbWP9zgJ36c9UvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "BKWcMTEG2CRZcpvjHwDUyCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026045496&nregaud=20952"
+    ]
+   },
+   "zip_token_es": "BKWcMTEG2CRZcpvjHwDUyCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "BKWcMTEG2CRZcpvjHwDUyCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": true,
+   "status": "NO_SUBSTITUTION"
+  },
+  {
+   "denom": "ACCIONA",
+   "entity_pick": "ACCIONA, S.A.",
+   "row": {
+    "cells": [
+     "20915",
+     "31/12/2025",
+     "26/02/2026",
+     "KPMG AUDITORES,S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "Uwv0NU4yMTGvtKz48Q86MkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "exC7F2ep0HnQwLN%2bxfG3MkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "%2b2tcVMDf7NlY57uEfJvdmSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026030459&nregaud=20915"
+    ]
+   },
+   "registro": "20915",
+   "pub_date": "26/02/2026",
+   "nreg": "2026030459",
+   "nregaud": "20915",
+   "substitution_events_es": [],
+   "row_en": {
+    "cells": [
+     "20915",
+     "31/12/2025",
+     "26/02/2026",
+     "KPMG AUDITORES,S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "Uwv0NU4yMTGvtKz48Q86MkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "exC7F2ep0HnQwLN%2bxfG3MkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "%2b2tcVMDf7NlY57uEfJvdmSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026030459&nregaud=20915"
+    ]
+   },
+   "zip_token_es": "%2b2tcVMDf7NlY57uEfJvdmSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "%2b2tcVMDf7NlY57uEfJvdmSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": true,
+   "status": "NO_SUBSTITUTION"
+  },
+  {
+   "denom": "ACERINOX",
+   "entity_pick": null,
+   "row": {
+    "cells": [
+     "20916",
+     "31/12/2025",
+     "26/02/2026",
+     "PRICEWATERHOUSECOOPERS AUDITORES, S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "iLxFgY13yDZcAhrmftBb0kvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "NLvjz0PxmlFiBidxkSLN9kvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "VktMZi81PpEG7FaR2g0T4yGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026030467&nregaud=20916"
+    ]
+   },
+   "registro": "20916",
+   "pub_date": "26/02/2026",
+   "nreg": "2026030467",
+   "nregaud": "20916",
+   "substitution_events_es": [],
+   "row_en": {
+    "cells": [
+     "20916",
+     "31/12/2025",
+     "26/02/2026",
+     "PRICEWATERHOUSECOOPERS AUDITORES, S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "DVetVByqDIdy68RJIc%2bA0yJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "YGUFLExWWRDNHhr%2fuvtd1iJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "VktMZi81PpEG7FaR2g0T4yGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026030467&nregaud=20916"
+    ]
+   },
+   "zip_token_es": "VktMZi81PpEG7FaR2g0T4yGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "VktMZi81PpEG7FaR2g0T4yGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": true,
+   "status": "NO_SUBSTITUTION"
+  },
+  {
+   "denom": "AENA",
+   "entity_pick": null,
+   "row": {
+    "cells": [
+     "20871",
+     "31/12/2025",
+     "25/02/2026",
+     "KPMG AUDITORES,S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "slG1ASn4YPD866WiuQnTk0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "IjSeODpxkpsQsTA0SEXrUUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "N4ZH7fn6E6UGbBOn6JWlCSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026028898&nregaud=20871"
+    ]
+   },
+   "registro": "20871",
+   "pub_date": "25/02/2026",
+   "nreg": "2026028898",
+   "nregaud": "20871",
+   "substitution_events_es": [],
+   "row_en": {
+    "cells": [
+     "20871",
+     "31/12/2025",
+     "25/02/2026",
+     "KPMG AUDITORES,S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "4sdtVRPBHiHfaDOpzfTN7iJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "PNTKQWwKj32eS9n5vK2NZiJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "N4ZH7fn6E6UGbBOn6JWlCSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026028898&nregaud=20871"
+    ]
+   },
+   "zip_token_es": "N4ZH7fn6E6UGbBOn6JWlCSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "N4ZH7fn6E6UGbBOn6JWlCSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": true,
+   "status": "NO_SUBSTITUTION"
+  },
+  {
+   "denom": "AMADEUS",
+   "entity_pick": null,
+   "row": {
+    "cells": [
+     "20921",
+     "31/12/2025",
+     "27/02/2026",
+     "ERNST &amp; YOUNG, S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "zGzuOe4F7OIeg%2b%2bm%2brnUbkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "X27XOUA63rf21Jxwp%2fOwWEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "0NuRiWI10ob4rFEDegNvwCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026030514&nregaud=20921"
+    ]
+   },
+   "registro": "20921",
+   "pub_date": "27/02/2026",
+   "nreg": "2026030514",
+   "nregaud": "20921",
+   "substitution_events_es": [],
+   "row_en": {
+    "cells": [
+     "20921",
+     "31/12/2025",
+     "27/02/2026",
+     "ERNST &amp; YOUNG, S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "WneZQPrT1lKBIsO6qDOBISJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "s7tlnIt91wk6o2reBRSexiJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "0NuRiWI10ob4rFEDegNvwCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026030514&nregaud=20921"
+    ]
+   },
+   "zip_token_es": "0NuRiWI10ob4rFEDegNvwCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "0NuRiWI10ob4rFEDegNvwCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": true,
+   "status": "NO_SUBSTITUTION"
+  },
+  {
+   "denom": "BANKINTER",
+   "entity_pick": "BANKINTER, S.A.",
+   "row": {
+    "cells": [
+     "20860",
+     "31/12/2025",
+     "24/02/2026",
+     "PRICEWATERHOUSECOOPERS AUDITORES, S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "5UuqnzCCfqrwyd4LKFjRzEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "liOmiDKHqonCwikJGsBsEkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "68b1vVV5egmawnK7e0hZfiGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026026888&nregaud=20860"
+    ]
+   },
+   "registro": "20860",
+   "pub_date": "24/02/2026",
+   "nreg": "2026026888",
+   "nregaud": "20860",
+   "substitution_events_es": [
+    [
+     "24/02/2026",
+     "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "row_en": {
+    "cells": [
+     "20860",
+     "31/12/2025",
+     "24/02/2026",
+     "PRICEWATERHOUSECOOPERS AUDITORES, S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "HAYasz9jEd85lWMk%2bS9DXyJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "KkLNcw5F6HOaD8I3VXqgHSJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "68b1vVV5egmawnK7e0hZfiGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026026888&nregaud=20860"
+    ]
+   },
+   "zip_token_es": "68b1vVV5egmawnK7e0hZfiGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "68b1vVV5egmawnK7e0hZfiGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": true,
+   "status": "SUBSTITUTION"
+  },
+  {
+   "denom": "CAIXABANK",
+   "entity_pick": "CAIXABANK, S.A.",
+   "row": {
+    "cells": [
+     "20861",
+     "31/12/2025",
+     "20/02/2026",
+     "PRICEWATERHOUSECOOPERS AUDITORES, S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "N8%2bZgD8mPPqU3INSAnX0bUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "gFUp398Dxmu3H%2bvhhz6XxEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "RJmo2YmaQR585PwdL%2bQhCiGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026027355&nregaud=20861"
+    ]
+   },
+   "registro": "20861",
+   "pub_date": "20/02/2026",
+   "nreg": "2026027355",
+   "nregaud": "20861",
+   "substitution_events_es": [],
+   "row_en": {
+    "cells": [
+     "20861",
+     "31/12/2025",
+     "20/02/2026",
+     "PRICEWATERHOUSECOOPERS AUDITORES, S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "RA2VXu9TYE6qA%2bCLWwQUQCJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "HTSD9hObQ7S8tGumbLLL2iJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "RJmo2YmaQR585PwdL%2bQhCiGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026027355&nregaud=20861"
+    ]
+   },
+   "zip_token_es": "RJmo2YmaQR585PwdL%2bQhCiGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "RJmo2YmaQR585PwdL%2bQhCiGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": true,
+   "status": "NO_SUBSTITUTION"
+  },
+  {
+   "denom": "CELLNEX",
+   "entity_pick": null,
+   "row": {
+    "cells": [
+     "20917",
+     "31/12/2025",
+     "27/02/2026",
+     "ERNST &amp; YOUNG, S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "bSfknbmHritW2SOxnvEpw0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "ZjziuaySDxSd0S0XlhXlb0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "WXOccIj0VtKEzZHTwfF61yGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026030484&nregaud=20917"
+    ]
+   },
+   "registro": "20917",
+   "pub_date": "27/02/2026",
+   "nreg": "2026030484",
+   "nregaud": "20917",
+   "substitution_events_es": [],
+   "row_en": {
+    "cells": [
+     "20917",
+     "31/12/2025",
+     "27/02/2026",
+     "ERNST &amp; YOUNG, S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "TdclzyNpmlkqp4c3ZZ8IkCJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "B5%2bLnvX3FAssc6KTrGrs2yJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "WXOccIj0VtKEzZHTwfF61yGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026030484&nregaud=20917"
+    ]
+   },
+   "zip_token_es": "WXOccIj0VtKEzZHTwfF61yGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "WXOccIj0VtKEzZHTwfF61yGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": true,
+   "status": "NO_SUBSTITUTION"
+  },
+  {
+   "denom": "INMOBILIARIA COLONIAL",
+   "entity_pick": null,
+   "row": {
+    "cells": [
+     "20911",
+     "31/12/2025",
+     "26/02/2026",
+     "DELOITTE AUDITORES, S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "OUL43x4CCmUFqSzEpQHXQEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "sFrhRI8zJFRTOqAPLQPx3kvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "wxerGffXgJpEMO1HfiypwiGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026030404&nregaud=20911"
+    ]
+   },
+   "registro": "20911",
+   "pub_date": "26/02/2026",
+   "nreg": "2026030404",
+   "nregaud": "20911",
+   "substitution_events_es": [],
+   "row_en": {
+    "cells": [
+     "20911",
+     "31/12/2025",
+     "26/02/2026",
+     "DELOITTE AUDITORES, S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "ASzeHF9UxmPL2Qj1dxbJCCJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "8BM8zipyi3yIrALiXwpLRiJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "wxerGffXgJpEMO1HfiypwiGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026030404&nregaud=20911"
+    ]
+   },
+   "zip_token_es": "wxerGffXgJpEMO1HfiypwiGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "wxerGffXgJpEMO1HfiypwiGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": true,
+   "status": "NO_SUBSTITUTION"
+  },
+  {
+   "denom": "ENDESA",
+   "entity_pick": null,
+   "row": {
+    "cells": [
+     "20865",
+     "31/12/2025",
+     "24/02/2026",
+     "KPMG AUDITORES,S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "GT9Cm%2fM%2bs6JEeWcLcbZjtUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "dV7thpgoqf4PlVPYn2gSAkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "xaoFpJ8dgD6vI7JjWO7eLSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026028178&nregaud=20865"
+    ]
+   },
+   "registro": "20865",
+   "pub_date": "24/02/2026",
+   "nreg": "2026028178",
+   "nregaud": "20865",
+   "substitution_events_es": [],
+   "row_en": {
+    "cells": [
+     "20865",
+     "31/12/2025",
+     "24/02/2026",
+     "KPMG AUDITORES,S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "9gkqtieDu5WI%2fr%2b3fDTpHCJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "F7ztQ6bvEBYSO6Z9EKZ%2foSJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "xaoFpJ8dgD6vI7JjWO7eLSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026028178&nregaud=20865"
+    ]
+   },
+   "zip_token_es": "xaoFpJ8dgD6vI7JjWO7eLSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "xaoFpJ8dgD6vI7JjWO7eLSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": true,
+   "status": "NO_SUBSTITUTION"
+  },
+  {
+   "denom": "ENAGAS",
+   "entity_pick": null,
+   "row": {
+    "cells": [
+     "20856",
+     "31/12/2025",
+     "17/02/2026",
+     "ERNST &amp; YOUNG",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "5bWbtFA9y7ecsffhzeSQMEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "8gOfoP3cLvE3fhIBEk8pXkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "5XGLNN%2bHgZ9hBbYxna%2f8jCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026024564&nregaud=20856"
+    ]
+   },
+   "registro": "20856",
+   "pub_date": "17/02/2026",
+   "nreg": "2026024564",
+   "nregaud": "20856",
+   "substitution_events_es": [],
+   "row_en": {
+    "cells": [
+     "20856",
+     "31/12/2025",
+     "17/02/2026",
+     "ERNST &amp; YOUNG",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "diUhHxat4Z7eK9hdxDLsfiJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "UGzcJ8hGT8qNJrhHk%2bT47CJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "5XGLNN%2bHgZ9hBbYxna%2f8jCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026024564&nregaud=20856"
+    ]
+   },
+   "zip_token_es": "5XGLNN%2bHgZ9hBbYxna%2f8jCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "5XGLNN%2bHgZ9hBbYxna%2f8jCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": true,
+   "status": "NO_SUBSTITUTION"
+  },
+  {
+   "denom": "FERROVIAL",
+   "entity_pick": null,
+   "row": null,
+   "status": "NO_FY2025_ROW"
+  },
+  {
+   "denom": "FLUIDRA",
+   "entity_pick": null,
+   "row": {
+    "cells": [
+     "20947",
+     "31/12/2025",
+     "26/03/2026",
+     "ERNST &amp; YOUNG, S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "dPvgZuAj9HfRGgNxjcHfT0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "3HEM5ztwCT3cysF0B0tLWkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "CezNyJAO6LGc5SzODNyJQCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026043360&nregaud=20947"
+    ]
+   },
+   "registro": "20947",
+   "pub_date": "26/03/2026",
+   "nreg": "2026043360",
+   "nregaud": "20947",
+   "substitution_events_es": [],
+   "row_en": {
+    "cells": [
+     "20947",
+     "31/12/2025",
+     "26/03/2026",
+     "ERNST &amp; YOUNG, S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "sa2uTrtAgXMqfkntRlnQIiJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "9psaeLxyZn4huC%2fJnyqEFyJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "CezNyJAO6LGc5SzODNyJQCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026043360&nregaud=20947"
+    ]
+   },
+   "zip_token_es": "CezNyJAO6LGc5SzODNyJQCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "CezNyJAO6LGc5SzODNyJQCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": true,
+   "status": "NO_SUBSTITUTION"
+  },
+  {
+   "denom": "GRIFOLS",
+   "entity_pick": null,
+   "row": {
+    "cells": [
+     "20907",
+     "31/12/2025",
+     "26/02/2026",
+     "DELOITTE AUDITORES, S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "V6rI7uy4HGbU9a2G%2b7R0tEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "q93E9oLBmpQWQqABoqjKAkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "Xz7MRvy%2bMzSP2LQdTNdIzSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026030326&nregaud=20907"
+    ]
+   },
+   "registro": "20907",
+   "pub_date": "26/02/2026",
+   "nreg": "2026030326",
+   "nregaud": "20907",
+   "substitution_events_es": [],
+   "row_en": {
+    "cells": [
+     "20907",
+     "31/12/2025",
+     "26/02/2026",
+     "DELOITTE AUDITORES, S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "UgkHYB%2bzq%2bbumxkpKfDM5SJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "FlpwsneDzdw1ptGqr19FRiJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "Xz7MRvy%2bMzSP2LQdTNdIzSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026030326&nregaud=20907"
+    ]
+   },
+   "zip_token_es": "Xz7MRvy%2bMzSP2LQdTNdIzSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "Xz7MRvy%2bMzSP2LQdTNdIzSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": true,
+   "status": "NO_SUBSTITUTION"
+  },
+  {
+   "denom": "IAG",
+   "entity_pick": null,
+   "row": null,
+   "status": "NO_FY2025_ROW"
+  },
+  {
+   "denom": "IBERDROLA",
+   "entity_pick": null,
+   "row": {
+    "cells": [
+     "20934",
+     "31/12/2025",
+     "27/02/2026",
+     "KPMG AUDITORES,S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "6MBEaFu8FI2yJlbD9ti8GUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "Azk%2bseVn1n8kGzB3RWnupUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "QoMIxzQb%2bN0EUHgZdcRm2yGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026031462&nregaud=20934"
+    ]
+   },
+   "registro": "20934",
+   "pub_date": "27/02/2026",
+   "nreg": "2026031462",
+   "nregaud": "20934",
+   "substitution_events_es": [],
+   "row_en": {
+    "cells": [
+     "20934",
+     "31/12/2025",
+     "27/02/2026",
+     "KPMG AUDITORES,S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "1RBAVivr5eAguAoRNLrx6SJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "9aL6Zr2yrWu%2bJNlmFxsy3CJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "QoMIxzQb%2bN0EUHgZdcRm2yGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026031462&nregaud=20934"
+    ]
+   },
+   "zip_token_es": "QoMIxzQb%2bN0EUHgZdcRm2yGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "QoMIxzQb%2bN0EUHgZdcRm2yGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": true,
+   "status": "NO_SUBSTITUTION"
+  },
+  {
+   "denom": "INDITEX",
+   "entity_pick": null,
+   "row": {
+    "cells": [
+     "20941",
+     "31/01/2026",
+     "11/03/2026",
+     "ERNST &amp; YOUNG, S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "LNkgus0iTPfnQo%2f0zrxjykvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "Juz9hjeruwYUiufIJpa3TkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "mM8IgeUeh%2bXewyMtfV3DpiGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026036808&nregaud=20941"
+    ]
+   },
+   "registro": "20941",
+   "pub_date": "11/03/2026",
+   "nreg": "2026036808",
+   "nregaud": "20941",
+   "substitution_events_es": [],
+   "row_en": {
+    "cells": [
+     "20941",
+     "31/01/2026",
+     "11/03/2026",
+     "ERNST &amp; YOUNG, S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "qQozvQJKoC%2bjZZSDU%2bdUT0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "yldxFoCbEt8bq2snikO10UvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "nyAEZWaFUKXj9D7XGrMd9iGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026036808&nregaud=20941"
+    ]
+   },
+   "zip_token_es": "mM8IgeUeh%2bXewyMtfV3DpiGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "nyAEZWaFUKXj9D7XGrMd9iGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": false,
+   "status": "NO_SUBSTITUTION"
+  },
+  {
+   "denom": "INDRA",
+   "entity_pick": null,
+   "row": {
+    "cells": [
+     "20880",
+     "31/12/2025",
+     "25/02/2026",
+     "DELOITTE AUDITORES, S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "5fBKc6%2bZOer%2fsE8hqP7P8UvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "ZO03E%2biwt7a5%2fe8ha7GWzkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "QqdUxQ54998TNtqtitfvAiGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026029652&nregaud=20880"
+    ]
+   },
+   "registro": "20880",
+   "pub_date": "25/02/2026",
+   "nreg": "2026029652",
+   "nregaud": "20880",
+   "substitution_events_es": [],
+   "row_en": {
+    "cells": [
+     "20880",
+     "31/12/2025",
+     "25/02/2026",
+     "DELOITTE AUDITORES, S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "5fBKc6%2bZOer%2fsE8hqP7P8UvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "ZO03E%2biwt7a5%2fe8ha7GWzkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "QqdUxQ54998TNtqtitfvAiGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026029652&nregaud=20880"
+    ]
+   },
+   "zip_token_es": "QqdUxQ54998TNtqtitfvAiGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "QqdUxQ54998TNtqtitfvAiGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": true,
+   "status": "NO_SUBSTITUTION"
+  },
+  {
+   "denom": "LOGISTA",
+   "entity_pick": null,
+   "row": {
+    "cells": [
+     "20847",
+     "30/09/2025",
+     "06/11/2025",
+     "ERNST &amp; YOUNG, S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "UPFfzw0Bd1MvnPtnBze71EvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "S%2bPZ971a%2b8A85s%2bhCGl80kvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "ocWf4khxdq0f6WCrLTSYouUI3MytjNtoCr3CkuvEbTuze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2025137069&nregaud=20847"
+    ]
+   },
+   "registro": "20847",
+   "pub_date": "06/11/2025",
+   "nreg": "2025137069",
+   "nregaud": "20847",
+   "substitution_events_es": [],
+   "row_en": {
+    "cells": [
+     "20847",
+     "30/09/2025",
+     "06/11/2025",
+     "ERNST &amp; YOUNG, S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "G2W8qX3Hkl2ptcAageHIviJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "sqp7%2fTlhDxljokfn3Y8cQiJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "ocWf4khxdq0f6WCrLTSYouUI3MytjNtoCr3CkuvEbTuze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2025137069&nregaud=20847"
+    ]
+   },
+   "zip_token_es": "ocWf4khxdq0f6WCrLTSYouUI3MytjNtoCr3CkuvEbTuze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "ocWf4khxdq0f6WCrLTSYouUI3MytjNtoCr3CkuvEbTuze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": true,
+   "status": "NO_SUBSTITUTION"
+  },
+  {
+   "denom": "MAPFRE",
+   "entity_pick": null,
+   "row": {
+    "cells": [
+     "20853",
+     "31/12/2025",
+     "12/02/2026",
+     "KPMG AUDITORES,S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "FUi2BpYW%2bCDJpOBonrTr8kvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "T0UVOPhSxLxYuOX3BemgeUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "%2bmiprO1G5%2ft9sm5ZoGgFKSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026022289&nregaud=20853"
+    ]
+   },
+   "registro": "20853",
+   "pub_date": "12/02/2026",
+   "nreg": "2026022289",
+   "nregaud": "20853",
+   "substitution_events_es": [],
+   "row_en": {
+    "cells": [
+     "20853",
+     "31/12/2025",
+     "12/02/2026",
+     "KPMG AUDITORES,S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "oo%2b0Y4uIvZqtTt0VwnnW%2biJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "O1PiiAew9WBZL7hO4l%2fjxiJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "%2bmiprO1G5%2ft9sm5ZoGgFKSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026022289&nregaud=20853"
+    ]
+   },
+   "zip_token_es": "%2bmiprO1G5%2ft9sm5ZoGgFKSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "%2bmiprO1G5%2ft9sm5ZoGgFKSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": true,
+   "status": "NO_SUBSTITUTION"
+  },
+  {
+   "denom": "MELIA",
+   "entity_pick": null,
+   "row": {
+    "cells": [
+     "20879",
+     "31/12/2025",
+     "25/02/2026",
+     "DELOITTE AUDITORES, S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "oRmx%2f0Nhze2LqO1X02g0aEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "9N2dDWZQYqA%2bnkhPL4eqMkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "mEOJGzPPaPwuU%2b5pGiJUWCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026029645&nregaud=20879"
+    ]
+   },
+   "registro": "20879",
+   "pub_date": "25/02/2026",
+   "nreg": "2026029645",
+   "nregaud": "20879",
+   "substitution_events_es": [],
+   "row_en": {
+    "cells": [
+     "20879",
+     "31/12/2025",
+     "25/02/2026",
+     "DELOITTE AUDITORES, S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "4lmXM6DP98TnWgUoEAy7riJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "sbQJRTsTxXT6kLklw%2b94NiJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "mEOJGzPPaPwuU%2b5pGiJUWCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026029645&nregaud=20879"
+    ]
+   },
+   "zip_token_es": "mEOJGzPPaPwuU%2b5pGiJUWCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "mEOJGzPPaPwuU%2b5pGiJUWCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": true,
+   "status": "NO_SUBSTITUTION"
+  },
+  {
+   "denom": "MERLIN PROPERTIES",
+   "entity_pick": null,
+   "row": {
+    "cells": [
+     "20913",
+     "31/12/2025",
+     "26/02/2026",
+     "PRICEWATERHOUSECOOPERS AUDITORES, S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "TfdqNOU%2bWIl8KIXN8acrckvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "BkIsWwMBv1yEfg2Yc2JvuUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "9Q0aJ8mE1HvOmQa9EnXGDSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026030445&nregaud=20913"
+    ]
+   },
+   "registro": "20913",
+   "pub_date": "26/02/2026",
+   "nreg": "2026030445",
+   "nregaud": "20913",
+   "substitution_events_es": [],
+   "row_en": {
+    "cells": [
+     "20913",
+     "31/12/2025",
+     "26/02/2026",
+     "PRICEWATERHOUSECOOPERS AUDITORES, S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "yu1LSObtX2PKmb%2bHGS7pqEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "0mBwKkwZ51U4CV6YHbxOzUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "eSszUmKrAhv1rYv7Ll06viGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026030445&nregaud=20913"
+    ]
+   },
+   "zip_token_es": "9Q0aJ8mE1HvOmQa9EnXGDSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "eSszUmKrAhv1rYv7Ll06viGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": false,
+   "status": "NO_SUBSTITUTION"
+  },
+  {
+   "denom": "NATURGY",
+   "entity_pick": null,
+   "row": {
+    "cells": [
+     "20866",
+     "31/12/2025",
+     "24/02/2026",
+     "KPMG AUDITORES,S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "zupp6RefTh5tCsCLHfXEaUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "err%2fXVczz2nHZ8Fgpx4Or0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "BaSHhLvg%2fWnXw0Uzi9mLQCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026028195&nregaud=20866"
+    ]
+   },
+   "registro": "20866",
+   "pub_date": "24/02/2026",
+   "nreg": "2026028195",
+   "nregaud": "20866",
+   "substitution_events_es": [],
+   "row_en": {
+    "cells": [
+     "20866",
+     "31/12/2025",
+     "24/02/2026",
+     "KPMG AUDITORES,S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "uKASDWJ9%2bRlGohq56U5AjCJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "Ps2GlVe%2bV5dolR2VsWEkdCJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "BaSHhLvg%2fWnXw0Uzi9mLQCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026028195&nregaud=20866"
+    ]
+   },
+   "zip_token_es": "BaSHhLvg%2fWnXw0Uzi9mLQCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "BaSHhLvg%2fWnXw0Uzi9mLQCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": true,
+   "status": "NO_SUBSTITUTION"
+  },
+  {
+   "denom": "PUIG",
+   "entity_pick": null,
+   "row": {
+    "cells": [
+     "20857",
+     "31/12/2025",
+     "18/02/2026",
+     "ERNST &amp; YOUNG, S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "gjqLmF0tl4l6rmCFZh80NkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "tZ9RBtLaQA%2fPKNaaqicnQUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "BisEfjoy12Hgj2Sa2Jmp5SGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026024998&nregaud=20857"
+    ]
+   },
+   "registro": "20857",
+   "pub_date": "18/02/2026",
+   "nreg": "2026024998",
+   "nregaud": "20857",
+   "substitution_events_es": [],
+   "row_en": {
+    "cells": [
+     "20857",
+     "31/12/2025",
+     "18/02/2026",
+     "ERNST &amp; YOUNG, S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "gjqLmF0tl4l6rmCFZh80NkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "t5ZrAmTFzEmkBVda8m5GoCJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "BisEfjoy12Hgj2Sa2Jmp5SGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026024998&nregaud=20857"
+    ]
+   },
+   "zip_token_es": "BisEfjoy12Hgj2Sa2Jmp5SGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "BisEfjoy12Hgj2Sa2Jmp5SGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": true,
+   "status": "NO_SUBSTITUTION"
+  },
+  {
+   "denom": "REDEIA",
+   "entity_pick": null,
+   "row": {
+    "cells": [
+     "20889",
+     "31/12/2025",
+     "26/02/2026",
+     "ERNST &amp; YOUNG, S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "9f9ug6T9uiVzBxycixp380vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "wEWKDOIHjlf5Y5oyomyhbkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "meYR%2bQwgCYDj81DvLtF8EiGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026029750&nregaud=20889"
+    ]
+   },
+   "registro": "20889",
+   "pub_date": "26/02/2026",
+   "nreg": "2026029750",
+   "nregaud": "20889",
+   "substitution_events_es": [],
+   "row_en": {
+    "cells": [
+     "20889",
+     "31/12/2025",
+     "26/02/2026",
+     "ERNST &amp; YOUNG, S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "d3TxGGVoJQMmC0Au7K%2f1oyJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "dz9KF3IaWM9RLRnxQoJYSiJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "meYR%2bQwgCYDj81DvLtF8EiGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026029750&nregaud=20889"
+    ]
+   },
+   "zip_token_es": "meYR%2bQwgCYDj81DvLtF8EiGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "meYR%2bQwgCYDj81DvLtF8EiGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": true,
+   "status": "NO_SUBSTITUTION"
+  },
+  {
+   "denom": "REPSOL",
+   "entity_pick": null,
+   "row": {
+    "cells": [
+     "20858",
+     "31/12/2025",
+     "19/02/2026",
+     "PRICEWATERHOUSECOOPERS AUDITORES, S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "WId1vFV%2b4yi6oKhA534SGEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "O19g0pOgrh%2fqznVfdAc3qEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "cIEfDq6LgisJkNIrCiczyCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026025973&nregaud=20858"
+    ]
+   },
+   "registro": "20858",
+   "pub_date": "19/02/2026",
+   "nreg": "2026025973",
+   "nregaud": "20858",
+   "substitution_events_es": [],
+   "row_en": {
+    "cells": [
+     "20858",
+     "31/12/2025",
+     "19/02/2026",
+     "PRICEWATERHOUSECOOPERS AUDITORES, S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "WId1vFV%2b4yi6oKhA534SGEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "KQRoxlpeDgj9IGYLzkltoCJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "cIEfDq6LgisJkNIrCiczyCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026025973&nregaud=20858"
+    ]
+   },
+   "zip_token_es": "cIEfDq6LgisJkNIrCiczyCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "cIEfDq6LgisJkNIrCiczyCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": true,
+   "status": "NO_SUBSTITUTION"
+  },
+  {
+   "denom": "SABADELL",
+   "entity_pick": "BANCO DE SABADELL, S.A.",
+   "row": {
+    "cells": [
+     "20862",
+     "31/12/2025",
+     "20/02/2026",
+     "KPMG AUDITORES,S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "kSoBUrrptmIWDeZsLZQNZ0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "Tu0ciNRRnz0g%2fb%2blPBUockvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "DazxUIYeQLfyF6IwSoMFPCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026027463&nregaud=20862"
+    ]
+   },
+   "registro": "20862",
+   "pub_date": "20/02/2026",
+   "nreg": "2026027463",
+   "nregaud": "20862",
+   "substitution_events_es": [],
+   "row_en": {
+    "cells": [
+     "20862",
+     "31/12/2025",
+     "20/02/2026",
+     "KPMG AUDITORES,S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "IjSf%2bd6DSa5jSrd1ve0D8iJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "0rUZKHeEurMw2IVWSHpm8yJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "DazxUIYeQLfyF6IwSoMFPCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026027463&nregaud=20862"
+    ]
+   },
+   "zip_token_es": "DazxUIYeQLfyF6IwSoMFPCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "DazxUIYeQLfyF6IwSoMFPCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": true,
+   "status": "NO_SUBSTITUTION"
+  },
+  {
+   "denom": "BANCO SANTANDER",
+   "entity_pick": null,
+   "row": {
+    "cells": [
+     "20875",
+     "31/12/2025",
+     "25/02/2026",
+     "PRICEWATERHOUSECOOPERS AUDITORES, S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "CY8jX7ZdXl0lvualznPU%2b0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "QW%2f3fpb0yRNpsshQxKLD1UvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "zx7yqgi1%2fcEy59FQ5bdraSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026029493&nregaud=20875"
+    ]
+   },
+   "registro": "20875",
+   "pub_date": "25/02/2026",
+   "nreg": "2026029493",
+   "nregaud": "20875",
+   "substitution_events_es": [],
+   "row_en": {
+    "cells": [
+     "20875",
+     "31/12/2025",
+     "25/02/2026",
+     "PRICEWATERHOUSECOOPERS AUDITORES, S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "57IbS0W1JCzfxSpy1ysUq0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "z9vtpbwTwEPkvMFRTedpuEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "nNHQi6oviAY0cdF48HZ71CGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026029493&nregaud=20875"
+    ]
+   },
+   "zip_token_es": "zx7yqgi1%2fcEy59FQ5bdraSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "nNHQi6oviAY0cdF48HZ71CGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": false,
+   "status": "NO_SUBSTITUTION"
+  },
+  {
+   "denom": "TELEFONICA",
+   "entity_pick": null,
+   "row": {
+    "cells": [
+     "20868",
+     "31/12/2025",
+     "24/02/2026",
+     "PRICEWATERHOUSECOOPERS AUDITORES, S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "BfF8cSV5fgPIE1O95JYtG0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "2Zqrw7jP8NAVWzyblv%2fV1UvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "8yr7PTg8iGiIkjMIIZWZ9CGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026028767&nregaud=20868"
+    ]
+   },
+   "registro": "20868",
+   "pub_date": "24/02/2026",
+   "nreg": "2026028767",
+   "nregaud": "20868",
+   "substitution_events_es": [],
+   "row_en": {
+    "cells": [
+     "20868",
+     "31/12/2025",
+     "24/02/2026",
+     "PRICEWATERHOUSECOOPERS AUDITORES, S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "vYeEDLvEzTv0DEc1LuKVrUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "bwwojvk0xx9WQOiV50iW%2bkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "q11wbu0gDDBmUkP5dkp6EyGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026028767&nregaud=20868"
+    ]
+   },
+   "zip_token_es": "8yr7PTg8iGiIkjMIIZWZ9CGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "q11wbu0gDDBmUkP5dkp6EyGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": false,
+   "status": "NO_SUBSTITUTION"
+  },
+  {
+   "denom": "VISCOFAN",
+   "entity_pick": null,
+   "row": {
+    "cells": [
+     "20900",
+     "31/12/2025",
+     "26/02/2026",
+     "PRICEWATERHOUSECOOPERS AUDITORES, S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "Yg0cD5AY3Nt%2bcDpzTGDbI0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "B8P8VUevjterf17OUk7tUkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "f3AVOUaT7OG12Z2mqrCBVSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026030278&nregaud=20900"
+    ]
+   },
+   "registro": "20900",
+   "pub_date": "26/02/2026",
+   "nreg": "2026030278",
+   "nregaud": "20900",
+   "substitution_events_es": [],
+   "row_en": {
+    "cells": [
+     "20900",
+     "31/12/2025",
+     "26/02/2026",
+     "PRICEWATERHOUSECOOPERS AUDITORES, S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "Yg0cD5AY3Nt%2bcDpzTGDbI0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "B8P8VUevjterf17OUk7tUkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "f3AVOUaT7OG12Z2mqrCBVSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026030278&nregaud=20900"
+    ]
+   },
+   "zip_token_es": "f3AVOUaT7OG12Z2mqrCBVSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "f3AVOUaT7OG12Z2mqrCBVSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": true,
+   "status": "NO_SUBSTITUTION"
+  },
+  {
+   "denom": "EBRO FOODS",
+   "entity_pick": null,
+   "row": {
+    "cells": [
+     "20960",
+     "31/12/2025",
+     "15/04/2026",
+     "ERNST &amp; YOUNG, S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "GC6KNSfW6cdmRSNHhuSHjUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "LRmVw1Mv7RK2gYv2lPGEwUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "8PgNdflke9uP7fnB6itePCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026050134&nregaud=20960"
+    ]
+   },
+   "registro": "20960",
+   "pub_date": "15/04/2026",
+   "nreg": "2026050134",
+   "nregaud": "20960",
+   "substitution_events_es": [],
+   "row_en": {
+    "cells": [
+     "20960",
+     "31/12/2025",
+     "15/04/2026",
+     "ERNST &amp; YOUNG, S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "GC6KNSfW6cdmRSNHhuSHjUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "LRmVw1Mv7RK2gYv2lPGEwUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "8PgNdflke9uP7fnB6itePCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026050134&nregaud=20960"
+    ]
+   },
+   "zip_token_es": "8PgNdflke9uP7fnB6itePCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "8PgNdflke9uP7fnB6itePCGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": true,
+   "status": "NO_SUBSTITUTION"
+  },
+  {
+   "denom": "SOLARIA",
+   "entity_pick": null,
+   "row": {
+    "cells": [
+     "20899",
+     "31/12/2025",
+     "26/02/2026",
+     "ERNST &amp; YOUNG, S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "PFXXMdrULhhSa%2bA5Qyrp10vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "UTCIZkMtvbj55yQBbbLhQ0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "tM%2bj2JDJ7xUnSsm2Jzwe8%2bUI3MytjNtoCr3CkuvEbTuze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026030226&nregaud=20899"
+    ]
+   },
+   "registro": "20899",
+   "pub_date": "26/02/2026",
+   "nreg": "2026030226",
+   "nregaud": "20899",
+   "substitution_events_es": [],
+   "row_en": {
+    "cells": [
+     "20899",
+     "31/12/2025",
+     "26/02/2026",
+     "ERNST &amp; YOUNG, S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "PFXXMdrULhhSa%2bA5Qyrp10vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "UTCIZkMtvbj55yQBbbLhQ0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "tM%2bj2JDJ7xUnSsm2Jzwe8%2bUI3MytjNtoCr3CkuvEbTuze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026030226&nregaud=20899"
+    ]
+   },
+   "zip_token_es": "tM%2bj2JDJ7xUnSsm2Jzwe8%2bUI3MytjNtoCr3CkuvEbTuze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "tM%2bj2JDJ7xUnSsm2Jzwe8%2bUI3MytjNtoCr3CkuvEbTuze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": true,
+   "status": "NO_SUBSTITUTION"
+  },
+  {
+   "denom": "AMPER",
+   "entity_pick": null,
+   "row": {
+    "cells": [
+     "20938",
+     "31/12/2025",
+     "04/03/2026",
+     "ERNST &amp; YOUNG, S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "Sí /  Sí",
+     ""
+    ],
+    "tokens": [
+     "t8BJBLgoCw3tGXwX637DTkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "aH3R%2bKpsFp9tz7jcJRlhT0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "yvbu81OOpyqHnQ85uoZp7SGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026031562&nregaud=20938"
+    ]
+   },
+   "registro": "20938",
+   "pub_date": "04/03/2026",
+   "nreg": "2026031562",
+   "nregaud": "20938",
+   "substitution_events_es": [
+    [
+     "04/03/2026",
+     "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+     "",
+     ""
+    ],
+    [
+     "04/03/2026",
+     "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "row_en": {
+    "cells": [
+     "20938",
+     "31/12/2025",
+     "04/03/2026",
+     "ERNST &amp; YOUNG, S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "Yes /  Yes",
+     ""
+    ],
+    "tokens": [
+     "t8BJBLgoCw3tGXwX637DTkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "aH3R%2bKpsFp9tz7jcJRlhT0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "yvbu81OOpyqHnQ85uoZp7SGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026031562&nregaud=20938"
+    ]
+   },
+   "zip_token_es": "yvbu81OOpyqHnQ85uoZp7SGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "yvbu81OOpyqHnQ85uoZp7SGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": true,
+   "status": "SUBSTITUTION"
+  },
+  {
+   "denom": "URBAR",
+   "entity_pick": null,
+   "row": {
+    "cells": [
+     "21257",
+     "31/12/2025",
+     "18/06/2026",
+     "PKF ATTEST",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Modificada /  Modificada",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "Wlg8Yp4XEjKQ69j1TmoE2EvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "i1ATyVq6HPmd48ohsRiHaEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "h63iTYA2edUKqRaUj8UmuSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026073666&nregaud=21257"
+    ]
+   },
+   "registro": "21257",
+   "pub_date": "18/06/2026",
+   "nreg": "2026073666",
+   "nregaud": "21257",
+   "substitution_events_es": [
+    [
+     "18/06/2026",
+     "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "row_en": {
+    "cells": [
+     "21257",
+     "31/12/2025",
+     "18/06/2026",
+     "PKF ATTEST",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Qualified opinion /  Qualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "Wlg8Yp4XEjKQ69j1TmoE2EvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "i1ATyVq6HPmd48ohsRiHaEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "h63iTYA2edUKqRaUj8UmuSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026073666&nregaud=21257"
+    ]
+   },
+   "zip_token_es": "h63iTYA2edUKqRaUj8UmuSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "h63iTYA2edUKqRaUj8UmuSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": true,
+   "status": "SUBSTITUTION"
+  },
+  {
+   "denom": "OHLA",
+   "entity_pick": null,
+   "row": null,
+   "status": "NO_FY2025_ROW"
+  },
+  {
+   "denom": "PHARMA MAR",
+   "entity_pick": null,
+   "row": {
+    "cells": [
+     "20923",
+     "31/12/2025",
+     "27/02/2026",
+     "KPMG AUDITORES,S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "iP7MtfkNYLIivOY4DQw02EvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "Oce5PFjnGJ6UR1okH97t%2bEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "WcynwAW2dr3r%2fiH82Xag4CGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026030545&nregaud=20923"
+    ]
+   },
+   "registro": "20923",
+   "pub_date": "27/02/2026",
+   "nreg": "2026030545",
+   "nregaud": "20923",
+   "substitution_events_es": [],
+   "row_en": {
+    "cells": [
+     "20923",
+     "31/12/2025",
+     "27/02/2026",
+     "KPMG AUDITORES,S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "9b36wOFU7mU3pT95mAFAFiJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "AX4Y6Oxl0RbfCW9mw%2fjRHCJs3cK80xVpwaYndxidzOuEhY8wWp9yOrsFup0pipEp",
+     "WcynwAW2dr3r%2fiH82Xag4CGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2026030545&nregaud=20923"
+    ]
+   },
+   "zip_token_es": "WcynwAW2dr3r%2fiH82Xag4CGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_en": "WcynwAW2dr3r%2fiH82Xag4CGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f",
+   "zip_token_equal": true,
+   "status": "NO_SUBSTITUTION"
+  },
+  {
+   "denom": "ARCELORMITTAL",
+   "entity_pick": null,
+   "row": null,
+   "status": "NO_FY2025_ROW"
+  }
+ ]
+}

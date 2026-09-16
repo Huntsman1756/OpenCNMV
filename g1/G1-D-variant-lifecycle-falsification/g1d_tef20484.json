@@ -1,0 +1,817 @@
+{
+ "issuer": "TELEFONICA",
+ "nregaud": "20484",
+ "phase1": {
+  "es": {
+   "row": {
+    "cells": [
+     "20484",
+     "31/12/2024",
+     "28/02/2025",
+     "PRICEWATERHOUSECOOPERS AUDITORES, S.L.",
+     "Individual  /   Consolidada",
+     "",
+     "",
+     "Sí",
+     "Favorable /  Favorable",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "O8E%2b%2fNZSH3yx1fkqKVUxz0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "IDZTClDB49q%2bARpFtdRXc0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "epUNPd6wVdSBcMFnw%2f3GpOUI3MytjNtoCr3CkuvEbTuze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2025030764&nregaud=20484"
+    ]
+   },
+   "docs": [
+    {
+     "token_idx": 0,
+     "sha256": "2430050472810f11c1f06fda6b1f7da2dc693f3fc8cdaf9b936e2fbdd32ce5e9",
+     "bytes": 15055961,
+     "kind": "DOC_XHTML",
+     "ctype": "application/xhtml+xml"
+    },
+    {
+     "token_idx": 1,
+     "sha256": "c7c9c6d0f96f590006f8318fc41117111fe442a879457f6fe0648b34b3d63513",
+     "bytes": 73272310,
+     "kind": "DOC_XHTML",
+     "ctype": "application/xhtml+xml"
+    },
+    {
+     "token_idx": 2,
+     "sha256": "cc7f2e1c110e6a15673c277d072d7ae16a9bdaadd0242ea8fcac0df90fad42ca",
+     "bytes": 27123830,
+     "kind": "ESEF_PACKAGE_ZIP",
+     "ctype": "application/zip",
+     "package_lang_tag": "es",
+     "zip_member_dt_distinct": [
+      "(2025, 2, 27, 15, 15, 22)",
+      "(2025, 2, 27, 15, 15, 24)"
+     ]
+    }
+   ]
+  },
+  "en": {
+   "row": {
+    "cells": [
+     "20484",
+     "31/12/2024",
+     "28/02/2025",
+     "PRICEWATERHOUSECOOPERS AUDITORES, S.L.",
+     "Individual  /   Consolidated",
+     "",
+     "",
+     "Yes",
+     "Unqualified opinion /  Unqualified opinion",
+     "- /  -",
+     ""
+    ],
+    "tokens": [
+     "kOKq2bcT0XhFJAUY7KaDRUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "rG5xUFoqBWnumZeeM%2fl6FUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+     "kNEOg6cb5SOz4EkjOvtpg%2bUI3MytjNtoCr3CkuvEbTuze5HLI2BThe6mgBjw3Gx%2f"
+    ],
+    "infadicion": [
+     "infadicionifa.aspx?id=0&nreg=2025030764&nregaud=20484"
+    ]
+   },
+   "docs": [
+    {
+     "token_idx": 0,
+     "sha256": "dd0530b6cc6e53ac001f4e6134d3e5304d2a865169ced85316d098928b13d4de",
+     "bytes": 14237690,
+     "kind": "DOC_XHTML",
+     "ctype": "application/xhtml+xml"
+    },
+    {
+     "token_idx": 1,
+     "sha256": "d6c65db97c5a0b038e7ac4efd348f968005320d98488e132cdc80db9c0fdb6d9",
+     "bytes": 78594726,
+     "kind": "DOC_XHTML",
+     "ctype": "application/xhtml+xml"
+    },
+    {
+     "token_idx": 2,
+     "sha256": "f8726a6e653a62a97be21f6082a1b49e70f8cdc62575513ab5db41fa562214f1",
+     "bytes": 31618309,
+     "kind": "ESEF_PACKAGE_ZIP",
+     "ctype": "application/zip",
+     "package_lang_tag": "en",
+     "zip_member_dt_distinct": [
+      "(2025, 2, 27, 15, 14, 54)",
+      "(2025, 2, 27, 15, 14, 56)"
+     ]
+    }
+   ]
+  }
+ },
+ "phase2": {
+  "es": {
+   "events": [
+    {
+     "cells": [
+      "31/12/2024"
+     ],
+     "tokens": []
+    },
+    {
+     "cells": [
+      "13/03/2025",
+      "Otra información complementaria (Otros)",
+      "",
+      ""
+     ],
+     "tokens": [
+      "OTSaBJNlQpxE07cYCuOCDpQLBzHuF7IMWlEYIxOIoQuP13%2fQ49HhKrz69rsiH53l"
+     ]
+    },
+    {
+     "cells": [
+      "27/02/2025",
+      "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+      "",
+      ""
+     ],
+     "tokens": [
+      "C8Fb9DibZuYb%2bMHBVjQfKc%2fwg%2fYhVN05kiaOrwRxu9qP13%2fQ49HhKrz69rsiH53l"
+     ]
+    },
+    {
+     "cells": [
+      "28/02/2025",
+      "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+      "",
+      ""
+     ],
+     "tokens": [
+      "2TruFxgRv3tO9WtLKc0hOwPg9q3gHJycV5YB2RgE8huP13%2fQ49HhKrz69rsiH53l"
+     ]
+    }
+   ],
+   "docs": [
+    {
+     "file": "doc-TEF-20484-es-e1-0.pdf",
+     "sha256": "e66a65e3ef8219293e8c7749bed7643ecc2920d93d35e0fdd3edd6a32c893466",
+     "event": [
+      "13/03/2025",
+      "Otra información complementaria (Otros)",
+      "",
+      ""
+     ]
+    },
+    {
+     "file": "doc-TEF-20484-es-e2-0.pdf",
+     "sha256": "fecbe1b7ea475a0cc173cbead275f39da2aa005df833606416c2bc73a0747506",
+     "event": [
+      "27/02/2025",
+      "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+      "",
+      ""
+     ]
+    },
+    {
+     "file": "doc-TEF-20484-es-e3-0.pdf",
+     "sha256": "27315343e70c4d2335aac3ff18a544467dbf358040688d8ce84d8bb38f136264",
+     "event": [
+      "28/02/2025",
+      "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+      "",
+      ""
+     ]
+    }
+   ]
+  },
+  "en": {
+   "events": [
+    {
+     "cells": [
+      "31/12/2024"
+     ],
+     "tokens": []
+    },
+    {
+     "cells": [
+      "13/03/2025",
+      "Other supplementary information (Other)",
+      "",
+      ""
+     ],
+     "tokens": [
+      "OTSaBJNlQpxE07cYCuOCDpQLBzHuF7IMWlEYIxOIoQuP13%2fQ49HhKrz69rsiH53l"
+     ]
+    },
+    {
+     "cells": [
+      "27/02/2025",
+      "Certificate issued by the Board Secretary on the preparation and signature of the annual financial report",
+      "",
+      ""
+     ],
+     "tokens": [
+      "C8Fb9DibZuYb%2bMHBVjQfKc%2fwg%2fYhVN05kiaOrwRxu9qP13%2fQ49HhKrz69rsiH53l"
+     ]
+    },
+    {
+     "cells": [
+      "28/02/2025",
+      "Certificate issued by the Board Secretary on the replacement of the annual financial report",
+      "",
+      ""
+     ],
+     "tokens": [
+      "2TruFxgRv3tO9WtLKc0hOwPg9q3gHJycV5YB2RgE8huP13%2fQ49HhKrz69rsiH53l"
+     ]
+    }
+   ],
+   "docs": [
+    {
+     "file": "doc-TEF-20484-en-e1-0.pdf",
+     "sha256": "e66a65e3ef8219293e8c7749bed7643ecc2920d93d35e0fdd3edd6a32c893466",
+     "event": [
+      "13/03/2025",
+      "Other supplementary information (Other)",
+      "",
+      ""
+     ]
+    },
+    {
+     "file": "doc-TEF-20484-en-e2-0.pdf",
+     "sha256": "fecbe1b7ea475a0cc173cbead275f39da2aa005df833606416c2bc73a0747506",
+     "event": [
+      "27/02/2025",
+      "Certificate issued by the Board Secretary on the preparation and signature of the annual financial report",
+      "",
+      ""
+     ]
+    },
+    {
+     "file": "doc-TEF-20484-en-e3-0.pdf",
+     "sha256": "27315343e70c4d2335aac3ff18a544467dbf358040688d8ce84d8bb38f136264",
+     "event": [
+      "28/02/2025",
+      "Certificate issued by the Board Secretary on the replacement of the annual financial report",
+      "",
+      ""
+     ]
+    }
+   ]
+  }
+ },
+ "phase3": {
+  "event_rows_equal_across_langs": false,
+  "event_doc_bytes_equal_es_vs_en": {
+   "doc-TEF-20484-es-e1-0.pdf": true,
+   "doc-TEF-20484-es-e2-0.pdf": true,
+   "doc-TEF-20484-es-e3-0.pdf": true
+  },
+  "scope_signals": [
+   {
+    "doc": "doc-TEF-20484-es-e1-0.pdf",
+    "match": "inglés"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e1-0.pdf",
+    "match": "inglés"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e1-0.pdf",
+    "match": "Individual"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e1-0.pdf",
+    "match": "Individual"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e1-0.pdf",
+    "match": "Individual"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e1-0.pdf",
+    "match": "individual"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e1-0.pdf",
+    "match": "Individual"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e1-0.pdf",
+    "match": "Individual"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e1-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e1-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e1-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e1-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e1-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e1-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e1-0.pdf",
+    "match": "consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e1-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e1-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e1-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e1-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e1-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e1-0.pdf",
+    "match": "ficheros xHTML individual y consolidado, son copia fiel de los \noriginales firmados por"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e1-0.pdf",
+    "match": "ficheros en \nformato electrónico, son copia fiel de los originales firmados:  \n \n-  Inf"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e1-0.pdf",
+    "match": "sustituyó el Informe Financiero Anual en \nFormato Electrónico Único Europeo (FEUE) remitido el 27 de febrero de 2025 con número \n"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e1-0.pdf",
+    "match": "sustitución fue la incorporación a las \nCuentas Anuales Individuales de Telefónica, S"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e1-0.pdf",
+    "match": "sustituyendo el Informe Financiero Anual en Formato Electrónico \nÚnico Europeo (FEUE) remitido el 28 de febrero de 2025 con número d"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e1-0.pdf",
+    "match": "sustitución es que se ha detectado que, la versión en \ninglés publicada de los Estados Financieros Consolidados de Telefónica, S"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e2-0.pdf",
+    "match": "inglés"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e2-0.pdf",
+    "match": "Individual"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e2-0.pdf",
+    "match": "Individual"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e2-0.pdf",
+    "match": "Individual"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e2-0.pdf",
+    "match": "individual"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e2-0.pdf",
+    "match": "Individual"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e2-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e2-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e2-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e2-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e2-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e2-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e2-0.pdf",
+    "match": "consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e2-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e2-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e2-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e2-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e2-0.pdf",
+    "match": "ficheros xHTML individual y consolidado, son copia fiel de los \noriginales firmados por"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e2-0.pdf",
+    "match": "ficheros en \nformato electrónico, son copia fiel de los originales firmados:  \n \n-  Inf"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e3-0.pdf",
+    "match": "inglés"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e3-0.pdf",
+    "match": "Individual"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e3-0.pdf",
+    "match": "Individual"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e3-0.pdf",
+    "match": "Individual"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e3-0.pdf",
+    "match": "individual"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e3-0.pdf",
+    "match": "Individual"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e3-0.pdf",
+    "match": "Individual"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e3-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e3-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e3-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e3-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e3-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e3-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e3-0.pdf",
+    "match": "consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e3-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e3-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e3-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e3-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e3-0.pdf",
+    "match": "ficheros xHTML individual y consolidado, son copia fiel de los \noriginales firmados por"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e3-0.pdf",
+    "match": "ficheros en \nformato electrónico, son copia fiel de los originales firmados:  \n \n-  Inf"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e3-0.pdf",
+    "match": "sustituyendo el Informe Financiero Anual en Formato Electrónico \nÚnico Europeo (FEUE) remitido el 27 de febrero de 2025 con número d"
+   },
+   {
+    "doc": "doc-TEF-20484-es-e3-0.pdf",
+    "match": "sustitución es la incorporación a las Cuentas Anuales \nIndividuales de Telefónica, S"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e1-0.pdf",
+    "match": "inglés"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e1-0.pdf",
+    "match": "inglés"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e1-0.pdf",
+    "match": "Individual"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e1-0.pdf",
+    "match": "Individual"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e1-0.pdf",
+    "match": "Individual"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e1-0.pdf",
+    "match": "individual"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e1-0.pdf",
+    "match": "Individual"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e1-0.pdf",
+    "match": "Individual"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e1-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e1-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e1-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e1-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e1-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e1-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e1-0.pdf",
+    "match": "consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e1-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e1-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e1-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e1-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e1-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e1-0.pdf",
+    "match": "ficheros xHTML individual y consolidado, son copia fiel de los \noriginales firmados por"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e1-0.pdf",
+    "match": "ficheros en \nformato electrónico, son copia fiel de los originales firmados:  \n \n-  Inf"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e1-0.pdf",
+    "match": "sustituyó el Informe Financiero Anual en \nFormato Electrónico Único Europeo (FEUE) remitido el 27 de febrero de 2025 con número \n"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e1-0.pdf",
+    "match": "sustitución fue la incorporación a las \nCuentas Anuales Individuales de Telefónica, S"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e1-0.pdf",
+    "match": "sustituyendo el Informe Financiero Anual en Formato Electrónico \nÚnico Europeo (FEUE) remitido el 28 de febrero de 2025 con número d"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e1-0.pdf",
+    "match": "sustitución es que se ha detectado que, la versión en \ninglés publicada de los Estados Financieros Consolidados de Telefónica, S"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e2-0.pdf",
+    "match": "inglés"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e2-0.pdf",
+    "match": "Individual"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e2-0.pdf",
+    "match": "Individual"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e2-0.pdf",
+    "match": "Individual"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e2-0.pdf",
+    "match": "individual"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e2-0.pdf",
+    "match": "Individual"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e2-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e2-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e2-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e2-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e2-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e2-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e2-0.pdf",
+    "match": "consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e2-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e2-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e2-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e2-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e2-0.pdf",
+    "match": "ficheros xHTML individual y consolidado, son copia fiel de los \noriginales firmados por"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e2-0.pdf",
+    "match": "ficheros en \nformato electrónico, son copia fiel de los originales firmados:  \n \n-  Inf"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e3-0.pdf",
+    "match": "inglés"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e3-0.pdf",
+    "match": "Individual"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e3-0.pdf",
+    "match": "Individual"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e3-0.pdf",
+    "match": "Individual"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e3-0.pdf",
+    "match": "individual"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e3-0.pdf",
+    "match": "Individual"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e3-0.pdf",
+    "match": "Individual"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e3-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e3-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e3-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e3-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e3-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e3-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e3-0.pdf",
+    "match": "consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e3-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e3-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e3-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e3-0.pdf",
+    "match": "Consolidad"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e3-0.pdf",
+    "match": "ficheros xHTML individual y consolidado, son copia fiel de los \noriginales firmados por"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e3-0.pdf",
+    "match": "ficheros en \nformato electrónico, son copia fiel de los originales firmados:  \n \n-  Inf"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e3-0.pdf",
+    "match": "sustituyendo el Informe Financiero Anual en Formato Electrónico \nÚnico Europeo (FEUE) remitido el 27 de febrero de 2025 con número d"
+   },
+   {
+    "doc": "doc-TEF-20484-en-e3-0.pdf",
+    "match": "sustitución es la incorporación a las Cuentas Anuales \nIndividuales de Telefónica, S"
+   }
+  ]
+ },
+ "nreg": "2025030764",
+ "submitted_variants": [
+  "en",
+  "es"
+ ],
+ "submitted_variant_count": 2,
+ "verdict_p1": "DUAL_VARIANT_SHARED_REGISTRY"
+}

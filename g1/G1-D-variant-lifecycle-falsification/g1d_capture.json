@@ -1,0 +1,587 @@
+{
+ "results": [
+  {
+   "issuer": "AMPER",
+   "phase1": {
+    "es": {
+     "ui_lang": "es",
+     "n_rows": 2,
+     "row": {
+      "cells": [
+       "20938",
+       "31/12/2025",
+       "04/03/2026",
+       "ERNST &amp; YOUNG, S.L.",
+       "Individual  /   Consolidada",
+       "",
+       "",
+       "Sí",
+       "Favorable /  Favorable",
+       "Sí /  Sí",
+       ""
+      ],
+      "tokens": [
+       "t8BJBLgoCw3tGXwX637DTkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+       "aH3R%2bKpsFp9tz7jcJRlhT0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+       "yvbu81OOpyqHnQ85uoZp7SGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+      ],
+      "infadicion": [
+       "infadicionifa.aspx?id=0&nreg=2026031562&nregaud=20938"
+      ]
+     },
+     "zip_sha256": "46282dd8ecd6cf57bb9f076586f097904a6df9d19165a2354a41e2c733e1fa29",
+     "zip_bytes": 26408570,
+     "zip_content_type": "application/zip",
+     "package_lang_tag": "es",
+     "zip_member_dt_min": "(2026, 2, 27, 21, 57, 44)",
+     "zip_member_dt_max": "(2026, 3, 2, 17, 46, 50)",
+     "zip_member_dt_distinct": [
+      "(2026, 2, 27, 21, 57, 44)",
+      "(2026, 3, 2, 17, 46, 34)",
+      "(2026, 3, 2, 17, 46, 50)"
+     ]
+    },
+    "en": {
+     "ui_lang": "en",
+     "n_rows": 2,
+     "row": {
+      "cells": [
+       "20938",
+       "31/12/2025",
+       "04/03/2026",
+       "ERNST &amp; YOUNG, S.L.",
+       "Individual  /   Consolidated",
+       "",
+       "",
+       "Yes",
+       "Unqualified opinion /  Unqualified opinion",
+       "Yes /  Yes",
+       ""
+      ],
+      "tokens": [
+       "t8BJBLgoCw3tGXwX637DTkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+       "aH3R%2bKpsFp9tz7jcJRlhT0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+       "yvbu81OOpyqHnQ85uoZp7SGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+      ],
+      "infadicion": [
+       "infadicionifa.aspx?id=0&nreg=2026031562&nregaud=20938"
+      ]
+     },
+     "zip_sha256": "46282dd8ecd6cf57bb9f076586f097904a6df9d19165a2354a41e2c733e1fa29",
+     "zip_bytes": 26408570,
+     "zip_content_type": "application/zip",
+     "package_lang_tag": "es",
+     "zip_member_dt_min": "(2026, 2, 27, 21, 57, 44)",
+     "zip_member_dt_max": "(2026, 3, 2, 17, 46, 50)",
+     "zip_member_dt_distinct": [
+      "(2026, 2, 27, 21, 57, 44)",
+      "(2026, 3, 2, 17, 46, 34)",
+      "(2026, 3, 2, 17, 46, 50)"
+     ]
+    }
+   },
+   "phase2": {
+    "es": {
+     "events": [
+      {
+       "cells": [
+        "31/12/2025"
+       ],
+       "tokens": []
+      },
+      {
+       "cells": [
+        "28/02/2026",
+        "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+        "",
+        ""
+       ],
+       "tokens": [
+        "Gb49LLg7dSIYJFA%2fM52eURFHH%2bsT7u3BIESiYVYScsGP13%2fQ49HhKrz69rsiH53l"
+       ]
+      },
+      {
+       "cells": [
+        "04/03/2026",
+        "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+        "",
+        ""
+       ],
+       "tokens": [
+        "O200%2fFw3vCN8tHXgJORaLcnt0PLiPhnwP7IUG2YiCFuP13%2fQ49HhKrz69rsiH53l"
+       ]
+      },
+      {
+       "cells": [
+        "04/03/2026",
+        "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+        "",
+        ""
+       ],
+       "tokens": [
+        "O200%2fFw3vCN8tHXgJORaLcnt0PLiPhnwP7IUG2YiCFuP13%2fQ49HhKrz69rsiH53l"
+       ]
+      }
+     ],
+     "docs": [
+      {
+       "file": "doc-AMPER-es-e1-0.pdf",
+       "sha256": "a7d4bf453ad13bcda4862990b7b624f20fda86c683f83be9d5fd5b2c08b80741",
+       "ctype": "application/pdf",
+       "event": [
+        "28/02/2026",
+        "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+        "",
+        ""
+       ]
+      },
+      {
+       "file": "doc-AMPER-es-e2-0.pdf",
+       "sha256": "db52f1955d24031963c83bba9c3898b04b26fc9196e356aee17f46fab8b610a6",
+       "ctype": "application/pdf",
+       "event": [
+        "04/03/2026",
+        "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+        "",
+        ""
+       ]
+      },
+      {
+       "file": "doc-AMPER-es-e3-0.pdf",
+       "sha256": "db52f1955d24031963c83bba9c3898b04b26fc9196e356aee17f46fab8b610a6",
+       "ctype": "application/pdf",
+       "event": [
+        "04/03/2026",
+        "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+        "",
+        ""
+       ]
+      }
+     ]
+    },
+    "en": {
+     "events": [
+      {
+       "cells": [
+        "31/12/2025"
+       ],
+       "tokens": []
+      },
+      {
+       "cells": [
+        "28/02/2026",
+        "Certificate issued by the Board Secretary on the preparation and signature of the annual financial report",
+        "",
+        ""
+       ],
+       "tokens": [
+        "Gb49LLg7dSIYJFA%2fM52eURFHH%2bsT7u3BIESiYVYScsGP13%2fQ49HhKrz69rsiH53l"
+       ]
+      },
+      {
+       "cells": [
+        "04/03/2026",
+        "Certificate issued by the Board Secretary on the replacement of the annual financial report",
+        "",
+        ""
+       ],
+       "tokens": [
+        "O200%2fFw3vCN8tHXgJORaLcnt0PLiPhnwP7IUG2YiCFuP13%2fQ49HhKrz69rsiH53l"
+       ]
+      },
+      {
+       "cells": [
+        "04/03/2026",
+        "Certificate issued by the Board Secretary on the replacement of the annual financial report",
+        "",
+        ""
+       ],
+       "tokens": [
+        "O200%2fFw3vCN8tHXgJORaLcnt0PLiPhnwP7IUG2YiCFuP13%2fQ49HhKrz69rsiH53l"
+       ]
+      }
+     ],
+     "docs": [
+      {
+       "file": "doc-AMPER-en-e1-0.pdf",
+       "sha256": "a7d4bf453ad13bcda4862990b7b624f20fda86c683f83be9d5fd5b2c08b80741",
+       "ctype": "application/pdf",
+       "event": [
+        "28/02/2026",
+        "Certificate issued by the Board Secretary on the preparation and signature of the annual financial report",
+        "",
+        ""
+       ]
+      },
+      {
+       "file": "doc-AMPER-en-e2-0.pdf",
+       "sha256": "db52f1955d24031963c83bba9c3898b04b26fc9196e356aee17f46fab8b610a6",
+       "ctype": "application/pdf",
+       "event": [
+        "04/03/2026",
+        "Certificate issued by the Board Secretary on the replacement of the annual financial report",
+        "",
+        ""
+       ]
+      },
+      {
+       "file": "doc-AMPER-en-e3-0.pdf",
+       "sha256": "db52f1955d24031963c83bba9c3898b04b26fc9196e356aee17f46fab8b610a6",
+       "ctype": "application/pdf",
+       "event": [
+        "04/03/2026",
+        "Certificate issued by the Board Secretary on the replacement of the annual financial report",
+        "",
+        ""
+       ]
+      }
+     ]
+    }
+   },
+   "phase3": {},
+   "nregaud": "20938",
+   "nreg": "2026031562",
+   "submitted_variants": [
+    "es"
+   ],
+   "submitted_variant_count": 1,
+   "verdict_p1": "SINGLE_VARIANT_WITH_UI_FALLBACK"
+  },
+  {
+   "issuer": "BANKINTER",
+   "phase1": {
+    "es": {
+     "ui_lang": "es",
+     "n_rows": 0
+    },
+    "en": {
+     "ui_lang": "en",
+     "n_rows": 0
+    }
+   },
+   "phase2": {
+    "es": {
+     "events": [
+      {
+       "cells": [
+        "31/12/2025"
+       ],
+       "tokens": []
+      },
+      {
+       "cells": [
+        "20/02/2026",
+        "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+        "",
+        ""
+       ],
+       "tokens": [
+        "r44bEEAfgJc%2bMcj0H21jUM0hHqmtu1jZlldOIwVIXdKP13%2fQ49HhKrz69rsiH53l"
+       ]
+      },
+      {
+       "cells": [
+        "24/02/2026",
+        "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+        "",
+        ""
+       ],
+       "tokens": [
+        "HHb5F0LwuQXpuSNgP%2fOhx8dk2gGHSSkn60Dzjc3luO2P13%2fQ49HhKrz69rsiH53l"
+       ]
+      }
+     ],
+     "docs": [
+      {
+       "file": "doc-BANKINTER-es-e1-0.pdf",
+       "sha256": "6080c8659fc22c626ed532f8015d221ce5a22e4434d104636962566e407056b8",
+       "ctype": "application/pdf",
+       "event": [
+        "20/02/2026",
+        "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+        "",
+        ""
+       ]
+      },
+      {
+       "file": "doc-BANKINTER-es-e2-0.pdf",
+       "sha256": "87050ed4ef394cc34e5a4115c07359e71e4620d7b8801d2ac756fc3d0321a6dd",
+       "ctype": "application/pdf",
+       "event": [
+        "24/02/2026",
+        "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+        "",
+        ""
+       ]
+      }
+     ]
+    },
+    "en": {
+     "events": [
+      {
+       "cells": [
+        "31/12/2025"
+       ],
+       "tokens": []
+      },
+      {
+       "cells": [
+        "20/02/2026",
+        "Certificate issued by the Board Secretary on the preparation and signature of the annual financial report",
+        "",
+        ""
+       ],
+       "tokens": [
+        "r44bEEAfgJc%2bMcj0H21jUM0hHqmtu1jZlldOIwVIXdKP13%2fQ49HhKrz69rsiH53l"
+       ]
+      },
+      {
+       "cells": [
+        "24/02/2026",
+        "Certificate issued by the Board Secretary on the replacement of the annual financial report",
+        "",
+        ""
+       ],
+       "tokens": [
+        "HHb5F0LwuQXpuSNgP%2fOhx8dk2gGHSSkn60Dzjc3luO2P13%2fQ49HhKrz69rsiH53l"
+       ]
+      }
+     ],
+     "docs": [
+      {
+       "file": "doc-BANKINTER-en-e1-0.pdf",
+       "sha256": "6080c8659fc22c626ed532f8015d221ce5a22e4434d104636962566e407056b8",
+       "ctype": "application/pdf",
+       "event": [
+        "20/02/2026",
+        "Certificate issued by the Board Secretary on the preparation and signature of the annual financial report",
+        "",
+        ""
+       ]
+      },
+      {
+       "file": "doc-BANKINTER-en-e2-0.pdf",
+       "sha256": "87050ed4ef394cc34e5a4115c07359e71e4620d7b8801d2ac756fc3d0321a6dd",
+       "ctype": "application/pdf",
+       "event": [
+        "24/02/2026",
+        "Certificate issued by the Board Secretary on the replacement of the annual financial report",
+        "",
+        ""
+       ]
+      }
+     ]
+    }
+   },
+   "phase3": {},
+   "nregaud": "20860",
+   "nreg": "2026026888",
+   "submitted_variants": [],
+   "submitted_variant_count": 0,
+   "verdict_p1": "UNRESOLVED"
+  },
+  {
+   "issuer": "URBAR",
+   "phase1": {
+    "es": {
+     "ui_lang": "es",
+     "n_rows": 2,
+     "row": {
+      "cells": [
+       "21257",
+       "31/12/2025",
+       "18/06/2026",
+       "PKF ATTEST",
+       "Individual  /   Consolidada",
+       "",
+       "",
+       "Sí",
+       "Modificada /  Modificada",
+       "- /  -",
+       ""
+      ],
+      "tokens": [
+       "Wlg8Yp4XEjKQ69j1TmoE2EvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+       "i1ATyVq6HPmd48ohsRiHaEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+       "h63iTYA2edUKqRaUj8UmuSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+      ],
+      "infadicion": [
+       "infadicionifa.aspx?id=0&nreg=2026073666&nregaud=21257"
+      ]
+     },
+     "zip_sha256": "56032eb7c905727193dc70fa4ff8769dd123f8b0c2849a1cab1b7bc85ef5349c",
+     "zip_bytes": 6228844,
+     "zip_content_type": "application/zip",
+     "package_lang_tag": "es",
+     "zip_member_dt_min": "(2026, 6, 3, 12, 7, 20)",
+     "zip_member_dt_max": "(2026, 6, 5, 10, 17, 54)",
+     "zip_member_dt_distinct": [
+      "(2026, 6, 3, 12, 7, 20)",
+      "(2026, 6, 5, 10, 17, 52)",
+      "(2026, 6, 5, 10, 17, 54)"
+     ]
+    },
+    "en": {
+     "ui_lang": "en",
+     "n_rows": 2,
+     "row": {
+      "cells": [
+       "21257",
+       "31/12/2025",
+       "18/06/2026",
+       "PKF ATTEST",
+       "Individual  /   Consolidated",
+       "",
+       "",
+       "Yes",
+       "Qualified opinion /  Qualified opinion",
+       "- /  -",
+       ""
+      ],
+      "tokens": [
+       "Wlg8Yp4XEjKQ69j1TmoE2EvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+       "i1ATyVq6HPmd48ohsRiHaEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
+       "h63iTYA2edUKqRaUj8UmuSGw2QTM6ULZ9HZIRl%2fTkPmze5HLI2BThe6mgBjw3Gx%2f"
+      ],
+      "infadicion": [
+       "infadicionifa.aspx?id=0&nreg=2026073666&nregaud=21257"
+      ]
+     },
+     "zip_sha256": "56032eb7c905727193dc70fa4ff8769dd123f8b0c2849a1cab1b7bc85ef5349c",
+     "zip_bytes": 6228844,
+     "zip_content_type": "application/zip",
+     "package_lang_tag": "es",
+     "zip_member_dt_min": "(2026, 6, 3, 12, 7, 20)",
+     "zip_member_dt_max": "(2026, 6, 5, 10, 17, 54)",
+     "zip_member_dt_distinct": [
+      "(2026, 6, 3, 12, 7, 20)",
+      "(2026, 6, 5, 10, 17, 52)",
+      "(2026, 6, 5, 10, 17, 54)"
+     ]
+    }
+   },
+   "phase2": {
+    "es": {
+     "events": [
+      {
+       "cells": [
+        "31/12/2025"
+       ],
+       "tokens": []
+      },
+      {
+       "cells": [
+        "25/05/2026",
+        "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+        "",
+        ""
+       ],
+       "tokens": [
+        "I1FXI5MW1NPZUH8CMsSL70xOBi3c3QD1qVeKMQG7uS%2bP13%2fQ49HhKrz69rsiH53l"
+       ]
+      },
+      {
+       "cells": [
+        "18/06/2026",
+        "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+        "",
+        ""
+       ],
+       "tokens": [
+        "%2flzwL2l7h1a908bKF6%2fpp5QM%2bxKBomzdz%2fCkjNCsMbGP13%2fQ49HhKrz69rsiH53l"
+       ]
+      }
+     ],
+     "docs": [
+      {
+       "file": "doc-URBAR-es-e1-0.pdf",
+       "sha256": "c27ba0f37f61f4eabca335b2a648248ecc104ed1650deb9380b49c2e5a9c28aa",
+       "ctype": "application/pdf",
+       "event": [
+        "25/05/2026",
+        "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+        "",
+        ""
+       ]
+      },
+      {
+       "file": "doc-URBAR-es-e2-0.pdf",
+       "sha256": "58e61947131d85c7899a4f457e4568c65c20531d8ade4c82265ae788d16a6288",
+       "ctype": "application/pdf",
+       "event": [
+        "18/06/2026",
+        "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+        "",
+        ""
+       ]
+      }
+     ]
+    },
+    "en": {
+     "events": [
+      {
+       "cells": [
+        "31/12/2025"
+       ],
+       "tokens": []
+      },
+      {
+       "cells": [
+        "25/05/2026",
+        "Certificate issued by the Board Secretary on the preparation and signature of the annual financial report",
+        "",
+        ""
+       ],
+       "tokens": [
+        "I1FXI5MW1NPZUH8CMsSL70xOBi3c3QD1qVeKMQG7uS%2bP13%2fQ49HhKrz69rsiH53l"
+       ]
+      },
+      {
+       "cells": [
+        "18/06/2026",
+        "Certificate issued by the Board Secretary on the replacement of the annual financial report",
+        "",
+        ""
+       ],
+       "tokens": [
+        "%2flzwL2l7h1a908bKF6%2fpp5QM%2bxKBomzdz%2fCkjNCsMbGP13%2fQ49HhKrz69rsiH53l"
+       ]
+      }
+     ],
+     "docs": [
+      {
+       "file": "doc-URBAR-en-e1-0.pdf",
+       "sha256": "c27ba0f37f61f4eabca335b2a648248ecc104ed1650deb9380b49c2e5a9c28aa",
+       "ctype": "application/pdf",
+       "event": [
+        "25/05/2026",
+        "Certificate issued by the Board Secretary on the preparation and signature of the annual financial report",
+        "",
+        ""
+       ]
+      },
+      {
+       "file": "doc-URBAR-en-e2-0.pdf",
+       "sha256": "58e61947131d85c7899a4f457e4568c65c20531d8ade4c82265ae788d16a6288",
+       "ctype": "application/pdf",
+       "event": [
+        "18/06/2026",
+        "Certificate issued by the Board Secretary on the replacement of the annual financial report",
+        "",
+        ""
+       ]
+      }
+     ]
+    }
+   },
+   "phase3": {},
+   "nregaud": "21257",
+   "nreg": "2026073666",
+   "submitted_variants": [
+    "es"
+   ],
+   "submitted_variant_count": 1,
+   "verdict_p1": "SINGLE_VARIANT_WITH_UI_FALLBACK"
+  }
+ ]
+}

@@ -1,0 +1,2275 @@
+{
+ "executed_at": "2026-09-16T16:28:49.969809+00:00",
+ "results": [
+  {
+   "denom": "ACS",
+   "registro": "20133",
+   "period_end": "31/12/2023",
+   "pub_date": "04/04/2024",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2024045739",
+   "nregaud": "20133",
+   "events": [
+    [
+     "31/12/2023"
+    ],
+    [
+     "04/04/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "ACS",
+   "registro": "20537",
+   "period_end": "31/12/2024",
+   "pub_date": "02/04/2025",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2025045472",
+   "nregaud": "20537",
+   "events": [
+    [
+     "31/12/2024"
+    ],
+    [
+     "02/04/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "ACS",
+   "registro": "20952",
+   "period_end": "31/12/2025",
+   "pub_date": "31/03/2026",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2026045496",
+   "nregaud": "20952",
+   "events": [
+    [
+     "31/12/2025"
+    ],
+    [
+     "31/03/2026",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "ACCIONA",
+   "registro": "20113",
+   "period_end": "31/12/2023",
+   "pub_date": "01/03/2024",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2024032918",
+   "nregaud": "20113",
+   "events": [
+    [
+     "31/12/2023"
+    ],
+    [
+     "29/02/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ],
+    [
+     "01/03/2024",
+     "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": [
+    [
+     "01/03/2024",
+     "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+     "",
+     ""
+    ]
+   ]
+  },
+  {
+   "denom": "ACCIONA",
+   "registro": "20496",
+   "period_end": "31/12/2024",
+   "pub_date": "28/02/2025",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2025030893",
+   "nregaud": "20496",
+   "events": [
+    [
+     "31/12/2024"
+    ],
+    [
+     "28/02/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ],
+    [
+     "03/07/2025",
+     "Informe financiero anual en formato FEUE corrigiendo el marcado/taxonomía empleada",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "ACCIONA",
+   "registro": "20915",
+   "period_end": "31/12/2025",
+   "pub_date": "26/02/2026",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2026030459",
+   "nregaud": "20915",
+   "events": [
+    [
+     "31/12/2025"
+    ],
+    [
+     "26/02/2026",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "ACERINOX",
+   "registro": "20108",
+   "period_end": "31/12/2023",
+   "pub_date": "29/02/2024",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2024032877",
+   "nregaud": "20108",
+   "events": [
+    [
+     "31/12/2023"
+    ],
+    [
+     "04/03/2024",
+     "Otra información complementaria (Rectificación certificado secretario del consejo)",
+     "",
+     ""
+    ],
+    [
+     "29/02/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "ACERINOX",
+   "registro": "20497",
+   "period_end": "31/12/2024",
+   "pub_date": "28/02/2025",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2025030897",
+   "nregaud": "20497",
+   "events": [
+    [
+     "31/12/2024"
+    ],
+    [
+     "28/02/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "ACERINOX",
+   "registro": "20916",
+   "period_end": "31/12/2025",
+   "pub_date": "26/02/2026",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2026030467",
+   "nregaud": "20916",
+   "events": [
+    [
+     "31/12/2025"
+    ],
+    [
+     "26/02/2026",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "AENA",
+   "registro": "20063",
+   "period_end": "31/12/2023",
+   "pub_date": "28/02/2024",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2024030371",
+   "nregaud": "20063",
+   "events": [
+    [
+     "31/12/2023"
+    ],
+    [
+     "28/02/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "AENA",
+   "registro": "20458",
+   "period_end": "31/12/2024",
+   "pub_date": "26/02/2025",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2025028748",
+   "nregaud": "20458",
+   "events": [
+    [
+     "31/12/2024"
+    ],
+    [
+     "26/02/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "AENA",
+   "registro": "20871",
+   "period_end": "31/12/2025",
+   "pub_date": "25/02/2026",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2026028898",
+   "nregaud": "20871",
+   "events": [
+    [
+     "31/12/2025"
+    ],
+    [
+     "25/02/2026",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "AMADEUS",
+   "registro": "20066",
+   "period_end": "31/12/2023",
+   "pub_date": "28/02/2024",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2024030450",
+   "nregaud": "20066",
+   "events": [
+    [
+     "31/12/2023"
+    ],
+    [
+     "28/02/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "AMADEUS",
+   "registro": "20505",
+   "period_end": "31/12/2024",
+   "pub_date": "10/03/2025",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2025030974",
+   "nregaud": "20505",
+   "events": [
+    [
+     "31/12/2024"
+    ],
+    [
+     "28/02/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ],
+    [
+     "10/03/2025",
+     "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": [
+    [
+     "10/03/2025",
+     "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+     "",
+     ""
+    ]
+   ]
+  },
+  {
+   "denom": "AMADEUS",
+   "registro": "20921",
+   "period_end": "31/12/2025",
+   "pub_date": "27/02/2026",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2026030514",
+   "nregaud": "20921",
+   "events": [
+    [
+     "31/12/2025"
+    ],
+    [
+     "27/02/2026",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "BANKINTER",
+   "registro": "20046",
+   "period_end": "31/12/2023",
+   "pub_date": "21/02/2024",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2024026212",
+   "nregaud": "20046",
+   "events": [
+    [
+     "31/12/2023"
+    ],
+    [
+     "21/02/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "BANKINTER",
+   "registro": "20452",
+   "period_end": "31/12/2024",
+   "pub_date": "21/02/2025",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2025026972",
+   "nregaud": "20452",
+   "events": [
+    [
+     "31/12/2024"
+    ],
+    [
+     "21/02/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "BANKINTER",
+   "registro": "20860",
+   "period_end": "31/12/2025",
+   "pub_date": "24/02/2026",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2026026888",
+   "nregaud": "20860",
+   "events": [
+    [
+     "31/12/2025"
+    ],
+    [
+     "20/02/2026",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ],
+    [
+     "24/02/2026",
+     "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": [
+    [
+     "24/02/2026",
+     "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+     "",
+     ""
+    ]
+   ]
+  },
+  {
+   "denom": "CAIXABANK",
+   "registro": "20360",
+   "period_end": "31/12/2023",
+   "pub_date": "29/04/2024",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2024058262",
+   "nregaud": "20360",
+   "events": [
+    [
+     "31/12/2023"
+    ],
+    [
+     "29/04/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "CELLNEX",
+   "registro": "20109",
+   "period_end": "31/12/2023",
+   "pub_date": "29/02/2024",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2024032892",
+   "nregaud": "20109",
+   "events": [
+    [
+     "31/12/2023"
+    ],
+    [
+     "07/03/2024",
+     "Otra información complementaria (Declaraciones de responsabilidad)",
+     "",
+     ""
+    ],
+    [
+     "29/02/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "CELLNEX",
+   "registro": "20460",
+   "period_end": "31/12/2024",
+   "pub_date": "26/02/2025",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2025028764",
+   "nregaud": "20460",
+   "events": [
+    [
+     "31/12/2024"
+    ],
+    [
+     "26/02/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "CELLNEX",
+   "registro": "20917",
+   "period_end": "31/12/2025",
+   "pub_date": "27/02/2026",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2026030484",
+   "nregaud": "20917",
+   "events": [
+    [
+     "31/12/2025"
+    ],
+    [
+     "27/02/2026",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "INMOBILIARIA COLONIAL",
+   "registro": "20114",
+   "period_end": "31/12/2023",
+   "pub_date": "29/02/2024",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2024032891",
+   "nregaud": "20114",
+   "events": [
+    [
+     "31/12/2023"
+    ],
+    [
+     "01/03/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "INMOBILIARIA COLONIAL",
+   "registro": "20490",
+   "period_end": "31/12/2024",
+   "pub_date": "27/02/2025",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2025030856",
+   "nregaud": "20490",
+   "events": [
+    [
+     "31/12/2024"
+    ],
+    [
+     "27/02/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "INMOBILIARIA COLONIAL",
+   "registro": "20911",
+   "period_end": "31/12/2025",
+   "pub_date": "26/02/2026",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2026030404",
+   "nregaud": "20911",
+   "events": [
+    [
+     "31/12/2025"
+    ],
+    [
+     "26/02/2026",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "ENDESA",
+   "registro": "20062",
+   "period_end": "31/12/2023",
+   "pub_date": "28/02/2024",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2024030413",
+   "nregaud": "20062",
+   "events": [
+    [
+     "31/12/2023"
+    ],
+    [
+     "28/02/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "ENDESA",
+   "registro": "20473",
+   "period_end": "31/12/2024",
+   "pub_date": "27/02/2025",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2025029846",
+   "nregaud": "20473",
+   "events": [
+    [
+     "31/12/2024"
+    ],
+    [
+     "27/02/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "ENDESA",
+   "registro": "20865",
+   "period_end": "31/12/2025",
+   "pub_date": "24/02/2026",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2026028178",
+   "nregaud": "20865",
+   "events": [
+    [
+     "31/12/2025"
+    ],
+    [
+     "24/02/2026",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "ENAGAS",
+   "registro": "20045",
+   "period_end": "31/12/2023",
+   "pub_date": "20/02/2024",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2024025307",
+   "nregaud": "20045",
+   "events": [
+    [
+     "31/12/2023"
+    ],
+    [
+     "20/02/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "ENAGAS",
+   "registro": "20449",
+   "period_end": "31/12/2024",
+   "pub_date": "18/02/2025",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2025024062",
+   "nregaud": "20449",
+   "events": [
+    [
+     "31/12/2024"
+    ],
+    [
+     "18/02/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "ENAGAS",
+   "registro": "20856",
+   "period_end": "31/12/2025",
+   "pub_date": "17/02/2026",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2026024564",
+   "nregaud": "20856",
+   "events": [
+    [
+     "31/12/2025"
+    ],
+    [
+     "17/02/2026",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "FLUIDRA",
+   "registro": "20124",
+   "period_end": "31/12/2023",
+   "pub_date": "21/03/2024",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2024040648",
+   "nregaud": "20124",
+   "events": [
+    [
+     "31/12/2023"
+    ],
+    [
+     "21/03/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "FLUIDRA",
+   "registro": "20530",
+   "period_end": "31/12/2024",
+   "pub_date": "27/03/2025",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2025042465",
+   "nregaud": "20530",
+   "events": [
+    [
+     "31/12/2024"
+    ],
+    [
+     "27/03/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "FLUIDRA",
+   "registro": "20947",
+   "period_end": "31/12/2025",
+   "pub_date": "26/03/2026",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2026043360",
+   "nregaud": "20947",
+   "events": [
+    [
+     "31/12/2025"
+    ],
+    [
+     "26/03/2026",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "GRIFOLS",
+   "registro": "20119",
+   "period_end": "31/12/2023",
+   "pub_date": "08/03/2024",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2024035837",
+   "nregaud": "20119",
+   "events": [
+    [
+     "31/12/2023"
+    ],
+    [
+     "08/03/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "GRIFOLS",
+   "registro": "20464",
+   "period_end": "31/12/2024",
+   "pub_date": "26/02/2025",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2025029610",
+   "nregaud": "20464",
+   "events": [
+    [
+     "31/12/2024"
+    ],
+    [
+     "26/02/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "GRIFOLS",
+   "registro": "20907",
+   "period_end": "31/12/2025",
+   "pub_date": "26/02/2026",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2026030326",
+   "nregaud": "20907",
+   "events": [
+    [
+     "31/12/2025"
+    ],
+    [
+     "26/02/2026",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "IBERDROLA",
+   "registro": "20050",
+   "period_end": "31/12/2023",
+   "pub_date": "23/02/2024",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2024027909",
+   "nregaud": "20050",
+   "events": [
+    [
+     "31/12/2023"
+    ],
+    [
+     "23/02/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "IBERDROLA",
+   "registro": "20515",
+   "period_end": "31/12/2024",
+   "pub_date": "28/02/2025",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2025031726",
+   "nregaud": "20515",
+   "events": [
+    [
+     "31/12/2024"
+    ],
+    [
+     "28/02/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "IBERDROLA",
+   "registro": "20934",
+   "period_end": "31/12/2025",
+   "pub_date": "27/02/2026",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2026031462",
+   "nregaud": "20934",
+   "events": [
+    [
+     "31/12/2025"
+    ],
+    [
+     "27/02/2026",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "INDITEX",
+   "registro": "20121",
+   "period_end": "31/01/2024",
+   "pub_date": "13/03/2024",
+   "dual_zip_token": true,
+   "en_row_present": true,
+   "nreg": "2024038069",
+   "nregaud": "20121",
+   "events": [
+    [
+     "31/01/2024"
+    ],
+    [
+     "13/03/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "INDITEX",
+   "registro": "20525",
+   "period_end": "31/01/2025",
+   "pub_date": "12/03/2025",
+   "dual_zip_token": true,
+   "en_row_present": true,
+   "nreg": "2025036691",
+   "nregaud": "20525",
+   "events": [
+    [
+     "31/01/2025"
+    ],
+    [
+     "12/03/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "INDITEX",
+   "registro": "20941",
+   "period_end": "31/01/2026",
+   "pub_date": "11/03/2026",
+   "dual_zip_token": true,
+   "en_row_present": true,
+   "nreg": "2026036808",
+   "nregaud": "20941",
+   "events": [
+    [
+     "31/01/2026"
+    ],
+    [
+     "11/03/2026",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "INDRA",
+   "registro": "20067",
+   "period_end": "31/12/2023",
+   "pub_date": "28/02/2024",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2024030443",
+   "nregaud": "20067",
+   "events": [
+    [
+     "31/12/2023"
+    ],
+    [
+     "28/02/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "INDRA",
+   "registro": "20467",
+   "period_end": "31/12/2024",
+   "pub_date": "26/02/2025",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2025029719",
+   "nregaud": "20467",
+   "events": [
+    [
+     "31/12/2024"
+    ],
+    [
+     "26/02/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "INDRA",
+   "registro": "20880",
+   "period_end": "31/12/2025",
+   "pub_date": "25/02/2026",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2026029652",
+   "nregaud": "20880",
+   "events": [
+    [
+     "31/12/2025"
+    ],
+    [
+     "25/02/2026",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "LOGISTA",
+   "registro": "20439",
+   "period_end": "30/09/2024",
+   "pub_date": "06/11/2024",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2024130561",
+   "nregaud": "20439",
+   "events": [
+    [
+     "30/09/2024"
+    ],
+    [
+     "06/11/2024",
+     "Otra información complementaria (Rectificación certificado secretario del consejo)",
+     "",
+     ""
+    ],
+    [
+     "06/11/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "LOGISTA",
+   "registro": "20847",
+   "period_end": "30/09/2025",
+   "pub_date": "06/11/2025",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2025137069",
+   "nregaud": "20847",
+   "events": [
+    [
+     "30/09/2025"
+    ],
+    [
+     "06/11/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "MAPFRE",
+   "registro": "20041",
+   "period_end": "31/12/2023",
+   "pub_date": "14/02/2024",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2024022733",
+   "nregaud": "20041",
+   "events": [
+    [
+     "31/12/2023"
+    ],
+    [
+     "14/02/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "MAPFRE",
+   "registro": "20445",
+   "period_end": "31/12/2024",
+   "pub_date": "12/02/2025",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2025021721",
+   "nregaud": "20445",
+   "events": [
+    [
+     "31/12/2024"
+    ],
+    [
+     "12/02/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "MAPFRE",
+   "registro": "20853",
+   "period_end": "31/12/2025",
+   "pub_date": "12/02/2026",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2026022289",
+   "nregaud": "20853",
+   "events": [
+    [
+     "31/12/2025"
+    ],
+    [
+     "12/02/2026",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "MELIA",
+   "registro": "20106",
+   "period_end": "31/12/2023",
+   "pub_date": "29/02/2024",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2024032857",
+   "nregaud": "20106",
+   "events": [
+    [
+     "31/12/2023"
+    ],
+    [
+     "29/02/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "MELIA",
+   "registro": "20485",
+   "period_end": "31/12/2024",
+   "pub_date": "27/02/2025",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2025030784",
+   "nregaud": "20485",
+   "events": [
+    [
+     "31/12/2024"
+    ],
+    [
+     "27/02/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "MELIA",
+   "registro": "20879",
+   "period_end": "31/12/2025",
+   "pub_date": "25/02/2026",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2026029645",
+   "nregaud": "20879",
+   "events": [
+    [
+     "31/12/2025"
+    ],
+    [
+     "25/02/2026",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "MERLIN PROPERTIES",
+   "registro": "20080",
+   "period_end": "31/12/2023",
+   "pub_date": "28/02/2024",
+   "dual_zip_token": true,
+   "en_row_present": true,
+   "nreg": "2024031685",
+   "nregaud": "20080",
+   "events": [
+    [
+     "31/12/2023"
+    ],
+    [
+     "28/02/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "MERLIN PROPERTIES",
+   "registro": "20492",
+   "period_end": "31/12/2024",
+   "pub_date": "27/02/2025",
+   "dual_zip_token": true,
+   "en_row_present": true,
+   "nreg": "2025030861",
+   "nregaud": "20492",
+   "events": [
+    [
+     "31/12/2024"
+    ],
+    [
+     "27/02/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "MERLIN PROPERTIES",
+   "registro": "20913",
+   "period_end": "31/12/2025",
+   "pub_date": "26/02/2026",
+   "dual_zip_token": true,
+   "en_row_present": true,
+   "nreg": "2026030445",
+   "nregaud": "20913",
+   "events": [
+    [
+     "31/12/2025"
+    ],
+    [
+     "26/02/2026",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "NATURGY",
+   "registro": "20077",
+   "period_end": "31/12/2023",
+   "pub_date": "28/02/2024",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2024031609",
+   "nregaud": "20077",
+   "events": [
+    [
+     "31/12/2023"
+    ],
+    [
+     "28/02/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "NATURGY",
+   "registro": "20453",
+   "period_end": "31/12/2024",
+   "pub_date": "21/02/2025",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2025027093",
+   "nregaud": "20453",
+   "events": [
+    [
+     "31/12/2024"
+    ],
+    [
+     "21/02/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "NATURGY",
+   "registro": "20866",
+   "period_end": "31/12/2025",
+   "pub_date": "24/02/2026",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2026028195",
+   "nregaud": "20866",
+   "events": [
+    [
+     "31/12/2025"
+    ],
+    [
+     "24/02/2026",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "PUIG",
+   "registro": "20413",
+   "period_end": "31/12/2023",
+   "pub_date": "03/05/2024",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2024059948",
+   "nregaud": "20413",
+   "events": [
+    [
+     "31/12/2023"
+    ],
+    [
+     "03/05/2024",
+     "Otra información complementaria",
+     "",
+     ""
+    ],
+    [
+     "03/05/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "PUIG",
+   "registro": "20480",
+   "period_end": "31/12/2024",
+   "pub_date": "27/02/2025",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2025030670",
+   "nregaud": "20480",
+   "events": [
+    [
+     "31/12/2024"
+    ],
+    [
+     "27/02/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "PUIG",
+   "registro": "20857",
+   "period_end": "31/12/2025",
+   "pub_date": "18/02/2026",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2026024998",
+   "nregaud": "20857",
+   "events": [
+    [
+     "31/12/2025"
+    ],
+    [
+     "18/02/2026",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "REDEIA",
+   "registro": "20070",
+   "period_end": "31/12/2023",
+   "pub_date": "28/02/2024",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2024030633",
+   "nregaud": "20070",
+   "events": [
+    [
+     "31/12/2023"
+    ],
+    [
+     "28/02/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "REDEIA",
+   "registro": "20462",
+   "period_end": "31/12/2024",
+   "pub_date": "26/02/2025",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2025028791",
+   "nregaud": "20462",
+   "events": [
+    [
+     "31/12/2024"
+    ],
+    [
+     "26/02/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "REDEIA",
+   "registro": "20889",
+   "period_end": "31/12/2025",
+   "pub_date": "26/02/2026",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2026029750",
+   "nregaud": "20889",
+   "events": [
+    [
+     "31/12/2025"
+    ],
+    [
+     "26/02/2026",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "REPSOL",
+   "registro": "20049",
+   "period_end": "31/12/2023",
+   "pub_date": "22/02/2024",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2024026357",
+   "nregaud": "20049",
+   "events": [
+    [
+     "31/12/2023"
+    ],
+    [
+     "22/02/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "REPSOL",
+   "registro": "20451",
+   "period_end": "31/12/2024",
+   "pub_date": "20/02/2025",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2025025752",
+   "nregaud": "20451",
+   "events": [
+    [
+     "31/12/2024"
+    ],
+    [
+     "20/02/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "REPSOL",
+   "registro": "20858",
+   "period_end": "31/12/2025",
+   "pub_date": "19/02/2026",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2026025973",
+   "nregaud": "20858",
+   "events": [
+    [
+     "31/12/2025"
+    ],
+    [
+     "19/02/2026",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "SABADELL",
+   "registro": "20051",
+   "period_end": "31/12/2023",
+   "pub_date": "23/02/2024",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2024027938",
+   "nregaud": "20051",
+   "events": [
+    [
+     "31/12/2023"
+    ],
+    [
+     "23/02/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "SABADELL",
+   "registro": "20444",
+   "period_end": "31/12/2024",
+   "pub_date": "10/02/2025",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2025020714",
+   "nregaud": "20444",
+   "events": [
+    [
+     "31/12/2024"
+    ],
+    [
+     "11/02/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "SABADELL",
+   "registro": "20862",
+   "period_end": "31/12/2025",
+   "pub_date": "20/02/2026",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2026027463",
+   "nregaud": "20862",
+   "events": [
+    [
+     "31/12/2025"
+    ],
+    [
+     "20/02/2026",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "BANCO SANTANDER",
+   "registro": "20044",
+   "period_end": "31/12/2023",
+   "pub_date": "19/02/2024",
+   "dual_zip_token": true,
+   "en_row_present": true,
+   "nreg": "2024024845",
+   "nregaud": "20044",
+   "events": [
+    [
+     "31/12/2023"
+    ],
+    [
+     "19/02/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "BANCO SANTANDER",
+   "registro": "20509",
+   "period_end": "31/12/2024",
+   "pub_date": "28/02/2025",
+   "dual_zip_token": true,
+   "en_row_present": true,
+   "nreg": "2025031067",
+   "nregaud": "20509",
+   "events": [
+    [
+     "31/12/2024"
+    ],
+    [
+     "28/02/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "BANCO SANTANDER",
+   "registro": "20875",
+   "period_end": "31/12/2025",
+   "pub_date": "25/02/2026",
+   "dual_zip_token": true,
+   "en_row_present": true,
+   "nreg": "2026029493",
+   "nregaud": "20875",
+   "events": [
+    [
+     "31/12/2025"
+    ],
+    [
+     "25/02/2026",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "TELEFONICA",
+   "registro": "20052",
+   "period_end": "31/12/2023",
+   "pub_date": "23/02/2024",
+   "dual_zip_token": true,
+   "en_row_present": true,
+   "nreg": "2024027914",
+   "nregaud": "20052",
+   "events": [
+    [
+     "31/12/2023"
+    ],
+    [
+     "23/02/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "TELEFONICA",
+   "registro": "20484",
+   "period_end": "31/12/2024",
+   "pub_date": "28/02/2025",
+   "dual_zip_token": true,
+   "en_row_present": true,
+   "nreg": "2025030764",
+   "nregaud": "20484",
+   "events": [
+    [
+     "31/12/2024"
+    ],
+    [
+     "13/03/2025",
+     "Otra información complementaria (Otros)",
+     "",
+     ""
+    ],
+    [
+     "27/02/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ],
+    [
+     "28/02/2025",
+     "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": [
+    [
+     "28/02/2025",
+     "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+     "",
+     ""
+    ]
+   ]
+  },
+  {
+   "denom": "TELEFONICA",
+   "registro": "20868",
+   "period_end": "31/12/2025",
+   "pub_date": "24/02/2026",
+   "dual_zip_token": true,
+   "en_row_present": true,
+   "nreg": "2026028767",
+   "nregaud": "20868",
+   "events": [
+    [
+     "31/12/2025"
+    ],
+    [
+     "24/02/2026",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "VISCOFAN",
+   "registro": "20101",
+   "period_end": "31/12/2023",
+   "pub_date": "29/02/2024",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2024032799",
+   "nregaud": "20101",
+   "events": [
+    [
+     "31/12/2023"
+    ],
+    [
+     "29/02/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "VISCOFAN",
+   "registro": "20488",
+   "period_end": "31/12/2024",
+   "pub_date": "27/02/2025",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2025030838",
+   "nregaud": "20488",
+   "events": [
+    [
+     "31/12/2024"
+    ],
+    [
+     "27/02/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "VISCOFAN",
+   "registro": "20900",
+   "period_end": "31/12/2025",
+   "pub_date": "26/02/2026",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2026030278",
+   "nregaud": "20900",
+   "events": [
+    [
+     "31/12/2025"
+    ],
+    [
+     "26/02/2026",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "EBRO FOODS",
+   "registro": "20134",
+   "period_end": "31/12/2023",
+   "pub_date": "11/04/2024",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2024047870",
+   "nregaud": "20134",
+   "events": [
+    [
+     "31/12/2023"
+    ],
+    [
+     "11/04/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "EBRO FOODS",
+   "registro": "20539",
+   "period_end": "31/12/2024",
+   "pub_date": "08/04/2025",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2025047901",
+   "nregaud": "20539",
+   "events": [
+    [
+     "31/12/2024"
+    ],
+    [
+     "08/04/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "EBRO FOODS",
+   "registro": "20960",
+   "period_end": "31/12/2025",
+   "pub_date": "15/04/2026",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2026050134",
+   "nregaud": "20960",
+   "events": [
+    [
+     "31/12/2025"
+    ],
+    [
+     "15/04/2026",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "SOLARIA",
+   "registro": "20074",
+   "period_end": "31/12/2023",
+   "pub_date": "28/02/2024",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2024031451",
+   "nregaud": "20074",
+   "events": [
+    [
+     "31/12/2023"
+    ],
+    [
+     "28/02/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "SOLARIA",
+   "registro": "20477",
+   "period_end": "31/12/2024",
+   "pub_date": "27/02/2025",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2025030491",
+   "nregaud": "20477",
+   "events": [
+    [
+     "31/12/2024"
+    ],
+    [
+     "27/02/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "SOLARIA",
+   "registro": "20899",
+   "period_end": "31/12/2025",
+   "pub_date": "26/02/2026",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2026030226",
+   "nregaud": "20899",
+   "events": [
+    [
+     "31/12/2025"
+    ],
+    [
+     "26/02/2026",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "AMPER",
+   "registro": "20103",
+   "period_end": "31/12/2023",
+   "pub_date": "05/03/2024",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2024032702",
+   "nregaud": "20103",
+   "events": [
+    [
+     "31/12/2023"
+    ],
+    [
+     "29/02/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ],
+    [
+     "05/03/2024",
+     "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": [
+    [
+     "05/03/2024",
+     "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+     "",
+     ""
+    ]
+   ]
+  },
+  {
+   "denom": "AMPER",
+   "registro": "20519",
+   "period_end": "31/12/2024",
+   "pub_date": "05/03/2025",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2025031856",
+   "nregaud": "20519",
+   "events": [
+    [
+     "31/12/2024"
+    ],
+    [
+     "28/02/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ],
+    [
+     "05/03/2025",
+     "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": [
+    [
+     "05/03/2025",
+     "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+     "",
+     ""
+    ]
+   ]
+  },
+  {
+   "denom": "AMPER",
+   "registro": "20938",
+   "period_end": "31/12/2025",
+   "pub_date": "04/03/2026",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2026031562",
+   "nregaud": "20938",
+   "events": [
+    [
+     "31/12/2025"
+    ],
+    [
+     "28/02/2026",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ],
+    [
+     "04/03/2026",
+     "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+     "",
+     ""
+    ],
+    [
+     "04/03/2026",
+     "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": [
+    [
+     "04/03/2026",
+     "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+     "",
+     ""
+    ],
+    [
+     "04/03/2026",
+     "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+     "",
+     ""
+    ]
+   ]
+  },
+  {
+   "denom": "URBAR",
+   "registro": "20387",
+   "period_end": "31/12/2023",
+   "pub_date": "30/04/2024",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2024059229",
+   "nregaud": "20387",
+   "events": [
+    [
+     "31/12/2023"
+    ],
+    [
+     "20/06/2024",
+     "Otra información complementaria (Rectificación certificado secretario del consejo)",
+     "",
+     ""
+    ],
+    [
+     "30/04/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "URBAR",
+   "registro": "20780",
+   "period_end": "31/12/2024",
+   "pub_date": "30/04/2025",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2025061066",
+   "nregaud": "20780",
+   "events": [
+    [
+     "31/12/2024"
+    ],
+    [
+     "30/04/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "URBAR",
+   "registro": "21257",
+   "period_end": "31/12/2025",
+   "pub_date": "18/06/2026",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2026073666",
+   "nregaud": "21257",
+   "events": [
+    [
+     "31/12/2025"
+    ],
+    [
+     "25/05/2026",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ],
+    [
+     "18/06/2026",
+     "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": [
+    [
+     "18/06/2026",
+     "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+     "",
+     ""
+    ]
+   ]
+  },
+  {
+   "denom": "PHARMA MAR",
+   "registro": "20072",
+   "period_end": "31/12/2023",
+   "pub_date": "28/02/2024",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2024030860",
+   "nregaud": "20072",
+   "events": [
+    [
+     "31/12/2023"
+    ],
+    [
+     "28/02/2024",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "PHARMA MAR",
+   "registro": "20508",
+   "period_end": "31/12/2024",
+   "pub_date": "28/02/2025",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2025030998",
+   "nregaud": "20508",
+   "events": [
+    [
+     "31/12/2024"
+    ],
+    [
+     "28/02/2025",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  },
+  {
+   "denom": "PHARMA MAR",
+   "registro": "20923",
+   "period_end": "31/12/2025",
+   "pub_date": "27/02/2026",
+   "dual_zip_token": false,
+   "en_row_present": true,
+   "nreg": "2026030545",
+   "nregaud": "20923",
+   "events": [
+    [
+     "31/12/2025"
+    ],
+    [
+     "27/02/2026",
+     "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+     "",
+     ""
+    ]
+   ],
+   "substitutions": []
+  }
+ ]
+}
