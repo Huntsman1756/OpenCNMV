@@ -1,0 +1,60 @@
+{
+  "gate": "R13",
+  "status": "PASS",
+  "executed_at": "2026-09-16T04:37:14+00:00",
+  "code_commit": "n/a",
+  "inputs": [
+    "CNMV ListadoIFA?nif= pages for SAN(A39000013), BBVA(A48265169), IBE(A-48010615) — re-fetched",
+    "CNMV infadicionifa.aspx?nreg=<nreg>&nregaud=<registro> pages: 6 corpus rows + IBE-FY2022 fixture (nregaud=19646)",
+    "CNMV webservices/verdocumento/ver?e=<token>: 2 IBE-FY2022 certificates + IBE H1-2009 IPP PDF",
+    "g0-r/R01-discovery/evidence/ListadoIFA-*.html (snapshot baseline for drift check)"
+  ],
+  "outputs": [
+    "evidence/fetch_manifest.json",
+    "evidence/ibe-fy2022-cert1.pdf",
+    "evidence/ibe-fy2022-cert2.pdf",
+    "evidence/ibe-h1-2009-ipp.pdf",
+    "evidence/ibe-h1-2009-ipp.txt",
+    "evidence/infadicionifa-19646-r13.html",
+    "evidence/infadicionifa-20448-r13.html",
+    "evidence/infadicionifa-20509-r13.html",
+    "evidence/infadicionifa-20515-r13.html",
+    "evidence/infadicionifa-20854-r13.html",
+    "evidence/infadicionifa-20875-r13.html",
+    "evidence/infadicionifa-20934-r13.html",
+    "evidence/ListadoIFA-BBVA-r13.html",
+    "evidence/ListadoIFA-IBE-r13.html",
+    "evidence/ListadoIFA-SAN-r13.html",
+    "evidence/r13_results.json"
+  ],
+  "sha256": {
+    "ListadoIFA-SAN-r13.html": "a99decdb380dbfb0e45ed0db384293747670aa5e58d0aa88e0d71bb1fec78939",
+    "ListadoIFA-BBVA-r13.html": "eeca0a4e7b46496388018c5f13493567f8fdc7aff1acbc0fcbe467512f3dada7",
+    "ListadoIFA-IBE-r13.html": "3d90aa54dea67bc7d04beb1a3f9a150c49d635d1d73c1a9c83735ed41472822a",
+    "infadicionifa-19646-r13.html": "1b0c538602c9d93c122f339e27db90ba2a37182316880927b0a19a06b8fde10e",
+    "infadicionifa-20448-r13.html": "369aaf17359d37d558209954dc9b3f1174c2b9a418ad9a0fceabb7ef7f3c67ab",
+    "infadicionifa-20509-r13.html": "58202e24a8a131cd20a5a9bb16011fc169e024594a2bd320fd3829e1c6043c26",
+    "infadicionifa-20515-r13.html": "ada8dd062322091a4c48b0f5b20556c2a29deb1b3a31c4cf8262c86ad6dd4c85",
+    "infadicionifa-20854-r13.html": "2a1bd8993d2332d01deeff1850548d58aadfd35cb8c37c69b629c2d931c76d18",
+    "infadicionifa-20875-r13.html": "f4641fece51b8382997180405e7a2d68294ab0c625b84712f2ad946f25bfe491",
+    "infadicionifa-20934-r13.html": "d32f00965fe245c7a2a0598ce3951591b67dd1f06fa51397b1da6bc489268137",
+    "ibe-fy2022-cert1.pdf": "36b5c60c509f5ebba457c8eb0d70ebbe87dca936bf6c43efec01d5d8f260a6f7",
+    "ibe-fy2022-cert2.pdf": "f79271a2f8338e3cdabfd1fa28d743857be423cb6074017a1372b7aff17f2549",
+    "ibe-h1-2009-ipp.pdf": "cc0c73d3e3dfcfe1ed7b590111f0c9a6d1d0f061cae0a77b08c8cdde10fd21c2"
+  },
+  "findings": [
+    "13A REVISION_EXISTS PROVEN: all 6 corpus ESEF rows show 'Sí'; each resolves to a CERTIFICATE event; 'Sí' != revision. IBE-FY2022 fixture (registro 19646) shows CERTIFICATE + SUBSTITUTION.",
+    "13B REVISION_TARGET_EXACT PROVEN for ESEF: infadicionifa URL binds nreg(event)->nregaud(registro oficial target); all 7 pages show param==page registro==row registro; no inference.",
+    "ESEF registro oficial persists across a real substitution (IBE FY2022 registro 19646; fecha_publicacion 28/02/2023 = substitution date). Closes R6 caveat for ESEF only.",
+    "IPP nreg persistence across substitution NOT_YET_PROVEN: listaifi has no revision surface (2 columns); IPP revisions are in-document.",
+    "13C REVISION_SEMANTICS_EXTRACTED PROVEN: deterministic pypdf extraction of IBE H1-2009 section II gives nature, reason, corregida/previa/diferencia amounts (cons+ind), affected periods.",
+    "R6 correction: 'Ampliación información empty for every corpus row' was an observation error — R1 snapshot already shows Sí on all 6 corpus rows; row-level ampliación set unchanged vs current fetch.",
+    "No submission-type change found; IBE-FY2022 substitution replaced content under the same registro."
+  ],
+  "limitations": [
+    "Listing serves only the current version; no superseded-version locator found, so byte-level before/after of a substituted ESEF package is not demonstrable.",
+    "Classification is deterministic keyword mapping over official motivo strings; OTHER bucket would surface unclassified events (none occurred).",
+    "IPP revision detection has no listing column — only document content or a new-nreg observation (not observed).",
+    "13C fixture is a pre-XBRL IPP PDF; XBRL-era equivalent channel is instance concepts preserved verbatim by R12."
+  ]
+}

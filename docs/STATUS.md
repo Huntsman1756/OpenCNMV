@@ -28,7 +28,8 @@ R9  PASS    # TAXONOMY_DISCOVERY (remediated): IPP 2019-01-01 (ipp_en vs ipp_ge)
 R10 PASS    # TAXONOMY_PINNING (amended by R11+R12): + IFRS full_ifrs 2022/2024 + LEI + IPP pkg + xl/xlink pinned as locally-assembled packages; manifest 23 rows; Arelle 2.44.0
 R11 PASS    # ESEF_ARELLE_PARSE: 6/6 load offline (ioerr=0, DTS complete); Control A API-vs-OIM equal; Control B Arelle-vs-Brel concept containment (Brel partial oracle)
 R12 PASS    # IPP_ARELLE_PARSE: 15/15 load offline (ioerr=0, DTS from pinned pkg only); ipp_en vs ipp_ge + H1/H2 covered; typed dims exercised; Control A equal; Arelle base64Binary MemoryError shimmed (also in 2.45.0)
-R13-R17  NOT_RUN
+R13 PASS    # SOURCE_REVISION_DETECTION: 13A REVISION_EXISTS + 13B REVISION_TARGET_EXACT (nregaud=registro, source-bound) + 13C semantics (IBE H1-2009 correction table); ESEF registro survives substitution (IBE FY2022 reg.19646) — R6 caveat closed for ESEF; IPP nreg persistence NOT_YET_PROVEN; R6 'empty column' claim corrected (Sí on 6/6 corpus rows = CERTIFICATE events, not revisions)
+R14-R17  NOT_RUN
 ```
 
 ## Checkpoint
@@ -141,6 +142,27 @@ G0-R verdict (after R17) is `GO`. The final verdict states are `GO` / `CONDITION
   of xbrl-linkbase). Every DTS doc now resolves from the package — no dependence on
   Arelle's per-user web cache (matters for R15).
 
+## Session-6 findings (R13)
+
+- **R13 PASS** (`g0-r/R13-source-revision-detection/`):
+  - **13A:** all 6 corpus ESEF rows carry `Ampliación información = Sí` — each resolves to a
+    `CERTIFICATE` event (formulación y firma), i.e. `Sí` ≠ revision. Fixture IBE FY2022
+    (registro 19646): `CERTIFICATE` + `SUBSTITUTION` (28/02/2023).
+  - **13B:** `infadicionifa` URL binds `nreg` (info-complementaria submission) → `nregaud`
+    (= target's Nº Registro Oficial); param ≡ page registro ≡ row registro on 7/7 pages —
+    exact, source-provided, no issuer+period inference. **ESEF registro persists across a
+    real substitution** (fecha_publicacion = last-substitution date, per legend, now
+    observed). Closes the R6 caveat **for ESEF only**; IPP `nreg` persistence =
+    `NOT_YET_PROVEN` (`listaifi` has no revision surface — 2 columns only).
+  - **13C:** IBE H1-2009 IPP PDF — deterministic `pypdf` extraction of "II. INFORMACIÓN
+    COMPLEMENTARIA": nature, reason (escisión → discontinued ops → comparative restatement),
+    corregida/previa/diferencia amounts (consolidated + individual), affected periods.
+  - **R6 correction:** "Ampliación información empty for every corpus row" was an
+    observation error — the R1 snapshot itself has `Sí` on all 6 corpus rows; row-level
+    ampliación set identical between R1 snapshot and R13 re-fetch (no semantic drift).
+  - Limitation: the listing serves only the current version of a filing; no
+    superseded-version locator found.
+
 ## Blocking findings
 
 - None for the R0–R4 checkpoint. Long-horizon token/URL drift is monitored by re-running the R8
@@ -173,12 +195,13 @@ IBE  IBERDROLA, S.A.                       nif=A-48010615  LEI=5QK37QC7NWOJ8D7WV
 
 ## Next action
 
-Proceed to **R13 — SOURCE_REVISION_DETECTION** (within G0-R): `13A REVISION_EXISTS`,
-`13B REVISION_TARGET_EXACT`, `13C REVISION_SEMANTICS_EXTRACTED` on the CNMV sources; also the
-deferred R6 caveat (`source_registration_no` stability across a real substitution is
-NOT_YET_PROVEN — R13 is where it can be falsified). Then `R14/R15 determinism → R16 oracle
-reconciliation → R17 H2 vs ESEF`. Do **not** build product, UI, API, or MCP. G1 is not touched
-until R17 is closed.
+Proceed to **R14 — ONLINE_CAPTURE_DETERMINISTIC** (within G0-R): with the same source state,
+the pipeline must produce semantically identical output (exclude timestamps/temp paths/logs
+from the logical hash). Then **R15 — OFFLINE_REBUILD_DETERMINISTIC** (critical): network
+denied, only raw artefacts + pinned taxonomy packages + exact Arelle 2.44.0 + config +
+canonicalizer + manifests; the R12 work already removed Arelle per-user cache dependence and
+version/fingerprint-gated the base64 shim. Then `R16 oracle reconciliation → R17 H2 vs ESEF`.
+Do **not** build product, UI, API, or MCP. G1 is not touched until R17 is closed.
 
 ## Session hygiene
 

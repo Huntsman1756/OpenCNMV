@@ -1,0 +1,119 @@
+[
+  {
+    "artifact": "ListadoIFA-SAN-r13.html",
+    "source_url": "https://www.cnmv.es/Portal/consultas/ifa/listadoifa?id=0&lang=es&nif=a39000013",
+    "retrieved_at": "2026-09-16T04:37:15+00:00",
+    "http_status": 200,
+    "media_type": "text/html; charset=utf-8",
+    "byte_size": 307374,
+    "sha256": "a99decdb380dbfb0e45ed0db384293747670aa5e58d0aa88e0d71bb1fec78939"
+  },
+  {
+    "artifact": "ListadoIFA-BBVA-r13.html",
+    "source_url": "https://www.cnmv.es/Portal/consultas/ifa/listadoifa?id=0&lang=es&nif=a48265169",
+    "retrieved_at": "2026-09-16T04:37:17+00:00",
+    "http_status": 200,
+    "media_type": "text/html; charset=utf-8",
+    "byte_size": 304538,
+    "sha256": "eeca0a4e7b46496388018c5f13493567f8fdc7aff1acbc0fcbe467512f3dada7"
+  },
+  {
+    "artifact": "ListadoIFA-IBE-r13.html",
+    "source_url": "https://www.cnmv.es/Portal/consultas/ifa/listadoifa?id=0&lang=es&nif=a-48010615",
+    "retrieved_at": "2026-09-16T04:37:18+00:00",
+    "http_status": 200,
+    "media_type": "text/html; charset=utf-8",
+    "byte_size": 306534,
+    "sha256": "3d90aa54dea67bc7d04beb1a3f9a150c49d635d1d73c1a9c83735ed41472822a"
+  },
+  {
+    "artifact": "infadicionifa-19646-r13.html",
+    "source_url": "https://www.cnmv.es/Portal/consultas/ifa/infadicionifa.aspx?id=0&lang=es&nreg=2023028439&nregaud=19646",
+    "retrieved_at": "2026-09-16T04:37:18+00:00",
+    "http_status": 200,
+    "media_type": "text/html; charset=utf-8",
+    "byte_size": 216663,
+    "sha256": "1b0c538602c9d93c122f339e27db90ba2a37182316880927b0a19a06b8fde10e"
+  },
+  {
+    "artifact": "infadicionifa-20448-r13.html",
+    "source_url": "https://www.cnmv.es/Portal/consultas/ifa/infadicionifa.aspx?id=0&lang=es&nreg=2025022995&nregaud=20448",
+    "retrieved_at": "2026-09-16T04:37:18+00:00",
+    "http_status": 200,
+    "media_type": "text/html; charset=utf-8",
+    "byte_size": 215386,
+    "sha256": "369aaf17359d37d558209954dc9b3f1174c2b9a418ad9a0fceabb7ef7f3c67ab"
+  },
+  {
+    "artifact": "infadicionifa-20509-r13.html",
+    "source_url": "https://www.cnmv.es/Portal/consultas/ifa/infadicionifa.aspx?id=0&lang=es&nreg=2025031067&nregaud=20509",
+    "retrieved_at": "2026-09-16T04:37:19+00:00",
+    "http_status": 200,
+    "media_type": "text/html; charset=utf-8",
+    "byte_size": 215300,
+    "sha256": "58202e24a8a131cd20a5a9bb16011fc169e024594a2bd320fd3829e1c6043c26"
+  },
+  {
+    "artifact": "infadicionifa-20515-r13.html",
+    "source_url": "https://www.cnmv.es/Portal/consultas/ifa/infadicionifa.aspx?id=0&lang=es&nreg=2025031726&nregaud=20515",
+    "retrieved_at": "2026-09-16T04:37:19+00:00",
+    "http_status": 200,
+    "media_type": "text/html; charset=utf-8",
+    "byte_size": 215266,
+    "sha256": "ada8dd062322091a4c48b0f5b20556c2a29deb1b3a31c4cf8262c86ad6dd4c85"
+  },
+  {
+    "artifact": "infadicionifa-20854-r13.html",
+    "source_url": "https://www.cnmv.es/Portal/consultas/ifa/infadicionifa.aspx?id=0&lang=es&nreg=2026023391&nregaud=20854",
+    "retrieved_at": "2026-09-16T04:37:19+00:00",
+    "http_status": 200,
+    "media_type": "text/html; charset=utf-8",
+    "byte_size": 215384,
+    "sha256": "2a1bd8993d2332d01deeff1850548d58aadfd35cb8c37c69b629c2d931c76d18"
+  },
+  {
+    "artifact": "infadicionifa-20875-r13.html",
+    "source_url": "https://www.cnmv.es/Portal/consultas/ifa/infadicionifa.aspx?id=0&lang=es&nreg=2026029493&nregaud=20875",
+    "retrieved_at": "2026-09-16T04:37:20+00:00",
+    "http_status": 200,
+    "media_type": "text/html; charset=utf-8",
+    "byte_size": 215300,
+    "sha256": "f4641fece51b8382997180405e7a2d68294ab0c625b84712f2ad946f25bfe491"
+  },
+  {
+    "artifact": "infadicionifa-20934-r13.html",
+    "source_url": "https://www.cnmv.es/Portal/consultas/ifa/infadicionifa.aspx?id=0&lang=es&nreg=2026031462&nregaud=20934",
+    "retrieved_at": "2026-09-16T04:37:20+00:00",
+    "http_status": 200,
+    "media_type": "text/html; charset=utf-8",
+    "byte_size": 215258,
+    "sha256": "d32f00965fe245c7a2a0598ce3951591b67dd1f06fa51397b1da6bc489268137"
+  },
+  {
+    "artifact": "ibe-fy2022-cert1.pdf",
+    "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=W2B%2bWZDrFA4Ihpqd%2fjglQEjNSMMjqUXGqXFOO7%2fE1FmP13%2fQ49HhKrz69rsiH53l",
+    "retrieved_at": "2026-09-16T04:37:20+00:00",
+    "http_status": 200,
+    "media_type": "application/pdf",
+    "byte_size": 1899995,
+    "sha256": "36b5c60c509f5ebba457c8eb0d70ebbe87dca936bf6c43efec01d5d8f260a6f7"
+  },
+  {
+    "artifact": "ibe-fy2022-cert2.pdf",
+    "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=VJaIxWFGHYK%2fSKcv1ex%2f20CE7QH6C9jB7EFljwwtaAmP13%2fQ49HhKrz69rsiH53l",
+    "retrieved_at": "2026-09-16T04:37:21+00:00",
+    "http_status": 200,
+    "media_type": "application/pdf",
+    "byte_size": 1380775,
+    "sha256": "f79271a2f8338e3cdabfd1fa28d743857be423cb6074017a1372b7aff17f2549"
+  },
+  {
+    "artifact": "ibe-h1-2009-ipp.pdf",
+    "source_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=P8P4sdwbT5isEKmQC7DawbhYkc6XIBZ7%2BYWKJxFMOZT1xVx9TYwe6nqlQTLZolJy",
+    "retrieved_at": "2026-09-16T04:37:21+00:00",
+    "http_status": 200,
+    "media_type": "application/pdf",
+    "byte_size": 126414,
+    "sha256": "cc0c73d3e3dfcfe1ed7b590111f0c9a6d1d0f061cae0a77b08c8cdde10fd21c2"
+  }
+]

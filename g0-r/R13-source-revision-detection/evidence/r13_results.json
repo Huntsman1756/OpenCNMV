@@ -1,0 +1,274 @@
+{
+  "gate": "R13",
+  "run_at": "2026-09-16T04:37:14+00:00",
+  "drift_vs_r1_snapshot": [
+    {
+      "issuer": "SAN",
+      "r1_snapshot_sha256": "f4bff1d7ccbe13f32464866710b9dff50f070a0398e89215174ed19b8cb66844",
+      "r13_fetch_sha256": "a99decdb380dbfb0e45ed0db384293747670aa5e58d0aa88e0d71bb1fec78939",
+      "identical_bytes": false,
+      "r1_ampliacion_registros": [
+        "12610",
+        "14101",
+        "15608",
+        "16171",
+        "18744",
+        "19240",
+        "19679",
+        "20044",
+        "20509",
+        "20875"
+      ],
+      "r13_ampliacion_registros": [
+        "12610",
+        "14101",
+        "15608",
+        "16171",
+        "18744",
+        "19240",
+        "19679",
+        "20044",
+        "20509",
+        "20875"
+      ],
+      "ampliacion_set_identical": true,
+      "registros_added_since_r1": []
+    },
+    {
+      "issuer": "BBVA",
+      "r1_snapshot_sha256": "62a646d581ef2a4cc58f4407e98806b42b866be28d5cb17a3a23705a536e8da5",
+      "r13_fetch_sha256": "eeca0a4e7b46496388018c5f13493567f8fdc7aff1acbc0fcbe467512f3dada7",
+      "identical_bytes": false,
+      "r1_ampliacion_registros": [
+        "10299",
+        "13301",
+        "14097",
+        "14858",
+        "17810",
+        "18734",
+        "19190",
+        "19620",
+        "20040",
+        "20448",
+        "20854",
+        "8507"
+      ],
+      "r13_ampliacion_registros": [
+        "10299",
+        "13301",
+        "14097",
+        "14858",
+        "17810",
+        "18734",
+        "19190",
+        "19620",
+        "20040",
+        "20448",
+        "20854",
+        "8507"
+      ],
+      "ampliacion_set_identical": true,
+      "registros_added_since_r1": []
+    },
+    {
+      "issuer": "IBE",
+      "r1_snapshot_sha256": "1d06e2fc12ca615d72277fa103e07c24382aa29fbc0ae3a5f6b69ff35911788a",
+      "r13_fetch_sha256": "3d90aa54dea67bc7d04beb1a3f9a150c49d635d1d73c1a9c83735ed41472822a",
+      "identical_bytes": false,
+      "r1_ampliacion_registros": [
+        "11721",
+        "13305",
+        "14096",
+        "14868",
+        "16782",
+        "18803",
+        "19237",
+        "19646",
+        "20050",
+        "20515",
+        "20934"
+      ],
+      "r13_ampliacion_registros": [
+        "11721",
+        "13305",
+        "14096",
+        "14868",
+        "16782",
+        "18803",
+        "19237",
+        "19646",
+        "20050",
+        "20515",
+        "20934"
+      ],
+      "ampliacion_set_identical": true,
+      "registros_added_since_r1": []
+    }
+  ],
+  "events": [
+    {
+      "fecha": "24/02/2023",
+      "motivo": "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+      "doc_token": "W2B%2bWZDrFA4Ihpqd%2fjglQEjNSMMjqUXGqXFOO7%2fE1FmP13%2fQ49HhKrz69rsiH53l",
+      "target_nregaud": "19646",
+      "class": "CERTIFICATE",
+      "corpus": false,
+      "doc_sha256": "36b5c60c509f5ebba457c8eb0d70ebbe87dca936bf6c43efec01d5d8f260a6f7",
+      "doc_media_type": "application/pdf"
+    },
+    {
+      "fecha": "28/02/2023",
+      "motivo": "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+      "doc_token": "VJaIxWFGHYK%2fSKcv1ex%2f20CE7QH6C9jB7EFljwwtaAmP13%2fQ49HhKrz69rsiH53l",
+      "target_nregaud": "19646",
+      "class": "SUBSTITUTION",
+      "corpus": false,
+      "doc_sha256": "f79271a2f8338e3cdabfd1fa28d743857be423cb6074017a1372b7aff17f2549",
+      "doc_media_type": "application/pdf"
+    },
+    {
+      "fecha": "14/02/2025",
+      "motivo": "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+      "doc_token": "ESt%2fi0Z2GCpvoyS0Qik%2fljRrhoEkzHQchfVA4waeCAWP13%2fQ49HhKrz69rsiH53l",
+      "target_nregaud": "20448",
+      "class": "CERTIFICATE",
+      "corpus": true
+    },
+    {
+      "fecha": "28/02/2025",
+      "motivo": "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+      "doc_token": "er74Gqx5eF%2fLNimWjMW%2fp4h3lNeTnSOgpTAd%2b57hba6P13%2fQ49HhKrz69rsiH53l",
+      "target_nregaud": "20509",
+      "class": "CERTIFICATE",
+      "corpus": true
+    },
+    {
+      "fecha": "28/02/2025",
+      "motivo": "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+      "doc_token": "N%2fyGcMbpQ4SZ3qxRO%2bu2r%2fvdLm7tcQUd3NwKAeOkqIuP13%2fQ49HhKrz69rsiH53l",
+      "target_nregaud": "20515",
+      "class": "CERTIFICATE",
+      "corpus": true
+    },
+    {
+      "fecha": "13/02/2026",
+      "motivo": "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+      "doc_token": "kh1lvetwVJuYD4m90M4EUYv7E7uDxU6ofZ4EZ4fA%2bb6P13%2fQ49HhKrz69rsiH53l",
+      "target_nregaud": "20854",
+      "class": "CERTIFICATE",
+      "corpus": true
+    },
+    {
+      "fecha": "25/02/2026",
+      "motivo": "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+      "doc_token": "9Ju2eXeX%2bOJ9kb7ypzHcbBZ%2fpzgsXGsq2VpA%2fGBiFNiP13%2fQ49HhKrz69rsiH53l",
+      "target_nregaud": "20875",
+      "class": "CERTIFICATE",
+      "corpus": true
+    },
+    {
+      "fecha": "27/02/2026",
+      "motivo": "Certificado del secretario del consejo sobre la formulación y firma del informe financiero anual",
+      "doc_token": "KwWhnZj4PdTX3XfgZQkZBBFHH%2bsT7u3BIESiYVYScsGP13%2fQ49HhKrz69rsiH53l",
+      "target_nregaud": "20934",
+      "class": "CERTIFICATE",
+      "corpus": true
+    }
+  ],
+  "target_exact_checks": [
+    {
+      "nregaud_param": "19646",
+      "registro_in_page": "19646",
+      "registro_in_row": "19646",
+      "exact_binding": true,
+      "issuer_in_page": "IBERDROLA, S.A."
+    },
+    {
+      "nregaud_param": "20448",
+      "registro_in_page": "20448",
+      "registro_in_row": "20448",
+      "exact_binding": true,
+      "issuer_in_page": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A."
+    },
+    {
+      "nregaud_param": "20509",
+      "registro_in_page": "20509",
+      "registro_in_row": "20509",
+      "exact_binding": true,
+      "issuer_in_page": "BANCO SANTANDER, S.A."
+    },
+    {
+      "nregaud_param": "20515",
+      "registro_in_page": "20515",
+      "registro_in_row": "20515",
+      "exact_binding": true,
+      "issuer_in_page": "IBERDROLA, S.A."
+    },
+    {
+      "nregaud_param": "20854",
+      "registro_in_page": "20854",
+      "registro_in_row": "20854",
+      "exact_binding": true,
+      "issuer_in_page": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A."
+    },
+    {
+      "nregaud_param": "20875",
+      "registro_in_page": "20875",
+      "registro_in_row": "20875",
+      "exact_binding": true,
+      "issuer_in_page": "BANCO SANTANDER, S.A."
+    },
+    {
+      "nregaud_param": "20934",
+      "registro_in_page": "20934",
+      "registro_in_row": "20934",
+      "exact_binding": true,
+      "issuer_in_page": "IBERDROLA, S.A."
+    }
+  ],
+  "h1_2009_semantics": {
+    "artifact": "ibe-h1-2009-ipp.pdf",
+    "sha256": "cc0c73d3e3dfcfe1ed7b590111f0c9a6d1d0f061cae0a77b08c8cdde10fd21c2",
+    "section": "II. INFORMACIÓN COMPLEMENTARIA A LA INFORMACIÓN PERIÓDICA PREVIAMENTE PUBLICADA",
+    "excerpt_sha256": "25b919a18a0c90e174c42c1f745a7979a19aabb6938df1e7202ac3c424bff104",
+    "has_correction_table": true,
+    "excerpt_preview": "modificaciones respecto a la información periódica previamente publicada:\n(sólo se cumplimentará en los supuestos establecidos en el apartado B) de las instrucciones).\nEn junio de 2009, el Consejo de Administración de Iberdrola, S.A. adoptó la decisión de aportar su negocio de comercialización de gas y electricidad a su\nparticipada en un 100% Iberdrola Generación, S.A.U. mediante la escisión y posterior aportación de dicha rama de actividad. La aportación de esta actividad\nse completará el 1 de enero de 2010, estando en proceso al 30 de junio de 2009.\n \nAl 30 de junio de 2009, los activos y pasivos de esta actividad se han clasificado como un grupo enajenable mantenido para la venta, presentándose de forma\nseparada en el balance al resto de los activos y los pasivos.\n \nAsimismo, el epígrafe de la cuenta de resultados a 30 de junio de 2009 “Resultado del ejercicio procedente de operaciones interrumpidas neto de impuestos”\nincluye el resultado neto de impuestos de dicha rama de actividad.\n \nTal y como requiere el Plan General de Contabilidad, para las actividades interrumpidas en el primer semestre de 2009 se debe presentar el resultado neto de\nimpuestos a 30 de junio de 2008 en el m",
+    "corrections": [
+      {
+        "concept": "Activos por impuestos corrientes",
+        "consolidated": {
+          "corregida": "484.641",
+          "previa": "1.017.757",
+          "dif": "-533.116"
+        },
+        "individual": {
+          "corregida": "446.671",
+          "previa": "0",
+          "dif": "446.671"
+        }
+      },
+      {
+        "concept": "Pasivos por impuestos corrientes",
+        "consolidated": {
+          "corregida": "477.352",
+          "previa": "1.398.121",
+          "dif": "-920.769"
+        },
+        "individual": {
+          "corregida": "4.829",
+          "previa": "0",
+          "dif": "4.829"
+        }
+      }
+    ]
+  },
+  "counts": {
+    "corpus_rows_checked": 6,
+    "corpus_rows_with_ampliacion": 6,
+    "events_total": 8,
+    "by_class": {
+      "CERTIFICATE": 7,
+      "SUBSTITUTION": 1
+    }
+  }
+}
