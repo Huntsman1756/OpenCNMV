@@ -22,3 +22,6 @@ g0-r/R12-ipp-arelle-parse/evidence/_entrypoints/
 
 # R14 run roots (transient; canonical projections copied to evidence/)
 g0-r/R14-online-capture-deterministic/_runs/
+
+# R15 run roots
+g0-r/R15-offline-rebuild-deterministic/_runs/
