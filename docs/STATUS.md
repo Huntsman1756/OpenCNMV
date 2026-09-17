@@ -441,7 +441,12 @@ socket deny-all; incremental S1 byte-identical to the clean-rebuild
 oracle on every applied scenario. Unit tests 15/15 (full suite 38/38);
 ruff + mypy clean on 35 modules; sdist+wheel build + pip check.
 Regressions on final HEAD: G2-A PASS 6/6, G2-B PASS 8/8, G2-C PASS 20/20.
-Next: G2-E / CLI surface (per docs/G2.md ordering).
+Re-verified on HEAD `332ba96`: `g2d_verify.py` re-run -> 21/21 PASS against
+the persisted `_out/` artifacts; third independent run (seed 31337, tag C)
+reproduced every scenario's S0->S1 corpus hash and byte-identical deltas vs
+run A; all fail-closed controls fired. unittest 38/38, ruff + mypy clean,
+CI green on the pushed commit. Next: G2-E / CLI surface (per docs/G2.md
+ordering).
 
 ## Engineering-hardening session (2026-09-17)
 

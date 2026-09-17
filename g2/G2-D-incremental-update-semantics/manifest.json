@@ -1,8 +1,8 @@
 {
  "gate": "G2-D-incremental-update-semantics",
  "status": "PASS",
- "executed_at": "2026-09-17T14:07:40.266956+00:00",
- "code_commit": "25d4681",
+ "executed_at": "2026-09-17T17:06:16.234115+00:00",
+ "code_commit": "332ba96",
  "inputs": {
   "g2d_inputs.json": "pinned G2-C runA dataset files"
  },
