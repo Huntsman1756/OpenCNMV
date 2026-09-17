@@ -1,0 +1,126 @@
+{
+ "gate": "G2-D-incremental-update-semantics",
+ "contract": "Preregistered scenario set. Every scenario: carve S0 from the "
+             "pinned G2-C runA dataset (or use it whole), apply a "
+             "CANONICAL_OBSERVATION_V1 document, and compare S1 against an "
+             "oracle. oracle=g2c_runA means the incremental S1 must be "
+             "byte-identical to the pinned clean-rebuild dataset; "
+             "oracle=built means an independent observation-union "
+             "materializer produces the reference; oracle=self means the "
+             "dataset must remain identical to S0.",
+ "scenarios": {
+  "A":  {"title": "NO_CHANGE",
+         "observation": "complete re-observation of cnmv:ifa:20509 "
+                        "(filing-only) + identical resubmission of parsed "
+                        "state IBE-H1-2026",
+         "s0": "full corpus", "oracle": "g2c_runA",
+         "expect": {"transitions": ["NO_CHANGE"], "row_ops": 0}},
+  "B":  {"title": "NEW_FILING",
+         "observation": "cnmv:ipp:2026103709 (IBE H1-2026) with full state",
+         "s0": "corpus minus cnmv:ipp:2026103709", "oracle": "g2c_runA",
+         "expect": {"transitions": ["NEW_FILING", "NEW_FILING_VERSION",
+                                    "NEW_SUBMISSION_VARIANT",
+                                    "NEW_VARIANT_VERSION",
+                                    "VIEW_RESOLUTION_RECORDED",
+                                    "FACT_ADDED"],
+                    "adds": {"filing": 1, "filing_version": 1,
+                             "submission_variant": 1, "variant_version": 1,
+                             "view_resolution": 1, "artifact": 1,
+                             "provenance": 1, "facts": 1110,
+                             "fact_dimension": 1174}}},
+  "C1": {"title": "UI fallback replay",
+         "observation": "cnmv:ifa:20515 (IBE FY2024) unchanged — en UI "
+                        "language resolves to #es",
+         "s0": "full corpus", "oracle": "g2c_runA",
+         "expect": {"transitions": ["NO_CHANGE"],
+                    "no_phantom_variant": "cnmv:ifa:20515#en"}},
+  "C2": {"title": "new UI-language resolution records a row, no variant",
+         "observation": "cnmv:ifa:20515 + view_resolution fr->es "
+                        "FALLBACK_TO_ES",
+         "s0": "full corpus", "oracle": "built",
+         "expect": {"transitions": ["VIEW_RESOLUTION_RECORDED"],
+                    "adds": {"view_resolution": 1},
+                    "forbid": ["NEW_SUBMISSION_VARIANT"]}},
+  "D":  {"title": "new real language variant",
+         "observation": "cnmv:ifa:20448 (BBVA FY2024) complete — supplies "
+                        "the #en variant, #en#v1, artifacts, 1847 facts, "
+                        "125 mappings, en view_resolution",
+         "s0": "corpus minus the entire 20448#en subgraph",
+         "oracle": "g2c_runA",
+         "expect": {"transitions": ["NEW_SUBMISSION_VARIANT",
+                                    "NEW_VARIANT_VERSION", "FACT_ADDED",
+                                    "EXTENSION_MAPPING_ADDED",
+                                    "VIEW_RESOLUTION_RECORDED"],
+                    "es_untouched": true}},
+  "E":  {"title": "variant-scoped replacement (TEF 20484 13/03)",
+         "observation": "cnmv:ifa:20484 complete — adds evt:2025-03-13 "
+                        "(EN_ONLY_REPLACED, source_nreg null) + #en#v2 "
+                        "superseding #en#v1 + its artifacts",
+         "s0": "corpus minus evt:2025-03-13, its affects/artifacts, and "
+               "#en#v2 (+artifacts)",
+         "oracle": "g2c_runA",
+         "expect": {"transitions": ["NEW_VERSION_EVENT",
+                                    "VARIANT_SCOPED_VERSION_EVENT",
+                                    "NEW_VARIANT_VERSION"],
+                    "en_v2_supersedes": "cnmv:ifa:20484#en#v1",
+                    "affects_only": ["cnmv:ifa:20484#en"],
+                    "es_untouched": true}},
+  "F":  {"title": "unobservable event scope (TEF 20484 28/02)",
+         "observation": "cnmv:ifa:20484 complete — adds evt:2025-02-28 "
+                        "(VARIANT_SCOPE_NOT_OBSERVABLE); S0 records #es#v1 "
+                        "without its created_by link, which the event "
+                        "backfills via rows_updated",
+         "s0": "corpus minus evt:2025-02-28, its affects/artifact; "
+               "#es#v1.created_by_event_id=null",
+         "oracle": "g2c_runA",
+         "expect": {"transitions": ["NEW_VERSION_EVENT",
+                                    "FILING_SCOPE_NOT_OBSERVABLE"],
+                    "forbid": ["NEW_VARIANT_VERSION",
+                               "VARIANT_SCOPED_VERSION_EVENT"],
+                    "updates": {"variant_version": 1}}},
+  "G":  {"title": "changed fact payload under same structural identity",
+         "observation": "cnmv:ipp:2026103709 + filing_version "
+                        "nreg:2026109999 (SUBSTITUTION) + #es#v2 "
+                        "superseding #es#v1 + state IBE-H1-2026-R1 where "
+                        "one fact keeps its structural identity but "
+                        "changes payload",
+         "s0": "full corpus", "oracle": "built",
+         "expect": {"transitions": ["NEW_FILING_VERSION",
+                                    "NEW_VARIANT_VERSION",
+                                    "FACT_PAYLOAD_CHANGED"],
+                    "v1_facts_retained": 1110}},
+  "H1": {"title": "artifact absent without removal evidence",
+         "observation": "cnmv:ipp:2026103709 minus the filing_version "
+                        "artifact, no disposition",
+         "s0": "full corpus", "oracle": "self",
+         "expect": {"transitions": ["UNRESOLVED"], "row_ops": 0}},
+  "H2": {"title": "artifact removal with authoritative evidence",
+         "observation": "cnmv:ipp:2026103709 minus the artifact + "
+                        "artifact_dispositions.REMOVED_CONFIRMED",
+         "s0": "full corpus", "oracle": "self",
+         "expect": {"transitions": ["ARTIFACT_REMOVED"], "row_ops": 0,
+                    "note": "append-only ledger: the historical row is "
+                            "retained; removal is a delta-level semantic "
+                            "transition"}},
+  "I1": {"title": "extension mappings added",
+         "observation": "cnmv:ifa:20854 complete — supplies 119 mapping "
+                        "records (99 PROVEN / 10 AMBIGUOUS / 10 UNMATCHED)",
+         "s0": "corpus minus 20854 extension_mapping rows",
+         "oracle": "g2c_runA",
+         "expect": {"transitions": ["EXTENSION_MAPPING_ADDED"]}},
+  "I2": {"title": "extension mapping evolution",
+         "observation": "cnmv:ifa:20854 with (a) one AMBIGUOUS record "
+                        "promoted to PROVEN_EQUIVALENT, (b) one PROVEN "
+                        "demoted to AMBIGUOUS, (c) one AMBIGUOUS record "
+                        "carrying an adversarial rewrites_identity:true "
+                        "claim",
+         "s0": "full corpus", "oracle": "built",
+         "expect": {"transitions": ["EXTENSION_MAPPING_CHANGED"],
+                    "proven_only_rewrite": true}},
+  "I3": {"title": "mapping file shrinks (history cannot shrink)",
+         "observation": "cnmv:ifa:20854 with the last mapping record "
+                        "absent",
+         "s0": "full corpus", "oracle": "self",
+         "expect": {"transitions": ["UNRESOLVED"], "row_ops": 0}}
+ }
+}

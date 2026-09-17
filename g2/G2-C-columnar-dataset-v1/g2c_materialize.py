@@ -370,27 +370,10 @@ def materialize_run(run_dir: Path, corpus: list[dict], data: dict,
     for e in corpus:
         all_rows["provenance"].append(provenance[e["id"]])
 
-    # deterministic row order per table
-    order = {
-        "filing": lambda r: r["filing_id"],
-        "filing_version": lambda r: (r["filing_id"], r["version_seq"]),
-        "submission_variant": lambda r: (r["filing_id"],
-                                         r["variant_ordinal"]),
-        "variant_version": lambda r: r["variant_version_id"],
-        "view_resolution": lambda r: (r["filing_id"], r["ordinal"]),
-        "version_event": lambda r: r["event_id"],
-        "event_affects": lambda r: (r["event_id"], r["affects_ordinal"]),
-        "artifact": lambda r: (r["owner_kind"], r["owner_id"],
-                               r["artifact_ordinal"]),
-        "extension_mapping": lambda r: (r["filing_id"], r["source_file"],
-                                        r["source_ordinal"]),
-        "provenance": lambda r: r["state_id"],
-        "facts": lambda r: (r["state_id"], r["seq"]),
-        "fact_dimension": lambda r: (r["fact_id"], r["dim_qname"]),
-    }
+    # deterministic row order per table — the shared write contract
     table_meta = {}
     for tname in dschema.TABLE_ORDER:
-        rows = sorted(all_rows[tname], key=order[tname])
+        rows = sorted(all_rows[tname], key=parquetio.ROW_ORDER[tname])
         table_meta[tname] = parquetio.write_table(
             tname, rows, ds_dir / f"{tname}.parquet")
 

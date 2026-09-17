@@ -1,0 +1,84 @@
+{
+ "gate": "G2-D-incremental-update-semantics",
+ "description": "Pinned inputs: the G2-C runA materialized dataset is the authoritative S_corpus. Every scenario derives its base state and observation documents from these files; scenario oracles for corpus-restoring scenarios compare byte-identically against them.",
+ "g2c_corpus_logical_sha256": "b2612152f46406a5ec4858592656c10b0afa8f98b042dc93337782b202045f69",
+ "g2c_dataset_dir": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1",
+ "files": {
+  "g2c_runA/filing.parquet": {
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/filing.parquet",
+   "sha256": "2a62691b32bfa54e2f2f0c6a21937342b19ec5105897e9c76145a463cd262b27",
+   "rows": 22,
+   "logical_sha256": "64d7731d68d908b154cb11beb274e686221237ce3618a84d2ff4b656ab4ef3d5"
+  },
+  "g2c_runA/filing_version.parquet": {
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/filing_version.parquet",
+   "sha256": "c32716af8b23d347aab7858c0c3c46970e8cff9bf04fa1556b5aa43c62ef12fe",
+   "rows": 23,
+   "logical_sha256": "c42aa435dc5a8c7aca894a6a22bd903271774ef63a09d03895b8ffb8f3a41256"
+  },
+  "g2c_runA/submission_variant.parquet": {
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/submission_variant.parquet",
+   "sha256": "9599ebc116b863cb27f2460270cabdd4f2297a3362c01df10d46fad4ef2eebb8",
+   "rows": 27,
+   "logical_sha256": "faf9e2b6c823998e64fae0be89600bad028608619b0dd92b704f44dd90c099b6"
+  },
+  "g2c_runA/variant_version.parquet": {
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/variant_version.parquet",
+   "sha256": "0da4a975a2674bc93b3137f8fae71111e566771fc86107b92a1f4368422d4a31",
+   "rows": 28,
+   "logical_sha256": "176f9b26457999dc25c30fe2e841b0489cd584d878b6926e6fc3cda8779c6d74"
+  },
+  "g2c_runA/view_resolution.parquet": {
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/view_resolution.parquet",
+   "sha256": "f221763abfabd73e7eb407f26239774a71aa7729f6b2e515d231f3362ac81ba0",
+   "rows": 29,
+   "logical_sha256": "abd7eebc0cc1189b09a53d3530b8a0161ffed541dc90598e19a5dfdd569422fc"
+  },
+  "g2c_runA/version_event.parquet": {
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/version_event.parquet",
+   "sha256": "10f530401c85a747b7e1089ab7964f0f7985d824081264143ddb3879d9dce8db",
+   "rows": 8,
+   "logical_sha256": "502c34265b04cfb13196ce636539661d3d349c3562c195c3358ed2b74fad3c56"
+  },
+  "g2c_runA/event_affects.parquet": {
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/event_affects.parquet",
+   "sha256": "17219814d7fbb4b9f30c6e2eb8380aa7b53b93f13c4552089adb0a734b973ea5",
+   "rows": 2,
+   "logical_sha256": "d13d33cf850c17f6751e15726e0ad0d1dd9b2bcacc044b610e5f6029703efd3f"
+  },
+  "g2c_runA/artifact.parquet": {
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/artifact.parquet",
+   "sha256": "39432af9eee5c2e61164a2b3781d06936b0ce49a66e3e9ff501ce7ee8e515ae2",
+   "rows": 33,
+   "logical_sha256": "f98cb2f97d46181058d344428accb36513c06e4b13bfbce2f761847ac459a9b1"
+  },
+  "g2c_runA/extension_mapping.parquet": {
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/extension_mapping.parquet",
+   "sha256": "e6ec6611b70712a59a77924415be8a4f1e752d02479d5565a4fe0938d3ef086a",
+   "rows": 449,
+   "logical_sha256": "6b4b86d6e32cdb3fa2c507bde48136763f510cfa80d8c73d1787af71a7d11447"
+  },
+  "g2c_runA/provenance.parquet": {
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/provenance.parquet",
+   "sha256": "e3bfb356c4c94811f07010bcd5b3df7ff2e22bc9d8e8da118b942e5fa496d229",
+   "rows": 25,
+   "logical_sha256": "b5c8f19e1367b21d777cd4bf4bf79c73d84f12466ada67c6f1385f2b89eac969"
+  },
+  "g2c_runA/facts.parquet": {
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/facts.parquet",
+   "sha256": "f043062f351b73a8f4383366d8f6f81c2e07325e7bf336d12b22540c401d6988",
+   "rows": 45376,
+   "logical_sha256": "fb8b13f0f11524f1906b7029b35c2a4e911e404b83c55989dfcd485c73245d3e"
+  },
+  "g2c_runA/fact_dimension.parquet": {
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/fact_dimension.parquet",
+   "sha256": "d313639da6a01af8c0e711dcab54859a7e88666dc473e786ee02d9111d7884cc",
+   "rows": 38365,
+   "logical_sha256": "0847e5c47b839e40d85093fcad008925401b39247caacb996ff949f085e36e73"
+  },
+  "g2c_runA/dataset_manifest.json": {
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/dataset_manifest.json",
+   "sha256": "de97df013886f0ce2d60c529598b8156a7792833becce3869f801c96dad360b6"
+  }
+ }
+}

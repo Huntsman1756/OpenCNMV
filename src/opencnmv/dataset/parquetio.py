@@ -13,6 +13,27 @@ from pathlib import Path
 from opencnmv.dataset import schema as dschema
 from opencnmv.provenance.hashes import canon, sha256_bytes
 
+# Deterministic row order per table — the dataset write contract. The
+# materializer and the update engine must use exactly this ordering so
+# identical row sets serialize to byte-identical Parquet.
+ROW_ORDER = {
+    "filing": lambda r: r["filing_id"],
+    "filing_version": lambda r: (r["filing_id"], r["version_seq"]),
+    "submission_variant": lambda r: (r["filing_id"],
+                                     r["variant_ordinal"]),
+    "variant_version": lambda r: r["variant_version_id"],
+    "view_resolution": lambda r: (r["filing_id"], r["ordinal"]),
+    "version_event": lambda r: r["event_id"],
+    "event_affects": lambda r: (r["event_id"], r["affects_ordinal"]),
+    "artifact": lambda r: (r["owner_kind"], r["owner_id"],
+                           r["artifact_ordinal"]),
+    "extension_mapping": lambda r: (r["filing_id"], r["source_file"],
+                                    r["source_ordinal"]),
+    "provenance": lambda r: r["state_id"],
+    "facts": lambda r: (r["state_id"], r["seq"]),
+    "fact_dimension": lambda r: (r["fact_id"], r["dim_qname"]),
+}
+
 
 def logical_hash(table_name: str, rows: list[dict]) -> str:
     """sha256 over canonical JSON lines of the row projection."""
