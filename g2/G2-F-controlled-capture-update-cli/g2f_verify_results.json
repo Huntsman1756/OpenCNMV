@@ -1,0 +1,163 @@
+{
+ "gate": "G2-F",
+ "verdict": "PASS",
+ "checks": [
+  {
+   "id": "F1",
+   "status": "PASS",
+   "detail": "capture cap-202609172146190000: 69 fetches, 86 artifacts, 21 filings"
+  },
+  {
+   "id": "F2",
+   "status": "PASS",
+   "detail": "recapture filings identical: True; live-vs-offline assemble equal: True; new source bytes: 0"
+  },
+  {
+   "id": "F3",
+   "status": "PASS",
+   "detail": "update --observation under socket-deny exit 0"
+  },
+  {
+   "id": "F4",
+   "status": "PASS",
+   "detail": "complete PREVIEW delta, zero dataset bytes changed"
+  },
+  {
+   "id": "F5",
+   "status": "PASS",
+   "detail": "repeated identical update: NO_CHANGE, byte-identical dataset"
+  },
+  {
+   "id": "F6",
+   "status": "PASS",
+   "detail": "apply exit 0; dataset validate clean"
+  },
+  {
+   "id": "F7",
+   "status": "PASS",
+   "detail": "21 filings; mismatches: none (excludes filing.extras_json curation + prov retrieved_at)"
+  },
+  {
+   "id": "F8",
+   "status": "PASS",
+   "detail": "out-of-corpus issuer -> exit 7"
+  },
+  {
+   "id": "F9",
+   "status": "PASS",
+   "detail": "CaptureError raised; dataset untouched; no run manifest: True"
+  },
+  {
+   "id": "F10",
+   "status": "PASS",
+   "detail": "StaleBaseError: delta base b2612152f46406a5ec4858592656c10b0afa8f98b042dc93337782b202045f69 != d"
+  },
+  {
+   "id": "F11",
+   "status": "PASS",
+   "detail": "tampered observation -> exit 5"
+  },
+  {
+   "id": "F12",
+   "status": "PASS",
+   "detail": "injected failure; dataset intact; staging left: 0"
+  },
+  {
+   "id": "F13",
+   "status": "PASS",
+   "detail": "conflict visible in preview; --fail-on-unresolved exit 5"
+  },
+  {
+   "id": "F14",
+   "status": "PASS",
+   "detail": "recapture: 11 fetches; 5 semantic artifacts deduplicated: True; 5 new artifacts = 5 changed page bytes"
+  },
+  {
+   "id": "F15",
+   "status": "PASS",
+   "detail": "manifest artifact recs complete: True (81); fetch_log complete: True; dataset prov paths+hashes: True (25 rows)"
+  },
+  {
+   "id": "F16",
+   "status": "PASS",
+   "detail": "14 transitions for 14 scoped filings; removed_rows={}"
+  },
+  {
+   "id": "F17",
+   "status": "PASS",
+   "detail": "4 IBE views, en->FALLBACK_TO_ES; 2 IBE ESEF filings, no #en variant"
+  },
+  {
+   "id": "F18",
+   "status": "PASS",
+   "detail": "ESEF=6 IPP=15; H2 (12-31 IPP) filings: 6 (H2-2024 + H2-2025 x 3 issuers)"
+  },
+  {
+   "id": "F19",
+   "status": "PASS",
+   "detail": "identical repeated output; --json emits a single document"
+  },
+  {
+   "id": "F20",
+   "status": "PASS",
+   "detail": "observed exit codes: {'ok': 0, 'capture': 7, 'integrity': 5}"
+  },
+  {
+   "id": "F21",
+   "status": "PASS",
+   "detail": "UA='OpenCNMV/0.1.0 controlled-capture (canonical archive; contact via repository)'; delay=2.0s; 69 sequential logged requests"
+  },
+  {
+   "id": "F22a",
+   "status": "PASS",
+   "detail": "81 passed, 14 subtests passed in 5.38s"
+  },
+  {
+   "id": "F22b",
+   "status": "PASS",
+   "detail": "ruff clean"
+  },
+  {
+   "id": "F22c",
+   "status": "PASS",
+   "detail": "Success: no issues found in 63 source files"
+  },
+  {
+   "id": "F22d",
+   "status": "PASS",
+   "detail": "6 installed-wheel commands (observe/update)"
+  },
+  {
+   "id": "F23a",
+   "status": "PASS",
+   "detail": "G2-A-durable-canonical-core verifier rc=0"
+  },
+  {
+   "id": "F23b",
+   "status": "PASS",
+   "detail": "G2-B-frozen-corpus-rebuild verifier rc=0"
+  },
+  {
+   "id": "F23c",
+   "status": "PASS",
+   "detail": "G2-C-columnar-dataset-v1 verifier rc=0"
+  },
+  {
+   "id": "F23d",
+   "status": "PASS",
+   "detail": "G2-D-incremental-update-semantics verifier rc=0"
+  },
+  {
+   "id": "F23e",
+   "status": "PASS",
+   "detail": "G2-E-public-readonly-cli verifier rc=0"
+  },
+  {
+   "id": "F24",
+   "status": "PASS",
+   "detail": "docs/CLI.md + docs/STATUS.md + docs/G2.md updated"
+  }
+ ],
+ "passed": 31,
+ "total": 31
+}

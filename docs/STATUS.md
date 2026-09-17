@@ -10,10 +10,11 @@ Update at the end of every session.
 
 ## Current phase
 
-**G2** (durable core over the frozen model) — G2-A through G2-E **PASS**.
+**G2** (durable core over the frozen model) — G2-A through G2-F **PASS**.
 G0-R closed `GO` at tag `g0-r-go`; G1 closed at `g1-model-frozen`. The
-read-only public CLI shipped in G2-E. Next planned gate: **G2-F —
-controlled CNMV capture/update CLI** (see `docs/G2.md`).
+read-only public CLI shipped in G2-E; the controlled live
+capture/update route shipped in G2-F (`opencnmv observe`/`update`).
+Next planned gate: **G2-G — dataset bootstrap** (see `docs/G2.md`).
 
 ## Gate statuses
 
@@ -480,6 +481,39 @@ final HEAD: G2-A 6/6, G2-B 8/8, G2-C 20/20, G2-D 21/21. Unit suite
 61/61; ruff + mypy clean on 55 files. Docs: `docs/CLI.md` (frozen CLI V1
 contract). Next: first write/online surface (capture/update CLI or API)
 as a separate deliberately-scoped gate — out of scope here by design.
+
+**G2-F `CONTROLLED_CAPTURE_AND_UPDATE_CLI`: PASS**
+(`g2/G2-F-controlled-capture-update-cli/`, 31/31 checks). New production
+package `opencnmv.capture` (`contract`/`fetch`/`discover`/`parse`/
+`assemble`/`observe`) promotes the gate-borne capture→canonical
+orchestration into production; the CLI gains `observe` (the only
+network surface: CNMV → write-once evidence + run manifest +
+observation) and `update` (`--observation` offline replay, `--dry-run`
+preview, `--fail-on-unresolved`); new exit code 7 = capture/source
+failure. Live leg over the exact frozen corpus: one sequential
+session, declared `OpenCNMV/0.1.0` UA, 2.0 s minimum delay —
+`cap-202609172146190000`, 69 fetches, 86 preserved artifacts. All 21
+filings reproduced byte-identical to the frozen evidence → NO_CHANGE
+delta, dataset corpus hash unchanged (`b2612152…`). F7 oracle: the
+incremental result equals a clean bootstrap rebuild from the same
+evidence on all 21 filings, with only the documented exclusions
+(per-capture retrieval metadata, curated fixture `extras_json`, and
+the fixture-era `filing` label inside extension-mapping
+`record_json`). Observation `4cf7155d…` is identical whether written
+live or re-assembled offline — and byte-identical to the synthetic
+no-change observation derived from the dataset itself. Recapture
+probe: identical XBRL bytes deduplicated to zero new artifacts;
+changed HTML detail pages preserved as new write-once objects (a
+source change, never an overwrite). Fail-closed legs: mid-capture
+failure leaves no manifest run and an untouched dataset; stale base
+refused; tampered observation → exit 5; injected mid-apply failure →
+dataset intact, zero staging left; unresolved conflict visible in
+preview and refused under `--fail-on-unresolved` (exit 5);
+out-of-corpus issuer → exit 7; issuer-scoped update emits zero
+removal claims for unobserved filings. Regressions on final HEAD:
+G2-A 6/6, G2-B 8/8, G2-C 20/20, G2-D 21/21, G2-E 29/29. Unit suite
+81/81; ruff + mypy clean; wheel smoke covers the new verbs from an
+installed wheel (6 commands). Next: G2-G `DATASET_BOOTSTRAP`.
 
 ## Engineering-hardening session (2026-09-17)
 

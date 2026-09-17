@@ -1,18 +1,21 @@
-"""``opencnmv`` — deterministic read-only CLI over COLUMNAR_DATASET_V1.
+"""``opencnmv`` — CLI over COLUMNAR_DATASET_V1 + controlled capture.
 
-Thin presentation layer: every callback resolves the dataset, calls an
-``opencnmv.query`` function, and renders the returned dict. No domain
-semantics live here; nothing writes to the dataset or the network.
+Thin presentation layer: read commands resolve the dataset and render
+``opencnmv.query`` results; ``observe``/``update`` are the controlled
+capture/update surface (the only network path lives in
+``opencnmv.capture``).
 """
 from __future__ import annotations
 
 import argparse
 import sys
+from pathlib import Path
 
 import opencnmv
 from opencnmv.cli import errors as cerr
 from opencnmv.cli import formatting as fmt
-from opencnmv.query.errors import (MissingDependencyError, QueryError,
+from opencnmv.query.errors import (DatasetNotFoundError,
+                                   MissingDependencyError, QueryError,
                                    UsageError)
 
 
@@ -439,6 +442,64 @@ def build_parser() -> argparse.ArgumentParser:
     g.add_argument("--artifact", help="artifact_id (sha256:<hex>)")
     g.add_argument("--state", help="state_id")
 
+    ob = sub.add_parser(
+        "observe", parents=[common],
+        help="controlled live CNMV capture -> CANONICAL_OBSERVATION_V1 "
+             "(the only network surface; frozen SAN/BBVA/IBE corpus)")
+    ob.add_argument("--evidence-dir", required=True,
+                    help="evidence dir: write-once artifacts + capture "
+                         "manifests (created if needed)")
+    ob.add_argument("--out",
+                    help="write the assembled observation document here")
+    ob.add_argument("--issuer", dest="issuers", action="append",
+                    metavar="NIF",
+                    help="issuer NIF (repeatable; default: all frozen "
+                         "corpus issuers)")
+    ob.add_argument("--family", dest="families", action="append",
+                    choices=["ifa", "ipp"],
+                    help="filing family (repeatable; default: both)")
+    ob.add_argument("--from", dest="date_from", default=None,
+                    help="IFA search window start (YYYY-MM-DD)")
+    ob.add_argument("--to", dest="date_to", default=None,
+                    help="IFA search window end (YYYY-MM-DD)")
+    ob.add_argument("--min-delay", type=float, default=None,
+                    metavar="S", help="minimum seconds between requests "
+                    f"(default {1.0})")
+    ob.add_argument("--taxonomy-dir", default=None,
+                    help="pinned taxonomy package dir — required when "
+                         "new/changed content must be parsed")
+
+    up = sub.add_parser(
+        "update", parents=[common],
+        help="classify an observation and atomically apply the delta")
+    src = up.add_mutually_exclusive_group(required=True)
+    src.add_argument("--observation",
+                     help="CANONICAL_OBSERVATION_V1 file (fully offline)")
+    src.add_argument("--evidence-dir",
+                     help="capture evidence dir: reuse the preserved "
+                          "manifest offline, or run a live capture into "
+                          "it when empty")
+    up.add_argument("--run", default=None, metavar="CAPTURE_ID",
+                    help="pin a specific capture run under "
+                         "--evidence-dir (default: latest)")
+    up.add_argument("--issuer", dest="issuers", action="append",
+                    metavar="NIF", help="capture leg: issuer NIF "
+                    "(repeatable)")
+    up.add_argument("--family", dest="families", action="append",
+                    choices=["ifa", "ipp"],
+                    help="capture leg: filing family (repeatable)")
+    up.add_argument("--min-delay", type=float, default=None,
+                    metavar="S")
+    up.add_argument("--taxonomy-dir", default=None,
+                    help="pinned taxonomy package dir for parsing "
+                         "new/changed content")
+    up.add_argument("--dry-run", action="store_true",
+                    help="run the full classify/delta pipeline and print "
+                         "the delta preview; zero dataset bytes changed")
+    up.add_argument("--fail-on-unresolved", action="store_true",
+                    help="exit non-zero without publishing when the "
+                         "observation yields UNRESOLVED transitions")
+
     return p
 
 
@@ -459,7 +520,139 @@ def _open(args, qds):
     return qds.open_dataset(path)
 
 
+def _r_observe(res: dict) -> str:
+    lines = [f"capture_id: {res['capture_id']}",
+             f"manifest: {res['manifest']}",
+             f"fetches: {res['fetches']}"]
+    if res.get("observation"):
+        lines.append(f"observation: {res['observation']}")
+        lines.append(f"filings: {res['filings']}")
+        lines.append(f"observation_sha256: {res['observation_sha256']}")
+    for w in res.get("warnings") or []:
+        lines.append(f"warning: {w}")
+    return "\n".join(lines)
+
+
+def _r_update(rep: dict) -> str:
+    lines = [f"dataset: {rep['dataset']}",
+             f"observation: {rep['observation']}",
+             f"observation_sha256: {rep['observation_sha256']}",
+             f"delta_id: {rep['delta_id']}",
+             f"base_corpus_logical_sha256: "
+             f"{rep['base_corpus_logical_sha256']}",
+             f"result_corpus_logical_sha256: "
+             f"{rep['result_corpus_logical_sha256']}",
+             f"status: {rep['status']}"]
+    tr = rep.get("transitions") or []
+    lines.append(f"transitions: {len(tr)}")
+    for t in tr:
+        detail = ", ".join(f"{k}={v}" for k, v in t.items()
+                           if k not in ("transition", "filing_id"))
+        lines.append(f"  {t['filing_id']} {t['transition']}"
+                     + (f" ({detail})" if detail else ""))
+    ops = rep.get("row_ops") or {}
+    if ops:
+        lines.append("row_ops: " + ", ".join(
+            f"{k}={v}" for k, v in sorted(ops.items())))
+    if rep.get("unresolved"):
+        lines.append("UNRESOLVED: observation contains source-state "
+                     "conflicts (no rows applied for them)")
+    if rep.get("dry_run"):
+        lines.append("dry-run: zero dataset bytes changed")
+    return "\n".join(lines)
+
+
+def _cmd_observe(args) -> int:
+    from opencnmv.capture import observe as cobserve
+    from opencnmv.capture.contract import MIN_DELAY_S, SEARCH_FROM, \
+        SEARCH_TO
+    res = cobserve.observe(
+        evidence_dir=Path(args.evidence_dir),
+        out=Path(args.out) if args.out else None,
+        issuer_nifs=args.issuers,
+        families=args.families,
+        desde=args.date_from or SEARCH_FROM,
+        hasta=args.date_to or SEARCH_TO,
+        min_delay=(args.min_delay if args.min_delay is not None
+                   else MIN_DELAY_S),
+        dataset_dir=(Path(args.dataset) if getattr(args, "dataset", None)
+                     else None),
+        tax_dir=Path(args.taxonomy_dir) if args.taxonomy_dir else None)
+    return _emit(args, res, _r_observe)
+
+
+def _cmd_update(args) -> int:
+    from opencnmv.capture import observe as cobserve
+    from opencnmv.query import dataset as qds
+    from opencnmv.update import apply as uapply
+    from opencnmv.update import delta as udelta
+    from opencnmv.update import observe as uobs
+
+    ds_path = qds.resolve_dataset_path(getattr(args, "dataset", None))
+    if not (ds_path / "dataset_manifest.json").is_file():
+        raise DatasetNotFoundError(f"dataset not found: {ds_path}")
+
+    tax_dir = Path(args.taxonomy_dir) if args.taxonomy_dir else None
+    if args.observation:
+        obs = uobs.load(args.observation)
+        obs_label = str(args.observation)
+    else:
+        ev_dir = Path(args.evidence_dir)
+        has_runs = (ev_dir / "runs").is_dir() and any(
+            (ev_dir / "runs").iterdir())
+        if not has_runs:
+            # capture leg: live CNMV -> evidence dir
+            cobserve.observe(
+                evidence_dir=ev_dir, out=None,
+                issuer_nifs=args.issuers, families=args.families,
+                min_delay=(args.min_delay if args.min_delay is not None
+                           else None) or 1.0,
+                dataset_dir=ds_path, tax_dir=tax_dir)
+        obs = cobserve.assemble_from_evidence(
+            ev_dir, dataset_dir=ds_path, tax_dir=tax_dir, run=args.run)
+        obs_label = f"{ev_dir} (evidence)"
+    tables = uapply.load_tables(ds_path)
+    man = uapply.load_manifest(ds_path)
+    delta = udelta.plan(tables, obs, man["corpus_logical_sha256"])
+    transitions = delta.get("transitions", [])
+    unresolved = any(t.get("transition") in
+                     ("UNRESOLVED", "SOURCE_STATE_CONFLICT")
+                     for t in transitions)
+    row_ops = {f"{kind}.{t}": len(delta[f"rows_{kind}"][t])
+               for kind in ("added", "updated", "removed")
+               for t in delta[f"rows_{kind}"]
+               if delta[f"rows_{kind}"][t]}
+    rep = {"dataset": str(ds_path), "observation": obs_label,
+           "observation_sha256": obs["observation_sha256"],
+           "delta_id": delta.get("delta_id"),
+           "base_corpus_logical_sha256":
+               delta.get("base_corpus_logical_sha256"),
+           "result_corpus_logical_sha256":
+               delta.get("result_corpus_logical_sha256"),
+           "transitions": transitions, "row_ops": row_ops,
+           "unresolved": unresolved, "dry_run": bool(args.dry_run),
+           "status": "PREVIEW"}
+    if args.dry_run:
+        return _emit(args, rep, _r_update)
+    if unresolved and args.fail_on_unresolved:
+        rep["status"] = "REFUSED_UNRESOLVED"
+        _emit(args, rep, _r_update)
+        return cerr.EXIT_INTEGRITY
+    if unresolved:
+        rep["status"] = "UNRESOLVED_PARTIAL"
+    result = uapply.apply_delta(
+        ds_path, delta, generator={"tool": "opencnmv update"})
+    rep["status"] = result["status"]
+    rep["result_corpus_logical_sha256"] = \
+        result["corpus_logical_sha256"]
+    return _emit(args, rep, _r_update)
+
+
 def _run(args) -> int:
+    if args.command == "observe":
+        return _cmd_observe(args)
+    if args.command == "update":
+        return _cmd_update(args)
     qcompare, qds, qevents, qfacts, qfilings, qhistory, qmappings, \
         qprov = _query()
     if args.command == "dataset":
@@ -550,19 +743,18 @@ def entry(argv: list[str] | None = None) -> int:
         return cerr.EXIT_USAGE
     try:
         return _run(args)
-    except QueryError as e:
-        if getattr(args, "debug", False):
-            raise
-        print(f"error: {e}", file=sys.stderr)
-        return cerr.exit_code_for(e)
     except BrokenPipeError:
         return cerr.EXIT_OK
     except Exception as e:  # noqa: BLE001 — never a bare traceback
         if getattr(args, "debug", False):
             raise
-        print(f"error: internal: {type(e).__name__}: {e}",
-              file=sys.stderr)
-        return cerr.EXIT_INTERNAL
+        code = cerr.exit_code_for(e)
+        if code == cerr.EXIT_INTERNAL:
+            print(f"error: internal: {type(e).__name__}: {e}",
+                  file=sys.stderr)
+        else:
+            print(f"error: {e}", file=sys.stderr)
+        return code
 
 
 def main() -> None:

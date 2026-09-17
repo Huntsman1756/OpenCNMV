@@ -1,4 +1,4 @@
-# G2-F — CONTROLLED_CAPTURE_AND_UPDATE_CLI (preregistered)
+# G2-F — CONTROLLED_CAPTURE_AND_UPDATE_CLI 
 
 Gate contract. Written before implementation; the executed verdict and
 evidence land in `manifest.json` + `g2f_verify_results.json`.
@@ -118,11 +118,25 @@ opencnmv update --dataset PATH
 
 ## Acceptance matrix
 
+Amendments agreed at review (2026-09-17):
+
+* **F2 is conditional on unchanged source state.** If CNMV legitimately
+  changes an artifact between capture A and B, that is a real source
+  change: distinct semantic hashes, both evidences preserved — not a
+  determinism failure.
+* **F7's clean-rebuild oracle is rebuilt from the newly captured live
+  evidence**, not compared to the G2-C corpus hash. `b261…045f69` is the
+  update base, not the required live result.
+* **F2/F14 repetition uses representative recapture**, not a second full
+  sweep: one dual-language issuer (SAN or BBVA), IBE (fallback), and at
+  least one IPP H2 state.
+
 ```text
 F1  `observe` produces CANONICAL_OBSERVATION_V1 + write-once raw
     evidence + capture manifest from live CNMV for the frozen issuers
 F2  observation passes update.observe.validate(); semantic hash
     present and stable across a repeated capture of unchanged source
+    (conditional — see amendments)
 F3  `update --observation` is fully offline (runs under socket
     deny-all with zero attempts)
 F4  `--dry-run`: complete pipeline, delta preview emitted, zero
@@ -173,3 +187,44 @@ F24 docs updated: docs/CLI.md command tree, docs/G2.md, docs/STATUS.md
   gate `_out/` (transient) with committed manifests/hashes — same
   pattern as G0-R/G1 (raw bytes preserved; committed evidence is
   metadata, the capture outputs are pinned inputs for replay).
+
+## Results (executed 2026-09-17)
+
+**PASS — 31/31 checks** (`g2f_verify_results.json`).
+
+Live captures (one sequential session each, declared
+`OpenCNMV/0.1.0` User-Agent, 2.0 s minimum delay, scoped strictly to
+SAN/BBVA/IBE x the frozen periods):
+
+| leg | capture_id | fetches | purpose |
+|-----|------------|---------|---------|
+| A   | cap-202609172146190000 | 69 | full frozen corpus -> obsA |
+| B   | cap-202609172159400000 | 46 | SAN+BBVA recapture (F2) |
+| A'  | cap-202609172201420000 | 11 | IBE IPP same-store dedup probe (F14) |
+
+- Observation `obsA` sha256
+  `4cf7155d5b600a079f3a23dd814b814a1b21bc02a6fac2ba9bcbd1556802d36e` —
+  identical whether written during the live run or re-assembled offline
+  from the preserved evidence, and byte-identical to the synthetic
+  no-change observation derived from the G2-C dataset itself.
+- All 21 filings classified `NO_CHANGE` against base
+  `b2612152f46406a5…045f69`; apply is a no-op, dataset bytes unchanged.
+- F7 clean-rebuild oracle: bootstrap observation from the same liveA
+  evidence -> all-rows delta -> per-filing comparison against the
+  incremental result is equal on every table. Documented exclusions:
+  per-capture retrieval metadata (`retrieved_at`, `resolved_url`,
+  `evidence_path`, `source_url`, `http_status` on `provenance`;
+  `source_url` on `artifact`), the curated fixture overlay
+  `filing.extras_json`, and the fixture-era `filing` label inside
+  extension-mapping `record_json` — none of them semantic content.
+- F14: identical XBRL bytes deduplicate (0 new semantic artifacts);
+  CNMV detail pages differ per request and are preserved as new
+  write-once objects (source change, not a determinism failure).
+- IBE live: `en` UI resolves `FALLBACK_TO_ES`, no phantom `#en`
+  variant; H2 IPP filings keep their 12-31 `CURRENT_HALF` semantics
+  distinct from FY/ESEF.
+
+Wheel smoke: wheel built and installed into a clean venv; 6
+`observe`/`update` commands exercised offline (exit codes 0/3/5/7).
+Regressions on final HEAD: G2-A 6/6, G2-B 8/8, G2-C 20/20,
+G2-D 21/21, G2-E 29/29. Unit suite 81/81, ruff + mypy clean.
