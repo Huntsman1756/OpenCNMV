@@ -10,7 +10,10 @@ Update at the end of every session.
 
 ## Current phase
 
-**G0-R** (CNMV Source & Reproducibility Probe) — R0–R4 closed; R0–R4 checkpoint `CONTINUE`.
+**G2** (durable core over the frozen model) — G2-A through G2-E **PASS**.
+G0-R closed `GO` at tag `g0-r-go`; G1 closed at `g1-model-frozen`. The
+read-only public CLI shipped in G2-E. Next planned gate: **G2-F —
+controlled CNMV capture/update CLI** (see `docs/G2.md`).
 
 ## Gate statuses
 
