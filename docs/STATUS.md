@@ -404,6 +404,12 @@ no gate criteria, verdicts, raw artefacts, or corpus changed.
   conversion may ever occur on checkout.
 - `.gitignore` extended (venvs, dist/build, egg-info, tool caches,
   `opencode.json`). `SECURITY.md`, issue/PR templates added.
+- **Gate re-verification on final HEAD `2784e00`** (after hardening touched
+  `src/` + re-pinned evidence): **G2-A PASS 6/6**, **G2-B PASS 8/8** —
+  all 25 frozen states rebuilt, run A == run B, byte-identical verify
+  results; manifests updated to `code_commit 2784e00`. **GitHub Actions:
+  Linux + Windows PASS** on the pushed commits.
+- Next action: **G2-C `COLUMNAR_DATASET_V1`**.
 
 ## Session hygiene
 
