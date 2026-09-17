@@ -10,6 +10,19 @@ g0-r/_probe-logs/*.cookies
 Thumbs.db
 .DS_Store
 
+# Local dev environments and packaging artifacts
+.venv/
+.venv-*/
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local AI-tool config (developer-specific, not project config)
+opencode.json
+
 # R11 brel oracle venv (not part of evidence)
 g0-r/R11-esef-arelle-parse/.venv-brel/
 

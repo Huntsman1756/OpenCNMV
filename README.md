@@ -12,7 +12,9 @@ models the CNMV data in a canonical way.
 
 ## Status
 
-Currently in **G0-R — CNMV Source & Reproducibility Probe**. The operational status lives in
+**G0-R** (source & reproducibility probe) closed with final verdict `GO`; **G1**
+(canonical model design) frozen at tag `g1-model-frozen`; **G2** (durable core
+implementation) in progress. The operational status lives in
 [`docs/STATUS.md`](docs/STATUS.md); the authority on gates and criteria is
 [`AGENTS.md`](AGENTS.md) + [`docs/gates/G0-R.md`](docs/gates/G0-R.md).
 
@@ -22,12 +24,24 @@ Currently in **G0-R — CNMV Source & Reproducibility Probe**. The operational s
 AGENTS.md              Permanent rules (source of truth, reuse, raw immutable, gate honesty)
 docs/
   PROJECT.md           Mission + conceptual model (filing / filing_version / artifact / fact)
+  CANONICAL_MODEL_V1.md Frozen canonical model spec (tag g1-model-frozen)
   gates/G0-R.md        The 18 gates, frozen corpus, closure criteria, execution order
   decisions/           Architecture / source-approach ADRs
   findings/            Open findings and discoveries
   STATUS.md            Operational status only (gates, checkpoint, next action)
-g0-r/                  G0-R gate evidence + manifests (R00-legal … R04-artifact-url-stability)
+src/opencnmv/          Durable core library (model / source.cnmv / xbrl /
+                       canonicalize / provenance / serialize)
+tests/                 Regression tests (unittest; see CONTRIBUTING.md)
+g0-r/                  G0-R gate evidence + manifests (R00 … R17)
+g1/                    G1 design-gate evidence + manifests (G1-A … G1-E)
+g2/                    G2 build-gate evidence + manifests (G2-A, G2-B)
 ```
+
+## Development
+
+Install, test, lint, type-check and build instructions live in
+[`CONTRIBUTING.md`](CONTRIBUTING.md). CI runs the same checks on Linux and
+Windows under Python 3.11.
 
 ## Corpus (frozen)
 

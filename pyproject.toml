@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools==79.0.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opencnmv"
+dynamic = ["version"]
+description = "Canonical, reproducible records over official CNMV financial filings"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = [
+    "pydantic==2.13.4",
+    "requests==2.33.0",
+]
+
+[project.urls]
+Repository = "https://github.com/Huntsman1756/OpenCNMV"
+
+[project.optional-dependencies]
+xbrl = ["arelle-release==2.44.0"]
+dev = [
+    "build==1.6.1",
+    "jsonschema==4.26.0",
+    "mypy==2.3.1",
+    "pip==26.2.1",
+    "ruff==0.16.8",
+    "setuptools==79.0.1",
+    "types-jsonschema==4.26.0.20260518",
+    "types-requests==2.33.0.20260906",
+    "uv==0.11.25",
+]
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["opencnmv*"]
+namespaces = false
+
+[tool.setuptools.dynamic]
+version = {attr = "opencnmv.__version__"}
+
+[tool.ruff]
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]
+
+[tool.mypy]
+python_version = "3.11"
+files = ["src", "tests"]
+check_untyped_defs = true
+warn_unused_ignores = true
+
+[[tool.mypy.overrides]]
+module = ["arelle", "arelle.*"]
+follow_imports = "skip"
+ignore_missing_imports = true

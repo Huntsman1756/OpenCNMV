@@ -1,0 +1,4 @@
+# This repository pins SHA-256 of committed evidence files in gate manifests.
+# Any end-of-line conversion on checkout would silently change those bytes.
+# Everything is therefore treated as opaque bytes — no EOL normalisation.
+* -text
