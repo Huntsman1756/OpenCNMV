@@ -1,0 +1,30 @@
+{
+ "gate": "G2-E-public-readonly-cli",
+ "status": "PASS",
+ "executed_at": "2026-09-17T18:03:51.344064+00:00",
+ "code_commit": "PENDING",
+ "inputs": {
+  "g2e_inputs.json": "pinned G2-C dataset (dataset/v1, corpus logical sha b2612152...) + G1-C mapped compare oracles"
+ },
+ "outputs": {
+  "g2e_verify_results.json": "E1-E29 check matrix",
+  "golden/": "13 committed golden outputs (compact projections of canonical JSON stdout)",
+  "_out/": "transient run artifacts (gitignored): corpus runA/runB + net logs + byte-integrity, wheel smoke, sdist/wheel"
+ },
+ "sha256": {
+  "g2c_corpus_logical_sha256": "b2612152f46406a5ec4858592656c10b0afa8f98b042bdc93337782b202045f69",
+  "dataset_schema_fingerprint": "deebe0c2fa899f19e4f02dd3fac4f9b7ae9231d8f2ccc542e9b8c17bd87f8702"
+ },
+ "findings": [
+  "read-only public CLI over COLUMNAR_DATASET_V1 serves the frozen corpus with zero dataset-byte changes and zero network attempts",
+  "dataset-driven compare reproduces the G1-C mapped class counts exactly on all four dual filings; PROVEN_EQUIVALENT-only identity rewrite preserved",
+  "IBE single-variant + FALLBACK_TO_ES and TEF 20484 scoped lifecycle are intact on the public surface",
+  "corrupt bytes and missing tables fail closed (exit 5, empty stdout); unexpected errors exit 1 without tracebacks"
+ ],
+ "limitations": [
+  "CLI V1 exposes read-only queries only; capture/update/API surfaces are deliberately out of scope",
+  "facts uses a bounded list (--limit, default 100; 0 = unbounded) rather than cursor pagination",
+  "dataset_validate is the deep check; ordinary commands still verify file hashes + row counts + schemas before serving",
+  "human tables truncate wide values for readability; JSON/JSONL is always complete"
+ ]
+}

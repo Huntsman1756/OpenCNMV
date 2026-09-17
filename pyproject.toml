@@ -18,6 +18,9 @@ dependencies = [
 [project.urls]
 Repository = "https://github.com/Huntsman1756/OpenCNMV"
 
+[project.scripts]
+opencnmv = "opencnmv.cli.main:main"
+
 [project.optional-dependencies]
 xbrl = ["arelle-release==2.44.0"]
 dataset = [

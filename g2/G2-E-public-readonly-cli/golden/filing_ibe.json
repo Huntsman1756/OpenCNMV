@@ -1,0 +1,93 @@
+{
+ "event_artifacts": [],
+ "extension_mapping_summary": null,
+ "filing": {
+  "extension_mappings": [],
+  "family": "ESEF_IFA",
+  "filing_id": "cnmv:ifa:20515",
+  "filing_versions": [
+   {
+    "filed_at": null,
+    "filing_version_id": "cnmv:ifa:20515#nreg:2025031726",
+    "source_nreg": "2025031726",
+    "submission_kind": "ORIGINAL_SUBMISSION"
+   }
+  ],
+  "issuer": {
+   "denomination": "IBERDROLA, S.A.",
+   "lei": "5QK37QC7NWOJ8D7WVQ45"
+  },
+  "period_end": "31/12/2024",
+  "registro_oficial": "20515",
+  "submission_variants": [
+   {
+    "filing_id": "cnmv:ifa:20515",
+    "submission_language": "es",
+    "variant_id": "cnmv:ifa:20515#es",
+    "variant_versions": [
+     {
+      "artifact_set_id": "e2bed29467bf120c208894f4803e81745d416acf335174f85f8a64439fd593d5",
+      "artifacts": [
+       {
+        "artifact_id": "sha256:89dfd3ef65527d1d4378464c2f70fa78b2fb7b4872264eacfa91d3faae1c42b4",
+        "bytes": 28162648,
+        "media_type": "application/zip",
+        "package_lang_tag": "es",
+        "role": "ESEF_PACKAGE_ZIP_XBRL",
+        "sha256": "89dfd3ef65527d1d4378464c2f70fa78b2fb7b4872264eacfa91d3faae1c42b4"
+       }
+      ],
+      "created_by_event_id": "cnmv:ifa:20515#evt:formulacion",
+      "observed": true,
+      "supersedes_variant_version_id": null,
+      "variant_id": "cnmv:ifa:20515#es",
+      "variant_version_id": "cnmv:ifa:20515#es#v1"
+     }
+    ]
+   }
+  ],
+  "version_events": [
+   {
+    "affects": [],
+    "event_date": "28/02/2025",
+    "event_id": "cnmv:ifa:20515#evt:formulacion",
+    "event_type": "CERTIFICATE",
+    "evidence_artifact_id": null,
+    "scope_status": "NOT_A_VERSION_TRANSITION",
+    "source_label": "formulación y firma",
+    "source_nreg": "2025031726"
+   }
+  ],
+  "view_resolutions": [
+   {
+    "requested_ui_language": "es",
+    "resolution_mode": "SUBMITTED_VARIANT",
+    "resolved_variant_id": "cnmv:ifa:20515#es"
+   },
+   {
+    "requested_ui_language": "en",
+    "resolution_mode": "FALLBACK_TO_ES",
+    "resolved_variant_id": "cnmv:ifa:20515#es"
+   }
+  ]
+ },
+ "states": [
+  {
+   "arelle_version": "2.44.0",
+   "artifact_id": "sha256:89dfd3ef65527d1d4378464c2f70fa78b2fb7b4872264eacfa91d3faae1c42b4",
+   "byte_size": 28162648,
+   "evidence_path": "g0-r/R07-raw-retrieval/evidence/esef-IBE-FY2024-package.zip",
+   "fact_count": 833,
+   "http_status": null,
+   "lexical_shim": false,
+   "media_type": "application/zip",
+   "resolved_url": null,
+   "retrieved_at": null,
+   "role": "ESEF_PACKAGE_ZIP_XBRL",
+   "sha256": "89dfd3ef65527d1d4378464c2f70fa78b2fb7b4872264eacfa91d3faae1c42b4",
+   "source_url": null,
+   "state_id": "IBE-FY2024-es",
+   "variant_version_id": "cnmv:ifa:20515#es#v1"
+  }
+ ]
+}

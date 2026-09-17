@@ -1,0 +1,54 @@
+{
+ "counts_by_verdict": {
+  "CONFLICT": 2,
+  "PROVEN_EQUIVALENT": 96,
+  "UNMATCHED": 10
+ },
+ "filing_id": "cnmv:ifa:20509",
+ "mappings": [
+  {
+   "filing_id": "cnmv:ifa:20509",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": null,
+   "record_json": "{\"anchor_matches\":[\"http://www.santander.com/20241231#NonCurrentAssetsHeldForSaleThatWillNotBeReclassifiedToProfitOrLossBeforeTax\"],\"evidence\":[\"ANCHOR\",\"XBRL_PROPERTIES\",\"PRESENTATION_PATH\",\"CALCULATION_ROLE\",\"DEFINITION_PATH\"],\"filing\":\"SAN-FY2024\",\"mapping_type\":\"EXTENSION_CONCEPT+DIMENSION_MEMBER\",\"source_qname\":\"http://www.santanderbank.com/20241231#ActivosNoCorrientesMantenidosParaLaVentaQueNoSeReclasificaranAResultadosAntesDeImpuestos\",\"target_qname\":null,\"verdict\":\"CONFLICT\"}",
+   "rewrites_identity": false,
+   "source_file": "SAN-FY2024",
+   "source_ordinal": 8,
+   "source_qname": "http://www.santanderbank.com/20241231#ActivosNoCorrientesMantenidosParaLaVentaQueNoSeReclasificaranAResultadosAntesDeImpuestos",
+   "source_variant_id": "cnmv:ifa:20509#es",
+   "target_qname": null,
+   "target_variant_id": "cnmv:ifa:20509#en",
+   "verdict": "CONFLICT"
+  },
+  {
+   "filing_id": "cnmv:ifa:20509",
+   "mapping_type": "DIMENSION_MEMBER",
+   "pair_id": "PAIR::http://www.santander.com/20241231#ReclassifiedFinancialAssetsFromAmortizedCostMember::http://www.santanderbank.com/20241231#ActivosFinancierosReclasificadosDesdeCosteAmortizadoMember",
+   "record_json": "{\"detail\":{\"order_disambiguated\":true,\"tier\":2,\"tier1_candidates\":[\"http://www.santander.com/20241231#FinancialAssetsReclassifiedFromFairValueWithChangesInOtherComprehensiveIncomeMember\",\"http://www.santander.com/20241231#InterestIncomeFromOtherFinancialAssetsMember\",\"http://www.santander.com/20241231#OtherGainsOrLossesMember\",\"http://www.santander.com/20241231#ReclassifiedFinancialAssetsFromAmortizedCostMember\"]},\"evidence\":[\"DEFINITION_PATH\"],\"filing\":\"SAN-FY2024\",\"mapping_type\":\"DIMENSION_MEMBER\",\"pair_id\":\"PAIR::http://www.santander.com/20241231#ReclassifiedFinancialAssetsFromAmortizedCostMember::http://www.santanderbank.com/20241231#ActivosFinancierosReclasificadosDesdeCosteAmortizadoMember\",\"source_qname\":\"http://www.santanderbank.com/20241231#ActivosFinancierosReclasificadosDesdeCosteAmortizadoMember\",\"target_qname\":\"http://www.santander.com/20241231#ReclassifiedFinancialAssetsFromAmortizedCostMember\",\"verdict\":\"PROVEN_EQUIVALENT\"}",
+   "rewrites_identity": true,
+   "source_file": "SAN-FY2024",
+   "source_ordinal": 6,
+   "source_qname": "http://www.santanderbank.com/20241231#ActivosFinancierosReclasificadosDesdeCosteAmortizadoMember",
+   "source_variant_id": "cnmv:ifa:20509#es",
+   "target_qname": "http://www.santander.com/20241231#ReclassifiedFinancialAssetsFromAmortizedCostMember",
+   "target_variant_id": "cnmv:ifa:20509#en",
+   "verdict": "PROVEN_EQUIVALENT"
+  },
+  {
+   "filing_id": "cnmv:ifa:20509",
+   "mapping_type": "EXTENSION_CONCEPT+DIMENSION_MEMBER",
+   "pair_id": null,
+   "record_json": "{\"direction\":\"en_only\",\"evidence\":[\"ANCHOR\",\"DEFINITION_PATH\"],\"filing\":\"SAN-FY2024\",\"mapping_type\":\"EXTENSION_CONCEPT+DIMENSION_MEMBER\",\"source_qname\":\"http://www.santander.com/20241231#ChangesInTheFairValueOfEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeHedgedItem\",\"target_qname\":null,\"verdict\":\"UNMATCHED\"}",
+   "rewrites_identity": false,
+   "source_file": "SAN-FY2024",
+   "source_ordinal": 0,
+   "source_qname": "http://www.santander.com/20241231#ChangesInTheFairValueOfEquityInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncomeHedgedItem",
+   "source_variant_id": "cnmv:ifa:20509#es",
+   "target_qname": null,
+   "target_variant_id": "cnmv:ifa:20509#en",
+   "verdict": "UNMATCHED"
+  }
+ ],
+ "mappings_note": "one representative row per verdict (full list via --json)",
+ "rule": "only PROVEN_EQUIVALENT may rewrite cross-variant identity; all other verdicts stay unresolved"
+}

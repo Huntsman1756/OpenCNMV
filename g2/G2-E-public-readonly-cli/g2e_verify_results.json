@@ -1,0 +1,153 @@
+{
+ "checks": [
+  {
+   "detail": "wheel smoke all-commands ok",
+   "id": "E1",
+   "status": "PASS"
+  },
+  {
+   "detail": "help lists the frozen command tree",
+   "id": "E2",
+   "status": "PASS"
+  },
+  {
+   "detail": "b2612152f46406a5",
+   "id": "E3",
+   "status": "PASS"
+  },
+  {
+   "detail": "7 checks PASS",
+   "id": "E4",
+   "status": "PASS"
+  },
+  {
+   "detail": "22 filings; IBERDROLA=7; 2025 IPP range=6",
+   "id": "E5",
+   "status": "PASS"
+  },
+  {
+   "detail": "TEF graph: 2 variants, 2 events, view_resolutions",
+   "id": "E6",
+   "status": "PASS"
+  },
+  {
+   "detail": "IBE: single #es variant, FALLBACK_TO_ES recorded",
+   "id": "E7",
+   "status": "PASS"
+  },
+  {
+   "detail": "TEF: #es v1; #en v1->v2; 13/03 EN-only; 28/02 NOT_OBSERVABLE",
+   "id": "E8",
+   "status": "PASS"
+  },
+  {
+   "detail": "fact dup multiplicity=2",
+   "id": "E9",
+   "status": "PASS"
+  },
+  {
+   "detail": "typed dims: 2",
+   "id": "E10",
+   "status": "PASS"
+  },
+  {
+   "detail": "unit=http://www.xbrl.org/2003/iso4217#EUR/http://www.xbrl.org/2003/instance#shares",
+   "id": "E11",
+   "status": "PASS"
+  },
+  {
+   "detail": "divergent=1, equity=1",
+   "id": "E12",
+   "status": "PASS"
+  },
+  {
+   "detail": "lang_sensitive=161",
+   "id": "E13",
+   "status": "PASS"
+  },
+  {
+   "detail": "SAN24 verdicts={'CONFLICT': 2, 'PROVEN_EQUIVALENT': 96, 'UNMATCHED': 10}",
+   "id": "E14",
+   "status": "PASS"
+  },
+  {
+   "detail": "evidence=g1/G1-A-oam-variant-discovery/evidence/esef-BBVA-FY2024-en.zip",
+   "id": "E15",
+   "status": "PASS"
+  },
+  {
+   "detail": "48 commands byte-identical",
+   "id": "E16",
+   "status": "PASS"
+  },
+  {
+   "detail": "{\"ok\": true, \"usage\": true, \"missing_ds\": true, \"not_found\": true, \"integrity\": true, \"unsupported\": true}",
+   "id": "E17",
+   "status": "PASS"
+  },
+  {
+   "detail": "corrupt byte + deleted table both exit 5, empty stdout",
+   "id": "E18",
+   "status": "PASS"
+  },
+  {
+   "detail": "25 files identical before/after",
+   "id": "E19",
+   "status": "PASS"
+  },
+  {
+   "detail": "attempts=[]",
+   "id": "E20",
+   "status": "PASS"
+  },
+  {
+   "detail": "16 installed-wheel commands",
+   "id": "E21",
+   "status": "PASS"
+  },
+  {
+   "detail": "CI runs wheel smoke on both OS",
+   "id": "E22",
+   "status": "PASS"
+  },
+  {
+   "detail": "G2-A: PASS (6/6)",
+   "id": "E23",
+   "status": "PASS"
+  },
+  {
+   "detail": "G2-B: PASS (8/8)",
+   "id": "E24",
+   "status": "PASS"
+  },
+  {
+   "detail": "wrote F:\\_Proyectos\\OpenCNMV\\g2\\G2-C-columnar-dataset-v1\\manifest.json",
+   "id": "E25",
+   "status": "PASS"
+  },
+  {
+   "detail": "   D21 PASS  artifact-removal + mapping-shrink conservative classification",
+   "id": "E26",
+   "status": "PASS"
+  },
+  {
+   "detail": "G1-C mapped counts reproduced on all 4 dual filings",
+   "id": "E27",
+   "status": "PASS"
+  },
+  {
+   "detail": "H2 dim members observed: 2 distinct",
+   "id": "E28",
+   "status": "PASS"
+  },
+  {
+   "detail": "13 goldens reproduce runA",
+   "id": "E29",
+   "status": "PASS"
+  }
+ ],
+ "gate": "G2-E-public-readonly-cli",
+ "passed": 29,
+ "total": 29,
+ "verdict": "PASS"
+}

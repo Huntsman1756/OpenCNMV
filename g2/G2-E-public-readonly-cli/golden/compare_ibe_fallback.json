@@ -1,0 +1,20 @@
+{
+ "filing_id": "cnmv:ifa:20515",
+ "note": "a UI-language fallback is not a submitted variant; nothing to compare",
+ "status": "SKIPPED_SINGLE_VARIANT",
+ "submitted_variants": [
+  "cnmv:ifa:20515#es"
+ ],
+ "view_resolutions": [
+  {
+   "requested_ui_language": "es",
+   "resolution_mode": "SUBMITTED_VARIANT",
+   "resolved_variant_id": "cnmv:ifa:20515#es"
+  },
+  {
+   "requested_ui_language": "en",
+   "resolution_mode": "FALLBACK_TO_ES",
+   "resolved_variant_id": "cnmv:ifa:20515#es"
+  }
+ ]
+}

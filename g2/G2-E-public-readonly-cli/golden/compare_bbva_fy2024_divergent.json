@@ -1,0 +1,62 @@
+{
+ "compared": {
+  "en": {
+   "facts": 1847,
+   "variant_id": "cnmv:ifa:20448#en",
+   "variant_version_id": "cnmv:ifa:20448#en#v1"
+  },
+  "es": {
+   "facts": 1847,
+   "variant_id": "cnmv:ifa:20448#es",
+   "variant_version_id": "cnmv:ifa:20448#es#v1"
+  }
+ },
+ "counts": {
+  "DIVERGENT_SUBMISSION_FACT": 1,
+  "LANGUAGE_SENSITIVE_NOT_COMPARED": 161,
+  "MATCH_EXACT": 1675,
+  "MATCH_NUMERIC_EQUIVALENT": 5,
+  "UNMAPPED_VARIANT_FACT": 6,
+  "VARIANT_ONLY_FACT": 4
+ },
+ "filing_id": "cnmv:ifa:20448",
+ "match_exact_count": 1675,
+ "proven_pairs_applied": 123,
+ "records": [
+  {
+   "class": "DIVERGENT_SUBMISSION_FACT",
+   "en": {
+    "decimals": "-6",
+    "fact_id": "fact:3342e86f194ee4fc59c96ce56eb75b966f026a670f25c089f30da9d7979baf46",
+    "isNil": false,
+    "lang": "en",
+    "native_fact_key": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#Equity|http://standards.iso.org/iso/17442|K8MS7FD7N5Z2WQ51AZ71|2023-01-01|http://www.xbrl.org/2003/iso4217#EUR|https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#RetrospectiveApplicationAndRetrospectiveRestatementAxis=E:https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialEffectOfChangesInAccountingPolicyMember|en",
+    "value": "-98000000",
+    "value_sha256": "68E61DD45ADE9E2A070DBBE575DAD885225D3612E75EFCA368701376FC02621A",
+    "xValue": "-98000000"
+   },
+   "es": {
+    "decimals": "-6",
+    "fact_id": "fact:7c2e5e23c4a7c8cba27c3df56caffe92f6c44c0a94ea2ec1a911ba3041df2c01",
+    "isNil": false,
+    "lang": "es",
+    "native_fact_key": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#Equity|http://standards.iso.org/iso/17442|K8MS7FD7N5Z2WQ51AZ71|2023-01-01|http://www.xbrl.org/2003/iso4217#EUR|https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#RetrospectiveApplicationAndRetrospectiveRestatementAxis=E:https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialEffectOfChangesInAccountingPolicyMember|es",
+    "value": "98000000",
+    "value_sha256": "FFCE16958984F416DF43C38A47F6FA7CA92EDBA47176B53A1A1F921C5A0C561C",
+    "xValue": "98000000"
+   },
+   "key": {
+    "concept": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#Equity",
+    "concept_type": "http://www.xbrl.org/2003/instance#monetaryItemType",
+    "dimensions": {
+     "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#RetrospectiveApplicationAndRetrospectiveRestatementAxis": "E:https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#FinancialEffectOfChangesInAccountingPolicyMember"
+    },
+    "entity": "http://standards.iso.org/iso/17442|K8MS7FD7N5Z2WQ51AZ71",
+    "period": "2023-01-01",
+    "unit": "http://www.xbrl.org/2003/iso4217#EUR"
+   }
+  }
+ ],
+ "records_note": "filtered to DIVERGENT_SUBMISSION_FACT for compactness",
+ "status": "COMPARED"
+}

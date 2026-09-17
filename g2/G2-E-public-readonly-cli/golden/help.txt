@@ -1,0 +1,27 @@
+usage: opencnmv [-h] [--dataset DATASET] [--json] [--jsonl] [--debug]
+                [--version]
+                command ...
+
+Deterministic read-only CLI over a materialized COLUMNAR_DATASET_V1. Never
+writes, never touches the network. Docs: docs/CLI.md
+
+positional arguments:
+  command
+    dataset          dataset information/validation
+    filings          list filings (deterministic order)
+    filing           canonical filing detail
+    history          variant/version lifecycle + events
+    facts            fact query (multiset-preserving)
+    fact             one fact: full record + dimensions + provenance
+    compare          semantic cross-variant comparison
+    events           version events
+    mappings         extension mappings + verdicts
+    provenance       trace a canonical row to pinned evidence
+
+options:
+  -h, --help         show this help message and exit
+  --dataset DATASET  path to a COLUMNAR_DATASET_V1 directory
+  --json             emit a single deterministic JSON document
+  --jsonl            emit one JSON object per line (list commands)
+  --debug            re-raise errors instead of formatted messages
+  --version          show program's version number and exit

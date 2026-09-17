@@ -47,3 +47,13 @@ jobs:
           python -m pip install --force-reinstall --no-deps dist/*.whl
           python -B -m unittest discover -s tests -v
           python -m pip check
+
+      - name: Wheel smoke — installed `opencnmv` read-only CLI
+        run: |
+          python g2/G2-E-public-readonly-cli/g2e_build.py --minids
+          opencnmv --version
+          opencnmv dataset info --dataset g2/G2-E-public-readonly-cli/_out/minids/dataset/v1
+          opencnmv dataset validate --dataset g2/G2-E-public-readonly-cli/_out/minids/dataset/v1
+          opencnmv filings --dataset g2/G2-E-public-readonly-cli/_out/minids/dataset/v1
+          opencnmv compare cnmv:ifa:7 --dataset g2/G2-E-public-readonly-cli/_out/minids/dataset/v1
+          opencnmv provenance --fact fact:e01 --dataset g2/G2-E-public-readonly-cli/_out/minids/dataset/v1

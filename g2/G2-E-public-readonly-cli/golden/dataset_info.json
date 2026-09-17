@@ -1,0 +1,191 @@
+{
+ "build_parameters": {
+  "compression": "zstd",
+  "row_order": "canonical sorted",
+  "serialization": "canonical JSON (LF, indent=1)"
+ },
+ "canonical_model": "CANONICAL_MODEL_V1",
+ "code_commit": "99ad689",
+ "corpus_logical_sha256": "b2612152f46406a5ec4858592656c10b0afa8f98b042dc93337782b202045f69",
+ "counts": {
+  "artifacts": 33,
+  "event_affects": 2,
+  "extension_mappings": 449,
+  "fact_dimensions": 38365,
+  "facts": 45376,
+  "filing_versions": 23,
+  "filings": 22,
+  "provenance_states": 25,
+  "submission_variants": 27,
+  "variant_versions": 28,
+  "version_events": 8,
+  "view_resolutions": 29
+ },
+ "dataset": "COLUMNAR_DATASET",
+ "dataset_version": "COLUMNAR_DATASET_V1",
+ "findings": [],
+ "generator": {
+  "duckdb": "1.5.5",
+  "pyarrow": "25.0.1",
+  "python": "3.11.15",
+  "tool": "opencnmv.dataset"
+ },
+ "inputs": {
+  "_g2b_pin_file_verified": {
+   "note": "all artifact/taxonomy/oracle pins verified byte-exact",
+   "path": "g2/G2-B-frozen-corpus-rebuild/g2b_inputs.json"
+  },
+  "artifact_manifest": {
+   "path": "g0-r/R07-raw-retrieval/artifact_manifest.json",
+   "sha256": "419f96d10654ee09a2213ba22aba36851f41a4069cf5c44b7d271c68f27566c4"
+  },
+  "bbva_comparison": {
+   "path": "g1/G1-B-dual-language-capture/evidence/compare/BBVA-FY2024.comparison.jsonl",
+   "sha256": "e77d8d7c8411c836ad3892416d2688a78587ef3e6b3bcc0d9aba86c44b9d2e53"
+  },
+  "fixture_bbva_fy2024": {
+   "path": "g1/G1-E-canonical-model-freeze/fixtures/bbva_fy2024.json",
+   "sha256": "b5e711e3ee4491731ee525490cdd648cc038a74a54400403ec3c3830ac9e66ee"
+  },
+  "fixture_ibe_fy2024": {
+   "path": "g1/G1-E-canonical-model-freeze/fixtures/ibe_fy2024.json",
+   "sha256": "9ade261f64baaea720a28cdfcb999129febcfea78b5cf52a0d6f78df50d4deaf"
+  },
+  "fixture_san_fy2024": {
+   "path": "g1/G1-E-canonical-model-freeze/fixtures/san_fy2024.json",
+   "sha256": "162b6ea5f20a169c01258ca9fe4510c97adb1d7e0d6388d52bf8fea49535d4e5"
+  },
+  "fixture_tef_20484": {
+   "path": "g1/G1-E-canonical-model-freeze/fixtures/tef_20484.json",
+   "sha256": "6b09ee8152dbef471a1736049247f608761b560975221b803d0772848a1b7dc1"
+  },
+  "g1d_results": {
+   "path": "g1/G1-D-variant-lifecycle-falsification/g1d_results.json",
+   "sha256": "801161ffb58694472eeeb3e3e2b15ad217ccdb4983c7a5f5fb459356c88cc6fa"
+  },
+  "g1d_tef20484": {
+   "path": "g1/G1-D-variant-lifecycle-falsification/g1d_tef20484.json",
+   "sha256": "145400e96a14b55e9c3d4a54c3cb3f7efd8f81ff4c7c30c985c5667fddf09161"
+  },
+  "g2b_corpus": {
+   "path": "g2/G2-B-frozen-corpus-rebuild/g2b_corpus.json",
+   "sha256": "68065b2a819d5cc19cb2c8f85a5ba680b6684def5930c51524be84a60251b726"
+  },
+  "g2b_inputs": {
+   "path": "g2/G2-B-frozen-corpus-rebuild/g2b_inputs.json",
+   "sha256": "c5ddb3497876ead2f773d0dd4a553fc33463605e535500493f5add253813289d"
+  },
+  "issuers": {
+   "path": "g2/G2-C-columnar-dataset-v1/g2c_issuers.json",
+   "sha256": "b4c2a411d0f969a67cf4bcd6ec9e71aa75b2e34a756eb2a739da343804e004b4"
+  },
+  "listaifi_bbva": {
+   "path": "g0-r/R01-discovery/evidence/listaifi-BBVA.html",
+   "sha256": "bfa74243c60a74628fc4c9152102b14d7a492458b75a721adddad95a8b7043a2"
+  },
+  "listaifi_ibe": {
+   "path": "g0-r/R01-discovery/evidence/listaifi-IBE.html",
+   "sha256": "2eeb6535062d2957937fff98141b3251e0a6274121278abcd02e1afa7b593c84"
+  },
+  "listaifi_san": {
+   "path": "g0-r/R01-discovery/evidence/listaifi-SAN.html",
+   "sha256": "c697e6b362242140d3450bfecfc0df28cd814cb6877a9842ece7815835ef6220"
+  },
+  "mapping_bbva_fy2024": {
+   "path": "g1/G1-C-extension-variant-identity/evidence/mapping/BBVA-FY2024.mapping.json",
+   "sha256": "eee8380b30cd8cce17f4fe1125f6fee7bc60c28e68029a5f350b693ba95b96da"
+  },
+  "mapping_bbva_fy2025": {
+   "path": "g1/G1-C-extension-variant-identity/evidence/mapping/BBVA-FY2025.mapping.json",
+   "sha256": "38a79e829a61f4bf2ed89b1bc061e9a0f87a8f0c2e1973e114e1536f5621941a"
+  },
+  "mapping_san_fy2024": {
+   "path": "g1/G1-C-extension-variant-identity/evidence/mapping/SAN-FY2024.mapping.json",
+   "sha256": "1d4b3b63932e3efd54ee2899cf9e9470b3225e7c5f1c62c339b2b872d9c5b38e"
+  },
+  "mapping_san_fy2025": {
+   "path": "g1/G1-C-extension-variant-identity/evidence/mapping/SAN-FY2025.mapping.json",
+   "sha256": "bf29473a27d1d8d3dda0acaf5375442d67433b67c2a916bc6d034bc3dc5afe58"
+  },
+  "schema_v1": {
+   "path": "g1/G1-E-canonical-model-freeze/canonical_model_v1.schema.json",
+   "sha256": "921f1d09aacf12836ead554d309ad6fa1d139ced5afe6192cb8ab94c69614bd1"
+  },
+  "variant_inventory": {
+   "path": "g1/G1-B-dual-language-capture/evidence/capture/runA/variant_inventory.json",
+   "sha256": "58c87f0ecb47fe40fd553f4db8daeaa40554308bdf6319e910368f161c37c022"
+  }
+ },
+ "integrity": {
+  "manifest_verified": true
+ },
+ "limitations": [
+  "Parquet files are not committed; they rebuild byte-identically from the pinned inputs (runA == runB sha256).",
+  "extension_mapping UNMATCHED/unpaired records are table-only (no schema-valid ExtensionMapping form: pair_id required).",
+  "IPP filing artifacts attach to filing_version (V1 migration note); the implicit es variant_version carries artifact_set_id as content identity.",
+  "IPP issuer rows carry nif+lei; frozen ESEF fixtures keep their original issuer shape (denomination+lei) verbatim."
+ ],
+ "schema_fingerprint": "deebe0c2fa899f19e4f02dd3fac4f9b7ae9231d8f2ccc542e9b8c17bd87f8702",
+ "tables": {
+  "artifact": {
+   "logical_sha256": "f98cb2f97d46181058d344428accb36513c06e4b13bfbce2f761847ac459a9b1",
+   "rows": 33,
+   "sha256": "39432af9eee5c2e61164a2b3781d06936b0ce49a66e3e9ff501ce7ee8e515ae2"
+  },
+  "event_affects": {
+   "logical_sha256": "d13d33cf850c17f6751e15726e0ad0d1dd9b2bcacc044b610e5f6029703efd3f",
+   "rows": 2,
+   "sha256": "17219814d7fbb4b9f30c6e2eb8380aa7b53b93f13c4552089adb0a734b973ea5"
+  },
+  "extension_mapping": {
+   "logical_sha256": "6b4b86d6e32cdb3fa2c507bde48136763f510cfa80d8c73d1787af71a7d11447",
+   "rows": 449,
+   "sha256": "e6ec6611b70712a59a77924415be8a4f1e752d02479d5565a4fe0938d3ef086a"
+  },
+  "fact_dimension": {
+   "logical_sha256": "0847e5c47b839e40d85093fcad008925401b39247caacb996ff949f085e36e73",
+   "rows": 38365,
+   "sha256": "d313639da6a01af8c0e711dcab54859a7e88666dc473e786ee02d9111d7884cc"
+  },
+  "facts": {
+   "logical_sha256": "fb8b13f0f11524f1906b7029b35c2a4e911e404b83c55989dfcd485c73245d3e",
+   "rows": 45376,
+   "sha256": "f043062f351b73a8f4383366d8f6f81c2e07325e7bf336d12b22540c401d6988"
+  },
+  "filing": {
+   "logical_sha256": "64d7731d68d908b154cb11beb274e686221237ce3618a84d2ff4b656ab4ef3d5",
+   "rows": 22,
+   "sha256": "2a62691b32bfa54e2f2f0c6a21937342b19ec5105897e9c76145a463cd262b27"
+  },
+  "filing_version": {
+   "logical_sha256": "c42aa435dc5a8c7aca894a6a22bd903271774ef63a09d03895b8ffb8f3a41256",
+   "rows": 23,
+   "sha256": "c32716af8b23d347aab7858c0c3c46970e8cff9bf04fa1556b5aa43c62ef12fe"
+  },
+  "provenance": {
+   "logical_sha256": "b5c8f19e1367b21d777cd4bf4bf79c73d84f12466ada67c6f1385f2b89eac969",
+   "rows": 25,
+   "sha256": "e3bfb356c4c94811f07010bcd5b3df7ff2e22bc9d8e8da118b942e5fa496d229"
+  },
+  "submission_variant": {
+   "logical_sha256": "faf9e2b6c823998e64fae0be89600bad028608619b0dd92b704f44dd90c099b6",
+   "rows": 27,
+   "sha256": "9599ebc116b863cb27f2460270cabdd4f2297a3362c01df10d46fad4ef2eebb8"
+  },
+  "variant_version": {
+   "logical_sha256": "176f9b26457999dc25c30fe2e841b0489cd584d878b6926e6fc3cda8779c6d74",
+   "rows": 28,
+   "sha256": "0da4a975a2674bc93b3137f8fae71111e566771fc86107b92a1f4368422d4a31"
+  },
+  "version_event": {
+   "logical_sha256": "502c34265b04cfb13196ce636539661d3d349c3562c195c3358ed2b74fad3c56",
+   "rows": 8,
+   "sha256": "10f530401c85a747b7e1089ab7964f0f7985d824081264143ddb3879d9dce8db"
+  },
+  "view_resolution": {
+   "logical_sha256": "abd7eebc0cc1189b09a53d3530b8a0161ffed541dc90598e19a5dfdd569422fc",
+   "rows": 29,
+   "sha256": "f221763abfabd73e7eb407f26239774a71aa7729f6b2e515d231f3362ac81ba0"
+  }
+ }
+}

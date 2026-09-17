@@ -1,0 +1,44 @@
+{
+ "fact_id": "fact:efd426dd453ad865c977c9bb5e4e1fc50408d1bc6af9e1c25eb2fe1424e67e05",
+ "provenance": [
+  {
+   "context": {
+    "artifact_set_id": "3f45dbf2ef52d2cba1ebd554bc5a17fc8bca35c6bf32ad9c63d5057e6f4661b1",
+    "created_by_event_id": "cnmv:ifa:20448#evt:formulacion",
+    "filing_id": "cnmv:ifa:20448",
+    "observed": true,
+    "state_id": "BBVA-FY2024-en",
+    "variant_id": "cnmv:ifa:20448#en",
+    "variant_version_id": "cnmv:ifa:20448#en#v1",
+    "version_seq": 1
+   },
+   "parse": {
+    "arelle_version": "2.44.0",
+    "lexical_shim": false
+   },
+   "role": "ESEF_PACKAGE_ZIP_XBRL",
+   "source_artifact": {
+    "artifact_id": "sha256:75be80e13b1fb8f56a8cad06353a7145f0fad524f654864d70f1aa35a2cce94e",
+    "byte_size": 18883918,
+    "evidence_path": "g1/G1-A-oam-variant-discovery/evidence/esef-BBVA-FY2024-en.zip",
+    "http_status": null,
+    "media_type": "application/zip",
+    "resolved_url": null,
+    "retrieved_at": null,
+    "sha256": "75be80e13b1fb8f56a8cad06353a7145f0fad524f654864d70f1aa35a2cce94e",
+    "source_url": null
+   }
+  }
+ ],
+ "structural_identity": {
+  "canonical_dims_json": null,
+  "concept": "https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full#BasicEarningsLossPerShareFromContinuingOperations",
+  "entity": "K8MS7FD7N5Z2WQ51AZ71",
+  "lang": "en",
+  "period_end": "2023-01-01",
+  "period_forever": false,
+  "period_instant": null,
+  "period_start": "2022-01-01",
+  "unit": "http://www.xbrl.org/2003/iso4217#EUR/http://www.xbrl.org/2003/instance#shares"
+ }
+}

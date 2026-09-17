@@ -48,3 +48,4 @@ g2/G2-A-durable-canonical-core/_out/
 g2/G2-B-frozen-corpus-rebuild/_out/
 g2/G2-C-columnar-dataset-v1/_out/
 g2/G2-D-incremental-update-semantics/_out/
+g2/G2-E-public-readonly-cli/_out/

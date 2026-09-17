@@ -1,0 +1,99 @@
+{
+ "filing_id": "cnmv:ifa:20484",
+ "variants": [
+  {
+   "submission_language": "es",
+   "variant_id": "cnmv:ifa:20484#es",
+   "versions": [
+    {
+     "artifact_count": 3,
+     "artifact_set_id": "accbb890908569f1a37d6c3589e9222e911acecd686aeb41776b073c130403ae",
+     "created_by_event_id": "cnmv:ifa:20484#evt:2025-02-28",
+     "fact_count": 0,
+     "observed": true,
+     "supersedes_variant_version_id": null,
+     "variant_version_id": "cnmv:ifa:20484#es#v1",
+     "version_seq": 1
+    }
+   ],
+   "view_resolutions": [
+    {
+     "requested_ui_language": "es",
+     "resolution_mode": "SUBMITTED_VARIANT"
+    }
+   ]
+  },
+  {
+   "submission_language": "en",
+   "variant_id": "cnmv:ifa:20484#en",
+   "versions": [
+    {
+     "artifact_count": 0,
+     "artifact_set_id": null,
+     "created_by_event_id": null,
+     "fact_count": 0,
+     "observed": false,
+     "supersedes_variant_version_id": null,
+     "variant_version_id": "cnmv:ifa:20484#en#v1",
+     "version_seq": 1
+    },
+    {
+     "artifact_count": 3,
+     "artifact_set_id": "0cb8057f80a9c5a03435c7998bd951fca311123b96dc591836061dcf1ae7aa73",
+     "created_by_event_id": "cnmv:ifa:20484#evt:2025-03-13",
+     "fact_count": 0,
+     "observed": true,
+     "supersedes_variant_version_id": "cnmv:ifa:20484#en#v1",
+     "variant_version_id": "cnmv:ifa:20484#en#v2",
+     "version_seq": 2
+    }
+   ],
+   "view_resolutions": [
+    {
+     "requested_ui_language": "en",
+     "resolution_mode": "SUBMITTED_VARIANT"
+    }
+   ]
+  }
+ ],
+ "version_events": [
+  {
+   "affects": [
+    {
+     "affected_component_scope": "NOT_IDENTIFIED",
+     "after_variant_version_id": null,
+     "before_variant_version_id": null,
+     "component_description": "reason scoped to Cuentas Anuales Individuales; silent on language",
+     "scope_basis": "sha256:27315343e70c4d2335aac3ff18a544467dbf358040688d8ce84d8bb38f136264",
+     "variant_id": null
+    }
+   ],
+   "event_date": "2025-02-28",
+   "event_id": "cnmv:ifa:20484#evt:2025-02-28",
+   "event_type": "SUBSTITUTION",
+   "evidence_artifact_id": "sha256:27315343e70c4d2335aac3ff18a544467dbf358040688d8ce84d8bb38f136264",
+   "scope_status": "VARIANT_SCOPE_NOT_OBSERVABLE",
+   "source_label": "Certificado del secretario del consejo sobre la sustitución del informe financiero anual",
+   "source_nreg": "2025031622"
+  },
+  {
+   "affects": [
+    {
+     "affected_component_scope": "SOURCE_DESCRIBED",
+     "after_variant_version_id": "cnmv:ifa:20484#en#v2",
+     "before_variant_version_id": "cnmv:ifa:20484#en#v1",
+     "component_description": "versión en inglés publicada de los Estados Financieros Consolidados y respectivo Informe de Gestión",
+     "scope_basis": "sha256:e66a65e3ef8219293e8c7749bed7643ecc2920d93d35e0fdd3edd6a32c893466",
+     "variant_id": "cnmv:ifa:20484#en"
+    }
+   ],
+   "event_date": "2025-03-13",
+   "event_id": "cnmv:ifa:20484#evt:2025-03-13",
+   "event_type": "SUBSTITUTION",
+   "evidence_artifact_id": "sha256:e66a65e3ef8219293e8c7749bed7643ecc2920d93d35e0fdd3edd6a32c893466",
+   "scope_status": "EN_ONLY_REPLACED",
+   "source_label": "Otra información complementaria (Otros) [label; doc content is a substitution cert]",
+   "source_nreg": null
+  }
+ ]
+}

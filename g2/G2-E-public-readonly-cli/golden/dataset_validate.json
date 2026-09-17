@@ -1,0 +1,43 @@
+{
+ "canonical_model": "CANONICAL_MODEL_V1",
+ "checks": [
+  {
+   "detail": "missing=[]",
+   "name": "required_files",
+   "status": "PASS"
+  },
+  {
+   "detail": "",
+   "name": "manifest_hashes_rows_schemas",
+   "status": "PASS"
+  },
+  {
+   "detail": "mismatched=[]",
+   "name": "exported_schema_fingerprints",
+   "status": "PASS"
+  },
+  {
+   "detail": "",
+   "name": "tables_readable",
+   "status": "PASS"
+  },
+  {
+   "detail": "mismatched=[]",
+   "name": "logical_hashes_match_manifest",
+   "status": "PASS"
+  },
+  {
+   "detail": "b2612152f46406a5ec4858592656c10b0afa8f98b042dc93337782b202045f69",
+   "name": "corpus_logical_hash",
+   "status": "PASS"
+  },
+  {
+   "detail": "",
+   "name": "referential_and_update_invariants",
+   "status": "PASS"
+  }
+ ],
+ "corpus_logical_sha256": "b2612152f46406a5ec4858592656c10b0afa8f98b042dc93337782b202045f69",
+ "dataset_version": "COLUMNAR_DATASET_V1",
+ "status": "PASS"
+}

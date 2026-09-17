@@ -1,0 +1,87 @@
+{
+ "canonical_record": {
+  "concept": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01#PersonasResponsablesCargo",
+  "contextID": "Icur_PersonasResponsablesInformacionMiembro_10",
+  "decimals": null,
+  "dimensions": {
+   "http://www.cnmv.es/xbrl/ipp/en/dim/2019-01-01#LineaPersonasResponsablesInformacionEje": "T:10",
+   "http://www.cnmv.es/xbrl/ipp/en/dim/2019-01-01#PersonasResponsablesInformacionEje": "E:http://www.cnmv.es/xbrl/ipp/en/dim/2019-01-01#PersonasResponsablesInformacionMiembro"
+  },
+  "entity": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A.",
+  "entity_scheme": "http://www.cnmv.es/xbrl/ipp/A48265169",
+  "isNil": false,
+  "lang": null,
+  "period_instant": "2024-07-01",
+  "unitID": null,
+  "value_len": 9,
+  "value_preview": "Consejera",
+  "value_sha256": "2279A0D664352B4B77EFEC4284B7142CF5D304C2FC6FA646ED24E7F7DA349E0B",
+  "xValue_len": 9,
+  "xValue_preview": "Consejera",
+  "xValue_sha256": "2279A0D664352B4B77EFEC4284B7142CF5D304C2FC6FA646ED24E7F7DA349E0B"
+ },
+ "concept": "http://www.cnmv.es/xbrl/ipp/en/2019-01-01#PersonasResponsablesCargo",
+ "concept_type": null,
+ "contextID": "Icur_PersonasResponsablesInformacionMiembro_10",
+ "decimals": null,
+ "dimensions": [
+  {
+   "dim_kind": "T",
+   "dim_qname": "http://www.cnmv.es/xbrl/ipp/en/dim/2019-01-01#LineaPersonasResponsablesInformacionEje",
+   "member_qname": null,
+   "typed_value": "10"
+  },
+  {
+   "dim_kind": "E",
+   "dim_qname": "http://www.cnmv.es/xbrl/ipp/en/dim/2019-01-01#PersonasResponsablesInformacionEje",
+   "member_qname": "http://www.cnmv.es/xbrl/ipp/en/dim/2019-01-01#PersonasResponsablesInformacionMiembro",
+   "typed_value": null
+  }
+ ],
+ "entity": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A.",
+ "entity_scheme": "http://www.cnmv.es/xbrl/ipp/A48265169",
+ "fact_id": "fact:4c973d3544fbd81acc29769309fc6a551ddab9d478f813eebc88e25b59c9ffb8",
+ "isNil": false,
+ "is_numeric": null,
+ "lang": null,
+ "ns_kind": null,
+ "period_end": null,
+ "period_forever": false,
+ "period_instant": "2024-07-01",
+ "period_start": null,
+ "profile": "ipp",
+ "provenance": [
+  {
+   "arelle_version": "2.44.0",
+   "artifact_id": "sha256:8b9c23b8b8e36b6bb758075fb954309958de77f7e8b9b82455b5613643032797",
+   "byte_size": 12868613,
+   "evidence_path": "g0-r/R07-raw-retrieval/evidence/ipp-BBVA-I-semestre-de-2024.zip",
+   "filing_id": "cnmv:ipp:2024102594",
+   "http_status": 200,
+   "lexical_shim": true,
+   "media_type": "text/xml",
+   "resolved_url": "https://www.cnmv.es/webservices/verdocumento/ver?e=MRPfKavBQ9BXZnyV7B7CRx8lPE3TJ2C9P9pyi6gj48q2FGB2bQQQoGWeusV07h53",
+   "retrieved_at": "2026-09-15T05:01:31Z",
+   "role": "IPP_XBRL",
+   "sha256": "8b9c23b8b8e36b6bb758075fb954309958de77f7e8b9b82455b5613643032797",
+   "source_url": "https://www.cnmv.es/portal/consultas/wuc/descargaxbrlipp.ashx?t=%7baf443b0f-1621-4026-afe0-d31b3a5344e0%7d",
+   "state_id": "BBVA-H1-2024",
+   "variant_version_id": "cnmv:ipp:2024102594#es#v1"
+  }
+ ],
+ "seq": 1648,
+ "state_id": "BBVA-H1-2024",
+ "structural_key_multiplicity": 1,
+ "unit": null,
+ "unitID": null,
+ "unit_denominator": [],
+ "unit_numerator": [],
+ "value_full": null,
+ "value_len": 9,
+ "value_preview": "Consejera",
+ "value_sha256": "2279A0D664352B4B77EFEC4284B7142CF5D304C2FC6FA646ED24E7F7DA349E0B",
+ "variant_version_id": "cnmv:ipp:2024102594#es#v1",
+ "xValue_full": null,
+ "xValue_preview": "Consejera",
+ "xValue_sha256": "2279A0D664352B4B77EFEC4284B7142CF5D304C2FC6FA646ED24E7F7DA349E0B"
+}

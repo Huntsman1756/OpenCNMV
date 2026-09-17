@@ -1,0 +1,134 @@
+{
+ "description": "Pinned input: the G2-C runA COLUMNAR_DATASET_V1 directory, used read-only in place. g2e_run never writes to it; corruption scenarios run on temp copies.",
+ "files": {
+  "g2c_runA/artifact.parquet": {
+   "logical_sha256": "f98cb2f97d46181058d344428accb36513c06e4b13bfbce2f761847ac459a9b1",
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/artifact.parquet",
+   "rows": 33,
+   "sha256": "39432af9eee5c2e61164a2b3781d06936b0ce49a66e3e9ff501ce7ee8e515ae2"
+  },
+  "g2c_runA/dataset_manifest.json": {
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/dataset_manifest.json",
+   "sha256": "de97df013886f0ce2d60c529598b8156a7792833becce3869f801c96dad360b6"
+  },
+  "g2c_runA/event_affects.parquet": {
+   "logical_sha256": "d13d33cf850c17f6751e15726e0ad0d1dd9b2bcacc044b610e5f6029703efd3f",
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/event_affects.parquet",
+   "rows": 2,
+   "sha256": "17219814d7fbb4b9f30c6e2eb8380aa7b53b93f13c4552089adb0a734b973ea5"
+  },
+  "g2c_runA/extension_mapping.parquet": {
+   "logical_sha256": "6b4b86d6e32cdb3fa2c507bde48136763f510cfa80d8c73d1787af71a7d11447",
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/extension_mapping.parquet",
+   "rows": 449,
+   "sha256": "e6ec6611b70712a59a77924415be8a4f1e752d02479d5565a4fe0938d3ef086a"
+  },
+  "g2c_runA/fact_dimension.parquet": {
+   "logical_sha256": "0847e5c47b839e40d85093fcad008925401b39247caacb996ff949f085e36e73",
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/fact_dimension.parquet",
+   "rows": 38365,
+   "sha256": "d313639da6a01af8c0e711dcab54859a7e88666dc473e786ee02d9111d7884cc"
+  },
+  "g2c_runA/facts.parquet": {
+   "logical_sha256": "fb8b13f0f11524f1906b7029b35c2a4e911e404b83c55989dfcd485c73245d3e",
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/facts.parquet",
+   "rows": 45376,
+   "sha256": "f043062f351b73a8f4383366d8f6f81c2e07325e7bf336d12b22540c401d6988"
+  },
+  "g2c_runA/filing.parquet": {
+   "logical_sha256": "64d7731d68d908b154cb11beb274e686221237ce3618a84d2ff4b656ab4ef3d5",
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/filing.parquet",
+   "rows": 22,
+   "sha256": "2a62691b32bfa54e2f2f0c6a21937342b19ec5105897e9c76145a463cd262b27"
+  },
+  "g2c_runA/filing_version.parquet": {
+   "logical_sha256": "c42aa435dc5a8c7aca894a6a22bd903271774ef63a09d03895b8ffb8f3a41256",
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/filing_version.parquet",
+   "rows": 23,
+   "sha256": "c32716af8b23d347aab7858c0c3c46970e8cff9bf04fa1556b5aa43c62ef12fe"
+  },
+  "g2c_runA/provenance.parquet": {
+   "logical_sha256": "b5c8f19e1367b21d777cd4bf4bf79c73d84f12466ada67c6f1385f2b89eac969",
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/provenance.parquet",
+   "rows": 25,
+   "sha256": "e3bfb356c4c94811f07010bcd5b3df7ff2e22bc9d8e8da118b942e5fa496d229"
+  },
+  "g2c_runA/schema/artifact.schema.json": {
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/schema/artifact.schema.json",
+   "sha256": "ab7fa0e1bb1e55909efb614f9f03d2df6dd3db2f78288fdfb4a1eeab785807eb"
+  },
+  "g2c_runA/schema/event_affects.schema.json": {
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/schema/event_affects.schema.json",
+   "sha256": "acb97e0ef0f874d588e6705f78c5e47b946e68d1f8ed518f3d17e60748c2c9c5"
+  },
+  "g2c_runA/schema/extension_mapping.schema.json": {
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/schema/extension_mapping.schema.json",
+   "sha256": "995e6e238c37eef0a785c505fa5bd164a4ecbdef86820289f9a17a97cc6db4ee"
+  },
+  "g2c_runA/schema/fact_dimension.schema.json": {
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/schema/fact_dimension.schema.json",
+   "sha256": "c16bdc5b2b47520349d3820e3611d1107ea177263cb5b99073ab67facbbd39fd"
+  },
+  "g2c_runA/schema/facts.schema.json": {
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/schema/facts.schema.json",
+   "sha256": "9570641b2ed4b63f031d90e24e9584f9cec2e9ef9b358688440b83db2103833a"
+  },
+  "g2c_runA/schema/filing.schema.json": {
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/schema/filing.schema.json",
+   "sha256": "be09759103939cd8b30e61de4a639cc24b3c07fefb9553497efc81f26205f74c"
+  },
+  "g2c_runA/schema/filing_version.schema.json": {
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/schema/filing_version.schema.json",
+   "sha256": "75148e8a0dd7818dbae80f06d05851d7ecf7ae1508da4d3e814b5c18e469da8d"
+  },
+  "g2c_runA/schema/provenance.schema.json": {
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/schema/provenance.schema.json",
+   "sha256": "22957087e0fd9a74e65d755d6ee1c1f73639561535d783a5e647840ed07c1583"
+  },
+  "g2c_runA/schema/submission_variant.schema.json": {
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/schema/submission_variant.schema.json",
+   "sha256": "f015c6a052c33b2d7549f93dcec4211a6ce4c5470a89ed22512f48ae91dd004f"
+  },
+  "g2c_runA/schema/variant_version.schema.json": {
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/schema/variant_version.schema.json",
+   "sha256": "c7276cb6652bd9e4bc72dfb7a369b1a727797ab68b2df770dbac71b618c80b8e"
+  },
+  "g2c_runA/schema/version_event.schema.json": {
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/schema/version_event.schema.json",
+   "sha256": "4a576cc67de436aafdc8337dbe562ce206c2a2356de4c6614f3c8ea2865d75f6"
+  },
+  "g2c_runA/schema/view_resolution.schema.json": {
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/schema/view_resolution.schema.json",
+   "sha256": "83d16b215b194315e84990cc76b0f5e279d6b8f5c58833d1f773595b493276fd"
+  },
+  "g2c_runA/submission_variant.parquet": {
+   "logical_sha256": "faf9e2b6c823998e64fae0be89600bad028608619b0dd92b704f44dd90c099b6",
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/submission_variant.parquet",
+   "rows": 27,
+   "sha256": "9599ebc116b863cb27f2460270cabdd4f2297a3362c01df10d46fad4ef2eebb8"
+  },
+  "g2c_runA/variant_version.parquet": {
+   "logical_sha256": "176f9b26457999dc25c30fe2e841b0489cd584d878b6926e6fc3cda8779c6d74",
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/variant_version.parquet",
+   "rows": 28,
+   "sha256": "0da4a975a2674bc93b3137f8fae71111e566771fc86107b92a1f4368422d4a31"
+  },
+  "g2c_runA/version_event.parquet": {
+   "logical_sha256": "502c34265b04cfb13196ce636539661d3d349c3562c195c3358ed2b74fad3c56",
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/version_event.parquet",
+   "rows": 8,
+   "sha256": "10f530401c85a747b7e1089ab7964f0f7985d824081264143ddb3879d9dce8db"
+  },
+  "g2c_runA/view_resolution.parquet": {
+   "logical_sha256": "abd7eebc0cc1189b09a53d3530b8a0161ffed541dc90598e19a5dfdd569422fc",
+   "path": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1/view_resolution.parquet",
+   "rows": 29,
+   "sha256": "f221763abfabd73e7eb407f26239774a71aa7729f6b2e515d231f3362ac81ba0"
+  }
+ },
+ "g2c_canonical_model": "CANONICAL_MODEL_V1",
+ "g2c_corpus_logical_sha256": "b2612152f46406a5ec4858592656c10b0afa8f98b042dc93337782b202045f69",
+ "g2c_dataset_dir": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1",
+ "g2c_dataset_version": "COLUMNAR_DATASET_V1",
+ "gate": "G2-E-public-readonly-cli"
+}

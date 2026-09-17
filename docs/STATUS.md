@@ -448,6 +448,36 @@ run A; all fail-closed controls fired. unittest 38/38, ruff + mypy clean,
 CI green on the pushed commit. Next: G2-E / CLI surface (per docs/G2.md
 ordering).
 
+**G2-E `PUBLIC_READ_ONLY_CLI`: PASS**
+(`g2/G2-E-public-readonly-cli/`, 29/29 checks). New production packages
+`opencnmv.query` (dataset open + manifest-verified fail-closed gate,
+filings/facts/history/compare/mappings/events/provenance) and
+`opencnmv.cli` (thin argparse presentation, deterministic human tables +
+canonical JSON/JSONL, frozen exit codes 0/1/2/3/4/5/6). Console entry
+point `opencnmv`; `python -m opencnmv` equivalent. Dataset resolution:
+`--dataset` > `OPENCNMV_DATASET` > `./dataset/v1`; no scanning.
+`dataset validate` recomputes file/logical/corpus hashes + referential
+and update invariants. `compare` promotes the G1-B/G1-C semantics
+verbatim (cross_variant_key minus lang, PROVEN_EQUIVALENT-only rewrite,
+multiset zip pairing, language-sensitive types never divergent) — the
+dataset-driven comparison reproduces the G1-C mapped class counts
+exactly on all four dual filings, incl. BBVA-FY2024 Equity
++98M/−98M as the single `DIVERGENT_SUBMISSION_FACT`. IBE shows one
+submitted `#es` variant + `FALLBACK_TO_ES` (no phantom `#en`);
+TEF 20484 exposes `#es` v1, `#en` v1(unobserved)→v2, 13/03 scoped to
+`#en`, 28/02 `VARIANT_SCOPE_NOT_OBSERVABLE`. Public surface keeps typed
+dimensions, compound units, fact multiplicity (`#<occ>` fact_ids) and
+repo-relative evidence paths intact. 48-command corpus ran twice under
+socket deny-all: byte-identical outputs, zero network attempts, zero
+dataset bytes modified. Corrupt-byte and deleted-table copies fail
+closed with exit 5 and empty stdout. Wheel built, installed into a
+clean venv, `opencnmv` smoke (16 commands incl. exit-4 path) OK;
+CI runs the same wheel smoke on Linux+Windows. Regressions re-run on
+final HEAD: G2-A 6/6, G2-B 8/8, G2-C 20/20, G2-D 21/21. Unit suite
+61/61; ruff + mypy clean on 55 files. Docs: `docs/CLI.md` (frozen CLI V1
+contract). Next: first write/online surface (capture/update CLI or API)
+as a separate deliberately-scoped gate — out of scope here by design.
+
 ## Engineering-hardening session (2026-09-17)
 
 Not a gate. Packaging/QA/CI and repository hygiene for public distribution;

@@ -43,6 +43,10 @@ Install, test, lint, type-check and build instructions live in
 [`CONTRIBUTING.md`](CONTRIBUTING.md). CI runs the same checks on Linux and
 Windows under Python 3.11.
 
+The read-only CLI (`opencnmv dataset info|validate`, `filings`,
+`filing`, `history`, `facts`, `fact`, `compare`, `events`, `mappings`,
+`provenance`) is documented in [`docs/CLI.md`](docs/CLI.md).
+
 ## Corpus (frozen)
 
 - Issuers: **SAN** (Banco Santander), **BBVA**, **IBE** (Iberdrola)
