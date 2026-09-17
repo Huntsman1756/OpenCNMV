@@ -20,6 +20,10 @@ Repository = "https://github.com/Huntsman1756/OpenCNMV"
 
 [project.optional-dependencies]
 xbrl = ["arelle-release==2.44.0"]
+dataset = [
+    "duckdb==1.5.5",
+    "pyarrow==25.0.1",
+]
 dev = [
     "build==1.6.1",
     "jsonschema==4.26.0",
@@ -56,6 +60,6 @@ check_untyped_defs = true
 warn_unused_ignores = true
 
 [[tool.mypy.overrides]]
-module = ["arelle", "arelle.*"]
+module = ["arelle", "arelle.*", "pyarrow", "pyarrow.*", "duckdb"]
 follow_imports = "skip"
 ignore_missing_imports = true

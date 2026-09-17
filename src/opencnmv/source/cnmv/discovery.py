@@ -158,6 +158,25 @@ def parse_event_rows(html: str) -> list[dict]:
     return out
 
 
+def parse_listaifi_rows(html: str) -> list[dict]:
+    """listaifi (IPP listing) rows: nreg, publication date, filing type.
+
+    The listing exposes no revision surface (R13); it is only evidence for
+    nreg -> publication date + declared period text.
+    """
+    out = []
+    for m in re.finditer(r"<tr[^>]*>(.*?)</tr>", html, re.S):
+        row = m.group(1)
+        nm = re.search(r"detalleifialdia\.aspx\?nreg=(\d+)", row)
+        cells = [re.sub(r"<[^>]+>|\s+", " ", t).strip()
+                 for t in re.findall(r"<td[^>]*>(.*?)</td>", row, re.S)]
+        if nm and cells and re.match(r"\d{2}/\d{2}/\d{4}", cells[0]):
+            out.append({"nreg": nm.group(1),
+                        "published": cells[0],
+                        "kind": cells[1] if len(cells) > 1 else ""})
+    return out
+
+
 def nreg_from_infadicion(link: str):
     m = re.search(r"nreg=(\d+)&(?:amp;)?nregaud=(\d+)",
                   link.replace("&amp;", "&"))
