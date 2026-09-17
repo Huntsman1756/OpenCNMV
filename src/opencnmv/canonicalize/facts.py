@@ -8,7 +8,9 @@ part of identity (R17 falsified the naive key empirically).
 """
 from __future__ import annotations
 
-import hashlib, json
+import hashlib
+import json
+from collections import Counter
 
 
 def fact_key(concept: str, entity: str, period: str,
@@ -178,8 +180,7 @@ def comparison_key(rec: dict) -> tuple:
     return tuple(rec.get(k) for k in _CMP_FIELDS) + (dims,)
 
 
-def fact_multiset(records) -> "Counter":
-    from collections import Counter
+def fact_multiset(records) -> Counter:
     return Counter(comparison_key(r) for r in records)
 
 
@@ -196,9 +197,9 @@ def oim_fact_key(fact: dict, nsmap: dict) -> str:
 
     def resolve(v):
         if isinstance(v, str) and ":" in v:
-            p, l = v.split(":", 1)
+            p, local = v.split(":", 1)
             if p in nsmap:
-                return f"{nsmap[p]}#{l}"
+                return f"{nsmap[p]}#{local}"
         return v
 
     def norm_period(p):

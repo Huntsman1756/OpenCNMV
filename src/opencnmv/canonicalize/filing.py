@@ -32,8 +32,8 @@ def filing_version(filing_id: str, nreg: str | None,
 def artifact(role: str, sha256: str, bytes_: int | None = None,
              media_type: str | None = None, source_url: str | None = None,
              package_lang_tag: str | None = None) -> dict:
-    a = {"artifact_id": ids.artifact_id(sha256), "role": role,
-         "sha256": sha256}
+    a: dict = {"artifact_id": ids.artifact_id(sha256), "role": role,
+               "sha256": sha256}
     if bytes_ is not None:
         a["bytes"] = bytes_
     if media_type is not None:

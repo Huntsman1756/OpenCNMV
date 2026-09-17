@@ -6,7 +6,9 @@ report packages), so this is fully offline.
 """
 from __future__ import annotations
 
-import io, re, zipfile
+import io
+import re
+import zipfile
 from pathlib import Path
 
 _XSD_TNS = re.compile(r'targetNamespace="([^"]+)"')

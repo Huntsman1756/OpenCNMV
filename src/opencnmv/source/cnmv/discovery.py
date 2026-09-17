@@ -7,6 +7,7 @@ preserve; helpers return both bytes and parsed rows.
 from __future__ import annotations
 
 import re
+from html.parser import HTMLParser
 
 import requests
 
@@ -28,8 +29,51 @@ def hidden_fields(html: str) -> dict:
     return f
 
 
+class IssuerSelectionError(ValueError):
+    def __init__(self, response: requests.Response):
+        super().__init__("Issuer picker has no unique matching selection")
+        self.response = response
+        self.body = response.content
+
+
+class _IssuerPicker(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.present = False
+        self.active = False
+        self.options = []
+        self.option = None
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag == "select":
+            self.active = attrs.get("name") == (
+                "ctl00$ContentPrincipal$wbusqueda$lstSeleccion")
+            self.present = self.present or self.active
+        elif tag == "option" and self.active:
+            self._finish_option()
+            if attrs.get("value") and "disabled" not in attrs:
+                self.option = [attrs["value"], ""]
+
+    def handle_data(self, data):
+        if self.option is not None:
+            self.option[1] += data
+
+    def handle_endtag(self, tag):
+        if tag == "option":
+            self._finish_option()
+        elif tag == "select":
+            self._finish_option()
+            self.active = False
+
+    def _finish_option(self):
+        if self.option is not None:
+            self.options.append(tuple(self.option))
+            self.option = None
+
+
 def search_ifa(s: requests.Session, denom: str, lang: str,
-               desde: str, hasta: str) -> bytes:
+               desde: str, hasta: str, *, issuer_value: str | None = None) -> bytes:
     """busqueda?id=25 POST, resolving the entity picker if CNMV returns one.
     Returns raw served bytes."""
     url = SEARCH_IFA.format(lang=lang)
@@ -44,20 +88,33 @@ def search_ifa(s: requests.Session, denom: str, lang: str,
                 "Search" if lang == "en" else "Buscar"}
     r2 = s.post(url, data=data, timeout=180, headers={"Referer": url})
     r2.raise_for_status()
-    if "lstSeleccion" in r2.text and "btnSeleccionar" in r2.text:
-        opts = re.findall(
-            r'<option[^>]*value="([^"]+)"[^>]*>([^<]+)</option>', r2.text)
-        pick = next((o for o in opts if "S.A." in o[1].upper()),
-                    opts[-1] if opts else None)
-        if pick:
-            data2 = {**hidden_fields(r2.text),
-                     "ctl00$ContentPrincipal$wbusqueda$lstSeleccion": pick[0],
-                     "ctl00$ContentPrincipal$wbusqueda$btnSeleccionar":
-                         "Seleccionar" if lang == "es" else "Select"}
-            r3 = s.post(url, data=data2, timeout=180,
-                        headers={"Referer": url})
-            r3.raise_for_status()
-            return r3.content
+    picker = _IssuerPicker()
+    picker.feed(r2.text)
+    picker.close()
+    if picker.present:
+        if issuer_value is not None:
+            matches = [o for o in picker.options if o[0] == issuer_value]
+        elif len(picker.options) == 1:
+            matches = picker.options
+        else:
+            name = " ".join(denom.split()).casefold()
+            matches = [o for o in picker.options
+                       if " ".join(o[1].split()).casefold() == name]
+        if len(matches) != 1:
+            raise IssuerSelectionError(r2)
+        data2 = {**hidden_fields(r2.text),
+                 "ctl00$ContentPrincipal$wbusqueda$lstSeleccion": matches[0][0],
+                 "ctl00$ContentPrincipal$wbusqueda$btnSeleccionar":
+                     "Seleccionar" if lang == "es" else "Select"}
+        r3 = s.post(url, data=data2, timeout=180,
+                    headers={"Referer": url})
+        r3.raise_for_status()
+        remaining = _IssuerPicker()
+        remaining.feed(r3.text)
+        remaining.close()
+        if remaining.present:
+            raise IssuerSelectionError(r3)
+        return r3.content
     return r2.content
 
 

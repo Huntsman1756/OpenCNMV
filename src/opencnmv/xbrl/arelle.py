@@ -22,9 +22,15 @@ Hard rules enforced here (derived from G0 evidence):
 """
 from __future__ import annotations
 
-import base64, hashlib, inspect, logging, shutil, time
+import base64
+import hashlib
+import inspect
+import logging
+import shutil
+import time
 from dataclasses import dataclass, field
 from pathlib import Path
+from typing import Any
 
 ARELLE_VERSION = "2.44.0"
 
@@ -210,7 +216,7 @@ class ParseSession:
         self.log_msgs: list[dict] = []
         self.model = None
         self.run_ok = False
-        self._session = None
+        self._session: Any = None
 
     def __enter__(self) -> "ParseSession":
         require_arelle_version()
