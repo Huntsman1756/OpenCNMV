@@ -1,8 +1,8 @@
 {
  "gate": "G2-B-frozen-corpus-rebuild",
  "status": "PASS",
- "executed_at": "2026-09-16T20:06:58.057655+00:00",
- "code_commit": "9a68a94",
+ "executed_at": "2026-09-17T04:50:49.000000+00:00",
+ "code_commit": "2784e00",
  "inputs": "g2b_inputs.json (25 artefacts + 6 taxonomy packages + 50 oracle files, all sha256-pinned)",
  "outputs": {
   "verify_results": "g2b_verify_results.json",
