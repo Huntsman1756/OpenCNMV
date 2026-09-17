@@ -373,7 +373,7 @@ class TestPlanApply(unittest.TestCase):
 
 class TestUpdateInvariants(unittest.TestCase):
     def test_chain_break_detected(self):
-        tbl = {t: [] for t in dschema.TABLE_ORDER}
+        tbl: dict[str, list] = {t: [] for t in dschema.TABLE_ORDER}
         tbl["variant_version"] = [
             {"variant_version_id": "v#v1", "variant_id": "v",
              "version_seq": 1, "supersedes_variant_version_id": None,
@@ -389,7 +389,7 @@ class TestUpdateInvariants(unittest.TestCase):
         self.assertTrue(any("expected" in e for e in errs))
 
     def test_not_observable_scope_with_variant_flagged(self):
-        tbl = {t: [] for t in dschema.TABLE_ORDER}
+        tbl: dict[str, list] = {t: [] for t in dschema.TABLE_ORDER}
         tbl["version_event"] = [{
             "event_id": "e", "filing_id": "f",
             "scope_status": "VARIANT_SCOPE_NOT_OBSERVABLE"}]
