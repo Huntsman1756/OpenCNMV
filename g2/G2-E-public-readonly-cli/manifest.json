@@ -2,7 +2,7 @@
  "gate": "G2-E-public-readonly-cli",
  "status": "PASS",
  "executed_at": "2026-09-17T18:03:51.344064+00:00",
- "code_commit": "PENDING",
+ "code_commit": "6dc18ed",
  "inputs": {
   "g2e_inputs.json": "pinned G2-C dataset (dataset/v1, corpus logical sha b2612152...) + G1-C mapped compare oracles"
  },
