@@ -3,7 +3,7 @@
 **Scope of this session:** R0–R4 only. No R5+, no product, no API, no UI.
 
 **Executed:** 2026-09-14 (UTC 22:15)
-**Workspace:** `F:\_Proyectos\OpenCNMV`
+**Workspace:** `<repo>`
 **Probe tooling:** `g0-r/_probe-logs/*.ps1` (HttpClient + curl + HTML-to-text helpers)
 
 ---

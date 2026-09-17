@@ -190,7 +190,7 @@
       "exception": null,
       "dts_resolution": [
         {
-          "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R15-offline-rebuild-deterministic\\_runs\\S2\\entrypoints\\SAN-H1-2024.xbrl",
+          "uri": "<repo>\\g0-r\\R15-offline-rebuild-deterministic\\_runs\\S2\\entrypoints\\SAN-H1-2024.xbrl",
           "resolved_from": "local_input"
         },
         {

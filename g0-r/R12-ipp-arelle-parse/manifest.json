@@ -51,6 +51,7 @@
     "Lexical shim replaces only the base64Binary XSD lexical pattern (not XBRL semantics); version+fingerprint gated, aborts on upstream change; equivalence self-tested against the original pattern object at every run.",
     "ipp package /se/ and /ti/ paths inferred by analogy; only /en/ and /ge/ exercised by the frozen corpus.",
     "No second-parser control on IPP (Brel is a partial iXBRL/ESEF oracle per R11); adapter bounded by Control A only.",
-    "OIM comparison uses xBRL-JSON; OIM-CSV equivalence transitive via the same Arelle model."
+    "OIM comparison uses xBRL-JSON; OIM-CSV equivalence transitive via the same Arelle model.",
+    "Evidence hygiene (2026-09-17): generated log/result JSONs previously embedded the machine-local workspace path (F:\\_Proyectos\\OpenCNMV) and, for g1/G1-B run1 Arelle logs, a developer venv path (C:\\Users\\<user>\\...\\hermes-agent\\venv). These are harness outputs, not raw CNMV artefacts; the path prefixes were replaced by <repo>/<venv> placeholders and the manifest hashes re-pinned to the sanitized bytes. Pre-sanitization hashes remain recoverable from git history."
   ]
 }

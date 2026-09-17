@@ -88,44 +88,44 @@
   "evidence\\compare\\SAN-FY2024.comparison.jsonl": "0f2d7a0fd8a178fbf5b4ebf31966df88c8bbe8a8d05ddd853cde6b087b5bb52e",
   "evidence\\compare\\SAN-FY2025.comparison.jsonl": "8d653f2714dcc0349a6faf8131ca0ed09d4311b82a21475b9d0db5f7046f30ef",
   "evidence\\g1b_results.json": "9d25b04d3404e484d7c7d5298ed0d95a7f5fa36f31971708c21d5fa1c98dc795",
-  "evidence\\parse\\run1\\BBVA-FY2024-en.arelle-log.json": "104f86fb96cbbb6bba2902e690fd2557cdae14af414e1f9b79ef59a158c3073a",
+  "evidence\\parse\\run1\\BBVA-FY2024-en.arelle-log.json": "35e5120c3082c368067dd13740166d110ac4b645153baedf17b0635fd63e1bb8",
   "evidence\\parse\\run1\\BBVA-FY2024-en.facts.jsonl": "baf69368d37cb16eb502f21e8bd69b991fea345f0d3b45cdab0ac150005c77dd",
   "evidence\\parse\\run1\\BBVA-FY2024-en.model_summary.json": "665ebe0cbf9c706c8eadfce3d1fe6d47e35a34a930594c209c3ce1e6e07dfa52",
   "evidence\\parse\\run1\\BBVA-FY2024-en.oim.json.gz": "25d028aa9cb632abd6370e4be8f5b532376c16fd8fc4420d808120fd05f8a782",
-  "evidence\\parse\\run1\\BBVA-FY2024-es.arelle-log.json": "104f86fb96cbbb6bba2902e690fd2557cdae14af414e1f9b79ef59a158c3073a",
+  "evidence\\parse\\run1\\BBVA-FY2024-es.arelle-log.json": "35e5120c3082c368067dd13740166d110ac4b645153baedf17b0635fd63e1bb8",
   "evidence\\parse\\run1\\BBVA-FY2024-es.facts.jsonl": "b9e060e080d5398a3780001cc77b03b4cb25083f2e163d772231975eb88be926",
   "evidence\\parse\\run1\\BBVA-FY2024-es.model_summary.json": "54bb019f2bc7ccbf410c0b8a3561df9edc0de7472eadb0ba428fd99cac9ad58c",
   "evidence\\parse\\run1\\BBVA-FY2024-es.oim.json.gz": "1a6c3505beee2852c0068dbb5b251bb17aba2c19d85353b0264cbb067f6656bf",
-  "evidence\\parse\\run1\\BBVA-FY2025-en.arelle-log.json": "7898cef2a91ef5ab9b491ee73a6358d78a45cc758ce8b0b240781a1dd57a647c",
+  "evidence\\parse\\run1\\BBVA-FY2025-en.arelle-log.json": "7dd91496e493078c432859a9c8f951e8bcacfb11a8b5ceb11a5ce31510a82684",
   "evidence\\parse\\run1\\BBVA-FY2025-en.facts.jsonl": "e0692920fe5fca7904233633036f9a6080b4cb0d4b786a4985287d790193d13e",
   "evidence\\parse\\run1\\BBVA-FY2025-en.model_summary.json": "b5b6c754c2fc7cdce9928cf4f45c55375f331da3bdf271d7e0f35357b1ebfe21",
   "evidence\\parse\\run1\\BBVA-FY2025-en.oim.json.gz": "3f2f57fcadc88fad10590c0889b4e186654cd82615cee8400f0eafd37c3f77cc",
-  "evidence\\parse\\run1\\BBVA-FY2025-es.arelle-log.json": "7898cef2a91ef5ab9b491ee73a6358d78a45cc758ce8b0b240781a1dd57a647c",
+  "evidence\\parse\\run1\\BBVA-FY2025-es.arelle-log.json": "7dd91496e493078c432859a9c8f951e8bcacfb11a8b5ceb11a5ce31510a82684",
   "evidence\\parse\\run1\\BBVA-FY2025-es.facts.jsonl": "c8745746895eb000b0502904a955acfba802fd77de1a81022da47b77207772d8",
   "evidence\\parse\\run1\\BBVA-FY2025-es.model_summary.json": "73221ac639a2b5423fb8563f3c273f218bd39977a77f3770b1cb2a4826493655",
   "evidence\\parse\\run1\\BBVA-FY2025-es.oim.json.gz": "5d17e85734225291297af366da1ae9282d0891fc98cc025be890424855456c98",
   "evidence\\parse\\run1\\extract_results.json": "f6f9b88c1745bcd1c610ea7a134a7d802cf8350ed8eb9feea1b6a2f0185f4020",
-  "evidence\\parse\\run1\\IBE-FY2024-es.arelle-log.json": "60a79459f0e14669a41d35c09deed062a4102034177c0947db9087e7ff318c61",
+  "evidence\\parse\\run1\\IBE-FY2024-es.arelle-log.json": "3f5797eee103423a8f5f6624cea4143dc640dd6c7950cf205d1b94db81de0058",
   "evidence\\parse\\run1\\IBE-FY2024-es.facts.jsonl": "aeacc1bf8093b737d5a6f8224b4f043dcff1b07f0a453f60c378a19b3ec68a33",
   "evidence\\parse\\run1\\IBE-FY2024-es.model_summary.json": "03a2688528adf7d49e8f5f6a714c63a563b8b63d2e261f3518d6a57e7cd23e1b",
   "evidence\\parse\\run1\\IBE-FY2024-es.oim.json.gz": "91e10db363f090c7893095647e40f671b1555dd620665f4fbeba2d0d1ebbdaa9",
-  "evidence\\parse\\run1\\IBE-FY2025-es.arelle-log.json": "d1b13d1cb6a5bb5377917b1f4d0f85a5df3627dda4fdfa2d7cc16b75074e2626",
+  "evidence\\parse\\run1\\IBE-FY2025-es.arelle-log.json": "004fc79ac71821f22c51743278ad072faef94537565cb4e1ac0d946d01edd61f",
   "evidence\\parse\\run1\\IBE-FY2025-es.facts.jsonl": "444fb972c262537b0a146b8ebe4d9b0ba0f6072270e2edaad38b8c7b1509f2f6",
   "evidence\\parse\\run1\\IBE-FY2025-es.model_summary.json": "147e1874f1fd7ce0b4d5dd6c1f12ba40d522ab213cf6d4039363f06bbf24c93d",
   "evidence\\parse\\run1\\IBE-FY2025-es.oim.json.gz": "8d1f8d54ec601bf0b299a0e2f66aa75b75196091a384ead1d47d837c90d85867",
-  "evidence\\parse\\run1\\SAN-FY2024-en.arelle-log.json": "d5f4d9d4e110bcae925aa867e5b365c25a866be94226db44112f033e728b0d57",
+  "evidence\\parse\\run1\\SAN-FY2024-en.arelle-log.json": "328fe1bf8994aa430e3d88e7535410116e976801d7ad49246319d951027cbd3b",
   "evidence\\parse\\run1\\SAN-FY2024-en.facts.jsonl": "da9f55aef73d97026f08a573b146cd91058ba0ca3e2fb157addec603fdc14142",
   "evidence\\parse\\run1\\SAN-FY2024-en.model_summary.json": "a8ae2eb605c6600309f6496fc3f81b367044e4b3b9f7ba7a74bf7c7a27caf538",
   "evidence\\parse\\run1\\SAN-FY2024-en.oim.json.gz": "4618d9c54c8b1f6aac7c9b3abc359374ac25b6a46fec60386a96f0fe3603bd20",
-  "evidence\\parse\\run1\\SAN-FY2024-es.arelle-log.json": "d5f4d9d4e110bcae925aa867e5b365c25a866be94226db44112f033e728b0d57",
+  "evidence\\parse\\run1\\SAN-FY2024-es.arelle-log.json": "328fe1bf8994aa430e3d88e7535410116e976801d7ad49246319d951027cbd3b",
   "evidence\\parse\\run1\\SAN-FY2024-es.facts.jsonl": "4a2f0581204ace1e21a0d67e3e7f55d39858bc2825d91f3710c5a11e91997489",
   "evidence\\parse\\run1\\SAN-FY2024-es.model_summary.json": "941ec39844d954c3ec73b815eeddd461e49bd2f25293cb33add651026056682e",
   "evidence\\parse\\run1\\SAN-FY2024-es.oim.json.gz": "0aab19f9820d2bdbb94712f80992aba82a1f275dffb0c6dc84b528291ce03dc3",
-  "evidence\\parse\\run1\\SAN-FY2025-en.arelle-log.json": "658e3c515b7bc9e263c81fb3f213c2750af840ea176194b5cbd7d01f2aae7ada",
+  "evidence\\parse\\run1\\SAN-FY2025-en.arelle-log.json": "1ab0e89bbafa649a9242af04a35a92c4d0747b0aa84f71da02ae45302b9545e7",
   "evidence\\parse\\run1\\SAN-FY2025-en.facts.jsonl": "14fd8ffab0a70eb0bcbafd4c2505a7089ed7c40ccbcef62638fbb0678e2cd4f7",
   "evidence\\parse\\run1\\SAN-FY2025-en.model_summary.json": "2d51340f43c6c58b06721c4a96f858c5fe7eab306979ac5659558c315bc2c58f",
   "evidence\\parse\\run1\\SAN-FY2025-en.oim.json.gz": "65a7592545487d915f8a80925d1819a57b14e2ecf5d34f174839b5779f9b4586",
-  "evidence\\parse\\run1\\SAN-FY2025-es.arelle-log.json": "658e3c515b7bc9e263c81fb3f213c2750af840ea176194b5cbd7d01f2aae7ada",
+  "evidence\\parse\\run1\\SAN-FY2025-es.arelle-log.json": "1ab0e89bbafa649a9242af04a35a92c4d0747b0aa84f71da02ae45302b9545e7",
   "evidence\\parse\\run1\\SAN-FY2025-es.facts.jsonl": "481665f3de20e4759ba16f0e4e75879077b2f65ea523915efcfed063c2ff8b9f",
   "evidence\\parse\\run1\\SAN-FY2025-es.model_summary.json": "22a41d58bd15d5b4486bf6a85176b2f187accb860b96116be8d820e04fca21aa",
   "evidence\\parse\\run1\\SAN-FY2025-es.oim.json.gz": "aaa2fa2718260801e35160b931880c93da4418c460d17b6e5c378335f7df3f49",
@@ -493,8 +493,9 @@
   },
   {
    "file": "evidence\\parse\\run1\\BBVA-FY2024-en.arelle-log.json",
-   "sha256": "104f86fb96cbbb6bba2902e690fd2557cdae14af414e1f9b79ef59a158c3073a",
-   "bytes": 9403
+   "sha256": "35e5120c3082c368067dd13740166d110ac4b645153baedf17b0635fd63e1bb8",
+   "bytes": 8636,
+   "sha256_before_sanitization": "104f86fb96cbbb6bba2902e690fd2557cdae14af414e1f9b79ef59a158c3073a"
   },
   {
    "file": "evidence\\parse\\run1\\BBVA-FY2024-en.facts.jsonl",
@@ -513,8 +514,9 @@
   },
   {
    "file": "evidence\\parse\\run1\\BBVA-FY2024-es.arelle-log.json",
-   "sha256": "104f86fb96cbbb6bba2902e690fd2557cdae14af414e1f9b79ef59a158c3073a",
-   "bytes": 9403
+   "sha256": "35e5120c3082c368067dd13740166d110ac4b645153baedf17b0635fd63e1bb8",
+   "bytes": 8636,
+   "sha256_before_sanitization": "104f86fb96cbbb6bba2902e690fd2557cdae14af414e1f9b79ef59a158c3073a"
   },
   {
    "file": "evidence\\parse\\run1\\BBVA-FY2024-es.facts.jsonl",
@@ -533,8 +535,9 @@
   },
   {
    "file": "evidence\\parse\\run1\\BBVA-FY2025-en.arelle-log.json",
-   "sha256": "7898cef2a91ef5ab9b491ee73a6358d78a45cc758ce8b0b240781a1dd57a647c",
-   "bytes": 9614
+   "sha256": "7dd91496e493078c432859a9c8f951e8bcacfb11a8b5ceb11a5ce31510a82684",
+   "bytes": 8847,
+   "sha256_before_sanitization": "7898cef2a91ef5ab9b491ee73a6358d78a45cc758ce8b0b240781a1dd57a647c"
   },
   {
    "file": "evidence\\parse\\run1\\BBVA-FY2025-en.facts.jsonl",
@@ -553,8 +556,9 @@
   },
   {
    "file": "evidence\\parse\\run1\\BBVA-FY2025-es.arelle-log.json",
-   "sha256": "7898cef2a91ef5ab9b491ee73a6358d78a45cc758ce8b0b240781a1dd57a647c",
-   "bytes": 9614
+   "sha256": "7dd91496e493078c432859a9c8f951e8bcacfb11a8b5ceb11a5ce31510a82684",
+   "bytes": 8847,
+   "sha256_before_sanitization": "7898cef2a91ef5ab9b491ee73a6358d78a45cc758ce8b0b240781a1dd57a647c"
   },
   {
    "file": "evidence\\parse\\run1\\BBVA-FY2025-es.facts.jsonl",
@@ -578,8 +582,9 @@
   },
   {
    "file": "evidence\\parse\\run1\\IBE-FY2024-es.arelle-log.json",
-   "sha256": "60a79459f0e14669a41d35c09deed062a4102034177c0947db9087e7ff318c61",
-   "bytes": 9613
+   "sha256": "3f5797eee103423a8f5f6624cea4143dc640dd6c7950cf205d1b94db81de0058",
+   "bytes": 8846,
+   "sha256_before_sanitization": "60a79459f0e14669a41d35c09deed062a4102034177c0947db9087e7ff318c61"
   },
   {
    "file": "evidence\\parse\\run1\\IBE-FY2024-es.facts.jsonl",
@@ -598,8 +603,9 @@
   },
   {
    "file": "evidence\\parse\\run1\\IBE-FY2025-es.arelle-log.json",
-   "sha256": "d1b13d1cb6a5bb5377917b1f4d0f85a5df3627dda4fdfa2d7cc16b75074e2626",
-   "bytes": 9824
+   "sha256": "004fc79ac71821f22c51743278ad072faef94537565cb4e1ac0d946d01edd61f",
+   "bytes": 9057,
+   "sha256_before_sanitization": "d1b13d1cb6a5bb5377917b1f4d0f85a5df3627dda4fdfa2d7cc16b75074e2626"
   },
   {
    "file": "evidence\\parse\\run1\\IBE-FY2025-es.facts.jsonl",
@@ -618,8 +624,9 @@
   },
   {
    "file": "evidence\\parse\\run1\\SAN-FY2024-en.arelle-log.json",
-   "sha256": "d5f4d9d4e110bcae925aa867e5b365c25a866be94226db44112f033e728b0d57",
-   "bytes": 10033
+   "sha256": "328fe1bf8994aa430e3d88e7535410116e976801d7ad49246319d951027cbd3b",
+   "bytes": 9266,
+   "sha256_before_sanitization": "d5f4d9d4e110bcae925aa867e5b365c25a866be94226db44112f033e728b0d57"
   },
   {
    "file": "evidence\\parse\\run1\\SAN-FY2024-en.facts.jsonl",
@@ -638,8 +645,9 @@
   },
   {
    "file": "evidence\\parse\\run1\\SAN-FY2024-es.arelle-log.json",
-   "sha256": "d5f4d9d4e110bcae925aa867e5b365c25a866be94226db44112f033e728b0d57",
-   "bytes": 10033
+   "sha256": "328fe1bf8994aa430e3d88e7535410116e976801d7ad49246319d951027cbd3b",
+   "bytes": 9266,
+   "sha256_before_sanitization": "d5f4d9d4e110bcae925aa867e5b365c25a866be94226db44112f033e728b0d57"
   },
   {
    "file": "evidence\\parse\\run1\\SAN-FY2024-es.facts.jsonl",
@@ -658,8 +666,9 @@
   },
   {
    "file": "evidence\\parse\\run1\\SAN-FY2025-en.arelle-log.json",
-   "sha256": "658e3c515b7bc9e263c81fb3f213c2750af840ea176194b5cbd7d01f2aae7ada",
-   "bytes": 10244
+   "sha256": "1ab0e89bbafa649a9242af04a35a92c4d0747b0aa84f71da02ae45302b9545e7",
+   "bytes": 9477,
+   "sha256_before_sanitization": "658e3c515b7bc9e263c81fb3f213c2750af840ea176194b5cbd7d01f2aae7ada"
   },
   {
    "file": "evidence\\parse\\run1\\SAN-FY2025-en.facts.jsonl",
@@ -678,8 +687,9 @@
   },
   {
    "file": "evidence\\parse\\run1\\SAN-FY2025-es.arelle-log.json",
-   "sha256": "658e3c515b7bc9e263c81fb3f213c2750af840ea176194b5cbd7d01f2aae7ada",
-   "bytes": 10244
+   "sha256": "1ab0e89bbafa649a9242af04a35a92c4d0747b0aa84f71da02ae45302b9545e7",
+   "bytes": 9477,
+   "sha256_before_sanitization": "658e3c515b7bc9e263c81fb3f213c2750af840ea176194b5cbd7d01f2aae7ada"
   },
   {
    "file": "evidence\\parse\\run1\\SAN-FY2025-es.facts.jsonl",
@@ -739,6 +749,7 @@
  "limitations": [
   "viewer XHTM/PDF bodies not preserved (locators + 256KiB language probes only)",
   "lifecycle ordering still not distinguished; variant-only substitution remains falsification target",
-  "extension-concept cross-variant mapping unresolved by design (UNMAPPED_VARIANT_FACT)"
+  "extension-concept cross-variant mapping unresolved by design (UNMAPPED_VARIANT_FACT)",
+  "Evidence hygiene (2026-09-17): generated log/result JSONs previously embedded the machine-local workspace path (F:\\_Proyectos\\OpenCNMV) and, for g1/G1-B run1 Arelle logs, a developer venv path (C:\\Users\\<user>\\...\\hermes-agent\\venv). These are harness outputs, not raw CNMV artefacts; the path prefixes were replaced by <repo>/<venv> placeholders and the manifest hashes re-pinned to the sanitized bytes. Pre-sanitization hashes remain recoverable from git history."
  ]
 }

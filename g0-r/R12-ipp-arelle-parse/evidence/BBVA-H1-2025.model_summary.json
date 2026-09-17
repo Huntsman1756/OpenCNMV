@@ -48,7 +48,7 @@
   "log_code_counts": {},
   "dts_resolution": [
     {
-      "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\BBVA-H1-2025.xbrl",
+      "uri": "<repo>\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\BBVA-H1-2025.xbrl",
       "resolved_from": "local_input"
     },
     {

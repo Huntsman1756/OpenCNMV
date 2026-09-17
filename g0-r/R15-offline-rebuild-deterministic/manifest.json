@@ -41,9 +41,9 @@
     "evidence/offlineB/r15_run_result.json": "4cda0e2809b1df6ffae991cf9483e5cc410556fced0d58192b0b619cbbfcd424",
     "evidence/offlineB/source_state.json": "79d24ef8c09afd212d479bda65fbff16c4ddb712c9918ac7d20898d61cfe2f99",
     "evidence/offlineB/taxonomy.json": "728372b0a318131abb8d45038e372530f123b764406640378210eb671ba3d5a1",
-    "evidence/r15_results.json": "8c7a564578d835a59fd83aa30ea6011e45ea36bb0fdf06deccdba83b2fff38f8",
+    "evidence/r15_results.json": "2e2d251d0918c5f2c0a943375f8e25f551eac794f5a33399b03ee90a23d865cf",
     "evidence/starvation_S1.json": "0ff6b1616b985fa78699ef23dcf99796c2ef288c5dd8ff64970748decc9c1c95",
-    "evidence/starvation_S2.json": "4483c23fd3ce0c24917b0d163b762091fdb9c44384fb39e381f969e2c05ca452"
+    "evidence/starvation_S2.json": "6b1cce80277e3b9d74c23b0dc724c12b3017a66315184c916a55c855e822778a"
   },
   "findings": [
     "Zero discovery: no network, no listaifi/ListadoIFA/?e=/?t= access; closed input set verified by sha256 (60 inputs, 0 mismatches) before processing",
@@ -58,6 +58,7 @@
     "Network denial is process-level (socket sentinel + dead proxy + offline mode + empty caches), not an OS firewall rule (no elevation); every attempt would be logged+denied, none occurred",
     "File-read audit covers Python open() only; C-level readers not instrumented",
     "Determinism bounded to frozen corpus + this interpreter/dependency set; shim aborts loudly on upstream change",
-    "Discovery projection not rebuilt offline by design; R14 source_state is the provenance reference"
+    "Discovery projection not rebuilt offline by design; R14 source_state is the provenance reference",
+    "Evidence hygiene (2026-09-17): generated log/result JSONs previously embedded the machine-local workspace path (F:\\_Proyectos\\OpenCNMV) and, for g1/G1-B run1 Arelle logs, a developer venv path (C:\\Users\\<user>\\...\\hermes-agent\\venv). These are harness outputs, not raw CNMV artefacts; the path prefixes were replaced by <repo>/<venv> placeholders and the manifest hashes re-pinned to the sanitized bytes. Pre-sanitization hashes remain recoverable from git history."
   ]
 }

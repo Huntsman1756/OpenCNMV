@@ -49,7 +49,7 @@
     "log_code_counts": {},
     "dts_resolution": [
       {
-        "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\SAN-H1-2024.xbrl",
+        "uri": "<repo>\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\SAN-H1-2024.xbrl",
         "resolved_from": "local_input"
       },
       {
@@ -179,7 +179,7 @@
     "log_code_counts": {},
     "dts_resolution": [
       {
-        "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\SAN-H2-2024.xbrl",
+        "uri": "<repo>\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\SAN-H2-2024.xbrl",
         "resolved_from": "local_input"
       },
       {
@@ -309,7 +309,7 @@
     "log_code_counts": {},
     "dts_resolution": [
       {
-        "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\SAN-H1-2025.xbrl",
+        "uri": "<repo>\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\SAN-H1-2025.xbrl",
         "resolved_from": "local_input"
       },
       {
@@ -439,7 +439,7 @@
     "log_code_counts": {},
     "dts_resolution": [
       {
-        "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\SAN-H2-2025.xbrl",
+        "uri": "<repo>\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\SAN-H2-2025.xbrl",
         "resolved_from": "local_input"
       },
       {
@@ -569,7 +569,7 @@
     "log_code_counts": {},
     "dts_resolution": [
       {
-        "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\SAN-H1-2026.xbrl",
+        "uri": "<repo>\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\SAN-H1-2026.xbrl",
         "resolved_from": "local_input"
       },
       {
@@ -699,7 +699,7 @@
     "log_code_counts": {},
     "dts_resolution": [
       {
-        "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\BBVA-H1-2024.xbrl",
+        "uri": "<repo>\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\BBVA-H1-2024.xbrl",
         "resolved_from": "local_input"
       },
       {
@@ -829,7 +829,7 @@
     "log_code_counts": {},
     "dts_resolution": [
       {
-        "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\BBVA-H2-2024.xbrl",
+        "uri": "<repo>\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\BBVA-H2-2024.xbrl",
         "resolved_from": "local_input"
       },
       {
@@ -959,7 +959,7 @@
     "log_code_counts": {},
     "dts_resolution": [
       {
-        "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\BBVA-H1-2025.xbrl",
+        "uri": "<repo>\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\BBVA-H1-2025.xbrl",
         "resolved_from": "local_input"
       },
       {
@@ -1089,7 +1089,7 @@
     "log_code_counts": {},
     "dts_resolution": [
       {
-        "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\BBVA-H2-2025.xbrl",
+        "uri": "<repo>\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\BBVA-H2-2025.xbrl",
         "resolved_from": "local_input"
       },
       {
@@ -1219,7 +1219,7 @@
     "log_code_counts": {},
     "dts_resolution": [
       {
-        "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\BBVA-H1-2026.xbrl",
+        "uri": "<repo>\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\BBVA-H1-2026.xbrl",
         "resolved_from": "local_input"
       },
       {
@@ -1349,7 +1349,7 @@
     "log_code_counts": {},
     "dts_resolution": [
       {
-        "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\IBE-H1-2024.xbrl",
+        "uri": "<repo>\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\IBE-H1-2024.xbrl",
         "resolved_from": "local_input"
       },
       {
@@ -1479,7 +1479,7 @@
     "log_code_counts": {},
     "dts_resolution": [
       {
-        "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\IBE-H2-2024.xbrl",
+        "uri": "<repo>\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\IBE-H2-2024.xbrl",
         "resolved_from": "local_input"
       },
       {
@@ -1609,7 +1609,7 @@
     "log_code_counts": {},
     "dts_resolution": [
       {
-        "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\IBE-H1-2025.xbrl",
+        "uri": "<repo>\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\IBE-H1-2025.xbrl",
         "resolved_from": "local_input"
       },
       {
@@ -1739,7 +1739,7 @@
     "log_code_counts": {},
     "dts_resolution": [
       {
-        "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\IBE-H2-2025.xbrl",
+        "uri": "<repo>\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\IBE-H2-2025.xbrl",
         "resolved_from": "local_input"
       },
       {
@@ -1869,7 +1869,7 @@
     "log_code_counts": {},
     "dts_resolution": [
       {
-        "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\IBE-H1-2026.xbrl",
+        "uri": "<repo>\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\IBE-H1-2026.xbrl",
         "resolved_from": "local_input"
       },
       {

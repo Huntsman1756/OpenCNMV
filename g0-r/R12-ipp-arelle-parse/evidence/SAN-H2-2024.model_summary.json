@@ -48,7 +48,7 @@
   "log_code_counts": {},
   "dts_resolution": [
     {
-      "uri": "F:\\_Proyectos\\OpenCNMV\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\SAN-H2-2024.xbrl",
+      "uri": "<repo>\\g0-r\\R12-ipp-arelle-parse\\evidence\\_entrypoints\\SAN-H2-2024.xbrl",
       "resolved_from": "local_input"
     },
     {

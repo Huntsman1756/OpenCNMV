@@ -376,6 +376,35 @@ Arelle OIM multiset, 25/25) and cross-PYTHONHASHSEED determinism
 (identical corpus hash). Negative dependency controls fail as expected.
 Next: G2-C columnar dataset, G2-D incremental capture.
 
+## Engineering-hardening session (2026-09-17)
+
+Not a gate. Packaging/QA/CI and repository hygiene for public distribution;
+no gate criteria, verdicts, raw artefacts, or corpus changed.
+
+- **Packaging:** `pyproject.toml` (setuptools src-layout, `opencnmv` +
+  `[dev]`/`[xbrl]` extras), `requirements-dev.lock` (uv-compiled universal
+  lock, exact transitive pins; Arelle 2.44.0 preserved), `CONTRIBUTING.md`
+  with verified setup/check commands and ADOPT/WRAP dependency decisions.
+- **Tests:** `tests/` — frozen-fixture byte equality via the G2-A builder in
+  isolated subprocesses (socket guard intact), frozen JSON Schema + runtime
+  Pydantic round-trip (`exclude_unset`), fact-identity sensitivity, issuer-
+  picker ambiguity rejection with evidence, and retrieval size/deadline
+  guards. 14/14 pass.
+- **Static checks:** ruff (E4/E7/E9/F) and mypy (`check_untyped_defs`) clean
+  on `src` + `tests`.
+- **CI:** `.github/workflows/ci.yml` — Linux + Windows, Python 3.11, locked
+  install, tests, ruff, mypy, sdist+wheel build, wheel reinstall + retest,
+  `pip check`. Actions pinned by tag SHA.
+- **Evidence hygiene:** machine-local paths removed from *generated* outputs
+  only (`F:\_Proyectos\…` in R12/R15 result JSONs + `g0-r/README.md`;
+  `C:\Users\…\venv` in G1-B run1 Arelle logs). No raw CNMV artefact touched.
+  R15 + G1-B manifest hashes re-pinned; sanitization recorded in each
+  manifest's `limitations`. Pre-sanitization bytes remain in git history.
+- **`.gitattributes`:** `* -text` — manifests pin file sha256, so no EOL
+  conversion may ever occur on checkout.
+- `.gitignore` extended (venvs, dist/build, egg-info, tool caches,
+  `opencode.json`). `SECURITY.md`, issue/PR templates added.
+
 ## Session hygiene
 
 - Update this file at the end of every session.

@@ -64,7 +64,7 @@
  },
  "sha256": {
   "g2b_corpus.json": "68065B2A819D5CC19CB2C8F85A5BA680B6684DEF5930C51524BE84A60251B726",
-  "g2b_inputs.json": "E2B25B8B1A35AA679695D59CB2F528DB537D8C76639773014B74F93DB70A8115",
+  "g2b_inputs.json": "C5DDB3497876EAD2F773D0DD4A553FC33463605E535500493F5ADD253813289D",
   "g2b_rebuild.py": "6384A181112A0D476092455AA9CA924782A771E162C1B420024B1D95988A027E",
   "g2b_parse_one.py": "BC7D150C3C07CCC0CF7D38E69021FE45BD247AB24341406EF576D0A6656A015C",
   "g2b_verify.py": "A46281DEE0B6A9D0ED5F6C2D325DC123FF1352935C29227C9B0CD2F10F8F9AD0"
@@ -81,6 +81,7 @@
  "limitations": [
   "oracle facts.jsonl compared after CRLF->LF normalisation (frozen files were written in text mode); field-level multiset equality is the semantic check",
   "B6 'hidden machine-local reads' bounded via isolated XDG_CONFIG_HOME/HOME/TEMP env and DTS resolution audit; not a syscall-level filesystem trace",
-  "Arelle validate=True log codes are preserved per filing but not asserted identical to frozen logs"
+  "Arelle validate=True log codes are preserved per filing but not asserted identical to frozen logs",
+  "Evidence hygiene (2026-09-17): 15 R12 oracle model_summary.json pins in g2b_inputs.json were re-pinned after machine-local workspace paths were stripped from those generated files (see R12/R15/G1-B manifests). Original pins preserved as sha256_before_sanitization."
  ]
 }
