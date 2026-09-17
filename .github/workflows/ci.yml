@@ -28,7 +28,7 @@ jobs:
       - name: Install locked development environment
         run: |
           python -m pip install -r requirements-dev.lock
-          python -m pip install --no-deps --no-build-isolation -e ".[dev,xbrl,dataset]"
+          python -m pip install --no-deps --no-build-isolation -e ".[dev,xbrl,dataset,capture]"
 
       - name: Tests
         run: python -B -m unittest discover -s tests -v

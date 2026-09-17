@@ -69,7 +69,9 @@ installation and reproducibility of wheel archives. Python 3.11 is the CI
 baseline; newer interpreters are not certified by this matrix.
 
 For a core-only installation, use `python -m pip install .`; use
-`python -m pip install ".[xbrl]"` when parsing XBRL. The contributor lock installs
+`python -m pip install ".[xbrl]"` when parsing XBRL, and
+`python -m pip install ".[xbrl,dataset,capture]"` for the live CNMV
+capture/update route. The contributor lock installs
 Arelle to check dependency compatibility, but the regression tests do not parse
 the full corpus or run the Arelle shim self-test.
 
@@ -104,7 +106,7 @@ After intentionally reviewing direct pins in `pyproject.toml`, use the pinned
 resolver from the environment:
 
 ```sh
-python -m uv pip compile pyproject.toml --extra dev --extra xbrl --python-version 3.11 --universal --no-header --no-annotate --no-emit-index-url
+python -m uv pip compile pyproject.toml --extra dev --extra xbrl --extra dataset --extra capture --python-version 3.11 --universal --no-header --no-annotate --no-emit-index-url
 ```
 
 The command prints the complete lock to stdout. Replace `requirements-dev.lock`
