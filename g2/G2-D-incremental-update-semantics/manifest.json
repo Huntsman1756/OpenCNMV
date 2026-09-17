@@ -1,0 +1,24 @@
+{
+ "gate": "G2-D-incremental-update-semantics",
+ "status": "PASS",
+ "executed_at": "2026-09-17T14:07:40.266956+00:00",
+ "code_commit": "25d4681",
+ "inputs": {
+  "g2d_inputs.json": "pinned G2-C runA dataset files"
+ },
+ "outputs": {
+  "g2d_verify_results.json": "D1-D21 check matrix + per-scenario hashes"
+ },
+ "sha256": {
+  "g2c_corpus_logical_sha256": "b2612152f46406a5ec4858592656c10b0afa8f98b042dc93337782b202045f69"
+ },
+ "findings": [
+  "incremental apply reproduces the clean-rebuild dataset byte-identically for every corpus-restoring scenario",
+  "canonical rows are append-only; ARTIFACT_REMOVED is a delta-level semantic transition (rows retained)"
+ ],
+ "limitations": [
+  "observations are derived from the G2-C dataset (decompile round-trip) rather than fresh captures",
+  "G and I2 use synthetic observation content (no real CNMV event exists for them in the frozen corpus)",
+  "ARTIFACT_REMOVED does not mark current-source availability in V1 — that would be a schema addition (V2)"
+ ]
+}

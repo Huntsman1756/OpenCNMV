@@ -399,7 +399,49 @@ naive concept+period_end keying would collapse 5,914 fact groups;
 row-deletion and single-byte Parquet corruption both fail integrity/
 manifest verification. New `dataset` extra: duckdb==1.5.5,
 pyarrow==25.0.1 (locked, CI on both OS).
-Next: G2-D incremental capture / update semantics.
+
+**G2-D `INCREMENTAL_UPDATE_SEMANTICS`: PASS**
+(`g2/G2-D-incremental-update-semantics/`, 21/21 checks). New production
+module `opencnmv.update`: `observe` (CANONICAL_OBSERVATION_V1 document —
+complete canonical filing projection + states for newly introduced
+variant_versions + removal-evidence dispositions; semantic hash excludes
+capture metadata so re-capture replays identically), `classify` (pure
+S0-rows + O1 -> transitions + row ops), `delta` (CANONICAL_DELTA_V1 —
+self-hashed, bound to `base_corpus_logical_sha256`, predicts the result
+hash), `apply` (stale-base check -> in-memory merge -> full dataset +
+update integrity -> staged write -> manifest verify -> rename-swap
+publish; staging is never authoritative), `integrity` (supersedes-chain,
+event-scope, version-sequence invariants). Closed transition vocabulary
+in `update/transitions.py`. Append-only ledger: superseded versions'
+facts/artifacts are historical capture records — `ARTIFACT_REMOVED`/
+`FACT_REMOVED` are delta-level semantic transitions, not deletions;
+the only in-place updates are `created_by_event_id` backfill and
+`extension_mapping` analysis fields (PROVEN-only `rewrites_identity`
+recomputed by the engine, never trusted from input). 13 scenarios built
+by decompiling the pinned G2-C dataset back into observation docs and
+carving S0 bases by row subtraction: corpus-restoring scenarios must
+reproduce the pinned corpus byte-identically; synthetic-state scenarios
+are checked against an independent observation-union materializer.
+Results: A/C1 replay NO_CHANGE; B NEW_FILING complete graph (1 filing +
+1 version + 1 variant + 1 variant_version + 1 artifact + 1,110 facts +
+1,174 dims + provenance); C2 fr->es FALLBACK records a view_resolution
+row, no phantom variant; D BBVA #en variant + #en#v1 (1,847 facts, 125
+mappings) with #es untouched; E TEF 20484 13/03 EN_ONLY_REPLACED ->
+#en#v2 superseding v1, affects only #en; F 28/02
+VARIANT_SCOPE_NOT_OBSERVABLE + created_by backfill; G fact payload
+change preserves both payloads under distinct variant_versions; H1/H2
+artifact absence -> UNRESOLVED / REMOVED_CONFIRMED -> row-retaining
+annotation; I1 +119 mappings; I2 promote/demote updates 2 rows with the
+adversarial `rewrites_identity` claim rejected; I3 shrunk mapping file
+-> UNRESOLVED. Idempotent replay on every scenario; deltas byte-identical
+across PYTHONHASHSEED 17 vs 991; stale-base -> StaleBaseError; tampered
+delta -> DeltaError; corrupt observation -> ObservationError; 3 failure
+injection points leave the prior dataset valid; classify/apply ran under
+socket deny-all; incremental S1 byte-identical to the clean-rebuild
+oracle on every applied scenario. Unit tests 15/15 (full suite 38/38);
+ruff + mypy clean on 35 modules; sdist+wheel build + pip check.
+Regressions on final HEAD: G2-A PASS 6/6, G2-B PASS 8/8, G2-C PASS 20/20.
+Next: G2-E / CLI surface (per docs/G2.md ordering).
 
 ## Engineering-hardening session (2026-09-17)
 

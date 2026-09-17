@@ -1,8 +1,8 @@
 {
  "gate": "G2-C-columnar-dataset-v1",
  "status": "PASS",
- "executed_at": "2026-09-17T06:48:36.077400+00:00",
- "code_commit": "6ec7ec6",
+ "executed_at": "2026-09-17T14:08:46.146482+00:00",
+ "code_commit": "25d4681",
  "inputs": "g2c_inputs.json (evidence pins) + g2b_inputs.json (25 artifacts + 6 taxonomy packages + 50 oracles, all sha256-pinned and verified byte-exact)",
  "outputs": {
   "verify_results": "g2c_verify_results.json",
@@ -31,7 +31,7 @@
  "sha256": {
   "g2c_inputs.json": "91a4898b8cffd745dcde1abb8ad694d95b0e3d8dcca059f2e40189edb4429943",
   "g2c_issuers.json": "b4c2a411d0f969a67cf4bcd6ec9e71aa75b2e34a756eb2a739da343804e004b4",
-  "g2c_materialize.py": "b2464898143a6bb3dc9eccfd489ccc73d9f5127ee456172959d0529cbf6955c8",
+  "g2c_materialize.py": "17f1dc9aed15daaa37fb1b9515734bd80259fa4ec8e4b479bd192c1839b4df9c",
   "g2c_parse_one.py": "cfdc9809d7f7cc74c5e5b55974886e8216a3907f27b988a06d23de4799076e3d",
   "g2c_verify.py": "704b7b2a4a3ff209c64a31670af614f344a722c246e33d532bcad25b73732bdf",
   "g2c_verify_results.json": "4c58536f159f39b08cc4d704413419945f3baaf5a2e40674b7d2d17bf698ca85"
