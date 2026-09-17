@@ -1,0 +1,52 @@
+{
+ "gate": "G2-C-columnar-dataset-v1",
+ "status": "PASS",
+ "executed_at": "2026-09-17T06:48:36.077400+00:00",
+ "code_commit": "6ec7ec6",
+ "inputs": "g2c_inputs.json (evidence pins) + g2b_inputs.json (25 artifacts + 6 taxonomy packages + 50 oracles, all sha256-pinned and verified byte-exact)",
+ "outputs": {
+  "verify_results": "g2c_verify_results.json",
+  "verify_results_sha256": "4c58536f159f39b08cc4d704413419945f3baaf5a2e40674b7d2d17bf698ca85",
+  "dataset_manifest_runA": "_out/runA/dataset/v1/dataset_manifest.json",
+  "dataset_manifest_runA_sha256": "de97df013886f0ce2d60c529598b8156a7792833becce3869f801c96dad360b6",
+  "dataset_manifest_runB_sha256": "de97df013886f0ce2d60c529598b8156a7792833becce3869f801c96dad360b6",
+  "corpus_logical_sha256": "b2612152f46406a5ec4858592656c10b0afa8f98b042dc93337782b202045f69",
+  "total_facts": 45376,
+  "dataset_bytes": 4683849,
+  "table_rows": {
+   "filing": 22,
+   "filing_version": 23,
+   "submission_variant": 27,
+   "variant_version": 28,
+   "view_resolution": 29,
+   "version_event": 8,
+   "event_affects": 2,
+   "artifact": 33,
+   "extension_mapping": 449,
+   "provenance": 25,
+   "facts": 45376,
+   "fact_dimension": 38365
+  }
+ },
+ "sha256": {
+  "g2c_inputs.json": "91a4898b8cffd745dcde1abb8ad694d95b0e3d8dcca059f2e40189edb4429943",
+  "g2c_issuers.json": "b4c2a411d0f969a67cf4bcd6ec9e71aa75b2e34a756eb2a739da343804e004b4",
+  "g2c_materialize.py": "b2464898143a6bb3dc9eccfd489ccc73d9f5127ee456172959d0529cbf6955c8",
+  "g2c_parse_one.py": "cfdc9809d7f7cc74c5e5b55974886e8216a3907f27b988a06d23de4799076e3d",
+  "g2c_verify.py": "704b7b2a4a3ff209c64a31670af614f344a722c246e33d532bcad25b73732bdf",
+  "g2c_verify_results.json": "4c58536f159f39b08cc4d704413419945f3baaf5a2e40674b7d2d17bf698ca85"
+ },
+ "findings": [
+  "dataset rebuilds byte-identically across PYTHONHASHSEED 17/991 (all files incl. dataset_manifest.json equal)",
+  "total facts materialized: 45376",
+  "all 4 frozen G1-E fixtures reconstruct byte-identically from columnar storage alone",
+  "all 25 fact planes equal the G2-B oracle multiset and the canonical-line multiset",
+  "UNMATCHED G1-C mapping records retained as table-only rows (no schema-valid ExtensionMapping form: pair_id required)"
+ ],
+ "limitations": [
+  "Parquet files are gitignored under _out/; they rebuild byte-identically from pinned inputs and are pinned via dataset_manifest.json sha256 + logical row hashes",
+  "IPP artifacts attach to filing_version (CANONICAL_MODEL_V1 migration note); implicit es variant_version carries artifact_set_id",
+  "unit numerator/denominator measures come from a worker sidecar (units.jsonl): the canonical unit signature cannot be split unambiguously (QNames contain '/')",
+  "TEF 20484 is lifecycle evidence only — no facts parsed for it"
+ ]
+}

@@ -374,7 +374,32 @@ concept, entity, period, explicit+typed dims, complete unit num/den,
 decimals, nil, xml:lang, value_sha256 — plus Control A (API multiset ==
 Arelle OIM multiset, 25/25) and cross-PYTHONHASHSEED determinism
 (identical corpus hash). Negative dependency controls fail as expected.
-Next: G2-C columnar dataset, G2-D incremental capture.
+
+**G2-C `COLUMNAR_DATASET_V1`: PASS**
+(`g2/G2-C-columnar-dataset-v1/`, 20/20 checks). New production module
+`opencnmv.dataset` materializes the whole frozen corpus to deterministic
+Parquet under `dataset/v1/` — 9 canonical-model tables (filing,
+filing_version, submission_variant, variant_version, view_resolution,
+version_event, event_affects, artifact, extension_mapping) plus
+`facts` (45,376 rows; full canonical record set incl. duplicate-fact
+multiset via deterministic `#occ` ids), `fact_dimension` (38,365
+explicit+typed rows), `provenance` — plus `dataset_manifest.json`
+(per-file sha256 + logical row hashes + corpus logical hash
+`b2612152…045f69`) and `schema/*.json`. DuckDB is a read-view query
+surface only; Parquet+manifest are authoritative. All 25 states
+round-trip to the G2-B oracle multiset; all 4 frozen fixtures rebuild
+byte-identically from columnar storage alone; all 22 filings validate
+against the frozen JSON Schema + Pydantic. Run A == run B
+byte-identical for every file (PYTHONHASHSEED 17 vs 991). BBVA
++98M/-98M divergence, IBE FALLBACK_TO_ES (no phantom #en), TEF EN
+lifecycle and event scoping, H2 CURRENT_HALF/YTD dims, typed dims,
+compound units (130 denominator-bearing facts), and the
+PROVEN_EQUIVALENT-only rewrite gate all preserved. Negative controls:
+naive concept+period_end keying would collapse 5,914 fact groups;
+row-deletion and single-byte Parquet corruption both fail integrity/
+manifest verification. New `dataset` extra: duckdb==1.5.5,
+pyarrow==25.0.1 (locked, CI on both OS).
+Next: G2-D incremental capture / update semantics.
 
 ## Engineering-hardening session (2026-09-17)
 

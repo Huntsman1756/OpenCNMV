@@ -1,0 +1,176 @@
+{
+ "C13 manifest/file hashes": {
+  "status": "PASS",
+  "detail": []
+ },
+ "C12 run A == run B": {
+  "status": "PASS",
+  "detail": {
+   "byte_identical_files": true,
+   "diff": [],
+   "corpus_logical_sha256": "b2612152f46406a5ec4858592656c10b0afa8f98b042dc93337782b202045f69"
+  }
+ },
+ "C1 complete corpus": {
+  "status": "PASS",
+  "detail": {
+   "states": 25,
+   "missing": [],
+   "zero_fact_states": [],
+   "total_facts": 45376
+  }
+ },
+ "C2 relational integrity": {
+  "status": "PASS",
+  "detail": []
+ },
+ "C3 facts == G2-B oracle multiset": {
+  "status": "PASS",
+  "detail": {
+   "states": 25,
+   "mismatched": []
+  }
+ },
+ "C4 fixture round-trip byte-exact": {
+  "status": "PASS",
+  "detail": {
+   "schema_valid": 22,
+   "byte_equal": {
+    "bbva_fy2024": true,
+    "tef_20484": true,
+    "san_fy2024": true,
+    "ibe_fy2024": true
+   }
+  }
+ },
+ "C5 BBVA divergence": {
+  "status": "PASS",
+  "detail": {
+   "divergent_structural_pairs": 160,
+   "equity_98M_pair_found": true
+  }
+ },
+ "C6 IBE fallback, no phantom EN": {
+  "status": "PASS",
+  "detail": {
+   "variants": [
+    "cnmv:ifa:20515#es"
+   ],
+   "en_resolution": [
+    {
+     "filing_id": "cnmv:ifa:20515",
+     "requested_ui_language": "en",
+     "resolved_variant_id": "cnmv:ifa:20515#es",
+     "resolution_mode": "FALLBACK_TO_ES",
+     "ordinal": 1
+    }
+   ]
+  }
+ },
+ "C7 TEF EN lifecycle + event scope": {
+  "status": "PASS",
+  "detail": {
+   "es_versions": 1,
+   "en_versions": 2,
+   "ev_0228_scope": "VARIANT_SCOPE_NOT_OBSERVABLE",
+   "ev_0313_affects": [
+    "cnmv:ifa:20484#en"
+   ]
+  }
+ },
+ "C8 explicit + typed dims": {
+  "status": "PASS",
+  "detail": {
+   "explicit_dim_rows": 38045,
+   "typed_dim_rows": 320
+  }
+ },
+ "C9 compound units": {
+  "status": "PASS",
+  "detail": {
+   "facts_with_denominator": 130,
+   "multi_measure_numerator": 0
+  }
+ },
+ "C10 mapping verdicts + rewrite gate": {
+  "status": "PASS",
+  "detail": {
+   "verdicts": {
+    "PROVEN_EQUIVALENT": 415,
+    "AMBIGUOUS": 11,
+    "UNMATCHED": 21,
+    "CONFLICT": 2
+   },
+   "bad_rewrite_rows": 0
+  }
+ },
+ "C11 DuckDB verification queries": {
+  "status": "PASS",
+  "detail": {
+   "filings_by_issuer_family": 22,
+   "variants_per_filing": 22,
+   "variant_version_history": 28,
+   "events_with_affects": 8,
+   "facts_by_concept": 25,
+   "facts_by_dimensions": 25,
+   "h2_current_half_vs_ytd": 10,
+   "typed_dimensions": 50,
+   "bbva_divergent_equity": 161,
+   "mappings_by_verdict": 4,
+   "fact_provenance": 25,
+   "orphan_facts": 1
+  }
+ },
+ "C14 no network access": {
+  "status": "PASS",
+  "detail": []
+ },
+ "C15 zero gate-code imports in src/": {
+  "status": "PASS",
+  "detail": []
+ },
+ "NC1 naive concept+period_end collapses": {
+  "status": "PASS",
+  "detail": {
+   "groups_with_collisions": 5914
+  }
+ },
+ "NC2 no UI-language-derived IBE EN variant": {
+  "status": "PASS",
+  "detail": {
+   "phantom_variants": []
+  }
+ },
+ "NC3 TEF-ES untouched by unscoped event": {
+  "status": "PASS",
+  "detail": {
+   "affects_rows_0228": 1
+  }
+ },
+ "NC4 AMBIGUOUS mappings unresolved": {
+  "status": "PASS",
+  "detail": {
+   "ambiguous_rows": 11,
+   "marked_rewritable": 0
+  }
+ },
+ "NC5 row removal breaks integrity": {
+  "status": "PASS",
+  "detail": {
+   "removed": "cnmv:ifa:20448#nreg:2025022995",
+   "violations": 1
+  }
+ },
+ "NC6 byte flip breaks manifest": {
+  "status": "PASS",
+  "detail": {
+   "violations": 1
+  }
+ },
+ "VERDICT": {
+  "status": "PASS",
+  "detail": {
+   "checks": 20
+  }
+ }
+}
