@@ -1,0 +1,36 @@
+{
+ "gate": "G2-F-controlled-capture-update-cli",
+ "status": "PASS",
+ "executed_at": "2026-09-17T22:07:28.903866+00:00",
+ "code_commit": "9879290",
+ "inputs": {
+  "corpus": "frozen SAN/BBVA/IBE; ESEF FY2024+FY2025; IPP H1-2024..H1-2026 (21 filings)",
+  "base_dataset": "g2/G2-C-columnar-dataset-v1/_out/runA/dataset/v1 (corpus logical sha b2612152...045f69)",
+  "taxonomy": "g0-r/R10-taxonomy-pinning/evidence (pinned)",
+  "source": "live CNMV official surfaces only (busqueda?id=25, listaifi, infadicionifa, verdocumento, descargaxbrlipp)"
+ },
+ "outputs": {
+  "g2f_verify_results.json": "31/31 checks PASS (F1-F24 matrix incl. F22 sub-checks and F23 regressions)",
+  "_out/": "transient run artifacts (gitignored): liveA/liveB evidence stores, run manifests, observations, results.jsonl, f7_compare.json, wheel smoke"
+ },
+ "sha256": {
+  "base_corpus_logical_sha256": "b2612152f46406a5ec4858592656c10b0afa8f98b042bdc93337782b202045f69",
+  "obsA_observation_sha256": "4cf7155d5b600a079f3a23dd814b814a1b21bc02a6fac2ba9bcbd1556802d36e",
+  "result_corpus_logical_sha256": "b2612152f46406a5ec4858592656c10b0afa8f98b042bdc93337782b202045f69 (NO_CHANGE; identical to base)"
+ },
+ "findings": [
+  "live capture cap-202609172146190000: 69 sequential fetches, 86 preserved artifacts, 21 filings; UA declared, 2.0s min delay, one session",
+  "all 21 filings classified NO_CHANGE; live bytes identical to the frozen G2-C evidence",
+  "obsA sha256 identical live-written vs offline reassembly and vs the synthetic dataset-derived observation",
+  "F7: incremental update result equals clean bootstrap rebuild from the same evidence on all 21 filings (documented exclusions: per-capture retrieval metadata, filing.extras_json curation, fixture-era record_json filing label)",
+  "recapture dedup: identical XBRL bytes -> 0 new artifacts; changed HTML detail pages -> new write-once objects (source change, not determinism failure)",
+  "fail-closed verified: mid-capture failure (no manifest run, dataset untouched), stale base, tampered observation exit 5, injected apply failure (dataset intact, 0 staging left), unresolved conflict exit 5 under --fail-on-unresolved, out-of-corpus issuer exit 7",
+  "IBE live: en UI -> FALLBACK_TO_ES, no phantom #en; H2 vs FY/ESEF separation preserved; regressions G2-A..E all PASS on final HEAD"
+ ],
+ "limitations": [
+  "capture scope frozen to SAN/BBVA/IBE x the preregistered periods; issuer-universe expansion belongs to G3",
+  "event-walk rows do not expose source_registration_no; newly observed event records carry source_nreg=None conservatively",
+  "filing.extras_json fact_examples/extension_mapping_summary remain curated fixture overlays, not live-derived",
+  "dataset bootstrap from zero (opencnmv init) is G2-G, not covered here"
+ ]
+}
