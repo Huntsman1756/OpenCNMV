@@ -1,0 +1,22 @@
+{
+ "SAN": {
+  "denomination": "BANCO SANTANDER, S.A.",
+  "nif": "A39000013",
+  "lei": "5493006QMFDDMYWIAM13"
+ },
+ "BBVA": {
+  "denomination": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A.",
+  "nif": "A48265169",
+  "lei": "K8MS7FD7N5Z2WQ51AZ71"
+ },
+ "IBE": {
+  "denomination": "IBERDROLA, S.A.",
+  "nif": "A-48010615",
+  "lei": "5QK37QC7NWOJ8D7WVQ45"
+ },
+ "TELEFONICA": {
+  "denomination": "TELEFONICA, S.A.",
+  "nif": null,
+  "lei": "549300EEJH4FEPDBBR25"
+ }
+}

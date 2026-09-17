@@ -1,0 +1,102 @@
+{
+ "issuers": {
+  "path": "g2/G2-C-columnar-dataset-v1/g2c_issuers.json",
+  "sha256": "b4c2a411d0f969a67cf4bcd6ec9e71aa75b2e34a756eb2a739da343804e004b4",
+  "bytes": 476
+ },
+ "variant_inventory": {
+  "path": "g1/G1-B-dual-language-capture/evidence/capture/runA/variant_inventory.json",
+  "sha256": "58c87f0ecb47fe40fd553f4db8daeaa40554308bdf6319e910368f161c37c022",
+  "bytes": 33712
+ },
+ "bbva_comparison": {
+  "path": "g1/G1-B-dual-language-capture/evidence/compare/BBVA-FY2024.comparison.jsonl",
+  "sha256": "e77d8d7c8411c836ad3892416d2688a78587ef3e6b3bcc0d9aba86c44b9d2e53",
+  "bytes": 1741444
+ },
+ "mapping_san_fy2024": {
+  "path": "g1/G1-C-extension-variant-identity/evidence/mapping/SAN-FY2024.mapping.json",
+  "sha256": "1d4b3b63932e3efd54ee2899cf9e9470b3225e7c5f1c62c339b2b872d9c5b38e",
+  "bytes": 94929
+ },
+ "mapping_san_fy2025": {
+  "path": "g1/G1-C-extension-variant-identity/evidence/mapping/SAN-FY2025.mapping.json",
+  "sha256": "bf29473a27d1d8d3dda0acaf5375442d67433b67c2a916bc6d034bc3dc5afe58",
+  "bytes": 88907
+ },
+ "mapping_bbva_fy2024": {
+  "path": "g1/G1-C-extension-variant-identity/evidence/mapping/BBVA-FY2024.mapping.json",
+  "sha256": "eee8380b30cd8cce17f4fe1125f6fee7bc60c28e68029a5f350b693ba95b96da",
+  "bytes": 142472
+ },
+ "mapping_bbva_fy2025": {
+  "path": "g1/G1-C-extension-variant-identity/evidence/mapping/BBVA-FY2025.mapping.json",
+  "sha256": "38a79e829a61f4bf2ed89b1bc061e9a0f87a8f0c2e1973e114e1536f5621941a",
+  "bytes": 128550
+ },
+ "g1d_results": {
+  "path": "g1/G1-D-variant-lifecycle-falsification/g1d_results.json",
+  "sha256": "801161ffb58694472eeeb3e3e2b15ad217ccdb4983c7a5f5fb459356c88cc6fa",
+  "bytes": 7036
+ },
+ "g1d_tef20484": {
+  "path": "g1/G1-D-variant-lifecycle-falsification/g1d_tef20484.json",
+  "sha256": "145400e96a14b55e9c3d4a54c3cb3f7efd8f81ff4c7c30c985c5667fddf09161",
+  "bytes": 19387
+ },
+ "artifact_manifest": {
+  "path": "g0-r/R07-raw-retrieval/artifact_manifest.json",
+  "sha256": "419f96d10654ee09a2213ba22aba36851f41a4069cf5c44b7d271c68f27566c4",
+  "bytes": 25108
+ },
+ "listaifi_san": {
+  "path": "g0-r/R01-discovery/evidence/listaifi-SAN.html",
+  "sha256": "c697e6b362242140d3450bfecfc0df28cd814cb6877a9842ece7815835ef6220",
+  "bytes": 177697
+ },
+ "listaifi_bbva": {
+  "path": "g0-r/R01-discovery/evidence/listaifi-BBVA.html",
+  "sha256": "bfa74243c60a74628fc4c9152102b14d7a492458b75a721adddad95a8b7043a2",
+  "bytes": 177722
+ },
+ "listaifi_ibe": {
+  "path": "g0-r/R01-discovery/evidence/listaifi-IBE.html",
+  "sha256": "2eeb6535062d2957937fff98141b3251e0a6274121278abcd02e1afa7b593c84",
+  "bytes": 177693
+ },
+ "schema_v1": {
+  "path": "g1/G1-E-canonical-model-freeze/canonical_model_v1.schema.json",
+  "sha256": "921f1d09aacf12836ead554d309ad6fa1d139ced5afe6192cb8ab94c69614bd1",
+  "bytes": 10890
+ },
+ "fixture_ibe_fy2024": {
+  "path": "g1/G1-E-canonical-model-freeze/fixtures/ibe_fy2024.json",
+  "sha256": "9ade261f64baaea720a28cdfcb999129febcfea78b5cf52a0d6f78df50d4deaf",
+  "bytes": 1881
+ },
+ "fixture_bbva_fy2024": {
+  "path": "g1/G1-E-canonical-model-freeze/fixtures/bbva_fy2024.json",
+  "sha256": "b5e711e3ee4491731ee525490cdd648cc038a74a54400403ec3c3830ac9e66ee",
+  "bytes": 3900
+ },
+ "fixture_san_fy2024": {
+  "path": "g1/G1-E-canonical-model-freeze/fixtures/san_fy2024.json",
+  "sha256": "162b6ea5f20a169c01258ca9fe4510c97adb1d7e0d6388d52bf8fea49535d4e5",
+  "bytes": 3502
+ },
+ "fixture_tef_20484": {
+  "path": "g1/G1-E-canonical-model-freeze/fixtures/tef_20484.json",
+  "sha256": "6b09ee8152dbef471a1736049247f608761b560975221b803d0772848a1b7dc1",
+  "bytes": 5887
+ },
+ "g2b_corpus": {
+  "path": "g2/G2-B-frozen-corpus-rebuild/g2b_corpus.json",
+  "sha256": "68065b2a819d5cc19cb2c8f85a5ba680b6684def5930c51524be84a60251b726",
+  "bytes": 8133
+ },
+ "g2b_inputs": {
+  "path": "g2/G2-B-frozen-corpus-rebuild/g2b_inputs.json",
+  "sha256": "c5ddb3497876ead2f773d0dd4a553fc33463605e535500493f5add253813289d",
+  "bytes": 17532
+ }
+}
