@@ -156,6 +156,10 @@ def _sector_parts(entry: dict) -> tuple[str, str]:
 def _is_ft(e): return "TITULIZACION" in _sector_parts(e)[1]
 
 
+def _is_insurance(e):
+    return _sector_parts(e)[1] == "SEGUROS"
+
+
 def _is_credit(e):
     g, s = _sector_parts(e)
     return ("FINANCIACION" in g
@@ -209,6 +213,8 @@ def select_sample(pool: list[dict]) -> dict[str, dict]:
 
     take("credit-institutions",
          _top([e for e in remaining.values() if _is_credit(e)], 8))
+    take("insurance-entities",
+         _top([e for e in remaining.values() if _is_insurance(e)], 2))
     take("utilities",
          _top([e for e in remaining.values() if _is_utility(e)], 5))
     take("real-estate-socimi",
@@ -364,7 +370,39 @@ def derive_scope(inv: dict, historical: bool) -> dict:
             "ipp_slots": [[sem, yr] for yr, sem in slots[:n_ipp]]}
 
 
+def rebuild_pool() -> list[dict]:
+    """Reconstruct the enriched pool offline from preserved ficha bytes
+    + universe.json (``--reselect``: deterministic, no new requests)."""
+    uni = {u["nif"]: u["denomination"]
+           for u in jload(HERE / "universe.json")["issuers"]}
+    pool: dict[str, dict] = {}
+    for p in sorted((FREEZE / "artifacts").glob("*.html")):
+        html = p.read_text(encoding="utf-8", errors="replace")
+        for tr in re.findall(r"<tr[^>]*>(.*?)</tr>", html, re.S):
+            cells = [re.sub(r"<[^>]+>", "", c).strip()
+                     for c in re.findall(r"<t[dh][^>]*>(.*?)</t[dh]>",
+                                         tr, re.S)]
+            cells = [c for c in cells if c]
+            nif = cells[0].replace("&#45;", "-") if cells else ""
+            lei = cells[1] if len(cells) > 1 else ""
+            # ficha rows are [nif, lei(20), abrev, sector, capital]; the
+            # LEI shape rejects look-alike rows from other page types
+            if (nif in uni and nif not in pool and len(cells) >= 4
+                    and re.match(r"^[0-9A-Z]{18,20}$", lei or "")):
+                pool[nif] = {
+                    "nif": nif,
+                    "lei": cells[1] if len(cells) > 1 else None,
+                    "abrev": cells[2] if len(cells) > 2 else None,
+                    "sector": cells[3] if len(cells) > 3 else None,
+                    "capital_text": cells[4] if len(cells) > 4 else None,
+                    "capital": parse_capital(
+                        cells[4] if len(cells) > 4 else ""),
+                    "denomination": uni[nif]}
+    return list(pool.values())
+
+
 def main() -> int:
+    reselect = "--reselect" in sys.argv
     sess = PoliteSession(min_delay=MIN_DELAY)
     store = EvidenceStore(FREEZE)
     hasta = utcnow()[:10]
@@ -373,23 +411,30 @@ def main() -> int:
         {"freeze": True, "window_desde": UNIVERSE_DESDE,
          "window_hasta": hasta}, sess.user_agent, MIN_DELAY)
 
-    universe = fetch_universe(sess, store, hasta)
-    jwrite(HERE / "universe.json",
-           {"window": {"desde": UNIVERSE_DESDE, "hasta": hasta},
-            "count": len(universe), "issuers": universe})
-    print(f"universe: {len(universe)} issuers")
+    if reselect:
+        pool = rebuild_pool()
+        unresolved = [e["nif"] for e in pool
+                      if e.get("identity_unresolved")]
+        print(f"reselect: pool={len(pool)} (offline)")
+    else:
+        universe = fetch_universe(sess, store, hasta)
+        jwrite(HERE / "universe.json",
+               {"window": {"desde": UNIVERSE_DESDE, "hasta": hasta},
+                "count": len(universe), "issuers": universe})
+        print(f"universe: {len(universe)} issuers")
 
-    listaifi_page = fetch_listaifi_default(sess, store)
+        fetch_listaifi_default(sess, store)
 
-    pool = []
-    for i, u in enumerate(universe):
-        f = fetch_ficha(sess, store, u["nif"])
-        f["denomination"] = u["denomination"]
-        pool.append(f)
-        if (i + 1) % 50 == 0:
-            print(f"  fichas: {i + 1}/{len(universe)}")
-    unresolved = [e["nif"] for e in pool if e.get("identity_unresolved")]
-    print(f"fichas: {len(pool)} ({len(unresolved)} unresolved)")
+        pool = []
+        for i, u in enumerate(universe):
+            f = fetch_ficha(sess, store, u["nif"])
+            f["denomination"] = u["denomination"]
+            pool.append(f)
+            if (i + 1) % 50 == 0:
+                print(f"  fichas: {i + 1}/{len(universe)}")
+        unresolved = [e["nif"] for e in pool
+                      if e.get("identity_unresolved")]
+        print(f"fichas: {len(pool)} ({len(unresolved)} unresolved)")
 
     sample = select_sample(pool)
     strata_counts = {}
@@ -398,9 +443,17 @@ def main() -> int:
             strata_counts[s] = strata_counts.get(s, 0) + 1
     print(f"sample: {len(sample)} issuers; strata={strata_counts}")
 
+    existing: dict = {}
+    inv_path = HERE / "expected_inventory.json"
+    if reselect and inv_path.is_file():
+        existing = jload(inv_path)["issuers"]
+
     inventories = {}
     for nif, e in sorted(sample.items()):
-        inv = fetch_inventory(sess, store, nif, e["key"])
+        if nif in existing:
+            inv = existing[nif]
+        else:
+            inv = fetch_inventory(sess, store, nif, e["key"])
         inv["scope"] = derive_scope(inv, e["historical"])
         e["scope"] = inv["scope"]
         inv["event_classes"] = sorted(
@@ -423,9 +476,9 @@ def main() -> int:
 
     manifest["fetch_log"] = sess.fetch_log
     manifest["freeze"] = {
-        "universe_count": len(universe),
+        "reselect": reselect,
+        "universe_count": len(pool),
         "identity_unresolved": unresolved,
-        "listaifi_default": listaifi_page,
         "sample_size": len(sample),
         "strata_counts": strata_counts,
         "finished_at": utcnow()}

@@ -1,0 +1,146 @@
+{
+ "capture_id": "freeze-20260918T093343",
+ "capture_manifest": "CNMV_CAPTURE_V1",
+ "captured_at": "2026-09-18T09:33:43+00:00",
+ "esef_views": [],
+ "fetch_log": [
+  {
+   "byte_size": 149546,
+   "elapsed_ms": 1156,
+   "final_url": "https://www.cnmv.es/Portal/consultas/ifi/listaifi?lang=es&nif=V01616598&sortExpEmi=FechaRegistroEntrada&sortDirEmi=0",
+   "http_status": 200,
+   "media_type": "text/html; charset=utf-8",
+   "note": "freeze: listaifi HT_WORKING_CAPITAL",
+   "retrieved_at": "2026-09-18T09:33:45+00:00",
+   "sha256": "532d086d262daf4deb98e9ffe89063ebc2475a5dc73f972d975258afd5c0cdf5",
+   "source_url": "https://www.cnmv.es/portal/consultas/ifi/listaifi.aspx?lang=es&nif=V01616598&sortExpEmi=FechaRegistroEntrada&sortDirEmi=0"
+  },
+  {
+   "byte_size": 229486,
+   "elapsed_ms": 266,
+   "final_url": "https://www.cnmv.es/portal/consultas/IFA/ListadoIFA?id=0&lang=es&nif=V01616598",
+   "http_status": 200,
+   "media_type": "text/html; charset=utf-8",
+   "note": "freeze: ListadoIFA HT_WORKING_CAPITAL",
+   "retrieved_at": "2026-09-18T09:33:48+00:00",
+   "sha256": "302175767d44b91c50e1b676496ddeea2506c30c4050a5ad04c8dd6250b5213a",
+   "source_url": "https://www.cnmv.es/portal/consultas/IFA/ListadoIFA?id=0&lang=es&nif=V01616598"
+  },
+  {
+   "byte_size": 215397,
+   "elapsed_ms": 233,
+   "final_url": "https://www.cnmv.es/Portal/consultas/IFA/infadicionifa?id=0&nreg=2026057249&nregaud=21095",
+   "http_status": 200,
+   "media_type": "text/html; charset=utf-8",
+   "note": "freeze: event doc HT_WORKING_CAPITAL 2026057249",
+   "retrieved_at": "2026-09-18T09:33:50+00:00",
+   "sha256": "215dcbb1ea7f2dddf8ece6b2655453c17c6d6528a5d118839e8f866843a44af0",
+   "source_url": "https://www.cnmv.es/portal/consultas/IFA/infadicionifa.aspx?id=0&nreg=2026057249&nregaud=21095"
+  },
+  {
+   "byte_size": 215385,
+   "elapsed_ms": 218,
+   "final_url": "https://www.cnmv.es/Portal/consultas/IFA/infadicionifa?id=0&nreg=2025057917&nregaud=20764",
+   "http_status": 200,
+   "media_type": "text/html; charset=utf-8",
+   "note": "freeze: event doc HT_WORKING_CAPITAL 2025057917",
+   "retrieved_at": "2026-09-18T09:33:53+00:00",
+   "sha256": "83f6cdc0466041af7e1b60b20f6aa09fe3d2fe71fedefc3a0e5984689c0896cd",
+   "source_url": "https://www.cnmv.es/portal/consultas/IFA/infadicionifa.aspx?id=0&nreg=2025057917&nregaud=20764"
+  },
+  {
+   "byte_size": 215399,
+   "elapsed_ms": 250,
+   "final_url": "https://www.cnmv.es/Portal/consultas/IFA/infadicionifa?id=0&nreg=2024056381&nregaud=20320",
+   "http_status": 200,
+   "media_type": "text/html; charset=utf-8",
+   "note": "freeze: event doc HT_WORKING_CAPITAL 2024056381",
+   "retrieved_at": "2026-09-18T09:33:56+00:00",
+   "sha256": "df08f4f6987cc3b9bada3446ec45d15c07fe2094b5f09cacec0f9333e51c6aa2",
+   "source_url": "https://www.cnmv.es/portal/consultas/IFA/infadicionifa.aspx?id=0&nreg=2024056381&nregaud=20320"
+  },
+  {
+   "byte_size": 149546,
+   "elapsed_ms": 234,
+   "final_url": "https://www.cnmv.es/Portal/consultas/ifi/listaifi?lang=es&nif=V01632355&sortExpEmi=FechaRegistroEntrada&sortDirEmi=0",
+   "http_status": 200,
+   "media_type": "text/html; charset=utf-8",
+   "note": "freeze: listaifi BBVA_CONSUMER_AUTO_2020_1",
+   "retrieved_at": "2026-09-18T09:33:58+00:00",
+   "sha256": "a46ff2e0c12525b1bcff9024bc64fb9bcbb1fef8fb6fec108b16703db9573560",
+   "source_url": "https://www.cnmv.es/portal/consultas/ifi/listaifi.aspx?lang=es&nif=V01632355&sortExpEmi=FechaRegistroEntrada&sortDirEmi=0"
+  },
+  {
+   "byte_size": 229486,
+   "elapsed_ms": 296,
+   "final_url": "https://www.cnmv.es/portal/consultas/IFA/ListadoIFA?id=0&lang=es&nif=V01632355",
+   "http_status": 200,
+   "media_type": "text/html; charset=utf-8",
+   "note": "freeze: ListadoIFA BBVA_CONSUMER_AUTO_2020_1",
+   "retrieved_at": "2026-09-18T09:34:01+00:00",
+   "sha256": "ed2aea221dfcad7289b36080c852eee6ada999863e128f0c23a6029c721d161b",
+   "source_url": "https://www.cnmv.es/portal/consultas/IFA/ListadoIFA?id=0&lang=es&nif=V01632355"
+  },
+  {
+   "byte_size": 215426,
+   "elapsed_ms": 250,
+   "final_url": "https://www.cnmv.es/Portal/consultas/IFA/infadicionifa?id=0&nreg=2026056415&nregaud=20971",
+   "http_status": 200,
+   "media_type": "text/html; charset=utf-8",
+   "note": "freeze: event doc BBVA_CONSUMER_AUTO_2020_1 2026056415",
+   "retrieved_at": "2026-09-18T09:34:04+00:00",
+   "sha256": "773914f9c5269b494eb6795c6d922ba635f0ee5c495ec2b5aa6e00f55ae73fbf",
+   "source_url": "https://www.cnmv.es/portal/consultas/IFA/infadicionifa.aspx?id=0&nreg=2026056415&nregaud=20971"
+  },
+  {
+   "byte_size": 215434,
+   "elapsed_ms": 203,
+   "final_url": "https://www.cnmv.es/Portal/consultas/IFA/infadicionifa?id=0&nreg=2025056314&nregaud=20673",
+   "http_status": 200,
+   "media_type": "text/html; charset=utf-8",
+   "note": "freeze: event doc BBVA_CONSUMER_AUTO_2020_1 2025056314",
+   "retrieved_at": "2026-09-18T09:34:07+00:00",
+   "sha256": "d31a5a16655e582fb13a01fe45bcb58506d7f02cc9353c7bc36932217e67eea8",
+   "source_url": "https://www.cnmv.es/portal/consultas/IFA/infadicionifa.aspx?id=0&nreg=2025056314&nregaud=20673"
+  },
+  {
+   "byte_size": 215426,
+   "elapsed_ms": 703,
+   "final_url": "https://www.cnmv.es/Portal/consultas/IFA/infadicionifa?id=0&nreg=2024054946&nregaud=20173",
+   "http_status": 200,
+   "media_type": "text/html; charset=utf-8",
+   "note": "freeze: event doc BBVA_CONSUMER_AUTO_2020_1 2024054946",
+   "retrieved_at": "2026-09-18T09:34:10+00:00",
+   "sha256": "de7439fb207f487867e78e8c4b0e8d756a4048afaa1c60ac126e51166f721074",
+   "source_url": "https://www.cnmv.es/portal/consultas/IFA/infadicionifa.aspx?id=0&nreg=2024054946&nregaud=20173"
+  }
+ ],
+ "freeze": {
+  "finished_at": "2026-09-18T09:34:10+00:00",
+  "identity_unresolved": [],
+  "reselect": true,
+  "sample_size": 40,
+  "strata_counts": {
+   "credit-institutions": 6,
+   "historical-depth": 10,
+   "insurance-entities": 2,
+   "large-industrials": 7,
+   "real-estate-socimi": 6,
+   "residual-sectors": 4,
+   "securitisation-funds": 2,
+   "small-mid-caps": 8,
+   "utilities": 5
+  },
+  "universe_count": 441
+ },
+ "infadicion_walks": [],
+ "ipp_filings": [],
+ "min_delay_s": 2.5,
+ "scope": {
+  "freeze": true,
+  "window_desde": "2024-01-01",
+  "window_hasta": "2026-09-18"
+ },
+ "user_agent": "OpenCNMV/0.1.0 controlled-capture (canonical archive; contact via repository)",
+ "warnings": []
+}

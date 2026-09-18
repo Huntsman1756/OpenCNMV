@@ -1,0 +1,1869 @@
+{
+ "count": 465,
+ "issuers": [
+  {
+   "denomination": "TUBACEX, S.A.",
+   "nif": "A-01003946"
+  },
+  {
+   "denomination": "ERCROS, S.A.",
+   "nif": "A-08000630"
+  },
+  {
+   "denomination": "MIQUEL Y COSTAS &amp; MIQUEL, S.A.",
+   "nif": "A-08020729"
+  },
+  {
+   "denomination": "URBAS GRUPO FINANCIERO, S.A.",
+   "nif": "A-08049793"
+  },
+  {
+   "denomination": "NYESA VALORES CORPORACION, S.A.",
+   "nif": "A-08074320"
+  },
+  {
+   "denomination": "GRUPO CATALANA OCCIDENTE, S.A.",
+   "nif": "A-08168064"
+  },
+  {
+   "denomination": "NUEVA EXPRESI&#211;N TEXTIL, S.A",
+   "nif": "A-08276651"
+  },
+  {
+   "denomination": "UNION CATALANA DE VALORES, S.A.",
+   "nif": "A-08483257"
+  },
+  {
+   "denomination": "INDUSTRIA DE DISE&#209;O TEXTIL, S.A.",
+   "nif": "A-15075062"
+  },
+  {
+   "denomination": "FLUIDRA, S.A.",
+   "nif": "A-17728593"
+  },
+  {
+   "denomination": "CIE AUTOMOTIVE, S.A.",
+   "nif": "A-20014452"
+  },
+  {
+   "denomination": "URBAR INGENIEROS, S.A.",
+   "nif": "A-20017638"
+  },
+  {
+   "denomination": "IBERPAPEL GESTION, S.A.",
+   "nif": "A-21248893"
+  },
+  {
+   "denomination": "BODEGAS RIOJANAS, S.A.",
+   "nif": "A-26000398"
+  },
+  {
+   "denomination": "AYCO GRUPO INMOBILIARIO, S.A.",
+   "nif": "A-28004240"
+  },
+  {
+   "denomination": "ACS, ACTIVIDADES DE CONSTRUCCION Y SERVICIOS, S.A.",
+   "nif": "A-28004885"
+  },
+  {
+   "denomination": "SACYR, S.A.",
+   "nif": "A-28013811"
+  },
+  {
+   "denomination": "ENDESA, S.A.",
+   "nif": "A-28023430"
+  },
+  {
+   "denomination": "COLONIAL SFL, SOCIMI, S.A.",
+   "nif": "A-28027399"
+  },
+  {
+   "denomination": "FOMENTO DE CONSTRUCCIONES Y CONTRATAS, S.A.",
+   "nif": "A-28037224"
+  },
+  {
+   "denomination": "LABORATORIOS FARMACEUTICOS ROVI, S.A.",
+   "nif": "A-28041283"
+  },
+  {
+   "denomination": "NICOLAS CORREA, S.A.",
+   "nif": "A-28041317"
+  },
+  {
+   "denomination": "CORPORACION FINANCIERA ALBA, S.A.",
+   "nif": "A-28060903"
+  },
+  {
+   "denomination": "AMPER, S.A.",
+   "nif": "A-28079226"
+  },
+  {
+   "denomination": "GRUPO EZENTIS, S.A.",
+   "nif": "A-28085207"
+  },
+  {
+   "denomination": "TECNICAS REUNIDAS, S.A.",
+   "nif": "A-28092583"
+  },
+  {
+   "denomination": "OPEN BANK, S.A.",
+   "nif": "A-28122570"
+  },
+  {
+   "denomination": "ENCE ENERGIA Y CELULOSA, S.A.",
+   "nif": "A-28212264"
+  },
+  {
+   "denomination": "COMPA&#209;IA ESPA&#209;OLA DE VIVIENDAS EN ALQUILER, S.A.",
+   "nif": "A-28218543"
+  },
+  {
+   "denomination": "ACERINOX, S.A.",
+   "nif": "A-28250777"
+  },
+  {
+   "denomination": "MONTEBALITO, S.A.",
+   "nif": "A-28294700"
+  },
+  {
+   "denomination": "ENAGAS, S.A.",
+   "nif": "A-28294726"
+  },
+  {
+   "denomination": "PROSEGUR, COMPA&#209;IA DE SEGURIDAD, S.A.",
+   "nif": "A-28430882"
+  },
+  {
+   "denomination": "INDRA SISTEMAS, S.A.",
+   "nif": "A-28599033"
+  },
+  {
+   "denomination": "VISCOFAN, S.A.",
+   "nif": "A-31065501"
+  },
+  {
+   "denomination": "AZKOYEN, S.A.",
+   "nif": "A-31065618"
+  },
+  {
+   "denomination": "ADOLFO DOMINGUEZ, S.A.",
+   "nif": "A-32104226"
+  },
+  {
+   "denomination": "GRUPO EMPRESARIAL SAN JOSE, S.A.",
+   "nif": "A-36046993"
+  },
+  {
+   "denomination": "PESCANOVA, S.A.",
+   "nif": "A-36603587"
+  },
+  {
+   "denomination": "INMOBILIARIA DEL SUR, S.A.",
+   "nif": "A-41002205"
+  },
+  {
+   "denomination": "ECOLUMBER, S.A. (EN LIQUIDACION)",
+   "nif": "A-43777119"
+  },
+  {
+   "denomination": "COMPA&#209;IA LEVANTINA DE EDIFICACION Y OBRAS PUBLICAS, S.A.",
+   "nif": "A-46004131"
+  },
+  {
+   "denomination": "LIBERTAS 7, S.A.",
+   "nif": "A-46007449"
+  },
+  {
+   "denomination": "VOCENTO, S.A.",
+   "nif": "A-48001655"
+  },
+  {
+   "denomination": "FAES FARMA, S.A.",
+   "nif": "A-48004360"
+  },
+  {
+   "denomination": "MINERALES Y PRODUCTOS DERIVADOS, S.A.",
+   "nif": "A-48008502"
+  },
+  {
+   "denomination": "OBRASCON HUARTE LAIN, S.A.",
+   "nif": "A-48010573"
+  },
+  {
+   "denomination": "IBERDROLA, S.A.",
+   "nif": "A-48010615"
+  },
+  {
+   "denomination": "TUBOS REUNIDOS, S.A.",
+   "nif": "A-48011555"
+  },
+  {
+   "denomination": "ELECNOR, S.A.",
+   "nif": "A-48027056"
+  },
+  {
+   "denomination": "ALMIRALL, S.A.",
+   "nif": "A-58869389"
+  },
+  {
+   "denomination": "RENTA CORPORACION REAL ESTATE, S.A.",
+   "nif": "A-62385729"
+  },
+  {
+   "denomination": "EDP RENEWABLES, S.A.",
+   "nif": "A-74219304"
+  },
+  {
+   "denomination": "REDEIA CORPORACION, S.A.",
+   "nif": "A-78003662"
+  },
+  {
+   "denomination": "PHARMA MAR, S.A.",
+   "nif": "A-78267176"
+  },
+  {
+   "denomination": "ATRESMEDIA CORPORACION DE MEDIOS DE COMUNICACION, S.A.",
+   "nif": "A-78839271"
+  },
+  {
+   "denomination": "CLINICA BAVIERA, S.A.",
+   "nif": "A-80240427"
+  },
+  {
+   "denomination": "REALIA BUSINESS, S.A.",
+   "nif": "A-81787889"
+  },
+  {
+   "denomination": "GENERAL DE ALQUILER DE MAQUINARIA, S.A.",
+   "nif": "A-83443556"
+  },
+  {
+   "denomination": "AMADEUS IT GROUP, S.A.",
+   "nif": "A-84236934"
+  },
+  {
+   "denomination": "LABORATORIO REIG JOFRE, S.A.",
+   "nif": "A-96184882"
+  },
+  {
+   "denomination": "VIDRALA, S.A.",
+   "nif": "A01004324"
+  },
+  {
+   "denomination": "NATURHOUSE HEALTH, S.A.",
+   "nif": "A01115286"
+  },
+  {
+   "denomination": "EDREAMS ODIGEO, S.A.",
+   "nif": "A02850956"
+  },
+  {
+   "denomination": "SOLTEC POWER HOLDINGS, S.A.",
+   "nif": "A05556733"
+  },
+  {
+   "denomination": "BANCO DE SABADELL, S.A.",
+   "nif": "A08000143"
+  },
+  {
+   "denomination": "ACCIONA, S.A.",
+   "nif": "A08001851"
+  },
+  {
+   "denomination": "NATURGY ENERGY GROUP, S.A.",
+   "nif": "A08015497"
+  },
+  {
+   "denomination": "CEMENTOS MOLINS, S.A.",
+   "nif": "A08017535"
+  },
+  {
+   "denomination": "MAPFRE, S.A.",
+   "nif": "A08055741"
+  },
+  {
+   "denomination": "CAIXABANK, S.A.",
+   "nif": "A08663619"
+  },
+  {
+   "denomination": "AUTOPISTAS DEL ATLANTICO, CONCESIONARIA ESPA&#209;OLA, S.A.U.",
+   "nif": "A15020522"
+  },
+  {
+   "denomination": "INMOCEMENTO, S.A.",
+   "nif": "A16367328"
+  },
+  {
+   "denomination": "CONSTRUCCIONES Y AUXILIAR DE FERROCARRILES, S.A",
+   "nif": "A20001020"
+  },
+  {
+   "denomination": "BORGES AGRICULTURAL &amp; INDUSTRIAL NUTS, S.A.",
+   "nif": "A25008202"
+  },
+  {
+   "denomination": "DURO FELGUERA, S.A.",
+   "nif": "A28004026"
+  },
+  {
+   "denomination": "TELEFONICA, S.A.",
+   "nif": "A28015865"
+  },
+  {
+   "denomination": "MINOR HOTELS EUROPE &amp; AMERICAS, S.A.",
+   "nif": "A28027944"
+  },
+  {
+   "denomination": "BANKINTER, S.A.",
+   "nif": "A28157360"
+  },
+  {
+   "denomination": "DISTRIBUIDORA INTERNACIONAL DE ALIMENTACION, S.A.",
+   "nif": "A28164754"
+  },
+  {
+   "denomination": "PRIM, S.A.",
+   "nif": "A28165587"
+  },
+  {
+   "denomination": "AIRTIFICIAL INTELLIGENCE STRUCTURES, S.A.",
+   "nif": "A28249977"
+  },
+  {
+   "denomination": "PROMOTORA DE INFORMACIONES, S.A.",
+   "nif": "A28297059"
+  },
+  {
+   "denomination": "INNOVATIVE SOLUTIONS ECOSYSTEM, S.A.",
+   "nif": "A28354132"
+  },
+  {
+   "denomination": "LIWE ESPA&#209;OLA, S.A.",
+   "nif": "A30015382"
+  },
+  {
+   "denomination": "OPDENERGY HOLDING, S.A.",
+   "nif": "A31840135"
+  },
+  {
+   "denomination": "IZERTIS, S.A.",
+   "nif": "A33845009"
+  },
+  {
+   "denomination": "BANCO SANTANDER, S.A.",
+   "nif": "A39000013"
+  },
+  {
+   "denomination": "LINGOTES ESPECIALES, S.A.",
+   "nif": "A47007109"
+  },
+  {
+   "denomination": "EBRO FOODS, S.A.",
+   "nif": "A47412333"
+  },
+  {
+   "denomination": "DEOLEO, S.A.",
+   "nif": "A48012009"
+  },
+  {
+   "denomination": "TSK ELECTRONICA Y ELECTRICIDAD, S.A.",
+   "nif": "A48035901"
+  },
+  {
+   "denomination": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A.",
+   "nif": "A48265169"
+  },
+  {
+   "denomination": "ARTECHE LANTEGI ELKARTEA, S.A.",
+   "nif": "A48898548"
+  },
+  {
+   "denomination": "GESTAMP AUTOMOCION, S.A.",
+   "nif": "A48943864"
+  },
+  {
+   "denomination": "DESARROLLOS ESPECIALES DE SISTEMAS DE ANCLAJES, S.A.",
+   "nif": "A58348038"
+  },
+  {
+   "denomination": "GRIFOLS, S.A.",
+   "nif": "A58389123"
+  },
+  {
+   "denomination": "ORYZON GENOMICS, S.A.",
+   "nif": "A62291919"
+  },
+  {
+   "denomination": "AUDAX RENOVABLES, S.A.",
+   "nif": "A62338827"
+  },
+  {
+   "denomination": "APPLUS SERVICES, S.A.",
+   "nif": "A64622970"
+  },
+  {
+   "denomination": "CELLNEX TELECOM, S.A.",
+   "nif": "A64907306"
+  },
+  {
+   "denomination": "PUIG BRANDS, S.A.",
+   "nif": "A66674904"
+  },
+  {
+   "denomination": "ECOENER, S.A.",
+   "nif": "A70611538"
+  },
+  {
+   "denomination": "MELIA HOTELS INTERNATIONAL S.A.",
+   "nif": "A78304516"
+  },
+  {
+   "denomination": "REPSOL, S.A.",
+   "nif": "A78374725"
+  },
+  {
+   "denomination": "LINEA DIRECTA ASEGURADORA, S.A., COMPA&#209;IA DE SEGUROS Y REASEGUROS",
+   "nif": "A80871031"
+  },
+  {
+   "denomination": "ALANTRA PARTNERS, S.A.",
+   "nif": "A81862724"
+  },
+  {
+   "denomination": "RENTA 4 BANCO, S.A.",
+   "nif": "A82473018"
+  },
+  {
+   "denomination": "SOLARIA ENERGIA Y MEDIOAMBIENTE, S.A.",
+   "nif": "A83511501"
+  },
+  {
+   "denomination": "TALGO, S.A.",
+   "nif": "A84453075"
+  },
+  {
+   "denomination": "TR HOTEL JARDIN DEL MAR, S.A.",
+   "nif": "A84511567"
+  },
+  {
+   "denomination": "SQUIRREL MEDIA, S.A.",
+   "nif": "A84856947"
+  },
+  {
+   "denomination": "DIGI SPAIN TELECOM, S.A.",
+   "nif": "A84919760"
+  },
+  {
+   "denomination": "ATRYS HEALTH, S.A.",
+   "nif": "A84942150"
+  },
+  {
+   "denomination": "GRENERGY RENOVABLES, S.A.",
+   "nif": "A85130821"
+  },
+  {
+   "denomination": "CORPORACION ACCIONA ENERGIAS RENOVABLES, S.A.",
+   "nif": "A85483311"
+  },
+  {
+   "denomination": "INTERNATIONAL CONSOLIDATED AIRLINES GROUP, S.A.",
+   "nif": "A85845535"
+  },
+  {
+   "denomination": "AENA, S.M.E., S.A.",
+   "nif": "A86212420"
+  },
+  {
+   "denomination": "EMISORA SANTANDER ESPA&#209;A  S.A.U.",
+   "nif": "A86842127"
+  },
+  {
+   "denomination": "LAR ESPA&#209;A REAL ESTATE SOCIMI, S.A.",
+   "nif": "A86918307"
+  },
+  {
+   "denomination": "MERLIN PROPERTIES, SOCIMI, S.A.",
+   "nif": "A86977790"
+  },
+  {
+   "denomination": "LOGISTA INTEGRAL, S.A.",
+   "nif": "A87008579"
+  },
+  {
+   "denomination": "COX INFRASTRUCTURE GROUP, S.A.",
+   "nif": "A87073193"
+  },
+  {
+   "denomination": "SAINT CROIX HOLDING IMMOBILIER, SOCIMI, S.A.",
+   "nif": "A87093902"
+  },
+  {
+   "denomination": "METROVACESA, S.A.",
+   "nif": "A87471264"
+  },
+  {
+   "denomination": "PROSEGUR CASH, S.A.",
+   "nif": "A87498564"
+  },
+  {
+   "denomination": "AEDAS HOMES, S.A.",
+   "nif": "A87586483"
+  },
+  {
+   "denomination": "CIRSA ENTERPRISES, S.A.",
+   "nif": "A87959649"
+  },
+  {
+   "denomination": "AMREST HOLDINGS, SE",
+   "nif": "A88063979"
+  },
+  {
+   "denomination": "ARIMA REAL ESTATE SOCIMI, S.A.",
+   "nif": "A88130471"
+  },
+  {
+   "denomination": "CAIXABANK NOTAS MINORISTAS, S.A.U.",
+   "nif": "A91500769"
+  },
+  {
+   "denomination": "UNICAJA BANCO, S.A.",
+   "nif": "A93139053"
+  },
+  {
+   "denomination": "GLOBAL DOMINION ACCESS, S.A.",
+   "nif": "A95034856"
+  },
+  {
+   "denomination": "NEINOR HOMES, S.A.",
+   "nif": "A95786562"
+  },
+  {
+   "denomination": "HT WORKING CAPITAL, FONDO DE TITULIZACION",
+   "nif": "V01616598"
+  },
+  {
+   "denomination": "BBVA CONSUMER AUTO 2020-1, FONDO DE TITULIZACION",
+   "nif": "V01632355"
+  },
+  {
+   "denomination": "RURAL HIPOTECARIO XIX FONDO DE TITULIZACION",
+   "nif": "V01662717"
+  },
+  {
+   "denomination": "BBVA LEASING 2, FONDO DE TITULIZACI&#211;N",
+   "nif": "V01737642"
+  },
+  {
+   "denomination": "EBN GESTERNOVA FINANCE, FONDO DE TITULIZACION",
+   "nif": "V01755271"
+  },
+  {
+   "denomination": "RMBS SANTANDER 6, FONDO DE TITULIZACION",
+   "nif": "V01759950"
+  },
+  {
+   "denomination": "SANTANDER CONSUMER SPAIN AUTO 2020-1, FONDO DE TITULIZACION",
+   "nif": "V01760370"
+  },
+  {
+   "denomination": "AUTO ABS SPANISH LOANS 2020-1, FONDO DE TITULIZACION",
+   "nif": "V01906064"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION PYMES MAGDALENA 4",
+   "nif": "V01982123"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION RMBS PRADO VII",
+   "nif": "V01982206"
+  },
+  {
+   "denomination": "CAIXABANK PYMES 12, FONDO DE TITULIZACION",
+   "nif": "V02650646"
+  },
+  {
+   "denomination": "SOL LION II RMBS, FONDO DE TITULIZACION",
+   "nif": "V02673549"
+  },
+  {
+   "denomination": "PRIVATE DRIVER ESPA&#209;A 2020-01, FONDO DE TITULIZACION",
+   "nif": "V02695591"
+  },
+  {
+   "denomination": "NORIA SPAIN 2020, FONDO DE TITULIZACION",
+   "nif": "V02796167"
+  },
+  {
+   "denomination": "AQUA 2020, FONDO DE TITULIZACION",
+   "nif": "V02812600"
+  },
+  {
+   "denomination": "ELECNOR EFICIENCIA ENERGETICA 2020, FONDO DE TITULIZACI&#211;N",
+   "nif": "V02819092"
+  },
+  {
+   "denomination": "IM ANDBANK RMBS 1,FONDO DE TITULIZACION",
+   "nif": "V04936837"
+  },
+  {
+   "denomination": "WANNA XXI, FONDO DE TITULIZACION",
+   "nif": "V05377221"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION RMBS PRADO VIII",
+   "nif": "V05415104"
+  },
+  {
+   "denomination": "AUTONORIA SPAIN 2021, FONDO DE TITULIZACION",
+   "nif": "V05478292"
+  },
+  {
+   "denomination": "BBVA RMBS 20, FONDO DE TITULIZACION",
+   "nif": "V06839633"
+  },
+  {
+   "denomination": "HT NEXUS, FONDO DE TITULIZACION",
+   "nif": "V06885453"
+  },
+  {
+   "denomination": "RMBS SANTANDER 7, FONDO DE TITULIZACION",
+   "nif": "V06904239"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION SANTANDER CONSUMER SPAIN AUTO 2021-1",
+   "nif": "V06976989"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION PYMES MAGDALENA 5",
+   "nif": "V06977094"
+  },
+  {
+   "denomination": "IM BCC CAJAMAR PYME 4, FONDO DE TITULIZACION",
+   "nif": "V09703018"
+  },
+  {
+   "denomination": "CRISAE SENIOR DEBT FUND I, FONDO DE TITULIZACI&#211;N",
+   "nif": "V09703273"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACI&#211;N RMBS PRADO X",
+   "nif": "V09711474"
+  },
+  {
+   "denomination": "AUTO ABS SPANISH LOANS 2022-01, FONDO DE TITULIZACION",
+   "nif": "V09731720"
+  },
+  {
+   "denomination": "TDA TITAN, FONDO DE TITULIZACION",
+   "nif": "V09733270"
+  },
+  {
+   "denomination": "BBVA RMBS 21, FONDO DE TITULIZACION",
+   "nif": "V09851882"
+  },
+  {
+   "denomination": "SLF-3, FONDO DE TITULIZACION",
+   "nif": "V09888041"
+  },
+  {
+   "denomination": "ICF I BOND, FONDO DE TITULIZACION",
+   "nif": "V09971417"
+  },
+  {
+   "denomination": "AUTONORIA SPAIN 2022, FONDO DE TITULIZACION",
+   "nif": "V10586071"
+  },
+  {
+   "denomination": "NPLS UNSECURED, FONDO DE TITULIZACI&#211;N",
+   "nif": "V10586642"
+  },
+  {
+   "denomination": "ASF 1, FONDO DE TITULIZACION",
+   "nif": "V10700615"
+  },
+  {
+   "denomination": "CUBOS 2022, FONDO DE TITULIZACI&#211;N",
+   "nif": "V10700797"
+  },
+  {
+   "denomination": "BBVA CONSUMER AUTO 2022-1, FONDO DE TITULIZACI&#211;N",
+   "nif": "V10705481"
+  },
+  {
+   "denomination": "PENSIUM ESG I, FONDO DE TITULIZACI&#211;N",
+   "nif": "V10787596"
+  },
+  {
+   "denomination": "RMBS MIRAVET 2023-1, FONDO DE TITULIZACION",
+   "nif": "V10889426"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION MAGDALENA 6",
+   "nif": "V10891927"
+  },
+  {
+   "denomination": "SANTANDER CONSUMER SPAIN AUTO 2022-01, FONDO DE TITULIZACION",
+   "nif": "V10892198"
+  },
+  {
+   "denomination": "TDA ESP, FONDO DE TITULIZACION",
+   "nif": "V10980316"
+  },
+  {
+   "denomination": "CAIXABANK CONSUMO 6, FONDO DE TITULIZACION",
+   "nif": "V13688247"
+  },
+  {
+   "denomination": "BBVA CONSUMER AUTO 2023-1, FONDO DE TITULIZACION",
+   "nif": "V13739750"
+  },
+  {
+   "denomination": "SANTANDER CONSUMO 5, FONDO DE TITULIZACION",
+   "nif": "V13820956"
+  },
+  {
+   "denomination": "SABADELL CONSUMER FINANCE AUTOS 1, FONDO DE TITULIZACION",
+   "nif": "V13925268"
+  },
+  {
+   "denomination": "BBVA CONSUMER 2024-1, FONDO DE TITULIZACION",
+   "nif": "V16378853"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION MAGDALENA 10",
+   "nif": "V16397093"
+  },
+  {
+   "denomination": "ASSET-BACKED EUROPEAN SECURITISATION TRANSACTION TWENTY, FONDO DE TITULIZACI&#211;N",
+   "nif": "V16693061"
+  },
+  {
+   "denomination": "CAIXABANK CORPORATES 1, FONDO DE TITULIZACION",
+   "nif": "V16754871"
+  },
+  {
+   "denomination": "SACYR GREEN ENERGY MANAGEMENT, FONDO DE TITULIZACION",
+   "nif": "V16776783"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION, RMBS PRADO IX",
+   "nif": "V16841611"
+  },
+  {
+   "denomination": "PERFECTA SOLAR RESIDENCIAL, FONDO DE TITULIZACION",
+   "nif": "V16900185"
+  },
+  {
+   "denomination": "SWK CONSUMER 2021-1, FONDO DE TITULIZACION",
+   "nif": "V16995227"
+  },
+  {
+   "denomination": "CASA V, FONDO DE TITULIZACION",
+   "nif": "V19402254"
+  },
+  {
+   "denomination": "AUTO ABS SPANISH LOANS 2024-1, FONDO DE TITULIZACION",
+   "nif": "V19778760"
+  },
+  {
+   "denomination": "PEPPER IBERIA CONSUMER 2024, FONDO DE TITULIZACION",
+   "nif": "V19784396"
+  },
+  {
+   "denomination": "SANTANDER CONSUMER SPAIN AUTO 2024-1, FONDO DE TITULIZACION",
+   "nif": "V19789866"
+  },
+  {
+   "denomination": "BBVA CONSUMER AUTO 2024-1, FONDO DE TITULIZACION",
+   "nif": "V19876077"
+  },
+  {
+   "denomination": "SABADELL CONSUMO 3, FONDO DE TITULIZACION",
+   "nif": "V19913748"
+  },
+  {
+   "denomination": "ENERGYA VM, FONDO DE TITULIZACION",
+   "nif": "V19989151"
+  },
+  {
+   "denomination": "ABANCA RMBS 2025, FONDO DE TITULIZACI&#211;N",
+   "nif": "V19989193"
+  },
+  {
+   "denomination": "BE&amp;JING 1, FONDO DE TITULIZACION",
+   "nif": "V21734876"
+  },
+  {
+   "denomination": "FINDIRECT, FONDO DE TITULIZACION",
+   "nif": "V21761135"
+  },
+  {
+   "denomination": "BBVA CONSUMER 2025-1 FONDO DE TITULIZACION",
+   "nif": "V21761234"
+  },
+  {
+   "denomination": "DACE INV, FONDO DE TITULIZACION",
+   "nif": "V21801618"
+  },
+  {
+   "denomination": "NOU MESTALLA, FONDO DE TITULIZACION",
+   "nif": "V21874417"
+  },
+  {
+   "denomination": "MAGDALENA 12 FONDO DE TITULIZACION",
+   "nif": "V21881016"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION SANTANDER CONSUMO 8",
+   "nif": "V21881388"
+  },
+  {
+   "denomination": "TER 2, FONDO DE TITULIZACION",
+   "nif": "V21978978"
+  },
+  {
+   "denomination": "FINDANGO ST, FONDO DE TITULIZACION",
+   "nif": "V21984117"
+  },
+  {
+   "denomination": "INSTANT FACTORING 2025-I, FONDO DE TITULIZACION",
+   "nif": "V21984414"
+  },
+  {
+   "denomination": "AUTONORIA SPAIN 2025, FONDO DE TITULIZACION",
+   "nif": "V22463491"
+  },
+  {
+   "denomination": "BBVA VELA CONSUMER 2025-1, FONDO DE TITULIZACION",
+   "nif": "V22551139"
+  },
+  {
+   "denomination": "SABADELL CONSUMER FINANCE AUTOS 2, FONDO DE TITULIZACION",
+   "nif": "V22594436"
+  },
+  {
+   "denomination": "SANTANDER CONSUMER SPAIN AUTO 2025-1, FONDO DE TITULIZACI&#211;N",
+   "nif": "V22657134"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION SANTANDER CONSUMO 9",
+   "nif": "V22676779"
+  },
+  {
+   "denomination": "BBVA CONSUMER AUTO 2025-1, FONDO DE TITULIZACION",
+   "nif": "V22720031"
+  },
+  {
+   "denomination": "CEREZO FONDO DE TITULIZACION",
+   "nif": "V22853360"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION MAGDALENA 14",
+   "nif": "V22959233"
+  },
+  {
+   "denomination": "PINO, FONDO DE TITULIZACION",
+   "nif": "V23835911"
+  },
+  {
+   "denomination": "JEREZ, FONDO DE TITULIZACION",
+   "nif": "V23836117"
+  },
+  {
+   "denomination": "CAIXABANK CONSUMO 7, FONDO DE TITULIZACION",
+   "nif": "V23953805"
+  },
+  {
+   "denomination": "CASTILLO, FONDO DE TITULIZACION",
+   "nif": "V23986144"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION SANTANDER RESIDENTIAL 1",
+   "nif": "V23986656"
+  },
+  {
+   "denomination": "TER 3, FONDO DE TITULIZACION",
+   "nif": "V23986839"
+  },
+  {
+   "denomination": "GAUDI 5 FONDO DE TITULIZACION",
+   "nif": "V23986920"
+  },
+  {
+   "denomination": "BBVA VELA CORPORATE 2025-2, FONDO DE TITULIZACION",
+   "nif": "V24757064"
+  },
+  {
+   "denomination": "POSETS 2025-1 FONDO DE TITULIZACION",
+   "nif": "V24757213"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION, ISTRIA",
+   "nif": "V24803868"
+  },
+  {
+   "denomination": "EBN ALPHA SECTOR PRIVADO, FONDO DE TITULIZACION",
+   "nif": "V42788216"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION, CIMA SPAIN",
+   "nif": "V42793901"
+  },
+  {
+   "denomination": "NB EPL, FONDO DE TITULIZACION",
+   "nif": "V42864355"
+  },
+  {
+   "denomination": "IM BCC CAJAMAR PYME 3, FONDO DE TITULIZACI&#211;N",
+   "nif": "V42864397"
+  },
+  {
+   "denomination": "SANTANDER CONSUMO 4, FONDO DE TITULIZACION",
+   "nif": "V42895854"
+  },
+  {
+   "denomination": "MONDEGO 2021, FONDO DE TITULIZACION",
+   "nif": "V42956045"
+  },
+  {
+   "denomination": "BBVA CONSUMO 11, FONDO DE TITULIZACION",
+   "nif": "V42963629"
+  },
+  {
+   "denomination": "ESPAI BAR&#199;A, FONDO DE TITULIZACION",
+   "nif": "V44649325"
+  },
+  {
+   "denomination": "SALAMANCA, FONDO DE TITULIZACION",
+   "nif": "V44660900"
+  },
+  {
+   "denomination": "BBVA CONSUMO 12, FONDO DE TITULIZACION",
+   "nif": "V44684140"
+  },
+  {
+   "denomination": "UFASA CONSUMER FINANCE 2, FONDO DE TITULIZACION",
+   "nif": "V44822393"
+  },
+  {
+   "denomination": "RMBS GREEN PRADO XI, FONDO DE TITULIZACION",
+   "nif": "V44861144"
+  },
+  {
+   "denomination": "TER 1, FONDO DE TITULIZACION",
+   "nif": "V55406433"
+  },
+  {
+   "denomination": "BBVA RMBS 23, FONDO DE TITULIZACION",
+   "nif": "V55449052"
+  },
+  {
+   "denomination": "RONDA FUNDING, FONDO DE TITULIZACION",
+   "nif": "V55474498"
+  },
+  {
+   "denomination": "AUTONORIA SPAIN 2023, FONDO DE TITULIZACION",
+   "nif": "V56187834"
+  },
+  {
+   "denomination": "HOLBORN, FONDO DE TITULIZACION",
+   "nif": "V56206816"
+  },
+  {
+   "denomination": "ALCANTARA SHORT-TERM LENDING, FONDO DE TITULIZACION",
+   "nif": "V56206873"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION MAGDALENA 7",
+   "nif": "V56255359"
+  },
+  {
+   "denomination": "SANTANDER CONSUMER SPAIN AUTO 2023-1, FONDO DE TITULIZACI&#211;N",
+   "nif": "V56255557"
+  },
+  {
+   "denomination": "PENINSULA, FONDO DE TITULIZACION",
+   "nif": "V56528144"
+  },
+  {
+   "denomination": "FT2025 FONDO DE TITULIZACION",
+   "nif": "V56540784"
+  },
+  {
+   "denomination": "CAIXABANK PYMES 13, FONDO DE TITULIZACI&#211;N",
+   "nif": "V56560725"
+  },
+  {
+   "denomination": "BBVA LEASING 3, FONDO DE TITULIZACION",
+   "nif": "V56608524"
+  },
+  {
+   "denomination": "CASA VI, FONDO DE TITULIZACION",
+   "nif": "V56745888"
+  },
+  {
+   "denomination": "MICROWD, FONDO DE TITULIZACION",
+   "nif": "V56800089"
+  },
+  {
+   "denomination": "DACE, FONDO DE TITULIZACION",
+   "nif": "V56825409"
+  },
+  {
+   "denomination": "OAK TRADE FINANCE, FONDO DE TITULIZACION",
+   "nif": "V56999949"
+  },
+  {
+   "denomination": "HIPOCAT 6, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V63275259"
+  },
+  {
+   "denomination": "HIPOCAT 7, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V63511554"
+  },
+  {
+   "denomination": "HIPOCAT 8, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V63803969"
+  },
+  {
+   "denomination": "HIPOCAT 9, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V64006075"
+  },
+  {
+   "denomination": "HIPOCAT 10, F.T.A.",
+   "nif": "V64241474"
+  },
+  {
+   "denomination": "GC FTPYME PASTOR 4, FTA",
+   "nif": "V64366412"
+  },
+  {
+   "denomination": "HIPOCAT 11, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V64478373"
+  },
+  {
+   "denomination": "GC PASTOR HIPOTECARIO 5, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V64606262"
+  },
+  {
+   "denomination": "FONCAIXA FTGENCAT 5, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V64723661"
+  },
+  {
+   "denomination": "FONCAIXA FTGENCAT 6, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V64912702"
+  },
+  {
+   "denomination": "GAT ICO-FTVPO 1, FONDO DE TITULIZACION HIPOTECARIA",
+   "nif": "V65102576"
+  },
+  {
+   "denomination": "FTA2015, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V66503376"
+  },
+  {
+   "denomination": "CAIXABANK RMBS 1, FONDO DE TITULIZACION",
+   "nif": "V66722216"
+  },
+  {
+   "denomination": "CAIXABANK CONSUMO 2, FONDO DE TITULIZACI&#211;N",
+   "nif": "V66809450"
+  },
+  {
+   "denomination": "CAIXABANK PYMES 8, FONDO DE TITULIZACION",
+   "nif": "V66895251"
+  },
+  {
+   "denomination": "CAIXABANK RMBS 2, FONDO DE TITULIZACION",
+   "nif": "V66978487"
+  },
+  {
+   "denomination": "CAIXABANK CONSUMO 3, FONDO DE TITULIZACION",
+   "nif": "V67023028"
+  },
+  {
+   "denomination": "CAIXABANK PYMES 9, FONDO DE TITULIZACION",
+   "nif": "V67090605"
+  },
+  {
+   "denomination": "SABADELL CONSUMO 2, FONDO DE TITULIZACION",
+   "nif": "V67715250"
+  },
+  {
+   "denomination": "IM ACP SHORT-TERM DEBT, FONDO DE TITULIZACION",
+   "nif": "V67925586"
+  },
+  {
+   "denomination": "WORKCAPITAL I, FONDO DE TITULIZACION",
+   "nif": "V70642111"
+  },
+  {
+   "denomination": "BBVA CONSUMO 13, FONDO DE TITULIZACION",
+   "nif": "V70710793"
+  },
+  {
+   "denomination": "TR-1, FONDO DE TITULIZACI&#211;N",
+   "nif": "V70727532"
+  },
+  {
+   "denomination": "RURAL HIPOTECARIO XX, FONDO DE TITULIZACION",
+   "nif": "V70932413"
+  },
+  {
+   "denomination": "SANTANDER CONSUMO 6, FONDO DE TITULIZACION",
+   "nif": "V70966312"
+  },
+  {
+   "denomination": "TWC NOTES, FONDO DE TITULIZACION",
+   "nif": "V72433279"
+  },
+  {
+   "denomination": "CESCE FONDO ANTICIPO DE FACTURAS, FONDO DE TITULIZACION",
+   "nif": "V72479264"
+  },
+  {
+   "denomination": "BBVA RMBS 22, FONDO DE TITULIZACION",
+   "nif": "V72577562"
+  },
+  {
+   "denomination": "CARS ALLIANCE AUTO LOANS SPAIN 2022, FONDO DE TITULIZACI&#211;N",
+   "nif": "V72577570"
+  },
+  {
+   "denomination": "LINKFACTOR TRADE RECEIVABLES EUR 1, FONDO DE TITULIZACION",
+   "nif": "V72641400"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION, LANTANA",
+   "nif": "V72709660"
+  },
+  {
+   "denomination": "SANTANDER CONSUMO 7, FONDO DE TITULIZACION",
+   "nif": "V75257139"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION TAYRONA",
+   "nif": "V75257154"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION MAGDALENA 11",
+   "nif": "V75262378"
+  },
+  {
+   "denomination": "BBVA VELA CORPORATE 2024-1, FONDO DE TITULIZACION",
+   "nif": "V75401976"
+  },
+  {
+   "denomination": "TDA SABADELL RMBS 5, FONDO DE TITULIZACION",
+   "nif": "V75446435"
+  },
+  {
+   "denomination": "TDA 2024-1, FONDO DE TITULIZACION",
+   "nif": "V75446542"
+  },
+  {
+   "denomination": "JERONIMO FUNDING, FONDO DE TITULIZACION",
+   "nif": "V75471029"
+  },
+  {
+   "denomination": "MAGALLANES CONSUMER FINANCE, FONDO DE TITULIZACION",
+   "nif": "V75641142"
+  },
+  {
+   "denomination": "LA HARMONIA, FONDO DE TITULIZACION",
+   "nif": "V75802728"
+  },
+  {
+   "denomination": "ENCINA FONDO DE TITULIZACION",
+   "nif": "V75896787"
+  },
+  {
+   "denomination": "FINPAY FINANCE, FONDO DE TITULIZACION",
+   "nif": "V75896944"
+  },
+  {
+   "denomination": "BBVA VELA CORPORATE 2025-1, FONDO DE TITULIZACION",
+   "nif": "V75919563"
+  },
+  {
+   "denomination": "AYT HIPOTECARIO MIXTO, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V83914572"
+  },
+  {
+   "denomination": "TDA 19 - MIXTO, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V83917526"
+  },
+  {
+   "denomination": "IM PASTOR 2, FONDO DE TITULIZACION HIPOTECARIA",
+   "nif": "V84037506"
+  },
+  {
+   "denomination": "TDA 20 - MIXTO, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84041052"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION DE ACTIVOS UCI 11",
+   "nif": "V84159268"
+  },
+  {
+   "denomination": "TDA 22 - MIXTO, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84175744"
+  },
+  {
+   "denomination": "BANKINTER 9, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84246099"
+  },
+  {
+   "denomination": "TDA CAM 4, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84274646"
+  },
+  {
+   "denomination": "TDA 23, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84286491"
+  },
+  {
+   "denomination": "BANCAJA 8, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84322205"
+  },
+  {
+   "denomination": "AYT HIPOTECARIO MIXTO III, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84325927"
+  },
+  {
+   "denomination": "CEDULAS TDA 6, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84344696"
+  },
+  {
+   "denomination": "TDA CAJAMAR 2, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84348655"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION HIPOTECARIA UCI 12",
+   "nif": "V84359926"
+  },
+  {
+   "denomination": "AYT HIPOTECARIO BBK I, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84367499"
+  },
+  {
+   "denomination": "AYT GENOVA HIPOTECARIO VI, FONDO DE TITULIZACION HIPOTECARIA",
+   "nif": "V84369479"
+  },
+  {
+   "denomination": "IM PASTOR 3, FONDO DE TITULIZACION HIPOTECARIA",
+   "nif": "V84370519"
+  },
+  {
+   "denomination": "BANKINTER 10, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84388115"
+  },
+  {
+   "denomination": "AYT CEDULAS CAJAS X, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84388370"
+  },
+  {
+   "denomination": "TDA CAM 5, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84466135"
+  },
+  {
+   "denomination": "TDA IBERCAJA 2, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84473230"
+  },
+  {
+   "denomination": "RURAL HIPOTECARIO GLOBAL I, FTA",
+   "nif": "V84511179"
+  },
+  {
+   "denomination": "AYT GENOVA HIPOTECARIO VII, FONDO DE TITULIZACION HIPOTECARIA",
+   "nif": "V84515121"
+  },
+  {
+   "denomination": "BANKINTER 11, FONDO DE TITULIZACION HIPOTECARIA",
+   "nif": "V84520899"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION DE ACTIVOS UCI 14",
+   "nif": "V84521525"
+  },
+  {
+   "denomination": "TDA 24, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84522655"
+  },
+  {
+   "denomination": "EDT FTPYME PASTOR 3, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84529460"
+  },
+  {
+   "denomination": "VALENCIA HIPOTECARIO 2, FONDO DE TITULIZACION HIPOTECARIA",
+   "nif": "V84530526"
+  },
+  {
+   "denomination": "AYT CEDULAS CAJAS GLOBAL FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84532506"
+  },
+  {
+   "denomination": "BANCAJA 9, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84593961"
+  },
+  {
+   "denomination": "PROGRAMA CEDULAS TDA, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84632686"
+  },
+  {
+   "denomination": "IM CAJAMAR 3, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84638121"
+  },
+  {
+   "denomination": "TDA CAM 6, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84664358"
+  },
+  {
+   "denomination": "MBS BANCAJA 3, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84669332"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION DE ACTIVOS, UCI 15",
+   "nif": "V84698067"
+  },
+  {
+   "denomination": "TDA IBERCAJA 3, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84709674"
+  },
+  {
+   "denomination": "AYT KUTXA HIPOTECARIO I, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84720556"
+  },
+  {
+   "denomination": "RURAL HIPOTECARIO VIII, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84722446"
+  },
+  {
+   "denomination": "IM PASTOR 4, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84731181"
+  },
+  {
+   "denomination": "AYT HIPOTECARIO BBK II, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84734235"
+  },
+  {
+   "denomination": "AYT GENOVA HIPOTECARIO VIII, FONDO DE TITULIZACION HIPOTECARIA",
+   "nif": "V84734532"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION DE ACTIVOS SANTANDER HIPOTECARIO 2",
+   "nif": "V84761725"
+  },
+  {
+   "denomination": "TDA 26 - MIXTO, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84764588"
+  },
+  {
+   "denomination": "AYT HIPOTECARIO MIXTO V, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84776335"
+  },
+  {
+   "denomination": "AYT ADMINISTRACIONES I, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84780592"
+  },
+  {
+   "denomination": "TDA 25, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84791409"
+  },
+  {
+   "denomination": "IM CAJAMAR 4, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84818681"
+  },
+  {
+   "denomination": "TDA CAM 7, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84851724"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION DE ACTIVOS UCI 16",
+   "nif": "V84856236"
+  },
+  {
+   "denomination": "CAIXA PENEDES 1 TDA, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84856319"
+  },
+  {
+   "denomination": "TDA IBERCAJA 4, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84856954"
+  },
+  {
+   "denomination": "VALENCIA HIPOTECARIO 3, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84887579"
+  },
+  {
+   "denomination": "MADRID RMBS I, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84889229"
+  },
+  {
+   "denomination": "BANKINTER 13 FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84892272"
+  },
+  {
+   "denomination": "PYMES BANESTO 2, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84893106"
+  },
+  {
+   "denomination": "AYT GENOVA HIPOTECARIO IX, FONDO DE TITULIZACION HIPOTECARIA",
+   "nif": "V84906353"
+  },
+  {
+   "denomination": "MADRID RMBS II, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84916956"
+  },
+  {
+   "denomination": "FTPYME TDA CAM 4, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84918689"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION DE ACTIVOS SANTANDER FINANCIACION 1",
+   "nif": "V84919968"
+  },
+  {
+   "denomination": "TDA 27, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84925569"
+  },
+  {
+   "denomination": "BANCAJA 10, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84966126"
+  },
+  {
+   "denomination": "AYT KUTXA HIPOTECARIO II, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84981299"
+  },
+  {
+   "denomination": "BBVA RMBS 1, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V84994144"
+  },
+  {
+   "denomination": "TDA CAM 8, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85017986"
+  },
+  {
+   "denomination": "BBVA RMBS 2, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85044451"
+  },
+  {
+   "denomination": "RURAL HIPOTECARIO IX, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85049039"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION DE ACTIVOS SANTANDER HIPOTECARIO 3",
+   "nif": "V85051993"
+  },
+  {
+   "denomination": "AYT COLATERALES GLOBAL HIPOTECARIO, F.T.A.",
+   "nif": "V85076677"
+  },
+  {
+   "denomination": "MBS BANCAJA 4, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85082675"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION DE ACTIVOS, UCI 17",
+   "nif": "V85088722"
+  },
+  {
+   "denomination": "TDA IBERCAJA 5, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85095115"
+  },
+  {
+   "denomination": "BBVA-6 FTPYME FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85129138"
+  },
+  {
+   "denomination": "AYT GENOVA HIPOTECARIO X, FONDO DE TITULIZACION HIPOTECARIA",
+   "nif": "V85140713"
+  },
+  {
+   "denomination": "CAIXA PENEDES PYMES 1 TDA, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85143659"
+  },
+  {
+   "denomination": "BBVA LEASING 1, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85143931"
+  },
+  {
+   "denomination": "AYT CAJAGRANADA HIPOTECARIO I, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85144707"
+  },
+  {
+   "denomination": "TDA CAM 9, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85151918"
+  },
+  {
+   "denomination": "MADRID RMBS III  FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85160935"
+  },
+  {
+   "denomination": "TDA 29, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85162188"
+  },
+  {
+   "denomination": "BANCAJA 11, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85164648"
+  },
+  {
+   "denomination": "TDA 28, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85167864"
+  },
+  {
+   "denomination": "BBVA RMBS 3, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85172252"
+  },
+  {
+   "denomination": "IM CAJAMAR 5, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85208502"
+  },
+  {
+   "denomination": "CAIXA PENEDES 2 TDA, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85219772"
+  },
+  {
+   "denomination": "TDA TARRAGONA 1, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85276012"
+  },
+  {
+   "denomination": "MADRID RMBS IV, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85295087"
+  },
+  {
+   "denomination": "AYT GENOVA HIPOTECARIO XI, FONDO DE TITULIZACION HIPOTECARIA",
+   "nif": "V85296705"
+  },
+  {
+   "denomination": "IM CAJAMAR 6, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85347060"
+  },
+  {
+   "denomination": "TDA 30, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85384683"
+  },
+  {
+   "denomination": "BBVA RMBS 5 FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85447654"
+  },
+  {
+   "denomination": "TDA IBERCAJA 6, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85471001"
+  },
+  {
+   "denomination": "RURAL HIPOTECARIO X, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85474252"
+  },
+  {
+   "denomination": "AYT GENOVA HIPOTECARIO XII, FONDO DE TITULIZACION HIPOTECARIA",
+   "nif": "V85489946"
+  },
+  {
+   "denomination": "CAIXA PENEDES FT GENCAT 1 TDA, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85500866"
+  },
+  {
+   "denomination": "BANCAJA 13, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85587434"
+  },
+  {
+   "denomination": "MADRID RESIDENCIAL I, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85594927"
+  },
+  {
+   "denomination": "AYT ICO-FTVPO CAJA VITAL KUTXA, FTA",
+   "nif": "V85600781"
+  },
+  {
+   "denomination": "RURAL HIPOTECARIO XI, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85643575"
+  },
+  {
+   "denomination": "CAJA INGENIEROS TDA 1, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85732816"
+  },
+  {
+   "denomination": "TDA IBERCAJA ICO-FTVPO, FONDO DE TITULIZACION HIPOTECARIA",
+   "nif": "V85733970"
+  },
+  {
+   "denomination": "RURAL HIPOTECARIO XII, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85812600"
+  },
+  {
+   "denomination": "TDA IBERCAJA 7, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85825321"
+  },
+  {
+   "denomination": "BBVA RMBS 9, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85936391"
+  },
+  {
+   "denomination": "MADRID RESIDENCIAL II, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V85981231"
+  },
+  {
+   "denomination": "IM CAJASTUR MBS 1, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V86036647"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION DEL DEFICIT DEL SISTEMA ELECTRICO, FTA",
+   "nif": "V86082716"
+  },
+  {
+   "denomination": "AYT GOYA HIPOTECARIO III, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V86097979"
+  },
+  {
+   "denomination": "AYT GOYA HIPOTECARIO IV, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V86171451"
+  },
+  {
+   "denomination": "AYT GOYA HIPOTECARIO V, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V86304706"
+  },
+  {
+   "denomination": "AYT CAJA INGENIEROS 2, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V86388204"
+  },
+  {
+   "denomination": "RURAL HIPOTECARIO XIV, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V86781705"
+  },
+  {
+   "denomination": "RURAL HIPOTECARIO XV, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V86786191"
+  },
+  {
+   "denomination": "RURAL HIPOTECARIO XVI, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V86790680"
+  },
+  {
+   "denomination": "IM BCG RMBS 2, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V86851664"
+  },
+  {
+   "denomination": "FAB 2013 BULL, FONDO DE ACTIVOS BANCARIOS",
+   "nif": "V86864071"
+  },
+  {
+   "denomination": "FAB 2013 TEIDE, FONDO DE ACTIVOS BANCARIOS",
+   "nif": "V86882784"
+  },
+  {
+   "denomination": "RURAL HIPOTECARIO XVII, FONDO DE TITULIZACION DE ACTIVOS",
+   "nif": "V87054417"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION DE ACTIVOS SANTANDER CONSUMER SPAIN AUTO 2014-1",
+   "nif": "V87151460"
+  },
+  {
+   "denomination": "BBVA RMBS 14, FONDO DE TITULIZACI&#211;N DE ACTIVOS",
+   "nif": "V87152336"
+  },
+  {
+   "denomination": "IM FORTIA 1, FONDO DE TITULIZACION",
+   "nif": "V87325171"
+  },
+  {
+   "denomination": "TDA 2015-1, FONDO DE TITULIZACION",
+   "nif": "V87423893"
+  },
+  {
+   "denomination": "IM BCC CAJAMAR 1, FONDO DE TITULIZACION",
+   "nif": "V87449823"
+  },
+  {
+   "denomination": "HT ABANCA RMBS I, FONDO DE TITULIZACION",
+   "nif": "V87477246"
+  },
+  {
+   "denomination": "IM MARLAN 1, FONDO DE TITULIZACION",
+   "nif": "V87496782"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION SANTANDER CONSUMER SPAIN AUTO 2016-1",
+   "nif": "V87516480"
+  },
+  {
+   "denomination": "BBVA RMBS 17 FONDO DE TITULIZACION",
+   "nif": "V87691937"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION SANTANDER CONSUMER SPAIN AUTO 2016-2",
+   "nif": "V87695185"
+  },
+  {
+   "denomination": "COLUMBUS MASTER CREDIT CARDS, FONDO DE TITULIZACION",
+   "nif": "V87740296"
+  },
+  {
+   "denomination": "IM SUMMA 1, FONDO DE TITULIZACION",
+   "nif": "V87746046"
+  },
+  {
+   "denomination": "TDA 2017-2, FONDO DE TITULIZACION",
+   "nif": "V87764072"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION PYMES MAGDALENA",
+   "nif": "V87773974"
+  },
+  {
+   "denomination": "IM MARLAN 2, FONDO DE TITULIZACI&#211;N",
+   "nif": "V87776522"
+  },
+  {
+   "denomination": "BOTHAR, FONDO DE TITULIZACI&#211;N",
+   "nif": "V87778957"
+  },
+  {
+   "denomination": "BBVA CONSUMO 9, FONDO DE TITULIZACION",
+   "nif": "V87792735"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION, RMBS PRADO V",
+   "nif": "V87927604"
+  },
+  {
+   "denomination": "TDA SABADELL RMBS 4, FONDO DE TITULIZACION",
+   "nif": "V87939930"
+  },
+  {
+   "denomination": "CAIXABANK RMBS 3, FONDO DE TITULIZACION",
+   "nif": "V87956157"
+  },
+  {
+   "denomination": "HT ABANCA RMBS II, FONDO DE TITULIZACION",
+   "nif": "V87959078"
+  },
+  {
+   "denomination": "TDA 2017-4, FONDO DE TITULIZACION",
+   "nif": "V87991790"
+  },
+  {
+   "denomination": "CAIXABANK CONSUMO 4, FONDO DE TITULIZACION",
+   "nif": "V88094768"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION, RMBS PRADO VI",
+   "nif": "V88107800"
+  },
+  {
+   "denomination": "BBVA CONSUMER AUTO 2018-1 FONDO DE TITULIZACION",
+   "nif": "V88135116"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION PYMES MAGDALENA 2",
+   "nif": "V88136957"
+  },
+  {
+   "denomination": "AUTO ABS SPANISH LOANS 2018-1, FONDO DE TITULIZACION",
+   "nif": "V88150396"
+  },
+  {
+   "denomination": "CAIXABANK PYMES 10, FONDO DE TITULIZACION",
+   "nif": "V88205455"
+  },
+  {
+   "denomination": "AQUISGRAN, FONDO DE TITULIZACION",
+   "nif": "V88221908"
+  },
+  {
+   "denomination": "IM BCC CAPITAL 1, FONDO DE TITULIZACION",
+   "nif": "V88222013"
+  },
+  {
+   "denomination": "RURAL HIPOTECARIO XVIII, FONDO DE TITULIZACION",
+   "nif": "V88261839"
+  },
+  {
+   "denomination": "SLF, FONDO DE TITULIZACION",
+   "nif": "V88305701"
+  },
+  {
+   "denomination": "ARQURA HOMES, FONDO DE ACTIVOS BANCARIOS",
+   "nif": "V88359286"
+  },
+  {
+   "denomination": "CAIXABANK LEASINGS 3, FONDO DE TITULIZACION",
+   "nif": "V88383393"
+  },
+  {
+   "denomination": "EBN ZEPA SECTOR P&#218;BLICO, 1 FONDO DE TITULIZACION",
+   "nif": "V88399225"
+  },
+  {
+   "denomination": "VERDE IBERIA LOANS, FONDO DE TITULIZACION",
+   "nif": "V88404058"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION PYMES MAGDALENA 3",
+   "nif": "V88412721"
+  },
+  {
+   "denomination": "IM GEDESCO INNOVFIN, FONDO DE TITULIZACION",
+   "nif": "V88435177"
+  },
+  {
+   "denomination": "BBVA CONSUMO 10, FONDO DE TITULIZACION",
+   "nif": "V88437348"
+  },
+  {
+   "denomination": "SANTANDER CONSUMER SPAIN AUTO 2019-1 FONDO DE TITULIZACION",
+   "nif": "V88459946"
+  },
+  {
+   "denomination": "ESLA, FONDO DE ACTIVOS BANCARIOS",
+   "nif": "V88475314"
+  },
+  {
+   "denomination": "SABADELL CONSUMO 1, FONDO DE TITULIZACION",
+   "nif": "V88481338"
+  },
+  {
+   "denomination": "AUTONORIA SPAIN 2019, FONDO DE TITULIZACION",
+   "nif": "V88497052"
+  },
+  {
+   "denomination": "IM BCC CAJAMAR 2 FONDO DE TITULIZACION",
+   "nif": "V88508981"
+  },
+  {
+   "denomination": "FONDO DE TITULIZACION PYMES SANTANDER 15",
+   "nif": "V88516455"
+  },
+  {
+   "denomination": "CAIXABANK PYMES 11, FONDO DE TITULIZACION",
+   "nif": "V88519996"
+  },
+  {
+   "denomination": "BBVA RMBS 19, FONDO DE TITULIZACION",
+   "nif": "V88534466"
+  },
+  {
+   "denomination": "DRIVER ESPA&#209;A SIX, FONDO DE TITULIZACION",
+   "nif": "V88568688"
+  },
+  {
+   "denomination": "HT SUMINISTROS, FONDO DE TITULIZACION",
+   "nif": "V88608260"
+  },
+  {
+   "denomination": "CIMA SPAIN TELECOM, FONDO DE TIULIZACI&#211;N",
+   "nif": "V88619812"
+  },
+  {
+   "denomination": "CAIXABANK CONSUMO 5, FONDO DE TITULIZACION",
+   "nif": "V88636352"
+  },
+  {
+   "denomination": "SLF-2, FONDO DE TITULIZACION",
+   "nif": "V88644315"
+  }
+ ],
+ "window": {
+  "desde": "2024-01-01",
+  "hasta": "2026-09-18"
+ }
+}

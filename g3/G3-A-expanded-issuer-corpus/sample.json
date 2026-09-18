@@ -1,0 +1,1228 @@
+{
+ "excluded_frozen_corpus": [
+  "A-48010615",
+  "A39000013",
+  "A48265169"
+ ],
+ "format": "ISSUER_REGISTRY_V1",
+ "frozen_at": "2026-09-18T09:34:10+00:00",
+ "issuers": {
+  "A-08000630": {
+   "abrev": "ERCROS",
+   "capital": 27430859.7,
+   "denomination": "ERCROS, S.A.",
+   "historical": false,
+   "key": "ERCROS",
+   "lei": "959800Z611RK76NEVF32",
+   "nif": "A-08000630",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ]
+    ]
+   },
+   "sector": "INDUSTRIA QUÍMICA",
+   "strata": [
+    "residual-sectors"
+   ]
+  },
+  "A-08049793": {
+   "abrev": "URBAS",
+   "capital": 464510876.5,
+   "denomination": "URBAS GRUPO FINANCIERO, S.A.",
+   "historical": true,
+   "key": "URBAS",
+   "lei": "959800R7U7E76YMJG243",
+   "nif": "A-08049793",
+   "scope": {
+    "esef_periods": [
+     "31/12/2023",
+     "31/12/2022"
+    ],
+    "ipp_slots": [
+     [
+      "II",
+      2024
+     ],
+     [
+      "I",
+      2024
+     ],
+     [
+      "II",
+      2023
+     ],
+     [
+      "I",
+      2023
+     ]
+    ]
+   },
+   "sector": "INMOBILIARIAS",
+   "strata": [
+    "real-estate-socimi",
+    "historical-depth"
+   ]
+  },
+  "A-20014452": {
+   "abrev": "CIE AUTOMOTIVE",
+   "capital": 29951871.0,
+   "denomination": "CIE AUTOMOTIVE, S.A.",
+   "historical": false,
+   "key": "CIE_AUTOMOTIVE",
+   "lei": "95980020140005381252",
+   "nif": "A-20014452",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ]
+    ]
+   },
+   "sector": "METÁLICAS BÁSICAS",
+   "strata": [
+    "residual-sectors"
+   ]
+  },
+  "A-28013811": {
+   "abrev": "SACYR",
+   "capital": 805780142.0,
+   "denomination": "SACYR, S.A.",
+   "historical": true,
+   "key": "SACYR",
+   "lei": "959800XKAB9VNAVN9425",
+   "nif": "A-28013811",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025",
+     "31/12/2024"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ],
+     [
+      "I",
+      2025
+     ],
+     [
+      "II",
+      2024
+     ]
+    ]
+   },
+   "sector": "CONSTRUCCIÓN",
+   "strata": [
+    "large-industrials",
+    "historical-depth"
+   ]
+  },
+  "A-28023430": {
+   "abrev": "ENDESA",
+   "capital": 1250093461.2,
+   "denomination": "ENDESA, S.A.",
+   "historical": true,
+   "key": "ENDESA",
+   "lei": "549300LHK07F2CHV4X31",
+   "nif": "A-28023430",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025",
+     "31/12/2024"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ],
+     [
+      "I",
+      2025
+     ],
+     [
+      "II",
+      2024
+     ]
+    ]
+   },
+   "sector": "ENERGÍA Y AGUA/ENERGÍA ELÉCTRICA",
+   "strata": [
+    "utilities",
+    "historical-depth"
+   ]
+  },
+  "A-28027399": {
+   "abrev": "INMOBILIARIA COLONIAL",
+   "capital": 1532111717.5,
+   "denomination": "COLONIAL SFL, SOCIMI, S.A.",
+   "historical": true,
+   "key": "INMOBILIARIA_COLONIAL",
+   "lei": "95980020140005007414",
+   "nif": "A-28027399",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025",
+     "31/12/2024"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ],
+     [
+      "I",
+      2025
+     ],
+     [
+      "II",
+      2024
+     ]
+    ]
+   },
+   "sector": "INMOBILIARIAS",
+   "strata": [
+    "real-estate-socimi",
+    "historical-depth"
+   ]
+  },
+  "A-28037224": {
+   "abrev": "FCC",
+   "capital": 472994034.0,
+   "denomination": "FOMENTO DE CONSTRUCCIONES Y CONTRATAS, S.A.",
+   "historical": true,
+   "key": "FCC",
+   "lei": "95980020140005178328",
+   "nif": "A-28037224",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025",
+     "31/12/2024"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ],
+     [
+      "I",
+      2025
+     ],
+     [
+      "II",
+      2024
+     ]
+    ]
+   },
+   "sector": "CONSTRUCCIÓN",
+   "strata": [
+    "large-industrials",
+    "historical-depth"
+   ]
+  },
+  "A-28041283": {
+   "abrev": "LABORATORIOS ROVI",
+   "capital": 3074145.72,
+   "denomination": "LABORATORIOS FARMACEUTICOS ROVI, S.A.",
+   "historical": false,
+   "key": "LABORATORIOS_ROVI",
+   "lei": "95980020140005936480",
+   "nif": "A-28041283",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ]
+    ]
+   },
+   "sector": "INDUSTRIA QUÍMICA",
+   "strata": [
+    "residual-sectors"
+   ]
+  },
+  "A-28085207": {
+   "abrev": "GRUPO EZENTIS",
+   "capital": 103772.56,
+   "denomination": "GRUPO EZENTIS, S.A.",
+   "historical": true,
+   "key": "GRUPO_EZENTIS",
+   "lei": "959800RCPA4USH4RFB78",
+   "nif": "A-28085207",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025",
+     "31/12/2024"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ],
+     [
+      "I",
+      2025
+     ],
+     [
+      "II",
+      2024
+     ]
+    ]
+   },
+   "sector": "NUEVAS TECNOLOGÍAS",
+   "strata": [
+    "small-mid-caps",
+    "historical-depth"
+   ]
+  },
+  "A-28122570": {
+   "abrev": "OPEN BANK, S.A.",
+   "capital": 173211024.0,
+   "denomination": "OPEN BANK, S.A.",
+   "historical": true,
+   "key": "OPEN_BANK_S_A",
+   "lei": "5493000LM0MZ4JPMGM90",
+   "nif": "A-28122570",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025",
+     "31/12/2024"
+    ],
+    "ipp_slots": [
+     [
+      "II",
+      2025
+     ],
+     [
+      "I",
+      2025
+     ],
+     [
+      "II",
+      2024
+     ],
+     [
+      "I",
+      2024
+     ]
+    ]
+   },
+   "sector": "FINANCIACIÓN Y SEGUROS/BANCOS",
+   "strata": [
+    "credit-institutions",
+    "historical-depth"
+   ]
+  },
+  "A-28250777": {
+   "abrev": "ACERINOX",
+   "capital": 62333842.75,
+   "denomination": "ACERINOX, S.A.",
+   "historical": false,
+   "key": "ACERINOX",
+   "lei": "95980020140005582721",
+   "nif": "A-28250777",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ]
+    ]
+   },
+   "sector": "METÁLICAS BÁSICAS",
+   "strata": [
+    "residual-sectors"
+   ]
+  },
+  "A-28294726": {
+   "abrev": "ENAGAS",
+   "capital": 392985111.0,
+   "denomination": "ENAGAS, S.A.",
+   "historical": true,
+   "key": "ENAGAS",
+   "lei": "213800OU3FQKGM4M2U23",
+   "nif": "A-28294726",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025",
+     "31/12/2024"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ],
+     [
+      "I",
+      2025
+     ],
+     [
+      "II",
+      2024
+     ]
+    ]
+   },
+   "sector": "ENERGÍA Y AGUA/AGUA Y GAS",
+   "strata": [
+    "utilities",
+    "historical-depth"
+   ]
+  },
+  "A-48010573": {
+   "abrev": "OHL",
+   "capital": 345858068.75,
+   "denomination": "OBRASCON HUARTE LAIN, S.A.",
+   "historical": false,
+   "key": "OHL",
+   "lei": "95980020140005395317",
+   "nif": "A-48010573",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ]
+    ]
+   },
+   "sector": "CONSTRUCCIÓN",
+   "strata": [
+    "large-industrials"
+   ]
+  },
+  "A-80240427": {
+   "abrev": "BAVIERA",
+   "capital": 1630758.0,
+   "denomination": "CLINICA BAVIERA, S.A.",
+   "historical": true,
+   "key": "BAVIERA",
+   "lei": "959800CR1BA43ZK65T94",
+   "nif": "A-80240427",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025",
+     "31/12/2024"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ],
+     [
+      "I",
+      2025
+     ],
+     [
+      "II",
+      2024
+     ]
+    ]
+   },
+   "sector": "COMERCIO Y OTROS SERVICIOS",
+   "strata": [
+    "small-mid-caps",
+    "historical-depth"
+   ]
+  },
+  "A-81787889": {
+   "abrev": "REALIA",
+   "capital": 362301180.24,
+   "denomination": "REALIA BUSINESS, S.A.",
+   "historical": false,
+   "key": "REALIA",
+   "lei": "959800RGBUGJA3UVZZ88",
+   "nif": "A-81787889",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ]
+    ]
+   },
+   "sector": "INMOBILIARIAS",
+   "strata": [
+    "real-estate-socimi"
+   ]
+  },
+  "A08000143": {
+   "abrev": "BANCO SABADELL",
+   "capital": 596057810.75,
+   "denomination": "BANCO DE SABADELL, S.A.",
+   "historical": true,
+   "key": "BANCO_SABADELL",
+   "lei": "SI5RG2M0WQQLZCXKRM20",
+   "nif": "A08000143",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025",
+     "31/12/2024"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ],
+     [
+      "I",
+      2025
+     ],
+     [
+      "II",
+      2024
+     ]
+    ]
+   },
+   "sector": "FINANCIACIÓN Y SEGUROS/BANCOS",
+   "strata": [
+    "credit-institutions",
+    "historical-depth"
+   ]
+  },
+  "A08015497": {
+   "abrev": "NATURGY",
+   "capital": 969613801.0,
+   "denomination": "NATURGY ENERGY GROUP, S.A.",
+   "historical": false,
+   "key": "NATURGY",
+   "lei": "TL2N6M87CW970S5SV098",
+   "nif": "A08015497",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ]
+    ]
+   },
+   "sector": "ENERGÍA Y AGUA/AGUA Y GAS",
+   "strata": [
+    "utilities"
+   ]
+  },
+  "A08055741": {
+   "abrev": "MAPFRE",
+   "capital": 307955327.3,
+   "denomination": "MAPFRE, S.A.",
+   "historical": false,
+   "key": "MAPFRE",
+   "lei": "95980020140005693107",
+   "nif": "A08055741",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ]
+    ]
+   },
+   "sector": "FINANCIACIÓN Y SEGUROS/SEGUROS",
+   "strata": [
+    "insurance-entities"
+   ]
+  },
+  "A08663619": {
+   "abrev": "CAIXABANK",
+   "capital": 6975929960.0,
+   "denomination": "CAIXABANK, S.A.",
+   "historical": false,
+   "key": "CAIXABANK",
+   "lei": "7CUNS533WID6K7DGFI87",
+   "nif": "A08663619",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ]
+    ]
+   },
+   "sector": "FINANCIACIÓN Y SEGUROS/BANCOS",
+   "strata": [
+    "credit-institutions"
+   ]
+  },
+  "A28015865": {
+   "abrev": "TELEFONICA",
+   "capital": 5670161554.0,
+   "denomination": "TELEFONICA, S.A.",
+   "historical": false,
+   "key": "TELEFONICA",
+   "lei": "549300EEJH4FEPDBBR25",
+   "nif": "A28015865",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ]
+    ]
+   },
+   "sector": "TRANSPORTES Y COMUNICACIONES/COMUNICACIONES",
+   "strata": [
+    "large-industrials"
+   ]
+  },
+  "A28027944": {
+   "abrev": "MINOR",
+   "capital": 871491340.0,
+   "denomination": "MINOR HOTELS EUROPE &amp; AMERICAS, S.A.",
+   "historical": false,
+   "key": "MINOR",
+   "lei": "959800LM1RW3PKJ4A296",
+   "nif": "A28027944",
+   "scope": {
+    "esef_periods": [
+     "31/12/2024"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2025
+     ],
+     [
+      "II",
+      2024
+     ]
+    ]
+   },
+   "sector": "COMERCIO Y OTROS SERVICIOS",
+   "strata": [
+    "large-industrials"
+   ]
+  },
+  "A28157360": {
+   "abrev": "BANKINTER",
+   "capital": 269659846.2,
+   "denomination": "BANKINTER, S.A.",
+   "historical": false,
+   "key": "BANKINTER",
+   "lei": "VWMYAEQSTOPNV0SUGU82",
+   "nif": "A28157360",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ]
+    ]
+   },
+   "sector": "FINANCIACIÓN Y SEGUROS/BANCOS",
+   "strata": [
+    "credit-institutions"
+   ]
+  },
+  "A28354132": {
+   "abrev": "INNOVATIVE SOLUTIONS",
+   "capital": 576881.33,
+   "denomination": "INNOVATIVE SOLUTIONS ECOSYSTEM, S.A.",
+   "historical": false,
+   "key": "INNOVATIVE_SOLUTIONS",
+   "lei": "959800DFMSYQLT3P0W53",
+   "nif": "A28354132",
+   "scope": {
+    "esef_periods": [
+     "30/06/2025"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2025
+     ],
+     [
+      "II",
+      2024
+     ]
+    ]
+   },
+   "sector": "COMERCIO Y OTROS SERVICIOS",
+   "strata": [
+    "small-mid-caps"
+   ]
+  },
+  "A48012009": {
+   "abrev": "DEOLEO",
+   "capital": 1000000.01,
+   "denomination": "DEOLEO, S.A.",
+   "historical": false,
+   "key": "DEOLEO",
+   "lei": "95980020140005319366",
+   "nif": "A48012009",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ]
+    ]
+   },
+   "sector": "OTRAS INDUST. DE TRANSF./ALIMENT. BEBIDAS Y TABACO",
+   "strata": [
+    "small-mid-caps"
+   ]
+  },
+  "A58348038": {
+   "abrev": "DESA",
+   "capital": 894088.0,
+   "denomination": "DESARROLLOS ESPECIALES DE SISTEMAS DE ANCLAJES, S.A.",
+   "historical": false,
+   "key": "DESA",
+   "lei": "95980020140005019442",
+   "nif": "A58348038",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ]
+    ]
+   },
+   "sector": "TRANSF.DE METALES/INDUSTR. TRANSF.DE METALES",
+   "strata": [
+    "small-mid-caps"
+   ]
+  },
+  "A78374725": {
+   "abrev": "REPSOL",
+   "capital": 1089606334.0,
+   "denomination": "REPSOL, S.A.",
+   "historical": false,
+   "key": "REPSOL",
+   "lei": "BSYCX13Y0NOTV14V9N85",
+   "nif": "A78374725",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ]
+    ]
+   },
+   "sector": "ENERGÍA Y AGUA/PETRÓLEO",
+   "strata": [
+    "utilities"
+   ]
+  },
+  "A80871031": {
+   "abrev": "LINEA DIRECTA",
+   "capital": 43536673.6,
+   "denomination": "LINEA DIRECTA ASEGURADORA, S.A., COMPA&#209;IA DE SEGUROS Y REASEGUROS",
+   "historical": false,
+   "key": "LINEA_DIRECTA",
+   "lei": "95980079E2NBJT967T79",
+   "nif": "A80871031",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ]
+    ]
+   },
+   "sector": "FINANCIACIÓN Y SEGUROS/SEGUROS",
+   "strata": [
+    "insurance-entities"
+   ]
+  },
+  "A82473018": {
+   "abrev": "RENTA 4 BANCO",
+   "capital": 18311941.35,
+   "denomination": "RENTA 4 BANCO, S.A.",
+   "historical": false,
+   "key": "RENTA_4_BANCO",
+   "lei": "213800IMKAUV5KW28586",
+   "nif": "A82473018",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ]
+    ]
+   },
+   "sector": "FINANCIACIÓN Y SEGUROS/BANCOS",
+   "strata": [
+    "credit-institutions"
+   ]
+  },
+  "A83511501": {
+   "abrev": "SOLARIA ENERGIA Y MEDIAMBIENTE",
+   "capital": 1326381.64,
+   "denomination": "SOLARIA ENERGIA Y MEDIOAMBIENTE, S.A.",
+   "historical": false,
+   "key": "SOLARIA_ENERGIA_Y_MEDIAMBIENTE",
+   "lei": "959800PM2YJU406K2789",
+   "nif": "A83511501",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025"
+    ],
+    "ipp_slots": [
+     [
+      "II",
+      2025
+     ],
+     [
+      "I",
+      2025
+     ]
+    ]
+   },
+   "sector": "ENERGÍA Y AGUA/ENERGÍA ELÉCTRICA",
+   "strata": [
+    "small-mid-caps"
+   ]
+  },
+  "A84511567": {
+   "abrev": "TR HOTEL JARDIN",
+   "capital": 300000.0,
+   "denomination": "TR HOTEL JARDIN DEL MAR, S.A.",
+   "historical": false,
+   "key": "TR_HOTEL_JARDIN",
+   "lei": "959800UW68DVTH7GYK29",
+   "nif": "A84511567",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025"
+    ],
+    "ipp_slots": [
+     [
+      "II",
+      2025
+     ],
+     [
+      "I",
+      2025
+     ]
+    ]
+   },
+   "sector": "COMERCIO Y OTROS SERVICIOS",
+   "strata": [
+    "small-mid-caps"
+   ]
+  },
+  "A84942150": {
+   "abrev": "ATRYS",
+   "capital": 760141.93,
+   "denomination": "ATRYS HEALTH, S.A.",
+   "historical": false,
+   "key": "ATRYS",
+   "lei": "959800HHEE9W4TZA8627",
+   "nif": "A84942150",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ]
+    ]
+   },
+   "sector": "COMERCIO Y OTROS SERVICIOS",
+   "strata": [
+    "small-mid-caps"
+   ]
+  },
+  "A85483311": {
+   "abrev": "CORPORACION ACCIONA ENERGIAS RENOVABLES",
+   "capital": 324761830.0,
+   "denomination": "CORPORACION ACCIONA ENERGIAS RENOVABLES, S.A.",
+   "historical": false,
+   "key": "CORPORACION_ACCIONA_ENERGIAS_RENOVABLES",
+   "lei": "254900UPX0OEHTKB9Y44",
+   "nif": "A85483311",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ]
+    ]
+   },
+   "sector": "ENERGÍA Y AGUA/ENERGÍA ELÉCTRICA",
+   "strata": [
+    "utilities"
+   ]
+  },
+  "A85845535": {
+   "abrev": "INTERNATIONAL CONSOLIDATED AIRLINES",
+   "capital": 461166952.7,
+   "denomination": "INTERNATIONAL CONSOLIDATED AIRLINES GROUP, S.A.",
+   "historical": false,
+   "key": "INTERNATIONAL_CONSOLIDATED_AIRLINES",
+   "lei": "959800TZHQRUSH1ESL13",
+   "nif": "A85845535",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ]
+    ]
+   },
+   "sector": "TRANSPORTES Y COMUNICACIONES/TRANSPORTES",
+   "strata": [
+    "large-industrials"
+   ]
+  },
+  "A86212420": {
+   "abrev": "AENA",
+   "capital": 1500000000.0,
+   "denomination": "AENA, S.M.E., S.A.",
+   "historical": false,
+   "key": "AENA",
+   "lei": "959800R7QMXKF0NFMT29",
+   "nif": "A86212420",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ]
+    ]
+   },
+   "sector": "TRANSPORTES Y COMUNICACIONES/TRANSPORTES",
+   "strata": [
+    "large-industrials"
+   ]
+  },
+  "A86977790": {
+   "abrev": "MERLIN",
+   "capital": 620000000.0,
+   "denomination": "MERLIN PROPERTIES, SOCIMI, S.A.",
+   "historical": false,
+   "key": "MERLIN",
+   "lei": "959800L8KD863DP30X04",
+   "nif": "A86977790",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ]
+    ]
+   },
+   "sector": "INMOBILIARIAS",
+   "strata": [
+    "real-estate-socimi"
+   ]
+  },
+  "A87471264": {
+   "abrev": "METROVACESA",
+   "capital": 1092069657.44,
+   "denomination": "METROVACESA, S.A.",
+   "historical": false,
+   "key": "METROVACESA",
+   "lei": "959800ZQW44V5U3SEZ73",
+   "nif": "A87471264",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ]
+    ]
+   },
+   "sector": "INMOBILIARIAS",
+   "strata": [
+    "real-estate-socimi"
+   ]
+  },
+  "A93139053": {
+   "abrev": "UNICAJA BANCO",
+   "capital": 642858617.0,
+   "denomination": "UNICAJA BANCO, S.A.",
+   "historical": false,
+   "key": "UNICAJA_BANCO",
+   "lei": "5493007SJLLCTM6J6M37",
+   "nif": "A93139053",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ]
+    ]
+   },
+   "sector": "FINANCIACIÓN Y SEGUROS/BANCOS",
+   "strata": [
+    "credit-institutions"
+   ]
+  },
+  "A95786562": {
+   "abrev": "NEINOR HOME",
+   "capital": 375945155.07,
+   "denomination": "NEINOR HOMES, S.A.",
+   "historical": false,
+   "key": "NEINOR_HOME",
+   "lei": "959800FW4JL65YWSQ217",
+   "nif": "A95786562",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025"
+    ],
+    "ipp_slots": [
+     [
+      "I",
+      2026
+     ],
+     [
+      "II",
+      2025
+     ]
+    ]
+   },
+   "sector": "INMOBILIARIAS",
+   "strata": [
+    "real-estate-socimi"
+   ]
+  },
+  "V01616598": {
+   "abrev": "HT WORKING CAPITAL",
+   "capital": null,
+   "denomination": "HT WORKING CAPITAL, FONDO DE TITULIZACION",
+   "historical": false,
+   "key": "HT_WORKING_CAPITAL",
+   "lei": "9598003G0WKHHP9HUS85",
+   "nif": "V01616598",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025"
+    ],
+    "ipp_slots": []
+   },
+   "sector": "FINANCIACION Y SEGUROS/FONDOS DE TITULIZACION",
+   "strata": [
+    "securitisation-funds"
+   ]
+  },
+  "V01632355": {
+   "abrev": "BBVA CONSUMER AUTO 2020-1",
+   "capital": null,
+   "denomination": "BBVA CONSUMER AUTO 2020-1, FONDO DE TITULIZACION",
+   "historical": false,
+   "key": "BBVA_CONSUMER_AUTO_2020_1",
+   "lei": "959800P1UGJUS9C9NS94",
+   "nif": "V01632355",
+   "scope": {
+    "esef_periods": [
+     "31/12/2025"
+    ],
+    "ipp_slots": []
+   },
+   "sector": "FINANCIACION Y SEGUROS/FONDOS DE TITULIZACION",
+   "strata": [
+    "securitisation-funds"
+   ]
+  }
+ },
+ "strata_counts": {
+  "credit-institutions": 6,
+  "historical-depth": 10,
+  "insurance-entities": 2,
+  "large-industrials": 7,
+  "real-estate-socimi": 6,
+  "residual-sectors": 4,
+  "securitisation-funds": 2,
+  "small-mid-caps": 8,
+  "utilities": 5
+ },
+ "window": {
+  "desde": "2024-01-01",
+  "hasta": "2026-09-18"
+ }
+}

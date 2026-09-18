@@ -75,12 +75,23 @@ nif ascending):
 | stratum | CNMV sector filter | n | rule |
 |---|---|---|---|
 | credit institutions | `FINANCIACIÓN Y SEGUROS/BANCOS` + cajas/cooperativas de crédito subgroups | 8 | top by capital |
+| insurance entities | `FINANCIACIÓN Y SEGUROS/SEGUROS` | 2 | top by capital |
 | utilities | `ENERGÍA Y AGUA/*` | 5 | top by capital |
 | real estate / SOCIMI | `CONSTRUCCIÓN*/INMOBILIARIA*` + SOCIMI subgroups | 6 | top by capital |
 | large industrials | any other sector | 7 | top by capital |
 | small/mid caps | any sector | 8 | bottom by capital |
 | securitisation funds | `FINANCIACIÓN Y SEGUROS/FONDOS DE TITULIZACIÓN` | 2 | nif ascending |
 | residual sectors | sectors not yet represented | 4 | nif ascending |
+
+**Amendment 1 (2026-09-18, before any filing capture):** the
+`insurance-entities` stratum was added after the first freeze run showed
+the credit pool is bounded — the universe contains only 8 `BANCOS`
+issuers, two of which are SAN/BBVA (excluded by construction), leaving 6.
+Insurers are financial entities filing IFA under a *different IPP model
+family* (insurance vs credit vs general), which strengthens exactly the
+"different IPP model families" stratum this gate wants to falsify. The
+credit-institutions deficit (6/8) is recorded honestly as a universe
+bound, not padded.
 
 Behaviour strata are **designated at freeze** where evidence allows and
 **verified on captured evidence**; issuers may satisfy several strata:
