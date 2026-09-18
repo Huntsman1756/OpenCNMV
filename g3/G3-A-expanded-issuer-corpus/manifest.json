@@ -1,0 +1,44 @@
+{
+ "gate": "G3-A-expanded-issuer-corpus",
+ "status": "PASS",
+ "executed_at": "2026-09-18T18:24:00+00:00",
+ "code_commit": "1ff3c00",
+ "inputs": {
+  "sample": "sample.json — frozen 40-issuer heterogeneous corpus, 9 strata (sha256 ce7d856b…a2d453f); unchanged since freeze 2026-09-18T09:33:43Z",
+  "leg_b_subset": "leg_b_subset.json — preregistered behaviour-stratified 10-issuer recapture subset",
+  "expected_inventory": "expected_inventory.json + freeze_manifest.json + universe.json — freeze-time official inventory (668 preserved requests)",
+  "taxonomy": "g0-r/R10-taxonomy-pinning/evidence (pinned) — explicit --taxonomy-dir on every parse path",
+  "registry": "ISSUER_REGISTRY_V1 via --issuer-registry; frozen SAN/BBVA/IBE registry remains the default"
+ },
+ "outputs": {
+  "g3a_verify_results.json": "28/28 checks PASS (G3A-1..20 matrix incl. G3A-18a..g G2 regressions)",
+  "_out/": "transient run artifacts (gitignored): obs_a/obs_a_replay/obs_b, ds_a/ds_seed1/ds_seed2, evidence/liveA+liveB stores, results.jsonl, compare_report.json"
+ },
+ "sha256": {
+  "observation_a_sha256": "4d78fe3ae42b1373e9eb05788caab453ceae25e00317140b47defd9519e52d53",
+  "corpus_logical_sha256": "686e9c9cddfd0abd47b318fe1a23647bed4f34ba1e767a95364e1b3eac2c63f8"
+ },
+ "findings": [
+  "the production pipeline generalises beyond the design issuers with zero issuer-specific code: 0 sample literals in src/, all 40 issuers walked through the same registry route",
+  "leg A live capture cap-202609181527570000: 40 issuers, 596 sequential fetches (declared UA, 2.5s delay), 98 ESEF views, 106 IPP slots — all bytes preserved write-once with sha256",
+  "corpus: 141 filings (45 ESEF + 96 IPP), 144 variants, 140,591 facts, 63 version events, 18 event_affects rows, 103 extension mappings (79 PROVEN_EQUIVALENT, 19 UNMATCHED, 5 AMBIGUOUS — 0 manual)",
+  "4 filings carry honest unresolved outcomes instead of aborting the corpus: INNOVATIVE_SOLUTIONS and TR_HOTEL_JARDIN serve single-token XHTML documents where a ZIP package was expected (PACKAGE_NOT_ZIP), HT_WORKING_CAPITAL and BBVA_CONSUMER_AUTO_2020_1 publish audit PDFs with no XBRL package in the registry row (NO_PACKAGE_IN_ROW)",
+  "full-observation offline replay is byte-identical to the live observation; update on the replay yields NO_CHANGE with bytes_unchanged — full-corpus convergence proven offline, not by wall clock",
+  "leg B live recapture cap-202609181708270000 over the preregistered 10-issuer subset converges to NO_CHANGE; no source drift observed between legs",
+  "dual-variant compare surface is organic and honest: 3 filings with submitted ES+EN variants, all COMPARED, 5 genuine DIVERGENT_SUBMISSION_FACT findings reported (not masked), 401 language-sensitive facts excluded per G1-C semantics",
+  "canonical issuer identity is complete and clean: ESEF filings carry issuer_nif from manifest scope; denominations are HTML-entity decoded at the wire boundary and in canonical identity",
+  "scope omissions are explained, not silent: URBAS FY2022 is declared in scope but absent from served registry rows (warning recorded); out-of-scope registry rows are logged and not captured",
+  "declared IPP slots absent from listaifi resolve to explicit NOT_FOUND (10) — never conflated with NOT_REQUIRED; funds' ipp=[] scope is honoured as SCOPE_EMPTY",
+  "hash-seed determinism: PYTHONHASHSEED 0 vs 777 datasets are byte-identical and equal to the in-process build",
+  "FY2023 ESEF filings resolve to the pinned ESEF-2022 taxonomy set (evidence: preserved URBAS package references esef_cor.xsd taxonomy/2022-03-24); unmapped fiscal years classify as TAXONOMY_UNRESOLVED rather than crashing",
+  "pre-capture production fixes were committed before the authoritative leg A run: HTML-entity decoding at the CNMV POST boundary (ASP.NET request validation), non-zip package classification, tokenless-row classification, FY2023 taxonomy mapping, issuer-nif propagation — no src/tests commits exist after the authoritative capture",
+  "all G2 regression verifiers (A through G) PASS on final HEAD; 99 unit tests, ruff and mypy clean"
+ ],
+ "limitations": [
+  "dual-variant coverage is organic: only 3 of 45 ESEF filings carry submitted ES+EN variants — most Spanish issuers file ES-only; compare-semantics evidence is limited to what the source provides",
+  "the 4 unresolved filings are genuine source states, not pipeline defects: CNMV publishes no downloadable XBRL package for those registry rows; facts cannot be produced where no machine-readable package exists",
+  "ESEF fiscal years outside {FY2023, FY2024, FY2025} have no pinned taxonomy mapping and would classify TAXONOMY_UNRESOLVED if served",
+  "leg B re-observes a 10-issuer subset, not the full corpus; full-corpus convergence is proven by deterministic replay, per the amended G3A-12 contract",
+  "IPP NOT_FOUND rows reflect listaifi listings, not an independent proof of non-existence; the distinction from NOT_REQUIRED is preserved but both are source-attributed"
+ ]
+}

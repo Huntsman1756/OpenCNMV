@@ -20,21 +20,22 @@ observation, preserved evidence + explicit `--taxonomy-dir`, or a
 bounded `--live` composition — no base dataset, no gate imports, no
 curated overlays, atomic publish, `update` fixpoint `NO_CHANGE`.
 
-**G3-A — EXPANDED_ISSUER_CORPUS is PREREGISTERED and the sample is
-FROZEN** (`g3/G3-A-expanded-issuer-corpus/`): contract + freeze protocol
-(`b953e26`), issuer registry as input (`--issuer-registry`,
-manifest-carried identity, per-issuer scope — `82cd3e1`), and a
-stratified **40-issuer** sample frozen at `626e55f` from the official
-universe (465 IFA filers enumerated via `busqueda?id=25`, identity +
-CNMV sector + LEI + capital via `datosgenerales` fichas — 668 requests,
-evidence preserved). Amendment 1 added `insurance-entities` (2) after
-the credit pool proved bounded (8 BANCOS in universe − SAN/BBVA = 6).
-Sample strata: 6 banks, 2 insurers, 5 utilities, 6 real-estate/SOCIMI,
-7 large industrials, 8 small/mid caps, 2 securitisation funds, 4
-residual sectors, 10-issuer historical-depth subsample; 6 issuers carry
-SUBSTITUTION events; edge cases found organically (delisted issuers,
-non-December fiscal year, funds with no IPP).
-Next step: G3-A filing-capture leg over `sample.json`.
+**G3-A — EXPANDED_ISSUER_CORPUS: PASS 28/28** at `1ff3c00`
+(`g3/G3-A-expanded-issuer-corpus/`). Authoritative leg A capture
+`cap-202609181527570000` over the frozen 40-issuer sample: 596 fetches,
+98 ESEF views, 106 IPP slots → 141 filings (45 ESEF + 96 IPP),
+144 variants, 140,591 facts, 63 events, 103 extension mappings.
+Deterministic replay byte-identical; full-update and preregistered
+10-issuer leg B recapture `cap-202609181708270000` both `NO_CHANGE`;
+PYTHONHASHSEED 0/777 byte-identical; 24/24 read commands;
+4 filings honestly unresolved (2 PACKAGE_NOT_ZIP single-token XHTML
+rows, 2 NO_PACKAGE_IN_ROW securitisation funds); 3 dual-variant
+filings COMPARED with 5 real divergent facts reported; all G2
+regressions green. Zero issuer literals in src/; no post-capture
+src/tests commits. Generalization fixes made pre-capture: HTML-entity
+decode at the CNMV POST boundary, non-zip/tokenless row classification,
+FY2023→ESEF-2022 taxonomy, ESEF issuer-nif propagation, declared-period
+absence warnings.
 
 ## Gate statuses
 

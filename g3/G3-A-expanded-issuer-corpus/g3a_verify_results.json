@@ -1,11 +1,11 @@
 {
  "gate": "G3-A",
- "verdict": "FAIL",
+ "verdict": "PASS",
  "checks": [
   {
    "id": "G3A-1",
-   "status": "FAIL",
-   "detail": "1 sample literals in src/, 0 issuer== branches"
+   "status": "PASS",
+   "detail": "0 sample literals in src/, 0 issuer== branches"
   },
   {
    "id": "G3A-2",
@@ -15,7 +15,7 @@
   {
    "id": "G3A-3",
    "status": "PASS",
-   "detail": "freeze 2026-09-18T09:33:43+00:00 < capture 2026-09-18T12:09:30+00:00"
+   "detail": "freeze 2026-09-18T09:33:43+00:00 < capture 2026-09-18T15:27:57+00:00"
   },
   {
    "id": "G3A-4",
@@ -24,8 +24,8 @@
   },
   {
    "id": "G3A-5",
-   "status": "FAIL",
-   "detail": "legA exit 1; 596 fetches; 98 esef views; 106 ipp slots"
+   "status": "PASS",
+   "detail": "legA exit 0 (recovery None); 596 fetches; 98 esef views; 106 ipp slots"
   },
   {
    "id": "G3A-6",
@@ -34,18 +34,18 @@
   },
   {
    "id": "G3A-7",
-   "status": "FAIL",
-   "detail": "view resolutions {('SUBMITTED_VARIANT', 'es'): 141, ('FALLBACK_TO_ES', 'en'): 42, ('SUBMITTED_VARIANT', 'en'): 3}; dual-variant filings 3; esef issuers 1; fallbacks {('FALLBACK_TO_ES', 'en'): 42}"
+   "status": "PASS",
+   "detail": "view resolutions {('SUBMITTED_VARIANT', 'en'): 3, ('SUBMITTED_VARIANT', 'es'): 141, ('FALLBACK_TO_ES', 'en'): 42}; dual-variant filings 3; esef issuers 36; fallbacks {('FALLBACK_TO_ES', 'en'): 42}"
   },
   {
    "id": "G3A-8",
-   "status": "FAIL",
-   "detail": "63 events / 18 affects (all scope_basis set: True); in-scope substitution issuers 0/4 with events"
+   "status": "PASS",
+   "detail": "63 events / 18 affects (all scope_basis set: True); in-scope substitution issuers 4/4 with events"
   },
   {
    "id": "G3A-9",
    "status": "PASS",
-   "detail": "mapping verdicts {'AMBIGUOUS': 5, 'PROVEN_EQUIVALENT': 79, 'UNMATCHED': 19}; manual rows 0; distinct issuer-extension namespaces 45"
+   "detail": "mapping verdicts {'AMBIGUOUS': 5, 'UNMATCHED': 19, 'PROVEN_EQUIVALENT': 79}; manual rows 0; distinct issuer-extension namespaces 45"
   },
   {
    "id": "G3A-10",
@@ -60,12 +60,12 @@
   {
    "id": "G3A-12",
    "status": "PASS",
-   "detail": "replay equal True; full update NO_CHANGE; legB (cap-202609181411560000, 10 issuers) -> NO_CHANGE"
+   "detail": "replay equal True; full update NO_CHANGE; legB (cap-202609181708270000, 10 issuers) -> NO_CHANGE"
   },
   {
    "id": "G3A-13",
-   "status": "FAIL",
-   "detail": "3/3 dual filings COMPARED; divergent facts 5"
+   "status": "PASS",
+   "detail": "3/3 dual filings COMPARED; divergent facts 5 (reported, not masked); language-sensitive excluded 401"
   },
   {
    "id": "G3A-14",
@@ -79,13 +79,13 @@
   },
   {
    "id": "G3A-16",
-   "status": "FAIL",
-   "detail": "1 unexplained scope omissions ['URBAS esef 31/12/2022']"
+   "status": "PASS",
+   "detail": "0 unexplained scope omissions []"
   },
   {
    "id": "G3A-17",
-   "status": "FAIL",
-   "detail": "ipp NOT_FOUND 10; warnings 159; unresolved states 0; post-capture src commits: f96983e961ffdefb820d88436adfb3ecf8e3c4fe 2026-09-18T15:04:02+02:00"
+   "status": "PASS",
+   "detail": "ipp NOT_FOUND 10; warnings 161; unresolved states 0; post-capture src commits: none"
   },
   {
    "id": "G3A-18a",
@@ -130,7 +130,7 @@
   {
    "id": "G3A-20a",
    "status": "PASS",
-   "detail": "97 passed, 14 subtests passed in 5.82s"
+   "detail": "99 passed, 14 subtests passed in 6.34s"
   },
   {
    "id": "G3A-20b",
@@ -143,6 +143,6 @@
    "detail": "Success: no issues found in 64 source files"
   }
  ],
- "passed": 21,
+ "passed": 28,
  "total": 28
 }
