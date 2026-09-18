@@ -163,8 +163,8 @@ obligation) or no IPP period, that family is recorded
 | G3A-9 | extension taxonomies resolve with zero manual mappings: every new issuer-extension schema resolves from pinned taxonomy inputs or is `TAXONOMY_UNRESOLVED` |
 | G3A-10 | IPP model families: credit/general/(fund) filings parse; modelo per filing recorded |
 | G3A-11 | clean bootstrap: `init` on the expanded corpus → valid `COLUMNAR_DATASET_V1` |
-| G3A-12 | convergence: a second capture+update on identical source state yields `NO_CHANGE` |
-| G3A-13 | `compare` between the two observations reports only legitimate source-change classes — zero false divergences from translation/mapping |
+| G3A-12 | convergence: full-corpus deterministic replay of the captured observation is idempotent and yields `NO_CHANGE`. A preregistered behaviour-stratified live recapture subset (below) also converges to `NO_CHANGE` when source state is unchanged; genuine source drift is preserved and classified, never treated as a determinism failure |
+| G3A-13 | for every captured dual-variant filing, the public `compare` surface uses G1-C semantics: language-sensitive facts never become economic divergences, only PROVEN_EQUIVALENT mappings rewrite identity, numeric lexical equivalence is preserved, and unresolved mappings remain unresolved. Counts and any real `DIVERGENT_SUBMISSION_FACT` findings are reported per filing |
 | G3A-14 | determinism: two offline rebuilds of the expanded dataset are byte-identical (distinct PYTHONHASHSEED) |
 | G3A-15 | expanded dataset is queryable: the G2-E read-only command battery works against it |
 | G3A-16 | expected-vs-captured reconciliation: every freeze-inventory in-scope filing is captured or classified; zero unexplained omissions |
@@ -198,12 +198,39 @@ a gate failure (G3A-17).
 
 - One `PoliteSession`, declared `OpenCNMV` user agent, sequential
   requests, min delay 2.5 s.
-- Request bound for the whole gate (freeze + capture + re-capture):
-  ≤ 2500 requests; actual counts recorded per leg.
-- All response bytes preserved write-once under `evidence/` with sha256,
+- **Leg A**: one complete live capture over `sample.json` (all 40
+  issuers, both families, per-issuer scope from the registry).
+- **Convergence oracle**: deterministic *offline* replay of the leg-A
+  observation — the full-corpus convergence proof does not re-hit CNMV.
+- **Leg B**: a preregistered behaviour-stratified live recapture subset
+  (below) proves live reobservation converges without re-hitting the
+  whole registry.
+- Request bound for the whole gate (freeze + A + B): ≤ 2500 requests;
+  actual counts recorded per leg.
+- All response bytes preserved write-once under `_out/` with sha256,
   `source_url`, `retrieved_at`, HTTP status.
-- A second capture leg (same protocol) demonstrates convergence; hash
-  drift is `SOURCE_CHANGED`, not a determinism failure.
+- Genuine drift between legs is `SOURCE_CHANGED` evidence — preserved
+  and classified, never a determinism failure.
+
+### Preregistered leg-B subset (fixed before leg A)
+
+Ten issuers designated for behaviour coverage; actual behaviour classes
+are verified on captured evidence:
+
+| issuer | covers |
+|---|---|
+| BANKINTER | credit IPP, substitution events |
+| MAPFRE | insurance IPP, ES+EN candidate |
+| TELEFONICA | general IPP, ES+EN candidate, substitution |
+| ENAGAS | utility, ES+EN candidate |
+| ERCROS | substitution events, residual sector |
+| TR_HOTEL_JARDIN | substitution events, small cap |
+| INNOVATIVE_SOLUTIONS | non-December fiscal year |
+| HT_WORKING_CAPITAL | securitisation fund, IPP `SCOPE_EMPTY` |
+| URBAS | delisted issuer (latest ESEF FY2023) |
+| ATRYS | small cap, ES-only candidate |
+
+Machine-readable copy: `leg_b_subset.json` (committed with this README).
 
 ## Explicitly out of scope
 

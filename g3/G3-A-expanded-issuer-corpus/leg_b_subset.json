@@ -1,0 +1,27 @@
+{
+  "format": "G3A_LEG_B_SUBSET_V1",
+  "frozen_before_leg_a": true,
+  "note": "behaviour-stratified live recapture subset — designations verified on captured evidence",
+  "issuers": [
+    {"key": "BANKINTER", "nif": "A28157360",
+     "covers": ["credit-ipp", "substitution"]},
+    {"key": "MAPFRE", "nif": "A08055741",
+     "covers": ["insurance-ipp", "es-en-candidate"]},
+    {"key": "TELEFONICA", "nif": "A28015865",
+     "covers": ["general-ipp", "es-en-candidate", "substitution"]},
+    {"key": "ENAGAS", "nif": "A-28294726",
+     "covers": ["utility", "es-en-candidate"]},
+    {"key": "ERCROS", "nif": "A-08000630",
+     "covers": ["substitution", "residual-sector"]},
+    {"key": "TR_HOTEL_JARDIN", "nif": "A84511567",
+     "covers": ["substitution", "small-cap"]},
+    {"key": "INNOVATIVE_SOLUTIONS", "nif": "A28354132",
+     "covers": ["non-december-fy"]},
+    {"key": "HT_WORKING_CAPITAL", "nif": "V01616598",
+     "covers": ["securitisation-fund", "ipp-scope-empty"]},
+    {"key": "URBAS", "nif": "A-08049793",
+     "covers": ["delisted", "latest-esef-fy2023"]},
+    {"key": "ATRYS", "nif": "A84942150",
+     "covers": ["small-cap", "es-only-candidate"]}
+  ]
+}
