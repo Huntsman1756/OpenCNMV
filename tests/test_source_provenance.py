@@ -68,3 +68,18 @@ class DiscoveryTests(unittest.TestCase):
             search_ifa(session, "BANCO SANTANDER", "es", "2024-01-01", "2026-09-30")
         self.assertEqual(caught.exception.body, body)
         self.assertEqual(session.post.call_count, 1)
+
+    def test_denomination_html_entities_unescaped_on_the_wire(self):
+        # Registry denominations parsed from CNMV HTML may carry verbatim
+        # entities (&#209;, &amp;). Posting them literally trips ASP.NET
+        # request validation (HTTP 400) and breaks picker matching.
+        body = b"<html><body>results</body></html>"
+        response = Mock(text=body.decode(), content=body)
+        session = Mock()
+        session.get.return_value = Mock(text="")
+        session.post.return_value = response
+        search_ifa(session, "LINEA DIRECTA, S.A., COMPA&#209;IA DE SEGUROS",
+                   "es", "2024-01-01", "2026-09-30")
+        posted = session.post.call_args.kwargs["data"][
+            "ctl00$ContentPrincipal$wNombreEntidad$txtDenominacion"]
+        self.assertEqual(posted, "LINEA DIRECTA, S.A., COMPA\u00d1IA DE SEGUROS")

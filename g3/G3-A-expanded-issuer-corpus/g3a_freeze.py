@@ -18,6 +18,7 @@ import json
 import re
 import sys
 import unicodedata
+from html import unescape
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -106,7 +107,7 @@ def fetch_universe(sess: PoliteSession, store: EvidenceStore,
     universe = {}
     for val, label in re.findall(
             r'<option[^>]*value="([^"]*)"[^>]*>([^<]*)', html):
-        val, label = val.strip(), label.strip()
+        val, label = val.strip(), unescape(label.strip())
         if NIF_RE.match(val) and label:
             universe[val] = label
     return [{"nif": n, "denomination": d}

@@ -7,6 +7,7 @@ preserve; helpers return both bytes and parsed rows.
 from __future__ import annotations
 
 import re
+from html import unescape
 from html.parser import HTMLParser
 
 import requests
@@ -76,6 +77,12 @@ def search_ifa(s: requests.Session, denom: str, lang: str,
                desde: str, hasta: str, *, issuer_value: str | None = None) -> bytes:
     """busqueda?id=25 POST, resolving the entity picker if CNMV returns one.
     Returns raw served bytes."""
+    # Registry denominations may carry verbatim HTML entities (&#209;, &amp;)
+    # from HTML-sourced enumerations. The wire form must carry the true legal
+    # name: a literal "&#" sequence trips ASP.NET request validation (HTTP
+    # 400), and picker options arrive entity-decoded, so matching needs the
+    # decoded form too.
+    denom = unescape(denom)
     url = SEARCH_IFA.format(lang=lang)
     r = s.get(url, timeout=60)
     r.raise_for_status()
