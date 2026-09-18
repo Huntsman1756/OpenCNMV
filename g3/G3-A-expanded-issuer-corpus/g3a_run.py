@@ -107,6 +107,21 @@ def main() -> int:
                             "stderr_tail": r["stderr"][-800:]})
         C.record("legA_observe", **r)
     cap_a = C.jload(legA_res)["capture_id"]
+    if cap_a is None:
+        # The observe leg aborted *after* the live run was preserved:
+        # the manifest under runs/ is the authoritative capture, and
+        # re-assembling from preserved evidence yields the identical
+        # observation bytes (determinism is exactly what G3A-12
+        # asserts). The original failure stays recorded above; the
+        # recovery is logged as its own step.
+        latest = C.jload(C.EV_A / "latest.json")
+        cap_a = latest["capture_id"]
+        with deny_network():
+            obs_rec = cobs.assemble_from_evidence(
+                C.EV_A, tax_dir=C.TAX_DIR, run=cap_a)
+        C.jwrite(C.OBS_A, obs_rec)
+        C.record("legA_assemble_recovery", capture_id=cap_a, exit=0,
+                 obs_sha=obs_rec.get("observation_sha256"))
 
     # ------------------------------------ convergence oracle: offline
     # replay of the preserved leg-A run (no network at all)
@@ -154,6 +169,15 @@ def main() -> int:
                             "stderr_tail": r["stderr"][-800:]})
         C.record("legB_observe", **r)
     cap_b = C.jload(legB_res)["capture_id"]
+    if cap_b is None:
+        latest_b = C.jload(C.EV_B / "latest.json")
+        cap_b = latest_b["capture_id"]
+        with deny_network():
+            obs_b = cobs.assemble_from_evidence(
+                C.EV_B, tax_dir=C.TAX_DIR, run=cap_b)
+        C.jwrite(C.OBS_B, obs_b)
+        C.record("legB_assemble_recovery", capture_id=cap_b, exit=0,
+                 obs_sha=obs_b.get("observation_sha256"))
 
     # leg-B convergence: live evidence -> dataset rebased assembly ->
     # NO_CHANGE when the source is unchanged (drift => SOURCE_CHANGED)

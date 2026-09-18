@@ -52,6 +52,18 @@ def extension_namespaces(pkg: bytes | zipfile.ZipFile | str | Path) -> set[str]:
 # caller is responsible for verifying sha256 against the pinned manifest.
 
 ESEF_TAXONOMY = {
+    # ESMA's 2022 ESEF taxonomy applies to filings for financial years
+    # beginning 2022–2024; the 2024 taxonomy to years beginning 2025.
+    # Evidence: preserved packages declare
+    # https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor.xsd for
+    # FY2023 (URBAS registro 20407) and FY2024 (frozen corpus), and the
+    # 2024-03-27 entry point for FY2025.
+    "FY2023": {
+        "disclosure": "esef-2022",
+        "package_names": ["esef_taxonomy_2022_v1.1.zip",
+                          "ifrs-full_ifrs-2022-03-24-opencnmv-pkg.zip",
+                          "xbrl-lei-2020-07-02-opencnmv-pkg.zip"],
+    },
     "FY2024": {
         "disclosure": "esef-2022",
         "package_names": ["esef_taxonomy_2022_v1.1.zip",

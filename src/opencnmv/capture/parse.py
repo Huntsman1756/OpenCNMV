@@ -23,7 +23,8 @@ from collections import defaultdict
 from pathlib import Path
 
 from opencnmv.canonicalize import facts as xfacts
-from opencnmv.capture.contract import CaptureError
+from opencnmv.capture.contract import (CaptureError,
+                                       TaxonomyUnresolvedError)
 from opencnmv.xbrl import arelle as xarelle
 from opencnmv.xbrl import taxonomy as xtax
 
@@ -41,7 +42,12 @@ def parse_state(artifact: Path, *, kind: str, fy: str | None,
     if kind == "esef":
         if fy is None:
             raise CaptureError("esef parse requires a fiscal year")
-        tax = xtax.esef_taxonomy_set(fy, tax_dir)
+        try:
+            tax = xtax.esef_taxonomy_set(fy, tax_dir)
+        except KeyError as ex:
+            raise TaxonomyUnresolvedError(
+                f"{name}: no pinned ESEF taxonomy set for fiscal year "
+                f"{fy}") from ex
     else:
         tax = xtax.ipp_taxonomy_set(tax_dir)
     work_dir = Path(work_dir)

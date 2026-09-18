@@ -87,3 +87,10 @@ def load_issuer_registry(path) -> dict[str, dict]:
 
 class CaptureError(RuntimeError):
     """Source/network/discovery failure -> CLI exit code 7."""
+
+
+class TaxonomyUnresolvedError(CaptureError):
+    """A filing declares/requires a taxonomy with no pinned package set.
+
+    Raised (rather than a bare KeyError) so assembly can classify the
+    outcome as TAXONOMY_UNRESOLVED instead of aborting the capture."""

@@ -23,6 +23,7 @@ from opencnmv.capture import contract as C
 from opencnmv.capture import discover as cdis
 from opencnmv.capture import fetch as cfetch
 from opencnmv.capture import observe as cobs
+from opencnmv.capture import parse as cparse
 from opencnmv.cli.main import entry
 from opencnmv.dataset import manifest as dmanifest
 from opencnmv.dataset import parquetio, schema as dschema, tables
@@ -411,6 +412,24 @@ class TestAssemble(unittest.TestCase):
         self.assertTrue(any(
             u["reason"] == "NO_USABLE_ANCHOR_VIEW"
             and "NO_PACKAGE_IN_ROW" in u["detail"] for u in unr), unr)
+
+    def test_unmapped_fiscal_year_is_taxonomy_unresolved(self):
+        # an ESEF filing whose fiscal year has no pinned taxonomy set is
+        # a classified outcome, never a bare KeyError crash
+        with self.assertRaises(C.TaxonomyUnresolvedError):
+            cparse.parse_state(
+                Path(self._tmp.name) / "x.zip", kind="esef", fy="FY1999",
+                tax_dir=Path(self._tmp.name),
+                work_dir=Path(self._tmp.name), name="x")
+        # TaxonomyUnresolvedError is a CaptureError: _maybe_state and the
+        # extmap catch classify it without special-casing the type
+        self.assertTrue(issubclass(C.TaxonomyUnresolvedError,
+                                   C.CaptureError))
+        # FY2023 evidence: URBAS's preserved package declares the
+        # 2022-03-24 esef_cor entry point — same pinned set as FY2024
+        from opencnmv.xbrl.taxonomy import ESEF_TAXONOMY
+        self.assertEqual(ESEF_TAXONOMY["FY2023"],
+                         ESEF_TAXONOMY["FY2024"])
 
     def test_unlisted_ipp_skipped_not_removed(self):
         m = json.loads(json.dumps(self.manifest))

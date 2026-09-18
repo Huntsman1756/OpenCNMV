@@ -31,7 +31,8 @@ from opencnmv.canonicalize import events as xevents
 from opencnmv.canonicalize import extension_mapping as xmap
 from opencnmv.canonicalize import filing as xfiling
 from opencnmv.canonicalize import variants as xvariants
-from opencnmv.capture.contract import ISSUERS, CaptureError
+from opencnmv.capture.contract import (ISSUERS, CaptureError,
+                                       TaxonomyUnresolvedError)
 from opencnmv.capture.parse import map_variants, parse_state
 from opencnmv.dataset import tables as dtables
 from opencnmv.model import ids
@@ -169,6 +170,11 @@ def _state_for(ctx: _Ctx, artifact_rec: dict, *, kind: str,
           "profile": kind, "facts": res["facts"],
           "units": res["units"], "provenance": prov}
     return st, res
+
+
+def _fail_reason(ex: CaptureError) -> str:
+    return ("TAXONOMY_UNRESOLVED" if isinstance(ex, TaxonomyUnresolvedError)
+            else "PARSE_FAILED")
 
 
 def _maybe_state(ctx: _Ctx, artifact_rec: dict, *, kind: str,
@@ -419,7 +425,7 @@ def assemble_esef(registro: str, views: dict[str, dict],
                                "filing_id": fid, "view": lang,
                                "variant_version_id":
                                    vv["variant_version_id"],
-                               "reason": "PARSE_FAILED",
+                               "reason": _fail_reason(ex),
                                "detail": str(ex),
                                "artifacts": [pkg["sha256"]]})
         if got is None:
@@ -462,8 +468,9 @@ def assemble_esef(registro: str, views: dict[str, dict],
             ctx.unresolved.append(
                 {"scope": "mapping", "family": "ESEF_IFA",
                  "issuer_key": issuer_key, "filing_id": fid,
-                 "reason": "EXTMAP_FAILED", "detail": str(ex),
-                 "artifacts": []})
+                 "reason": ("TAXONOMY_UNRESOLVED" if isinstance(
+                     ex, TaxonomyUnresolvedError) else "EXTMAP_FAILED"),
+                 "detail": str(ex), "artifacts": []})
             records = []
         fx["extension_mappings"] = [
             xmap.mapping_record(fid, "es", "en", r)
