@@ -19,8 +19,22 @@ G2-G closed the bootstrap gap: `opencnmv init` creates a valid
 observation, preserved evidence + explicit `--taxonomy-dir`, or a
 bounded `--live` composition — no base dataset, no gate imports, no
 curated overlays, atomic publish, `update` fixpoint `NO_CHANGE`.
-Next planned gate: **G3-A — issuer-universe expansion** (see
-`docs/G2.md`).
+
+**G3-A — EXPANDED_ISSUER_CORPUS is PREREGISTERED and the sample is
+FROZEN** (`g3/G3-A-expanded-issuer-corpus/`): contract + freeze protocol
+(`b953e26`), issuer registry as input (`--issuer-registry`,
+manifest-carried identity, per-issuer scope — `82cd3e1`), and a
+stratified **40-issuer** sample frozen at `626e55f` from the official
+universe (465 IFA filers enumerated via `busqueda?id=25`, identity +
+CNMV sector + LEI + capital via `datosgenerales` fichas — 668 requests,
+evidence preserved). Amendment 1 added `insurance-entities` (2) after
+the credit pool proved bounded (8 BANCOS in universe − SAN/BBVA = 6).
+Sample strata: 6 banks, 2 insurers, 5 utilities, 6 real-estate/SOCIMI,
+7 large industrials, 8 small/mid caps, 2 securitisation funds, 4
+residual sectors, 10-issuer historical-depth subsample; 6 issuers carry
+SUBSTITUTION events; edge cases found organically (delisted issuers,
+non-December fiscal year, funds with no IPP).
+Next step: G3-A filing-capture leg over `sample.json`.
 
 ## Gate statuses
 
