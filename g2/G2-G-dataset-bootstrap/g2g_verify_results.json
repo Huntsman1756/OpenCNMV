@@ -1,0 +1,133 @@
+{
+ "gate": "G2-G",
+ "verdict": "PASS",
+ "checks": [
+  {
+   "id": "B1",
+   "status": "PASS",
+   "detail": "init exit 0; validate clean"
+  },
+  {
+   "id": "B2",
+   "status": "PASS",
+   "detail": "init --evidence-dir --taxonomy-dir produces the identical dataset as --observation"
+  },
+  {
+   "id": "B3",
+   "status": "PASS",
+   "detail": "PYTHONHASHSEED 0 vs 777 identical: True; vs in-process run: True"
+  },
+  {
+   "id": "B4",
+   "status": "PASS",
+   "detail": "no --base flag; missing --dataset/--source -> exit 2"
+  },
+  {
+   "id": "B5",
+   "status": "PASS",
+   "detail": "0 gate imports in src/opencnmv"
+  },
+  {
+   "id": "B6",
+   "status": "PASS",
+   "detail": "non-null filing.extras_json rows: 0 (no curated overlay required or fabricated)"
+  },
+  {
+   "id": "B7",
+   "status": "PASS",
+   "detail": "init --live -> cap-202609180710180000 (11 artifacts preserved); offline replay byte-identical: True"
+  },
+  {
+   "id": "B8",
+   "status": "PASS",
+   "detail": "27/27 commands correct exit; dataset bytes unchanged"
+  },
+  {
+   "id": "B9",
+   "status": "PASS",
+   "detail": "bootstrap is the update fixpoint: NO_CHANGE, byte-identical"
+  },
+  {
+   "id": "B10",
+   "status": "PASS",
+   "detail": "init onto non-empty dest -> exit 2 (no overwrite option exists)"
+  },
+  {
+   "id": "B11",
+   "status": "PASS",
+   "detail": "injected failures leave no dataset and no staging"
+  },
+  {
+   "id": "B12",
+   "status": "PASS",
+   "detail": "manifest clean; 25 relative prov paths; corpus 4ed48006f24e… equal across obs/ev/seeds: True"
+  },
+  {
+   "id": "B13",
+   "status": "PASS",
+   "detail": "21 filings equal to G2-C (scoped rows, documented exclusions); ESEF=6 IPP=15; events=6 mappings=449; IBE variants ['cnmv:ifa:20515#es', 'cnmv:ifa:20934#es']"
+  },
+  {
+   "id": "B14",
+   "status": "PASS",
+   "detail": "wheel init from external evidence+taxonomy: 6 commands, two evidence-dir inits identical: True"
+  },
+  {
+   "id": "B15",
+   "status": "PASS",
+   "detail": "identical repeated --json; 7 usage-error combos -> exit 2; codes observed: {'ok': 0, 'usage': 2}"
+  },
+  {
+   "id": "B16a",
+   "status": "PASS",
+   "detail": "87 passed, 14 subtests passed in 6.09s"
+  },
+  {
+   "id": "B16b",
+   "status": "PASS",
+   "detail": "ruff clean"
+  },
+  {
+   "id": "B16c",
+   "status": "PASS",
+   "detail": "Success: no issues found in 64 source files"
+  },
+  {
+   "id": "B17a",
+   "status": "PASS",
+   "detail": "G2-A-durable-canonical-core verifier rc=0"
+  },
+  {
+   "id": "B17b",
+   "status": "PASS",
+   "detail": "G2-B-frozen-corpus-rebuild verifier rc=0"
+  },
+  {
+   "id": "B17c",
+   "status": "PASS",
+   "detail": "G2-C-columnar-dataset-v1 verifier rc=0"
+  },
+  {
+   "id": "B17d",
+   "status": "PASS",
+   "detail": "G2-D-incremental-update-semantics verifier rc=0"
+  },
+  {
+   "id": "B17e",
+   "status": "PASS",
+   "detail": "G2-E-public-readonly-cli verifier rc=0"
+  },
+  {
+   "id": "B17f",
+   "status": "PASS",
+   "detail": "G2-F-controlled-capture-update-cli verifier rc=0"
+  },
+  {
+   "id": "B18",
+   "status": "PASS",
+   "detail": "docs/CLI.md + docs/STATUS.md + docs/G2.md updated"
+  }
+ ],
+ "passed": 25,
+ "total": 25
+}

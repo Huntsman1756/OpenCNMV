@@ -177,3 +177,56 @@ B18 docs updated: docs/CLI.md command tree, docs/G2.md, docs/STATUS.md
 - Pinned taxonomy bundle (the R10-pinned packages, as G2-F) supplied
   as an explicit external `--taxonomy-dir`.
 - Frozen corpus scope only: SAN/BBVA/IBE x the preregistered periods.
+
+## Executed result — PASS 25/25
+
+`g2g_verify_results.json` — every B1–B18 check (incl. B16/B17
+sub-checks) PASS.
+
+Headline evidence (`_out/`, gitignored):
+
+- `init --observation` on an empty dir -> full `dataset validate`
+  clean; `init --evidence-dir --taxonomy-dir` (full liveA replay, run
+  `cap-202609172146190000` pinned) produces **byte-identical** output.
+- PYTHONHASHSEED 0 vs 777 subprocess bootstraps byte-identical to the
+  in-process run; corpus logical sha256
+  `4ed48006f24eee9e86bfaecf5ef15aebcae728d84341741e54bdd980fcdbf1af`
+  equal across all four products.
+- Bounded live smoke `init --live` (IBE/IPP) ->
+  `cap-202609180710180000`, 11 artifacts preserved; offline replay of
+  that evidence dir byte-identical.
+- `update` with the same observation -> `NO_CHANGE`, zero bytes
+  changed (bootstrap is the update fixpoint).
+- `filing.extras_json` null on all rows; dataset validates and serves
+  all 27 G2-E read commands under socket deny-all, bytes unchanged.
+- Injected mid-bootstrap failures (`during_table:facts`,
+  `before_publish`) leave no dataset and no staging.
+- Semantics: 21 filings equal to the frozen G2-C rows under the same
+  documented exclusions as G2-F F7 (retrieval metadata, curated
+  `extras_json`, fixture-era `record_json` filing label); ESEF=6,
+  IPP=15, IBE `#es`-only variants, 6 version events, 449 extension
+  mappings. The bootstrapped corpus hash differs from G2-C's
+  `b2612…` honestly: G2-C additionally carries the TEF lifecycle
+  fixture filing (outside the frozen issuer universe) and curated
+  extras.
+- Wheel `opencnmv-0.1.0` installed in a clean venv: `init
+  --evidence-dir --taxonomy-dir` from an empty cwd with fully
+  external inputs -> valid dataset; two inits identical; non-empty
+  dest refused.
+
+Fixes surfaced by the gate (production code):
+
+- `delta.plan` now normalizes the observation document's key order —
+  a doc assembled in memory vs the same doc round-tripped through a
+  sorted-keys writer must plan byte-identically (`record_json` cells
+  preserve dict order verbatim).
+- `init` rejects `--min-delay` with `--observation` and `--run` with
+  `--live` (the just-captured run is used); `--min-delay`/`--issuer`/
+  `--family` are `--live`-only.
+- Gate runner pre-imports Arelle before socket denial —
+  `arelle.SocketUtils` subclasses `socket.socket` at module level.
+
+Known limitation (unchanged from G2-F): `extras_json` remains a
+curated overlay — bootstrap emits `None` by design (B6); the TEF
+lifecycle fixture filing exists only in the G2-C dataset, never in
+evidence-derived corpora.

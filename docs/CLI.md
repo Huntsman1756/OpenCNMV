@@ -72,6 +72,18 @@ opencnmv compare <FILING_REF> [--class C] [--limit N]
 opencnmv events [FILING_REF]
 opencnmv mappings <FILING_REF> [--verdict V]
 opencnmv provenance (--fact ID | --artifact ID | --state ID)
+
+# write / capture commands (G2-F, G2-G)
+opencnmv init --dataset PATH (--observation FILE |
+              --evidence-dir DIR --taxonomy-dir TAX [--run CAPTURE_ID] |
+              --live --evidence-dir DIR --taxonomy-dir TAX
+              [--issuer NIF]... [--family F]... [--min-delay S])
+opencnmv observe --evidence-dir DIR [--dataset PATH]
+                 [--taxonomy-dir TAX] [--issuer NIF]... [--family F]...
+                 [--min-delay S] [--out FILE]
+opencnmv update --dataset PATH (--observation FILE |
+                --evidence-dir DIR [--taxonomy-dir TAX] [--run ID])
+                [--dry-run] [--fail-on-unresolved]
 ```
 
 `REF` accepts the canonical `filing_id` (`cnmv:ifa:<nreg>` /
@@ -206,6 +218,56 @@ ambiguous mappings.
 Evidence paths are repo-relative pinned locators; the CLI never emits
 machine-specific absolute paths.
 
+## Write and capture commands
+
+The read-only corpus above never mutates anything. Three verbs cover
+the capture/update lifecycle; all writes are explicit (`--dataset` is
+required and never falls back to resolution) and publish atomically.
+
+### `init` — bootstrap a dataset from an empty directory
+
+Creates a `COLUMNAR_DATASET_V1` with no base dataset: the observation
+is planned against empty tables (an all-rows delta) and published by a
+single rename after the full integrity gate passes.
+
+```text
+opencnmv init --dataset PATH --observation FILE
+opencnmv init --dataset PATH --evidence-dir DIR --taxonomy-dir TAX
+              [--run CAPTURE_ID]
+opencnmv init --dataset PATH --live --evidence-dir DIR
+              --taxonomy-dir TAX [--issuer NIF]... [--family F]...
+              [--min-delay S]
+```
+
+* `--observation` is fully offline — the document already carries the
+  canonical projection, so no taxonomy is needed.
+* `--evidence-dir` without `--live` replays preserved capture evidence
+  offline; `--taxonomy-dir` is always required on the paths that parse
+  raw XBRL — an explicit external input, never resolved from the
+  checkout. `--run` pins a capture run (default: latest).
+* `--live` is a composition, not a third implementation: it runs the
+  internal `observe` into `--evidence-dir` (bytes stay preserved for
+  replay) and then executes the identical offline bootstrap. Only the
+  capture phase touches the network, with the same declared
+  User-Agent, sequential requests and minimum delay as `observe`.
+* V1 offers **no overwrite**: a non-empty destination is a usage error
+  (`2`). A mid-bootstrap failure leaves no apparently-valid dataset —
+  staging is removed and the destination stays absent/empty.
+
+### `observe` — controlled capture to a replayable observation
+
+Sequential, polite capture of the frozen CNMV corpus into a write-once
+evidence store (`artifacts/` + `runs/<capture_id>/manifest.json`),
+then assembly of a `CANONICAL_OBSERVATION_V1` document (`--out`).
+
+### `update` — apply an observation to an existing dataset
+
+Classifies the observation against the base dataset into a
+`CANONICAL_DELTA_V1` (`NO_CHANGE` / transitions / conflicts), verifies
+it, and publishes atomically. `--dry-run` previews without writing;
+`--fail-on-unresolved` exits non-zero on unresolved transitions;
+`--evidence-dir` assembles the observation offline first.
+
 ## Exit codes (frozen)
 
 ```text
@@ -216,25 +278,32 @@ machine-specific absolute paths.
 4  canonical object not found
 5  dataset integrity failure
 6  unsupported operation / optional dependency unavailable
+7  capture/source failure (observe, init --live, update --evidence-dir)
 ```
 
 Unhandled tracebacks are never user-facing; `--debug` re-raises.
 
 ## Guarantees
 
-* **Read-only.** No command writes to the dataset, its manifest, or any
-  source evidence. Gate proof: sha256 of every authoritative dataset
-  file is identical before and after the full command corpus.
-* **No network.** No command performs network I/O; the whole acceptance
-  corpus runs under socket deny-all. The CLI never imports Arelle.
+* **Read-only query surface.** `dataset`/`filings`/`filing`/`history`/
+  `facts`/`fact`/`compare`/`events`/`mappings`/`provenance` write
+  nothing — gate proof: sha256 of every authoritative dataset file is
+  identical before and after the full command corpus.
+* **Explicit writes only.** `init`/`update` publish atomically and
+  require an explicit `--dataset`; `observe`/`init --live` write only
+  under `--evidence-dir`.
+* **No network in read or offline paths.** The read-only corpus and
+  the offline `init`/`update` paths run under socket deny-all; only
+  `observe` and the capture phase of `init --live` reach CNMV.
 * **Deterministic.** Stable row ordering, canonical JSON, no timestamps
   or machine-local paths in output.
-* **Fail-closed.** A corrupted dataset is never presented as valid.
+* **Fail-closed.** A corrupted dataset is never presented as valid; a
+  failed bootstrap leaves no apparently-valid dataset behind.
 
 ## Limitations (CLI V1)
 
-* Read-only by design: no `fetch`/`update`/`sync`/`apply-delta` — those
-  are separate later gates over `opencnmv.update`.
+* `init` offers no overwrite/replace: bootstrapping onto an existing
+  dataset is refused; updates are `update`'s job.
 * `compare` pairs the two first submission variants (the corpus's dual
   es/en filings); a corpus with >2 variants per filing is out of scope
   for V1.

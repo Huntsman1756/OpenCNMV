@@ -500,6 +500,41 @@ def build_parser() -> argparse.ArgumentParser:
                     help="exit non-zero without publishing when the "
                          "observation yields UNRESOLVED transitions")
 
+    ini = sub.add_parser(
+        "init", parents=[common],
+        help="bootstrap an empty destination into a "
+             "COLUMNAR_DATASET_V1 (no base dataset; refuses non-empty "
+             "targets — no overwrite in V1)")
+    ini.add_argument("--observation",
+                     help="CANONICAL_OBSERVATION_V1 file (fully "
+                          "offline; cannot be combined with "
+                          "--evidence-dir/--live)")
+    ini.add_argument("--evidence-dir",
+                     help="preserved capture evidence dir — INPUT "
+                          "without --live; with --live it is the "
+                          "output of the internal observe and then "
+                          "the bootstrap input")
+    ini.add_argument("--taxonomy-dir",
+                     help="pinned taxonomy package dir — required "
+                          "with --evidence-dir/--live (external input, "
+                          "never resolved from a checkout)")
+    ini.add_argument("--live", action="store_true",
+                     help="composition: run observe into "
+                          "--evidence-dir, then the identical offline "
+                          "bootstrap (the only network path)")
+    ini.add_argument("--run", default=None, metavar="CAPTURE_ID",
+                    help="pin a capture run under --evidence-dir "
+                         "(default: latest)")
+    ini.add_argument("--issuer", dest="issuers", action="append",
+                     metavar="NIF", help="--live only: issuer NIF "
+                     "(repeatable)")
+    ini.add_argument("--family", dest="families", action="append",
+                     choices=["ifa", "ipp"],
+                     help="--live only: filing family (repeatable)")
+    ini.add_argument("--min-delay", type=float, default=None,
+                     metavar="S", help="--live only: minimum seconds "
+                     "between requests")
+
     return p
 
 
@@ -648,11 +683,92 @@ def _cmd_update(args) -> int:
     return _emit(args, rep, _r_update)
 
 
+def _r_init(rep: dict) -> str:
+    lines = [f"dataset: {rep['dataset']}",
+             f"observation: {rep['observation']}",
+             f"observation_sha256: {rep['observation_sha256']}",
+             f"delta_id: {rep['delta_id']}",
+             f"corpus_logical_sha256: {rep['corpus_logical_sha256']}",
+             f"status: {rep['status']}"]
+    if rep.get("capture_id"):
+        lines.append(f"capture_id: {rep['capture_id']}")
+    lines.append(f"filings: {rep['filings']}")
+    return "\n".join(lines)
+
+
+def _cmd_init(args) -> int:
+    from opencnmv.capture import observe as cobserve
+    from opencnmv.capture.contract import MIN_DELAY_S
+    from opencnmv.update import bootstrap as uboot
+    from opencnmv.update import observe as uobs
+
+    if not getattr(args, "dataset", None):
+        raise UsageError(
+            "init requires an explicit --dataset destination "
+            "(no fallback resolution for a write operation)")
+    ds_path = Path(args.dataset)
+    rep_extra: dict = {}
+
+    if args.observation:
+        if (args.live or args.evidence_dir or args.taxonomy_dir
+                or args.issuers or args.families or args.run
+                or args.min_delay is not None):
+            raise UsageError(
+                "--observation cannot be combined with --live, "
+                "--evidence-dir, --taxonomy-dir, --issuer, --family, "
+                "--run or --min-delay")
+        obs = uobs.load(args.observation)
+        obs_label = str(args.observation)
+        rep_extra = {}
+    else:
+        if not args.evidence_dir:
+            raise UsageError(
+                "init requires --observation or --evidence-dir")
+        if not args.taxonomy_dir:
+            raise UsageError(
+                "--evidence-dir/--live require --taxonomy-dir "
+                "(external pinned taxonomy bundle)")
+        ev_dir = Path(args.evidence_dir)
+        tax_dir = Path(args.taxonomy_dir)
+        rep_extra = {}
+        if args.live:
+            if args.run:
+                raise UsageError(
+                    "--run selects a preserved capture run; "
+                    "with --live the just-captured run is used")
+            res = cobserve.observe(
+                evidence_dir=ev_dir, out=None,
+                issuer_nifs=args.issuers, families=args.families,
+                min_delay=(args.min_delay if args.min_delay is not None
+                           else MIN_DELAY_S),
+                tax_dir=tax_dir)
+            rep_extra["capture_id"] = res["capture_id"]
+        elif args.issuers or args.families or args.min_delay is not None:
+            raise UsageError(
+                "--issuer/--family/--min-delay only apply with --live")
+        obs = cobserve.assemble_from_evidence(
+            ev_dir, dataset_dir=None, tax_dir=tax_dir,
+            run=rep_extra.get("capture_id", args.run))
+        obs_label = f"{ev_dir} (evidence)"
+
+    res = uboot.init_dataset(ds_path, obs,
+                             generator={"tool": "opencnmv init"})
+    rep = {"dataset": str(ds_path), "observation": obs_label,
+           "observation_sha256": obs["observation_sha256"],
+           "delta_id": res["delta_id"],
+           "corpus_logical_sha256": res["corpus_logical_sha256"],
+           "filings": res["transitions"], "status": res["status"],
+           **rep_extra}
+    return _emit(args, rep, _r_init)
+
+
 def _run(args) -> int:
     if args.command == "observe":
         return _cmd_observe(args)
     if args.command == "update":
         return _cmd_update(args)
+    if args.command == "init":
+        return _cmd_init(args)
     qcompare, qds, qevents, qfacts, qfilings, qhistory, qmappings, \
         qprov = _query()
     if args.command == "dataset":

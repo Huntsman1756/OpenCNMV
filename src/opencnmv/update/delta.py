@@ -22,6 +22,7 @@ from ``base_corpus_logical_sha256`` must fail (stale-base control).
 from __future__ import annotations
 
 import hashlib
+import json
 
 from opencnmv.dataset import manifest as dmanifest
 from opencnmv.dataset import parquetio
@@ -57,6 +58,11 @@ def merged_tables(base: dict[str, list[dict]], delta_ops: dict) \
 def plan(base_tables: dict[str, list[dict]], obs: dict,
          base_corpus_logical_sha256: str) -> dict:
     """Compute the canonical delta for (S0, O1). Pure; no I/O."""
+    # normalize dict key order: a document assembled in memory (insertion
+    # order) and the same document round-tripped through a sorted-keys
+    # writer must plan identically — record_json cells preserve their
+    # dict's key order verbatim.
+    obs = json.loads(json.dumps(obs, ensure_ascii=False, sort_keys=True))
     observe_mod.verify_self_consistency(obs)
     res = classify_mod.classify(base_tables, obs)
     ops = {"added": {t: _sort_rows(t, res["added"][t])

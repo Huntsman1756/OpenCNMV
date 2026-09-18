@@ -1,8 +1,8 @@
 {
  "gate": "G2-C-columnar-dataset-v1",
  "status": "PASS",
- "executed_at": "2026-09-17T22:04:25.059349+00:00",
- "code_commit": "abc4f12",
+ "executed_at": "2026-09-18T07:24:36.723183+00:00",
+ "code_commit": "ace0825",
  "inputs": "g2c_inputs.json (evidence pins) + g2b_inputs.json (25 artifacts + 6 taxonomy packages + 50 oracles, all sha256-pinned and verified byte-exact)",
  "outputs": {
   "verify_results": "g2c_verify_results.json",

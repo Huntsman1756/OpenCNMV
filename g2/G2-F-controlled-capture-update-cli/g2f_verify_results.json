@@ -110,7 +110,7 @@
   {
    "id": "F22a",
    "status": "PASS",
-   "detail": "81 passed, 14 subtests passed in 5.38s"
+   "detail": "87 passed, 14 subtests passed in 6.23s"
   },
   {
    "id": "F22b",
@@ -120,7 +120,7 @@
   {
    "id": "F22c",
    "status": "PASS",
-   "detail": "Success: no issues found in 63 source files"
+   "detail": "Success: no issues found in 64 source files"
   },
   {
    "id": "F22d",

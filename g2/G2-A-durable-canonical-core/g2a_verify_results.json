@@ -19,7 +19,7 @@
   {
    "check": "A3_no_gate_code_imports",
    "status": "PASS",
-   "detail": "57 modules clean"
+   "detail": "58 modules clean"
   },
   {
    "check": "A4_guards_and_pinned_inputs",

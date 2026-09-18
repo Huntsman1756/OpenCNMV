@@ -10,12 +10,17 @@ Update at the end of every session.
 
 ## Current phase
 
-**G2** (durable core over the frozen model) — G2-A through G2-F **PASS**.
+**G2** (durable core over the frozen model) — G2-A through G2-G **PASS**.
 G0-R closed `GO` at tag `g0-r-go`; G1 closed at `g1-model-frozen`. The
 read-only public CLI shipped in G2-E; the controlled live
-capture/update route shipped in G2-F (`opencnmv observe`/`update`).
-Next planned gate: **G2-G — dataset bootstrap** (`opencnmv init`;
-preregistered at `g2/G2-G-dataset-bootstrap/`, see `docs/G2.md`).
+capture/update route shipped in G2-F (`opencnmv observe`/`update`);
+G2-G closed the bootstrap gap: `opencnmv init` creates a valid
+`COLUMNAR_DATASET_V1` from an empty directory using only a replayable
+observation, preserved evidence + explicit `--taxonomy-dir`, or a
+bounded `--live` composition — no base dataset, no gate imports, no
+curated overlays, atomic publish, `update` fixpoint `NO_CHANGE`.
+Next planned gate: **G3-A — issuer-universe expansion** (see
+`docs/G2.md`).
 
 ## Gate statuses
 

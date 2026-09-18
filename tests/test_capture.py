@@ -482,3 +482,140 @@ class TestCliUpdate(unittest.TestCase):
                     "--issuer", "A-48010615", "--family", "ipp",
                     "--min-delay", "0"])
         self.assertEqual(code, 7)
+
+
+def bootstrap_obs() -> dict:
+    """CANONICAL_OBSERVATION_V1 for an empty base, built from the
+    fixture filings (states empty — parse coverage lives in the gate
+    legs over preserved evidence)."""
+    obs = {
+        "observation_format": "CANONICAL_OBSERVATION_V1",
+        "observation_id": "obs-test-bootstrap",
+        "captured_at": "2026-09-17T00:00:00Z",
+        "filings": [
+            {"filing": _filing_ibe(), "states": [],
+             "extension_mapping_files": [], "extra_artifacts": [],
+             "extras": None},
+            {"filing": _filing_ipp(), "states": [],
+             "extension_mapping_files": [], "extra_artifacts": [],
+             "extras": None}]}
+    obs["observation_sha256"] = uobs.observation_sha256(obs)
+    return obs
+
+
+class TestCliInit(unittest.TestCase):
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.root = Path(self._tmp.name)
+        self.ds = self.root / "ds"
+        self.obs_path = self.root / "obs.json"
+        self.obs_path.write_text(
+            json.dumps(bootstrap_obs(), ensure_ascii=False,
+                       sort_keys=True), encoding="utf-8")
+
+    def tearDown(self):
+        self._tmp.cleanup()
+
+    def _init(self):
+        return run_cli([
+            "init", "--dataset", str(self.ds),
+            "--observation", str(self.obs_path)])
+
+    def test_init_observation_bootstraps_valid_dataset(self):
+        with deny_network():
+            code, out, err = self._init()
+        self.assertEqual(code, 0, err)
+        self.assertIn("INITIALIZED", out)
+        # the staged result is a complete, verifiable dataset — and it
+        # carries exactly the rows a hand-built dataset over the same
+        # filings would (no fabricated overlays)
+        from opencnmv.dataset import manifest as dmanifest
+        man = uapply.load_manifest(self.ds)
+        self.assertEqual(dmanifest.verify_manifest(self.ds, man), [])
+        ref = build_ds(self.root / "ref")
+        got = uapply.load_tables(self.ds)
+        exp = uapply.load_tables(ref)
+        self.assertEqual(got, exp)
+        filing_rows = {r["filing_id"]: r for r in got["filing"]}
+        self.assertTrue(all(r["extras_json"] is None
+                            for r in filing_rows.values()))
+        # bootstrap is the update fixpoint: same observation -> NO_CHANGE
+        with deny_network():
+            code, out, err = run_cli([
+                "update", "--dataset", str(self.ds),
+                "--observation", str(self.obs_path)])
+        self.assertEqual(code, 0, err)
+        self.assertIn("NO_CHANGE", out)
+
+    def test_init_is_byte_deterministic(self):
+        ds2 = self.root / "ds2"
+        with deny_network():
+            code1, _, err1 = self._init()
+            code2, _, err2 = run_cli([
+                "init", "--dataset", str(ds2),
+                "--observation", str(self.obs_path)])
+        self.assertEqual((code1, code2), (0, 0), err1 + err2)
+
+        def h(d):
+            return {p.name: sha256_bytes(p.read_bytes())
+                    for p in sorted(d.rglob("*")) if p.is_file()}
+        self.assertEqual(h(self.ds), h(ds2))
+
+    def test_init_requires_explicit_dataset(self):
+        code, _, err = run_cli([
+            "init", "--observation", str(self.obs_path)])
+        self.assertEqual(code, 2)
+        self.assertIn("--dataset", err)
+
+    def test_init_refuses_nonempty_destination(self):
+        with deny_network():
+            code, _, err = self._init()
+        self.assertEqual(code, 0, err)
+        code, _, err = self._init()
+        self.assertEqual(code, 2)
+        self.assertIn("not empty", err)
+        self.assertIn("no overwrite", err)
+
+    def test_init_source_combination_errors(self):
+        for extra in (["--live"], ["--evidence-dir", str(self.root)],
+                      ["--taxonomy-dir", str(self.root)],
+                      ["--run", "cap-x"], ["--issuer", "A-48010615"]):
+            code, _, err = run_cli([
+                "init", "--dataset", str(self.root / "x"),
+                "--observation", str(self.obs_path), *extra])
+            self.assertEqual(code, 2, f"{extra}: {err}")
+        # --evidence-dir / --live require --taxonomy-dir
+        code, _, err = run_cli([
+            "init", "--dataset", str(self.root / "x"),
+            "--evidence-dir", str(self.root)])
+        self.assertEqual(code, 2)
+        self.assertIn("--taxonomy-dir", err)
+        code, _, err = run_cli([
+            "init", "--dataset", str(self.root / "x"),
+            "--live", "--evidence-dir", str(self.root)])
+        self.assertEqual(code, 2)
+        self.assertIn("--taxonomy-dir", err)
+        # --live requires --evidence-dir
+        code, _, err = run_cli([
+            "init", "--dataset", str(self.root / "x"), "--live"])
+        self.assertEqual(code, 2)
+        # capture-only flags need --live
+        code, _, err = run_cli([
+            "init", "--dataset", str(self.root / "x"),
+            "--evidence-dir", str(self.root),
+            "--taxonomy-dir", str(self.root),
+            "--issuer", "A-48010615"])
+        self.assertEqual(code, 2)
+        self.assertIn("--live", err)
+
+    def test_init_failure_leaves_no_dataset(self):
+        from opencnmv.update import bootstrap as uboot
+        obs = bootstrap_obs()
+        with self.assertRaises(RuntimeError):
+            uboot.init_dataset(self.ds, obs,
+                               fail_hook="during_table:filing")
+        self.assertFalse((self.ds / "dataset_manifest.json").exists())
+        self.assertFalse(list(self.root.glob("*.staging-*")))
+        # a later good init still works (staging is not authoritative)
+        res = uboot.init_dataset(self.ds, obs)
+        self.assertEqual(res["status"], "INITIALIZED")
