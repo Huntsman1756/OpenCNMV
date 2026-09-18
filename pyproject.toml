@@ -23,7 +23,7 @@ opencnmv = "opencnmv.cli.main:main"
 
 [project.optional-dependencies]
 xbrl = ["arelle-release==2.44.0"]
-capture = ["pypdf==6.14.2"]
+capture = ["pypdf==6.16.1"]
 dataset = [
     "duckdb==1.5.5",
     "pyarrow==25.0.1",
