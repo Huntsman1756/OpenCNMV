@@ -116,19 +116,23 @@ def main() -> int:
         # recovery is logged as its own step.
         latest = C.jload(C.EV_A / "latest.json")
         cap_a = latest["capture_id"]
-        with deny_network():
-            obs_rec = cobs.assemble_from_evidence(
-                C.EV_A, tax_dir=C.TAX_DIR, run=cap_a)
-        C.jwrite(C.OBS_A, obs_rec)
-        C.record("legA_assemble_recovery", capture_id=cap_a, exit=0,
-                 obs_sha=obs_rec.get("observation_sha256"))
+        if not C.OBS_A.is_file():
+            with deny_network():
+                obs_rec = cobs.assemble_from_evidence(
+                    C.EV_A, tax_dir=C.TAX_DIR, run=cap_a)
+            C.jwrite(C.OBS_A, obs_rec)
+            C.record("legA_assemble_recovery", capture_id=cap_a,
+                     exit=0,
+                     obs_sha=obs_rec.get("observation_sha256"))
 
     # ------------------------------------ convergence oracle: offline
     # replay of the preserved leg-A run (no network at all)
     with deny_network():
-        obs_replay = cobs.assemble_from_evidence(
-            C.EV_A, tax_dir=C.TAX_DIR, run=cap_a)
-        C.jwrite(C.OBS_A_REPLAY, obs_replay)
+        if not C.OBS_A_REPLAY.is_file():
+            obs_replay = cobs.assemble_from_evidence(
+                C.EV_A, tax_dir=C.TAX_DIR, run=cap_a)
+            C.jwrite(C.OBS_A_REPLAY, obs_replay)
+        obs_replay = C.jload(C.OBS_A_REPLAY)
         obs_a = C.jload(C.OBS_A)
         C.record("legA_replay",
                  obs_sha=obs_a.get("observation_sha256"),
@@ -308,7 +312,7 @@ def main() -> int:
               for k, v in cmp_report.items()})
     C.record("compare_dual",
              filings=len(dual),
-             exits=sorted({v["exit"] for v in cmp_report.items()}))
+             exits=sorted({v["exit"] for v in cmp_report.values()}))
 
     # -------------------- corpus-level accounting records
     fams = {"ESEF_IFA": 0, "IPP": 0}
@@ -321,15 +325,14 @@ def main() -> int:
             if st.get("unresolved"):
                 unresolved_states += 1
     n_ev = q("select count(*) from "
-             f"read_parquet('{ds}/version_event.parquet')").fetchone()[0]
+             f"read_parquet('{ds}/version_event.parquet')")[0][0]
     n_map = q("select count(*) from "
-              f"read_parquet('{ds}/extension_mapping.parquet')"
-              ).fetchone()[0]
+              f"read_parquet('{ds}/extension_mapping.parquet')")[0][0]
     n_variants = q("select count(*) from "
                    f"read_parquet('{ds}/submission_variant.parquet')"
-                   ).fetchone()[0]
+                   )[0][0]
     n_facts = q("select count(*) from "
-                f"read_parquet('{ds}/facts.parquet')").fetchone()[0]
+                f"read_parquet('{ds}/facts.parquet')")[0][0]
     C.record("corpus_stats",
              filings=len(obs_a["filings"]), esef=fams["ESEF_IFA"],
              ipp=fams["IPP"], variants=n_variants, facts=n_facts,

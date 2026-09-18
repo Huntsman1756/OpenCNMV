@@ -1,0 +1,148 @@
+{
+ "gate": "G3-A",
+ "verdict": "FAIL",
+ "checks": [
+  {
+   "id": "G3A-1",
+   "status": "FAIL",
+   "detail": "1 sample literals in src/, 0 issuer== branches"
+  },
+  {
+   "id": "G3A-2",
+   "status": "PASS",
+   "detail": "manifest scope carries 40 registry issuers; registry tests rc=0"
+  },
+  {
+   "id": "G3A-3",
+   "status": "PASS",
+   "detail": "freeze 2026-09-18T09:33:43+00:00 < capture 2026-09-18T12:09:30+00:00"
+  },
+  {
+   "id": "G3A-4",
+   "status": "PASS",
+   "detail": "strata {'credit-institutions': 6, 'historical-depth': 10, 'insurance-entities': 2, 'large-industrials': 7, 'real-estate-socimi': 6, 'residual-sectors': 4, 'securitisation-funds': 2, 'small-mid-caps': 8, 'utilities': 5}; issuers=40"
+  },
+  {
+   "id": "G3A-5",
+   "status": "FAIL",
+   "detail": "legA exit 1; 596 fetches; 98 esef views; 106 ipp slots"
+  },
+  {
+   "id": "G3A-6",
+   "status": "PASS",
+   "detail": "obs errors 0; dataset validate exit 0"
+  },
+  {
+   "id": "G3A-7",
+   "status": "FAIL",
+   "detail": "view resolutions {('SUBMITTED_VARIANT', 'es'): 141, ('FALLBACK_TO_ES', 'en'): 42, ('SUBMITTED_VARIANT', 'en'): 3}; dual-variant filings 3; esef issuers 1; fallbacks {('FALLBACK_TO_ES', 'en'): 42}"
+  },
+  {
+   "id": "G3A-8",
+   "status": "FAIL",
+   "detail": "63 events / 18 affects (all scope_basis set: True); in-scope substitution issuers 0/4 with events"
+  },
+  {
+   "id": "G3A-9",
+   "status": "PASS",
+   "detail": "mapping verdicts {'AMBIGUOUS': 5, 'PROVEN_EQUIVALENT': 79, 'UNMATCHED': 19}; manual rows 0; distinct issuer-extension namespaces 45"
+  },
+  {
+   "id": "G3A-10",
+   "status": "PASS",
+   "detail": "96 IPP filings; 96 parsed states; 3 distinct IPP namespaces (model families)"
+  },
+  {
+   "id": "G3A-11",
+   "status": "PASS",
+   "detail": "init --evidence-dir on empty dir -> INITIALIZED + validate"
+  },
+  {
+   "id": "G3A-12",
+   "status": "PASS",
+   "detail": "replay equal True; full update NO_CHANGE; legB (cap-202609181411560000, 10 issuers) -> NO_CHANGE"
+  },
+  {
+   "id": "G3A-13",
+   "status": "FAIL",
+   "detail": "3/3 dual filings COMPARED; divergent facts 5"
+  },
+  {
+   "id": "G3A-14",
+   "status": "PASS",
+   "detail": "seed0 vs seed777 True; vs in-process True"
+  },
+  {
+   "id": "G3A-15",
+   "status": "PASS",
+   "detail": "24/24 commands correct exit; bytes unchanged"
+  },
+  {
+   "id": "G3A-16",
+   "status": "FAIL",
+   "detail": "1 unexplained scope omissions ['URBAS esef 31/12/2022']"
+  },
+  {
+   "id": "G3A-17",
+   "status": "FAIL",
+   "detail": "ipp NOT_FOUND 10; warnings 159; unresolved states 0; post-capture src commits: f96983e961ffdefb820d88436adfb3ecf8e3c4fe 2026-09-18T15:04:02+02:00"
+  },
+  {
+   "id": "G3A-18a",
+   "status": "PASS",
+   "detail": "G2-A-durable-canonical-core verifier rc=0"
+  },
+  {
+   "id": "G3A-18b",
+   "status": "PASS",
+   "detail": "G2-B-frozen-corpus-rebuild verifier rc=0"
+  },
+  {
+   "id": "G3A-18c",
+   "status": "PASS",
+   "detail": "G2-C-columnar-dataset-v1 verifier rc=0"
+  },
+  {
+   "id": "G3A-18d",
+   "status": "PASS",
+   "detail": "G2-D-incremental-update-semantics verifier rc=0"
+  },
+  {
+   "id": "G3A-18e",
+   "status": "PASS",
+   "detail": "G2-E-public-readonly-cli verifier rc=0"
+  },
+  {
+   "id": "G3A-18f",
+   "status": "PASS",
+   "detail": "G2-F-controlled-capture-update-cli verifier rc=0"
+  },
+  {
+   "id": "G3A-18g",
+   "status": "PASS",
+   "detail": "G2-G-dataset-bootstrap verifier rc=0"
+  },
+  {
+   "id": "G3A-19",
+   "status": "PASS",
+   "detail": "0 gate imports in src/opencnmv"
+  },
+  {
+   "id": "G3A-20a",
+   "status": "PASS",
+   "detail": "97 passed, 14 subtests passed in 5.82s"
+  },
+  {
+   "id": "G3A-20b",
+   "status": "PASS",
+   "detail": "ruff clean"
+  },
+  {
+   "id": "G3A-20c",
+   "status": "PASS",
+   "detail": "Success: no issues found in 64 source files"
+  }
+ ],
+ "passed": 21,
+ "total": 28
+}
