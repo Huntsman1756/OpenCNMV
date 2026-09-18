@@ -140,9 +140,19 @@ def discover_esef(sess: PoliteSession, store: EvidenceStore,
                 continue
             toks = v["registry_row"]["tokens"]
             if not toks:
-                raise CaptureError(
+                # In-scope registry row published without any document
+                # links (e.g. securitisation funds: audit PDF and
+                # infadicion only, empty ZIP/XBRL cell). Source state,
+                # not a pipeline failure — classify, never abort.
+                v["status"] = "NO_PACKAGE_IN_ROW"
+                v["resolved_submission_language"] = None
+                v["resolution_mode"] = "UNRESOLVED_NO_PACKAGE"
+                manifest["warnings"].append(
                     f"{key}/{registro}/{lang}: registry row has no "
-                    f"verdocumento tokens")
+                    f"verdocumento tokens — no package published; "
+                    f"view classified UNRESOLVED_NO_PACKAGE")
+                manifest["esef_views"].append(v)
+                continue
             if len(toks) != len(ESEF_TOKEN_ROLES):
                 manifest["warnings"].append(
                     f"{key}/{registro}/{lang}: {len(toks)} verdocumento "

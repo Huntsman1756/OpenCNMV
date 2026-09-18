@@ -393,6 +393,25 @@ class TestAssemble(unittest.TestCase):
             u["reason"] == "NO_USABLE_ANCHOR_VIEW"
             and "PACKAGE_NOT_ZIP" in u["detail"] for u in unr), unr)
 
+    def test_tokenless_registry_row_is_classified(self):
+        # registry row published with no document links (e.g. a fund's
+        # audit-PDF-only filing): view carries NO_PACKAGE_IN_ROW and no
+        # package -> filing unresolved, observation continues
+        m = json.loads(json.dumps(self.manifest))
+        es = next(v for v in m["esef_views"]
+                  if v["requested_ui_language"] == "es")
+        es["status"] = "NO_PACKAGE_IN_ROW"
+        es["resolution_mode"] = "UNRESOLVED_NO_PACKAGE"
+        es["resolved_submission_language"] = None
+        es.pop("package", None)
+        obs = casm.assemble_observation(
+            m, tables=self.tables,
+            evidence_root=Path(self._tmp.name))
+        unr = obs.get("unresolved", [])
+        self.assertTrue(any(
+            u["reason"] == "NO_USABLE_ANCHOR_VIEW"
+            and "NO_PACKAGE_IN_ROW" in u["detail"] for u in unr), unr)
+
     def test_unlisted_ipp_skipped_not_removed(self):
         m = json.loads(json.dumps(self.manifest))
         m["ipp_filings"] = []
