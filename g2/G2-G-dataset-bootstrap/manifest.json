@@ -1,0 +1,40 @@
+{
+ "gate": "G2-G-dataset-bootstrap",
+ "status": "PASS",
+ "executed_at": "2026-09-18T07:45:00+00:00",
+ "code_commit": "0531991",
+ "inputs": {
+  "corpus": "frozen SAN/BBVA/IBE; ESEF FY2024+FY2025; IPP H1-2024..H1-2026 (21 filings)",
+  "observation": "g2/G2-F obs_bootstrap.json (CANONICAL_OBSERVATION_V1, obs sha256 f19598ed...36c957f) — replayable product of the public observe/assemble route",
+  "evidence": "g2/G2-F _out/evidence/liveA store, run cap-202609172146190000 pinned (86 preserved artifacts)",
+  "taxonomy": "g0-r/R10-taxonomy-pinning/evidence (pinned) — explicit --taxonomy-dir on every parse path",
+  "live_smoke": "init --live bounded to issuer IBE / family ipp"
+ },
+ "outputs": {
+  "g2g_verify_results.json": "25/25 checks PASS (B1-B18 matrix incl. B16 unit/lint/type and B17 G2-A..F regressions)",
+  "_out/": "transient run artifacts (gitignored): ds_obs/ds_ev/ds_seed0/ds_seed777/ds_live datasets, liveInit evidence store, wheel venv, results.jsonl, semantics_compare.json"
+ },
+ "sha256": {
+  "observation_sha256": "f19598ed3c866259ce266a675d9434263509a1961527bee04f62db21e36c957f",
+  "bootstrapped_corpus_logical_sha256": "4ed48006f24eee9e86bfaecf5ef15aebcae728d84341741e54bdd980fcdbf1af",
+  "bootstrap_delta_id": "sha256:59affbf22732e9e9a1225d2554777953570114cf13824b1472e0cc38d44bc3f8"
+ },
+ "findings": [
+  "init --evidence-dir --taxonomy-dir produces a dataset byte-identical to init --observation on the corresponding observation document",
+  "bootstraps are byte-identical across repeated runs and PYTHONHASHSEED 0 vs 777; corpus hash equal across all four bootstrap products",
+  "bounded live smoke cap-202609180710180000 (IBE/IPP, 11 artifacts preserved) replays to a byte-identical dataset fully offline",
+  "update with the same observation on the bootstrapped dataset yields NO_CHANGE with zero bytes changed — bootstrap is the update fixpoint",
+  "filing.extras_json is null on every row; the dataset validates and serves all 27 read commands under socket deny-all — no curated overlay required or fabricated",
+  "injected mid-bootstrap failures leave no dataset and no staging directory; non-empty destinations refused at exit 2 with no overwrite option",
+  "semantics: 21 filings equal to frozen G2-C scoped rows under documented exclusions (retrieval metadata, curated extras_json, fixture-era record_json filing label); ESEF=6, IPP=15, IBE #es-only variants, 6 version events, 449 extension mappings",
+  "installed wheel opencnmv-0.1.0 bootstraps from an empty cwd with fully external evidence+taxonomy; two evidence-dir inits byte-identical",
+  "production fix: delta.plan normalizes observation key order so in-memory and sorted-keys-written documents plan byte-identically",
+  "regressions G2-A..F all PASS on final HEAD"
+ ],
+ "limitations": [
+  "bootstrap scope frozen to SAN/BBVA/IBE x the preregistered periods; issuer-universe expansion belongs to G3-A",
+  "the bootstrapped corpus contains exactly the 21 evidence-backed filings — the TEF lifecycle fixture filing in the G2-C dataset is a gate fixture outside the frozen issuer universe, hence the corpus hash differs from b2612… by construction",
+  "filing.extras_json remains a curated overlay; bootstrap emits null by design (B6)",
+  "no overwrite/replace in V1 — init onto an existing dataset is refused; mutation is update's job"
+ ]
+}
