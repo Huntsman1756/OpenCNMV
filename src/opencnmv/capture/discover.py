@@ -79,7 +79,8 @@ def _store_bytes(store: EvidenceStore, body: bytes,
 
 def discover_esef(sess: PoliteSession, store: EvidenceStore,
                   nif: str, issuer: dict, desde: str, hasta: str,
-                  manifest: dict) -> None:
+                  manifest: dict,
+                  esef_periods=ESEF_PERIODS) -> None:
     """Dual-language IFA views for one issuer; appends esef_views and
     infadicion_walks entries to ``manifest``.
 
@@ -106,12 +107,12 @@ def discover_esef(sess: PoliteSession, store: EvidenceStore,
                     f"{key}/{lang}: registry row without period cell")
                 continue
             registro, period = cells[0], cells[1]
-            if period not in ESEF_PERIODS:
+            if period not in esef_periods:
                 # out-of-scope row: recorded in the inventory, never
-                # silently captured (frozen corpus).
+                # silently captured (declared scope).
                 manifest["warnings"].append(
                     f"{key}/{lang}: registro {registro} period "
-                    f"{period!r} outside frozen corpus — not captured")
+                    f"{period!r} outside declared scope — not captured")
                 continue
             if (registro, lang) in views:
                 manifest["warnings"].append(
@@ -198,8 +199,9 @@ def discover_esef(sess: PoliteSession, store: EvidenceStore,
 
 
 def discover_ipp(sess: PoliteSession, store: EvidenceStore,
-                 nif: str, issuer: dict, manifest: dict) -> None:
-    """Frozen IPP slots for one issuer; appends ipp_filings entries."""
+                 nif: str, issuer: dict, manifest: dict,
+                 ipp_slots=IPP_SLOTS) -> None:
+    """Declared IPP slots for one issuer; appends ipp_filings entries."""
     key = issuer["key"]
     r = sess.get(LISTAIFI.format(nif=nif), note=f"listaifi-{key}")
     page = _store_bytes(store, r.content,
@@ -219,7 +221,7 @@ def discover_ipp(sess: PoliteSession, store: EvidenceStore,
         found[(sem, year)] = {"nreg": row["nreg"],
                               "published": row["published"]}
 
-    for sem, year in IPP_SLOTS:
+    for sem, year in ipp_slots:
         slot = ipp_slot_label(sem, year)
         rec = {"issuer_key": key, "nif": nif, "slot": slot,
                "semester": sem, "year": year,
@@ -258,27 +260,55 @@ def discover_ipp(sess: PoliteSession, store: EvidenceStore,
 
 def run_discovery(sess: PoliteSession, store: EvidenceStore,
                   nifs: list[str], families: set[str],
-                  desde: str, hasta: str) -> dict:
-    """Full frozen-scope discovery; returns the capture manifest."""
+                  desde: str, hasta: str,
+                  registry: dict | None = None) -> dict:
+    """Full declared-scope discovery; returns the capture manifest.
+
+    ``registry`` maps nif -> issuer entry (key/denomination/lei, optional
+    per-issuer ``scope``); it defaults to the frozen G2 registry.
+    """
     from opencnmv.capture.contract import ISSUERS
 
     from opencnmv.capture.fetch import new_manifest, utcnow
 
-    scope = {"issuers": [{"nif": n, "key": ISSUERS[n]["key"]}
+    reg = ISSUERS if registry is None else registry
+
+    def _scope_of(issuer: dict) -> dict:
+        s = issuer.get("scope") or {}
+        return {"esef_periods": list(
+                    s.get("esef_periods") or ESEF_PERIODS),
+                "ipp_slots": [tuple(sl) for sl in
+                              (s.get("ipp_slots") or IPP_SLOTS)]}
+
+    issuer_scopes = {n: _scope_of(reg[n]) for n in nifs}
+    scope = {"issuers": [{"nif": n, "key": reg[n]["key"],
+                          "denomination": reg[n].get("denomination"),
+                          "lei": reg[n].get("lei"),
+                          "esef_periods": issuer_scopes[n]
+                          ["esef_periods"],
+                          "ipp_slots": [ipp_slot_label(s, y) for s, y in
+                                        issuer_scopes[n]["ipp_slots"]]}
                          for n in nifs],
              "families": sorted(families),
              "search_from": desde, "search_to": hasta,
-             "ipp_slots": [ipp_slot_label(s, y) for s, y in IPP_SLOTS],
-             "esef_periods": list(ESEF_PERIODS)}
+             "ipp_slots": sorted({ipp_slot_label(s, y)
+                                  for n in nifs for s, y in
+                                  issuer_scopes[n]["ipp_slots"]}),
+             "esef_periods": sorted({p for n in nifs for p in
+                                     issuer_scopes[n]
+                                     ["esef_periods"]})}
     cid = "cap-" + re.sub(r"[^0-9]", "", utcnow())
     manifest = new_manifest(cid, scope, sess.user_agent, sess.min_delay)
 
     for nif in nifs:
-        issuer = ISSUERS[nif]
+        issuer = reg[nif]
+        isc = issuer_scopes[nif]
         if "ipp" in families:
-            discover_ipp(sess, store, nif, issuer, manifest)
+            discover_ipp(sess, store, nif, issuer, manifest,
+                         ipp_slots=isc["ipp_slots"])
         if "ifa" in families:
             discover_esef(sess, store, nif, issuer, desde, hasta,
-                          manifest)
+                          manifest,
+                          esef_periods=isc["esef_periods"])
     manifest["fetch_log"] = sess.fetch_log
     return manifest

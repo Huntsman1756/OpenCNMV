@@ -453,8 +453,12 @@ def build_parser() -> argparse.ArgumentParser:
                     help="write the assembled observation document here")
     ob.add_argument("--issuer", dest="issuers", action="append",
                     metavar="NIF",
-                    help="issuer NIF (repeatable; default: all frozen "
-                         "corpus issuers)")
+                    help="issuer NIF (repeatable; default: the whole "
+                         "active registry)")
+    ob.add_argument("--issuer-registry", default=None, metavar="FILE",
+                    help="ISSUER_REGISTRY_V1 file declaring the active "
+                         "issuer set (+ per-issuer scope); default: the "
+                         "frozen corpus registry")
     ob.add_argument("--family", dest="families", action="append",
                     choices=["ifa", "ipp"],
                     help="filing family (repeatable; default: both)")
@@ -485,6 +489,9 @@ def build_parser() -> argparse.ArgumentParser:
     up.add_argument("--issuer", dest="issuers", action="append",
                     metavar="NIF", help="capture leg: issuer NIF "
                     "(repeatable)")
+    up.add_argument("--issuer-registry", default=None, metavar="FILE",
+                    help="capture leg: ISSUER_REGISTRY_V1 file "
+                         "declaring the active issuer set")
     up.add_argument("--family", dest="families", action="append",
                     choices=["ifa", "ipp"],
                     help="capture leg: filing family (repeatable)")
@@ -528,6 +535,9 @@ def build_parser() -> argparse.ArgumentParser:
     ini.add_argument("--issuer", dest="issuers", action="append",
                      metavar="NIF", help="--live only: issuer NIF "
                      "(repeatable)")
+    ini.add_argument("--issuer-registry", default=None, metavar="FILE",
+                     help="--live only: ISSUER_REGISTRY_V1 file "
+                          "declaring the active issuer set")
     ini.add_argument("--family", dest="families", action="append",
                      choices=["ifa", "ipp"],
                      help="--live only: filing family (repeatable)")
@@ -612,7 +622,9 @@ def _cmd_observe(args) -> int:
                    else MIN_DELAY_S),
         dataset_dir=(Path(args.dataset) if getattr(args, "dataset", None)
                      else None),
-        tax_dir=Path(args.taxonomy_dir) if args.taxonomy_dir else None)
+        tax_dir=Path(args.taxonomy_dir) if args.taxonomy_dir else None,
+        issuer_registry=(Path(args.issuer_registry)
+                         if args.issuer_registry else None))
     return _emit(args, res, _r_observe)
 
 
@@ -629,6 +641,10 @@ def _cmd_update(args) -> int:
 
     tax_dir = Path(args.taxonomy_dir) if args.taxonomy_dir else None
     if args.observation:
+        if args.issuer_registry:
+            raise UsageError(
+                "--issuer-registry only applies to the capture leg, "
+                "not --observation")
         obs = uobs.load(args.observation)
         obs_label = str(args.observation)
     else:
@@ -642,7 +658,9 @@ def _cmd_update(args) -> int:
                 issuer_nifs=args.issuers, families=args.families,
                 min_delay=(args.min_delay if args.min_delay is not None
                            else None) or 1.0,
-                dataset_dir=ds_path, tax_dir=tax_dir)
+                dataset_dir=ds_path, tax_dir=tax_dir,
+                issuer_registry=(Path(args.issuer_registry)
+                                 if args.issuer_registry else None))
         obs = cobserve.assemble_from_evidence(
             ev_dir, dataset_dir=ds_path, tax_dir=tax_dir, run=args.run)
         obs_label = f"{ev_dir} (evidence)"
@@ -712,11 +730,11 @@ def _cmd_init(args) -> int:
     if args.observation:
         if (args.live or args.evidence_dir or args.taxonomy_dir
                 or args.issuers or args.families or args.run
-                or args.min_delay is not None):
+                or args.min_delay is not None or args.issuer_registry):
             raise UsageError(
                 "--observation cannot be combined with --live, "
                 "--evidence-dir, --taxonomy-dir, --issuer, --family, "
-                "--run or --min-delay")
+                "--run, --min-delay or --issuer-registry")
         obs = uobs.load(args.observation)
         obs_label = str(args.observation)
         rep_extra = {}
@@ -741,11 +759,15 @@ def _cmd_init(args) -> int:
                 issuer_nifs=args.issuers, families=args.families,
                 min_delay=(args.min_delay if args.min_delay is not None
                            else MIN_DELAY_S),
-                tax_dir=tax_dir)
+                tax_dir=tax_dir,
+                issuer_registry=(Path(args.issuer_registry)
+                                 if args.issuer_registry else None))
             rep_extra["capture_id"] = res["capture_id"]
-        elif args.issuers or args.families or args.min_delay is not None:
+        elif (args.issuers or args.families
+                or args.min_delay is not None or args.issuer_registry):
             raise UsageError(
-                "--issuer/--family/--min-delay only apply with --live")
+                "--issuer/--family/--min-delay/--issuer-registry "
+                "only apply with --live")
         obs = cobserve.assemble_from_evidence(
             ev_dir, dataset_dir=None, tax_dir=tax_dir,
             run=rep_extra.get("capture_id", args.run))

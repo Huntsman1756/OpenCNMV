@@ -12,22 +12,29 @@ from opencnmv.capture import discover
 from opencnmv.capture.assemble import assemble_observation
 from opencnmv.capture.contract import (ISSUERS, MIN_DELAY_S, SEARCH_FROM,
                                        SEARCH_TO, USER_AGENT,
-                                       CaptureError)
+                                       CaptureError,
+                                       load_issuer_registry)
 from opencnmv.capture.fetch import (EvidenceStore, PoliteSession,
                                     load_latest_manifest)
 from opencnmv.serialize import write_canonical
 
 
 def resolve_scope(issuer_nifs: list[str] | None,
-                  families: list[str] | None) -> tuple[list[str],
-                                                       set[str]]:
-    """Frozen-corpus scope validation — fail closed on unknown issuers."""
-    nifs = list(issuer_nifs) if issuer_nifs else list(ISSUERS)
-    unknown = [n for n in nifs if n not in ISSUERS]
+                  families: list[str] | None,
+                  registry: dict | None = None) -> tuple[list[str],
+                                                         set[str]]:
+    """Scope validation — fail closed on issuers outside the active
+    registry (the frozen corpus unless ``--issuer-registry`` was given).
+    """
+    reg = ISSUERS if registry is None else registry
+    nifs = list(issuer_nifs) if issuer_nifs else list(reg)
+    unknown = [n for n in nifs if n not in reg]
     if unknown:
+        where = ("frozen corpus" if registry is None
+                 else "issuer-registry file")
         raise CaptureError(
-            f"issuers outside the frozen corpus: {unknown} "
-            f"(allowed: {sorted(ISSUERS)})")
+            f"issuers outside the {where}: {unknown} "
+            f"(allowed: {sorted(reg)})")
     fams = set(families) if families else {"ifa", "ipp"}
     bad = fams - {"ifa", "ipp"}
     if bad:
@@ -43,6 +50,7 @@ def observe(*, evidence_dir: Path, out: Path | None,
             min_delay: float = MIN_DELAY_S,
             dataset_dir: Path | None = None,
             tax_dir: Path | None = None,
+            issuer_registry: Path | None = None,
             session=None) -> dict:
     """Run one controlled capture. Returns a result summary dict.
 
@@ -50,13 +58,18 @@ def observe(*, evidence_dir: Path, out: Path | None,
     when ``out`` is given, the assembled CANONICAL_OBSERVATION_V1
     document (assembled against ``dataset_dir`` tables when provided,
     else as a full bootstrap projection).
+
+    ``issuer_registry`` selects an ISSUER_REGISTRY_V1 file as the active
+    issuer set; absent it, the frozen corpus applies.
     """
-    nifs, fams = resolve_scope(issuer_nifs, families)
+    registry = (load_issuer_registry(issuer_registry)
+                if issuer_registry else None)
+    nifs, fams = resolve_scope(issuer_nifs, families, registry)
     store = EvidenceStore(Path(evidence_dir))
     sess = session or PoliteSession(min_delay=min_delay,
                                     user_agent=USER_AGENT)
     manifest = discover.run_discovery(sess, store, nifs, fams,
-                                      desde, hasta)
+                                      desde, hasta, registry=registry)
     manifest_path = store.finish_run(manifest)
 
     obs = None

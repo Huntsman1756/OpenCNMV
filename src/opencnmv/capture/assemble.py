@@ -78,14 +78,17 @@ def _fy_of(period_end: str) -> str:
 
 
 class _Ctx:
-    """Per-assembly context: base tables + evidence root + taxonomy."""
+    """Per-assembly context: base tables + evidence root + taxonomy +
+    issuer identities carried by the capture manifest."""
 
     def __init__(self, tables, evidence_root: Path,
-                 tax_dir: Path | None, work_dir: Path):
+                 tax_dir: Path | None, work_dir: Path,
+                 issuer_map: dict | None = None):
         self.tables = tables
         self.root = Path(evidence_root)
         self.tax_dir = Path(tax_dir) if tax_dir else None
         self.work = Path(work_dir)
+        self.issuers = issuer_map or {}
         self.warnings: list[str] = []
 
 
@@ -268,12 +271,40 @@ def _build_esef_events(fid: str, view_es: dict, walk: dict | None,
     return events
 
 
-def _issuer_dict(issuer_key: str, *, with_nif: bool = False) -> dict:
-    reg = next(v for v in ISSUERS.values() if v["key"] == issuer_key)
-    iss = {"denomination": reg["denomination"], "lei": reg["lei"]}
+def _issuer_map(manifest: dict) -> dict:
+    """issuer_key -> {key, nif, denomination, lei} for assembly.
+
+    Identity comes from the capture manifest's scope entries (carried by
+    ``run_discovery``); manifests captured before that field existed fall
+    back to the frozen registry by nif, and the registry itself is the
+    last resort for manifests without scope entries at all.
+    """
+    out: dict[str, dict] = {}
+    for nif, e in ISSUERS.items():
+        out[e["key"]] = {"key": e["key"], "nif": nif,
+                         "denomination": e["denomination"],
+                         "lei": e["lei"]}
+    for e in manifest.get("scope", {}).get("issuers", []):
+        ent = out.get(e["key"], {"key": e["key"]})
+        ent["nif"] = e["nif"]
+        if e.get("denomination") is not None:
+            ent["denomination"] = e["denomination"]
+        if e.get("lei") is not None:
+            ent["lei"] = e["lei"]
+        out[e["key"]] = ent
+    return out
+
+
+def _issuer_dict(ctx: _Ctx, issuer_key: str, *,
+                 with_nif: bool = False) -> dict:
+    e = ctx.issuers.get(issuer_key)
+    if e is None or not e.get("denomination") or not e.get("lei"):
+        raise CaptureError(
+            f"issuer identity unresolved for key {issuer_key!r} — "
+            "not in manifest scope or frozen registry")
+    iss = {"denomination": e["denomination"], "lei": e["lei"]}
     if with_nif:
-        iss["nif"] = next(n for n, v in ISSUERS.items()
-                          if v["key"] == issuer_key)
+        iss["nif"] = e["nif"]
     return iss
 
 
@@ -296,7 +327,7 @@ def assemble_esef(registro: str, views: dict[str, dict],
     fy = _fy_of(period_end)
 
     if fx_base is None:
-        fx = xfiling.new_filing(registro, _issuer_dict(issuer_key),
+        fx = xfiling.new_filing(registro, _issuer_dict(ctx, issuer_key),
                                 period_end=period_end)
         fx["filing_versions"] = [xfiling.filing_version(
             fid, nreg, submission_kind="ORIGINAL_SUBMISSION")]
@@ -449,7 +480,7 @@ def assemble_ipp(rec: dict, base: dict | None, ctx: _Ctx) -> dict | None:
 
     states: list[dict] = []
     if fx_base is None:
-        fx = xfiling.new_filing(nreg, _issuer_dict(issuer_key,
+        fx = xfiling.new_filing(nreg, _issuer_dict(ctx, issuer_key,
                                                  with_nif=True),
                                 period_end=rec["period_end"],
                                 family="IPP")
@@ -521,7 +552,8 @@ def assemble_observation(manifest: dict, *,
     """
     root = Path(evidence_root)
     ctx = _Ctx(tables, root, tax_dir,
-               work_dir or (root / "_parse_work"))
+               work_dir or (root / "_parse_work"),
+               issuer_map=_issuer_map(manifest))
     filings_out: list[dict] = []
 
     per_reg: dict[str, dict[str, dict]] = {}

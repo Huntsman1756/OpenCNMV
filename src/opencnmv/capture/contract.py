@@ -40,6 +40,50 @@ SEARCH_TO = "2026-12-31"
 ESEF_TOKEN_ROLES = ("ESEF_COVER", "IXBRL_CONSOLIDATED",
                     "ESEF_PACKAGE_ZIP_XBRL")
 
+# External issuer registry input (G3-A): {nif -> {key, denomination,
+# lei, scope?}}. Issuer sets are *input data*, never hardcoded branches;
+# an entry may pin ``scope = {"esef_periods": [...], "ipp_slots":
+# [[semester, year], ...]}`` — absent scope falls back to the frozen
+# module defaults above.
+ISSUER_REGISTRY_FORMAT = "ISSUER_REGISTRY_V1"
+
+
+def load_issuer_registry(path) -> dict[str, dict]:
+    """Load an ISSUER_REGISTRY_V1 file. Fail closed on malformed input."""
+    import json
+    from pathlib import Path
+
+    p = Path(path)
+    try:
+        doc = json.loads(p.read_text(encoding="utf-8"))
+    except (OSError, ValueError) as ex:
+        raise CaptureError(f"issuer registry unreadable: {p} ({ex})")
+    if not isinstance(doc, dict) or \
+            doc.get("format") != ISSUER_REGISTRY_FORMAT:
+        raise CaptureError(
+            f"{p}: format != {ISSUER_REGISTRY_FORMAT}")
+    issuers = doc.get("issuers")
+    if not isinstance(issuers, dict) or not issuers:
+        raise CaptureError(f"{p}: no issuers")
+    out: dict[str, dict] = {}
+    for nif, e in issuers.items():
+        if not isinstance(e, dict) or not e.get("key") \
+                or not e.get("denomination"):
+            raise CaptureError(
+                f"{p}: issuer {nif} lacks key/denomination")
+        scope = e.get("scope")
+        if scope is not None:
+            if not isinstance(scope, dict) or not all(
+                    isinstance(scope.get(k), list)
+                    for k in ("esef_periods", "ipp_slots")):
+                raise CaptureError(
+                    f"{p}: issuer {nif} malformed scope")
+            scope = {"esef_periods": list(scope["esef_periods"]),
+                     "ipp_slots": [(s, y) for s, y in
+                                   scope["ipp_slots"]]}
+        out[nif] = {**e, "scope": scope}
+    return out
+
 
 class CaptureError(RuntimeError):
     """Source/network/discovery failure -> CLI exit code 7."""

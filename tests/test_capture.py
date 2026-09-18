@@ -619,3 +619,98 @@ class TestCliInit(unittest.TestCase):
         # a later good init still works (staging is not authoritative)
         res = uboot.init_dataset(self.ds, obs)
         self.assertEqual(res["status"], "INITIALIZED")
+
+
+# ------------------------------------------------------- issuer registry
+
+class TestIssuerRegistry(unittest.TestCase):
+    """ISSUER_REGISTRY_V1 input + manifest-carried identity (G3-A)."""
+
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.root = Path(self._tmp.name)
+
+    def tearDown(self):
+        self._tmp.cleanup()
+
+    def _write(self, obj) -> Path:
+        p = self.root / "reg.json"
+        p.write_bytes(json.dumps(obj).encode("utf-8"))
+        return p
+
+    def _valid(self) -> dict:
+        return {"format": "ISSUER_REGISTRY_V1",
+                "issuers": {"X11111111": {
+                    "key": "NEWCO", "denomination": "NEWCO, S.A.",
+                    "lei": "95980000000000000001",
+                    "scope": {"esef_periods": ["31/12/2025"],
+                              "ipp_slots": [["I", 2026]]}}}}
+
+    def test_load_valid(self):
+        reg = C.load_issuer_registry(self._write(self._valid()))
+        e = reg["X11111111"]
+        self.assertEqual(e["key"], "NEWCO")
+        self.assertEqual(e["scope"]["esef_periods"], ["31/12/2025"])
+        self.assertEqual(e["scope"]["ipp_slots"], [("I", 2026)])
+
+    def test_load_rejects_bad_format(self):
+        with self.assertRaises(C.CaptureError):
+            C.load_issuer_registry(self._write({"format": "OTHER",
+                                              "issuers": {}}))
+        with self.assertRaises(C.CaptureError):
+            C.load_issuer_registry(self._write({
+                "format": "ISSUER_REGISTRY_V1",
+                "issuers": {"X1": {"key": "K"}}}))  # no denomination
+        bad = self._valid()
+        bad["issuers"]["X11111111"]["scope"] = {"esef_periods": "x"}
+        with self.assertRaises(C.CaptureError):
+            C.load_issuer_registry(self._write(bad))
+        with self.assertRaises(C.CaptureError):
+            C.load_issuer_registry(self.root / "missing.json")
+
+    def test_resolve_scope_uses_registry(self):
+        reg = C.load_issuer_registry(self._write(self._valid()))
+        nifs, _ = cobs.resolve_scope(None, None, registry=reg)
+        self.assertEqual(nifs, ["X11111111"])
+        nifs, _ = cobs.resolve_scope(["X11111111"], ["ifa"],
+                                     registry=reg)
+        self.assertEqual(nifs, ["X11111111"])
+        # the frozen corpus is NOT silently expanded into a registry
+        with self.assertRaises(C.CaptureError) as cm:
+            cobs.resolve_scope(["A39000013"], None, registry=reg)
+        self.assertIn("issuer-registry file", str(cm.exception))
+
+    def test_issuer_map_from_manifest_scope(self):
+        man = {"scope": {"issuers": [
+            {"nif": "X11111111", "key": "NEWCO",
+             "denomination": "NEWCO, S.A.",
+             "lei": "95980000000000000001",
+             "esef_periods": [], "ipp_slots": []}]}}
+        m = casm._issuer_map(man)
+        self.assertEqual(m["NEWCO"]["lei"], "95980000000000000001")
+        self.assertEqual(m["NEWCO"]["nif"], "X11111111")
+        # frozen fallback stays available for old manifests
+        self.assertEqual(m["IBE"]["lei"], "5QK37QC7NWOJ8D7WVQ45")
+        # unknown key -> fail closed
+        ctx = casm._Ctx(None, self.root, None, self.root / "w",
+                        issuer_map=m)
+        with self.assertRaises(C.CaptureError):
+            casm._issuer_dict(ctx, "NOSUCH")
+
+    def test_issuer_map_old_manifest_fills_from_registry(self):
+        # pre-G3 manifests carry only nif+key in scope.issuers
+        man = {"scope": {"issuers": [{"nif": "A-48010615",
+                                      "key": "IBE"}]}}
+        m = casm._issuer_map(man)
+        self.assertEqual(m["IBE"]["denomination"], "IBERDROLA, S.A.")
+
+    def test_observe_cli_rejects_registry_with_bad_issuer(self):
+        with tempfile.TemporaryDirectory() as td:
+            reg = self._write(self._valid())
+            err = io.StringIO()
+            with contextlib.redirect_stderr(err):
+                code = entry(["observe", "--evidence-dir", td,
+                              "--issuer-registry", str(reg),
+                              "--issuer", "A39000013"])
+            self.assertEqual(code, 7)
+            self.assertIn("issuer-registry", err.getvalue())
