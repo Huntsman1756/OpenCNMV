@@ -32,7 +32,9 @@ def variant_version(variant_id: str, n: int, observed: bool,
 
 
 def view_resolution(filing_id: str, requested_lang: str,
-                    resolved_lang: str, resolution_mode: str) -> dict:
+                    resolved_lang: str | None,
+                    resolution_mode: str) -> dict:
     return {"requested_ui_language": requested_lang,
-            "resolved_variant_id": ids.variant_id(filing_id, resolved_lang),
+            "resolved_variant_id": (ids.variant_id(filing_id, resolved_lang)
+                                    if resolved_lang else None),
             "resolution_mode": resolution_mode}

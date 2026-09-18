@@ -90,6 +90,7 @@ class _Ctx:
         self.work = Path(work_dir)
         self.issuers = issuer_map or {}
         self.warnings: list[str] = []
+        self.unresolved: list[dict] = []
 
 
 # ---- base reconstruction ---------------------------------------------------
@@ -168,6 +169,28 @@ def _state_for(ctx: _Ctx, artifact_rec: dict, *, kind: str,
           "profile": kind, "facts": res["facts"],
           "units": res["units"], "provenance": prov}
     return st, res
+
+
+def _maybe_state(ctx: _Ctx, artifact_rec: dict, *, kind: str,
+                 fy: str | None, state_id: str,
+                 on_fail) -> tuple[dict, dict] | None:
+    """``_state_for`` with classified failure semantics.
+
+    A missing ``--taxonomy-dir`` is an *operator* error — parsing was
+    requested without the pinned taxonomy input, so it still raises
+    fail-closed. A parse failure on present inputs is a *source*
+    anomaly: the variant stays observed (its artifact is real preserved
+    evidence) but yields no facts; ``on_fail`` produces the outcome.
+    """
+    if ctx.tax_dir is None:
+        return _state_for(ctx, artifact_rec, kind=kind, fy=fy,
+                          state_id=state_id)
+    try:
+        return _state_for(ctx, artifact_rec, kind=kind, fy=fy,
+                          state_id=state_id)
+    except CaptureError as ex:
+        ctx.unresolved.append(on_fail(ex))
+        return None
 
 
 def _parse_existing(ctx: _Ctx, sha256: str, *, kind: str,
@@ -314,9 +337,10 @@ def assemble_esef(registro: str, views: dict[str, dict],
     """One ESEF filing observation entry (rebase onto recorded history)."""
     fid = ids.filing_id(registro, ids.IFA)
     view_es = views.get("es")
-    if view_es is None:
-        raise CaptureError(f"{fid}: no es view captured — cannot anchor "
-                           f"registry identity")
+    if view_es is None or view_es.get("status") is not None \
+            or not view_es.get("package"):
+        raise CaptureError(f"{fid}: no usable es view captured — "
+                           f"cannot anchor registry identity")
     fx_base = copy.deepcopy(base["fx"]) if base else None
     extra_artifacts = list(base["extra_artifacts"]) if base else []
 
@@ -388,7 +412,19 @@ def assemble_esef(registro: str, views: dict[str, dict],
             sid = f"{issuer_key}-{fy}-{lang}"
             n = 1
         new_version = True
-        st, res = _state_for(ctx, pkg, kind="esef", fy=fy, state_id=sid)
+        got = _maybe_state(ctx, pkg, kind="esef", fy=fy, state_id=sid,
+                           on_fail=lambda ex: {
+                               "scope": "variant", "family": "ESEF_IFA",
+                               "issuer_key": issuer_key,
+                               "filing_id": fid, "view": lang,
+                               "variant_version_id":
+                                   vv["variant_version_id"],
+                               "reason": "PARSE_FAILED",
+                               "detail": str(ex),
+                               "artifacts": [pkg["sha256"]]})
+        if got is None:
+            continue
+        st, res = got
         st["variant_version_id"] = vv["variant_version_id"]
         states.append(st)
         parse_res[vv["variant_version_id"]] = res
@@ -419,14 +455,22 @@ def assemble_esef(registro: str, views: dict[str, dict],
         ext_files = _base_extension_mapping_files(ctx, fid)
     elif len(submitted) == 2 and {s["submission_language"]
                                   for s in submitted} == {"es", "en"}:
-        records = _compute_extmap(fid, submitted, states, parse_res,
-                                  issuer_key, fy, ctx)
+        try:
+            records = _compute_extmap(fid, submitted, states, parse_res,
+                                      issuer_key, fy, ctx)
+        except CaptureError as ex:
+            ctx.unresolved.append(
+                {"scope": "mapping", "family": "ESEF_IFA",
+                 "issuer_key": issuer_key, "filing_id": fid,
+                 "reason": "EXTMAP_FAILED", "detail": str(ex),
+                 "artifacts": []})
+            records = []
         fx["extension_mappings"] = [
             xmap.mapping_record(fid, "es", "en", r)
             for r in records if r.get("pair_id")]
-        ext_files = [{"source_file": f"{issuer_key}-{fy}",
-                      "source_lang": "es", "target_lang": "en",
-                      "records": records}]
+        ext_files = ([{"source_file": f"{issuer_key}-{fy}",
+                       "source_lang": "es", "target_lang": "en",
+                       "records": records}] if records else [])
     else:
         fx["extension_mappings"] = (fx_base.get("extension_mappings", [])
                                     if fx_base else [])
@@ -496,10 +540,20 @@ def assemble_ipp(rec: dict, base: dict | None, ctx: _Ctx) -> dict | None:
         fx["submission_variants"] = [sv]
         fx["view_resolutions"] = [xvariants.view_resolution(
             fid, "es", "es", "SUBMITTED_VARIANT")]
-        st, _res = _state_for(ctx, art, kind="ipp", fy=None,
-                              state_id=sid)
-        st["variant_version_id"] = ids.variant_version_id(vid, 1)
-        states.append(st)
+        got = _maybe_state(ctx, art, kind="ipp", fy=None, state_id=sid,
+                           on_fail=lambda ex: {
+                               "scope": "variant", "family": "IPP",
+                               "issuer_key": issuer_key,
+                               "filing_id": fid,
+                               "variant_version_id":
+                                   ids.variant_version_id(vid, 1),
+                               "reason": "PARSE_FAILED",
+                               "detail": str(ex),
+                               "artifacts": [art["sha256"]]})
+        if got is not None:
+            st = got[0]
+            st["variant_version_id"] = ids.variant_version_id(vid, 1)
+            states.append(st)
         return {"filing": fx, "extras": None,
                 "extra_artifacts": extra_artifacts,
                 "extension_mapping_files": [], "states": states}
@@ -528,10 +582,19 @@ def assemble_ipp(rec: dict, base: dict | None, ctx: _Ctx) -> dict | None:
         artifact_set_id=aset, artifacts=[],
         supersedes=latest["variant_version_id"])
     sv_live["variant_versions"].append(vv)
-    st, _res = _state_for(ctx, art, kind="ipp", fy=None,
-                          state_id=f"{sid}-v{len(sv_live['variant_versions'])}")
-    st["variant_version_id"] = vv["variant_version_id"]
-    states.append(st)
+    got = _maybe_state(
+        ctx, art, kind="ipp", fy=None,
+        state_id=f"{sid}-v{len(sv_live['variant_versions'])}",
+        on_fail=lambda ex: {
+            "scope": "variant", "family": "IPP",
+            "issuer_key": issuer_key, "filing_id": fid,
+            "variant_version_id": vv["variant_version_id"],
+            "reason": "PARSE_FAILED", "detail": str(ex),
+            "artifacts": [art["sha256"]]})
+    if got is not None:
+        st = got[0]
+        st["variant_version_id"] = vv["variant_version_id"]
+        states.append(st)
     return {"filing": fx, "extras": base["extras"] if base else None,
             "extra_artifacts": extra_artifacts,
             "extension_mapping_files": ext_files, "states": states}
@@ -566,15 +629,61 @@ def assemble_observation(manifest: dict, *,
              for w in manifest.get("infadicion_walks", [])}
     for registro in sorted(per_reg):
         fid = ids.filing_id(registro, ids.IFA)
-        filings_out.append(assemble_esef(
-            registro, per_reg[registro], walks.get(registro),
-            issuer_of[registro], _base_filing(ctx, fid), ctx))
+        views = per_reg[registro]
+        key = issuer_of[registro]
+        view_es = views.get("es")
+        any_view = view_es or next(iter(views.values()))
+        if view_es is None or view_es.get("status") is not None \
+                or not view_es.get("package"):
+            # no usable es anchor: the registry row exists but no
+            # canonical filing can be built — classified, not dropped.
+            reasons = sorted({v.get("status")
+                              or v.get("resolution_mode") or "NO_VIEW"
+                              for v in views.values()})
+            ctx.unresolved.append(
+                {"scope": "filing", "family": "ESEF_IFA",
+                 "issuer_key": key, "nif": any_view.get("nif"),
+                 "registro": registro, "filing_id": fid,
+                 "period_end": any_view["registry_row"]["cells"][1],
+                 "reason": "NO_USABLE_ANCHOR_VIEW",
+                 "detail": "; ".join(reasons),
+                 "artifacts": [v["package"]["sha256"]
+                               for v in views.values()
+                               if v.get("package")]})
+            continue
+        try:
+            filings_out.append(assemble_esef(
+                registro, views, walks.get(registro),
+                key, _base_filing(ctx, fid), ctx))
+        except CaptureError as ex:
+            if ctx.tax_dir is None:
+                raise   # operator error: parse requested without the
+                        # pinned taxonomy input — fail closed
+            ctx.unresolved.append(
+                {"scope": "filing", "family": "ESEF_IFA",
+                 "issuer_key": key, "nif": view_es.get("nif"),
+                 "registro": registro, "filing_id": fid,
+                 "reason": "ASSEMBLY_FAILED", "detail": str(ex),
+                 "artifacts": []})
 
     for rec in manifest.get("ipp_filings", []):
         if rec.get("status") != "CAPTURED":
             continue
         fid = ids.filing_id(rec["nreg"], ids.IPP)
-        fo = assemble_ipp(rec, _base_filing(ctx, fid), ctx)
+        try:
+            fo = assemble_ipp(rec, _base_filing(ctx, fid), ctx)
+        except CaptureError as ex:
+            if ctx.tax_dir is None:
+                raise   # operator error — fail closed
+            ctx.unresolved.append(
+                {"scope": "filing", "family": "IPP",
+                 "issuer_key": rec["issuer_key"], "nif": rec.get("nif"),
+                 "slot": rec.get("slot"), "nreg": rec.get("nreg"),
+                 "filing_id": fid,
+                 "reason": "ASSEMBLY_FAILED", "detail": str(ex),
+                 "artifacts": ([rec["artifact"]["sha256"]]
+                               if rec.get("artifact") else [])})
+            continue
         if fo is not None:
             filings_out.append(fo)
 
@@ -590,4 +699,9 @@ def assemble_observation(manifest: dict, *,
                            + "; ".join(problems[:8]))
     if ctx.warnings:
         obs["capture_warnings"] = ctx.warnings
+    if ctx.unresolved:
+        obs["unresolved"] = sorted(
+            ctx.unresolved,
+            key=lambda u: json.dumps(u, sort_keys=True,
+                                     ensure_ascii=False))
     return obs

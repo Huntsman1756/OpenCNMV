@@ -2,8 +2,6 @@
 from __future__ import annotations
 
 import json
-import os
-import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -42,46 +40,14 @@ def jwrite(p: Path, obj) -> None:
     ).encode("utf-8"))
 
 
-def rec(check: str, ok: bool, detail: str = "") -> None:
+def record(name: str, **fields) -> None:
     RESULTS.parent.mkdir(parents=True, exist_ok=True)
-    with open(RESULTS, "a", encoding="utf-8", newline="\n") as fh:
-        fh.write(json.dumps({"check": check, "ok": bool(ok),
-                             "detail": detail},
-                            ensure_ascii=False) + "\n")
+    with RESULTS.open("a", encoding="utf-8") as fh:
+        fh.write(json.dumps({"name": name, **fields},
+                            ensure_ascii=False, sort_keys=True) + "\n")
 
 
-def run_cli(argv: list[str], *, env_extra: dict | None = None) -> tuple:
-    """Run the in-process CLI; returns (exit_code, stdout, stderr)."""
-    import contextlib
-    import io
-    sys.path.insert(0, str(SRC))
-    from opencnmv.cli.main import entry
-    out, err = io.StringIO(), io.StringIO()
-    env = dict(os.environ)
-    env.update(env_extra or {})
-    code = 0
-    with contextlib.redirect_stdout(out), \
-            contextlib.redirect_stderr(err):
-        old = dict(os.environ)
-        os.environ.update(env_extra or {})
-        try:
-            code = entry(list(argv))
-        except SystemExit as ex:
-            code = ex.code if isinstance(ex.code, int) else 0
-        finally:
-            os.environ.clear()
-            os.environ.update(old)
-    return code, out.getvalue(), err.getvalue()
-
-
-def deny_network():
-    """Process-level socket deny-all (offline legs)."""
-    import socket
-    s = socket.socket
-    def _deny(*a, **k):
-        raise OSError("network denied (offline leg)")
-    socket.socket = _deny  # type: ignore[assignment]
-    socket.create_connection = _deny  # type: ignore[assignment]
-    socket.getaddrinfo = lambda *a, **k: (_ for _ in ()).throw(
-        OSError("network denied"))
-    return s
+def dir_hashes(root: Path) -> dict[str, str]:
+    from opencnmv.provenance.hashes import sha256_bytes
+    return {str(p.relative_to(root)): sha256_bytes(p.read_bytes())
+            for p in sorted(Path(root).rglob("*")) if p.is_file()}

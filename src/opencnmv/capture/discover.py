@@ -143,20 +143,48 @@ def discover_esef(sess: PoliteSession, store: EvidenceStore,
                 raise CaptureError(
                     f"{key}/{registro}/{lang}: registry row has no "
                     f"verdocumento tokens")
+            if len(toks) != len(ESEF_TOKEN_ROLES):
+                manifest["warnings"].append(
+                    f"{key}/{registro}/{lang}: {len(toks)} verdocumento "
+                    f"tokens (expected {len(ESEF_TOKEN_ROLES)}) — "
+                    f"roles unmapped, raw tokens preserved")
+            v["document_locators"] = (
+                dict(zip(ESEF_TOKEN_ROLES, toks))
+                if len(toks) == len(ESEF_TOKEN_ROLES)
+                else {"raw_tokens": toks})
             # last token on the row is the report package (G1-B order).
             body, media, url = sess.fetch_document(
                 toks[-1], note=f"esef-pkg-{key}-{registro}-{lang}")
             rec = _store_bytes(store, body, media, sess)
             rec["source_url"] = url
-            tags = _lang_tags(body)
-            if len(tags) != 1:
-                raise CaptureError(
-                    f"{key}/{registro}/{lang}: package language tags "
-                    f"{sorted(tags)} — cannot resolve submission language")
-            resolved = sorted(tags)[0]
-            v["document_locators"] = dict(
-                zip(ESEF_TOKEN_ROLES, toks))
             v["package"] = rec
+            try:
+                tags = _lang_tags(body)
+            except CaptureError:
+                # the registry serves a non-zip document for this view
+                # (single-token rows, visual XHTML reports, ...). The
+                # bytes are preserved above; the view is classified
+                # UNRESOLVED instead of aborting the whole capture.
+                v["status"] = "PACKAGE_NOT_ZIP"
+                v["resolved_submission_language"] = None
+                v["resolution_mode"] = "UNRESOLVED_PACKAGE"
+                manifest["warnings"].append(
+                    f"{key}/{registro}/{lang}: report package is not "
+                    f"a zip ({len(body)} bytes, {media}) — view "
+                    f"classified UNRESOLVED_PACKAGE")
+                manifest["esef_views"].append(v)
+                continue
+            if len(tags) != 1:
+                v["status"] = "PACKAGE_AMBIGUOUS_LANG"
+                v["resolved_submission_language"] = None
+                v["resolution_mode"] = "UNRESOLVED_PACKAGE"
+                manifest["warnings"].append(
+                    f"{key}/{registro}/{lang}: package language tags "
+                    f"{sorted(tags)} — cannot resolve submission "
+                    f"language; view classified UNRESOLVED_PACKAGE")
+                manifest["esef_views"].append(v)
+                continue
+            resolved = sorted(tags)[0]
             v["resolved_submission_language"] = resolved
             v["resolution_mode"] = ("SUBMITTED_VARIANT" if resolved == lang
                                     else f"FALLBACK_TO_{resolved.upper()}")

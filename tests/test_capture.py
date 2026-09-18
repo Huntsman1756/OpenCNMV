@@ -360,14 +360,38 @@ class TestAssemble(unittest.TestCase):
                 m, tables=self.tables,
                 evidence_root=Path(self._tmp.name))
 
-    def test_missing_view_is_capture_error(self):
+    def test_missing_view_is_classified_unresolved(self):
+        # a registro without a usable es anchor view is a source
+        # anomaly: classified into obs.unresolved, the rest of the
+        # observation still assembles (no filing is fabricated)
         m = json.loads(json.dumps(self.manifest))
         m["esef_views"] = [v for v in m["esef_views"]
                            if v["requested_ui_language"] != "es"]
-        with self.assertRaises(C.CaptureError):
-            casm.assemble_observation(
-                m, tables=self.tables,
-                evidence_root=Path(self._tmp.name))
+        obs = casm.assemble_observation(
+            m, tables=self.tables,
+            evidence_root=Path(self._tmp.name))
+        self.assertEqual(len(obs["filings"]), 1)   # IPP survives
+        unr = obs.get("unresolved", [])
+        self.assertTrue(any(
+            u["reason"] == "NO_USABLE_ANCHOR_VIEW"
+            and u["scope"] == "filing" for u in unr), unr)
+
+    def test_unresolved_package_view_is_classified(self):
+        # es view captured but its document is not a report package
+        # (discovery status): filing unresolved, observation continues
+        m = json.loads(json.dumps(self.manifest))
+        es = next(v for v in m["esef_views"]
+                  if v["requested_ui_language"] == "es")
+        es["status"] = "PACKAGE_NOT_ZIP"
+        es["resolution_mode"] = "UNRESOLVED_PACKAGE"
+        es["resolved_submission_language"] = None
+        obs = casm.assemble_observation(
+            m, tables=self.tables,
+            evidence_root=Path(self._tmp.name))
+        unr = obs.get("unresolved", [])
+        self.assertTrue(any(
+            u["reason"] == "NO_USABLE_ANCHOR_VIEW"
+            and "PACKAGE_NOT_ZIP" in u["detail"] for u in unr), unr)
 
     def test_unlisted_ipp_skipped_not_removed(self):
         m = json.loads(json.dumps(self.manifest))
