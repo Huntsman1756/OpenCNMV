@@ -100,6 +100,16 @@ def discover_esef(sess: PoliteSession, store: EvidenceStore,
                 f"({ex})") from ex
         page = _store_bytes(store, body, "text/html", sess)
         rows = cn.parse_rows(body.decode("utf-8", errors="replace"))
+        served_periods = {row["cells"][1] for row in rows
+                          if len(row["cells"]) >= 2}
+        for declared in esef_periods:
+            if declared not in served_periods:
+                # declared scope period not present in the served
+                # registry (delisted issuer, window edge, ...) — the
+                # omission is documented, never silent
+                manifest["warnings"].append(
+                    f"{key}/{lang}: declared scope period {declared!r} "
+                    f"absent from served registry rows")
         for row in rows:
             cells = row["cells"]
             if len(cells) < 2:

@@ -25,6 +25,7 @@ import copy
 import io
 import json
 import re
+from html import unescape
 from pathlib import Path
 
 from opencnmv.canonicalize import events as xevents
@@ -331,7 +332,11 @@ def _issuer_dict(ctx: _Ctx, issuer_key: str, *,
         raise CaptureError(
             f"issuer identity unresolved for key {issuer_key!r} — "
             "not in manifest scope or frozen registry")
-    iss = {"denomination": e["denomination"], "lei": e["lei"]}
+    # Registry denominations may carry verbatim HTML entities from
+    # HTML-sourced enumerations; the canonical identity is the decoded
+    # legal name.
+    iss = {"denomination": unescape(e["denomination"]),
+           "lei": e["lei"]}
     if with_nif:
         iss["nif"] = e["nif"]
     return iss
@@ -357,13 +362,18 @@ def assemble_esef(registro: str, views: dict[str, dict],
     fy = _fy_of(period_end)
 
     if fx_base is None:
-        fx = xfiling.new_filing(registro, _issuer_dict(ctx, issuer_key),
+        fx = xfiling.new_filing(registro,
+                                _issuer_dict(ctx, issuer_key,
+                                             with_nif=True),
                                 period_end=period_end)
         fx["filing_versions"] = [xfiling.filing_version(
             fid, nreg, submission_kind="ORIGINAL_SUBMISSION")]
     else:
         fx = fx_base
-        # live-derived fields overwrite so the classifier sees drift
+        # live-derived fields overwrite so the classifier sees drift;
+        # issuer identity refreshes from live registry evidence
+        # (completes fields absent when the filing was first minted)
+        fx["issuer"] = _issuer_dict(ctx, issuer_key, with_nif=True)
         fx["period_end"] = period_end
 
     fx["version_events"] = events
@@ -566,6 +576,7 @@ def assemble_ipp(rec: dict, base: dict | None, ctx: _Ctx) -> dict | None:
                 "extension_mapping_files": [], "states": states}
 
     fx = fx_base
+    fx["issuer"] = _issuer_dict(ctx, issuer_key, with_nif=True)
     fx["period_end"] = rec["period_end"]
     vid = ids.variant_id(fid, "es")
     sv_live: dict | None = None

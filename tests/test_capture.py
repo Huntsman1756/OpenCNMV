@@ -50,6 +50,7 @@ def _filing_ibe() -> dict:
     return {
         "filing_id": fid,
         "issuer": {"denomination": "IBERDROLA, S.A.",
+                   "nif": "A-48010615",
                    "lei": "5QK37QC7NWOJ8D7WVQ45"},
         "registro_oficial": "90001", "family": "ESEF_IFA",
         "period_end": "31/12/2024",
@@ -430,6 +431,35 @@ class TestAssemble(unittest.TestCase):
         from opencnmv.xbrl.taxonomy import ESEF_TAXONOMY
         self.assertEqual(ESEF_TAXONOMY["FY2023"],
                          ESEF_TAXONOMY["FY2024"])
+
+    def test_esef_filing_carries_issuer_nif(self):
+        # issuer identity is complete: NIF travels from the manifest
+        # scope (or frozen registry) into the canonical filing row,
+        # like the IPP path already did
+        obs = casm.assemble_observation(
+            self.manifest, tables=self.tables,
+            evidence_root=Path(self._tmp.name))
+        esef = next(f for f in obs["filings"]
+                    if f["filing"]["family"] == "ESEF_IFA")
+        self.assertEqual(esef["filing"]["issuer"]["nif"], "A-48010615")
+
+    def test_issuer_denomination_is_entity_decoded(self):
+        # a registry denomination carrying verbatim HTML entities
+        # surfaces as the decoded legal name in the canonical filing
+        m = json.loads(json.dumps(self.manifest))
+        m["scope"] = {"issuers": [
+            {"nif": "A-48010615", "key": "IBE",
+             "denomination": "IBERDROLA, S.A. &#45; TEST &amp; CO",
+             "lei": "5QK757QC5E0N2P9Q0S23"}]}
+        obs = casm.assemble_observation(
+            m, tables=self.tables,
+            evidence_root=Path(self._tmp.name))
+        esef = next(f for f in obs["filings"]
+                    if f["filing"]["family"] == "ESEF_IFA")
+        self.assertNotIn("&amp;", esef["filing"]["issuer"]
+                         ["denomination"])
+        self.assertNotIn("&#45;", esef["filing"]["issuer"]
+                         ["denomination"])
 
     def test_unlisted_ipp_skipped_not_removed(self):
         m = json.loads(json.dumps(self.manifest))
