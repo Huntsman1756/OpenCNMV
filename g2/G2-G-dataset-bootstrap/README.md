@@ -78,23 +78,45 @@ Explicitly out of scope (later gates):
 ## CLI (extends CLI V1)
 
 ```text
-opencnmv init --dataset PATH --observation FILE
-opencnmv init --dataset PATH --evidence-dir DIR
-opencnmv init --dataset PATH --live [--issuer NIF]... [--family F]...
+opencnmv init --dataset PATH \
+              --observation FILE
 
-  --observation FILE   replayable observation document (offline)
-  --evidence-dir DIR   assemble an observation from preserved
-                       evidence, then bootstrap (offline)
-  --live               composition: run `observe` into a fresh
-                       evidence dir, then bootstrap from it
-                       (the only network path; same session/UA/delay
-                       courtesy as observe)
+opencnmv init --dataset PATH \
+              --evidence-dir DIR \
+              --taxonomy-dir TAXONOMIES
+
+opencnmv init --dataset PATH \
+              --live \
+              --evidence-dir DIR \
+              --taxonomy-dir TAXONOMIES \
+              [--issuer NIF]... [--family F]...
+
+  --observation FILE    replayable observation document (offline;
+                        already contains the canonical projection —
+                        no taxonomy needed)
+  --evidence-dir DIR    without --live: existing preserved evidence
+                        = INPUT (assembled into an observation first)
+                        with --live: evidence directory = OUTPUT of
+                        the internal observe and then INPUT of the
+                        same bootstrap — bytes stay available for
+                        replay, never a transient temp dir
+  --taxonomy-dir DIR    pinned taxonomy bundle, required on both
+                        paths that parse raw XBRL (evidence assembly
+                        and live capture); an explicit external
+                        input, never resolved from the checkout
+  --live                composition: observe into --evidence-dir,
+                        then the identical offline bootstrap function
+                        (the only network path; same session/UA/delay
+                        courtesy as observe)
 ```
 
 - Destination exists and is non-empty -> fail (no overwrite flag in
   V1).
-- `--live` is literally `observe` + `init --evidence-dir`; it does not
-  bypass the offline path.
+- `--live` is literally `observe` + `init --evidence-dir
+  --taxonomy-dir`; it does not bypass the offline path.
+- No required input may be resolved from `g0-r/`, `g1/`, `g2/` or
+  `_out/` paths — evidence and taxonomies are external directories
+  the caller supplies explicitly.
 - Human summary + `--json` document; diagnostics on stderr.
 
 Exit codes: the frozen vocabulary applies unchanged. A non-empty
@@ -106,7 +128,8 @@ integrity failures stay `5`.
 ```text
 B1  init --observation on an empty dir produces a dataset that
     `opencnmv dataset validate` passes completely
-B2  init --evidence-dir assembles + bootstraps to the same dataset
+B2  init --evidence-dir --taxonomy-dir produces the same dataset as
+    init --observation on the corresponding observation document
 B3  two offline bootstraps are byte-identical, including under
     different PYTHONHASHSEED values
 B4  no base dataset consulted: empty tables -> all-rows delta ->
@@ -114,8 +137,11 @@ B4  no base dataset consulted: empty tables -> all-rows delta ->
 B5  zero imports from g0-r/, g1/, g2/ in production code (module scan)
 B6  dataset validates and serves with extras_json absent; no curated
     fixture overlay is required or fabricated
-B7  liveA-captured evidence -> offline init replay == dataset from the
-    same observation document
+B7  live capture preserved in --evidence-dir -> offline init replay
+    with that same evidence-dir + taxonomy-dir -> identical dataset;
+    a bounded `init --live` smoke (single issuer, one family/period)
+    proves the composition observe -> preserved evidence -> same
+    offline bootstrap function end to end
 B8  every G2-E read-only command works on the bootstrapped dataset
     (filings/filing/facts/fact/history/compare/events/mappings/
     provenance/dataset info+validate)
@@ -129,8 +155,9 @@ B12 manifest + provenance: no absolute/machine paths; corpus logical
 B13 semantics preserved: 21 filings, IPP+ESEF families, dual variants,
     IBE fallback (no phantom #en), typed dims, compound units, fact
     multiplicity, extension mappings, version events
-B14 wheel: installed into a clean venv, init from preserved evidence
-    succeeds from an empty cwd with no checkout access
+B14 wheel: installed into a clean venv, empty cwd, no checkout access
+    — external evidence-dir + external taxonomy-dir -> init PASS;
+    nothing required resolves from g0-r/, g1/, g2/ or _out/
 B15 deterministic human + JSON output; exit-code vocabulary intact
 B16 unit + CLI tests; ruff clean; mypy clean
 B17 regressions: G2-A/B/C/D/E/F verify PASS on final HEAD
@@ -143,6 +170,10 @@ B18 docs updated: docs/CLI.md command tree, docs/G2.md, docs/STATUS.md
   (live capture) or assembled offline from preserved evidence dirs.
 - Preserved evidence: the G2-F liveA store pattern
   (`artifacts/` + `runs/<capture_id>/manifest.json`) — bootstrap input
-  is *evidence*, never a gate `_out/dataset` copy.
-- Pinned taxonomy evidence (as G2-F) for Arelle parsing.
+  is *evidence*, never a gate `_out/dataset` copy. The liveA evidence
+  is a legitimate input because it was produced by the public `observe`
+  route already proven in G2-F; the bounded `init --live` smoke needs
+  only a single issuer/family.
+- Pinned taxonomy bundle (the R10-pinned packages, as G2-F) supplied
+  as an explicit external `--taxonomy-dir`.
 - Frozen corpus scope only: SAN/BBVA/IBE x the preregistered periods.
