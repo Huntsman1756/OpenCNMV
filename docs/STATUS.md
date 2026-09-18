@@ -14,7 +14,8 @@ Update at the end of every session.
 G0-R closed `GO` at tag `g0-r-go`; G1 closed at `g1-model-frozen`. The
 read-only public CLI shipped in G2-E; the controlled live
 capture/update route shipped in G2-F (`opencnmv observe`/`update`).
-Next planned gate: **G2-G — dataset bootstrap** (see `docs/G2.md`).
+Next planned gate: **G2-G — dataset bootstrap** (`opencnmv init`;
+preregistered at `g2/G2-G-dataset-bootstrap/`, see `docs/G2.md`).
 
 ## Gate statuses
 
